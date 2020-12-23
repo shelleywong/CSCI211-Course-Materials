@@ -114,3 +114,21 @@ You must pass all the posted tests to get credit for a lab assignment.
 Lab exercises are due by 11:59pm the Friday night following lab.
 
 ## Exercise 4: Say Hello
+
+Write a program that reads a number and prints "hello" that number of times:
+```
+$ a.out
+5
+0 hello
+1 hello
+2 hello
+3 hello
+4 hello
+$
+```
+* All the characters shown above were printed by the program, except the 5<enter> which was typed by the user.
+* Change directory to the lab01/print directory.  Create a new file called `print.cpp`.
+* Use a for-loop to implement this program.
+* When your program is working, test it with the posted tests (see the testing and turn in instructions for exercise 3; the only difference is that the tests are in the directory lab01_print/tests).
+* Make sure your program passes all the tests.
+* Turn in print.cpp to [Turnin](https://turnin.ecst.csuchico.edu/).
