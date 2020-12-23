@@ -95,7 +95,7 @@ cin >> value1;
 ```
 Where "value1" has been declared as an integer before this line (C++ integers are declared just like in Java).
 * Create a new file called `add.cpp` using an editor.  Write the add program so it reads and adds the two numbers.
-* Compile and run your program to make sure it works correctly.  Your output must EXACTLY match my output (<number><space><+><space><number><space><=><space><number><newline>)
+* Compile and run your program to make sure it works correctly.  Your output must EXACTLY match my output: `<number><space><+><space><number><space><=><space><number><newline>`
 * Some sample input and output are available in `211-starter-pack/211/lab01_add/tests` directory. In this directory you will find *.in and *.out files. For example, `t01.in` is the input for test 1 and `t01.out` is the expected output for test 1. All of the tests in the directory will be used to grade your program on turnin. If you pass these tests, you will get full credit.
 * An easy way to see the content of a small file is to use the Linux cat command:
 ```
@@ -127,8 +127,8 @@ $ a.out
 $
 ```
 * All the characters shown above were printed by the program, except the 5<enter> which was typed by the user.
-* Change directory to the lab01/print directory.  Create a new file called `print.cpp`.
+* Change directory to the `lab01/print` directory.  Create a new file called `print.cpp`.
 * Use a for-loop to implement this program.
-* When your program is working, test it with the posted tests (see the testing and turn in instructions for exercise 3; the only difference is that the tests are in the directory lab01_print/tests).
+* When your program is working, test it with the posted tests (see the testing and turn in instructions for exercise 3; the only difference is that the tests are in the directory `211-starter-pack/211/lab01_print/tests`).
 * Make sure your program passes all the tests.
 * Turn in print.cpp to [Turnin](https://turnin.ecst.csuchico.edu/).
