@@ -67,3 +67,50 @@ $ ./a.out
 Some people choose to [add `./` to the search path](https://stackoverflow.com/questions/27188856/adding-any-current-directory-to-the-search-path-in-linux) for executables in Linux, but it is not necessary. In my instructions, I will include `./` before all executables.<br/>
 
 You do not need to turn in this exercise, but you may if you want to practice turn-in submissions. You must submit lab exercises 3 and 4 for lab credit.
+
+## Exercise 3: 1 + 1 = 2
+
+Write a program that reads two numbers, adds them together, and prints the result.
+
+* Move to your lab01/add directory:
+```
+$ cd ../add
+```
+The two dots mean to go "up" a directory and find the `add` directory. If that did not work, try using the "full directory path" or "full path":
+```
+$ cd ~/csci211/lab01/add
+```
+
+* When your program is run, it should work like this (the "./a.out" "40" and "2" are typed by the user; the "40 + 2 = 42" is printed by the program):
+```
+$ ./a.out
+40
+2
+40 + 2 = 42
+$
+```
+* For this exercise you will need to read in an integer.  You can read an integer in C++ like this:
+```cpp
+cin >> value1;
+```
+Where "value1" has been declared as an integer before this line (C++ integers are declared just like in Java).
+* Create a new file called `add.cpp` using an editor.  Write the add program so it reads and adds the two numbers.
+* Compile and run your program to make sure it works correctly.  Your output must EXACTLY match my output (<number><space><+><space><number><space><=><space><number><newline>)
+* Some sample input and output are available in `211-starter-pack/211/lab01_add/tests` directory. In this directory you will find *.in and *.out files. For example, `t01.in` is the input for test 1 and `t01.out` is the expected output for test 1. All of the tests in the directory will be used to grade your program on turnin. If you pass these tests, you will get full credit.
+* An easy way to see the content of a small file is to use the Linux cat command:
+```
+$ cat tests/t01.in
+40 2
+$ cat tests/t01.out
+40 + 2 = 42
+$
+```
+* See [Introduction to Testing](http://www.ecst.csuchico.edu/~trhenry/classes/general/how_to_test.html) for a full description of how to test your assignments. If you understand the described mechanism now, it will make your semester much easier, and will improve your grade. One of the most important aspects of this lab is for you to understand the testing mechanism.
+
+Once your program is working, turn `add.cpp` in on [Turnin](https://turnin.ecst.csuchico.edu/). For more information, see [instructions for turning in files](http://www.ecst.csuchico.edu/~trhenry/classes/general/how_to_turn_in_assignments.html).
+
+You must pass all the posted tests to get credit for a lab assignment.
+
+Lab exercises are due by 11:59pm the Friday night following lab.
+
+## Exercise 4: Say Hello
