@@ -27,7 +27,7 @@ Submit the file `to_text.cpp` to [Turnin](https://turnin.ecst.csuchico.edu/)
 
 ## Exercise 2: Error Output
 
-Starting with the second programming assignment (P2), you will be required to detect and report errors. All errors must be written to standard error. Consider the `error.cpp` example in `~/211-starter-pack/211/lab02_even`:
+Starting with the second programming assignment (p2), you will be required to detect and report errors. All errors must be written to standard error. Consider the `error.cpp` example in `~/211-starter-pack/211/lab02_even`:
 
 ```cpp
 // @file error.cpp
@@ -85,7 +85,7 @@ Do not return from main() until after you have printed the appropriate message.<
 
 Read how to test a program that has error output on the [Introduction to Testing](http://www.ecst.csuchico.edu/~trhenry/classes/general/how_to_test.html#error) page.<br/>
 
-If a program is required to have error output, [Turnin](turnin.ecst.csuchico.edu) will check the value returned by main() (the exit status). It should be 0 if there were no errors, 1 if there were errors. You can see the exit status of the program that just finished executed using the echo command:
+If a program is required to have error output, Turnin will check the value returned by main() (the exit status). It should be 0 if there were no errors, 1 if there were errors. You can see the exit status of the program that just finished executed using the echo command:
 
 ```
 $ ./even < t01.in  > t01.myout   2> t01.myerr
@@ -117,7 +117,7 @@ Make sure you are supporting all numbers, not just single digits.<br>
 
 To get credit, you must pass the posted tests (in the directory `~211-starter-pack/211/lab02_even/tests`)
 
-Turn in the file `even.cpp`
+Turn in the file `even.cpp` to [Turnin](turnin.ecst.csuchico.edu)
 
 ***
 
