@@ -132,3 +132,11 @@ $
 * When your program is working, test it with the posted tests (see the testing and turn in instructions for exercise 3; the only difference is that the tests are in the directory `211-starter-pack/211/lab01_print/tests`).
 * Make sure your program passes all the tests.
 * Turn in print.cpp to [Turnin](https://turnin.ecst.csuchico.edu/).
+
+## Exercise 5: Make sure you understand the testing mechanism
+
+The main point of these assignments is to introduce you to the [testing mechanism](http://www.ecst.csuchico.edu/~trhenry/classes/general/how_to_test.html).<br/>
+
+Students who don't understand how < and > are used to test assignments struggle throughout the semester.
+
+* Reminder: All labs are due at 11:59pm the Friday following lab.  For this lab you must turn in `add.cpp` and `print.cpp`. If you are not able to complete all the exercises, turn in your partial work for partial credit.
