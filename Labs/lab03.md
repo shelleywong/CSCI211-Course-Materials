@@ -1,7 +1,7 @@
 # Lab 3
 
-Introducing the Linux make utility<br>
-Practice Creating C++ Objects<br>
+* Introducing the Linux make utility<br>
+* Practice Creating C++ Objects<br>
 
 ## Exercise 1: The make utility
 \* You must complete this [Google Survey](https://docs.google.com/forms/d/e/1FAIpQLSft0f3fr4rMs0LIK2KWWbEs2EMYqQSBPFYjAcQzJWgQM3eq_A/viewform?usp=sf_link) to get credit for Exercises 1 & 2 \*
@@ -62,7 +62,7 @@ $ make
 What happened? Why? (Answer on the google survey)
 
 ## Exercise 2
-\* You must complete the rest of the Google Survey to get credit) \*
+\* You must complete the rest of the Google Survey to get credit \*
 
 1. Go to the lab03_sentence directory. If you're still in the lab03_hello folder, type:
 
@@ -181,7 +181,7 @@ If you have not started p2, look at the Plan of Attack section and implement Ste
 
 You will need to implement the class `Video` constructor (Video::Video(...)) and the `print` member function (void Video::print()).<br>
 
-The output of your program (using the main() above) should exactly match the following (t01.out for ~/211-starter-pack/211/lab03_video). This is the test used by turnin.ecst.csuchico.edu:
+The output of your program (using the `main()` above) should exactly match the following (t01.out for ~/211-starter-pack/211/lab03_video). This is the test used by turnin.ecst.csuchico.edu:
 ```
 Title One, www.youtube.com/one, Comment ONE, 1.1, *
 Title Two, www.youtube.com/two, Comment TWO, 2.2, **
