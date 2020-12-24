@@ -61,7 +61,7 @@ There are several ways to enter insert mode (see below)
 | h | left |
 | j | down |
 | k | up |
-| l | right |
+| l | right (lowercase L) |
 | /pattern | searches for pattern |
 | n | search next |
 | ? | search back |
@@ -72,7 +72,7 @@ There are several ways to enter insert mode (see below)
 | --- | --- |
 | i | insert before cursor |
 | a | insert after cursor |
-| I | insert at start of line |
+| I | insert at start of line (capital i)|
 | A | insert at end of line |
 | C | delete from cursor to end of line, start inserting |
 
@@ -172,6 +172,6 @@ Turn in your new versions of list.h, list.cpp, and main.cpp.
 
 If you finish the exercises early you could:
 
-1. Work on p3
+1. Work on p3<br>
 -and/or-
 2.  Look at the exams from previous semesters and write solutions to the linked list questions
