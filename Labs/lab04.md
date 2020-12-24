@@ -58,24 +58,25 @@ There are several ways to enter insert mode (see below)
 
 ### Moving around (while in command mode)
 
-h | left
-j | down
-k | up
-l | right
-
-/ | pattern is search
-n | is next
-? | is search back
+| What you type | How the cursor moves |
+| --- | --- |
+| h | left |
+| j | down |
+| k | up |
+| l | right |
+| /pattern | searches for pattern |
+| n | search next |
+| ? | search back |
 
 ### Inserting text (must be in command mode to start inserting)
 
-i | insert before cursor
-a | insert after cursor
-
-I | insert at start of line
-A | insert at end of line
-
-C | delete from cursor to end of line, start inserting
+| What you type | How the insert occurs |
+| --- | --- |
+| i | insert before cursor |
+| a | insert after cursor |
+| I | insert at start of line |
+| A | insert at end of line |
+| C | delete from cursor to end of line, start inserting |
 
 ### The command line editor
 
@@ -101,10 +102,12 @@ You read this command as follows:
 
 ### Three other common commands are:
 
-`:q` | for quit
-`:w` | for write
-`:wq` | for write and then quit
-`:e filename` | to start editing another file
+| What you type | Resulting action |
+| --- | --- |
+| `:q` | quit (exit the file) |
+| `:w` | write (save any changes) |
+| `:wq` | for write and then quit |
+| `:e filename` | to start editing another file |
 
 The above is just a brief introduction.  The more you learn about vim the faster you will be able to edit files.
 
