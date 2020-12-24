@@ -1,0 +1,177 @@
+# Lab 4
+
+* Vim Editor
+* Linked List Practice
+
+## Learn the basics of the vim editor
+
+### vim/gvim Editor
+
+You do not need to learn or use vim/gvim for this class.<br>
+
+However, using an advanced editor (such as vim/gvim) can save you lots of time in the long run.
+
+### vim/gvim References
+
+Online version of Steve Oualline's [vim book](http://www.truth.sk/vim/vimbook-OPL.pdf).<br>
+
+If vim was correctly installed on your computer, you can run the command vimtutor:
+```
+$ vimtutor
+```
+This should take about 30 minutes and provides the basic commands.<br>
+
+An excellent [vi tutorial](https://engineering.purdue.edu/ECN/Support/KB/Docs/ViTextEditorTutorial) from Purdue (vim is a superset of vi, so learning vi is a great way to start learning vim)<br>
+
+[vim-adventures.com](https://vim-adventures.com/) allows you to learn vim commands while playing a game.  It has been highly recommended.
+
+### vi/vim/gvim
+
+vi | the original Unix editor (does not have as many features as vim)
+vim | a "New and iMproved" version of vi
+gvim | a version of vim with a graphical user interface (a little easier to learn, but will lead to bad habits)
+
+All three version use the same basic commands and have the same basic structure.<br>
+
+vim/gvim are available on most operating systems (Windows, Linux, OSX, etc).<br>
+
+Since gvim opens a new window, it does not always work when logging in remotely (e.g. ssh, putty.org)<br>
+
+ How to start editing a file:  
+```
+$ gvim filename
+```
+-or-
+```
+$ vim filename
+```
+### Modal interface
+For new users, the most difficult thing to get use to is vim's modal interface.<br>
+
+Unlike "normal" editors where everything you type is inserted into the document, gvim has two modes:
+* **Insert mode**: the keys you type are inserted into the file. Type an h and an h will be inserted into your file. (This the mode most other editors are always in.)
+* **Command mode**: the keys you type are commands. Type and h and the cursor will move to the left (the h key is the move to left command).
+
+There are several ways to enter insert mode (see below)
+* <esc> key stops the current insert
+
+### Moving around (while in command mode)
+
+h | left
+j | down
+k | up
+l | right
+
+/ | pattern is search
+n | is next
+? | is search back
+
+### Inserting text (must be in command mode to start inserting)
+
+i | insert before cursor
+a | insert after cursor
+
+I | insert at start of line
+A | insert at end of line
+
+C | delete from cursor to end of line, start inserting
+
+### The command line editor
+
+When vi was created, editors did not display the text being edited on the screen. The vi stands for visual.<br>
+
+vi was built on top of the line editor called ed. A line editor allows you to edit a single line at a time.<br>
+
+The line editor provides lots of vi's functionality (read file, write file, substitute).<br>
+
+When in command mode, ":" allows you to enter a command that is passed to the line editor.<br>
+
+For example, if you wanted to change all occurrence of foo to bar you could use the s (for substitute) command:
+```
+: 1,$ s/foo/bar/g
+```
+You read this command as follows:
+* When using the line editor, you must first tell it what lines you want to edit.
+* In the above example, the "1,$" tells the editor you want to edit all lines 1 to $ ($ stands for the last line).
+* The "s" stands for substitute.
+* After the first / you put the old string
+* After the second / you put the new string
+* The g stands for global (you want to substitute ALL the foo's on a given line to bar.
+
+### Three other common commands are:
+
+`:q` | for quit
+`:w` | for write
+`:wq` | for write and then quit
+`:e filename` | to start editing another file
+
+The above is just a brief introduction.  The more you learn about vim the faster you will be able to edit files.
+
+## Practice programming linked lists
+
+For the following exercises, use the files in your 211-starter-pack/211/lab04_list directory<br>
+
+### Exercise 1:
+
+Edit `main()` so that it reads numbers until end of input (use a while loop) and puts each number into a List object.<br>
+
+When the end of input is reached, have the list object print all the numbers.<br>
+
+Your program should work like this:
+```
+$ list
+1 2 3 4 5
+^D
+5
+4
+3
+2
+1
+$
+```
+
+### Exercise 2:
+
+Add a new member function (int List::sum()) to the `List` class that returns the sum of elements in the list.  In `main()` print the sum of elements after printing the list.  Do not sum the elements in `main()`.  The sum must be calculated in List::sum().
+
+Your program should work like this:
+```
+$ list
+1 2 3 4 5
+^D
+5
+4
+3
+2
+1
+sum = 15
+$
+```
+
+### Exercise 3:
+
+Write the List::insert_at_end(int value) function so it inserts at the end of the linked list. Update your `main()` so it calls `insert_at_end()` instead of `insert()`. Since the midterm will have similar programs, it would be best if you write this function without looking at your notes from class.<br>
+
+When you run your program it should work like this:
+```
+$ list
+1 2 3 4 5
+^D
+1
+2
+3
+4
+5
+sum = 15
+$
+```
+
+Turn in your new versions of list.h, list.cpp, and main.cpp.
+(You only have to turn in files for the last exercise -- the last exercise builds on the first exercises.  Since this is a multi-part exercise it will be worth 3 points.)
+
+***
+
+If you finish the exercises early you could:
+
+1. Work on p3 and/or
+2.  Look at the exams from previous semesters and write solutions to the linked list questions
