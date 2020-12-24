@@ -50,8 +50,8 @@ After All the values have been read (when cin >> my_double returns false)
 
 ## Testing
 
-Check your results against the three test cases that are available in your 211-starter-pack/211/lab07_dstack/tests.
+Check your results against the three test cases that are available in your 211-starter-pack/211/lab07_dstack/tests directory.
 
 ## Turning In
 
-Turn in dstack.h, dstack.cpp, and reverse.cpp (turn in reverse.cpp even if you use my version--this allows you to change it if you want to). 
+Submit dstack.h, dstack.cpp, and reverse.cpp to Turnin (turn in reverse.cpp even if you use my version -- this allows you to change it if you want to). 
