@@ -32,11 +32,9 @@ An excellent [vi tutorial](https://engineering.purdue.edu/ECN/Support/KB/Docs/Vi
 | vim | a "New and iMproved" version of vi |
 | gvim | a version of vim with a graphical user interface (a little easier to learn, but will lead to bad habits) |
 
-All three version use the same basic commands and have the same basic structure.<br>
-
-vim/gvim are available on most operating systems (Windows, Linux, OSX, etc).<br>
-
-Since gvim opens a new window, it does not always work when logging in remotely (e.g. ssh, putty.org)<br>
+* All three version use the same basic commands and have the same basic structure.
+* vim/gvim are available on most operating systems (Windows, Linux, OSX, etc).
+* Since gvim opens a new window, it does not always work when logging in remotely (e.g. ssh, putty.org)
 
  How to start editing a file:  
 ```
@@ -80,13 +78,10 @@ There are several ways to enter insert mode (see below)
 
 ### The command line editor
 
-When vi was created, editors did not display the text being edited on the screen. The vi stands for visual.<br>
-
-vi was built on top of the line editor called ed. A line editor allows you to edit a single line at a time.<br>
-
-The line editor provides lots of vi's functionality (read file, write file, substitute).<br>
-
-When in command mode, ":" allows you to enter a command that is passed to the line editor.<br>
+* When vi was created, editors did not display the text being edited on the screen. The vi stands for visual.
+* vi was built on top of the line editor called ed. A line editor allows you to edit a single line at a time.
+* The line editor provides lots of vi's functionality (read file, write file, substitute).
+* When in command mode, ":" allows you to enter a command that is passed to the line editor.
 
 For example, if you wanted to change all occurrence of foo to bar you could use the s (for substitute) command:
 ```
@@ -123,7 +118,7 @@ When the end of input is reached, have the list object print all the numbers.<br
 
 Your program should work like this:
 ```
-$ list
+$ ./list
 1 2 3 4 5
 ^D
 5
@@ -140,7 +135,7 @@ Add a new member function (int List::sum()) to the `List` class that returns the
 
 Your program should work like this:
 ```
-$ list
+$ ./list
 1 2 3 4 5
 ^D
 5
@@ -158,7 +153,7 @@ Write the List::insert_at_end(int value) function so it inserts at the end of th
 
 When you run your program it should work like this:
 ```
-$ list
+$ ./list
 1 2 3 4 5
 ^D
 1
@@ -177,5 +172,6 @@ Turn in your new versions of list.h, list.cpp, and main.cpp.
 
 If you finish the exercises early you could:
 
-1. Work on p3 and/or
+1. Work on p3
+-and/or-
 2.  Look at the exams from previous semesters and write solutions to the linked list questions
