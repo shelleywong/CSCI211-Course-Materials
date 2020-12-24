@@ -26,10 +26,11 @@ An excellent [vi tutorial](https://engineering.purdue.edu/ECN/Support/KB/Docs/Vi
 [vim-adventures.com](https://vim-adventures.com/) allows you to learn vim commands while playing a game.  It has been highly recommended.
 
 ### vi/vim/gvim
-
-vi | the original Unix editor (does not have as many features as vim)
-vim | a "New and iMproved" version of vi
-gvim | a version of vim with a graphical user interface (a little easier to learn, but will lead to bad habits)
+| Editor |  |
+| --- | --- |
+| vi | the original Unix editor (does not have as many features as vim) |
+| vim | a "New and iMproved" version of vi |
+| gvim | a version of vim with a graphical user interface (a little easier to learn, but will lead to bad habits) |
 
 All three version use the same basic commands and have the same basic structure.<br>
 
