@@ -118,7 +118,7 @@ Hint: think carefully about the dependencies (the files listed after the target)
 
 ## Exercise 4: Create a Course class
 
-Create a new class called `Course` (that is, create course.h and course.cpp).  You may start with the example code available in Blackboard: lab3_object.tar <br>
+Create a new class called `Course` (that is, create course.h and course.cpp).  You may start with the example code available in `lab03_object` (in the 211-starter-pack) <br>
 
 The `Course` class should have a single constructor and a print function:
 ```
