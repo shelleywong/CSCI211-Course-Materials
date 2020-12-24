@@ -2,4 +2,4 @@
 
 Discussion/Questions/Answers/Help on the Shapes assignment (p6)<br>
 
-If you turn in a complete version of p6 before lab, you do not have to attend.
+Attendance is still required. If you turn in a complete version of p6 that passes ALL tests before the start of lab, you do not have to attend.

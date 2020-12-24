@@ -2,4 +2,4 @@
 
 Discussion/Questions/Answers/Help on the Kwik-E-Mart Simulation (p5)<br>
 
-If you turn in a complete version of p5 before lab, you do not have to attend.
+Attendance is still required. If you turn in a complete version of p5 that passes ALL tests before the start of lab, you do not have to attend.
