@@ -3,6 +3,118 @@
 * Introducing the Linux make utility<br>
 * Practice Creating C++ Objects<br>
 
+## Overview of make
+The job of `make` => to create files
+
+### Example
+Suppose you have a file called hello.cpp and you want to create the executable called `hello`. You would type the command:
+```
+$ g++ -o hello hello.cpp
+```
+and g++ would generate `hello` for you.<br>
+
+Each time you change hello.cpp, you have to recompile it ($ g++ -o hello hello.cpp) to see if your changes work.<br>
+
+It can get very tiring typing $ g++ -o hello hello.cpp every time you want to compile your hello.cpp program.<br>
+
+If you use the `make` utility, instead of typing `$ g++ -o hello hello.cpp` to compile you would simply type:
+```
+$ make
+```
+
+### Steps for using make
+
+1. Create a file called `makefile` or `Makefile` (most people use Makefile so it appears first in directory using ls)
+2. Using an editor (such as atom, vim, nano) edit the file `Makefile`
+3. Insert the rules for creating the files (for making the files)
+4. Run the make utility by typing make at the bash command prompt
+
+### Advantages of make
+
+1. You only have to type the compilation command(s) once (that is, put them in the makefile)
+2. Make will only compile the files that have changed since the last time you compiled (this is really important in large projects where complete compilation may take several hours).<br>
+
+These are surprisingly big advantages.
+
+### Anatomy of a Makefile:
+
+This is a simple and complete makefile:
+```makefile
+hello: hello.cpp
+	g++ -o hello hello.cpp
+```
+
+NOTE: for most versions of make (including the one standard on Linux), the second line must start with a <tab> so it is a good habit to always use a <tab>. If vim does not automatically turn the <tab> key into an actual tab, you can insert a tab by typing (while in insert mode) `control-V` followed by a `tab` -OR- you can program vim to understand that Makefiles want tabs by adding the following line to your ~/.vimrc file:
+```
+autocmd FileType make set noexpandtab|set autoindent
+```
+
+This simple makefile contains a single rule that you can read like this:
+```
+If the file hello is older than the file hello.cpp then execute the command "g++ -o hello hello.cpp"
+```
+
+Basic format of rules in makefiles:
+```
+target_file : list_of_dependency_files
+<tab>command_to_build_target_file
+```
+
+### Multi-file make
+
+In C++ programs it is common to put each class in its own two files,  class_name.h for the class header, class_name.cpp for the class's member functions. The next example (lab03_sentence) contains three files:
+
+| File |   |
+| --- | --- |
+| main.cpp | the file containing the main() function |
+| sentence.h | the file containing the definition of class Sentence (class Sentence { .... };) |
+| sentence.cpp | the file containing the source code for class Sentence (the bodies of the member functions) |
+
+The most efficient way to compile such program is to compile each component into an object file (.o) and then combine the object files into an executable (the combination of .o files is called linking):<br>
+
+* `g++ -c main.cpp` will create the object file main.o
+* `g++ -c sentence.cpp` will create the object file sentence.o
+* `g++ -o sentence main.o sentence.o` will create the executable sentence (will link main.o and sentence.o into sentence)
+
+### simple makefile
+```makefile
+# This rule tells make how to "make" the executable sentence
+main: main.o sentence.o
+	g++ -Wall -pedantic -std=c++11 -g -o main main.o sentence.o
+
+# This rule tells make how to "make" the object file main.o
+main.o: main.cpp sentence.h
+	g++ -Wall -pedantic -std=c++11 -g -c main.cpp
+
+# This rule tells make how to "make" the object file sentence.o
+sentence.o: sentence.cpp sentence.h
+	g++ -Wall -pedantic -std=c++11 -g -c sentence.cpp
+
+
+# This rule tells make what to delete when the user type "make clean"
+# BE VERY CAREFUL to only put generated files here
+clean:
+	rm -f main.o sentence.o main
+```
+
+### Compiler Options
+
+The above Makefile uses the following command-line options for the g++ compiler:
+| Option |    |
+| --- | --- |
+| -c | Compile only: create a .o file, don't create an executable (such as a.out) |
+| -o *filename* | Name the output filename instead of the default a.out |
+| -g | Put some extra information in the output files (.o and executables) that can be used by the debugger (debuggers are discussed in a future lab) |
+| -Wall | Show all warnings (warnings help illuminate problems in your program, you should fix your code so there are no warnings) |
+| -pedantic | Issue all the warnings demanded by strict ISO C and ISO C++ (i.e. issue warnings if your program does not follow the standard exactly) |
+| -std=c++11 | Use the newest C++ standard (C++11).  In the near future all C++ programs will need to conform to C++11. |
+
+### Default Rules
+
+There are many default rules built into various versions of make. Thus in a large project the makefile would not contain a rule for every single source file.<br>
+
+When learning how to use make it is best to avoid the default rules and put in explicit rules for each file.
+
 ## Exercise 1: The make utility
 \* You must complete this [Google Survey](https://docs.google.com/forms/d/e/1FAIpQLSft0f3fr4rMs0LIK2KWWbEs2EMYqQSBPFYjAcQzJWgQM3eq_A/viewform?usp=sf_link) to get credit for Exercises 1 & 2 \*
 
