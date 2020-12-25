@@ -29,8 +29,8 @@ Detecting End of Input, Using Standard Error, Returning from main()
 ### Manual Testing
 ```
 $ ./videos < tests/t01.in > results/t01.myout 2> results/t01.myerr
-$ vimdiff results/t01.myout tests/t01.myerr
-$ vimdiff results/t01.myerr tests/t01.myerr
+$ vimdiff results/t01.myout tests/t01.out
+$ vimdiff results/t01.myerr tests/t01.err
 ```
 
 ### Tools
@@ -54,7 +54,7 @@ Many of the directories in 211-starter-pack/211 include a subdirectory called `t
 
 This is how you could use `run_tests`, `vd`, and `vde` to test lab02_even (a directory that contains a `tests` subdirectory):<br>
 
-Copy each bash script from 211-starter-pack/bin into the lab02_even directory (complete this step from the 211-starter-pack directory -- if you type `pwd`, you should see your/path/211-starter-pack)
+Copy each bash script from 211-starter-pack/bin into the lab02_even directory (complete this step from the 211-starter-pack directory -- if you type `pwd`, you should see your/path/211-starter-pack):
 ```
 $ cp bin/run_tests 211/lab02_even/
 $ cp bin/vd 211/lab02_even/
@@ -63,7 +63,7 @@ $ cp bin/vde 211/lab02_even/
 
 Change to the lab02_even directory. You should see all of the bash scripts listed there (along with the other files that were already in the directory). Exercise 2 includes directions for writing a program called even.cpp.<br>
 
-After you have successfully compiled even.cpp, you will have an executable called `even` and can use `run_tests` to check to see if your program passes all of the provided tests. (For other programs, substitute the appropriate executable in place of `even`).
+After you have successfully compiled even.cpp, you will have an executable called `even` and can use `run_tests` to check to see if your program passes all of the provided tests. (For other programs, substitute the appropriate executable in place of `even`):
 ```
 $ ./run_tests even
 Executing tests for <./even>
@@ -77,7 +77,7 @@ $
 ```
 The example above shows that all tests passed.<br>
 
-If one or more tests fail, you will get output that indicates which test(s) failed.
+If one or more tests fail, you will get output that indicates which test(s) failed:
 ```
 $ ./run_tests even
 Executing tests for <./even>
