@@ -1,7 +1,7 @@
 # Lab 4
 
-* Vim Editor
-* Linked List Practice
+* Learn the basics of the Vim Editor
+* Practice programming Linked List -- be prepared for the midterm
 
 ## Learn the basics of the vim editor
 
@@ -174,4 +174,4 @@ If you finish the exercises early you could:
 
 1. Work on p3<br>
 -and/or-
-2.  Look at the exams from previous semesters and write solutions to the linked list questions
+2.  Look at the [exams from previous semesters](http://www.ecst.csuchico.edu/~trhenry/classes/211.s17/exams.html) and write solutions to the linked list questions
