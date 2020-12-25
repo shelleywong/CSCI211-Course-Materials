@@ -39,3 +39,7 @@ int *array = new int[length()];
 ## Exercise 4
 
 Write a function that removes all duplicate entries in the list. Assume that the list is ordered from smallest to largest, thus all duplicates will be next to each other. For example, if the list contained {1,2,2,2,3,3,4,5,5,5,5,5,6} before calling `remove_duplicates()`, it should contain {1,2,3,4,5,6} after. Do nothing if the list is empty or contains no duplicates.
+
+***
+
+If you finish early, you should practice writing linked list solutions for questions from the [previous semester exams](http://www.ecst.csuchico.edu/~trhenry/classes/211.s17/exams.html)
