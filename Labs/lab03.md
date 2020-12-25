@@ -102,7 +102,7 @@ The above Makefile uses the following command-line options for the g++ compiler:
 | Option |    |
 | --- | --- |
 | `-c` | Compile only: create a .o file, don't create an executable (such as a.out) |
-| `-o *filename*` | Name the output filename instead of the default a.out |
+| `-o filename` | Name the output filename instead of the default a.out |
 | `-g` | Put some extra information in the output files (.o and executables) that can be used by the debugger (debuggers are discussed in a future lab) |
 | `-Wall` | Show all warnings (warnings help illuminate problems in your program, you should fix your code so there are no warnings) |
 | `-pedantic` | Issue all the warnings demanded by strict ISO C and ISO C++ (i.e. issue warnings if your program does not follow the standard exactly) |
