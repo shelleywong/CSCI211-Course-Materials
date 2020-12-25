@@ -16,7 +16,7 @@ You may work on paper or you may work on-line. Driver programs that call these f
 * lab10_sorted
 * lab10_isint<br>
 
-Steps for creating a recursive solution:
+## Steps for creating a recursive solution:
 1. Define the problem in terms of a smaller problem of the same type.
 2. Create an algorithm that reduced the size of the problem at each step (on each recursive call).
 3. Identify a stopping condition (called a base case).
