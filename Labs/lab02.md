@@ -27,20 +27,63 @@ Detecting End of Input, Using Standard Error, Returning from main()
   * echo $?
 
 ### Manual Testing
+
+A quick review of the basic manual testing options
+
+#### Program with Output and No Input
+`hello` is an executable (a compiled program). The `>` takes standard output (what was written to the screen) and redirects it to a file (called `t01.myout` in this example):
+```
+$ ./hello > t01.myout
+```
+
+#### Program with Input and Output
+This program can be tested using the same mechanism described above, except now we will redirect standard input (using <) and standard output (using >). In this case, the executable is called num and standard input comes from t01.in.
+```
+$ ./num < t01.in > t01.myout
+```
+
+#### Program with Input, Output, and Error Output
+This program can be tested using the same mechanism described above, except this time we include error messages written to standard error (using `cerr <<`  instead of `cout <<`)
+```
+$ ./videos < t01.in > t01.myout 2> t01.myerr
+```
+
+#### cat
+Use the Linux `cat` utility to view the contents of `t01.myout`:
+```
+$ cat t01.myout
+Hello world!
+$
+```
+
+#### diff
+Compare your output (`t01.myout`) to the correct output (`t01.out`) using the  Linux diff utility. If the two files match, the diff prints nothing, and your program produced the correct output:
+```
+$ diff t01.myout t01.out
+$
+```
+
+#### vimdiff
+The tool vimdiff is an alternative to using diff that highlights the differences between two files. You can move around just like in the vim editor. If you don't know the vim editor, exit vimdiff by typing `:qa`, then press `enter`. If you appear to be stuck, try pressing the escape key before the `:qa`
+```
+$ vimdiff t01.myout t01.out
+```
+
+#### A full example
+A full example -- in this case, a `tests` directory was provided that contains standard input files (\*.in), with the correct standard output files (\*.out) and standard error files (\*.err). A `results` directory (created before the following commands) will hold the standard output (\*.myout) and standard error (\*.myerr) produced by your program.
 ```
 $ ./videos < tests/t01.in > results/t01.myout 2> results/t01.myerr
 $ vimdiff results/t01.myout tests/t01.out
-$ vimdiff results/t01.myerr tests/t01.err
+$ diff results/t01.myerr tests/t01.err
 ```
 
 ### Tools
 
-The following can all be used to automatically run multiple tests:<br>
+It is important that you understand the manual testing options listed above, but when you need to pass a lot of tests, having options that allow you to automatically run multiple tests at a time is VERY useful. The following tools are all available to you:<br>
 * run_tests
 * vd
 * vde
-* https://turnin.ecst.csuchico.edu/  
-  * NOTE: only works for https, University firewall stops http requests.<br>
+* [Turnin](https://turnin.ecst.csuchico.edu/)
 
 `run_tests`, `vd`, and `vde` are bash scripts that should be included in your ~211-starter-pack/bin directory that you downloaded (211-starter-pack.tar).
 ```
@@ -54,7 +97,7 @@ Many of the directories in 211-starter-pack/211 include a subdirectory called `t
 
 This is how you could use `run_tests`, `vd`, and `vde` to test lab02_even (a directory that contains a `tests` subdirectory):<br>
 
-Copy each bash script from 211-starter-pack/bin into the lab02_even directory (complete this step from the 211-starter-pack directory -- if you type `pwd`, you should see your/path/211-starter-pack):
+Copy each bash script from 211-starter-pack/bin into the lab02_even directory (this examples is completed from the 211-starter-pack directory as downloaded, but your paths may differ based on how you've set up your environment):
 ```
 $ cp bin/run_tests 211/lab02_even/
 $ cp bin/vd 211/lab02_even/
@@ -75,9 +118,8 @@ Passed 4 out of 4 tests.
 Failed 0 out of 4 tests.
 $
 ```
-The example above shows that all tests passed.<br>
 
-If one or more tests fail, you will get output that indicates which test(s) failed:
+If one or more tests fail, you will get output that indicates which test(s) failed. In this example, t01 and t04 passed, while t02 and t03 both failed with stdout, stderr, and exit_status errors.
 ```
 $ ./run_tests even
 Executing tests for <./even>
@@ -88,21 +130,20 @@ Passed t04
 Passed 2 out of 4 tests.
 Failed 2 out of 4 tests.
 ```
-The example above shows that t01 and t04 passed, while t02 and t03 both failed with stdout, stderr, and exit_status errors.<br>
 
-You can use vd to do a vimdiff examining the standard output of a specific test (This example compares the standard output in tests/t02.out with the standard output in results/t02.myout):
+The `vd` script shortens the command you have to type to do a vimdiff examining the standard output of a specified test (This example compares the standard output in tests/t02.out with the standard output in results/t02.myout):
 ```
 $ vd 02
 ```
 
-You can use vde to do a vimdiff examining the standard error of a specific test (This example compares the standard output in tests/t03.err with the standard output in results/t03.myerr):
+The `vde` script shortens the command you have to type to do a vimdiff examining the standard error of a specific test (This example compares the standard error in tests/t03.err with the standard error in results/t03.myerr):
 ```
 $ vde 03
 ```
 
-Using these tools can help you quickly determine if your program is passing or failing, without flooding the Turnin server with failed submissions. The specific tests that have failed can help you narrow down where to look for problem(s) in your program.<br>
+Using these tools can help you quickly determine if your program is passing or failing all tests, identify which sections of your code might contain bugs, and help make sure the Turnin server stays up and running.<br>
 
-I have described one simple and safe way to use these tools, but you are not required to follow this method. The main thing I want to emphasize is that these tools are available to you, and you should use them! The tests won't always catch every edge case, but they can be a great help to you throughout the semester.
+I have described one simple and safe way to use these tools, but you are not required to follow this method. Do what works for you. The main thing I want to emphasize is that these tools are available, and you should use them! The tests won't always catch every edge case, but they can be a great help to you throughout the semester.
 
 ### Detecting the end of input (often called EOF for "end of file")
 
