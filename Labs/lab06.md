@@ -56,7 +56,7 @@ The following table lists the most commonly used gdb commands (these are the mos
 | help | h | W/o and argument lists help topics. If followed by a command, will describe that command:  e.g. `help run` |
 | run | r | Start running the current program. May be followed with command line arguments:  e.g. `run < t01.in` |
 | print | p | Print the given variable. For example, if there is a variable i in the current context, `print i` will print the value of i. |
-| list | l | List the C++ code for the currently executing instruction. List advances through the code each time it is called. |
+| list | l | List the C++ code for the currently executing instruction. List advances through the code each time it is called. (lowercase L)|
 | list 42 | l 42 | Lists the code at line 42 (you may pass any number here) |
 | where | where | Prints the current line number and all the functions that were called to get there (prints the run time stack). |
 | up | up | Move up to the function that called the current function (move up the run-time stack, see `where` above). For example, if main() calls foo() and gdb is stopped in foo(), the `up` command will move gdb's focus to main() so you can see what was going on in main(). |
