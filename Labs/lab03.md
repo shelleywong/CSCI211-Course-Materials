@@ -4,7 +4,7 @@
 * Practice Creating C++ Objects<br>
 
 ## Overview of make
-The job of `make` => to create files
+The job of `make` is to create files
 
 ### Example
 Suppose you have a file called hello.cpp and you want to create the executable called `hello`. You would type the command:
@@ -13,9 +13,9 @@ $ g++ -o hello hello.cpp
 ```
 and g++ would generate `hello` for you.<br>
 
-Each time you change hello.cpp, you have to recompile it ($ g++ -o hello hello.cpp) to see if your changes work.<br>
+Each time you change hello.cpp, you have to recompile it (using `$ g++ -o hello hello.cpp`) to see if your changes work.<br>
 
-It can get very tiring typing $ g++ -o hello hello.cpp every time you want to compile your hello.cpp program.<br>
+It can get very tiring typing `$ g++ -o hello hello.cpp` every time you want to compile your hello.cpp program.<br>
 
 If you use the `make` utility, instead of typing `$ g++ -o hello hello.cpp` to compile you would simply type:
 ```
@@ -27,7 +27,7 @@ $ make
 1. Create a file called `makefile` or `Makefile` (most people use Makefile so it appears first in directory using ls)
 2. Using an editor (such as atom, vim, nano) edit the file `Makefile`
 3. Insert the rules for creating the files (for making the files)
-4. Run the make utility by typing make at the bash command prompt
+4. Run the make utility by typing `make` at the bash command prompt
 
 ### Advantages of make
 
@@ -44,15 +44,14 @@ hello: hello.cpp
 	g++ -o hello hello.cpp
 ```
 
-NOTE: for most versions of make (including the one standard on Linux), the second line must start with a <tab> so it is a good habit to always use a <tab>. If vim does not automatically turn the <tab> key into an actual tab, you can insert a tab by typing (while in insert mode) `control-V` followed by a `tab` -OR- you can program vim to understand that Makefiles want tabs by adding the following line to your ~/.vimrc file:
+NOTE: for most versions of make (including the one standard on Linux), the second line must start with a \<tab\> so it is a good habit to always use a \<tab\>. If vim does not automatically turn the \<tab\> key into an actual tab, you can insert a tab by typing (while in insert mode) `control-V` followed by a `tab` -OR- you can program vim to understand that Makefiles want tabs by adding the following line to your ~/.vimrc file:
 ```
 autocmd FileType make set noexpandtab|set autoindent
 ```
 
 This simple makefile contains a single rule that you can read like this:
-```
-If the file hello is older than the file hello.cpp then execute the command "g++ -o hello hello.cpp"
-```
+
+> If the file hello is older than the file hello.cpp then execute the command "g++ -o hello hello.cpp"
 
 Basic format of rules in makefiles:
 ```
@@ -92,7 +91,7 @@ sentence.o: sentence.cpp sentence.h
 
 
 # This rule tells make what to delete when the user type "make clean"
-# BE VERY CAREFUL to only put generated files here
+# The files are deleted -- BE VERY CAREFUL to only put generated files here
 clean:
 	rm -f main.o sentence.o main
 ```
@@ -102,12 +101,12 @@ clean:
 The above Makefile uses the following command-line options for the g++ compiler:
 | Option |    |
 | --- | --- |
-| -c | Compile only: create a .o file, don't create an executable (such as a.out) |
-| -o *filename* | Name the output filename instead of the default a.out |
-| -g | Put some extra information in the output files (.o and executables) that can be used by the debugger (debuggers are discussed in a future lab) |
-| -Wall | Show all warnings (warnings help illuminate problems in your program, you should fix your code so there are no warnings) |
-| -pedantic | Issue all the warnings demanded by strict ISO C and ISO C++ (i.e. issue warnings if your program does not follow the standard exactly) |
-| -std=c++11 | Use the newest C++ standard (C++11).  In the near future all C++ programs will need to conform to C++11. |
+| `-c` | Compile only: create a .o file, don't create an executable (such as a.out) |
+| `-o *filename*` | Name the output filename instead of the default a.out |
+| `-g` | Put some extra information in the output files (.o and executables) that can be used by the debugger (debuggers are discussed in a future lab) |
+| `-Wall` | Show all warnings (warnings help illuminate problems in your program, you should fix your code so there are no warnings) |
+| `-pedantic` | Issue all the warnings demanded by strict ISO C and ISO C++ (i.e. issue warnings if your program does not follow the standard exactly) |
+| `-std=c++11` | Use the newest C++ standard (C++11).  In the near future all C++ programs will need to conform to C++11. |
 
 ### Default Rules
 
