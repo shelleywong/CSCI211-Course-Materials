@@ -6,7 +6,7 @@ Points: 150
 ## Objectives
 
 * Practice classes and objects
-* Review getting input from standard in
+* Review reading input from standard in
 * Practice comparison of strings
 * Practice dynamic memory allocation
 * Practice writing to standard out
@@ -33,7 +33,7 @@ Return an exit status of `0` if there are no errors, or `1` if there is an error
 
 Use an array of pointers to videos (`Video *`) to store the videos. Use dynamic memory to create a `new Video` object for each description read.<br>
 
-> Note: use the C++ `new` operator to allocate dynamic memory
+> Note: use the C++ `new` operator to dynamically allocate memory
 
 The first thing in the input must be the sorting criteria (on its own line).  The valid strings are "rating", "length", and "title."<br>
 
@@ -78,7 +78,7 @@ Best guinea pig interview
 1
 ```
 
-The following is the correct output for this example (sorted by rating as specified in the above input):
+The following is the correct output for this example (sorted by rating as specified in the above input, with each video output on one line):
 ```
 It's Not About the Nail, https://www.youtube.com/watch?v=-4EDhdAHrOg, Favorite web video, 1.68, *****
 Spaces Versus Tabs, https://www.youtube.com/watch?v=SsoOG6ZeyUI, Decide for yourself: spaces or tabs?, 2.83, ****
@@ -132,7 +132,7 @@ for (int last = num_videos -1; last > 0; last--)
 ## Plan of Attack:
 
 Work Step by Step:
-1. Create video.h with an empty class definition, using the `#ifndef`/`#endif` construct. [Lab 3](https://github.com/shelleywong/CSCI211-Course-Materials/blob/main/Labs/lab03.md#L230) and the 211-starter-pack/211/lab03_object directory include a good starter example. 
+1. Create video.h with an empty class definition, using the `#ifndef`/`#endif` construct. [Lab 3](https://github.com/shelleywong/CSCI211-Course-Materials/blob/main/Labs/lab03.md#exercise-4-create-a-course-class) and the 211-starter-pack/211/lab03_object directory include a good starter example.
 2. Create an empty video.cpp that includes video.h
 3. Create main.cpp and write an empty `main()` (a main function that does not do anything). main.cpp should also `#include "video.h"`.
 4. Create a `Makefile` (you may use the `Makefile` provided in 211-starter-pack/211/p2). Ensure the `Makefile` is in your current directory, and compile the assignment using the `make` utility. If you named the files as specified above, double check that you only include `.h` files (never include a `.cpp` file). You can compile your program simply by typing "make" at the command prompt:
@@ -156,7 +156,7 @@ temp_video_pointer->print();
 
 ## General Requirements:
 
-Programs should be well formatted and consistent so they are easy to read. The same [Comments, Formatting, and Style](https://github.com/shelleywong/CSCI211-Course-Materials/blob/main/Programs/program01.md#L128) guidelines listed in P1 apply here.<br>
+Programs should be well formatted and consistent so they are easy to read. The same [Comments, Formatting, and Style](https://github.com/shelleywong/CSCI211-Course-Materials/blob/main/Programs/program01.md#comments-formatting-and-style) guidelines listed in P1 apply here.<br>
 
 Remember that the first lines of all your files (.h and .cpp) must contain the following comments:
 ```
