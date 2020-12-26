@@ -3,7 +3,7 @@
 CSCI 211: Programming and Algorithms II<br>
 Points: 100
 
-## Objective
+## Objectives
 
 * Give you more experience with C++ and programming in a Linux environment
 * Practice text input and output
@@ -65,12 +65,6 @@ Note: text between a `<` and a `>` is text that the user types. Sometimes it is 
 Your program must work exactly like this. It must not print any other characters.<br>
 
 > Note: If you think your test looks correct but is not passing some tests, whitespace may not match -- check your spaces and endlines (endl or '\n')
-
-## Testing Your Program
-
-* Some sample tests and a Makefile are included in 211-starter-pack/211/p1.
-* [Lab 2](https://github.com/shelleywong/CSCI211-Course-Materials/blob/main/Labs/lab02.md) includes instructions for testing your program using the provided sample tests.
-* I will test your program with additional tests not posted in the test directory. It is a very good idea to design and implement your own set of tests.
 
 ## Tips & Best Practices
 
@@ -153,13 +147,19 @@ I don't have a style guide preference, but you should strive for readability, co
 
 I will deduct points if your program is not well-formatted or you don't have sufficient and useful comments -- make sure to ask the instructor if you are unclear what is expected of you for this requirement.<br>
 
-### Turning in Your Program
+## Testing Your Program
+
+* Some sample tests and a Makefile are included in 211-starter-pack/211/p1.
+* [Lab 2](https://github.com/shelleywong/CSCI211-Course-Materials/blob/main/Labs/lab02.md) includes instructions for testing your program using the provided sample tests.
+* I will test your program with additional tests not posted in the test directory. It is a very good idea to design and implement your own set of tests.
+
+## Submitting Your Program
 
 I will deduct points if your program does not compile using the command `g++ -o chart chart.cpp` on a Linux machine (such as ecc-linux.csuchico.edu). If you submit your program on [Turnin](https://turnin.ecst.csuchico.edu/) and you get the message "Make did not report any errors", your program compiled without any errors.<br>
 
 I will grade your program using another program, so if your program does not work exactly as specified above you will lose points. For example, if you put a space at the end of the line, or a blank line at the end of the output, you will lose points. Test your program using the provided sample tests and `diff`, `vimdiff`, or the `run_tests` script to make sure your output matches exactly.
 
-#### You must submit the following file to Turnin:
+Turn in the following file using [Turnin](https://turnin.ecst.csuchico.edu).
 ```
 chart.cpp
 ```
