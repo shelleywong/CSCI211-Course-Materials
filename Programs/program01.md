@@ -1,7 +1,7 @@
 # Program 1: Chart
 
 CSCI 211: Programming and Algorithms II<br>
-Grading Weight: 1
+Points: 100
 
 ## Objective
 
@@ -18,7 +18,7 @@ This program reads a set of integers from standard input and draws a bar chart t
 
 The user specifies a set of up to 100 integers greater than 0. When the user enters a 0, the program will stop reading standard input and print the chart.<br>
 
-For example, if the user entered, 1 2 3 4 3 2 1 10 0, your program must print:
+For example, if the user entered, `1 2 3 4 3 2 1 10 0`, your program must print:
 ```
        *
        *
@@ -58,7 +58,7 @@ $
 ```
 <1><space><4><space><2><space><3><space><0><enter>
 ```
-Note: text between a "<" and a ">" is text that the user types. Sometimes it is a single key, sometimes it is a string. "<" and ">" are often used to delineate characters a user types. In the above string, <1> represents the 1 key, <space> represents the space bar.
+Note: text between a `<` and a `>` is text that the user types. Sometimes it is a single key, sometimes it is a string. `<` and `>` are often used to delineate characters a user types. In the above string, <1> represents the 1 key, and \<space\> represents the space bar.
 * Then the program printed the chart (the asterisks and spaces).
 * The final "$" is the Linux command prompt (not printed by the program).<br>
 
@@ -127,7 +127,7 @@ If you don't finish in time, turn in what you have. If you turn nothing in I wil
 
 ### Use Functions
 
-The `main()` function is the first function that's called when a C++ program begins execution. While it is possible to write an entire program in `main()`, it is generally better practice to separate the functionality of a program into independent modules. The `main()` should just be used as a driver to call other functions.<br>
+The `main()` function is the first function that's called when a C++ program begins execution. While it is possible to write an entire program in `main()`, you should try to separate the functionality of a program into independent modules (think of each module/function as a small program that executes a specific task). The `main()` should just be used as a driver to call other functions.<br>
 
 Consider how your program could be divided into subtasks, and put each subtask into its own function. Define your function prototypes near the top of your program and write the functions after your `main()`.
 
@@ -136,7 +136,7 @@ Consider how your program could be divided into subtasks, and put each subtask i
 Your program should:
 * Be neatly organized
 * Be consistently indented (you may want to [use spaces instead of tabs](http://www.ecst.csuchico.edu/~trhenry/classes/general/code_formatting.html))
-* Have informative comments throughout.<br>
+* Have informative comments throughout<br>
 
 Doing these things will make your code more readable, more understandable, easier to maintain, and easier to debug (not to mention future instructors and employers may expect it).<br>
 
@@ -163,13 +163,13 @@ I will grade your program using another program, so if your program does not wor
 ```
 chart.cpp
 ```
-All programming assignments are individual assignments -- you are expected to complete and submit your own program.<br>
+All programming assignments are **individual** assignments -- you are expected to complete and submit your own program.<br>
 
 Assignments can be turned in up to 48 hours late with a 15% penalty.
 
 ## Extra Credit: (10 points)
 
-If you do the extra credit you have to turn in a second `chart.cpp` ("p1 extra" on [Turnin](https://turnin.ecst.csuchico.edu/)). Make sure you do not change/delete your original chart.cpp.<br>
+If you do the extra credit you have to turn in a second `chart.cpp` ("p1 extra" on [Turnin](https://turnin.ecst.csuchico.edu/)). Make sure you do not change or delete your original `chart.cpp`.<br>
 
 No extra credit will be give to late assignments (both the regular assignment and the extra credit must be turned in on time).<br>
 
