@@ -123,7 +123,7 @@ If you don't finish in time, turn in what you have. If you turn nothing in I wil
 
 Your program should:
 * Be neatly organized
-* Be consistently indented (you may want to [use spaces instead of tabs](http://www.ecst.csuchico.edu/~trhenry/classes/general/code_formatting.html))
+* Be consistently indented (make sure your code blocks align)
 * Have informative comments throughout<br>
 
 Doing these things will make your code more readable, more understandable, easier to maintain, and easier to debug (not to mention future instructors and employers may expect it).<br>
@@ -138,6 +138,10 @@ The first lines of all your files (.h and .cpp) must contain the following comme
 Throughout your program, you should have brief comments describing how a line or section of code works. You shouldn't need a comment on every line, but consider including a comment before each function or for any nontrivial piece of code.<br>
 
 Use descriptive variable names. Avoid ambiguous or short variable names, with the exception of loop counters (e.g., i, j, k).<br>
+
+Use all lowercase for your file names (e.g. "chart.cpp"). We will start using classes in future programs -- use a capital letter to name classes in your code (e.g. `Video`)<br>
+
+To ensure your code is consistently indented, you may want to [use spaces instead of tabs](http://www.ecst.csuchico.edu/~trhenry/classes/general/code_formatting.html))<br>
 
 I don't have a style guide preference, but you should strive for readability, consistency, and providing enough documentation so that another person (or Future You) can easily understand what your code is doing. <br>
 
