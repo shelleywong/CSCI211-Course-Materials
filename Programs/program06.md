@@ -16,7 +16,7 @@ The goal of this program is to provide practice in implementing inheritance in C
 
 You will create 5 shape classes: Shape (the base class), Square, Point, Triangle, Circle, and a Grid class. Each shape class will draw itself onto a Grid object.<br>
 
-`Makefile` and `main()` files have been provided for you in 211-starter-pack/211/p6, so you don't have to worry about the compilation step or parsing the program input.<br>
+> Note: `Makefile` and `main()` files have been provided for you in 211-starter-pack/211/p6, so you don't have to worry about the compilation step or parsing the program input.
 
 The `main` program will read shape descriptions (square, point, triangle, circle) and draw them onto a `Grid`. It will then draw the grid. For example, the following input:
 ```
