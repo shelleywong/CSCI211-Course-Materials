@@ -118,6 +118,8 @@ I suggest you implement and test the stack before you tackle the calculator aspe
 
 You can't just use `getline()` or `cin >> string_variable` for this program because you usually don't know if an operator or an operand (a number) will be the next thing in the input stream. You will need to use `cin.peek()` to look at the next character in the input. `cin.peek()` returns the next character without actually reading it. In other words, the next character you read will be the one returned by `cin.peek()`. If it is whitespace (space, tab, newline) you can skip it using `cin.ignore()`. If it is a legal operator, you can read the single character using `cin >> char_variable`. If the next character is a digit, you can use `cin >> double_variable` to read the entire number.  `cin.peek()` returns EOF (which is defined as -1) if end-of-file is true.
 
+> Note: The [cctype library](https://www.cplusplus.com/reference/cctype/) provides some functions that may be useful for checking characters from input.
+
 ## General Requirements
 
 Programs should be well formatted and consistent so they are easy to read. The same [General Requirements](https://github.com/shelleywong/CSCI211-Course-Materials/blob/main/Programs/program01.md#general-requirements) listed in P1 apply here, including the guidelines for Comments, Formatting, and Style.<br>
@@ -145,6 +147,10 @@ calc.cpp
 dstack.h
 dstack.cpp
 ```
+
+All programming assignments are **individual** assignments -- you are expected to complete and submit your own program.<br>
+
+Assignments can be turned in up to 48 hours late with a 15% penalty.
 
 ## Extra credit
 
