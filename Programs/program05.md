@@ -141,7 +141,7 @@ The `Pqueue` class is a priority queue of `Cust` pointers. It must only contain 
 **Required structures (struct)**:
 | Struct | Purpose |
 | --- | --- |
-| struct Checker | Stores information about a checker:<br>
+| struct Checker | Stores information about a checker:
 * money in the register
 * time a checker is done serving the current customer OR time checker's break ends (<= clock if not on break, >= clock if on break or serving a customer)
 * a pointer to a Cust (if currently checking out a customer, the Cust pointer will point to that customer, if not serving a customer it will point to NULL) |
