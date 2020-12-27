@@ -135,7 +135,9 @@ The first lines of all your files (.h and .cpp) must contain the following comme
 // your Chico Portal/Turnin username
 // Short summary of the contents of the file (this part is optional, but useful)
 ```
-Throughout your program, you should have brief comments describing how a line or section of code works. You shouldn't need a comment on every line, but consider including a comment before each function or for any nontrivial piece of code.
+Throughout your program, you should have brief comments describing how a line or section of code works. You shouldn't need a comment on every line, but consider including a comment before each function or for any nontrivial piece of code.<br>
+
+Use descriptive variable names. Avoid ambiguous or short variable names, with the exception of loop counters (e.g., i, j, k).<br>
 
 I don't have a style guide preference, but you should strive for readability, consistency, and providing enough documentation so that another person (or Future You) can easily understand what your code is doing. <br>
 
