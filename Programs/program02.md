@@ -175,7 +175,7 @@ Remember that the first lines of all your files (.h and .cpp) must contain the f
 
 You MUST turn in your assignment several times (at least three) during development. Only the last submission has to compile and run and only the last submission will be graded. The submissions should show your progress (e.g. the first submission has a little bit of the program working, the second a little more, etc). When I suspect cheating I will look at these early submissions for a clear development trend; I want to prevent students from copying finished programs from another student and then turning them in.<br>
 
-Turn in the following files using [Turnin](https://turnin.ecst.csuchico.edu).
+Turn in the following files using [Turnin](https://turnin.ecst.csuchico.edu):
 ```
 video.h
 video.cpp
