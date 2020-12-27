@@ -119,12 +119,6 @@ If you don't finish in time, turn in what you have. If you turn nothing in I wil
 
 ## General Requirements
 
-### Use Functions
-
-The `main()` function is the first function that's called when a C++ program begins execution. While it is possible to write an entire program in `main()`, you should try to separate the functionality of a program into independent modules (think of each module/function as a small program that executes a specific task). The `main()` should just be used as a driver to call other functions.<br>
-
-Consider how your program could be divided into subtasks, and put each subtask into its own function. Define your function prototypes near the top of your program and write the functions after your `main()`.
-
 ### Comments, Formatting, and Style
 
 Your program should:
@@ -146,6 +140,12 @@ Throughout your program, you should have brief comments describing how a line or
 I don't have a style guide preference, but you should strive for readability, consistency, and providing enough documentation so that another person (or Future You) can easily understand what your code is doing. <br>
 
 I will deduct points if your program is not well-formatted or you don't have sufficient and useful comments -- make sure to ask the instructor if you are unclear what is expected of you for this requirement.<br>
+
+### Use Functions
+
+The `main()` function is the first function that's called when a C++ program begins execution. While it is possible to write an entire program in `main()`, you should try to separate the functionality of a program into independent modules (think of each module/function as a small program that executes a specific task). The `main()` should just be used as a driver to call other functions.<br>
+
+Consider how your program could be divided into subtasks, and put each subtask into its own function. Define your function prototypes near the top of your program and write the functions after your `main()`.
 
 ## Testing Your Program
 
