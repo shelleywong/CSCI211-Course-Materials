@@ -35,7 +35,7 @@ Create a linked list class of `Video *` and call it `Vlist`. Put this class in t
 Put the `main()` function in the file main.cpp
 > Note:  You MUST use the file names and variable names dictated by the instructions. This allows any programmer to use your interface. I cannot debug your program if your interface differs from the specifications. Also, your program will not pass the Turnin tests.
 
-The linked list should always be ordered alphabetically by title. The insert function should insert videos so that after the insert all videos in the list are ordered alphabetically.<br>
+The linked list should always be ordered alphabetically by title. The `insert` function should insert videos so that after the insert all videos in the list are ordered alphabetically.<br>
 
 All member variables of class `Video` and class `Vlist` must be **private**.<br>
 
@@ -62,7 +62,7 @@ Your program must handle the following commands. The arguments for the command a
 
 | Command | Action | Input Arguments** | Error |
 | --- | --- | --- | --- |
-| insert | Insert a new video into the linked list. | Title, url, comment, length, rating | Title is already in the list. See error messages below. |
+| insert | Insert a new video into the linked list. | title, url, comment, length, rating | Title is already in the list. See error messages below. |
 | print | Print all the videos in the list using the format from p2. | none | none (print nothing if list is empty) |
 | length | Print the number of videos in the list as a single integer (don't print anything other than the integer). | none | none (print 0 if the list is empty) |
 | lookup | If the given title is in the list, print the video using the format from p2. | title (may contain spaces) | Title is not in list. |
@@ -76,9 +76,9 @@ The input will not contain any errors other than those listed in this section.  
 
 | Command | Error | Error Message (replace XXX with the title entered by user, print the < and >) |
 | --- | --- | --- |
-| insert | Title already in list. | Could not insert video <XXX>, already in list. |
-| lookup | Title not in list. | Title <XXX> not in list. |
-| remove | Title not in list. | Title <XXX> not in list, could not delete. |
+| insert | Title already in list. | Could not insert video \<XXX\>, already in list. |
+| lookup | Title not in list. | Title \<XXX\> not in list. |
+| remove | Title not in list. | Title \<XXX\> not in list, could not delete. |
 
 If the user enters a command other than (insert, print, length, lookup, remove), print the following error message and **terminate the program** with an exit status of 1. Replace the XXX with the command entered (make sure you print < and > in your error message).
 ```
@@ -95,21 +95,21 @@ If the user enters a command other than (insert, print, length, lookup, remove),
 6. Use `getline()` to read all the commands. `getline()` will automatically throw away the newline character at the end of the line.
 ```cpp
 while (getline(cin, command)) {
-  // have just read a new command
-  if (command == "insert")
-  {
-    // read the insert arguments (title, url, comment, length, title)
-    //...
-    cin >> rating;
-    // since cin >> rating does not throw away the newline, you need to explicitly ignore it
-    cin.ignore();
-  }
-  else if (command == "remove")
-  {
-    getline(cin, title)
-    // don't have to worry about the newline because getline threw it away
-  }
-  ...
+    // have just read a new command
+    if (command == "insert")
+    {
+        // read the insert arguments (title, url, comment, length, title)
+        //...
+        cin >> rating;
+        // since cin >> rating does not throw away the newline, you need to explicitly ignore it
+        cin.ignore();
+    }
+    else if (command == "remove")
+    {
+        getline(cin, title)
+        // don't have to worry about the newline because getline threw it away
+    }
+    ...
 }
 ```
 7. When reading a `Video`, you can use the same approach you used in P2 (with `cin.peek() != EOF`), or you could use a `getline` to read the command in the condition of your `while` statement, as in the example above.
@@ -117,12 +117,12 @@ while (getline(cin, command)) {
 ```cpp
 bool Vlist::remove(string title)
 {
-  if the title is in the list and was removed
-    return true
-  else return false
+    if the title is in the list and was removed
+        return true
+    else return false
 }
 ```
-In `main()`, the value returned by `remove` can be used to determine if an error message should be printed. Print all error messages from `main()`.
+In `main()`, the value returned by `remove` can be used to determine if an error message should be printed. Print all error messages from `main()`.<br>
 9. Use `assert` to document what you think should be true or false while debugging. You may find the [assert documentation](https://www.cplusplus.com/reference/cassert/assert/) useful.
 10. When you make a mistake with a pointer, your program usually terminates with a `Segmentation Fault`. It can take a lot of time to track down these problems. Even if you did P2 at the last minute, it is a good idea to start P3 early.
 
@@ -136,7 +136,7 @@ Work step by step:
 5. Once the "empty" files compile, write the code in `main()` to read the input. Test your code so you are sure it is working. Make sure you handle end of input (^D), illegal commands, and skipping whitespace correctly. What you read will depend on the command. For example, length takes no arguments but insert takes 5 arguments.
 6. Once you are certain that your input is working correctly, implement an `insert` function in `Vlist` that inserts the videos at the front of the list.  Eventually you will need to insert so they are sorted, but getting this simple function working first is very helpful.
 7. Write the `Vlist` `print` function. This function calls `Video::print()` on all the videos in the list.
-8. Implement the `insert` and `print` commands in `main()`. Once they are implemented, you will be able to insert any number of videos into the list and print the entire list out. However, the order will not be correct yet because you have a place holder for the insert function. As an example of how to implement the commands, below is my implementation of the print command. I called my `Vlist` object `vlist`.
+8. Implement the `insert` and `print` commands in `main()`. Once they are implemented, you will be able to insert any number of videos into the list and print the entire list out. However, the order will not be correct yet because you have a place holder for the insert function. As an example of how to implement the commands, below is my implementation of the `print` command. I called my `Vlist` object `vlist`.
 ```cpp
 if (command == "print")
 {
