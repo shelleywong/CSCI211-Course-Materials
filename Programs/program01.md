@@ -167,7 +167,9 @@ chart.cpp
 ```
 All programming assignments are **individual** assignments -- you are expected to complete and submit your own program.<br>
 
-Assignments can be turned in up to 48 hours late with a 15% penalty.
+Assignments can be turned in up to 48 hours late with a 15% penalty.<br>
+
+If you are unable to complete everything on time, you should still turn in whatever work you have. If you turn in nothing, you get a zero. If you turn in something, you receive partial credit.
 
 ## Extra Credit: (10 points)
 
