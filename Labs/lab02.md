@@ -85,7 +85,7 @@ It is important that you understand the manual testing options listed above, but
 * vde
 * [Turnin](https://turnin.ecst.csuchico.edu/)
 
-`run_tests`, `vd`, and `vde` are bash scripts that should be included in your ~211-starter-pack/bin directory that you downloaded (211-starter-pack.tar).
+`run_tests`, `vd`, and `vde` are bash scripts (programs that the bash shell can execute) that should be included in your ~211-starter-pack/bin directory that you downloaded (211-starter-pack.tar):
 ```
 $ cd
 $ cd bin
@@ -93,7 +93,9 @@ $ ls run_tests vd vde
 run_test vd vde
 ```
 
-Many of the directories in 211-starter-pack/211 include a subdirectory called `tests` that contains a set of sample tests. You can use `run_tests` (a bash script) to automatically test your program against all of the tests included in the `tests` subdirectory.<br>
+Among other things, bash scripts are useful for running tests, as they allow you to automate command line tasks that you would otherwise have to type out manually (for each test and for each time the tests need to be rerun).<br>
+
+Many of the directories in 211-starter-pack/211 include a subdirectory called `tests` that contains a set of sample tests. You can use `run_tests` to automatically test your program against all of the tests included in the `tests` subdirectory.<br>
 
 This is how you could use `run_tests`, `vd`, and `vde` to test lab02_even (a directory that contains a `tests` subdirectory):<br>
 
@@ -119,7 +121,9 @@ Failed 0 out of 4 tests.
 $
 ```
 
-If one or more tests fail, you will get output that indicates which test(s) failed. In this example, t01 and t04 passed, while t02 and t03 both failed with stdout, stderr, and exit_status errors.
+If one or more tests fail, you will get output that indicates which test(s) failed. In this example, t01 and t04 passed, while t02 and t03 both failed with stdout, stderr, and exit_status errors.<br>
+
+They allow you to automate command line tasks, which can be very useful when you have long commands that you would otherwise have to type manually, over and over.
 ```
 $ ./run_tests even
 Executing tests for <./even>
