@@ -30,8 +30,7 @@ The program must handle the following commands. If a command has an argument, th
 
 | Command | Argument | Action (see below for output formatting) | Potential Error (see below for message) |
 | --- | --- | --- | --- |
-| echo | string | Write the string to standard output. Do not insert into tree.
-Used for commenting tests. Has nothing to do with the tree. | none |
+| echo | string | Write the string to standard output. Do not insert into tree. Used for commenting tests. Has nothing to do with the tree. | none |
 | insert | string | Insert the given string into the binary search tree. The tree must maintain the BST property after insert. | Print error if string already in tree. |
 | size | none | Print the number of elements (also number of nodes) in the tree. | none (0 if tree is empty) |
 | find | string | Print if the given string is or is not in the tree (both messages to stdout) | none |
