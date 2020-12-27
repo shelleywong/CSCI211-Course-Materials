@@ -37,10 +37,11 @@ Implement your program using the following class:
 ```
 class Dstack
     Stack of doubles that provides at least the following functions:
-        push    // push a new element on top of the stack
-        pop     // remove and return the top element from the stack (using a reference parameter)
-        empty   // return true if stack is empty, false otherwise
-        ~Dstack //a correct destructor
+        push        // push a new element on top of the stack
+        pop         // remove and return the top element from the stack
+                    // (using a reference parameter)
+        empty       // return true if stack is empty, false otherwise
+        ~Dstack     // a correct destructor
 ```
 You may use whatever return types and arguments you see fit. You may add additional functions if you need them.<br>
 
@@ -159,6 +160,6 @@ Implement the following operators:
 | sqrt | calculate the square root of the previous number | `15 sqrt` means the square root of 15. |
 | cos | calculate the cosine of the previous number | `30 cos` means the cosine of 30 |
 | sin | calculate the sine of the previous number | `45 sin` means the sine of 45 |
-| ave | remove all the operands off the stack, calculate their average and push the result on to the stack |    |
+| ave | remove all the operands off the stack, calculate their average and push the result on to the stack | `ave` means the average of all operands on the stack |
 
 > Note: For cos and sin, assume the user is entering degrees. Since the cmath functions cos() and sin() expect the angle in radians you will have to convert the number to radians. Use the constant M_PI from cmath to perform the conversion.
