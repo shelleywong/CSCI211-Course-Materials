@@ -139,12 +139,11 @@ The `Pqueue` class is a priority queue of `Cust` pointers. It must only contain 
 | class Pqueue | Priority queue of `Cust *` (time will be used as the priority) |
 
 **Required structures (struct)**:
-| Struct | Purpose |
-| --- | --- |
-| struct Checker | Stores information about a checker:
-* money in the register
-* time a checker is done serving the current customer OR time checker's break ends (<= clock if not on break, >= clock if on break or serving a customer)
-* a pointer to a Cust (if currently checking out a customer, the Cust pointer will point to that customer, if not serving a customer it will point to NULL) |
+
+* struct Checker - Stores information about a checker:
+  * money in the register
+  * time a checker is done serving the current customer OR time checker's break ends (<= clock if not on break, >= clock if on break or serving a customer)
+  * a pointer to a Cust (if currently checking out a customer, the Cust pointer will point to that customer, if not serving a customer it will point to NULL)
 
 ## Tips and Best Practices
 
@@ -154,7 +153,7 @@ Each customer in the input contains the string "shopper" or the string "robber".
 ```
 new Cust(name, (role_string == "robber" ? 1 : 0), arrival_time, num_items);
 ```
-> Note: this is an example of a [conditional ternary operator](https://www.cplusplus.com/doc/tutorial/operators/). It takes three operands, making it possible to write an if/else conditional as an expression.
+> Note: this is an example of a [conditional ternary operator](https://www.cplusplus.com/doc/tutorial/operators/). It takes three operands, making it possible to write an if/else conditional as an expression.<br>
 > (conditional_expression) ? (if_true_do_this) : (if_false_do_this)
 
 The file sim.cpp will contain the functions `main()` and `run_simulation()`.  You may add helper function (such as `legal_int()` from [Lab 8, Exercise 3](https://github.com/shelleywong/CSCI211-Course-Materials/blob/main/Labs/lab08.md#exercise-3)).<br>
