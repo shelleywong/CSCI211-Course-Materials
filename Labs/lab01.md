@@ -56,6 +56,8 @@ You can tell the bash shell to redirect standard output (i.e. cout) to a file:
 ```
 $ ./hello_world > hello_world.myout
 ```
+* The `.` is used to mean the current directory
+
 Now when the program `hello_world` is run, text written to standard output will be place in the file hellow_world.myout<br>
 
 Programs usually read from the keyboard. For example, if your program has the following line: `cin >> value;`, the number typed at the keyboard will be placed into the variable `value`.<br>
