@@ -232,7 +232,7 @@ $ ls -l a.out
 ```
 $ ./a.out
 ```
-Some people choose to [add `./` to the search path](https://stackoverflow.com/questions/27188856/adding-any-current-directory-to-the-search-path-in-linux) for executables in Linux, but it is not necessary. In my instructions, I will include `./` before all executables.<br/>
+It is possible to [add `./` to the search path](https://stackoverflow.com/questions/27188856/adding-any-current-directory-to-the-search-path-in-linux) in Linux so that you do not have to type `./` before the executable every time, but it is not necessary. In my instructions, I will include `./` before all executables.<br/>
 
 You do not need to turn in this exercise, but you may if you want to practice turn-in submissions. You must submit lab exercises 3 and 4 for lab credit.
 
@@ -285,7 +285,7 @@ Lab exercises are due by 11:59pm the Friday night following lab.
 
 Write a program that reads a number and prints "hello" that number of times:
 ```
-$ a.out
+$ ./a.out
 5
 0 hello
 1 hello
