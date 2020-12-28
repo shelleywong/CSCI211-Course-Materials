@@ -275,7 +275,7 @@ $
 ```
 * See [Introduction to Testing](http://www.ecst.csuchico.edu/~trhenry/classes/general/how_to_test.html) for a full description of how to test your assignments. If you understand the described mechanism now, it will make your semester much easier, and will improve your grade. One of the most important aspects of this lab is for you to understand the testing mechanism.
 
-Once your program is working, turn `add.cpp` in on [Turnin](https://turnin.ecst.csuchico.edu/). For more information, see [instructions for turning in files](http://www.ecst.csuchico.edu/~trhenry/classes/general/how_to_turn_in_assignments.html).
+Once your program is working, turn in `add.cpp` on [Turnin](https://turnin.ecst.csuchico.edu/). For more information, see [instructions for turning in files](http://www.ecst.csuchico.edu/~trhenry/classes/general/how_to_turn_in_assignments.html).
 
 You must pass all the posted tests to get credit for a lab assignment.
 

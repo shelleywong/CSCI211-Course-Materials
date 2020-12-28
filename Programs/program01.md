@@ -141,7 +141,17 @@ Use descriptive variable names. Avoid ambiguous or short variable names, with th
 
 Use all lowercase for your file names (e.g. "chart.cpp"). We will start using classes in future programs -- use a capital letter to name classes in your code (e.g. `Video`)<br>
 
-To ensure your code is consistently indented, you may want to [use spaces instead of tabs](http://www.ecst.csuchico.edu/~trhenry/classes/general/code_formatting.html))<br>
+To ensure your code is consistently indented, you may want to use spaces instead of tabs. In Vim, you can change the settings and [convert all tabs to spaces](https://vim.fandom.com/wiki/Converting_tabs_to_spaces) by adding a line to your `~/.vimrc` file:
+```
+:set tabstop=4 shiftwidth=4 expandtab
+```
+In this case, all tabs are 4 space characters, but you could set the tab key to be a different number of spaces (use 4, 2, or 8).
+* The `~/.vimrc` file should be in your home folder: `$ cd ~`
+* You can see if the file exists: `$ ls -a`
+* If it exists, add the line mentioned above. If it doesn't exist, you can create it: `$ vim .vimrc`
+* For the new settings to be applied, close the terminal and open a new one.<br>
+
+Other editors should have an option to set the tab size as well. The important thing is that you stay consistent. Other editors may have a different default value for tabs, so if you intermix tabs and spaces for indentation, the alignment may be off.<br>
 
 I don't have a style guide preference, but you should strive for readability, consistency, and providing enough documentation so that another person (or Future You) can easily understand what your code is doing. <br>
 
