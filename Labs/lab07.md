@@ -28,9 +28,11 @@ $ ./reverse
 2.2
 3.3
 ^D
+There are 3 numbers in the stack.
 3.3
 2.2
 1.1
+There are 0 numbers in the stack.
 $
 ```
 
@@ -54,4 +56,4 @@ Check your results against the three test cases that are available in your 211-s
 
 ## Turning In
 
-Submit dstack.h, dstack.cpp, and reverse.cpp to Turnin (turn in reverse.cpp even if you use my version -- this allows you to change it if you want to). 
+Submit dstack.h, dstack.cpp, and reverse.cpp to Turnin (turn in reverse.cpp even if you use my version -- this allows you to change it if you want to).
