@@ -36,7 +36,8 @@ $ ./mycat myfile.cpp
 ```
 It will read every line in the first file (myfile.cpp in this example, but it could be any file) and write it to standard output.
 
-## mycat.cpp (the version in 211-starter-pack has more comments)
+## mycat.cpp
+(the version in 211-starter-pack has more comments)
 ```cpp
 #include <iostream>
 #include <fstream>
@@ -110,7 +111,7 @@ $
 
 Use the args.cpp file in your 211-starter-pack/211/lab08_args directory as a starting point.<br>
 
-Turn in args.cpp.
+Submit args.cpp to Turnin.
 
 ## Exercise 2
 
@@ -146,7 +147,7 @@ If the user provides too many command line arguments, print the following error 
 cerr << "Too many command line arguments specified." << endl;
 ```
 
-Turn in mycat.cpp
+Submit mycat.cpp to Turnin.
 
 ## Exercise 3:
 
@@ -186,4 +187,4 @@ bool legal_int(char *str)
 
 After your program verifies that all the characters are digits, call `atoi()` to convert the string to an integer and add it to the total (as above).
 
-Turn in add.cpp
+Submit add.cpp to Turnin.
