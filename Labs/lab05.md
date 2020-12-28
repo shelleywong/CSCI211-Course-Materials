@@ -25,7 +25,7 @@ Write the function `bool List::largest_value(int &largest)`. If the list is not 
 
 ## Exercise 3
 
-Write a function that:
+Write the function `int *List::convert_to_array(int &size)` that:
 1. dynamically allocates an array of integers the exact size of the list,
 2. copies all the list's values into the array,
 3. assigns the size of the array (which is also the length of the list) to the reference parameter size, and
@@ -38,7 +38,7 @@ int *array = new int[length()];
 
 ## Exercise 4
 
-Write a function that removes all duplicate entries in the list. Assume that the list is ordered from smallest to largest, thus all duplicates will be next to each other. For example, if the list contained {1,2,2,2,3,3,4,5,5,5,5,5,6} before calling `remove_duplicates()`, it should contain {1,2,3,4,5,6} after. Do nothing if the list is empty or contains no duplicates.
+Write a function that removes all duplicate entries in the list. Assume that the list is ordered from smallest to largest, thus all duplicates will be next to each other. For example, if the list contained {1,2,2,2,3,3,4,5,5,5,5,5,6} before calling `void List::remove_duplicates()`, it should contain {1,2,3,4,5,6} after. Do nothing if the list is empty or contains no duplicates.
 
 ***
 
