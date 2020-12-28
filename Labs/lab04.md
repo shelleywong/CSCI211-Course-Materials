@@ -112,7 +112,7 @@ For the following exercises, use the files in your 211-starter-pack/211/lab04_li
 
 ### Exercise 1:
 
-Edit `main()` so that it reads numbers until end of input (use a while loop) and puts each number into a List object.<br>
+Edit `main()` so that it reads numbers until end of input (use a while loop) and puts each number into a `List` object.<br>
 
 When the end of input is reached, have the list object print all the numbers.<br>
 
@@ -131,7 +131,7 @@ $
 
 ### Exercise 2:
 
-Add a new member function (int List::sum()) to the `List` class that returns the sum of elements in the list.  In `main()` print the sum of elements after printing the list.  Do not sum the elements in `main()`.  The sum must be calculated in List::sum().
+Add a new member function (`int List::sum()`) to the `List` class that returns the sum of elements in the list.  In `main()` print the sum of elements after printing the list.  Do not sum the elements in `main()`.  The sum must be calculated in List::sum().
 
 Your program should work like this:
 ```

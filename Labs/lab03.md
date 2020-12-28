@@ -262,7 +262,7 @@ Or you could use the Makefile provided in your ~/211/lab03_course directory:
 ```
 $ make
 ```
-REMEMBER: only include .h files (schedule.cpp must include course.h and course.cpp must include course.h). **NEVER INCLUDE .cpp FILES**.<br>
+REMEMBER: only `#include *.h` files (schedule.cpp must include course.h and course.cpp must include course.h). **NEVER INCLUDE .cpp FILES**.<br>
 
 To get credit, you must pass the posted tests (in ~/211-starter-pack/211/lab03_course).<br>
 
@@ -286,11 +286,11 @@ int main()
     return 0;
 }
 ```
-If you have already written the constructor (Video::Video(...)) and your arguments are different than those listed above, your `main()` should use the arguments you are already using.<br>
+If you have already written the constructor (`Video::Video(...)`) and your arguments are different than those listed above, your `main()` should use the arguments you are already using.<br>
 
 If you have not started p2, look at the Plan of Attack section and implement Steps 1-6.<br>
 
-You will need to implement the class `Video` constructor (Video::Video(...)) and the `print` member function (void Video::print()).<br>
+You will need to implement the class `Video` constructor (`Video::Video(...)`) and the `print` member function (`void Video::print()`).<br>
 
 The output of your program (using the `main()` above) should exactly match the following (t01.out for ~/211-starter-pack/211/lab03_video). This is the test used by turnin.ecst.csuchico.edu:
 ```
