@@ -31,7 +31,7 @@ $
 
 ## Step 1: Getting Started
 
-You will prompt the user to enter a number (see usage example). You will then print out the number. Write this code in a main.cpp file. Test out this simple use case.
+You will prompt the user to enter a number (see usage example). You will then print out the number. Write this code in a main.cpp file. Test out this simple use case (compile using `$ g++ -o main main.cpp`).
 ```
 $ ./main
 Pick a number between 1 and 10.
@@ -83,7 +83,7 @@ catch(iostream::failure& iof)
 }
 ```
 
-You will need to include a library to support `numeric_limits`. Search the Internet to determine which one.
+You will need to include a library to support `numeric_limits`. Search the Internet to determine which one. You can see some additional examples of try/catch in the [C++ documentation on Exceptions](https://www.cplusplus.com/doc/tutorial/exceptions/).
 
 ## Step 4: Bad Numbres
 
@@ -91,7 +91,7 @@ What happens if you enter a double value instead of an integer? Try it out.<br>
 
 We need to identify this situation, throw an error, and catch it.<br>
 
-Within your try block and after you read your number, add a check to "peek" ahead at the next character. If it is anything but `'\n'` (newline), then it is a bad number.  In that case, throw an error. Consider the provided catch block. What should you throw?<br>
+Within your `try` block and after you read your number, add another `try` block with a check to "peek" ahead at the next character. If it is anything but `'\n'` (newline), then it is a bad number. In that case, throw an error. Consider the provided catch block. What should you throw?<br>
 ```
 catch(int pnum)
 {
@@ -106,4 +106,4 @@ Once you are finished, submit your main.cpp to Turnin.
 
 ***
 
-After you have completed the exercises, work on the Kwik-E-Mart Simulation (p5). 
+After you have completed the exercises, work on the Kwik-E-Mart Simulation (p5).
