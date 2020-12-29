@@ -69,8 +69,8 @@ The_Bear is at 39.729089,-121.842585
 Celestinos_Pizza is at 39.729807,-121.842767
 ```
 
-* You must use a STL map to store the title/location pairs.
-* You can read the [C++ STL map documentation](https://www.cplusplus.com/reference/map/map/) for more information. You can also look at this [Standard Template Library example](http://www.ecst.csuchico.edu/~trhenry/classes/211.s17/example_src/stl/)
+* You must use a C++ STL map to store the title/location pairs.
+* You can read the [STL map documentation](https://www.cplusplus.com/reference/map/map/) for more information. Explore the map member functions to find examples of how to use the STL map.
 * You do not have to call delete on the Location objects.<br>
 
 HINT: The map's `find` function returns an iterator.<br>
