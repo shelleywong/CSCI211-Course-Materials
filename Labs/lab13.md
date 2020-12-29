@@ -40,7 +40,7 @@ int main()
 }
 ```
 
-Read about the vector's operator[] to learn how to access elements in the vector.<br>
+Read about the [vector's operator[]](https://www.cplusplus.com/reference/vector/vector/operator[]/) to learn how to access elements in the vector.<br>
 
 Turn in path.cpp.
 
