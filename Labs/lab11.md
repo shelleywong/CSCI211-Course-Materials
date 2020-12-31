@@ -31,7 +31,12 @@ $
 
 ## Step 1: Getting Started
 
-You will prompt the user to enter a number (see usage example). You will then print out the number. Write this code in a main.cpp file. Test out this simple use case (compile using `$ g++ -o main main.cpp`).
+You will prompt the user to enter a number (see usage example). You will then print out the number. Write this code in a main.cpp file. First compile your main (the following command is used in the Makefile on Turnin for this lab):
+```
+$ g++ -Wall -pedantic -g -std=c++11 -o main main.cpp
+```
+
+Then test your program with this simple use case.
 ```
 $ ./main
 Pick a number between 1 and 10.
