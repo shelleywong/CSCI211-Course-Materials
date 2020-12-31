@@ -9,7 +9,9 @@ Practice Midterm Exam questions
   * Exercise 1:  211/lab05_compare
   * Exercise 2:  211/lab05_largest
   * Exercise 3:  211/lab05_convert
-  * Exercise 4:  211/lab05_removedup
+  * Exercise 4:  211/lab05_removedup<br>
+
+You will submit a separate list.cpp to Turnin for each exercise.
 
 ## Exercise 1
 
