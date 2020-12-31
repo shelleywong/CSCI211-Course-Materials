@@ -77,7 +77,7 @@ HINT: The map's `find` function returns an iterator.<br>
 
 Turn in lookup.cpp
 
-## Exercise 3 (extra credit)
+## Exercise 3 (no points, just for fun)
 
 Working in your 211-starter-pack/211/lab13_google directory, modify the program in Exercise 2 so that instead of printing the lat/long when you find a location in the map, print a complete Google Maps URL:
 
@@ -88,8 +88,4 @@ where the `__________` is replace with the URL.<br>
 
 You can test your URL by pasting it into a browser. If the target is shown, then your URL is correct. Everything else about this program should be the same as the lookup program in Exercise 2.<br>
 
-You have to figure out what a Google Maps URL looks like.<br>
-
-Turn in google.cpp and location.h (you will need to change location.h).<br>
-
-Since part of this exercise is for you to figure out what a Google Maps URL looks like, I am not providing the test.
+The Google Maps URL has changed since this exercise was originally assigned, so actually getting an accurate location marker requires more information than just the coordinates mentioned above. However, your URL should return a map that centers on Chico, CA.
