@@ -32,6 +32,8 @@ bool equal_strings(const char str1[], const char str2[])
 }
 ```
 
+Submit equal.cpp to Turnin.
+
 ## Problem 2
 Write a recursive function that finds the largest number in an array of integers. Assume the array contains at least 1 number. You may write a helper function (it will simplify the code).
 ```
@@ -41,6 +43,8 @@ int largest_in_array(int values[], int size)
 
 }
 ```
+
+Submit largest.cpp to Turnin.
 
 # Problem 3
 Write a recursive function that takes an array of integers and returns true if the array is sorted from smallest value to largest value and false if the array is not sorted. Don't forget any special cases.
@@ -52,6 +56,8 @@ bool is_array_sorted(int values[], int size)
 }
 ```
 
+Submit sorted.cpp to Turnin.
+
 ## Problem 4
 (12 points) Write the recursive function `isint(char str[])` that takes a C-style string and returns true if the string in an integer (only digits) and false if the string is not an integer (contains characters other than digits). If the string is empty, return false (an empty string is not an integer).
 ```
@@ -61,3 +67,5 @@ bool isint(char str[])
 
 }
 ```
+
+Submit isint.cpp to Turnin.
