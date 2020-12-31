@@ -244,3 +244,18 @@ All programming assignments are **individual** assignments -- you are expected t
 Assignments can be turned in up to 48 hours late with a 15% penalty.<br>
 
 If you are unable to complete everything on time, you should still turn in whatever work you have. If you turn in nothing, you get a zero. If you turn in something, you receive partial credit.
+
+## For an extra challenge (no points, just for fun)
+
+No extra credit will be give to late assignments (both the regular assignment and the extra credit must be turned in on time).<br>
+
+You must turn in the regular assignment code separately from the extra credit assignment code (look for separate assignments on Turnin).<br>
+
+Implement a `remove` function:	
+```
+remove<space><str>
+If the string is in the tree and is removed, print nothing.
+If the string is not in the tree, print the following to standard error:  "<str> not in tree and cannot be removed.\n"
+```
+
+The `remove` function must reorganize the tree so that it remains a binary search tree. However, you cannot simply reorganize the entire tree like in the `rebalance` command. You must make minimal changes to the tree so it remains a binary search tree. This is difficult, you will need to find a description of the algorithm online.
