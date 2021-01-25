@@ -58,7 +58,7 @@ $ ./hello_world > hello_world.myout
 ```
 * The `.` is used to mean the current directory
 
-Now when the program `hello_world` is run, text written to standard output will be place in the file hellow_world.myout<br>
+Now when the program `hello_world` is run, text written to standard output will be place in the file hello_world.myout<br>
 
 Programs usually read from the keyboard. For example, if your program has the following line: `cin >> value;`, the number typed at the keyboard will be placed into the variable `value`.<br>
 
@@ -103,11 +103,17 @@ $ mkdir 211  // make a new directory in the current directory called "211"
 $ mkdir ~/211  // make a new directory in your home directory called "211"
 ```
 * `chmod` => change the protection (access) of a file or directory
-  * if you change the protection of your home directory as follows, no one will be able to access any of your files:
+  * if you change the protection of your home directory as follows, you (the owner) will have full read and write access to all of your files, but no one else will be able to access any of your files:
 ```
 $ cd  // change to your home directory
-$ chmod 700 .  // don't forget the dot (.) t the end of this command
+$ chmod 600 .  // don't forget the dot (.) t the end of this command
 ```
+  * 6 in binary is 110 (read & write privileges on, execute privileges off)
+  * You don't want everything to be executable -- only the executable files. If you try to execute your program and get a message that the file is not executable, you can make it executable:
+```
+$ chmod +x filename
+```
+
 * `rm` => delete (remove) a file
   * `rm -r` allows you to delete a directory and everything in it, use it carefully
 * `cp` => copy a file
@@ -134,9 +140,9 @@ $ which cp
 
 ### Linux editors
 
-For 211 we will not be using an integrated development environment (IDE). The reason we are not using an IDE is because I want you to develop a good understanding of the tasks performed by an IDE. Once you understand these tasks well you can switch to an IDE.<br>
+For 211 we will not be using an integrated development environment (IDE). The reason we are not using an IDE is because I want you to develop a good understanding of the tasks performed by an IDE. Once you have a good understanding of these tasks, you can switch to an IDE.<br>
 
-When writing programs without an IDE you use a stand alone editor to create your program (vs. using the editor built in to Visual C++). This means you can pick from hundreds of available editors. Here are some common choices (most are available on the computers in 251):
+When writing programs without an IDE you use a stand alone editor to create your program (versus using the editor built in to Visual C++). This means you can pick from hundreds of available editors. Here are some common choices (most are available on the computers in 251):
 1. Atom
   * Menu based editor that is easy to use.
   * Similar to Sublime Text.
@@ -166,7 +172,7 @@ $ atom hello.cpp
 
 All of these are available on Linux and MacOS. Vim and Emacs are hard to learn, so if you don't already know one, I suggest you start using atom. In a couple weeks I will give lab on vim.<br>
 
-If you plan to use Putty to do your assignments at home (not recommended), then vim or nano is a better choice (it requires some extra setup to use gvim or atom over putty).<br>
+If you plan to use Putty (and ssh into ecc-linux) to do your assignments at home, then vim or nano is a better choice (it requires some extra setup to use gvim or atom over putty).<br>
 
 Whatever editor you end up using, become an expert.
 
@@ -174,7 +180,7 @@ Whatever editor you end up using, become an expert.
 
 Taking some time to set up and organize your working directory for CSCI 211 will help prevent turning in the wrong assignment and make it easier to keep track of your files.<br/>
 
-You may want to use a Git repository manager, such as GitHub, that provides version control and other features to build and manage software. It can be a great tool for organizing your source code; HOWEVER, remember that whenever you are creating a directory for a class where everyone is turning in the same assignments (like in this CSCI 211 course), make sure to make the visibility of this repository **private!** If your repo is public, it means other students can see it and easily steal the code from it -- this constitutes cheating and is a violation of academic integrity. There is no reason to make a CSCI 211 repo publicly visible this semester or after you have completed the class. Refer to the [Cheating Policy](http://www.ecst.csuchico.edu/~trhenry/classes/general/cheating.html) or talk to me directly if you are unclear about any of this. Refer to the [GitHub docs](https://docs.github.com/en/free-pro-team@latest/github) for additional guidance on working with GitHub.<br/>
+You may want to use a Git repository manager, such as GitHub, that provides version control and other features to build and manage software. It can be a great tool for organizing your source code; HOWEVER, remember that whenever you are creating a directory for a class where everyone is turning in the same assignments (like in this CSCI 211 course), make sure to **make the visibility of this repository private!** If your repo is public, it means other students can see it and easily steal the code from it -- this constitutes cheating and is a violation of academic integrity. There is **no reason** to make a CSCI 211 repo publicly visible this semester OR after you have completed the class. Refer to the [Cheating Policy](http://www.ecst.csuchico.edu/~trhenry/classes/general/cheating.html) or talk to me directly if you are unclear about any of this. Refer to the [GitHub docs](https://docs.github.com/en/free-pro-team@latest/github) for additional guidance on working with GitHub.<br/>
 
 There is no requirement in this course to use GitHub. The following instructions will work on your local Linux/OSX laptop/desktop (with or without a remote repository):<br/>
 
