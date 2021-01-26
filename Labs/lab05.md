@@ -15,7 +15,7 @@ You will submit a separate list.cpp to Turnin for each exercise.
 
 ## Exercise 1
 
-Write the function `void List::compare()` that compares the given value to each element in the list and counts the numbers in the list that are `less_than`, `equal` to, and `greater_than` the value. Remember to initialize your counts.<br>
+Write the function `void List::compare()` that compares the given value to each element in the list and counts the numbers in the list that are `less_than`, `equal` to, and `greater_than` the value. Remember to initialize the counts in your function.<br>
 
 For example, if the list contained {1,2,3,4} and the number 3 was passed as the value parameter to `compare()`, `compare()` would find that 2 numbers in the list are less than 3, 1 number is equal to 3, and 1 number is greater than 3.<br>
 
