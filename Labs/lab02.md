@@ -10,11 +10,12 @@ Detecting End of Input, Using Standard Error, Returning from main()
 * Learn how to write to standard error and learn the shell syntax for redirecting standard error to a file (described in exercise 2)
 * Learn how to ask the bash shell for the exit status of the last program executed
 
-## Testing Assignments (exams usually have questions on this material)
+## Testing Assignments
+
+> Note: Exams may have questions on this material
 
 ### Background
 
-* PATH environment variable
 * diff and vimdiff tools
 * bash shell scripting
 * file redirection
@@ -95,7 +96,7 @@ run_test vd vde
 
 Among other things, bash scripts are useful for running tests, as they allow you to automate command line tasks that you would otherwise have to type out manually (for each test and for each time the tests need to be rerun).<br>
 
-Many of the directories in 211-starter-pack/211 include a subdirectory called `tests` that contains a set of sample tests. You can use `run_tests` to automatically test your program against all of the tests included in the `tests` subdirectory.<br>
+Many of the directories in 211-starter-pack/211 include a subdirectory called `tests` that contains a set of sample tests. You can use the `run_tests` file to automatically test your program against all of the tests included in the `tests` subdirectory.<br>
 
 This is how you could use `run_tests`, `vd`, and `vde` to test lab02_even (a directory that contains a `tests` subdirectory):<br>
 
@@ -106,7 +107,7 @@ $ cp bin/vd 211/lab02_even/
 $ cp bin/vde 211/lab02_even/
 ```
 
-Change to the lab02_even directory. You should see all of the bash scripts listed there (along with the other files that were already in the directory). Exercise 2 includes directions for writing a program called even.cpp.<br>
+Change to the lab02_even directory. You should see all of the bash scripts listed there, along with the other files that were already in the directory. Exercise 2 includes directions for writing a program that reads integers and checks if they are even or not.<br>
 
 After you have successfully compiled even.cpp, you will have an executable called `even` and can use `run_tests` to check to see if your program passes all of the provided tests. (For other programs, substitute the appropriate executable in place of `even`):
 ```
