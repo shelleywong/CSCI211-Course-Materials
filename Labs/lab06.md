@@ -8,7 +8,7 @@ Learn the basics of the [GNU Project Debugger](https://www.gnu.org/software/gdb/
 
 ## Required Survey
 
-You do not have to turn in any files for this lab, but you do have to complete this survey. The survey is worth 3 points.
+You do not have to turn in any files for this lab, but you do have to complete [this Google survey](https://docs.google.com/forms/d/e/1FAIpQLSc_DOE7Ps-l4ApR8l7KN1y2KIm1OdvnoBKJqaQF9go6P9t_eQ/viewform?usp=sf_link) to get credit for Lab 06.
 
 ## gdb/ddd Lecture Notes
 
