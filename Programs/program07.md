@@ -249,9 +249,7 @@ If you are unable to complete everything on time, you should still turn in whate
 
 No extra credit will be give to late assignments (both the regular assignment and the extra credit must be turned in on time).<br>
 
-You must turn in the regular assignment code separately from the extra credit assignment code (look for separate assignments on Turnin).<br>
-
-Implement a `remove` function:	
+Implement a `remove` function:
 ```
 remove<space><str>
 If the string is in the tree and is removed, print nothing.

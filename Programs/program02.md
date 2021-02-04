@@ -187,3 +187,13 @@ All programming assignments are **individual** assignments -- you are expected t
 Assignments can be turned in up to 48 hours late with a 15% penalty.<br>
 
 If you are unable to complete everything on time, you should still turn in whatever work you have. If you turn in nothing, you get a zero. If you turn in something, you receive partial credit.
+
+## For an extra challenge (no points, just for fun)
+
+No extra credit will be give to late assignments (both the regular assignment and the extra credit must be turned in on time).<br>
+
+Implement an additional sorting algorithm of your choice. You MUST implement the bubble sort algorithm at least once (as specified in this assignment); however, you may have multiple functions that sort the videos according to the given criteria. <br>
+
+You likely want to write the sorting algorithms as functions, potentially in such a way that the functions could be easily swapped out for one another. Make sure to call the bubble sort algorithm at least once. <br>
+
+For each function, include appropriate comments: indicate the sorting algorithm being used and reference any sources (include a link to the sources, if applicable).
