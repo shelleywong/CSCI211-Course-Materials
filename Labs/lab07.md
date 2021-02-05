@@ -9,8 +9,8 @@ For students to finish implementing the stack of doubles for the Calculator prog
 ## The post-fix calculator
 
 The post-fix calculator assignment requires that you implement a stack of doubles (called class Dstack). The stack must be implemented using a linked list. The stack must provide at least the following functions (you can use different arguments if you would like):
-| &nbsp; &nbsp; &nbsp; &nbsp; Function &nbsp; &nbsp; &nbsp; &nbsp; |  |
-| ------------------------- | --- |
+| Function |  |
+| --- | --- |
 | `void push(double value)` | Push given value onto the stack. |
 | `bool pop(double &value)` | Remove the top value from the stack and return it using the reference parameter. Return true if the stack was not empty, false if it was empty. |
 | `int size()` | Return the number of elements in the stack. |
@@ -42,12 +42,12 @@ As long as there are numbers to read  (using cin >> my_double)
     read the value
     push the value on to the stack
 
-After All the values have been read (when cin >> my_double returns false)
+After all the values have been read (when cin >> my_double returns false)
 
     As long as the stack is not empty
 
         remove a value from the stack
-        print the value (on it's own line)
+        print the value (on its own line)
 ```
 
 ## Testing
