@@ -33,7 +33,7 @@ $ man ddd
 1. Compile your programs with the `-g` option. All .o files and the final linking must have the -g option. The -g option tells the compiler to put extra information (such as variable names) into the executable so a debugger can access them.
 2. At the command prompt type `gdb` (or `ddd`) followed by your executable name:
 ```
-$ g++ -g -o p1 p1.cc
+$ g++ -g -o p1 p1.cpp
 $ gdb p1
 GNU gdb (GDB) 7.1
 Copyright (C) 2010 Free Software Foundation, Inc.
