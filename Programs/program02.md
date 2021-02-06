@@ -35,6 +35,8 @@ Use an array of pointers to videos (`Video *`) to store the videos. Use dynamic 
 
 > Note: use the C++ `new` operator to dynamically allocate memory
 
+> Note: use a C-style array. Do not use a standard template library container
+
 The first thing in the input must be the sorting criteria (on its own line).  The valid strings are "rating", "length", and "title."<br>
 
 | Sorting Criteria | Description |

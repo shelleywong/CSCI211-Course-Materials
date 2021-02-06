@@ -37,7 +37,7 @@ For example, if the user entered, `1 2 3 4 3 2 1 10 0`, your program must print:
 
 The input numbers might be on separate lines. If you read them using `cin >>` you don't have to think about lines, spaces, tabs.<br>
 
-Your program must be able to read up to 100 positive integers (greater than 0) from standard input. You must store these integers in a single array. For this program, do **not** use a vector.
+Your program must be able to read up to 100 positive integers (greater than 0) from standard input. You must store these integers in a single array. For this program, do **not** use a standard template library container, such as a vector.
 
 > Note: Did you remember to handle negative numbers?
 
