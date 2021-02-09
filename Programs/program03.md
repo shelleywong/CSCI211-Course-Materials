@@ -143,7 +143,7 @@ if (command == "print")
     vlist.print();
 }
 ```
-9. Once you are certain that the `print` and `insert` commands work, you can update the `insert` function to insert the video so the list is ordered correctly (alphabetically by title). Test your new `insert` function. If it is correct, your program should pass all tests that only use the `insert` and `print` commands. If you don't pass these tests, fix the problem before you move on.
+9. Once you are certain that the `print` and `insert` commands work, you can update the `insert` function to insert the video so the list is ordered correctly (alphabetically by title). Test your new `insert` function. If it is correct, your program should pass all tests that only use the `insert` and `print` commands. If you don't pass these tests, fix the problem before you move on.<br>
 10. Implement the remainder of the commands one by one. Make sure each works before you move on.
 > Note: I recommend implementing `remove` last because if you make a mistake in `remove`, it can be very hard to track down.
 
