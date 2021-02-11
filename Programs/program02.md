@@ -142,7 +142,7 @@ Work Step by Step:
 $ make
 ```
 5. Once the "empty" files compile, write the code in `main()` to read the input (i.e. the sorting method string and the video descriptions). Write the data to standard output to make sure you are reading it correctly. Make sure you continue reading video descriptions until the end of input.
-> Note: `cin` is an instance of class istream. It contains functions such as `ignore` and `getline`, which are used in this project. For your while loop condition, you should use the `peek` function. You may find the [istream documentation](https://www.cplusplus.com/reference/istream/istream/) useful.
+> Note: `cin` is an instance of class istream. It contains functions such as `ignore` and `getline`, which are used in this project. For P2, you can expect that all input will be well-formatted and you can use `while (getline(cin, title))` to read the video descriptions. If you are working with a program that takes in various types of input and the order of the input is unknown, you should use the `peek` function for your while loop condition. For more information, you may find the [istream documentation](https://www.cplusplus.com/reference/istream/istream/) useful.
 
 6. Implement the `Video` class. Include a constructor and a print function.
 7. After you read each description, create a new `Video` object (using the C++ `new` operator). Call the print function for that new object. Make sure the output is in the correct format so you don't have to worry about the print format anymore.
