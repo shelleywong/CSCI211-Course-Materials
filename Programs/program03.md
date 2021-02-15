@@ -90,7 +90,7 @@ If the user enters a command other than (insert, print, length, lookup, remove),
 1. It is very helpful to read the entire assignment writeup carefully before you start and review it as you program. You may want to print out the instructions and check off each requirement when you are sure it is correctly implemented. The writeup is long, but it contains a lot of useful information.
 2. Program incrementally. Get small parts working before you move on. The next section describes how to break the program into pieces.
 3. The linked list examples from class are all linked lists of integers. That means the Nodes contain an integer. For this assignment, the list is a list pointers to `Video` objects, that means the `Node` will contains a `Video *` instead of the integer in the class examples.
-4. Use static memory in `main()` to instantiate the Vlist object instead of `Vlist *videos = new Vlist()` (you do not need to dynamically allocate memory in this instance)
+4. Use **static memory** in `main()` to instantiate the Vlist object instead of `Vlist *videos = new Vlist()` (you do not need to dynamically allocate memory in this instance)
 5. `lookup` and `remove` take titles as their arguments. A title may include a space, so `cin >> my_str` will not work here. Use `getline()` in any situation where you need to read a title.
 6. Use `getline()` to read all the commands. `getline()` will automatically throw away the newline character at the end of the line.
 ```cpp
