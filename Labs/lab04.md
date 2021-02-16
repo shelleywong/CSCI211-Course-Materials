@@ -65,6 +65,11 @@ There are several ways to enter insert mode (see below)
 | /pattern | searches for pattern |
 | n | search next |
 | ? | search back |
+| G | move to last line of the page |
+| gg | move to the first line of the page |
+| :42 | move to line 42 |
+| 0 | jump to the start of the line |
+| $ | jump to the end of the line |
 
 ### Inserting text (must be in command mode to start inserting)
 
@@ -75,6 +80,18 @@ There are several ways to enter insert mode (see below)
 | I | insert at start of line (capital i)|
 | A | insert at end of line |
 | C | delete from cursor to end of line, start inserting |
+
+### For editing text (while in command mode)
+
+| What you type | Editing action |
+| --- | --- |
+| yy | yank (copy) a line |
+| 2yy | yank (copy) 2 lines |
+| p | put (paste) the clipboard after the cursor |
+| dd | delete (cut) a line |
+| x | delete (cut) a character |
+
+> Note: to exit insert mode or visual mode, use the <esc> key
 
 ### The command line editor
 
