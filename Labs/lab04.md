@@ -91,7 +91,7 @@ There are several ways to enter insert mode (see below)
 | dd | delete (cut) a line |
 | x | delete (cut) a character |
 
-> Note: to exit insert mode or visual mode, use the <esc> key
+> Note: to exit insert mode or visual mode, use the \<esc\> key
 
 ### The command line editor
 
