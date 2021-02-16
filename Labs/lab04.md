@@ -183,7 +183,7 @@ $
 ```
 
 Turn in your new versions of list.h, list.cpp, and main.cpp.
-(You only have to turn in files for the last exercise -- the last exercise builds on the first exercises.  Since this is a multi-part exercise it will be worth 3 points.)
+(You only have to turn in files for the last exercise -- the last exercise builds on the first exercises. Since this is a multi-part exercise, this single submission will be worth points for 3 exercises.)
 
 ***
 
