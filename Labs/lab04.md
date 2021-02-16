@@ -52,7 +52,7 @@ Unlike "normal" editors where everything you type is inserted into the document,
 * **Command mode**: the keys you type are commands. Type and h and the cursor will move to the left (the h key is the move to left command).
 
 There are several ways to enter insert mode (see below)
-* <esc> key stops the current insert
+* \<esc\> key stops the current insert
 
 ### Moving around (while in command mode)
 
