@@ -192,9 +192,9 @@ No extra credit will be given to late assignments (both the regular assignment a
 
 Make sure you save a copy of your completely working program before you start the extra credit. The goal of extra credit is for you to figure out how to solve problems on your own. I may discuss extra credit, but I won't tell you how to solve it.<br>
 
-* 3 points: implement the `print_by_length` command that prints all the videos in the list ordered by length (shortest to longest). If two or more videos have the same length, they should be sorted alphabetically (i.e. if video "a" has the same length as videos "c" and "d", "a" should be first, "c" second, and "d" last).
-* 3 points: implement the `print_by_rating` command that prints all the videos in the list ordered by rating (highest to lowest). If two or more videos have the same rating, they should be sorted alphabetically.
-* 3 points: implement the `lookup_expression` command that takes a regular expression and prints all the videos that have titles matching the given regular expression. Use the system functions `regcomp` and `regex` to implement regular expressions. If the regular expression does not match any titles in the list OR if the regular expression is not a correct regular expression, print the following to standard error (replace XXX with the regular expression):
+* 5 points: implement the `print_by_length` command that prints all the videos in the list ordered by length (shortest to longest). If two or more videos have the same length, they should be sorted alphabetically (i.e. if video "a" has the same length as videos "c" and "d", "a" should be first, "c" second, and "d" last).
+* 5 points: implement the `print_by_rating` command that prints all the videos in the list ordered by rating (highest to lowest). If two or more videos have the same rating, they should be sorted alphabetically.
+* 5 points: implement the `lookup_expression` command that takes a regular expression and prints all the videos that have titles matching the given regular expression. Use the system functions `regcomp` and `regex` to implement regular expressions. If the regular expression does not match any titles in the list OR if the regular expression is not a correct regular expression, print the following to standard error (replace XXX with the regular expression):
 ```
 Regular expression <XXX> does not match any titles in list.
 ```
