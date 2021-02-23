@@ -5,13 +5,15 @@ Practice Midterm Exam questions
 ## Goal
 
 * Practice writing linked list functions similar to those you have to write on the midterm.
-* Each exercise has a directory in your 211-starter-pack/211 folder (lab05_*). This folder contains everything except the missing function.  All you have to do is write the function, compile, and test your solution.
+* Each exercise has a directory in your 211-starter-pack/211 folder (lab05_*). This folder contains everything except the missing function. All you have to do is write the function, compile, and test your solution.
   * Exercise 1:  211/lab05_compare
   * Exercise 2:  211/lab05_largest
   * Exercise 3:  211/lab05_convert
   * Exercise 4:  211/lab05_removedup<br>
 
 You will submit a separate list.cpp to Turnin for each exercise.
+
+> Note: You will ONLY submit the list.cpp file -- your solution needs to work with the provided files, or else your code may not pass the tests on Turnin.
 
 ## Exercise 1
 
