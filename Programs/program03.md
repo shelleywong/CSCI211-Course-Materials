@@ -46,7 +46,7 @@ Use dynamic allocation to create and delete `Video` and `Node` objects:
 * Create the `new` Node object in `Vlist::insert()`.
 * When removing a Video from the list, both the Node and the Video object must be deleted.<br>
 
-You must provide a correct destructor for class `Vlist` that deletes all Node objects and a correct destructor for class `Node` that deletes all Video objects.<br>
+You must provide a correct destructor for class `Vlist` that deletes all Node objects. You also need to make sure to delete all Video objects. This can be completed in the `Vlist` destructor or in a class `Node` destructor.<br>
 
 There must not be any input or output in class `Vlist` (you cannot use cin/cout/cerr in a Vlist member function). However, you can call Video's print function.<br>
 
