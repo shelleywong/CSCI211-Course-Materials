@@ -94,6 +94,8 @@ int main(int argc, char *argv[])
 }
 ```
 
+> Note: You may find the [C++ Input/output with files](https://www.cplusplus.com/doc/tutorial/files/) documentation useful
+
 ## Exercise 1
 
 Write a program (called `args`) that prints all the command line arguments to standard output. For example:
