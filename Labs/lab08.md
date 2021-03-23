@@ -129,7 +129,7 @@ Your program should read each line in file `data1` and write it to file `data2`.
 
 Use the following when opening a file for writing:
 ```
-ofstream  my_ofile(filename, ios::out);  // filename is a string holding the filename
+ofstream my_ofile(filename, ios::out);  // filename is a string holding the filename
 ```
 
 If the output file cannot be opened, print the following error message to standard error (modify this message for the input file):
