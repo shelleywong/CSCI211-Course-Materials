@@ -83,7 +83,7 @@ bool Pqueue::empty()
 
 Working in your 211-starter-pack/211/lab09_pqueue directory, create class `Pqueue`. Each Node in the Pqueue class will contain a pointer to the Cust class you created in exercise 1.<br>
 
-Pqueue must include empty(), length(), first_priority(), enqueue(), and dequeue() functions (as shown above).<br>
+Pqueue must include empty(), length(), first_priority(), enqueue(), and dequeue() functions (as shown above). You do not need to implement a Pqueue destructor for lab 09, but in P5, you should make sure to include a destructor that deletes all Node objects.<br>
 
 `int Pqueue::first_priority()` should return the priority of the first element without removing the element. Return -1 if the queue is empty.<br>
 
