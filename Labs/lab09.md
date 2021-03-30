@@ -65,7 +65,7 @@ Now consider a queue of pointers to `Cust`. Since NULL is not a "valid" pointer 
 ```
 Cust *Pqueue::dequeue()
 ```
-This function returns a non-null pointer if the queue was not empty (a pointer to the `Cust` that was removed) and the dequeue succeeded. It returns NULL if the queue was empty.<br>
+This function returns a non-null pointer if the queue was not empty (a pointer to the `Cust` that was removed) and the dequeue succeeded. It returns NULL if the queue was empty. A priority queue dequeue function should remove the highest priority node and return a pointer to the customer that was in the highest priority location in the queue.<br>
 
 The enqueue function should take:
 1. A pointer to a Cust object
@@ -74,10 +74,15 @@ The enqueue function should take:
 void Pqueue::enqueue(Cust *cust, int priority);
 ```
 
-class Pqueue must also have an empty function that returns true if the queue is empty, false if it is not empty
+Class Pqueue must also have an empty function that returns true if the queue is empty, false if it is not empty
 ```
 bool Pqueue::empty()
 ```
+
+A Pqueue length function will return an integer representing the number of nodes currently in the queue.
+```
+int Pqueue::length()
+``` 
 
 ## Exercise 2:
 
