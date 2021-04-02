@@ -68,4 +68,6 @@ bool isint(char str[])
 }
 ```
 
-Submit isint.cpp to Turnin.
+Submit isint.cpp to Turnin.<br>
+
+If you finish early, you should work on P5 or practice writing solutions to questions from Midterm 2 [previous exams](https://www.ecst.csuchico.edu/~trhenry/classes/211.s17/exams.html).
