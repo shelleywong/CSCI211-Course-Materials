@@ -35,7 +35,7 @@ The program must handle the following commands. If a command has an argument, th
 | size | none | Print the number of elements (also number of nodes) in the tree. | none (0 if tree is empty) |
 | find | string | Print if the given string is or is not in the tree (both messages to stdout) | none |
 | print | none | Use a depth-first traversal (dft) to print all elements in the tree. When you use an inorder DFT, the values will be printed in ascending order (for strings, the values will be in alphabetical order) | none (empty brackets if tree is empty) |
-| breadth | none | Use a breadth-first traversal (bft) to print all elements in the tree. | none (empty brackets if tree is empty) |
+| breadth | none | Use a breadth-first traversal (bft) to print all elements in the tree. This prints one level of the tree at a time (left to right within a given level) | none (empty brackets if tree is empty) |
 | distance | none | Print the average distance nodes are from the root. The root's distance is 0. The root's children are distance == 1, the root's grandchildren are distance == 2, and so on. Calculate the distance for ALL nodes and then take the average. | none (0 if zero or one nodes) |
 | balanced | none | Print if the tree is balanced or not balanced (this type of balanced is called "height-balanced". | none (balanced if empty) |
 | rebalance | none | Modify the tree so it is balanced. | none |
