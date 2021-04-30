@@ -34,8 +34,8 @@ The program must handle the following commands. If a command has an argument, th
 | insert | string | Insert the given string into the binary search tree. The tree must maintain the BST property after insert. | Print error if string already in tree. |
 | size | none | Print the number of elements (also number of nodes) in the tree. | none (0 if tree is empty) |
 | find | string | Print if the given string is or is not in the tree (both messages to stdout) | none |
-| print | none | Use a depth-first traversal (dft) to print all elements in the tree. When you use an inorder DFT, the values will be printed in ascending order (for strings, the values will be in alphabetical order) | none (empty brackets if tree is empty) |
-| breadth | none | Use a breadth-first traversal (bft) to print all elements in the tree. This prints one level of the tree at a time (left to right within a given level) | none (empty brackets if tree is empty) |
+| print | none | Use a depth-first traversal (DFT) to print all elements in the tree. When you use an inorder DFT, the values will be printed in ascending order (for strings, the values will be in alphabetical order) | none (empty brackets if tree is empty) |
+| breadth | none | Use a breadth-first traversal (BFT) to print all elements in the tree. This prints one level of the tree at a time (left to right within a given level) | none (empty brackets if tree is empty) |
 | distance | none | Print the average distance nodes are from the root. The root's distance is 0. The root's children are distance == 1, the root's grandchildren are distance == 2, and so on. Calculate the distance for ALL nodes and then take the average. | none (0 if zero or one nodes) |
 | balanced | none | Print if the tree is balanced or not balanced (this type of balanced is called "height-balanced". | none (balanced if empty) |
 | rebalance | none | Modify the tree so it is balanced. | none |
@@ -97,7 +97,7 @@ Output formatting:
 | insert | None unless there is an error (see below for error message). |
 | size | Print the integer size of the tree to standard output followed by a newline. |
 | find | If the target string is in the tree, print the following to standard output:  `"<str> is in tree.\n"`  where str is the target. If the target string is NOT in the tree print the following to **standard output**: `"<str> is not in tree.\n"` |
-| print | Traverse the tree using a depth-first algorithm. Print all the elements in {}, separate strings by a comma+space, and terminate with a newline: {string one, string two, string three}  There is NO comma after the last string. Print `"{}\n"` if the tree is empty (no space between the braces). |
+| print | Traverse the tree using a depth-first algorithm. Print all the elements in curly brackets {}, separate strings by a comma+space, and terminate with a newline: {string one, string two, string three}  There is NO comma after the last string. Print `"{}\n"` if the tree is empty (no space between the braces). |
 | breadth | Same format as print (it is helpful to write a vector printing function and use it for both print and breadth commands). |
 | distance | Print `"Average distance of nodes to root = "` followed by the average (as a double) of all the node's distances from root followed by a newline. |
 | balanced | If the tree is balanced, print to standard output: `"Tree is balanced.\n"` If the tree is NOT balanced, print to standard output: `"Tree is not balanced.\n"`
@@ -149,7 +149,7 @@ Subsequent calls to `insert()` will be passed the `m_left` and `m_right` fields 
 
 > Note: Commands do not contains spaces, so you can read them using operator>> (e.g. `while (cin >> command)`). String arguments may contains spaces, so you must read them using `getline()`.<br>
 
-Implement the recursive `depth first traversal` (dft) and `breadth first traversal` by inserting elements at the end of a vector as they traverse the tree. Pass the vector to the function as a reference: `void BST::dft(vector<string> &values, Node *cur_root)`<br>
+Implement the recursive `print` function (a depth first traversal or DFT) and `breadth` function (a breadth first traversal or BFT) by inserting elements at the end of a vector as they traverse the tree. Pass the vector to the function as a reference: `void BST::breadth(vector<string> &values, Node *cur_root)`<br>
 
 The breadth first traversal algorithm requires a queue. Use the [standard template library (STL) queue](https://www.cplusplus.com/reference/queue/queue/?kw=queue). To remove an element from this queue, you first get the element with a call to `front()`, and then you remove it will a call to `pop()`. The `pop()` function removes the first element but DOES NOT RETURN IT so you must use `front()` before you call `pop()`.
 
