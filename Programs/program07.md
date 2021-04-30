@@ -149,7 +149,7 @@ Subsequent calls to `insert()` will be passed the `m_left` and `m_right` fields 
 
 > Note: Commands do not contains spaces, so you can read them using operator>> (e.g. `while (cin >> command)`). String arguments may contains spaces, so you must read them using `getline()`.<br>
 
-Implement the recursive `print` function (a depth first traversal or DFT) and `breadth` function (a breadth first traversal or BFT) by inserting elements at the end of a vector as they traverse the tree. Pass the vector to the function as a reference: `void BST::breadth(vector<string> &values, Node *cur_root)`<br>
+Implement the recursive `print` function (a depth first traversal or DFT) and `breadth` function (a breadth first traversal or BFT) by inserting elements at the end of a vector as they traverse the tree. Pass the vector to the function as a reference: `void BST::breadth(vector<string> &values)`<br>
 
 The breadth first traversal algorithm requires a queue. Use the [standard template library (STL) queue](https://www.cplusplus.com/reference/queue/queue/?kw=queue). To remove an element from this queue, you first get the element with a call to `front()`, and then you remove it will a call to `pop()`. The `pop()` function removes the first element but DOES NOT RETURN IT so you must use `front()` before you call `pop()`.
 
