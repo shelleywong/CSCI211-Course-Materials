@@ -38,8 +38,9 @@ The program must handle the following commands from input. If a command has an a
 | breadth | none | Use a breadth-first traversal (BFT) to print all elements in the tree. This prints one level of the tree at a time (left to right within a given level) | none (empty brackets if tree is empty) |
 | distance | none | Print the average distance nodes are from the root. The root's distance is 0. The root's children are distance == 1, the root's grandchildren are distance == 2, and so on. Calculate the distance for ALL nodes and then take the average. | none (0 if zero or one nodes) |
 | balanced | none | Print if the tree is balanced or not balanced (this type of balanced is called "height-balanced". | none (balanced if empty) |
+| getHeight | none | Recursively finds the height of the BST | none |
 | rebalance | none | Modify the tree so it is balanced. | none |
-
+|
 
 Each line of the input will have the following format (assume there is always a space between the command and the argument). The "<" and ">" are NOT in the input.<br>
 
@@ -101,7 +102,9 @@ Output formatting:
 | breadth | Same format as print (it is helpful to write a vector printing function and use it for both print and breadth commands). |
 | distance | Print `"Average distance of nodes to root = "` followed by the average (as a double) of all the node's distances from root followed by a newline. |
 | balanced | If the tree is balanced, print to standard output: `"Tree is balanced.\n"` If the tree is NOT balanced, print to standard output: `"Tree is not balanced.\n"`
+| getHeight | none |
 | rebalance | none |
+|
 
 ### Error messages
 
@@ -156,21 +159,28 @@ The breadth first traversal algorithm requires a queue. Use the [standard templa
 
 ## More tips for when you are stuck
 
+### getHeight command
+Write a recursive function that returns the height of the largest sub-tree plus one.
+
 ### balanced command
 
 Write a recursive function that does two things:
-1. determines if the tree is balanced
-2. returns the height of the tree<br>
+1. determines if the tree is balanced using balance factor
+2. returns true or false<br>
 
-If at any point during the tree traversal you discover a subtree (pointed to by `cur_root`) is not balanced, return -1. Otherwise return the height of the largest sub-tree plus one. Here is the algorithm:
-```
-int BST::balanced(Node *cur_root)
+Balance Factor of a node is defined as the (height of left leaf/child - height of right leaf/child)
+A BST is unbalanced if the balance factor is **not** in the range -1, 0, 1.
+![alt text](https://media.geeksforgeeks.org/wp-content/uploads/tree.jpg)
+
+If at any point during the tree traversal you discover a subtree (pointed to by `cur_root`) is not balanced, return false. Otherwise return true.  Here is the algorithm:
+```cpp
+bool BST::balanced(Node *cur_root)
 
     if cur_root is NULL
-        return 0;  // balanced but of height zero
+        return true;  // balanced but of height zero
 
     if either of my children's subtrees (those rooted at cur_root->m_left and cur_root->m_right) is NOT balanced
-        return -1; // I'm not balanced
+        return false; // I'm not balanced
 
     else return the largest of my children's subtree plus one (plus one is because we must count cur_node in the height)
 ```
@@ -191,7 +201,7 @@ recursively insert the elements after that middle element
 ```
 
 The argument to this function is always the complete vector of elements plus unique start and stop indexes for the range under consideration:
-```
+```cpp
 void BST::insert_from_vector(vector <string> &elements, int start_index, int end_index)
 {
     // this call should recursively insert elements[start_index]..elements[end_index]
