@@ -174,7 +174,7 @@ A BST is unbalanced if the balance factor is **not** in the range -1, 0, 1.
 
 If at any point during the tree traversal you discover a subtree (pointed to by `cur_root`) is not balanced, return false. Otherwise return true.  Here is the algorithm:
 ```cpp
-int BST::balanced(Node *cur_root)
+bool BST::balanced(Node *cur_root)
 
     if cur_root is NULL
         return true;  // balanced but of height zero
