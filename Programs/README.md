@@ -13,6 +13,14 @@ These guidelines borrow heavily from the [Google C++ Style Guide](https://google
 
 Currently, your code should target C++11 (your code will be compiled with the C++11 standard: `-std=c++11`). All assignments in this course can be completed with C++11 features. Outside of this class, you are likely to use newer versions of C++, but even then, you should consider portability to other environments before using features from C++14, C++17 and newer versions in your projects.
 
+### Reminder
+
+Getting your program to pass the provided tests is only one component of the programming assignments. Other grading components include:
+* **Does your program pass the hidden tests?** The provided tests may not cover all of the project specifications; it's your job to consider all potential cases.
+* **Does your program follow the instructions?** If the instructions say to use a particular data structure, make sure to use that data structure. If the instructions require the use of dynamic memory, make sure you've managed memory correctly.
+* **Have you included sufficient and useful comments?** You don't need to be overly verbose or have comments on every line, but you are expected to have file, function, class, variable, and/or implementation comments in every file you submit.
+* **Is your program well-formatted and organized?** Things to consider include proper and consistent indentation, descriptive variable names, and usage of functions.
+
 ### Style Guide Overview
 
 Your program should be neatly organized, consistently indented, and have informative comments throughout. Avoid surprising or dangerous constructs that an average C++ programmer would find tricky or difficult to maintain. Refer to the CSCI 211 Style Guide (on Blackboard) for more details on each of these categories. Things to focus on include:
