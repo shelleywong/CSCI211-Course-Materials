@@ -90,14 +90,6 @@ Pet Interviews - Guinea Pig, https://www.youtube.com/watch?v=jW3XtKBlTz0, Best g
 
 If two or more Videos have the same values for the current sorting methods (e.g. you are sorting by length and two or more videos have the same length), these videos should be sorted in the same order as the input. For example, if a video called "Dog Playing Piano" was input after "Pet Interviews - Guinea Pig" and "Dog Playing Piano" also had a 1-star rating, "Pet Interviews - Guinea Pig" would be listed first because it is first in the input.
 
-## Reminder
-
-Getting your program to pass the provided tests is only one component of the programming assignments. Other grading components include:
-* **Does your program pass the hidden tests?** The provided tests may not cover all of the project specifications; it's your job to consider all potential cases.
-* **Does your program follow the instructions?** If the instructions say to use a particular data structure, make sure to use that data structure. If the instructions require the use of dynamic memory, make sure you've managed memory correctly.
-* **Have you included sufficient and useful comments?** You don't need to be overly verbose or have comments on every line, but you are expected to have file, function, class, variable, and/or implementation comments in every file you submit.
-* **Is your program well-formatted and organized?** Things to consider include proper and consistent indentation, descriptive variable names, and usage of functions.
-
 ## Hints & Best Practices
 
 * Before you start, make sure you understand how the input is ordered and what is required for the output.
@@ -164,7 +156,7 @@ temp_video_pointer->print();
 8. Use the array of 100 pointers to `Video` objects to hold the videos (instead of the temp_video_pointer above). Instead of printing immediately after each video is read, print all the Videos in the array after you are done reading all the input. The output of your program should be complete except for the order of the videos. Make sure everything is working before you move on.
 9. Implement the sorting of the videos. Do not start this step until you have tested your program and are sure all the other components are working.
 
-## General Requirements:
+## General Requirements
 
 Programs should be well formatted and consistent so they are easy to read. The [General Requirements](https://github.com/shelleywong/CSCI211-Course-Materials/blob/main/Programs/README.md#general-requirements) listed in the Programs directory README apply to all programming assignments.<br>
 

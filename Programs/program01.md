@@ -68,12 +68,6 @@ Your program must work exactly like this. It must not print any other characters
 
 ## Hints & Best Practices
 
-You can pass the Turnin tests without following these tips; however, getting your program to pass the provided tests is only one component of the programming assignments. Other grading components include:
-* **Does your program pass the hidden tests?** The provided tests may not cover all of the project specifications; it's your job to consider all potential cases.
-* **Does your program follow the instructions?** If the instructions say to use a particular data structure, make sure to use that data structure. If the instructions require the use of dynamic memory, make sure you've managed memory correctly.
-* **Have you included sufficient and useful comments?** You don't need to be overly verbose or have comments on every line, but you are expected to have file, function, class, variable, and/or implementation comments in every file you submit.
-* **Is your program well-formatted and organized?** Things to consider include proper and consistent indentation, descriptive variable names, and usage of functions.
-
 ### Use Constants
 
 Since you will not be given more than 100 integers, create an array of 100 integers. It is good programming practice to place the "100" in a single place so that it is easy to change:
@@ -123,7 +117,7 @@ In C/C++ you can pass an array without specifying the size of the array. In a co
 
 If you don't finish in time, turn in what you have. If you turn nothing in I will give you a zero. If you turn in something I will give you partial credit.  Partial credit is always better than 0.<br>
 
-## General Requirements:
+## General Requirements
 
 Programs should be well formatted and consistent so they are easy to read. The [General Requirements](https://github.com/shelleywong/CSCI211-Course-Materials/blob/main/Programs/README.md#general-requirements) listed in the Programs directory README apply to all programming assignments.<br>
 

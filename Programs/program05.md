@@ -147,7 +147,7 @@ The `Pqueue` class is a priority queue of `Cust` pointers. It must only contain 
 
 [C++ Struct Documentation](https://www.cplusplus.com/doc/tutorial/structures/)
 
-## Tips and Best Practices
+## Hints and Best Practices
 
 There are many ways to implement this assignment. The following hints describe the most straightforward solution.<br>
 
@@ -218,13 +218,14 @@ for (clock = 1; num_customers > 0; clock++)
 
 ## General Requirements
 
-Programs should be well formatted and consistent so they are easy to read. The same [General Requirements](https://github.com/shelleywong/CSCI211-Course-Materials/blob/main/Programs/program01.md#general-requirements) listed in P1 apply here, including the guidelines for Comments, Formatting, and Style.<br>
+Programs should be well formatted and consistent so they are easy to read. The [General Requirements](https://github.com/shelleywong/CSCI211-Course-Materials/blob/main/Programs/README.md#general-requirements) listed in the Programs directory README apply to all programming assignments.<br>
 
 Remember that the first lines of all your files (.h and .cpp) must contain the following comments:
 ```
 // filename
-// last name, first name
-// ecst_username
+// your name (first and last)
+// your Chico Portal/Turnin username
+// Short summary of the file contents
 ```
 
 ## Testing Your Program
