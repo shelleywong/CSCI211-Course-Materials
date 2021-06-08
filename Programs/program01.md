@@ -16,7 +16,7 @@ Points: 100
 
 This program reads a set of integers from standard input and draws a bar chart to standard output using asterisks and spaces ('*' and ' ').<br>
 
-The user specifies a set of up to 100 integers greater than 0. When the user enters a 0, the program will stop reading standard input and print the chart.<br>
+The user specifies a set of up to 100 integers. The integers may be any value greater than 0. When the user enters a 0, the program will stop reading standard input and print the chart.<br>
 
 For example, if the user entered, `1 2 3 4 3 2 1 10 0`, your program must print:
 ```
@@ -39,7 +39,7 @@ The input numbers might be on separate lines. If you read them using `cin >>` yo
 
 Your program must be able to read up to 100 positive integers (greater than 0) from standard input. You must store these integers in a single array. For this program, do **not** use a standard template library container, such as a vector.
 
-> Note: Did you remember to handle negative numbers?
+> Note: There are various ways to handle invalid input. For this program, here are two ways you could handle negative numbers, after you extract the input: (1) discard/ignore the input, or (2) print a message to stderr (the standard output stream for errors), e.g. `cerr << input << " is not valid input. Enter a positive integer.\n";`. In both cases, continue accepting input after receiving the invalid input, until the user enters a 0.
 
 After all these numbers are read and you've reached the end of input (i.e. a `0` has been entered), draw the corresponding bar chart. For example consider the following input/output (I use "$" to represent the Linux command prompt):
 ```
@@ -66,7 +66,13 @@ Your program must work exactly like this. It must not print any other characters
 
 > Note: If you think your test looks correct but is not passing some tests, whitespace may not match -- check your spaces and endlines (endl or '\n')
 
-## Tips & Best Practices
+## Hints & Best Practices
+
+You can pass the Turnin tests without following these tips; however, getting your program to pass the provided tests is only one component of the programming assignments. Other grading components include:
+* **Does your program pass the hidden tests?** The provided tests may not cover all of the project specifications; it's your job to consider all potential cases.
+* **Does your program follow the instructions?** If the instructions say to use a particular data structure, make sure to use that data structure. If the instructions require the use of dynamic memory, make sure you've managed memory correctly.
+* **Have you included sufficient and useful comments?** You don't need to be overly verbose or have comments on every line, but you are expected to have file, function, class, variable, and/or implementation comments in every file you submit.
+* **Is your program well-formatted and organized?** Things to consider include proper and consistent indentation, descriptive variable names, and usage of functions.
 
 ### Use Constants
 
@@ -117,51 +123,17 @@ In C/C++ you can pass an array without specifying the size of the array. In a co
 
 If you don't finish in time, turn in what you have. If you turn nothing in I will give you a zero. If you turn in something I will give you partial credit.  Partial credit is always better than 0.<br>
 
-## General Requirements
+## General Requirements:
 
-### Comments, Formatting, and Style
+Programs should be well formatted and consistent so they are easy to read. The [General Requirements](https://github.com/shelleywong/CSCI211-Course-Materials/blob/main/Programs/README.md#general-requirements) listed in the Programs directory README apply to all programming assignments.<br>
 
-Your program should:
-* Be neatly organized
-* Be consistently indented (make sure your code blocks align)
-* Have informative comments throughout<br>
-
-Doing these things will make your code more readable, more understandable, easier to maintain, and easier to debug (not to mention future instructors and employers may expect it).<br>
-
-The first lines of all your files (.h and .cpp) must contain the following comments (use either `//` or `/* */` syntax):
+Remember that the first lines of all your files (.h and .cpp) must contain the following comments:
 ```
 // filename
 // your name (first and last)
 // your Chico Portal/Turnin username
-// Short summary of the contents of the file (this part is optional, but useful)
+// Short summary of the file contents
 ```
-Throughout your program, you should have brief comments describing how a line or section of code works. You shouldn't need a comment on every line, but consider including a comment before each function or for any nontrivial piece of code.<br>
-
-Use descriptive variable names. Avoid ambiguous or short variable names, with the exception of loop counters (e.g., i, j, k).<br>
-
-Use all lowercase for your file names (e.g. "chart.cpp"). We will start using classes in future programs -- use a capital letter to name classes in your code (e.g. `Video`)<br>
-
-To ensure your code is consistently indented, you may want to use spaces instead of tabs. In Vim, you can change the settings and [convert all tabs to spaces](https://vim.fandom.com/wiki/Converting_tabs_to_spaces) by adding a line to your `~/.vimrc` file:
-```
-:set tabstop=4 shiftwidth=4 expandtab
-```
-In this case, all tabs are 4 space characters, but you could set the tab key to be a different number of spaces (use 4, 2, or 8).
-* The `~/.vimrc` file should be in your home folder: `$ cd ~`
-* You can see if the file exists: `$ ls -a`
-* If it exists, add the line mentioned above. If it doesn't exist, you can create it: `$ vim .vimrc`
-* For the new settings to be applied, close the terminal and open a new one.<br>
-
-Other editors should have an option to set the tab size as well. The important thing is that you stay consistent. Other editors may have a different default value for tabs, so if you intermix tabs and spaces for indentation, the alignment may be off.<br>
-
-I don't have a style guide preference, but you should strive for readability, consistency, and providing enough documentation so that another person (or Future You) can easily understand what your code is doing. <br>
-
-I will deduct points if your program is not well-formatted or you don't have sufficient and useful comments -- make sure to ask the instructor if you are unclear what is expected of you for this requirement.<br>
-
-### Use Functions
-
-The `main()` function is the first function that's called when a C++ program begins execution. While it is possible to write an entire program in `main()`, you should try to separate the functionality of a program into independent modules (think of each module/function as a small program that executes a specific task). The `main()` should just be used as a driver to call other functions.<br>
-
-Consider how your program could be divided into subtasks, and put each subtask into its own function. Define your function prototypes near the top of your program and write the functions after your `main()`.
 
 ## Testing Your Program
 
