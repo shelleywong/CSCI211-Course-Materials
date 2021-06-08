@@ -153,6 +153,8 @@ Implement the recursive `print` function (a depth first traversal or DFT) and `b
 
 The breadth first traversal algorithm requires a queue. Use the [standard template library (STL) queue](https://www.cplusplus.com/reference/queue/queue/?kw=queue). To remove an element from this queue, you first get the element with a call to `front()`, and then you remove it will a call to `pop()`. The `pop()` function removes the first element but DOES NOT RETURN IT so you must use `front()` before you call `pop()`.
 
+* Make sure that you are correctly managing dynamic memory.
+* Start today.
 
 ## More tips for when you are stuck
 

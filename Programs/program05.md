@@ -216,6 +216,9 @@ for (clock = 1; num_customers > 0; clock++)
 
 > Note: Make sure to follow this order; otherwise, your output may be incorrect
 
+* Make sure that you are correctly managing dynamic memory.
+* Start today.
+
 ## General Requirements
 
 Programs should be well formatted and consistent so they are easy to read. The [General Requirements](https://github.com/shelleywong/CSCI211-Course-Materials/blob/main/Programs/README.md#general-requirements) listed in the Programs directory README apply to all programming assignments.<br>

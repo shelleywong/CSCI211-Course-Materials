@@ -120,6 +120,9 @@ You can't just use `getline()` or `cin >> string_variable` for this program beca
 
 > Note: The [cctype library](https://www.cplusplus.com/reference/cctype/) provides some functions that may be useful for checking characters from input.
 
+* Make sure that you are correctly managing dynamic memory.
+* Start today.
+
 ## General Requirements
 
 Programs should be well formatted and consistent so they are easy to read. The [General Requirements](https://github.com/shelleywong/CSCI211-Course-Materials/blob/main/Programs/README.md#general-requirements) listed in the Programs directory README apply to all programming assignments.<br>
