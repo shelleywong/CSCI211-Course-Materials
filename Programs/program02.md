@@ -5,11 +5,11 @@ Points: 150
 
 ## Objectives
 
-* Practice classes and objects
-* Review reading input from standard in
+* Practice working with classes, objects, and arrays
+* Review reading input from standard input
 * Practice comparison of strings
 * Practice dynamic memory allocation
-* Practice writing to standard out
+* Practice writing to standard output
 * Practice exit codes
 * Introduce sorting algorithms
 
@@ -27,15 +27,17 @@ Put the `main()` function in the file main.cpp<br>
 
 Allow the user to specify up to 100 videos. If more than 100 videos are specified, print the message "Too many videos, giving up." with a newline (`endl`) to standard error (using `cerr`) and terminate the program.<br>
 
-> Note: 100 is the maximum size of the array. You can statically allocate the array.
+> Note: 100 is the maximum size of the array. Since you know the maximum size, you can statically allocate the array.
+
+> Note: use a C-style array. Do not use a standard template library container. You will get opportunities to use other types of containers in future programs, but C-style arrays are a powerful tool and it is beneficial for you to understand how to work with them.
+
+> Note: `cerr` is the standard output stream for errors. You can use it in the same way that you would use `cout`.
 
 Return an exit status of `0` if there are no errors, or `1` if there is an error (exit status is the value returned from `main()`).<br>
 
-Use an array of pointers to videos (`Video *`) to store the videos. Use dynamic memory to create a `new Video` object for each description read.<br>
+Use an array of pointers to videos (`Video*`) to store the videos. Use dynamic memory to create a `new Video` object for each description read.<br>
 
-> Note: use the C++ `new` operator to dynamically allocate memory
-
-> Note: use a C-style array. Do not use a standard template library container
+> Note: use the C++ `new` operator to dynamically allocate memory. At the end of the program, use the C++ `delete` operator to release any memory that was dynamically allocated.
 
 The first thing in the input must be the sorting criteria (on its own line).  The valid strings are "rating", "length", and "title."<br>
 
@@ -124,10 +126,13 @@ if (str1 > str2)
 ```
 * Use the [bubble sort algorithm](https://en.wikipedia.org/wiki/Bubble_sort) to sort the videos. This [Lego Bubble Sort video](https://www.youtube.com/watch?v=MtcrEhrt_K0) may help you understand how this algorithm works. The following code uses the `Video::longer()` function above and sorts the array by video length:
 ```cpp
-for (int last = num_videos -1; last > 0; last--)
-    for (int cur = 0; cur < last; cur++)
-        if (videos[cur]->longer(videos[cur+1]))
+for (int last = num_videos - 1; last > 0; last--) {
+    for (int cur = 0; cur < last; cur++) {
+        if (videos[cur]->longer(videos[cur+1])) {
             swap(videos[cur], videos[cur+1]);  // since videos is an array of pointers you can simply swap the addresses at the cur and cur+1 locations.
+        }
+    }
+}
 ```
 * Make sure that you are correctly managing dynamic memory: at the end of your program, use the `delete` operator to deallocate any memory that was allocated with `new`. You can use [Valgrind](https://www.valgrind.org/docs/manual/quick-start.html) to detect if your program contains any memory leaks. Example with one argument (also works with Linux redirection):
 ```
