@@ -90,7 +90,15 @@ Pet Interviews - Guinea Pig, https://www.youtube.com/watch?v=jW3XtKBlTz0, Best g
 
 If two or more Videos have the same values for the current sorting methods (e.g. you are sorting by length and two or more videos have the same length), these videos should be sorted in the same order as the input. For example, if a video called "Dog Playing Piano" was input after "Pet Interviews - Guinea Pig" and "Dog Playing Piano" also had a 1-star rating, "Pet Interviews - Guinea Pig" would be listed first because it is first in the input.
 
-## Tips & Best Practices
+## Reminder
+
+Getting your program to pass the provided tests is only one component of the programming assignments. Other grading components include:
+* **Does your program pass the hidden tests?** The provided tests may not cover all of the project specifications; it's your job to consider all potential cases.
+* **Does your program follow the instructions?** If the instructions say to use a particular data structure, make sure to use that data structure. If the instructions require the use of dynamic memory, make sure you've managed memory correctly.
+* **Have you included sufficient and useful comments?** You don't need to be overly verbose or have comments on every line, but you are expected to have file, function, class, variable, and/or implementation comments in every file you submit.
+* **Is your program well-formatted and organized?** Things to consider include proper and consistent indentation, descriptive variable names, and usage of functions.
+
+## Hints & Best Practices
 
 * Before you start, make sure you understand how the input is ordered and what is required for the output.
 * Program incrementally. Get small parts working before you move on. The next section describes how to break the program into pieces.
@@ -106,7 +114,7 @@ while (getline(cin, title))
 cin.ignore();
 ```
 * When sorting the videos you need to be able to determine how two video objects should be ordered. The easiest way to do this is to write member functions to handle the comparisons in class `Video`. For example, this function could be used when sorting the videos by length:
-```
+```cpp
 // return true if the current video is longer than the given video (other), return false otherwise
 bool Video::longer(Video *other)
 {
@@ -114,7 +122,7 @@ bool Video::longer(Video *other)
 }
 ```
 * You will need to compare strings alphabetically when sorting by title. If you use C++ style strings (as suggested above) you can compare them using the normal comparison operators:
-```
+```cpp
 string str1 = "hello";
 string str2 = "goodbye";
 if (str1 > str2)
@@ -123,7 +131,7 @@ if (str1 > str2)
 }
 ```
 * Use the [bubble sort algorithm](https://en.wikipedia.org/wiki/Bubble_sort) to sort the videos. This [Lego Bubble Sort video](https://www.youtube.com/watch?v=MtcrEhrt_K0) may help you understand how this algorithm works. The following code uses the `Video::longer()` function above and sorts the array by video length:
-```
+```cpp
 for (int last = num_videos -1; last > 0; last--)
     for (int cur = 0; cur < last; cur++)
         if (videos[cur]->longer(videos[cur+1]))
@@ -158,13 +166,14 @@ temp_video_pointer->print();
 
 ## General Requirements:
 
-Programs should be well formatted and consistent so they are easy to read. The same [General Requirements](https://github.com/shelleywong/CSCI211-Course-Materials/blob/main/Programs/program01.md#general-requirements) listed in P1 apply here, including the guidelines for Comments, Formatting, and Style.<br>
+Programs should be well formatted and consistent so they are easy to read. The [General Requirements](https://github.com/shelleywong/CSCI211-Course-Materials/blob/main/Programs/README.md#general-requirements) listed in the Programs directory README apply to all programming assignments.<br>
 
 Remember that the first lines of all your files (.h and .cpp) must contain the following comments:
 ```
 // filename
-// last name, first name
-// ecst_username
+// your name (first and last)
+// your Chico Portal/Turnin username
+// Short summary of the file contents
 ```
 
 ## Testing Your Program
