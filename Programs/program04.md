@@ -161,7 +161,7 @@ No extra credit points will be given to late assignments. You must turn in a non
 
 The extra credit version must also pass all of the non-extra credit tests.<br>
 
-You will get 10 points extra credit if your program passes all the extra credit tests, and a fraction of 10 points if it passes some of the extra credit tests. Since these are multi-character operators, you will have to modify how you read the input.<br>
+You will get 20 points extra credit if your program passes all the extra credit tests, and a fraction of 20 points if it passes some of the extra credit tests. Since these are multi-character operators, you will have to modify how you read the input.<br>
 
 Implement the following operators:
 | Operator | Definition | Example |

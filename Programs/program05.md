@@ -262,7 +262,7 @@ No extra credit points will be given to late assignments (both your regular assi
 
 You must turn in the regular assignment code separately from the extra credit assignment code (I will create a separate assignment on [Turnin](https://turnin.ecst.csuchico.edu)).<br>
 
-You will get 10 points extra credit if your program passes all the extra credit tests (a fraction of 10 points if you pass some of the extra credit tests). You have one extra credit test available to you in 211-starter-pack/211/p5_extra/tests/. I will use additional tests when grading the extra credit.<br>
+You will get 30 points extra credit if your program passes all the extra credit tests (a fraction of 30 points if you pass some of the extra credit tests). You have one extra credit test available to you in 211-starter-pack/211/p5_extra/tests/. I will use additional tests when grading the extra credit.<br>
 
 Instead of having a single checkout queue, give each checker its own queue.<br>
 
