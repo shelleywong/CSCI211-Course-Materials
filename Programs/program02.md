@@ -129,6 +129,11 @@ for (int last = num_videos -1; last > 0; last--)
         if (videos[cur]->longer(videos[cur+1]))
             swap(videos[cur], videos[cur+1]);  // since videos is an array of pointers you can simply swap the addresses at the cur and cur+1 locations.
 ```
+* Make sure that you are correctly managing dynamic memory: at the end of your program, use the `delete` operator to deallocate any memory that was allocated with `new`. You can use [Valgrind](https://www.valgrind.org/docs/manual/quick-start.html) to detect if your program contains any memory leaks. Example with one argument (also works with Linux redirection):
+```
+$ ./myprog arg1                             // run your program like normal
+$ valgrind --leak-check=yes ./myprog arg1   // test your program with valgrind
+```
 * Start today.
 
 ## Plan of Attack:
