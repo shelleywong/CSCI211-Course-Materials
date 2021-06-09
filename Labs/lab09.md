@@ -55,14 +55,16 @@ You need to decide how the queue will be ordered (i.e. remove from front -or- re
 ## Function arguments and return types
 
 Consider a queue of integers. The `dequeue` function needs to return two pieces of information: did the dequeue succeed? and what value was removed? Typically this is done by using a bool return type and a reference parameter:
-```
-bool Iqueue::dequeue(int & value_removed)
+```cpp
+// example dequeue function for a queue of integers
+bool Iqueue::dequeue(int &value_removed)
 ```
 
 The reason we need both is because there is no integer value that we can return to indicate the queue was empty. For example, if we decide that returning 0 means the queue was empty, what would happen if there was a 0 in the queue? There is no integer that we can use because it is valid for any integer to be inserted into the queue.<br>
 
-Now consider a queue of pointers to `Cust`. Since NULL is not a "valid" pointer we can use it to indicate the queue was empty:
-```
+Now consider a queue of pointers to `Cust`. Since NULL is not a "valid" pointer we can use it to indicate the queue was empty (i.e. we don't need both a return value and a reference parameter in this case):
+```cpp
+// example dequeue function for a queue of pointers to Cust objects
 Cust *Pqueue::dequeue()
 ```
 This function returns a non-null pointer if the queue was not empty (a pointer to the `Cust` that was removed) and the dequeue succeeded. It returns NULL if the queue was empty. A priority queue dequeue function should remove the highest priority node and return a pointer to the customer that was in the highest priority location in the queue.<br>
