@@ -7,9 +7,9 @@ Points: 300
 
 * Implement a Priority Queue
 * Practice using a struct
-* Practice command line arguments
+* Practice working with command line arguments
 * Practice using file streams
-* Practice assert(·)
+* Practice using assert(·)
 * Deploy multiple instances of your priority queue
 
 > Note: The priority queue used in this assignment was created in [Lab 9](https://github.com/shelleywong/CSCI211-Course-Materials/blob/main/Labs/lab09.md). Follow those instructions to create and test your Pqueue.
@@ -105,7 +105,7 @@ time = 75
 ```
 
 The `entered/done_shopping/started/done_checkout` messages must be printed in member functions of class `Cust`. This is easy to implement. Create a `print` function for each type of message and pass the `ostream` and clock (and sometimes other information). For example, the following function prints the "entered store" message.
-```
+```cpp
 void Cust::print_entered(ostream & os, int clock)
 {
     assert(clock == m_arrival_time);
@@ -136,10 +136,9 @@ The `Pqueue` class is a priority queue of `Cust` pointers. It must only contain 
 | Class | Purpose |
 | --- | --- |
 | class Cust | Stores information about a customer |
-| class Pqueue | Priority queue of `Cust *` (time will be used as the priority) |
+| class Pqueue | Priority queue of `Cust*` (time will be used as the priority) |
 
 **Required structures (struct)**:
-
 * struct Checker - Stores information about a checker:
   * money in the register
   * time a checker is done serving the current customer OR time checker's break ends (<= clock if not on break, >= clock if on break or serving a customer)
@@ -147,12 +146,27 @@ The `Pqueue` class is a priority queue of `Cust` pointers. It must only contain 
 
 [C++ Struct Documentation](https://www.cplusplus.com/doc/tutorial/structures/)
 
+## Plan of Attack
+
+Work step by step, and test that your program is working as expected along the way:
+1. First make sure to complete the Pqueue and Cust classes (Lab 09) and check that they are functioning as expected.
+2. Add member functions to class Cust that print each of the customer messages.
+3. If you need access to any Cust member variables, you can create getter functions in class Cust.
+4. If you did not complete a ~Pqueue destructor for Lab 09, make sure to do so for P5.
+5. In sim.cpp, get the command line input and make sure all input is valid. If not, print the appropriate error message.
+6. One of the command line inputs is an input file that contains information about the customer. Read in all of the customer information, one customer at a time: for each customer, create a new Cust object with the provided information and add the customer to the arrival queue before moving on.
+7. After you've gotten all input and added all customers to the arrival queue, you can call the run_simulation() function.
+8. At the beginning of the run_simulation() function, create an array of pointers to Checker structs (also create the Checker struct if you haven't already).
+9. Then implement the body of the simulation (described below).
+10. Print the final messages.
+11. Read the requirements carefully to make sure your program is complete.
+
 ## Hints and Best Practices
 
 There are many ways to implement this assignment. The following hints describe the most straightforward solution.<br>
 
 Each customer in the input contains the string "shopper" or the string "robber". It is tempting to store this string in the `Cust` objects, but it is much better to use a boolean value (bool) to store this condition. Consider the following call to the `Cust` constructor. It converts the string role_string into a boolean that is true if role_string == "robber":
-```
+```cpp
 new Cust(name, (role_string == "robber" ? 1 : 0), arrival_time, num_items);
 ```
 > Note: this is an example of a [conditional ternary operator](https://www.cplusplus.com/doc/tutorial/operators/). It takes three operands, making it possible to write an if/else conditional as an expression.<br>
@@ -163,13 +177,13 @@ The file sim.cpp will contain the functions `main()` and `run_simulation()`.  Yo
 Perform all the input in `main()`. Read the customers one at a time, create a Cust object for the new customer, and then insert the Cust onto a priority queue ordered by their arrival time (if you use arrival time as the priority, they will be ordered correctly). `arrival_q` would be a good name for this queue. Do not use `getline()` or `eof()` or `EOF`.<br>
 
 Once all the customers have been read and inserted into the arrival queue, call `run_simulation()`. You will need to pass to `run_simulation()`:
-* the arrival queue
+* a reference to the arrival queue
 * the number of checkers
 * the checker's break
-* an ofstream (to be used for output, all non-error output is written to the file given on the command line).<br>
+* a reference to an ofstream (an output file stream to be used for output; all non-error output is written to the file given on the command line).<br>
 
 Checkers can be implemented as an array of `Checker` structs. This struct must contain a pointer to their current `Cust`. If the checker is not serving anyone, its `Cust` pointer should be NULL. Since you don't know how many checkers there are until run time, you cannot create this array until run time:
-```
+```cpp
 void run_simulation(Pqueue &arrival_queue, int num_checkers, int break_duration, ostream &os)
 {
     // create an array of Checker structures
@@ -177,44 +191,50 @@ void run_simulation(Pqueue &arrival_queue, int num_checkers, int break_duration,
 
     // now use a loop to initialized all elements of the Checker structures
     ...
-
 }
 ```
+
+Notice that there are 4 loops within the main simulation loop:
+* Loop 1: Check if there are any customers who have arrived at the store and are ready to start shopping.
+* Loop 2: Check if any customers are finished shopping and ready to get in line to wait for an available checker.
+* Loop 3: Check if any customers are done checking out. If so, update the checker information and remove the current customer from the simulation. This checker is now available to help the next customer.  
+* Loop 4: Check if there is both a checker available and a customer waiting on the checkout queue. If so, have have the customer move off the checkout line and start checking out with the first available checker.
+
+> NOTE: Loop 3 must execute before Loop 4, because when a checker finishes with a customer, we want the checker to immediately become available to help any customers waiting on the checkout queue (we don't want any clock time to pass in between). However, you need to implement Loop 4 before you implement Loop 3, because Loop 4 assigns each customer to a checker.
 
 The body of the simulation should proceed as follows. If you don't follow this order, your output may not be in the correct order:
 ```
 initialize num_customers to equal the number of customers in the arrival_queue
 for (clock = 1; num_customers > 0; clock++)
 
-    For all customers waiting on the queue to enter the store (i.e. those on the arrival_queue) that have an arrival_time == clock
+    For all customers waiting on the queue to enter the store (i.e. those on the arrival_queue) that have an arrival_time == clock:
         * remove them from the arrival_queue
         * print the appropriate message (entering store)
         * calculate what time they will be done shopping (hint: depends on the number of items)
         * place them on the shopping_queue using the time they will be done shopping as the priority
 
-    For all customers on the shopping_queue that are done shopping
+    For all customers on the shopping_queue that are done shopping:
         * remove them from the shopping_queue
         * print the appropriate message (done shopping)
         * place them on the checker_queue (don't need a priority, use the same priority for all customers)
 
-        // NOTE: this has to execute before you place customers on checkers,
-        // but you will have to implement placing customers on checkers before /// you can test this part of the program
-
-    For all the customers currently being served by a checker that are done at time == clock
+    For all the customers currently being served by a checker that finish checking out at time == clock:
         * increment/decrement the checker's total cash
         * print the appropriate message (paid or stole message)
-        * decrement the number of customers (this is used in the for loop)
+        * decrement the number of customers (this variable is used by the main simulation loop)
         * if the customer was a robber, update the checker so it will end its break at the correct time
         * delete this customer
-        * set the checker's customer pointer to NULL (indicates it has no customer)
+        * set the checker's customer pointer to NULL (indicates that the checker is no longer helping a customer)
 
-    While there is an available checker and there is a customer on the checker_queue
+    While there is an available checker and there is a customer on the checker_queue:
         * remove the customer from the checker_queue and assign it to an available checker (always pick the available checker w/the lowest index)
         * calculate the time the customer will be done checking-out/stealing (store this done time in struct Checker)
         * print the start checkout message
 ```
 
 > Note: Make sure to follow this order; otherwise, your output may be incorrect
+
+After the main simulation loop is finished, remember to print the amount of money in each register, print the current time, and delete the array of Checker structs.
 
 * Make sure that you are correctly managing dynamic memory.
 * Start today.
