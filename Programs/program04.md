@@ -120,6 +120,8 @@ You can't just use `getline()` or `cin >> string_variable` for this program beca
 
 > Note: The [cctype library](https://www.cplusplus.com/reference/cctype/) provides some functions that may be useful for checking characters from input.
 
+> Note: Remember that the extraction operation on `cin` uses the type of the variable that follows the `>>` operator to determine how it interprets the characters read from input. Thus, if you expect an integer but the user enters something that is not an integer, the extraction operation fails. A [stream function](http://www.cplusplus.com/reference/ios/ios/) such as good() or fail() may be useful for checking if the user entered valid input.
+
 * Make sure that you are correctly managing dynamic memory.
 * Start today.
 
