@@ -16,12 +16,12 @@ Customers in the Kwik-E-Mart simulation (p5) will be represented by a simple obj
 4. number of items (an integer)<br>
 
 The `Cust` constructor should take these four variables as parameters:
-```
+```cpp
 new Cust("Homer", false, 42, 12);
 ```
 
 Class Cust will print to a specific ostream (instead of always using cout). Its print function should look like this:
-```
+```cpp
 void Cust::print(ostream &os)
 {
     os <<   // put output here
@@ -72,17 +72,17 @@ This function returns a non-null pointer if the queue was not empty (a pointer t
 The enqueue function should take:
 1. A pointer to a Cust object
 2. An integer priority
-```
+```cpp
 void Pqueue::enqueue(Cust *cust, int priority);
 ```
 
 Class Pqueue must also have an empty function that returns true if the queue is empty, false if it is not empty
-```
+```cpp
 bool Pqueue::empty()
 ```
 
 A Pqueue length function will return an integer representing the number of nodes currently in the queue.
-```
+```cpp
 int Pqueue::length()
 ``` 
 
