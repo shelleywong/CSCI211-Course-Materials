@@ -98,13 +98,13 @@ If two or more Videos have the same values for the current sorting methods (e.g.
 * Program incrementally. Get small parts working before you move on. The next section describes how to break the program into pieces.
 * `cin >> my_string` will not work for strings with spaces. You will need to use `getline(cin, title)` where `title` is a C++ string.
 * Use the call to getline in the while loop:
-```
+```cpp
 // while there are more video descriptions to read
 while (getline(cin, title))
 ```
 * Use `cin >> ` to read both the length and the rating.
 * After you read the rating (which is the last element of the description) there will be an extra line feed that you need to get rid of before you can read the next description (getline will read an empty line if you don't get rid of the newline). Use the following statement to get rid of that line feed:
-```
+```cpp
 cin.ignore();
 ```
 * When sorting the videos you need to be able to determine how two video objects should be ordered. The easiest way to do this is to write member functions to handle the comparisons in class `Video`. For example, this function could be used when sorting the videos by length:
