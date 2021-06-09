@@ -156,9 +156,9 @@ $ make
 
 6. Implement the `Video` class. Include a constructor and a print function.
 7. After you read each description, create a new `Video` object (using the C++ `new` operator). Call the print function for that new object. Make sure the output is in the correct format so you don't have to worry about the print format anymore.
-```
+```cpp
 // Create the new Video object
-Video *temp_video_pointer = new Video( -- the variables that hold the values you just read in go here -- );
+Video *temp_video_pointer = new Video( /* the variables that hold the values you just read in go here */ );
 
 // tell the new Video object to print itself
 temp_video_pointer->print();
