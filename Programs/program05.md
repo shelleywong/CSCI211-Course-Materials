@@ -194,13 +194,13 @@ void run_simulation(Pqueue &arrival_queue, int num_checkers, int break_duration,
 }
 ```
 
-Notice that there are 4 loops within the main simulation loop:
+The body of the simulation is shown below. Notice that there are 4 loops within the main simulation loop:
 * Loop 1: Check if there are any customers who have arrived at the store and are ready to start shopping.
 * Loop 2: Check if any customers are finished shopping and ready to get in line to wait for an available checker.
 * Loop 3: Check if any customers are done checking out. If so, update the checker information and remove the current customer from the simulation. This checker is now available to help the next customer.  
 * Loop 4: Check if there is both a checker available and a customer waiting on the checkout queue. If so, have have the customer move off the checkout line and start checking out with the first available checker.
 
-> NOTE: Loop 3 must execute before Loop 4, because when a checker finishes with a customer, we want the checker to immediately become available to help any customers waiting on the checkout queue (we don't want any clock time to pass in between). However, you need to implement Loop 4 before you implement Loop 3, because Loop 4 assigns each customer to a checker.
+> NOTE: Loop 3 must execute before Loop 4, because when a checker finishes with a customer, we want the checker to immediately become available to help any customers waiting on the checkout queue (we don't want any clock time to pass in between). **However**, you need to implement Loop 4 before you implement Loop 3, because Loop 4 assigns each customer to a checker.
 
 The body of the simulation should proceed as follows. If you don't follow this order, your output may not be in the correct order:
 ```
