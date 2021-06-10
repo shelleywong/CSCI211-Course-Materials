@@ -8,14 +8,14 @@ Points: 200
 * Deploy a Linked List in an application
 * Implement a Stack
 * Learn postfix notation
-* Practice using cin.peek()
+* Practice using cin.peek(), validating input, and working with input from the standard input stream
 * Practice catching errors
 
 ## Overview
 
 > The stack used in this assignment was created in Lab 7. Follow the [Lab 7 instructions](https://github.com/shelleywong/CSCI211-Course-Materials/blob/main/Labs/lab07.md) to create and test your stack.
 
-The standard form of equations, 2 + 4, is called *infix* because the *operator* (+ in this example) is "in" the middle of the *operands* (2 and 4 in this example). This form has the drawback of not being able to control the order in which the operators are applied without using parentheses. For example, if you want 2 + 4 multiplied by 5, you have to write (2+4)*5. While this is easy to do in a programming language, it is difficult to do on a standard calculator.<br>
+The standard form of equations, 2 + 4, is called *infix* because the *operator* (+ in this example) is "in" the middle of the *operands* (2 and 4 in this example). This form has the drawback of not being able to control the order in which the operators are applied without using parentheses. For example, if you want 2 plus 4 multiplied by 5, you have to write (2+4)*5. While this is easy to do in a programming language, it is difficult to do on a standard calculator.<br>
 
 Postfix notation (also called Reverse Polish Notation or RPN) is much better suited for calculators.  In postfix notation, the operator goes after the operand.  For example, the equation 2 4 + means 2 plus 4, and the expression 2 4 + 5 * means to first apply + to 2 and 4 and then apply * to the result of 2 + 4 and 5.  The result is (2 + 4) * 5 and you didn't have to type in the "(" and ")".<br>
 
@@ -53,7 +53,7 @@ Put `main()` in the file calc.cpp<br>
 
 ### Input
 
-Your program must read a single equation from standard input. The operators are `+ - * / ^` (^ is power, `2 4 ^` is 2 raised to the power of 4). Numbers can be any double number, for example 4, 4.2, .2, 0.2, 0000.233. You can assume that the number is small enough to fit into a double variable (I won't give you a number with 200 digits).<br>
+Your program must read a single equation from standard input. The operators are `+ - * / ^` (^ is power, `2 4 ^` is 2 raised to the power of 4). Numbers can be any valid double number, for example 4, 4.2, .2, 0.2, 0000.233. You can assume that the number is small enough to fit into a double variable (I won't give you a number with 200 digits).<br>
 
 Your program should ignore all white space (spaces, tabs, newlines).<br>
 
@@ -61,7 +61,9 @@ If two numbers are in a row, there must be a space between them. For example, `4
 
 There do not have to be spaces between numbers and operators. For example, `10 10+` is a legal equation.<br>
 
-There do not have to be spaces between two operators. For example, `10 10 10++` is a legal equation.
+There do not have to be spaces between two operators. For example, `10 10 10++` is a legal equation.<br>
+
+Your stack should be able to handle negative numbers, but you will not receive any negative numbers as input (e.g. `-1 2 +` is an invalid expression because `-` does not have any numbers to operate on, but `1 2 -` is valid and would push -1 onto the stack).
 
 ### Files
 
@@ -90,7 +92,7 @@ Assume that all intermediate results and the final result are small enough to fi
 
 All errors must be detected in calc.cpp. Recall that stack `pop()` must return an error when the stack is empty (see above).<br>
 
-All errors must be printed in calc.cpp (you cannot print an error message in any of the stack functions).<br>
+All error messages must be printed in calc.cpp (do not print an error message in any of the stack functions).<br>
 
 If the input is not a valid post-fix expression, your program should print the following to standard error (`cerr`):
 ```
@@ -122,6 +124,7 @@ You can't just use `getline()` or `cin >> string_variable` for this program beca
 
 > Note: Remember that the extraction operation on `cin` uses the type of the variable that follows the `>>` operator to determine how it interprets the characters read from input. Thus, if you expect an integer but the user enters something that is not an integer, the extraction operation fails. A [stream function](http://www.cplusplus.com/reference/ios/ios/) such as good() or fail() may be useful for checking if the user entered valid input.
 
+* If you are unclear about how the calculator should work, examine the provided test files. Each test has files for input (.in), output (.out), error output (.err), and exit status (.exit). Think about any cases that are not covered by the provided tests, and create your own tests for these cases.
 * Make sure that you are correctly managing dynamic memory.
 * Start today.
 
