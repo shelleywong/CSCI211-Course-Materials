@@ -91,9 +91,9 @@ This test code instantiates a Grid object, draws a couple characters onto the gr
 ### The Base Class
 
 * Class `Shape` must be used as the base class for several derived classes: `Square`, `Triangle`, `Circle`, and `Point`.
-* It must store the x and y location that the shape is to be drawn (I called the variables `m_x` and `m_y`).
+* It must store the x and y location where the shape will be drawn (I called the variables `m_x` and `m_y`).
 * It will have a single constructor that takes x and y as arguments.
-* In addition to the constructor, it will have a single member function `draw()` that must have a single argument, a reference to a `Grid` object (`void draw(Grid &grid)`). This function must be a `pure virtual` function (learn this term, it will be on the next exam).<br>
+* In addition to the constructor, it will have a single member function `draw()` that must have a single argument, a reference to a `Grid` object (`void draw(Grid &grid)`). This function must be a `pure virtual` function (learn this term, it may be on the next exam).<br>
 
 You can make a virtual function into a pure virtual function by assigning it to zero in the base class declarations:
 ```cpp
@@ -106,6 +106,10 @@ class Shape
 };
 ```
 Pure virtual functions MUST be overridden by the sub class before the sub class can be instantiated.<br>
+
+* In general, you should make all member variables `private`. However, when working with inheritance, you can give member variables `protected` access.
+  * `protected` member variables are accessible to the base class that defines them and any derived classes that inherit from the base class.
+  * `protected` members are not accessible outside of the base class and derived classes so, similar to `private` members, they cannot be accessed outside of the classes that use them.
 
 ### The Derived Classes
 
@@ -168,7 +172,10 @@ Class `Point`'s constructor takes the same (x,y) as the other shapes and a chara
 
 ## Hints and Best Practices
 
-This program has many classes and files. However, they are all very simple.  Once you get one shape working, creating the other shapes should be easy. Make sure you get one shape completely working before you start creating the others.<br>
+This program has many classes and files. However, they are all very simple. Work step by step:
+* First, complete the Grid class
+* Second, complete the Shape class
+* Third, complete the classes that inherit from Shape. Once you get one shape working, creating the other shapes should be easy. Make sure you get one shape completely working before you start creating the others.<br>
 
 > Note: It is best to start with the square.
 
