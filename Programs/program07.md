@@ -26,7 +26,9 @@ Several of these commands are difficult to implement (especially the `balanced` 
 
 All program input/output must be done in main.cpp. This means that the `BST` functions must pass results back to the calling function using return values and/or reference parameters. Use a [Standard Template Library (STL) vector](https://www.cplusplus.com/reference/vector/vector/) when you need to pass multiple strings.<br>
 
-The program must handle the following commands from input. If a command has an argument, the argument is on the same line as the command. All string arguments are allowed to contain spaces. Your BST functions may have different parameters and return values.
+The program must handle the following commands from input. If a command has an argument, the argument is on the same line as the command. All string arguments are allowed to contain spaces.
+
+> Note: This table shows the arguments that follow each command in main(), they are not the arguments to the BST functions. A few things to notice: `echo` is NOT a BST function. You may want to pass a reference parameter (such as a vector of strings) to the BST functions that print elements in the BST (even though the command may have no arguments listed in this table). If there is a potential error message, your BST function should return something that indicates whether or not the error message should be printed.
 
 | Command | Argument | Action (see below for output formatting) | Potential Error (see below for message) |
 | --- | --- | --- | --- |
@@ -52,8 +54,8 @@ If there is an argument:
 ```
 <command><space><string that may contain spaces><newline>
 ```
-* The space following the command is  NOT part of the string.
-* Assume that all string arguments are NOT empty.<br>
+* The space following the command is NOT part of the string.
+* Assume that all string arguments are NOT empty (i.e. if the command is supposed to receive an argument, an argument will be included).<br>
 
 ### Example Input/Output
 
