@@ -3,6 +3,15 @@
 CSCI 211: Programming and Algorithms II<br>
 Points: 300
 
+* [Objectives](#objectives)
+* [Overview](#overview)
+* [Program Requirements](#program-requirements)
+* [Helpful Hints](#helpful-hints)
+* [More Help For When You Are Stuck](#more-help-for-when-you-are-stuck)
+* [General Requirements](#general-requirements)
+* [Testing Your Program](#testing-your-program)
+* [Submitting Your Program](#submitting-your-program)
+
 ## Objectives
 
 * Implement a Binary Tree
@@ -115,7 +124,7 @@ The program should continue after both types of errors.<br>
 
 > Note: Always return zero from `main()`, even if there was an error.<br>
 
-## Hints and Best Practices for Everyone
+## Helpful Hints
 
 Implement and test the commands one at a time in the order they are listed in the above tables. The tests are organized so for each command you implement you will pass one or more additional tests.<br>
 
@@ -158,7 +167,9 @@ The breadth first traversal algorithm requires a queue. Use the [standard templa
 * Make sure that you are correctly managing dynamic memory.
 * Start today.
 
-## More tips for when you are stuck
+## More Help For When You Are Stuck
+
+The following are suggestions for simple ways you can implement balanced() and rebalance() for P7. You are not required to follow these algorithms; however, your solutions should not be less efficient than the algorithms described here (ask the instructor if you are unsure about this). If you continue taking computer science courses, you will get the opportunity to program at least one self-balancing tree -- these have a more complex implementation but are more efficient overall.
 
 ### balanced command
 
@@ -166,53 +177,51 @@ Write a recursive function that does two things:
 1. determines if the tree is balanced
 2. returns the height of the tree<br>
 
-If at any point during the tree traversal you discover a subtree (pointed to by `cur_root`) is not balanced, return -1. Otherwise return the height of the largest sub-tree plus one. Here is the algorithm:
+If at any point during the tree traversal you discover a subtree (pointed to by `cur_root`) is not balanced, return -1. Otherwise return the height of the largest sub-tree plus one. Here is the basic algorithm:
 ```
-int BST::balanced(Node *cur_root)
+int BST::balanced(Node *cur_root):
 
-    if cur_root is NULL
-        return 0;  // balanced but of height zero
+    If cur_root is NULL:
+        Return 0  // tree is balanced (current subtree height is zero)
 
-    if either of my children's subtrees (those rooted at cur_root->m_left and cur_root->m_right) is NOT balanced
-        return -1; // I'm not balanced
+    If either of my children's subtrees (those rooted at cur_root->m_left and cur_root->m_right) is NOT balanced:
+        Return -1 // The entire tree is not balanced
 
-    else return the largest of my children's subtree plus one (plus one is because we must count cur_node in the height)
+    Else return the largest of my children's subtree plus one (plus one is because we must count cur_node in the height)
 ```
 
 ### rebalance command
 
-Use the `depth-first-traversal` function used to print the tree to fill a vector with the elements in the tree. The elements will *automatically* be sorted from smallest to largest.<br>
+> Note: This rebalance method temporarily holds all of the tree values in a vector (in sorted order), removes all Nodes from the tree, then re-inserts the values from the vector back into the tree in an optimal order (so that the tree will be balanced).<br>
+
+Use the `print` function to fill a vector with all elements of the tree (remember, your `print` should use a depth-first traversal). The elements will *automatically* be sorted from smallest to largest.<br>
 
 Delete all the Nodes in the tree. Set m_root to NULL.<br>
 
-Write a recursive insert function (`insert_from_vector()`) that will insert all the elements in the vector into the tree calling the regular `insert` function.<br>
+Write a recursive insert function (`insert_from_vector()`) that will insert all the elements in the vector into the tree calling the regular `insert()` function.<br>
 
-The algorithm works like this:
+The basic insert_from_vector algorithm works like this:
 ```
-insert the element in the middle of the vector
-recursively insert the elements before that middle element
-recursively insert the elements after that middle element
+Insert the element in the middle of the vector
+Recursively insert the elements before that middle element
+Recursively insert the elements after that middle element
 ```
 
-The argument to this function is always the complete vector of elements plus unique start and stop indexes for the range under consideration:
+The argument to this function is always the complete vector of elements plus unique start and stop indexes for the range under consideration, so that as you utilize this function, you recursively insert every element from the elements vector (from elements[start_index] to elements[end_index]):
 ```
-void BST::insert_from_vector(vector <string> &elements, int start_index, int end_index)
-{
-    // this call should recursively insert elements[start_index]..elements[end_index]
-    // on each recursive call, you send a different start_index and end_index to the recursive calls
+// On each recursive call, you send a different start_index and end_index to the recursive calls
+void BST::insert_from_vector(vector <string> &elements, int start_index, int end_index):
 
-    handle the base cases where the range is of size zero or one
-        think carefully about what should happen in each of these cases
+    Handle the base cases where the range is of size zero or one:
+        Think carefully about what should happen in each of these cases
 
-    figure out the index of the middle element:
-        // if there are two possible middle indexes (e.g. middle of an array of 4 is 1 or 2) pick the smallest
+    Figure out the index of the middle element:
+        // if there are two possible middle indexes (e.g. middle of an array of 4 is 1 or 2), pick the smallest
         int middle_index = ...   
 
-    use your existing insert() to insert elements[middle_index];
-
-    recursively call insert_from_vector with middle_index+1 .. end_index
-    recursively call insert_from_vector with start_index .. middle_index - 1
-}
+    Use your existing insert() to insert elements[middle_index]
+    Recursively call insert_from_vector (range: middle_index + 1 .. end_index)
+    Recursively call insert_from_vector (range: start_index .. middle_index - 1)
 ```
 
 ## General Requirements
@@ -262,3 +271,5 @@ If the string is not in the tree, print the following to standard error:  "<str>
 ```
 
 The `remove` function must reorganize the tree so that it remains a binary search tree. However, you cannot simply reorganize the entire tree like in the `rebalance` command. You must make minimal changes to the tree so it remains a binary search tree. This is difficult, you will need to find a description of the algorithm online.
+
+[Top of the Page](#program-7-binary-search-tree)
