@@ -3,6 +3,15 @@
 CSCI 211: Programming and Algorithms II<br>
 Points: 100
 
+* [Objectives](#objectives)
+* [Overview](#overview)
+* [Program Requirements](#program-requirements)
+* [Hints and Best Practices](#hints-and-best-practices)
+* [General Requirements](#general-requirements)
+* [Testing Your Program](#testing-your-program)
+* [Submitting Your Program](#submitting-your-program)
+* [Extra Credit](#extra-credit)
+
 ## Objectives
 
 * Give you more experience with C++ and programming in a Linux environment
@@ -151,9 +160,9 @@ Assignments can be turned in up to 48 hours late with a 15% penalty.<br>
 
 If you are unable to complete everything on time, you should still turn in whatever work you have. If you turn in nothing, you get a zero. If you turn in something, you receive partial credit.
 
-## Extra Credit: (10 points)
+## Extra Credit
 
-If you do the extra credit you have to turn in a second `chart.cpp` ("p1 extra" on [Turnin](https://turnin.ecst.csuchico.edu/)). Make sure you do not change or delete your original `chart.cpp`.<br>
+If you do the extra credit you have to turn in a second `chart.cpp` ("p1 extra" on [Turnin](https://turnin.ecst.csuchico.edu/)). Make sure you do not change or delete your original `chart.cpp`. For P1, extra credit is worth 10 points.<br>
 
 No extra credit will be give to late assignments (both the regular assignment and the extra credit must be turned in on time).<br>
 
@@ -189,3 +198,5 @@ For example, the input `4 3 2 1 2 3 5 0` will create the following output:
   ***
 *****
 ```
+
+[Top of the Page](#program-1-chart)
