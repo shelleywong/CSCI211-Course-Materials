@@ -3,6 +3,16 @@
 CSCI 211: Programming and Algorithms II<br>
 Points: 250
 
+* [Objectives](#objectives)
+* [Overview](#overview)
+* [Program Requirements](#program-requirements)
+* [Helpful Hints](#helpful-hints)
+* [Plan of Attack](#plan-of-attack)
+* [General Requirements](#general-requirements)
+* [Testing Your Program](#testing-your-program)
+* [Submitting Your Program](#submitting-your-program)
+* [Extra Credit](#extra-credit)
+
 ## Objectives
 
 * Understand abstract data types
@@ -85,7 +95,7 @@ If the user enters a command other than (insert, print, length, lookup, remove),
 <XXX> is not a legal command, giving up.
 ```
 
-## Hints and Best Practices
+## Helpful Hints
 
 1. It is very helpful to read the entire assignment writeup carefully before you start and review it as you program. You may want to print out the instructions and check off each requirement when you are sure it is correctly implemented. The writeup is long, but it contains a lot of useful information.
 2. Program incrementally. Get small parts working before you move on. The next section describes how to break the program into pieces.
@@ -204,3 +214,5 @@ Regular expression <XXX> does not match any titles in list.
 If two or more videos match the regular expression, they should be sorted alphabetically.<br>
 
 If you do the extra credit, add it to your base assignment and turn it in as BOTH "p3 video list" and "p3 extra credit" (you can use the same files for both submissions).
+
+[Top of the Page](#program-3-linked-list-of-video-objects)
