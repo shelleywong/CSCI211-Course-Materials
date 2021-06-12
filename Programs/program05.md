@@ -3,6 +3,16 @@
 CSCI 211: Programming and Algorithms II<br>
 Points: 300
 
+* [Objectives](#objectives)
+* [Overview](#overview)
+* [Program Requirements](#program-requirements)
+* [Helpful Hints](#helpful-hints)
+* [Plan of Attack](#plan-of-attack)
+* [General Requirements](#general-requirements)
+* [Testing Your Program](#testing-your-program)
+* [Submitting Your Program](#submitting-your-program)
+* [Extra Credit](#extra-credit)
+
 ## Objectives
 
 * Implement a Priority Queue
@@ -146,22 +156,7 @@ The `Pqueue` class is a priority queue of `Cust` pointers. It must only contain 
 
 [C++ Struct Documentation](https://www.cplusplus.com/doc/tutorial/structures/)
 
-## Plan of Attack
-
-Work step by step, and test that your program is working as expected along the way:
-1. First make sure to complete the Pqueue and Cust classes (Lab 09) and check that they are functioning as expected.
-2. Add member functions to class Cust that print each of the customer messages.
-3. If you need access to any Cust member variables, you can create getter functions in class Cust.
-4. If you did not complete a ~Pqueue destructor for Lab 09, make sure to do so for P5.
-5. In sim.cpp, get the command line input and make sure all input is valid. If not, print the appropriate error message.
-6. One of the command line inputs is an input file that contains information about the customer. Read in all of the customer information, one customer at a time: for each customer, create a new Cust object with the provided information and add the customer to the arrival queue before moving on.
-7. After you've gotten all input and added all customers to the arrival queue, you can call the run_simulation() function.
-8. At the beginning of the run_simulation() function, create an array of pointers to Checker structs (also create the Checker struct if you haven't already).
-9. Then implement the body of the simulation (described below).
-10. Print the final messages.
-11. Read the requirements carefully to make sure your program is complete.
-
-## Hints and Best Practices
+## Helpful Hints
 
 There are many ways to implement this assignment. The following hints describe the most straightforward solution.<br>
 
@@ -239,6 +234,21 @@ After the main simulation loop is finished, remember to print the amount of mone
 * Make sure that you are correctly managing dynamic memory.
 * Start today.
 
+## Plan of Attack
+
+Work step by step, and test that your program is working as expected along the way:
+1. First make sure to complete the Pqueue and Cust classes (Lab 09) and check that they are functioning as expected.
+2. Add member functions to class Cust that print each of the customer messages.
+3. If you need access to any Cust member variables, you can create getter functions in class Cust.
+4. If you did not complete a ~Pqueue destructor for Lab 09, make sure to do so for P5.
+5. In sim.cpp, get the command line input and make sure all input is valid. If not, print the appropriate error message.
+6. One of the command line inputs is an input file that contains information about the customer. Read in all of the customer information, one customer at a time: for each customer, create a new Cust object with the provided information and add the customer to the arrival queue before moving on.
+7. After you've gotten all input and added all customers to the arrival queue, you can call the run_simulation() function.
+8. At the beginning of the run_simulation() function, create an array of pointers to Checker structs (also create the Checker struct if you haven't already).
+9. Then implement the body of the simulation (described below).
+10. Print the final messages.
+11. Read the requirements carefully to make sure your program is complete.
+
 ## General Requirements
 
 Programs should be well formatted and consistent so they are easy to read. The [General Requirements](https://github.com/shelleywong/CSCI211-Course-Materials/blob/main/Programs/README.md#general-requirements) listed in the Programs directory README apply to all programming assignments.<br>
@@ -297,3 +307,4 @@ Update the "done shopping" message to include the checker the customer is waitin
 ```
 30: Homer done shopping, waiting for checker 2
 ```
+[Top of the Page](#program-5-kwik-e-mart-simulation)
