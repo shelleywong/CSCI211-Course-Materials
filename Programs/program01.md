@@ -6,7 +6,7 @@ Points: 100
 * [Objectives](#objectives)
 * [Overview](#overview)
 * [Program Requirements](#program-requirements)
-* [Hints and Best Practices](#hints-and-best-practices)
+* [Hints & Best Practices](#hints-best-practices)
 * [General Requirements](#general-requirements)
 * [Testing Your Program](#testing-your-program)
 * [Submitting Your Program](#submitting-your-program)
