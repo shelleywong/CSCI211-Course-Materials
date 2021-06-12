@@ -3,6 +3,15 @@
 CSCI 211: Programming and Algorithms II<br>
 Points: 200
 
+* [Objectives](#objectives)
+* [Overview](#overview)
+* [Program Requirements](#program-requirements)
+* [Helpful Hints](#helpful-hints)
+* [General Requirements](#general-requirements)
+* [Testing Your Program](#testing-your-program)
+* [Submitting Your Program](#submitting-your-program)
+* [Extra Credit](#extra-credit)
+
 ## Objectives
 
 * Deploy a Linked List in an application
@@ -84,11 +93,11 @@ If the input is a correct post-fix expression, your program should print the res
 
 For example, if the input is `10 10+`, your program should output `20` followed by a newline, and nothing else (don't print any prompts or "answer =").
 
-## Arithmetic Overflow
+### Arithmetic Overflow
 
 Assume that all intermediate results and the final result are small enough to fit in a double. For example, I will not test on an expression like:  `2 ^ 1000000000`
 
-## Errors and Error Messages
+### Errors and Error Messages
 
 All errors must be detected in calc.cpp. Recall that stack `pop()` must return an error when the stack is empty (see above).<br>
 
@@ -102,7 +111,7 @@ followed by a newline (not a blank line, but a newline) and then terminate the p
 
 Your program must check for all possible errors (except numbers that are too large). This includes all illegal mathematical operations such as divide by zero. The power function is especially problematic. Consider it closely.<br>
 
-## Hints and Best Practices
+## Helpful Hints
 
 The algorithm is:
 ```
@@ -163,7 +172,7 @@ Assignments can be turned in up to 48 hours late with a 15% penalty.<br>
 
 If you are unable to complete everything on time, you should still turn in whatever work you have. If you turn in nothing, you get a zero. If you turn in something, you receive partial credit.
 
-## Extra credit
+## Extra Credit
 
 No extra credit points will be given to late assignments. You must turn in a non-extra credit version in addition to the extra credit version.<br>
 
@@ -180,3 +189,5 @@ Implement the following operators:
 | ave | remove all the operands off the stack, calculate their average and push the result on to the stack | `ave` means the average of all operands on the stack |
 
 > Note: For cos and sin, assume the user is entering degrees. Since the cmath functions cos() and sin() expect the angle in radians you will have to convert the number to radians. Use the constant M_PI from cmath to perform the conversion.
+
+[Top of the Page](#program-4-post-fix-calculator)
