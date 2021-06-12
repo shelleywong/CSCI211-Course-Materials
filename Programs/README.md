@@ -85,13 +85,15 @@ Consider how your program could be divided into subtasks, and put each subtask i
   * camelCase for functions (each words begins with a capital letter, except the first word): `addTableEntry()`
   * all lowercase, no underscores for file names: `myusefulclass.cpp`
 
+> Note: In this course, file names should be all lowercase (e.g. "chart.cpp"). When a program uses classes, the class .h and .cpp files will use lowercase names, but the classes themselves should be named with a capital letter (e.g. `Video`)<br>
+
 ### Comments
 
 * Comments are vital for keeping code readable, but the best code is self-documenting (this is why naming is so important)
 * Write comments for an audience/the next contributor/Future You
 * Use either `//` or `/* */` syntax, as long as you are consistent
 * Don't be unnecessarily verbose or state the obvious; however, remember to think about the next contributor.
-* Consider including comments: at the beginning of files, classes, and functions, and alongside variables and implementation of tricky, non-obvious, important components of your code.
+* You must include comments at the beginning of each files.
 
 The first lines of all your files (.h and .cpp) must contain the following comments (use either `//` or `/* */` syntax):
 ```
@@ -100,9 +102,12 @@ The first lines of all your files (.h and .cpp) must contain the following comme
 // your Chico Portal/Turnin username
 // Short summary of the contents of the file
 ```
-Throughout your program, you should have brief comments describing how a line or section of code works. You shouldn't need a comment on every line, but consider including a comment before each function or for any nontrivial piece of code.<br>
 
-In this class, file names should be all lowercase (e.g. "chart.cpp"). When a program uses classes, the class .h and .cpp files will use lowercase names, but the classes themselves should be named with a capital letter (e.g. `Video`)<br>
+* Throughout your program, you should have brief comments describing how sections of code work. You shouldn't need a comment on every line, but consider including comments:
+  * Before each **function** declaration and/or implementation: describe what the function does and how it is used. For trivial functions that are named appropriately, it's ok to skip the comment.
+  * At the beginning of each **class**: describe what the class is for and how it is used.
+  * Alongside **variable declarations** (if necessary -- it's better to have variable names that are descriptive enough to not require additional comments)
+  * Alongside any code **implementation** that is tricky, non-obvious, interesting, or important -- anything that will help the next person who needs to read your code.<br>
 
 #### Formatting
 
