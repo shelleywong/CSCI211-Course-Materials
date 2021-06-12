@@ -3,6 +3,15 @@
 CSCI 211: Programming and Algorithms II<br>
 Points: 150
 
+* [Objectives](#objectives)
+* [Overview](#overview)
+* [Program Requirements](#program-requirements)
+* [Helpful Hints](#helpful-hints)
+* [Plan of Attack](#plan-of-attack)
+* [General Requirements](#general-requirements)
+* [Testing Your Program](#testing-your-program)
+* [Submitting Your Program](#submitting-your-program)
+
 ## Objectives
 
 * Practice working with classes, objects, and arrays
@@ -92,7 +101,7 @@ Pet Interviews - Guinea Pig, https://www.youtube.com/watch?v=jW3XtKBlTz0, Best g
 
 If two or more Videos have the same values for the current sorting methods (e.g. you are sorting by length and two or more videos have the same length), these videos should be sorted in the same order as the input. For example, if a video called "Dog Playing Piano" was input after "Pet Interviews - Guinea Pig" and "Dog Playing Piano" also had a 1-star rating, "Pet Interviews - Guinea Pig" would be listed first because it is first in the input.
 
-## Hints & Best Practices
+## Helpful Hints
 
 * Before you start, make sure you understand how the input is ordered and what is required for the output.
 * Program incrementally. Get small parts working before you move on. The next section describes how to break the program into pieces.
@@ -141,7 +150,7 @@ $ valgrind --leak-check=yes ./myprog arg1   // test your program with valgrind
 ```
 * Start today.
 
-## Plan of Attack:
+## Plan of Attack
 
 Work Step by Step:
 1. Create video.h with an empty class definition, using the `#ifndef`/`#endif` construct. [Lab 3](https://github.com/shelleywong/CSCI211-Course-Materials/blob/main/Labs/lab03.md#exercise-4-create-a-course-class) and the 211-starter-pack/211/lab03_object directory include a good starter example.
@@ -210,3 +219,5 @@ Implement an additional sorting algorithm of your choice. You MUST implement the
 You likely want to write the sorting algorithms as functions, potentially in such a way that the functions could be easily swapped out for one another. Make sure to call the bubble sort algorithm at least once. <br>
 
 For each function, include appropriate comments: indicate the sorting algorithm being used and reference any sources (include a link to the sources, if applicable).
+
+[Top of the Page](#program-2-video-rating-system)
