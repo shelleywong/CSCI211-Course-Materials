@@ -6,7 +6,7 @@ Points: 100
 * [Objectives](#objectives)
 * [Overview](#overview)
 * [Program Requirements](#program-requirements)
-* [Hints & Best Practices](#hints-best-practices)
+* [Helpful Hints](#helpful-hints)
 * [General Requirements](#general-requirements)
 * [Testing Your Program](#testing-your-program)
 * [Submitting Your Program](#submitting-your-program)
@@ -75,7 +75,7 @@ Your program must work exactly like this. It must not print any other characters
 
 > Note: If you think your test looks correct but is not passing some tests, whitespace may not match -- check your spaces and endlines (endl or '\n')
 
-## Hints & Best Practices
+## Helpful Hints
 
 ### Use Constants
 
