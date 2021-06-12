@@ -25,7 +25,7 @@ Currently, your code should target C++11 (your code will be compiled with the C+
 
 Getting your program to pass the provided tests is only one component of the programming assignments. Other grading components include:
 * **Does your program pass the hidden tests?** The provided tests may not cover all of the project specifications; it's your job to consider all potential cases.
-* **Does your program follow the instructions?** If the instructions say to use a particular data structure, make sure to use that data structure. If the instructions require the use of dynamic memory, make sure you've managed memory correctly.
+* **Does your program follow the instructions?** If the instructions say to use a particular data structure, make sure to use that data structure. If the instructions require the use of dynamic memory, make sure you've managed memory correctly. There's a lot of information included in each assignment write-up, but it is there for a reason, and it is provided to help you succeed.
 * **Have you included sufficient and useful comments?** You don't need to be overly verbose or have comments on every line, but you are expected to have file, function, class, variable, and/or implementation comments in every file you submit.
 * **Is your program well-formatted and organized?** Things to consider include proper and consistent indentation, descriptive variable names, and usage of functions.
 
