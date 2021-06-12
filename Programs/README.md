@@ -111,7 +111,7 @@ The first lines of all your files (.h and .cpp) must contain the following comme
 
 #### Formatting
 
-* Use spaces for indentation instead of tabs -- you may use 2, 4, 6, or 8 spaces, but the important thing is to be consistent
+* Use spaces for indentation instead of tabs -- you may use 2, 4, or 8 spaces, but the important thing is to be consistent
 * Consider line length (80 characters or fewer in most cases)
 * Avoid use of non-ASCII characters
 * Be intentional with your usage of vertical and horizontal whitespace
@@ -139,3 +139,5 @@ To an extent, you can choose your own style (you don't need to exactly match the
 I will deduct points if your program is not well-formatted or you don't have sufficient and useful comments -- make sure to ask the instructor if you are unclear what is expected of you for this requirement.<br>
 
 Remember to start early, take breaks, and ask for help if you're stuck. Writing code can be frustrating and stressful at times, but it can also be a really fun and enjoyable challenge!
+
+[Top of the Page](#programming-assignments)
