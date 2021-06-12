@@ -3,6 +3,14 @@
 CSCI 211: Programming and Algorithms II<br>
 Points: 150
 
+* [Objectives](#objectives)
+* [Overview](#overview)
+* [Program Requirements](#program-requirements)
+* [Helpful Hints](#helpful-hints)
+* [General Requirements](#general-requirements)
+* [Testing Your Program](#testing-your-program)
+* [Submitting Your Program](#submitting-your-program)
+
 ## Objectives
 
 * Practice using Inheritance
@@ -170,7 +178,7 @@ o  o
 
 Class `Point`'s constructor takes the same (x,y) as the other shapes and a character: `Point(int x, int y, char c)`. It will draw the single character `c` at the location (x,y).
 
-## Hints and Best Practices
+## Helpful Hints
 
 This program has many classes and files. However, they are all very simple. Work step by step:
 * First, complete the Grid class
@@ -236,3 +244,5 @@ All programming assignments are **individual** assignments -- you are expected t
 Assignments can be turned in up to 48 hours late with a 15% penalty.<br>
 
 If you are unable to complete everything on time, you should still turn in whatever work you have. If you turn in nothing, you get a zero. If you turn in something, you receive partial credit.
+
+[Top of the Page](#program-6-shapes-drawing-program)
