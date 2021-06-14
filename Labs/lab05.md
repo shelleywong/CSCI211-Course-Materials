@@ -15,8 +15,6 @@ You will submit a separate list.cpp to Turnin for each exercise.
 
 > Note: You will ONLY submit the list.cpp file -- your solution needs to work with the provided files, or else your code may not pass the tests on Turnin.
 
-> Note: Spring 2021 students -- in the provided test files for lab05_compare, there is an extra endline at the end of the tests/*.out files. The test files on Turnin do not have this extra endline. You can remove the extra endline in the 211-starter-pack/lab05_convert test files, or you can just submit to Turnin.
-
 ## Exercise 1
 
 Write the function `void List::compare()` that compares the given value to each element in the list and counts the numbers in the list that are `less_than`, `equal` to, and `greater_than` the value. Remember to initialize the counts in your function.<br>
