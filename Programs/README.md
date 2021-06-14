@@ -24,10 +24,20 @@ Currently, your code should target C++11 (your code will be compiled with the C+
 ### Reminder
 
 Getting your program to pass the provided tests is only one component of the programming assignments. Other grading components include:
-* **Does your program pass the hidden tests?** The provided tests may not cover all of the project specifications; it's your job to consider all potential cases.
-* **Does your program follow the instructions?** If the instructions say to use a particular data structure, make sure to use that data structure. If the instructions require the use of dynamic memory, make sure you've managed memory correctly. There's a lot of information included in each assignment write-up, but it is there for a reason, and it is provided to help you succeed.
-* **Have you included sufficient and useful comments?** You don't need to be overly verbose or have comments on every line, but you are expected to have file, function, class, variable, and/or implementation comments in every file you submit.
-* **Is your program well-formatted and organized?** Things to consider include proper and consistent indentation, descriptive variable names, and usage of functions.
+* **Does your program pass the hidden tests?**
+  * The provided tests may not cover all of the project specifications; it's your job to consider all potential cases.
+  * It is helpful to create your own tests to address any additional cases.
+* **Does your program follow the instructions?**
+  * If the instructions say to use a particular data structure, make sure to use that data structure. If the instructions require the use of dynamic memory, make sure you've managed memory correctly.
+  * There's a lot of information included in each assignment write-up, but all of it is there for a reason, and it is provided to help you succeed.
+* **Have you included sufficient and useful comments?**
+  * You don't need to be overly verbose or have comments on every line.
+  * However, you are expected to have a file header (with brief file or class comments) in every file you submit. You should also have comments for any non-trivial function and tricky/non-obvious/important code implementation.
+  * You should give appropriate and descriptive names to variables such that no additional comments are required to accompany them, but if necessary or helpful, include comments with variable declarations.
+* **Is your program well-formatted and organized?**
+  * Things to consider include proper and consistent indentation, descriptive variable names, and usage of functions.<br>
+
+Ask the instructor if you have questions about any programming assignment expectations.
 
 ### Style Guide Overview
 
@@ -61,25 +71,28 @@ Following these guidelines will make your code more readable, more understandabl
 
 ### Functions
 
-* Create small and focused functions to solve specific tasks
-* Be thoughtful about how you use parameters and return values<br>
+* Create small and focused functions
+  * Consider how your program could be divided into separate modules that each solve a specific task, and put each subtask into its own function.
+* Rule of thumb: keep functions to 40 lines or fewer.
+  * This is not a hard and fast rule, but if a function is longer than 40 lines, you should consider whether there are any ways that the function could be broken down into smaller tasks.
+* Be thoughtful about how you use parameters and return values
+  * Don't use more parameters than necessary, and make sure each parameter is there for a reason.<br>
 
-The `main()` function is the first function that's called when a C++ program begins execution. While it is possible to write an entire program in `main()`, you should try to separate the functionality of a program into independent modules (think of each module/function as a small program that executes a specific task). The `main()` should just be used as a driver to call other functions.<br>
+Note that these rules apply to all functions, including `main()`, the first function that's called when a C++ program begins execution. While it is possible to write an entire program in `main()`, you should try to separate the functionality of a program into independent modules, and `main()` should just be used as a driver to call other functions.<br>
 
-Consider how your program could be divided into subtasks, and put each subtask into its own function. Define your function prototypes near the top of your program and write the functions after your `main()`.
+Define your function prototypes near the top of your program and write the functions after your `main()`.
 
 ### Naming
 
-* Be consistent
 * Use descriptive and sensible names for:
   * files
   * types (e.g. classes, structs)
   * variables (includes function parameters, class member variables)
   * functions
-* Optimize for readability, avoid ambiguity, and minimize the use of abbreviations
-* it is fine to use certain universally-known abbreviations, such as `i` for a loop iterator
-* For files, make sure your file names match those listed in the writeup
-* For example, you could use:
+* Optimize for readability: avoid ambiguity and minimize the use of abbreviations
+  * It is fine to use certain universally-known abbreviations, such as `i` for a loop iterator
+* For files, make sure your file names match those listed in the writeup (in some cases, your code will not compile on Turnin if the file names do not match)
+* Be consistent. For example, you could use:
   * snake_case for variables (words separated by underscores): `a_local_variable`
   * PascalCase for types (each new word begins with a capital letter): `MyExcitingClass`
   * camelCase for functions (each words begins with a capital letter, except the first word): `addTableEntry()`
@@ -91,9 +104,9 @@ Consider how your program could be divided into subtasks, and put each subtask i
 
 * Comments are vital for keeping code readable, but the best code is self-documenting (this is why naming is so important)
 * Write comments for an audience/the next contributor/Future You
-* Use either `//` or `/* */` syntax, as long as you are consistent
-* Don't be unnecessarily verbose or state the obvious; however, remember to think about the next contributor.
-* You must include comments at the beginning of each files.
+* Use either `//` or `/* */` syntax -- just try to stay consistent
+* Don't be unnecessarily verbose or state the obvious; however, remember to think about the next contributor (something that seems obvious to you right now may not be clear to the next person who looks at your code).
+* You must include comments at the beginning of each file that you submit.
 
 The first lines of all your files (.h and .cpp) must contain the following comments (use either `//` or `/* */` syntax):
 ```
@@ -132,7 +145,7 @@ Other editors should have an option to set the tab size as well. The important t
 
 Use common sense and BE CONSISTENT.<br>
 
-The point of having style guidelines is to have a common vocabulary of coding so all contributors can concentrate on what the code is doing, rather than how the code is written. These global style rules help make sure everyone is on the same page; however, local style is also important.<br>
+The point of having style guidelines is to have a common vocabulary of coding so all contributors can concentrate on what the code is doing, rather than how the code is written. Consistency should not be used as an excuse to avoid making changes that improve your code. These global style rules help make sure everyone is on the same page; however, local style is also important.<br>
 
 To an extent, you can choose your own style (you don't need to exactly match the Google C++ Style Guide specifications); however, remember to strive for readability, consistency, and providing enough documentation so that another person (or Future You) can easily understand what your code is doing. <br>
 
