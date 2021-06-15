@@ -3,6 +3,11 @@
 * Command line arguments
 * File Input/Output
 
+Lab 08 Exercises
+* [Exercise 1: Print Command Line Arguments](#exercise-1-print-command-line-arguments) (lab08_args)
+* [Exercise 2: Handling Input/Output File Command Line Arguments](#exercise-2-handling-input-output-file-command-line-arguments) (lab08_mycat)
+* [Exercise 3: Handling Integer Command Line Arguments](#exercise-3-handling-integer-command-line-arguments) (lab08_add)
+
 ## Goals
 
 * Introduce how command line arguments are handled in C++.
@@ -96,7 +101,7 @@ int main(int argc, char *argv[])
 
 > Note: You may find the [C++ Input/output with files](https://www.cplusplus.com/doc/tutorial/files/) documentation useful
 
-## Exercise 1
+## Exercise 1: Print Command Line Arguments
 
 Write a program (called `args`) that prints all the command line arguments to standard output. For example:
 ```
@@ -113,9 +118,9 @@ $
 
 Use the args.cpp file in your 211-starter-pack/211/lab08_args directory as a starting point.<br>
 
-Submit args.cpp to Turnin.
+Submit `args.cpp` to Turnin.
 
-## Exercise 2
+## Exercise 2: Handling Input/Output File Command Line Arguments
 
 Start with the mycat.cpp that is in your 211-starter-pack/211/lab08_mycat directory<br>
 
@@ -149,9 +154,9 @@ If the user provides too many command line arguments, print the following error 
 cerr << "Too many command line arguments specified." << endl;
 ```
 
-Submit mycat.cpp to Turnin.
+Submit `mycat.cpp` to Turnin.
 
-## Exercise 3:
+## Exercise 3: Handling Integer Command Line Arguments
 
 Working in your 211-starter-pack/211/lab08_add directory, write a program (add.cpp) that reads any number of command line arguments, assumes all the arguments are integers and prints the sum of all the number:
 ```
@@ -189,4 +194,10 @@ bool legal_int(char *str)
 
 After your program verifies that all the characters are digits, call `atoi()` to convert the string to an integer and add it to the total (as above).
 
-Submit add.cpp to Turnin.
+Submit `add.cpp` to Turnin.
+
+## Lab 08 Submissions
+
+All labs are due at 11:59pm the Friday following lab. For this lab you must submit `args.cpp` (Exercise 1), `mycat.cpp` (Exercise 2), and `add.cpp` (Exercise 3) to Turnin. If you are not able to complete all the exercises, turn in your partial work for partial credit.
+
+[Top of the Page](#lab-8)
