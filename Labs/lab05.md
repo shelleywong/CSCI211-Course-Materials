@@ -1,6 +1,12 @@
 # Lab 5
 
-Practice Midterm Exam questions
+Practice Midterm Exam questions<br>
+
+Lab 05 Exercises:
+* [Exercise 1: Compare Value to List Elements](#exercise-1-compare-value-to-list-elements) (lab05_compare)
+* [Exercise 2: Find Largest Value in List](#exercise-2-find-largest-value-in-list) (lab05_largest)
+* [Exercise 3: Convert List to Array](#exercise-3-convert-list-to-array) (lab05_convert)
+* [Exercise 4: Remove Duplicates from List](#exercise-4-remove-duplicates-from-list) (lab05_removedup)
 
 ## Goal
 
@@ -15,7 +21,7 @@ You will submit a separate list.cpp to Turnin for each exercise.
 
 > Note: You will ONLY submit the list.cpp file -- your solution needs to work with the provided files, or else your code may not pass the tests on Turnin.
 
-## Exercise 1
+## Exercise 1: Compare Value to List Elements
 
 Write the function `void List::compare()` that compares the given value to each element in the list and counts the numbers in the list that are `less_than`, `equal` to, and `greater_than` the value. Remember to initialize the counts in your function.<br>
 
@@ -23,11 +29,11 @@ For example, if the list contained {1,2,3,4} and the number 3 was passed as the 
 
 Modify the three reference parameters so they contain the correct counts (e.g. `less_than` should contain the number of elements less than value).  Assume the list is not sorted.
 
-## Exercise 2
+## Exercise 2: Find Largest Value in List
 
 Write the function `bool List::largest_value(int &largest)`. If the list is not empty, put the largest value in the largest parameter and return true. If the list is empty, return false.
 
-## Exercise 3
+## Exercise 3: Convert List to Array
 
 Write the function `int *List::convert_to_array(int &size)` that:
 1. dynamically allocates an array of integers the exact size of the list,
@@ -40,10 +46,16 @@ Assume there exists a function you can call that returns the number of elements 
 int *array = new int[length()];
 ```
 
-## Exercise 4
+## Exercise 4: Remove Duplicates from List
 
 Write a function that removes all duplicate entries in the list. Assume that the list is ordered from smallest to largest, thus all duplicates will be next to each other. For example, if the list contained {1,2,2,2,3,3,4,5,5,5,5,5,6} before calling `void List::remove_duplicates()`, it should contain {1,2,3,4,5,6} after. Do nothing if the list is empty or contains no duplicates.
 
 ***
 
 If you finish early, you should practice writing linked list solutions for questions from the [previous semester exams](http://www.ecst.csuchico.edu/~trhenry/classes/211.s17/exams.html)
+
+## Lab 05 Submissions
+
+All labs are due at 11:59pm the Friday following lab. For this lab you must submit separate `list.cpp` files to Turnin for each of the Lab 05 Exercises (4 exercises total). If you are not able to complete all the exercises, turn in your partial work for partial credit.
+
+[Top of the Page](#lab-5)
