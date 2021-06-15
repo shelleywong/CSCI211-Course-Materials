@@ -239,14 +239,14 @@ Hint: think carefully about the dependencies (the files listed after the target)
 Create a new class called `Course` (that is, create course.h and course.cpp).  You may start with the example code available in `lab03_object` (in the 211-starter-pack) <br>
 
 The `Course` class should have a single constructor and a print function:
-```
+```cpp
 Course(string dept, int number, int time);
 void print();
 ```
 You need to figure out what member variables are required by class Course.<br>
 
 Create a new file called schedule.cpp that contains a `main()` function to test your course class.  In your `main()` you should be able to use the Course class like this:
-```
+```cpp
 Course programming("CSCI", 211, 1000);
 Course english("ENGL", 130, 1400);
 Course physics("PHYS", 204, 800);
@@ -282,7 +282,7 @@ Create the `Video` class you need for P2 and either create a simple `main()` or 
 If you have finished P2, all you have to do is compile your video.h and video.cpp with my main.cpp to make sure it works (or create your own main.cpp). Then turn in your video.h and video.cpp for this lab (be careful not to delete your 'real' P2 main.cpp).<br>
 
 The sample `main()` should be similar or identical to the following (you will have to add some other code before the main):
-```
+```cpp
 int main()
 {
     Video video1("Title One", "www.youtube.com/one", "Comment ONE", 1.1, 1);
