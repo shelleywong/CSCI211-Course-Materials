@@ -3,6 +3,11 @@
 * Learn the basics of the Vim Editor
 * Practice programming Linked List -- be prepared for the midterm
 
+Lab 04 Exercises:
+* [Exercise 1: Read Input and Put Numbers into a List Object](#exercise-1-read-input-and-put-numbers-into-a-list-object) (lab04_list/main.cpp)
+* [Exercise 2: Member Function to Return Sum of List Elements](#exercise-2-member-function-to-return-sum-of-list-elements) (lab04_list)
+* [Exercise 3: Member Function to Insert at End of List](#exercise-3-member-function-to-insert-at-end-of-list) (lab04_list)
+
 ## Learn the basics of the vim editor
 
 ### vim/gvim Editor
@@ -127,7 +132,7 @@ The above is just a brief introduction.  The more you learn about vim the faster
 
 For the following exercises, use the files in your 211-starter-pack/211/lab04_list directory<br>
 
-### Exercise 1:
+### Exercise 1: Read Input and Put Numbers into a List Object
 
 Edit `main()` so that it reads numbers until end of input (use a while loop) and puts each number into a `List` object.<br>
 
@@ -146,9 +151,9 @@ $ ./list
 $
 ```
 
-### Exercise 2:
+### Exercise 2: Member Function to Return Sum of List Elements
 
-Add a new member function (`int List::sum()`) to the `List` class that returns the sum of elements in the list.  In `main()` print the sum of elements after printing the list.  Do not sum the elements in `main()`.  The sum must be calculated in List::sum().
+Add a new member function (`int List::sum()`) to the `List` class that returns the sum of elements in the list.  In `main()` print the sum of elements after printing the list.  Do not sum the elements in `main()`. The sum must be calculated in List::sum().
 
 Your program should work like this:
 ```
@@ -164,7 +169,7 @@ sum = 15
 $
 ```
 
-### Exercise 3:
+### Exercise 3: Member Function to Insert at End of List
 
 Write the List::insert_at_end(int value) function so it inserts at the end of the linked list. Update your `main()` so it calls `insert_at_end()` instead of `insert()`. Since the midterm will have similar programs, it would be best if you write this function without looking at your notes from class.<br>
 
@@ -182,13 +187,19 @@ sum = 15
 $
 ```
 
-Turn in your new versions of list.h, list.cpp, and main.cpp.
+Turn in your new versions of `list.h`, `list.cpp`, and `main.cpp`.
 (You only have to turn in files for the last exercise -- the last exercise builds on the first exercises. Since this is a multi-part exercise, this single submission will be worth points for 3 exercises.)
 
 ***
 
 If you finish the exercises early you could:
 
-1. Work on p3<br>
+1. Work on P3<br>
 -and/or-
 2.  Look at the [exams from previous semesters](http://www.ecst.csuchico.edu/~trhenry/classes/211.s17/exams.html) and write solutions to the linked list questions
+
+## Lab 04 Submissions
+
+All labs are due at 11:59pm the Friday following lab. For this lab you must submit `list.h`, `list.cpp`, and `main.cpp` to Turnin, after you have completed Exercises 1, 2, and 3. If you are not able to complete all the exercises, turn in your partial work for partial credit.
+
+[Top of the Page](#lab-4)
