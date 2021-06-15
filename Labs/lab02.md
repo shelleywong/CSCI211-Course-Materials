@@ -8,7 +8,11 @@ Detecting End of Input, Using Standard Error, Returning from main()
 * Learn how to detect end of input (also known as end of file or EOF)
 * Learn the syntax of the C++ switch statement
 * Learn how to write to standard error and learn the shell syntax for redirecting standard error to a file (described in exercise 2)
-* Learn how to ask the bash shell for the exit status of the last program executed
+* Learn how to ask the bash shell for the exit status of the last program executed<br>
+
+Lab 02 Exercises:
+* [Exercise 1: Practice Detecting EOF and Using a Switch Statement](#exercise-1-practice-detecting-eof-and-using-a-switch-statement)
+* [Exercise 2: Error Output](#exercise-2-error-output)
 
 ## Testing Assignments
 
@@ -325,11 +329,11 @@ This means that the exit status of `even` was 0.
 
 ## Hints:
 
-It would be a good idea to spend a little time trying to write this program without reading the rest of this hints section.  However, if you get stuck, go ahead and read this section.<br>
+It would be a good idea to spend a little time trying to write this program without reading the rest of this hints section. However, if you get stuck, go ahead and read this section.<br>
 
-The modulus operator (%) can be used to determine if a number is even or odd. For example, if (value % 2 == 0) then the remainder of dividing value by 2 is 0.  Thus the value must be an even number.<br>
+The modulus operator (%) can be used to determine if a number is even or odd. For example, if (value % 2 == 0) then the remainder of dividing value by 2 is 0. Thus the value must be an even number.<br>
 
-Don't store all the values.  After each value is read, determine if it is odd or even.  If it is odd, set a flag and continue (a flag is a boolean variable)
+Don't store all the values. After each value is read, determine if it is odd or even. If it is odd, set a flag and continue (a flag is a boolean variable)
 ```
 bool all_even = true;  // all_even is called a boolean flag, we start by assuming all the values are going to be even
 
@@ -349,3 +353,9 @@ Turn in the file `even.cpp` to [Turnin](turnin.ecst.csuchico.edu)
 ***
 
 If you have time left over, I recommend that you complete exercises 4 and 5 from Lab 3.  Exercise 4 is practice creating an object and exercise 5 is the Video class for the next programming assignment (p2).  It is very helpful to complete exercise 5 before you do any other part of p2.
+
+## Lab 02 Submissions
+
+All labs are due at 11:59pm the Friday following lab. For this lab you must turn in `to_text.cpp` and `even.cpp`. There is a separate submission link for each exercise on Turnin. If you are not able to complete all the exercises, turn in your partial work for partial credit.
+
+[Top of the Page](#lab-2)
