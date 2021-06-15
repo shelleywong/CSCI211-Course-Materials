@@ -2,7 +2,11 @@
 
 Practice using the C++ Standard Template Library (STL)
 
-## Exercise 1
+Lab 13 Exercises
+* [Exercise 1: Read and Print GPS Locations Using a Vector](#exercise-1-read-and-print-gps-locations-using-a-vector) (lab13_path)
+* [Exercise 2: Read and Print Titles and Locations Using a Map](#exercise-2-read-and-print-titles-and-locations-using-a-map) (lab13_lookup)
+
+## Exercise 1: Read and Print GPS Locations Using a Vector
 
 Working in your 211-starter-pack/211/lab13_path directory, write a program (called `path`) that reads a collection of GPS locations (latitude & longitude) until end of input is reached. AFTER all the input has been read, print the GPS locations to standard output. Put each location on its own line with a comma between the latitude and longitude:<br>
 
@@ -42,9 +46,9 @@ int main()
 
 Read about the [vector's operator[]](https://www.cplusplus.com/reference/vector/vector/operator[]/) to learn how to access elements in the vector.<br>
 
-Turn in path.cpp.
+Turn in `path.cpp`.
 
-## Exercise 2
+## Exercise 2: Read and Print Titles and Locations Using a Map
 
 Working in your 211-starter-pack/211/lab13_lookup directory, write a program (called `lookup`) that reads a collection of GPS locations and titles (title is a string without any spaces). Continue reading locations until the user enters 0 (using 0 to end the input limits the program, but it makes writing it much easier).<br>
 
@@ -75,7 +79,7 @@ Celestinos_Pizza is at 39.729807,-121.842767
 
 HINT: The map's `find` function returns an iterator.<br>
 
-Turn in lookup.cpp
+Turn in `lookup.cpp`
 
 ## Exercise 3 (no points, just for fun)
 
@@ -89,3 +93,9 @@ where the `__________` is replace with the URL.<br>
 You can test your URL by pasting it into a browser. If the target is shown, then your URL is correct. Everything else about this program should be the same as the lookup program in Exercise 2.<br>
 
 The Google Maps URL has changed since this exercise was originally assigned, so actually getting an accurate location marker requires more information than just the coordinates mentioned above. However, your URL should return a map that centers on Chico, CA.
+
+## Lab 13 Submissions
+
+All labs are due at 11:59pm the Friday following lab. For this lab you must submit `path.cpp` (Exercise 1) and `lookup.cpp` (Exercise 2) to Turnin. If you are not able to complete all the exercises, turn in your partial work for partial credit.
+
+[Top of the Page](#lab-13)
