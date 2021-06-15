@@ -10,7 +10,7 @@ Introduction to Linux and the g++ Compiler
 * Set up all the directories for the course assignments
 * Provide practice creating, compiling, and running c++ programs<br>
 
-There are 5 Exercises for Lab 01:
+Lab 01 Exercises:
 * [Exercise 1: Setting up your CSCI 211 environment](#exercise-1-setting-up-your-csci-211-environment)
 * [Exercise 2: Creating, compiling, and running a CPP program](#exercise-2-creating-compiling-and-running-a-cpp-program)
 * [Exercise 3: Addition](#exercise-3-addition)
@@ -320,6 +320,8 @@ The main point of these assignments is to introduce you to the [testing mechanis
 
 Students who don't understand how < and > are used to test assignments struggle throughout the semester.
 
-* Reminder: All labs are due at 11:59pm the Friday following lab. For this lab you must turn in `hello.cpp`, `add.cpp`, and `print.cpp`. There is a separate submission link for each exercise on Turnin. If you are not able to complete all the exercises, turn in your partial work for partial credit.
+## Lab 01 Submissions
 
-* [Top of the Page](#lab-1)
+All labs are due at 11:59pm the Friday following lab. For this lab you must turn in `hello.cpp`, `add.cpp`, and `print.cpp`. There is a separate submission link for each exercise on Turnin. If you are not able to complete all the exercises, turn in your partial work for partial credit.
+
+[Top of the Page](#lab-1)
