@@ -312,7 +312,7 @@ $
 * Use a for-loop to implement this program.
 * When your program is working, test it with the posted tests (see the testing and turn in instructions for exercise 3; the only difference is that the tests are in the directory `211-starter-pack/211/lab01_print/tests`).
 * Make sure your program passes all the tests.
-* Turn in print.cpp to [Turnin](https://turnin.ecst.csuchico.edu/).
+* Turn in `print.cpp` to [Turnin](https://turnin.ecst.csuchico.edu/).
 
 ## Exercise 5: Make sure you understand the testing mechanism
 
