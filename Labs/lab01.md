@@ -8,7 +8,14 @@ Introduction to Linux and the g++ Compiler
 * Introduce several basic Linux commands
 * Provide an example of creating, compiling, and running a c++ program
 * Set up all the directories for the course assignments
-* Provide practice creating, compiling, and running c++ programs
+* Provide practice creating, compiling, and running c++ programs<br>
+
+There are 5 Exercises for Lab 01:
+* [Exercise 1: Setting up your CSCI 211 environment](#exercise-1-setting-up-your-csci-211-environment)
+* [Exercise 2: Creating, compiling, and running a CPP program](#exercise-2-creating-compiling-and-running-a-cpp-program)
+* [Exercise 3: Addition](#exercise-3-addition)
+* [Exercise 4: Say Hello](#exercise-4-say-hello)
+* [Exercise 5: Make sure you understand the testing mechanism](#exercise-5-make-sure-you-understand-the-testing-mechanism)
 
 ## Lecture Notes
 
@@ -204,7 +211,7 @@ $ mkdir add
 $ mkdir print
 ```
 
-## Exercise 2: Creating, compiling, and running a C++ program
+## Exercise 2: Creating, compiling, and running a CPP program
 
 1. Enter the lab01/hello subdirectory, and create the file `hello.cpp`. Using any editor (e.g. vim or atom), start the editor with `hello.cpp` as the filename:
 ```
@@ -240,9 +247,9 @@ $ ./a.out
 ```
 It is possible to [add `./` to the search path](https://stackoverflow.com/questions/27188856/adding-any-current-directory-to-the-search-path-in-linux) in Linux so that you do not have to type `./` before the executable every time, but it is not necessary. In my instructions, I will include `./` before all executables.<br/>
 
-You do not need to turn in this exercise, but you may if you want to practice turn-in submissions. You must submit lab exercises 3 and 4 for lab credit.
+Submit `hello.cpp` to Turnin.
 
-## Exercise 3: 1 + 1 = 2
+## Exercise 3: Addition
 
 Write a program that reads two numbers, adds them together, and prints the result.
 
@@ -313,4 +320,6 @@ The main point of these assignments is to introduce you to the [testing mechanis
 
 Students who don't understand how < and > are used to test assignments struggle throughout the semester.
 
-* Reminder: All labs are due at 11:59pm the Friday following lab.  For this lab you must turn in `add.cpp` and `print.cpp`. If you are not able to complete all the exercises, turn in your partial work for partial credit.
+* Reminder: All labs are due at 11:59pm the Friday following lab. For this lab you must turn in `hello.cpp`, `add.cpp`, and `print.cpp`. There is a separate submission link for each exercise on Turnin. If you are not able to complete all the exercises, turn in your partial work for partial credit.
+
+* [Top of the Page](#lab-1)
