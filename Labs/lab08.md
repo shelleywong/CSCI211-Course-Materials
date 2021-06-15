@@ -5,7 +5,7 @@
 
 Lab 08 Exercises
 * [Exercise 1: Print Command Line Arguments](#exercise-1-print-command-line-arguments) (lab08_args)
-* [Exercise 2: Handling Input/Output File Command Line Arguments](#exercise-2-handling-input-output-file-command-line-arguments) (lab08_mycat)
+* [Exercise 2: Handling Input and Output File Command Line Arguments](#exercise-2-handling-input-and-output-file-command-line-arguments) (lab08_mycat)
 * [Exercise 3: Handling Integer Command Line Arguments](#exercise-3-handling-integer-command-line-arguments) (lab08_add)
 
 ## Goals
@@ -120,7 +120,7 @@ Use the args.cpp file in your 211-starter-pack/211/lab08_args directory as a sta
 
 Submit `args.cpp` to Turnin.
 
-## Exercise 2: Handling Input/Output File Command Line Arguments
+## Exercise 2: Handling Input and Output File Command Line Arguments
 
 Start with the mycat.cpp that is in your 211-starter-pack/211/lab08_mycat directory<br>
 
