@@ -2,14 +2,18 @@
 
 Priority Queue
 
+Lab 09 Exercises
+* [Exercise 1: Create a Cust Class](#exercise-1-create-a-cust-class) (lab09_cust)
+* [Exercise 2: Create a Priority Queue that works with Class Cust](#exercise-2-create-a-priority-queue-that-works-with-class-cust) (lab09_pqueue)
+
 ## Goals
 
 * Provide an overview of the concept of a priority queue.
-* For students to implement class `Cust` and class `Pqueue` (a priority queue of pointer to `Cust`) to be used in the Kwik-E-Mart Simulation (p5)
+* For students to implement class `Cust` and class `Pqueue` (a priority queue of pointer to `Cust`) to be used in the Kwik-E-Mart Simulation (P5)
 
 ## Class Cust
 
-Customers in the Kwik-E-Mart simulation (p5) will be represented by a simple object (called `Cust`). This object will hold four pieces of information about the customer:
+Customers in the Kwik-E-Mart simulation (P5) will be represented by a simple object (called `Cust`). This object will hold four pieces of information about the customer:
 1. name (a string)
 2. if they are a robber or shopper (a boolean: true == robber, false == shopper) (a bool -- MAKE SURE YOU MAKE IT A bool)
 3. arrival time (an integer)
@@ -30,16 +34,16 @@ void Cust::print(ostream &os)
 
 In this function "os" is used instead of "cout"
 
-## Exercise 1
+## Exercise 1: Create a Cust Class
 
 Working in your 211-starter-pack/211/lab09_cust directory, create class `Cust` that includes a constructor (as shown above) and a print function that prints in this format:
 ```
 Homer shopper 42 12
 Bart robber 86 2
 ```
-Your class must work with the given test_cust.cpp and `Makefile`.<br>
+Your class must work with the given `test_cust.cpp` and `Makefile`.<br>
 
-Turn in cust.h and cust.cpp.
+Turn in `cust.h` and `cust.cpp`.
 
 ## Priority Queue Implementation
 
@@ -84,9 +88,9 @@ bool Pqueue::empty()
 A Pqueue length function will return an integer representing the number of nodes currently in the queue.
 ```cpp
 int Pqueue::length()
-``` 
+```
 
-## Exercise 2:
+## Exercise 2: Create a Priority Queue that works with Class Cust
 
 Working in your 211-starter-pack/211/lab09_pqueue directory, create class `Pqueue`. Each Node in the Pqueue class will contain a pointer to the Cust class you created in exercise 1.<br>
 
@@ -94,6 +98,12 @@ Pqueue must include empty(), length(), first_priority(), enqueue(), and dequeue(
 
 `int Pqueue::first_priority()` should return the priority of the first element without removing the element. Return -1 if the queue is empty.<br>
 
-Your  class must work with the given test_queue.cpp.<br>
+Your class must work with the given `test_queue.cpp`.<br>
 
-Turn in pqueue.h, pqueue.cpp, cust.h and cust.cpp.
+Turn in `pqueue.h`, `pqueue.cpp`, `cust.h` and `cust.cpp`.
+
+## Lab 09 Submissions
+
+All labs are due at 11:59pm the Friday following lab. For this lab you must submit `cust.h` and `cust.cpp` fo Exercise 1, and `pqueue.h`, `pqueue.cpp`, `cust.h` and `cust.cpp` for Exercise 2 to Turnin. If you are not able to complete all the exercises, turn in your partial work for partial credit.
+
+[Top of the Page](#lab-9)
