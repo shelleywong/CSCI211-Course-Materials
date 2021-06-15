@@ -3,6 +3,13 @@
 * Introducing the Linux make utility<br>
 * Practice Creating C++ Objects<br>
 
+Lab 03 Exercises:
+* [Exercise 1: Simple Makefile](#exercise-1-simple-makefile) (lab03_hello)
+* [Exercise 2: Makefile With Object Files](#exercise-2-makefile-with-object-files) (lab03_sentence)
+* [Exercise 3: Create Your Own Makefile](#exercise-3-create-your-own-makefile) (lab03_makefile)
+* [Exercise 4: Create a Course Class](#exercise-4-create-a-course-class) (lab03_object)
+* [Exercise 5: Create Class Video for P2](#exercise-5-create-class-video-for-P2) (lab03_video)
+
 ## Overview of make
 The job of `make` is to create files
 
@@ -114,7 +121,7 @@ There are many default rules built into various versions of make. Thus in a larg
 
 When learning how to use make it is best to avoid the default rules and put in explicit rules for each file.
 
-## Exercise 1: The make utility
+## Exercise 1: Simple Makefile
 \* You must complete this [Google Survey](https://docs.google.com/forms/d/e/1FAIpQLSft0f3fr4rMs0LIK2KWWbEs2EMYqQSBPFYjAcQzJWgQM3eq_A/viewform?usp=sf_link) to get credit for Exercises 1 & 2 \*
 
 You will need to be logged in to your \@mail.csuchico email in order to take the Google Survey.<br>
@@ -172,7 +179,7 @@ $ make
 ```
 What happened? Why? (Answer on the google survey)
 
-## Exercise 2
+## Exercise 2: Makefile With Object Files
 \* You must complete the rest of the Google Survey to get credit \*
 
 1. Go to the lab03_sentence directory. If you're still in the lab03_hello folder, type:
@@ -205,7 +212,7 @@ This is an important aspect of make, ask if you don't understand why!<br>
 
 \* Remember to submit the Google Form with your responses to Exercise 1 & 2 \*
 
-## Exercise 3: (must turn in a Makefile)
+## Exercise 3: Create Your Own Makefile
 The directory `lab03_makefile` (in the 211-starter-pack) contains a program that uses two different objects: class Foo (in foo.h and foo.cpp) and class Bar (in bar.h and bar.cpp).  Create a makefile that compiles this program.<br>
 
 You may start by using the Makefile from Exercise 2.<br>
@@ -223,11 +230,11 @@ Bar(3,4)
 $
 ```
 
-Turn in your Makefile. [Turnin](https://turnin.ecst.csuchico.edu) will not test your Makefile; I will grade them by reading them. Since a Makefile can do anything (such as deleting all the files on a computer) turnin.ecst never runs Makefiles that have been turned in.<br>
+Turn in your `Makefile`. [Turnin](https://turnin.ecst.csuchico.edu) will not test your Makefile; I will grade them by reading them. Since a Makefile can do anything (such as deleting all the files on a computer) turnin.ecst never runs Makefiles that have been turned in.<br>
 
 Hint: think carefully about the dependencies (the files listed after the target). For example, foo.cpp includes foo.h and thus foo.o depends on foo.cpp AND foo.h
 
-## Exercise 4: Create a Course class
+## Exercise 4: Create a Course Class
 
 Create a new class called `Course` (that is, create course.h and course.cpp).  You may start with the example code available in `lab03_object` (in the 211-starter-pack) <br>
 
@@ -266,13 +273,13 @@ REMEMBER: only `#include *.h` files (schedule.cpp must include course.h and cour
 
 To get credit, you must pass the posted tests (in ~/211-starter-pack/211/lab03_course).<br>
 
-Turn in the files schedule.cpp, course.h, and course.cpp
+Turn in the files `schedule.cpp`, `course.h`, and `course.cpp`
 
-## Exercise 5: Create class Video for p2.
+## Exercise 5: Create Class Video for P2
 
-Create the `Video` class you need for p2 and either create a simple `main()` or use my simple `main()` to test it.<br>
+Create the `Video` class you need for P2 and either create a simple `main()` or use my simple `main()` to test it.<br>
 
-If you have finished p2, all you have to do is compile your video.h and video.cpp with my main.cpp to make sure it works (or create your own main.cpp). Then turn in your video.h and video.cpp for this lab (be careful not to delete your 'real' p2 main.cpp).<br>
+If you have finished P2, all you have to do is compile your video.h and video.cpp with my main.cpp to make sure it works (or create your own main.cpp). Then turn in your video.h and video.cpp for this lab (be careful not to delete your 'real' P2 main.cpp).<br>
 
 The sample `main()` should be similar or identical to the following (you will have to add some other code before the main):
 ```
@@ -288,7 +295,7 @@ int main()
 ```
 If you have already written the constructor (`Video::Video(...)`) and your arguments are different than those listed above, your `main()` should use the arguments you are already using.<br>
 
-If you have not started p2, look at the Plan of Attack section and implement Steps 1-6.<br>
+If you have not started P2, look at the Plan of Attack section and implement Steps 1-6.<br>
 
 You will need to implement the class `Video` constructor (`Video::Video(...)`) and the `print` member function (`void Video::print()`).<br>
 
@@ -301,8 +308,14 @@ The single test will expect this output.<br>
 
 To get credit, you must pass the posted tests (in ~/211-starter-pack/211/lab03_video/tests).<br>
 
-Turn in  main.cpp, video.h, and video.cpp. Turn in all three files even if you have completed p2.
+Turn in `main.cpp`, `video.h`, and `video.cpp`. Turn in all three files even if you have completed P2.
 
 ***
 
-If you finish the lab exercises, you can work on your Video (p2) assignment.  If you have finished the exercises and have finished (and turned in a working version) of the Video assignment, you may leave early. Check with me before you leave so I can verify that you have everything turned in.
+If you finish the lab exercises, you can work on your Video (P2) assignment.  If you have finished the exercises and have finished (and turned in a working version) of the Video assignment, you may leave early. Check with me before you leave so I can verify that you have everything turned in.
+
+## Lab 03 Submissions
+
+All labs are due at 11:59pm the Friday following lab. For this lab you must complete the Google Survey (Exercises 1 and 2) and submit your solutions for Exercise 3, 4, and 5 to Turnin. If you are not able to complete all the exercises, turn in your partial work for partial credit.
+
+[Top of the Page](#lab-3)
