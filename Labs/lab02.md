@@ -11,8 +11,8 @@ Detecting End of Input, Using Standard Error, Returning from main()
 * Learn how to ask the bash shell for the exit status of the last program executed<br>
 
 Lab 02 Exercises:
-* [Exercise 1: Practice Detecting EOF and Using a Switch Statement](#exercise-1-practice-detecting-eof-and-using-a-switch-statement)
-* [Exercise 2: Error Output](#exercise-2-error-output)
+* [Exercise 1: Practice Detecting EOF and Using a Switch Statement](#exercise-1-practice-detecting-eof-and-using-a-switch-statement) (lab02_totext)
+* [Exercise 2: Error Output](#exercise-2-error-output) (lab02_even)
 
 ## Testing Assignments
 

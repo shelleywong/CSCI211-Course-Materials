@@ -12,9 +12,9 @@ Introduction to Linux and the g++ Compiler
 
 Lab 01 Exercises:
 * [Exercise 1: Setting up your CSCI 211 environment](#exercise-1-setting-up-your-csci-211-environment)
-* [Exercise 2: Creating, compiling, and running a CPP program](#exercise-2-creating-compiling-and-running-a-cpp-program)
-* [Exercise 3: Addition](#exercise-3-addition)
-* [Exercise 4: Say Hello](#exercise-4-say-hello)
+* [Exercise 2: Creating, compiling, and running a CPP program](#exercise-2-creating-compiling-and-running-a-cpp-program) (lab01_hello)
+* [Exercise 3: Addition](#exercise-3-addition) (lab01_add)
+* [Exercise 4: Say Hello](#exercise-4-say-hello) (lab01_print)
 * [Exercise 5: Make sure you understand the testing mechanism](#exercise-5-make-sure-you-understand-the-testing-mechanism)
 
 ## Lecture Notes
