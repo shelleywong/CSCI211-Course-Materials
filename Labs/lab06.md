@@ -2,6 +2,12 @@
 
 Introduction to the GNU gdb and ddd debuggers
 
+Lab 06 Exercises:
+* [Exercise 1: Debugging Practice Part 1](#exercise-1-debugging-practice-part-1) (lab06_gdb/p1)
+* [Exercise 2: Debugging Practice Part 2](#exercise-2-debugging-practice-part-2) (lab06_gdb/p2)
+* [Exercise 3: Debugging Practice Part 3](#exercise-3-debugging-practice-part-3) (lab06_gdb/p3)
+* [Exercise 4: Debugging Practice Part 4](#exercise-4-debugging-practice-part-4) (lab06_gdb/p4)
+
 ## Goals
 
 Learn the basics of the [GNU Project Debugger](https://www.gnu.org/software/gdb/) (gdb and ddd) so you can use them to find bugs in your class projects.
@@ -82,7 +88,7 @@ $ make
 
 Nothing will be submitted to Turnin for this lab, but you must complete this [google survey](https://docs.google.com/forms/d/e/1FAIpQLSc_DOE7Ps-l4ApR8l7KN1y2KIm1OdvnoBKJqaQF9go6P9t_eQ/viewform?usp=sf_link).
 
-## Exercise 1
+## Exercise 1: Debugging Practice Part 1
 
 * Start gdb with the executable p1:
 ```
@@ -99,7 +105,7 @@ $ gdb p1
 
 * Type `quit` at the (gdb) to quit the debugger
 
-## Exercise 2
+## Exercise 2: Debugging Practice Part 2
 
 * Start gdb with executable p2:
 ```
@@ -128,7 +134,7 @@ $1 = 52
 
 4. ON SURVEY: What is the address of the variable a?
 
-## Exercise 3
+## Exercise 3: Debugging Practice Part 3
 
 **Note: ddd has a graphical window interface and therefore will not load via SSH (a text-based protocol). If you cannot complete Exercise 3 on a local machine, complete Exercise 3 using gdb instead of ddd.**
 * Start ddd with the executable p3
@@ -148,7 +154,7 @@ $ ddd p3
 ```
 * You can print variables by clicking on the variable in the code window.
 
-## Exercise 4
+## Exercise 4: Debugging Practice Part 4
 
 Program p4 is the same program as p1 but is compiled w/o the -g option
 
@@ -166,4 +172,10 @@ $ gdb p4
 
 ***
 
-After completing the exercises and the survey, you may work on programming assignment 4
+After completing the exercises and the survey, you may work on programming assignment 4.
+
+## Lab 06 Submissions
+
+All labs are due at 11:59pm the Friday following lab. For this lab you must complete the Google Survey (Exercises 1, 2, 3, and 4). You will not submit anything to Turnin for Lab 06. If you are not able to complete all the exercises, turn in your partial work for partial credit.
+
+[Top of the Page](#lab-6)
