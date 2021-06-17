@@ -10,6 +10,8 @@ Lab 03 Exercises:
 * [Exercise 4: Create a Course Class](#exercise-4-create-a-course-class) (lab03_object)
 * [Exercise 5: Create Class Video for P2](#exercise-5-create-class-video-for-P2) (lab03_video)
 
+> Note: To get full credit for this lab, you must complete a Google Survey and submit several files to Turnin.
+
 ## Overview of make
 The job of `make` is to create files
 

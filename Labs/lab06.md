@@ -8,6 +8,8 @@ Lab 06 Exercises:
 * [Exercise 3: Debugging Practice Part 3](#exercise-3-debugging-practice-part-3) (lab06_gdb/p3)
 * [Exercise 4: Debugging Practice Part 4](#exercise-4-debugging-practice-part-4) (lab06_gdb/p4)
 
+> Note: To get full credit for this lab, you must complete a Google Survey. You do not need to submit any files to Turnin for lab 6.
+
 ## Goals
 
 Learn the basics of the [GNU Project Debugger](https://www.gnu.org/software/gdb/) (gdb and ddd) so you can use them to find bugs in your class projects.
