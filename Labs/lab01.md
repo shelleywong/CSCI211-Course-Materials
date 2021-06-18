@@ -189,7 +189,9 @@ Taking some time to set up and organize your working directory for CSCI 211 will
 
 You may want to use a Git repository manager, such as GitHub, that provides version control and other features to build and manage software. It can be a great tool for organizing your source code; HOWEVER, remember that whenever you are creating a directory for a class where everyone is turning in the same assignments (like in this CSCI 211 course), make sure to **make the visibility of this repository private!** If your repo is public, it means other students can see it and easily steal the code from it -- this constitutes cheating and is a violation of academic integrity. There is **no reason** to make a CSCI 211 repo publicly visible this semester OR after you have completed the class. Refer to the [Cheating Policy](http://www.ecst.csuchico.edu/~trhenry/classes/general/cheating.html) or talk to me directly if you are unclear about any of this. Refer to the [GitHub docs](https://docs.github.com/en/free-pro-team@latest/github) for additional guidance on working with GitHub.<br/>
 
-There is no requirement in this course to use GitHub. The following instructions will work on your local Linux/OSX laptop/desktop (with or without a remote repository):<br/>
+If you would like to use Git in CSCI 211, you may want to complete [Lab 14](https://github.com/shelleywong/CSCI211-Course-Materials/blob/main/Labs/lab14.md) ahead of time. There is no requirement in this course to use Git and/or GitHub; however, a version control system will likely be very useful to you in the future.<br>
+
+The following instructions will work on your local Linux/OSX laptop/desktop (with or without a remote repository):<br/>
 
 1. Go to your home directory, or a subdirectory such as "Courses" or "Repos". Create a folder for CSCI 211 using mkdir (make directory):
 ```
