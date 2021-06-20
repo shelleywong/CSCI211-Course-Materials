@@ -111,11 +111,11 @@ The above Makefile uses the following command-line options for the g++ compiler:
 | Option |    |
 | --- | --- |
 | `-c` | Compile only: create a .o file, don't create an executable (such as a.out) |
-| `-o filename` | Name the output filename instead of the default a.out |
+| `-o filename` | Name the output `filename` instead of the default a.out |
 | `-g` | Put some extra information in the output files (.o and executables) that can be used by the debugger (debuggers are discussed in a future lab) |
 | `-Wall` | Show all warnings (warnings help illuminate problems in your program, you should fix your code so there are no warnings) |
 | `-pedantic` | Issue all the warnings demanded by strict ISO C and ISO C++ (i.e. issue warnings if your program does not follow the standard exactly) |
-| `-std=c++11` | Use the newest C++ standard (C++11).  In the near future all C++ programs will need to conform to C++11. |
+| `-std=c++11` | Compile with C++ ISO standard version C++11. Newer standards exist, but this is how all of your code will be compiled and tested on Turnin. |
 
 ### Default Rules
 
@@ -271,7 +271,7 @@ Or you could use the Makefile provided in your ~/211/lab03_course directory:
 ```
 $ make
 ```
-REMEMBER: only `#include *.h` files (schedule.cpp must include course.h and course.cpp must include course.h). **NEVER INCLUDE .cpp FILES**.<br>
+REMEMBER: only `#include *.h` files (schedule.cpp must include course.h and course.cpp must include course.h). **NEVER #INCLUDE .cpp FILES**.<br>
 
 To get credit, you must pass the posted tests (in ~/211-starter-pack/211/lab03_course).<br>
 
