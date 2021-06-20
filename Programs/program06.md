@@ -224,7 +224,7 @@ Remember that the first lines of all your files (.h and .cpp) must contain the f
 ## Testing Your Program
 
 * Some sample tests and a Makefile are included in 211-starter-pack/211/p6.
-* [Lab 2](https://github.com/shelleywong/CSCI211-Course-Materials/blob/main/Labs/lab02.md) includes instructions for testing your program using the provided sample tests.
+* Review the instructions for Testing Assignments using the provided sample tests in the [Labs directory README](https://github.com/shelleywong/CSCI211-Course-Materials/tree/main/Labs)
 * In this case, I will NOT test your program with any additional tests.<br>
 
 ## Submitting Your Program

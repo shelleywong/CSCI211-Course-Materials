@@ -264,7 +264,7 @@ Remember that the first lines of all your files (.h and .cpp) must contain the f
 ## Testing Your Program
 
 * Some sample tests and a Makefile are included in 211-starter-pack/211/p5.
-* [Lab 2](https://github.com/shelleywong/CSCI211-Course-Materials/blob/main/Labs/lab02.md) includes instructions for testing your program using the provided sample tests.
+* Review the instructions for Testing Assignments using the provided sample tests in the [Labs directory README](https://github.com/shelleywong/CSCI211-Course-Materials/tree/main/Labs)
 * I will test your program with additional tests not posted in the test directory. It is a very good idea to design and implement your own set of tests.<br>
 
 This program uses command line arguments and file input/output. I will provide a script that handles the command line arguments and the file input/output.  However, when manually testing your program you must provide the command line arguments. Look at the `.cmd` files in the test directory to see the command line arguments of each test.
