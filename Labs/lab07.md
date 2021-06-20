@@ -7,18 +7,18 @@ Lab 07 Exercises
 
 ## Goal
 
-For students to finish implementing the stack of doubles for the Calculator programming assignment (p4)
+For students to finish implementing the stack of doubles for the Calculator programming assignment (P4)
 
 ## The post-fix calculator
 
 The post-fix calculator assignment requires that you implement a stack of doubles (called class Dstack). The stack must be implemented using a linked list. The stack must provide at least the following functions (you can use different arguments if you would like):
-| Function |  |
+| Dstack Member Function |  |
 | --- | --- |
 | `void push(double value)` | Push given value onto the stack. |
-| `bool pop(double &value)` | Remove the top value from the stack and return it using the reference parameter. Return true if the stack was not empty, false if it was empty. |
+| `bool pop(double &value)` | Remove the top value from the stack and return it using the reference parameter. Return true if the stack was not empty, false if the stack was empty. |
 | `int size()` | Return the number of elements in the stack. |
 | `bool empty()` | Return true if the stack is empty, false otherwise. |
-| `~Dstack()` | A correct destructor that deletes all the Nodes objects (you DO NOT have to complete this for the lab, but p4 requires it). |
+| `~Dstack()` | A correct destructor that deletes all the Nodes objects (you don't have to complete the destructor for lab 7, but P4 requires it). |
 
 ## Exercise 1: Stack of Doubles
 
