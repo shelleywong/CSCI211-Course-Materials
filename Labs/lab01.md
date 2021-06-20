@@ -23,14 +23,25 @@ Lab 01 Exercises:
 
 ### Linux Overview
 
-* Kernel
-* Shell (csh, tsh, ksh, bsh, bash)
-* Windowing System (X-windows is the most common)
-* Windows Manager (Xfce, KDE, Gnome, etc)
+* Linux:
+  * A family of open source Unix-like operating systems based on the Linux kernel
+* Kernel:
+  * The computer program at the core of a computer's operating system
+  * Main jobs: scheduling processes, communication between the hardware and user processes, management of memory, I/O, and other resources
+* Shell:
+  * Command line interface (CLI) that gives users the ability to interact with the computer through a terminal.
+  * Common Linux shells: bash, zsh, fish, ksh, tcsh, ...
+  * See what shell you are using: `echo $0`
+* GUI:
+  * Linux is flexible and customizable: works through the terminal, or you can install a graphical user interface
+  * Windowing System: software that manages different parts of a display screen (X-windows is the most common)
+  * Windows Manager: controls the placement of windows within a windowing system (Xfce, KDE, Gnome, etc)
+
+> Note: For CSCI 211, I recommend you work with a Linux CLI. Proficiency with shell-based interaction will benefit you in future classes. Still, you should look into the available options and determine what works best for you.
 
 ### Linux Command structure
 
-Commands in the Linux environment all have textual names. Instead of opening a window that shows the content of a directory you type a command at a prompt in a window. For example, the command "ls" show the contents of the current directory. A program called the shell will print a prompt (usually a "$" but can be anything you want) to indicate that it is ready for you to type a command.<br>
+Commands in the Linux environment all have textual names. Instead of opening a window that shows the content of a directory you type a command at a prompt in a window. For example, the command `ls` show the contents of the current directory. A program called the shell will print a prompt (usually a "$" but can be anything you want) to indicate that it is ready for you to type a command.<br>
 
 When you type a command the shell looks for a program with that name to execute.
 ```
@@ -71,9 +82,9 @@ Programs usually read from the keyboard. For example, if your program has the fo
 
 You can tell the shell to redirect standard input (i.e. cin) from a file:
 ```
-$ ./add < test_1.in
+$ ./add < test01.in
 ```
-Now when the program `add` is run, text read from standard input (cin) will be read from the file: test_1.in
+Now when the program `add` is run, text read from standard input (cin) will be read from the file: test01.in
 
 ### Linux Pipes
 
@@ -88,7 +99,7 @@ $ ls | wc
 ```
 The | is usually on the key above the Enter key.<br>
 
-Any number of commands can be pipped together.
+Any number of commands can be piped together.
 
 ### Common Linux commands
 
@@ -110,19 +121,35 @@ $ mkdir 211  // make a new directory in the current directory called "211"
 $ mkdir ~/211  // make a new directory in your home directory called "211"
 ```
 * `chmod` => change the protection (access) of a file or directory
-  * if you change the protection of your home directory as follows, you (the owner) will have full read and write access to all of your files, but no one else will be able to access any of your files:
+  * 3 distinct classes
+    * `u`: user (person who owns the files & directories)
+    * `g`: group (users who are members of a specified group)
+    * `o`: others (not the owner or member of a group)
+  * 3 Permissions that apply to each class
+    * `r`: read permission (numerical value of 4 or 100)
+    * `w`: write permission (numerical value of 2 or 010)
+    * `e`: execute permission (numerical value of 1 or 001)
+
+  * if you change the protection of your home directory as follows, you (the owner) will have full read and write access to all of your files, and others will only be able to read your files:
 ```
 $ cd  // change to your home directory
-$ chmod 600 .  // don't forget the dot (.) t the end of this command
+$ chmod 644 .  // don't forget the dot (.) t the end of this command
 ```
   * 6 in binary is 110 (read & write privileges on, execute privileges off)
-  * You don't want everything to be executable -- only the executable files. If you try to execute your program and get a message that the file is not executable, you can make it executable:
+    * Generally, you don't want everything to be executable -- only the executable files.
+  * If you try to execute your program and get a message that the file is not executable, you can make it executable:
 ```
 $ chmod +x filename
 ```
+  * You can see the permissions that are currently set in any directory, along with other information (owner, size of the file, date modified) -- this example shows how a file would look with read, write and execute privileges for the owner and read access only for groups and others:
+```
+$ ls -al  // list all files in the directory with a long listing format
+...
+-rwxr--r--   1 shelleywong  staff  12142 Jun 14 09:34 README.md
+```
 
 * `rm` => delete (remove) a file
-  * `rm -r` allows you to delete a directory and everything in it, use it carefully
+  * `rm -r` allows you to delete a directory and everything in it -- use it carefully
 * `cp` => copy a file
 * `man` => show the manual page for a command
 ```
@@ -149,47 +176,54 @@ $ which cp
 
 For 211 we will not be using an integrated development environment (IDE). The reason we are not using an IDE is because I want you to develop a good understanding of the tasks performed by an IDE. Once you have a good understanding of these tasks, you can switch to an IDE.<br>
 
-When writing programs without an IDE you use a stand alone editor to create your program (versus using the editor built in to Visual C++). This means you can pick from hundreds of available editors. Here are some common choices (most are available on the computers in 251):
-1. Atom
-  * Menu based editor that is easy to use.
-  * Similar to Sublime Text.
-  * Can [download on your home machine](https://atom.io/).
+When writing programs without an IDE you use a stand alone editor to create your program (versus using the editor built in to Visual C++). This means you can pick from hundreds of available editors. Here are some common choices (most are available on the computers in the lab):
+1. [Vim](https://www.vim.org/)
+  * Powerful and very popular version of Vi (de-facto Unix editor).
+  * Works on most Linux and Microsoft platforms.
+  * It is hard to learn how to use but very fast once you learn how to use. (I will talk about it later in the semester.)
+  * The gvim editor is a graphical version of vim (runs inside a GUI window) -- a little harder to learn, more common to use vim
+2. [Atom](https://atom.io/)
+  * Menu based editor that is easy to use (from GitHub).
+  * Can download on your home machine.
   * Cannot use over text-based connections (like putty -- actually, there is a way to use it, but it takes work to set up).
-2. nano
+3. [VSCode](https://code.visualstudio.com/)
+  * Another easy to use editor (from Microsoft).
+  * Includes support for things like debugging and syntax highlighting.
+  * Note: Visual Studio Code is different than Visual Studio IDE
+4. [Sublime Text](https://www.sublimetext.com/)
+  * Similar to Atom, but better performance and more lightweight
+  * Free trials, but there is no free version
+5. [nano](https://www.nano-editor.org/)
   * Simple text based editor (no mouse)
   * all the commands are always on the screen (on some platforms a similar editor called pico is available and nano is not).
   * You can use nano via a text-based connection (like putty).
-3. gvim
-  * Graphical version of vim (see below).  
-  * A little harder to learn how to use.
-4. vim
-  * Powerful and very popular version of the popular vi editor.
-  * Works on most Linux and Microsoft platforms.  
-  * It is hard to learn how to use but very fast once you learn how to use. (I will talk about it later in the semester.)  
-  * [Vim Homepage](https://www.vim.org/)
-5. emacs
-  * Powerful and very popular editor.  
+6. [emacs](https://www.gnu.org/software/emacs/)
+  * Powerful and very popular editor (from GNU).
   * It is hard to learn how to use but provides powerful tools once you learn how to use it.  
-  * Works on most Linux and Microsoft platforms [GNU's emacs page](https://www.gnu.org/software/emacs/)<br>
+  * Works on most Linux and Microsoft platforms.<br>
 
-All these editors works from the command line:
+You can start these editors from the command line:
 ```
+$ vim hello.cpp
 $ atom hello.cpp
+$ code hello.cpp
 ```
 
-All of these are available on Linux and MacOS. Vim and Emacs are hard to learn, so if you don't already know one, I suggest you start using atom. In a couple weeks I will give lab on vim.<br>
+All of these are available on Linux. Vim and Emacs are hard to learn, so if you don't already know one, I'd suggest starting with Atom. If you are interested in working with Vim, you may want to review [Lab 4](https://github.com/shelleywong/CSCI211-Course-Materials/blob/main/Labs/lab04.md).<br>
 
-If you plan to use Putty (and ssh into ecc-linux) to do your assignments at home, then vim or nano is a better choice (it requires some extra setup to use gvim or atom over putty).<br>
+If you plan to use Putty and ssh into ecc-linux to do your assignments, then vim or nano is a better choice.<br>
 
-Whatever editor you end up using, become an expert.
+Becoming very familiar with the editor of your choice will be beneficial to you in the long run. Learning how to work with a variety of editors can also be helpful to prepare you for future jobs.
 
 ## Exercise 1: Setting up your CSCI 211 environment
 
 Taking some time to set up and organize your working directory for CSCI 211 will help prevent turning in the wrong assignment and make it easier to keep track of your files.<br/>
 
-You may want to use a Git repository manager, such as GitHub, that provides version control and other features to build and manage software. It can be a great tool for organizing your source code; HOWEVER, remember that whenever you are creating a directory for a class where everyone is turning in the same assignments (like in this CSCI 211 course), make sure to **make the visibility of this repository private!** If your repo is public, it means other students can see it and easily steal the code from it -- this constitutes cheating and is a violation of academic integrity. There is **no reason** to make a CSCI 211 repo publicly visible this semester OR after you have completed the class. Refer to the [Cheating Policy](http://www.ecst.csuchico.edu/~trhenry/classes/general/cheating.html) or talk to me directly if you are unclear about any of this. Refer to the [GitHub docs](https://docs.github.com/en/free-pro-team@latest/github) for additional guidance on working with GitHub.<br/>
+You may want to use a Git repository manager, such as GitHub, that provides version control and other features to build and manage software. It can be a great tool for organizing your source code; HOWEVER, remember that whenever you are creating a directory for a class where everyone is turning in the same assignments (like in this CSCI 211 course), make sure to **make the visibility of this repository private!** If your repo is public, it means other students can see it and easily steal the code from it -- this constitutes cheating and is a violation of academic integrity. There is **no reason** to make a CSCI 211 repo publicly visible this semester OR after you have completed the class.
 
-If you would like to use Git in CSCI 211, you may want to complete [Lab 14](https://github.com/shelleywong/CSCI211-Course-Materials/blob/main/Labs/lab14.md) ahead of time. There is no requirement in this course to use Git and/or GitHub; however, a version control system will likely be very useful to you in the future.<br>
+* Refer to the [Cheating Policy](http://www.ecst.csuchico.edu/~trhenry/classes/general/cheating.html) or talk to me directly if you are unclear about any of this.
+* Refer to the [GitHub docs](https://docs.github.com/en/free-pro-team@latest/github) for additional guidance on working with GitHub.
+* If you would like to use Git in CSCI 211, you may want to complete [Lab 14](https://github.com/shelleywong/CSCI211-Course-Materials/blob/main/Labs/lab14.md) ahead of time. There is no requirement in this course to use Git and/or GitHub; however, a version control system will likely be very useful to you in the future.<br>
 
 The following instructions will work on your local Linux/OSX laptop/desktop (with or without a remote repository):<br/>
 
@@ -213,15 +247,17 @@ $ mkdir add
 $ mkdir print
 ```
 
+> Note: the 211 starter pack has a 211/ directory and separate subdirectories for each exercise (i.e. instead of a 211/lab01/hello directory structure, you'll see 211/lab01_hello -- you can set up your 211 directory in whatever way makes the most sense to you)
+
 ## Exercise 2: Creating, compiling, and running a CPP program
 
 1. Enter the lab01/hello subdirectory, and create the file `hello.cpp`. Using any editor (e.g. vim or atom), start the editor with `hello.cpp` as the filename:
 ```
-$ atom hello.cpp
+$ vim hello.cpp
 ```
 -or-
 ```
-$ vim hello.cpp
+$ atom hello.cpp
 ```
 2. Now edit the file so it contains the following text. Save the file and exit the editor:
 ```cpp
@@ -279,7 +315,7 @@ cin >> value1;
 Where "value1" has been declared as an integer before this line (C++ integers are declared just like in Java).
 * Create a new file called `add.cpp` using an editor.  Write the add program so it reads and adds the two numbers.
 * Compile and run your program to make sure it works correctly.  Your output must EXACTLY match my output: `<number><space><+><space><number><space><=><space><number><newline>`
-* Some sample input and output are available in `211-starter-pack/211/lab01_add/tests` directory. In this directory you will find *.in and *.out files. For example, `t01.in` is the input for test 1 and `t01.out` is the expected output for test 1. All of the tests in the directory will be used to grade your program on turnin. If you pass these tests, you will get full credit.
+* Some sample input and output are available in `211-starter-pack/211/lab01_add/tests` directory. In this directory you will find *.in and *.out files. For example, `t01.in` is the input for test 1 and `t01.out` is the expected output for test 1. All of the tests in the directory will be used to grade your program on Turnin. If you pass these tests, you will get full credit.
 * An easy way to see the content of a small file is to use the Linux cat command:
 ```
 $ cat tests/t01.in
@@ -288,7 +324,7 @@ $ cat tests/t01.out
 40 + 2 = 42
 $
 ```
-* See [Introduction to Testing](http://www.ecst.csuchico.edu/~trhenry/classes/general/how_to_test.html) for a full description of how to test your assignments. If you understand the described mechanism now, it will make your semester much easier, and will improve your grade. One of the most important aspects of this lab is for you to understand the testing mechanism.
+* See the [Labs directory README](https://github.com/shelleywong/CSCI211-Course-Materials/tree/main/Labs) for a full description of how to test your assignments. If you understand the described mechanism now, it will make your semester much easier, and will improve your grade. One of the most important aspects of this lab is for you to understand the testing mechanism.
 
 Once your program is working, turn in `add.cpp` on [Turnin](https://turnin.ecst.csuchico.edu/). For more information, see [instructions for turning in files](http://www.ecst.csuchico.edu/~trhenry/classes/general/how_to_turn_in_assignments.html).
 
