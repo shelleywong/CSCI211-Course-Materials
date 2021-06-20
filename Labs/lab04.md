@@ -12,9 +12,9 @@ Lab 04 Exercises:
 
 ### vim/gvim Editor
 
-You do not need to learn or use vim/gvim for this class.<br>
+You do not need to learn or use vim/gvim for this class; however, using an advanced editor (such as vim/gvim) can save you lots of time in the long run.<br>
 
-However, using an advanced editor (such as vim/gvim) can save you lots of time in the long run.
+Vim is very readily available -- installed by default on Linux and Mac, and easily installed on Windows. Companies may use an IDE or editor that you are unfamiliar with, but in almost any situation, you will be able to use Vim.
 
 ### vim/gvim References
 
