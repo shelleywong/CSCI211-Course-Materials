@@ -13,33 +13,33 @@ Lab 08 Exercises
 * Introduce how command line arguments are handled in C++.
 * Introduce C++ file input/output.<br>
 
-Program 5 will require that you use both of these mechanisms.  Completing the exercises will give you two components necessary for p5.
+Program 5 will require that you use both of these mechanisms. Completing the exercises will give you two components necessary for P5.
 
 ## Command Line Arguments
 
-When you execute a program by typing options and filenames after the executable name, the shell passes these arguments to the program.  Consider the following:
+When you execute a program by typing options and filenames after the executable name, the shell passes these arguments to the program. Consider the following:
 ```
 $ ls -l calc.cpp
 ```
-The command line arguments include "-l" and "calc.cpp".  When the shell executes the `ls` command it passes the command line argument to the program and they become arguments to `main()`.<br>
+The command line arguments include `-l` and `calc.cpp`.  When the shell executes the `ls` command it passes the command line argument to the program and they become arguments to `main()`.<br>
 
 In order to use command line arguments in your program you must declare `main()` as follows:
 ```
 int main(int argc, char *argv[])
 ```
-The first argument (`argc`) is the number of arguments that appear on the command line. In the above example `argc` is 3 because the command consists of three arguments: "ls", "-l", and "calc.cpp".<br>
+The first argument (`argc`) is the number of arguments that appear on the command line. In the above example `argc` is 3 because the command consists of three arguments: `ls`, `-l`, and `calc.cpp`.<br>
 
-`argv` is an array of C-style strings (recall that a C-style string is an array of char that is terminated with a null character (which is the number 0)). `argv` is actually one larger than `argc` since the last element in the array is a NULL pointer (recall that arrays are really just pointers to the first element).
+`argv` is an array of C-style strings (recall that a C-style string is an array of char that is terminated with a null character (the number 0)). `argv` is actually one larger than `argc` since the last element in the array is a NULL pointer (recall that arrays are really just pointers to the first element).
 
 ## File Input and Output (File I/O)
 
-The C++ input/output library contains a mechanism for reading input from files and writing output to files. The mechanism works similarly to `cin` and `cout`, but instead of reading from the standard input (`cin`) and writing to standard output (`cout`) a program can read from a file and/or write to a different file. Note: This is a different mechanism than using the shell's < and > to redirect standard input and standard output.<br>
+The C++ input/output library contains a mechanism for reading input from files and writing output to files. The mechanism works similarly to `cin` and `cout`, but instead of reading from standard input (`cin`) and writing to standard output (`cout`), a program can read from an input file and write to an output file. Note: This is a different mechanism than using the shell's < and > to redirect standard input and standard output.<br>
 
-The following program (mycat.cpp and 211-starter-pack/211/lab08_mycat) assumes the first command line argument is the name of a file containing the input. After the program has been compiled, it can be executed like this:
+The following program (mycat.cpp, provided in 211-starter-pack/211/lab08_mycat) expects the executable to be followed by one command line argument that holds the name of a file containing input. After the program has been compiled, it can be executed like this:
 ```
-$ ./mycat myfile.cpp
+$ ./mycat myfile.in
 ```
-It will read every line in the first file (myfile.cpp in this example, but it could be any file) and write it to standard output.
+This program reads every line from the myfile.in file and writes it to standard output. In this case, argc is 2, argv[0] is `./mycat`, and argv[1] is `myfile.in`.
 
 ## mycat.cpp
 (the version in 211-starter-pack has more comments)
@@ -60,7 +60,7 @@ int main(int argc, char *argv[])
     // (the first argument is the name of the executable)
     if (argc < 2)
     {
-        // write to standar error (cerr)
+        // write to standard error (cerr)
         cerr << "No filename specified." << endl;
         return 1; // 1 is error condition
     }
@@ -103,7 +103,7 @@ int main(int argc, char *argv[])
 
 ## Exercise 1: Print Command Line Arguments
 
-Write a program (called `args`) that prints all the command line arguments to standard output. For example:
+Write a program (called `args`) that prints all the command line arguments to standard output. Use the args.cpp file in your 211-starter-pack/211/lab08_args directory as a starting point. For example:
 ```
 $ ./args one two
 one
@@ -116,15 +116,14 @@ six
 $
 ```
 
-Use the args.cpp file in your 211-starter-pack/211/lab08_args directory as a starting point.<br>
-
 Submit `args.cpp` to Turnin.
 
 ## Exercise 2: Handling Input and Output File Command Line Arguments
 
 Start with the mycat.cpp that is in your 211-starter-pack/211/lab08_mycat directory<br>
 
-Edit mycat.cpp so that it takes two command line arguments:
+You will need to edit mycat.cpp so that the program expects three command line arguments:
+* Argument 0: the mycat executable
 * Argument 1: a filename to be used as the input file
 * Argument 2: a filename to be used as the output file<br>
 
@@ -158,22 +157,22 @@ Submit `mycat.cpp` to Turnin.
 
 ## Exercise 3: Handling Integer Command Line Arguments
 
-Working in your 211-starter-pack/211/lab08_add directory, write a program (add.cpp) that reads any number of command line arguments, assumes all the arguments are integers and prints the sum of all the number:
+Working in your 211-starter-pack/211/lab08_add directory, write a program (add.cpp) that reads any number of command line arguments, checks that all the arguments (besides the executable) are integers, and prints the sum of all the numbers:
 ```
 $ ./add 10 20 12
 42
 $
 ```
-Since each command line argument is a C-style string you will have to convert the strings (such as "10") to an integer (10). Use the function `atoi()` (ascii-to-integer). Do not worry about error checking (that is, assume that `argv[1]` really is an integer).  You need to include a library file before you can use `atoi()`. Try "`$ man atoi`" to see what file you need to include.
+Since each command line argument is a C-style string, you will have to convert the strings (such as "10") to an integer (10). Use the function `atoi()` (ascii-to-integer). At this step, do not worry about error checking (that is, assume that `argv[1]` really is an integer). You need to include a library file before you can use `atoi()`. Try "`$ man atoi`" to see what file you need to include.
 ```
 value = atoi(argv[1]);  // this does not do any error checking
 ```
 
-The next step is to check for strings that are not legal integers.  Before you move on, make sure your program works w/o error checking.<br>
+The next step is to check for strings that are not legal integers. Before you move on, make sure your program works w/o error checking.<br>
 
 The `atoi()` function does not do any error checking. That means if you pass it a string like "hello" it will just return some undefined value.<br>
 
-Update the add.cpp program so that it performs error checking.  Specifically, print an error if the user enters any string that is not a legal integer:
+Update the add.cpp program so that it performs error checking. Specifically, print an error if the user enters any string that is not a legal integer:
 ```
 $ ./add 1 2 hello
 Error: illegal integer.
@@ -183,16 +182,16 @@ Error: illegal integer.
 $
 ```
 
-Use the `isdigit()` function to check each character in each input string (argv[1], argv[2], etc) to make sure they are legal integers.  You will need to use a loop. Keep in mind that the last element in a C-style string is a zero (not the character '0' but an actual zero). It is best to do this check in a function so you can use that function in your p5:
+Use the `isdigit()` function to check each character in each input string (argv[1], argv[2], etc) to make sure that all characters in a given character array are legal integers. You will need to use a loop. Keep in mind that the last element in a C-style string is a zero (not the character '0' but an actual zero). It is best to do this check in a function so you can use that function in your P5:
 ```
 bool legal_int(char *str)
 {  
-  // return false if the given string has any characters that are NOT digits
-  // return true if all the characters in the given string ARE digits
+  // return false if the str char array has any characters that are NOT digits
+  // return true if all the characters in the str char array ARE digits
 }
 ```
 
-After your program verifies that all the characters are digits, call `atoi()` to convert the string to an integer and add it to the total (as above).
+Update your program so that it calls `atoi()` to convert the string to an integer and adds it to the total (as above). This step should be completed **after** your program verifies that all the characters in a given string are digits.<br>
 
 Submit `add.cpp` to Turnin.
 
