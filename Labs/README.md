@@ -96,7 +96,9 @@ $ diff results/t01.myerr tests/t01.err
 
 Almost every lab and programming assignment directory will contain a `tests` folder containing sets of files for each test (e.g. `t01`). You may see files for input (\*.in), output (\*.out), error output (\*.err), command line input (\*.cmd) and exit status (\*.exit).<br>
 
-Note that the provided tests for programming assignments may not cover every requirement mentioned in the assignment writeup -- you should review the provided tests, learn how everything is tested, and consider creating your own tests.
+Note that the provided tests for programming assignments may not cover every requirement mentioned in the assignment writeup -- you should review the provided tests, learn how everything is tested, and consider creating your own tests.<br>
+
+You can follow the manual testing options listed above for all given test cases or utilize the provided tools listed below to automate and simplify the testing process.
 
 ### Tools
 
@@ -108,7 +110,6 @@ It is important that you understand the manual testing options listed above, but
 
 `run_tests`, `vd`, and `vde` are bash scripts (programs that the bash shell can execute) that should be included in your ~211-starter-pack/bin directory that you downloaded (211-starter-pack.tar):
 ```
-$ cd
 $ cd bin
 $ ls run_tests vd vde
 run_test vd vde
