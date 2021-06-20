@@ -354,7 +354,7 @@ $
 
 ## Exercise 5: Make sure you understand the testing mechanism
 
-The main point of these assignments is to introduce you to the [testing mechanism](https://github.com/shelleywong/CSCI211-Course-Materials/tree/main/Labs) (instructions in the Lab directory README).<br/>
+The main point of these assignments is to introduce you to the [testing mechanism](https://github.com/shelleywong/CSCI211-Course-Materials/blob/main/Labs/README.md#testing-assignments) (instructions in the Lab directory README).<br/>
 
 Students who don't understand how < and > are used to test assignments struggle throughout the semester.
 
