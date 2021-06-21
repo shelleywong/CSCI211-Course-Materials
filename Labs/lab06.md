@@ -12,11 +12,11 @@ Lab 06 Exercises:
 
 ## Goals
 
-Learn the basics of the [GNU Project Debugger](https://www.gnu.org/software/gdb/) (gdb and ddd) so you can use them to find bugs in your class projects.
+Learn the basics of the [GNU Project Debugger](https://www.gnu.org/software/gdb/) (gdb or ddd) so you can use them to find bugs in your class projects.
 
 ## Required Survey
 
-You do not have to turn in any files for this lab, but you do have to complete [this Google survey](https://docs.google.com/forms/d/e/1FAIpQLSc_DOE7Ps-l4ApR8l7KN1y2KIm1OdvnoBKJqaQF9go6P9t_eQ/viewform?usp=sf_link) to get credit for Lab 06.
+You do not have to turn in any files for this lab, but you do have to complete [this Google survey](https://docs.google.com/forms/d/e/1FAIpQLSdNNjIHgqtmHd_zsGy12nYTealx90JQA_FDU_SFu9Dkrp3awg/viewform?usp=sf_link) to get credit for Lab 06.
 
 ## gdb/ddd Lecture Notes
 
@@ -34,7 +34,7 @@ $ man ddd
 * Complete gdb documentation can be found in the [gdb manual](https://www.gnu.org/software/gdb/documentation/).
 * Complete ddd documentation is available on [ddd's homepage](https://www.gnu.org/software/ddd/).<br>
 
-`ddd` is easier to use in that it provides a nice menu and shows the codes being executed. However, it has a lot of features that may seem overwhelming at first. I suggest you try gdb first using the few simple commands listed below.  Once you have a good idea how gdb works, you can use ddd. Once you understand the concepts of debugging, you will probably prefer use ddd to debug your programs.
+`ddd` is easier to use in that it provides a nice menu and shows the codes being executed. However, it has a lot of features that may seem overwhelming at first. I suggest you try gdb first using the few simple commands listed below.  Once you have a good idea how gdb works, you can try ddd. Once you understand the concepts of debugging, you may prefer using ddd to debug your programs.
 
 ### Starting gdb (and ddd)
 
@@ -43,16 +43,22 @@ $ man ddd
 ```
 $ g++ -g -o p1 p1.cpp
 $ gdb p1
-GNU gdb (GDB) 7.1
-Copyright (C) 2010 Free Software Foundation, Inc.
+GNU gdb (Ubuntu 9.1-0ubuntu1) 9.1
+Copyright (C) 2020 Free Software Foundation, Inc.
 License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
 This is free software: you are free to change and redistribute it.
-There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
-and "show warranty" for details.
-This GDB was configured as "x86_64-slackware-linux".
+There is NO WARRANTY, to the extent permitted by law.
+Type "show copying" and "show warranty" for details.
+This GDB was configured as "x86_64-linux-gnu".
+Type "show configuration" for configuration details.
 For bug reporting instructions, please see:
-<http://www.gnu.org/software/gdb/bugs/>...
-Reading symbols from /user/faculty/trhenry/tmp/lab06/p1...done.
+<http://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+    <http://www.gnu.org/software/gdb/documentation/>.
+
+For help, type "help".
+Type "apropos word" to search for commands related to "word"...
+Reading symbols from p1...
 (gdb)
 ```
 3. `(gdb)` is the prompt for gdb. There are lots of commands that you can type here. For example, if you type `run`, your program will start executing.<br>
@@ -77,9 +83,13 @@ The following table lists the most commonly used gdb commands (these are the mos
 
 ## Exercise Setup
 
-**Note for Mac users**: You cannot do this lab on a Mac unless you have GNU's g++ and gdb installed. These are no longer part of xcode, you have to download and install them using [homebrew](https://brew.sh/). It takes over an hour to install g++ using homebrew. I recommend you use ecc-linux or a comparable Unix-like system.<br>
+Complete the following exercises with gdb. Then, if you have time and are interested, try completing the same exercises with ddd. This lab writeup includes some additional information and hints that are not shown in the Google survey, so make sure to keep a tab open for this lab while you are taking the survey.<br>
 
-I have created several sample programs for you to use with the debugger. They should be in your 211-starter-pack/211/lab06_gdb directory.<br>
+**Note for SSH users**: ddd has a graphical window interface and therefore will not load via SSH (a text-based protocol).<br>
+
+**Note for Mac users**: You cannot do this lab on a Mac unless you have GNU's g++ and gdb installed. These are no longer part of xcode, you have to download and install them using [homebrew](https://brew.sh/). It takes over an hour to install g++ using homebrew. **I recommend you use ecc-linux or a comparable Unix-like system**.<br>
+
+I have created several sample programs for you to use with the debugger. You can find them in your 211-starter-pack/211/lab06_gdb directory.<br>
 
 You can compile all the programs with one call to `make`:
 ```
@@ -88,7 +98,9 @@ $ make
 ```
 `make` should not issue any errors -- let me know if you get errors.<br>
 
-Nothing will be submitted to Turnin for this lab, but you must complete this [google survey](https://docs.google.com/forms/d/e/1FAIpQLSc_DOE7Ps-l4ApR8l7KN1y2KIm1OdvnoBKJqaQF9go6P9t_eQ/viewform?usp=sf_link).
+Nothing will be submitted to Turnin for this lab, but you must complete [this Google survey](https://docs.google.com/forms/d/e/1FAIpQLSdNNjIHgqtmHd_zsGy12nYTealx90JQA_FDU_SFu9Dkrp3awg/viewform?usp=sf_link).
+
+> Note: The programs in this lab were created to produce errors, so that you can get some practice working with gdb. Don't spend too much time trying to figure out what the program is "supposed" to do -- in some cases, the code is an example of something you should NOT do in your own programs.
 
 ## Exercise 1: Debugging Practice Part 1
 
@@ -96,16 +108,16 @@ Nothing will be submitted to Turnin for this lab, but you must complete this [go
 ```
 $ gdb p1
 ```
-* Type `run` at the (gdb) to run this program
+* Type `run` or `r` at the (gdb) to run this program
 
 1. ON SURVEY: What error causes this program to terminate?
 2. ON SURVEY: On what line does this program crash?
 
-* Type `list` at the (gdb) to list the source code
+* Type `list` or `l` at the (gdb) to list the source code
 
 3. ON SURVEY: Explain the defect in the program that causes this problem.
 
-* Type `quit` at the (gdb) to quit the debugger
+* Type `quit` or `q` at the (gdb) to quit the debugger
 
 ## Exercise 2: Debugging Practice Part 2
 
@@ -123,38 +135,76 @@ $ gdb p2
 
 * Notice that the `where` command told you the arguments to the functions f() and g()
 
-* You can use the print (`p`) function to print the values of a variable:
+* You can use the `print` or `p` command to print the value of a variable:
 ```
 (gdb) p b
 $1 = 52
 ```
-3. ON SURVEY: What is the address of the variable b?
+3. ON SURVEY: What **command** would you type to print the address of the variable b? (Hint: Think about how you would print the address of a variable in normal C++ code).
 
-* gdb is currently pointing to the code in function f().  If you use the `up` command it will be pointing at the code in the function that called f().
+4. ON SURVEY: What is the **address** of the variable b? (Note: The memory address where a variable is located can change each time a program is run, so everyone won't have the same answer -- the OS is choosing the best location based on the current applications being managed).
+
+5. ON SURVEY: Remember that a pointer is a variable whose value is the address of another variable. What is the **value** of the variable ptr?
+
+6. ON SURVEY: What is the **address** of variable ptr?<br>
+
+* Now try to dereference ptr (get the value of the variable that is located at the memory address pointed to by ptr) and print this value:
+```
+(gdb) p *ptr
+```
+
+7. ON SURVEY: What information is provided when you print *ptr? How does this relate to the error that caused the program to terminate?
+
+8. ON SURVEY: Now try to print the value of the variable a. What gets printed? Note that it the value of a will not be printed at this point, because gdb is currently pointing to the code in function f(). If you use the `up` command, it will be pointing at the code in the function that called f().
 
 * Use the `up` command to go to the function that called f().
 
-4. ON SURVEY: What is the address of the variable a?
+9. ON SURVEY: What is the address of the variable a?
 
 ## Exercise 3: Debugging Practice Part 3
 
-**Note: ddd has a graphical window interface and therefore will not load via SSH (a text-based protocol). If you cannot complete Exercise 3 on a local machine, complete Exercise 3 using gdb instead of ddd.**
-* Start ddd with the executable p3
+* Start gdb with the executable p3
 ```
-$ ddd p3
+$ gdb p3
 ```
 
-* Press the run button or type `run` at the (gdb) to run this program
+* Type `run` at the (gdb) to run this program
 
-1. ON SURVEY: Explain why this program has a segmentation fault.
+1. ON SURVEY: This program has a segmentation fault. In what function does the error occur?
 
-* Try printing the different variables:
+* Quit gdb and then restart gdb with the executable p3. Before you type `run`, set a breakpoint at the entry to the function where the error occurred. This will allow you to walk through the function step-by-step. If you want to, you can set multiple breakpoints. For example, the following command sets a breakpoint at the beginning of `main()`:
 ```
+(gdb) break main
+```
+
+2. ON SURVEY: What do you type at the (gdb) prompt to set a breakpoint at the function where the error occurred?
+
+* Now type `run`
+```
+(gdb) run
+```
+* The program will run until the first breakpoint it encounters. Then you can use either `next` (`n`) or `step` (`s`) to walk through the program after the breakpoint, one instruction at a time. `step` will dive into any function encountered along the way, while `next` will call functions but not dive into them (unless you've set a breakpoint at the function).
+```
+(gdb) n
+(gdb) s
+```
+
+* gdb will stop when it reaches the segmentation fault.
+
+* Try printing the different variables. You can print any variable that is accessible from your current location.
+```
+(gdb) p i
+(gdb) p m_size
 (gdb) p m_values
 (gdb) p *m_values
 (gdb) p m_values[0]
 ```
-* You can print variables by clicking on the variable in the code window.
+
+* Make sure you understand what information gdb is giving you. You may need to run gdb several times with different breakpoints and different commands. If you are still not sure what's happening, feel free to ask for help.
+
+3. ON SURVEY: Explain why this program has a segmentation fault.
+
+4. ON SURVEY: How can you update the program to get rid of the segmentation fault? (Hint: you only need to change one thing, and it is NOT on the line where the error occurred).
 
 ## Exercise 4: Debugging Practice Part 4
 
@@ -170,7 +220,7 @@ $ gdb p4
 
 1. ON SURVEY: What is different between running p4 with gdb and running p1 with gdb?
 
-2. ON SURVEY: Is the p1 executable smaller or larger than the p4 executable?
+2. ON SURVEY: Is the p1 executable smaller or larger than the p4 executable? (Hint: in the command line, you can use `ls -l` to list files with the long listing format. The size (in bytes) will be listed after the owner and group names and before the last modification date. You can use `ls -lh` to print more human readable file sizes).
 
 ***
 
