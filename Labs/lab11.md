@@ -39,7 +39,7 @@ $
 
 ## Exercise 1: Getting Started
 
-You will prompt the user to enter a number (see usage example). You will then print out the number. Write this code in a main.cpp file. First compile your main (the following command is used in the Makefile on Turnin for this lab):
+You will prompt the user to enter a number (see usage example). You will then print out the number. Write this code in a main.cpp file. Compile using `make` or the following command:
 ```
 $ g++ -Wall -pedantic -g -std=c++11 -o main main.cpp
 ```
