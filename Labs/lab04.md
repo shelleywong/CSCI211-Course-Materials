@@ -1,7 +1,7 @@
 # Lab 4
 
 * Learn the basics of the Vim Editor
-* Practice programming Linked List -- be prepared for the midterm
+* Practice programming a basic Linked List
 
 Lab 04 Exercises:
 * [Exercise 1: Read Input and Put Numbers into a List Object](#exercise-1-read-input-and-put-numbers-into-a-list-object) (lab04_list/main.cpp)
