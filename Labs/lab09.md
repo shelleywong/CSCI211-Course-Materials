@@ -24,7 +24,7 @@ The `Cust` constructor should take these four variables as parameters:
 new Cust("Homer", false, 42, 12);
 ```
 
-Class Cust will print to a specific ostream (instead of always using cout). Its print function should look like this:
+Class Cust will print to a specific ostream (instead of always using `cout`). Its print function should look like this:
 ```cpp
 void Cust::print(ostream &os)
 {
@@ -32,7 +32,7 @@ void Cust::print(ostream &os)
 }
 ```
 
-In this function "os" is used instead of "cout"
+In this function `os` is used instead of `cout`
 
 ## Exercise 1: Create a Cust Class
 
@@ -56,7 +56,7 @@ Since elements are usually inserted into the middle of a priority queue, having 
 
 You need to decide how the queue will be ordered (i.e. remove from front -or- remove from back)<br>
 
-## Function arguments and return types
+## Function arguments and return types for a priority queue
 
 Consider a queue of integers. The `dequeue` function needs to return two pieces of information: did the dequeue succeed? and what value was removed? Typically this is done by using a bool return type and a reference parameter:
 ```cpp
