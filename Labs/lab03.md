@@ -279,7 +279,7 @@ Turn in the files `schedule.cpp`, `course.h`, and `course.cpp`
 
 ## Exercise 5: Create Class Video for P2
 
-Create the `Video` class you need for P2 and either create a simple `main()` or use my simple `main()` to test it.<br>
+Create the `Video` class you need for P2 and either create a simple `main()` or use my simple `main()` to test it (my example is available in the 211-starter-pack `lab03_video` directory).<br>
 
 If you have finished P2, all you have to do is compile your video.h and video.cpp with my main.cpp to make sure it works (or create your own main.cpp). Then turn in your video.h and video.cpp for this lab (be careful not to delete your 'real' P2 main.cpp).<br>
 
