@@ -126,13 +126,13 @@ You read this command as follows:
 | `:wq` | for write and then quit |
 | `:e filename` | to start editing another file |
 
-The above is just a brief introduction.  The more you learn about vim the faster you will be able to edit files.
+The above is just a brief introduction. The more you learn about vim the faster you will be able to edit files.
 
 ## Practice programming linked lists
 
-For the following exercises, use the files in your 211-starter-pack/211/lab04_list directory<br>
+For the following exercises, use the files in your 211-starter-pack/211/lab04_list directory. This is a multi-part exercise with a single submission to Turnin.<br>
 
-### Exercise 1: Read Input and Put Numbers into a List Object
+## Exercise 1: Read Input and Put Numbers into a List Object
 
 Edit `main()` so that it reads numbers until end of input (use a while loop) and puts each number into a `List` object.<br>
 
@@ -151,7 +151,7 @@ $ ./list
 $
 ```
 
-### Exercise 2: Member Function to Return Sum of List Elements
+## Exercise 2: Member Function to Return Sum of List Elements
 
 Add a new member function (`int List::sum()`) to the `List` class that returns the sum of elements in the list.  In `main()` print the sum of elements after printing the list.  Do not sum the elements in `main()`. The sum must be calculated in List::sum().
 
@@ -169,7 +169,7 @@ sum = 15
 $
 ```
 
-### Exercise 3: Member Function to Insert at End of List
+## Exercise 3: Member Function to Insert at End of List
 
 Write the List::insert_at_end(int value) function so it inserts at the end of the linked list. Update your `main()` so it calls `insert_at_end()` instead of `insert()`. Since the midterm will have similar programs, it would be best if you write this function without looking at your notes from class.<br>
 
