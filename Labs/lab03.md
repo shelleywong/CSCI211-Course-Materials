@@ -7,10 +7,10 @@ Lab 03 Exercises:
 * [Exercise 1: Simple Makefile](#exercise-1-simple-makefile) (lab03_hello)
 * [Exercise 2: Makefile With Object Files](#exercise-2-makefile-with-object-files) (lab03_sentence)
 * [Exercise 3: Create Your Own Makefile](#exercise-3-create-your-own-makefile) (lab03_makefile)
-* [Exercise 4: Create a Course Class](#exercise-4-create-a-course-class) (lab03_object)
+* [Exercise 4: Create a Course Class](#exercise-4-create-a-course-class) (lab03_object, lab03_course)
 * [Exercise 5: Create Class Video for P2](#exercise-5-create-class-video-for-P2) (lab03_video)
 
-> Note: To get full credit for this lab, you must complete a Google Survey and submit several files to Turnin.
+> Note: To get full credit for this lab, you must complete a Google Survey (for exercises 1 and 2) and submit several files to Turnin (exercises 3, 4, and 5).
 
 ## Overview of make
 The job of `make` is to create files
@@ -53,7 +53,7 @@ hello: hello.cpp
 	g++ -o hello hello.cpp
 ```
 
-NOTE: for most versions of make (including the one standard on Linux), the second line must start with a \<tab\> so it is a good habit to always use a \<tab\>. If vim does not automatically turn the \<tab\> key into an actual tab, you can insert a tab by typing (while in insert mode) `control-V` followed by a `tab` -OR- you can program vim to understand that Makefiles want tabs by adding the following line to your ~/.vimrc file:
+NOTE: for most versions of `make` (including the one standard on Linux), the second line must start with a \<tab\> so it is a good habit to always use a \<tab\>. If vim does not automatically turn the \<tab\> key into an actual tab, you can insert a tab by typing (while in insert mode) `control-V` followed by a `tab` -OR- you can program vim to understand that Makefiles want tabs by adding the following line to your ~/.vimrc file:
 ```
 autocmd FileType make set noexpandtab|set autoindent
 ```
@@ -238,7 +238,7 @@ Hint: think carefully about the dependencies (the files listed after the target)
 
 ## Exercise 4: Create a Course Class
 
-Create a new class called `Course` (that is, create course.h and course.cpp).  You may start with the example code available in `lab03_object` (in the 211-starter-pack) <br>
+Create a new class called `Course` (that is, create course.h and course.cpp) in the `lab03_course` directory.  You may start with the example code available in `lab03_object` (both available in the 211-starter-pack) <br>
 
 The `Course` class should have a single constructor and a print function:
 ```cpp
