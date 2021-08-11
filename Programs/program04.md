@@ -174,7 +174,7 @@ If you are unable to complete everything on time, you should still turn in whate
 
 ## Extra Credit
 
-No extra credit points will be given to late assignments. You must turn in a non-extra credit version in addition to the extra credit version.<br>
+No extra credit points will be given to late assignments. You must turn in a non-extra credit version ("P4_calc") in addition to the extra credit version ("P4_extra").<br>
 
 The extra credit version must also pass all of the non-extra credit tests.<br>
 

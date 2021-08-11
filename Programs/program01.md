@@ -162,7 +162,7 @@ If you are unable to complete everything on time, you should still turn in whate
 
 ## Extra Credit
 
-If you do the extra credit you have to turn in a second `chart.cpp` ("p1 extra" on [Turnin](https://turnin.ecst.csuchico.edu/)). Make sure you do not change or delete your original `chart.cpp`. For P1, extra credit is worth 10 points.<br>
+If you do the extra credit you have to turn in a second `chart.cpp` ("P1_extra" on [Turnin](https://turnin.ecst.csuchico.edu/)). Make sure you do not change or delete your original `chart.cpp`. For P1, extra credit is worth 10 points.<br>
 
 No extra credit will be give to late assignments (both the regular assignment and the extra credit must be turned in on time).<br>
 

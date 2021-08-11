@@ -213,6 +213,6 @@ Regular expression <XXX> does not match any titles in list.
 ```
 If two or more videos match the regular expression, they should be sorted alphabetically.<br>
 
-If you do the extra credit, add it to your base assignment and turn it in as BOTH "p3 video list" and "p3 extra credit" (you can use the same files for both submissions).
+If you do the extra credit, add it to your base assignment and turn it in as BOTH "P3_vlist" and "P3_extra" (you can use the same files for both submissions).
 
 [Top of the Page](#program-3-linked-list-of-video-objects)

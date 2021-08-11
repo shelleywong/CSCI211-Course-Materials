@@ -291,7 +291,7 @@ If you are unable to complete everything on time, you should still turn in whate
 
 ## Extra Credit
 
-No extra credit points will be given to late assignments (both your regular assignment and the extra credit must be turned in on time).<br>
+No extra credit points will be given to late assignments (both your regular assignment ("P5_kwik_e_mart") and the extra credit ("P5_extra") must be turned in on time).<br>
 
 You must turn in the regular assignment code separately from the extra credit assignment code (I will create a separate assignment on [Turnin](https://turnin.ecst.csuchico.edu)).<br>
 
