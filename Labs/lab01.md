@@ -128,7 +128,7 @@ $ mkdir ~/211  // make a new directory in your home directory called "211"
   * 3 Permissions that apply to each class
     * `r`: read permission (numerical value of 4 or 100)
     * `w`: write permission (numerical value of 2 or 010)
-    * `e`: execute permission (numerical value of 1 or 001)
+    * `x`: execute permission (numerical value of 1 or 001)
 
   * if you change the protection of your home directory as follows, you (the owner) will have full read and write access to all of your files, and others will only be able to read your files:
 ```
