@@ -145,7 +145,7 @@ $ chmod +x filename
 ```
 $ ls -al  // list all files in the directory with a long listing format
 ...
--rwxr--r--   1 shelleywong  staff  12142 Jun 14 09:34 README.md
+-rw-r--r--   1 shelleywong  staff  12142 Jun 14 09:34 README.md
 ```
 
 * `rm` => delete (remove) a file
