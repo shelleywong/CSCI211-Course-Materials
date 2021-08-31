@@ -16,7 +16,8 @@ Lab 02 Exercises:
 
 ## Testing Assignments
 
-Review the instructions for Testing Assignments in the [Labs directory README](https://github.com/shelleywong/CSCI211-Course-Materials/tree/main/Labs)
+Before you start the exercises included in Lab 02, make sure you understand how to test your assignments:<br>
+* Review the instructions for Testing Assignments in the [Labs directory README](https://github.com/shelleywong/CSCI211-Course-Materials/tree/main/Labs)
 
 ### Detecting the end of input (often called EOF for "end of file")
 
