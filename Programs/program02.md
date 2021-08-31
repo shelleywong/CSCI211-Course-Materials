@@ -143,6 +143,8 @@ for (int last = num_videos - 1; last > 0; last--) {
     }
 }
 ```
+> Note: You may use the C++ std::swap function or create your own.
+ 
 * Make sure that you are correctly managing dynamic memory: at the end of your program, use the `delete` operator to deallocate any memory that was allocated with `new`. You can use [Valgrind](https://www.valgrind.org/docs/manual/quick-start.html) to detect if your program contains any memory leaks. Example with one argument (also works with Linux redirection):
 ```
 $ ./myprog arg1                             // run your program like normal
