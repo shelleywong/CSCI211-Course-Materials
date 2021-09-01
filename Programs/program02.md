@@ -105,7 +105,7 @@ If two or more Videos have the same values for the current sorting methods (e.g.
 
 * Before you start, make sure you understand how the input is ordered and what is required for the output.
 * Program incrementally. Get small parts working before you move on. The next section describes how to break the program into pieces.
-* `cin >> my_string` will not work for strings with spaces. You will need to use `getline(cin, title)` where `title` is a C++ string.
+* `cin >> my_string` will not work for strings with spaces. You will need to use `getline(cin, title)` where `title` is a C++ string. Use getline in any cases where you need to accept string input that may contain spaces.
 * Use the call to getline in the while loop:
 ```cpp
 // while there are more video descriptions to read
