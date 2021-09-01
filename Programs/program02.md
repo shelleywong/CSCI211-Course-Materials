@@ -149,6 +149,7 @@ for (int last = num_videos - 1; last > 0; last--) {
 ```
 $ ./myprog arg1                             // run your program like normal
 $ valgrind --leak-check=yes ./myprog arg1   // test your program with valgrind
+$ valgrind --leak-check=yes ./myprog arg1 < tests/t01.in  // include input from a file when you test your program with valgrind 
 ```
 * Start today.
 
