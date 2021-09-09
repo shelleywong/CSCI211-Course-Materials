@@ -144,12 +144,12 @@ for (int last = num_videos - 1; last > 0; last--) {
 }
 ```
 > Note: You may use the C++ std::swap function or create your own.
- 
+
 * Make sure that you are correctly managing dynamic memory: at the end of your program, use the `delete` operator to deallocate any memory that was allocated with `new`. You can use [Valgrind](https://www.valgrind.org/docs/manual/quick-start.html) to detect if your program contains any memory leaks. Example with one argument (also works with Linux redirection):
 ```
 $ ./myprog arg1                             // run your program like normal
 $ valgrind --leak-check=yes ./myprog arg1   // test your program with valgrind
-$ valgrind --leak-check=yes ./myprog arg1 < tests/t01.in  // include input from a file when you test your program with valgrind 
+$ valgrind --leak-check=yes ./myprog < tests/t01.in  // example argument: you might want to include input from a file when you test your program with valgrind
 ```
 * Start today.
 
@@ -177,6 +177,8 @@ temp_video_pointer->print();
 ```
 8. Use the array of 100 pointers to `Video` objects to hold the videos (instead of the temp_video_pointer above). Instead of printing immediately after each video is read, print all the Videos in the array after you are done reading all the input. The output of your program should be complete except for the order of the videos. Make sure everything is working before you move on.
 9. Implement the sorting of the videos. Do not start this step until you have tested your program and are sure all the other components are working.
+10. Before exiting main(), use the delete operator to free all dynamically alloated memory.
+11. Read the requirements carefully to make sure your program is complete.
 
 ## General Requirements
 
