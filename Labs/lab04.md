@@ -41,13 +41,11 @@ An excellent [vi tutorial](https://engineering.purdue.edu/ECN/Support/KB/Docs/Vi
 * vim/gvim are available on most operating systems (Windows, Linux, OSX, etc).
 * Since gvim opens a new window, it does not always work when logging in remotely (e.g. ssh, putty.org)
 
- How to start editing a file:  
+ How to start editing a file with vi, vim, or gvim:  
 ```
-$ gvim filename
-```
--or-
-```
+$ vi filename
 $ vim filename
+$ gvim filename
 ```
 ### Modal interface
 For new users, the most difficult thing to get use to is vim's modal interface.<br>
@@ -134,7 +132,7 @@ For the following exercises, use the files in your 211-starter-pack/211/lab04_li
 
 ## Exercise 1: Read Input and Put Numbers into a List Object
 
-Edit `main()` so that it reads numbers until end of input (use a while loop) and puts each number into a `List` object.<br>
+For this exercise, you are just working in the main.cpp file. Edit `main()` so that it reads numbers from the standard input stream (cin) until end of input. Use a while loop to read the numbers and as you get each number, insert it into a `List` object.<br>
 
 When the end of input is reached, have the list object print all the numbers.<br>
 
@@ -153,7 +151,7 @@ $
 
 ## Exercise 2: Member Function to Return Sum of List Elements
 
-Add a new member function (`int List::sum()`) to the `List` class that returns the sum of elements in the list.  In `main()` print the sum of elements after printing the list.  Do not sum the elements in `main()`. The sum must be calculated in List::sum().
+Add a new member function (`int List::sum()`) to the `List` class that returns the sum of elements in the list. In `main()` print the sum of elements after printing the list. Do not sum the elements in `main()`. The sum must be calculated in the List sum() member function.
 
 Your program should work like this:
 ```
@@ -171,7 +169,7 @@ $
 
 ## Exercise 3: Member Function to Insert at End of List
 
-Write the List::insert_at_end(int value) function so it inserts at the end of the linked list. Update your `main()` so it calls `insert_at_end()` instead of `insert()`. Since the midterm will have similar programs, it would be best if you write this function without looking at your notes from class.<br>
+Add a new member function (`List::insert_at_end(int value)`) to the List class and implement the function so it inserts at the end of the linked list. Update your `main()` so it calls `insert_at_end()` instead of `insert()`. On the midterm, you will be asked to implement functions for a linked list class, so it would be best if you try to write this function without looking at notes from class.<br>
 
 When you run your program it should work like this:
 ```
@@ -194,9 +192,9 @@ Turn in your new versions of `list.h`, `list.cpp`, and `main.cpp`.
 
 If you finish the exercises early you could:
 
-1. Work on P3<br>
+1. Get started on P3 (or finish working on P2)<br>
 -and/or-
-2.  Look at the [exams from previous semesters](http://www.ecst.csuchico.edu/~trhenry/classes/211.s17/exams.html) and write solutions to the linked list questions
+2.  Look at the [exams from previous semesters](http://www.ecst.csuchico.edu/~trhenry/classes/211.s17/exams.html) and try writing solutions to the linked list questions
 
 ## Lab 04 Submissions
 
