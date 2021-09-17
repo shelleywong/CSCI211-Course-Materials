@@ -68,8 +68,9 @@ Return an exit status of 0 if all the commands were legal. Return an exit status
 
 Your program must read commands until the end of input (until user presses `^D` or the end of a redirected file is reached, e.g. `$vlist < tests/t01.in`).  When end of input is reached, exit your program with an exit status of 0 (see below for exit status when a bad command is entered).<br>
 
-Your program must handle the following commands. The arguments for the command are always on the next line (or lines). For the `insert` command, the arguments (title, url, comment, length, rating) will be on the five lines following the command (each on its own line just like in P2). For the `lookup` and `remove` commands, the title will be on the next line.
+Your program must handle the following commands. The arguments for the command are always on the next line (or lines). For the `insert` command, the arguments (title, url, comment, length, rating) will be on the five lines following the command (each on its own line just like in P2). For the `lookup` and `remove` commands, the title will be on the next line.<br>
 
+**The commands from input that you will need to handle in main.cpp:**<br>
 | Command | Action | Input Arguments** | Error |
 | --- | --- | --- | --- |
 | insert | Insert a new video into the linked list. | title, url, comment, length, rating | Title is already in the list. See error messages below. |
@@ -78,7 +79,18 @@ Your program must handle the following commands. The arguments for the command a
 | lookup | If the given title is in the list, print the video using the format from P2. | title (may contain spaces) | Title is not in list. |
 | remove | If the given title is in the list, remove it. | title (may contain spaces) | Title is not in list. |
 
-\*\*These are the arguments that follow each command, they are not the arguments to the list functions. For example, `Vlist::insert(Video *video)` is easier to implement if it takes a pointer to a Video object instead of five separate parameters for all the values read from input.
+\*\*These are the arguments that follow each command, they are not the arguments to the list functions. For example, `Vlist::insert(Video *video)` is easier to implement if it takes a pointer to a Video object instead of five separate parameters for all the values read from input.<br>
+
+**This is how I suggest you declare the Vlist member functions to meet the requirements for this assignment:**<br>
+| Vlist member function | Parameters | Return Value |
+| --- | --- | --- |
+| Vlist Constructor | none | none |
+| Vlist Destructor | none | none |
+| insert | pointer to a Video object | bool (true for successful insert, false if Video already in the list) |
+| print | none | void |
+| length | none | integer (number of videos in list) |
+| lookup | string (title to lookup) | bool (true if found, false if not in list) |
+| remove | string (title to remove) | bool (true if found and removed, false if not in the list and cannot be removed)
 
 ### Errors and Error Messages
 
