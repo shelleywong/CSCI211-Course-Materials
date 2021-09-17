@@ -82,7 +82,7 @@ Your program must handle the following commands. The arguments for the command a
 \*\*These are the arguments that follow each command, they are not the arguments to the list functions. For example, `Vlist::insert(Video *video)` is easier to implement if it takes a pointer to a Video object instead of five separate parameters for all the values read from input.<br>
 
 **This is how I suggest you declare the Vlist member functions to meet the requirements for this assignment:**<br>
-| Vlist member function | Parameters | Return Value |
+| Vlist Member Function | Parameters | Return Value Type |
 | --- | --- | --- |
 | Vlist Constructor | none | none |
 | Vlist Destructor | none | none |
