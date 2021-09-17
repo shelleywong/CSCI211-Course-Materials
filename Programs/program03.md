@@ -24,10 +24,10 @@ Points: 250
 ## Overview
 
 Implement a linked-list of pointers to Video objects
-> Note: See [the P2 writeup](https://github.com/shelleywong/CSCI211-Course-Materials/blob/main/Programs/program02.md) for a description of class Video
+> Note: P3 will use the Video class that you used in P2. See [the  writeup](https://github.com/shelleywong/CSCI211-Course-Materials/blob/main/Programs/program02.md) for a description of class Video.
 
 Implement a `main()` that reads and executes commands. Your program must handle the following commands:
-1. Insert a new video into the linked-list
+1. Insert a new video into the linked list
 2. Print all the videos in the list
 3. Lookup a video by title and print it
 4. Print the number of videos in the list
@@ -38,29 +38,29 @@ Implement a `main()` that reads and executes commands. Your program must handle 
 
 ### Implementation
 
-Use the `Video` class you created for p2 to store videos. If you did not finish p2, create a `Video` class as specified in p2. You may need to add a member function.<br>
+Use the `Video` class you created for P2 to store videos. If you did not finish P2, create a `Video` class as specified in P2. You may need to add member functions to the `Video` class.<br>
 
-Create a linked list class of `Video *` and call it `Vlist`. Put this class in the files vlist.h and vlist.cpp. The nodes in this list must not be the `Video` objects.  Each `Node` will contain a pointer to a `Video` object and a pointer to the next `Node`.<br>
+Create a linked list class called `Vlist` -- it will be a linked list of `Video *` (pointers to Video objects). Put this class in the files vlist.h and vlist.cpp. The nodes in this list must not be the `Video` objects.  Each `Node` will contain a pointer to a `Video` object and a pointer to the next `Node`.<br>
 
 Put the `main()` function in the file main.cpp
 > Note:  You MUST use the file names and variable names dictated by the instructions. This allows any programmer to use your interface. I cannot debug your program if your interface differs from the specifications. Also, your program will not pass the Turnin tests.
 
-The linked list should always be ordered alphabetically by title. The `insert` function should insert videos so that after the insert all videos in the list are ordered alphabetically.<br>
+The linked list should always be ordered alphabetically by title. The `insert` function should insert videos so that, after each call to insert(), all videos in the list are ordered alphabetically.<br>
 
 All member variables of class `Video` and class `Vlist` must be **private**.<br>
 
 Use dynamic allocation to create and delete `Video` and `Node` objects:
-* When reading a new Video, you must use the `new` operator to create a new Video object (just like in p2).
+* When reading a new Video, you must use the `new` operator to create a new Video object (just like in P2).
 * Create the `new` Video objects in `main()` and pass a pointer to the object using `Vlist::insert()`
-* When inserting into the list, you must use the `new` operator to create a `new` Node object (just like in class linked-list examples).
+* When inserting into the list, you must use the `new` operator to create a `new` Node object (just like in the class linked list examples).
 * Create the `new` Node object in `Vlist::insert()`.
-* When removing a Video from the list, both the Node and the Video object must be deleted.<br>
+* When removing a Video from the list, both the Node object and the Video object must be deleted.<br>
 
 You must provide a correct destructor for class `Vlist` that deletes all Node objects. You also need to make sure to delete all Video objects. This can be completed in the `Vlist` destructor or in a class `Node` destructor.<br>
 
-There must not be any input or output in class `Vlist` (you cannot use cin/cout/cerr in a Vlist member function). However, you can call Video's print function.<br>
+There must not be any input or output in class `Vlist` (you cannot use cin/cout/cerr in a Vlist member function). However, you can call Video's print function from the Vlist class.<br>
 
-The only input or output allowed in class `Video` is output in `Video::print()` function. ALL ERROR MESSAGES MUST BE PRINTED FROM `main()`.<br>
+The only input or output allowed in class `Video` is output in the `Video::print()` function. ALL ERROR MESSAGES MUST BE PRINTED FROM `main()`.<br>
 
 Return an exit status of 0 if all the commands were legal. Return an exit status of 1 if any of the commands were illegal.
 
@@ -68,21 +68,21 @@ Return an exit status of 0 if all the commands were legal. Return an exit status
 
 Your program must read commands until the end of input (until user presses `^D` or the end of a redirected file is reached, e.g. `$vlist < tests/t01.in`).  When end of input is reached, exit your program with an exit status of 0 (see below for exit status when a bad command is entered).<br>
 
-Your program must handle the following commands. The arguments for the command are always on the next line (or lines). For the `insert` command, the arguments (title, url, comment, length, rating) will be on the five lines following the command (each on its own line just like in p2). For the `lookup` and `remove` commands, the title will be on the next line.
+Your program must handle the following commands. The arguments for the command are always on the next line (or lines). For the `insert` command, the arguments (title, url, comment, length, rating) will be on the five lines following the command (each on its own line just like in P2). For the `lookup` and `remove` commands, the title will be on the next line.
 
 | Command | Action | Input Arguments** | Error |
 | --- | --- | --- | --- |
 | insert | Insert a new video into the linked list. | title, url, comment, length, rating | Title is already in the list. See error messages below. |
-| print | Print all the videos in the list using the format from p2. | none | none (print nothing if list is empty) |
+| print | Print all the videos in the list using the format from P2. | none | none (print nothing if list is empty) |
 | length | Print the number of videos in the list as a single integer (don't print anything other than the integer). | none | none (print 0 if the list is empty) |
-| lookup | If the given title is in the list, print the video using the format from p2. | title (may contain spaces) | Title is not in list. |
+| lookup | If the given title is in the list, print the video using the format from P2. | title (may contain spaces) | Title is not in list. |
 | remove | If the given title is in the list, remove it. | title (may contain spaces) | Title is not in list. |
 
-\*\*These are the arguments that follow each command, they are not the arguments to the list functions. For example, `Vlist::insert(Video *video)` is easier to implement if it takes a pointer to a Video object instead of all the values read from input.
+\*\*These are the arguments that follow each command, they are not the arguments to the list functions. For example, `Vlist::insert(Video *video)` is easier to implement if it takes a pointer to a Video object instead of five separate parameters for all the values read from input.
 
 ### Errors and Error Messages
 
-The input will not contain any errors other than those listed in this section.  For example, the `insert` command will always be followed by a title, url, comment, length, rating (each on a separate line). **The program should NOT terminate for the following three errors**.<br>
+The input will not contain any errors other than those listed in this section.  For example, the `insert` command will always be followed by a title, url, comment, length, and rating (each on a separate line). **The program should NOT terminate for the following three errors**.<br>
 
 | Command | Error | Error Message (replace XXX with the title entered by user, print the < and >) |
 | --- | --- | --- |
@@ -90,7 +90,7 @@ The input will not contain any errors other than those listed in this section.  
 | lookup | Title not in list. | Title \<XXX\> not in list. |
 | remove | Title not in list. | Title \<XXX\> not in list, could not delete. |
 
-If the user enters a command other than (insert, print, length, lookup, remove), print the following error message and **terminate the program** with an exit status of 1. Replace the XXX with the command entered (make sure you print < and > in your error message).
+If the user enters a command other than (insert, print, length, lookup, remove), print the following error message and **terminate the program** with an exit status of 1. Replace the XXX with the command entered (make sure you print `<` and `>` in your error message).
 ```
 <XXX> is not a legal command, giving up.
 ```
@@ -99,8 +99,8 @@ If the user enters a command other than (insert, print, length, lookup, remove),
 
 1. It is very helpful to read the entire assignment writeup carefully before you start and review it as you program. You may want to print out the instructions and check off each requirement when you are sure it is correctly implemented. The writeup is long, but it contains a lot of useful information.
 2. Program incrementally. Get small parts working before you move on. The next section describes how to break the program into pieces.
-3. The linked list examples from class are all linked lists of integers. That means the Nodes contain an integer. For this assignment, the list is a list pointers to `Video` objects, that means the `Node` will contains a `Video *` instead of the integer in the class examples.
-4. Use **static memory** in `main()` to instantiate the Vlist object instead of `Vlist *videos = new Vlist()` (you do not need to dynamically allocate memory in this instance)
+3. The linked list examples from class are all linked lists of integers. That means the Nodes contained integers. For this assignment, the list is a list of pointers to `Video` objects, which means the `Node` will contains a `Video *` instead of the integer in the class examples.
+4. Use **static memory** in `main()` to instantiate the Vlist object instead of `Vlist *videos = new Vlist()` (you **do not** need to dynamically allocate memory in this instance)
 5. `lookup` and `remove` take titles as their arguments. A title may include a space, so `cin >> my_str` will not work here. Use `getline()` in any situation where you need to read a title.
 6. Use `getline()` to read all the commands. `getline()` will automatically throw away the newline character at the end of the line.
 ```cpp
@@ -116,13 +116,13 @@ while (getline(cin, command)) {
     }
     else if (command == "remove")
     {
-        getline(cin, title)
+        getline(cin, title);
         // don't have to worry about the newline because getline threw it away
     }
     ...
 }
 ```
-7. When reading a `Video`, you can use the same approach you used in P2 (with `cin.peek() != EOF`), or you could use a `getline` to read the command in the condition of your `while` statement, as in the example above.
+7. When reading a `Video`, you can use the same approach you used in P2 (either `cin.peek() != EOF` or `getline` to read the command in the condition of your `while` statement, as in the example above).
 8. Since you will be printing error messages in `main()`, several of the `Vlist` functions will have to return the status of the function. For example:
 ```cpp
 bool Vlist::remove(string title)
@@ -133,7 +133,7 @@ bool Vlist::remove(string title)
 }
 ```
 In `main()`, the value returned by `remove` can be used to determine if an error message should be printed. Print all error messages from `main()`.<br>
-9. Use `assert` to document what you think should be true or false while debugging. You may find the [assert documentation](https://www.cplusplus.com/reference/cassert/assert/) useful.<br>
+9. You may find it helpful to use `assert` to document what you think should be true or false while debugging. See the [assert documentation](https://www.cplusplus.com/reference/cassert/assert/) for more information.<br>
 10. When you make a mistake with a pointer, your program usually terminates with a `Segmentation Fault`. It can take a lot of time to track down these problems. Even if you did P2 at the last minute, it is a good idea to start P3 early.
 11. Make sure that you are correctly managing dynamic memory.
 12. Start today.
@@ -142,12 +142,12 @@ In `main()`, the value returned by `remove` can be used to determine if an error
 
 Work step by step:
 1. Copy P2's main.cpp, video.h, and video.cpp to your P3 directory (do not use the same directory for both assignments).
-2. Create the `Vlist` class without any functions (vlist.h vlist.cpp).
+2. Create the `Vlist` class without any functions (vlist.h, vlist.cpp).
 3. Update `main()` so it includes vlist.h -- about the only code you need from P2's `main()` is the reading of the `Video` fields (title, url, ...) and the declaration of the variable (string title, string url, ...). Delete the rest of the code.
 4. Download the provided `Makefile` (in 211-starter-pack/211/p3) and compile the assignment using the `make` utility (`$ make`).
 5. Once the "empty" files compile, write the code in `main()` to read the input. Test your code so you are sure it is working. Make sure you handle end of input (^D), illegal commands, and skipping whitespace correctly. What you read will depend on the command. For example, length takes no arguments but insert takes 5 arguments.
 6. Once you are certain that your input is working correctly, implement an `insert` function in `Vlist` that inserts the videos at the front of the list.  Eventually you will need to insert so they are sorted, but getting this simple function working first is very helpful.
-7. Write the `Vlist` `print` function. This function calls `Video::print()` on all the videos in the list.
+7. Write the `Vlist::print()` function. This function traverses the list and calls `Video::print()` on all the Video objects in the list.
 8. Implement the `insert` and `print` commands in `main()`. Once they are implemented, you will be able to insert any number of videos into the list and print the entire list out. However, the order will not be correct yet because you have a place holder for the insert function. As an example of how to implement the commands, below is my implementation of the `print` command. I called my `Vlist` object `vlist`.
 ```cpp
 if (command == "print")
@@ -159,7 +159,7 @@ if (command == "print")
 10. Implement the remainder of the commands one by one. Make sure each works before you move on.
 > Note: I recommend implementing `remove` last because if you make a mistake in `remove`, it can be very hard to track down.
 
-11. Write the destructor for `Vlist`.
+11. Write the destructor for `Vlist` and remember to use the `delete` operator on any memory that was allocated with `new`.
 12. Read the requirements carefully to make sure your program is complete.
 
 ## General Requirements
