@@ -81,6 +81,8 @@ The following table lists the most commonly used gdb commands (these are the mos
 | finish | f | Execute until the end of the current function. |
 | continue | c | Continue execution until the next breakpoint or until the end of the program. |
 
+You may find this [GDB Cheatsheet](https://darkdust.net/files/GDB%20Cheat%20Sheet.pdf) useful as a quick reference for common gdb commands.<br>
+
 ## Exercise Setup
 
 Complete the following exercises with gdb. Then, if you have time and are interested, try completing the same exercises with ddd. This lab writeup includes some additional information and hints that are not shown in the Google survey, so make sure to keep a tab open for this lab while you are taking the survey.<br>
