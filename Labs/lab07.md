@@ -7,7 +7,7 @@ Lab 07 Exercises
 
 ## Goal
 
-For students to finish implementing the stack of doubles for the Calculator programming assignment (P4)
+For students to implement the stack of doubles for the Calculator programming assignment (P4)
 
 ## The post-fix calculator
 
@@ -19,12 +19,13 @@ The post-fix calculator assignment requires that you implement a stack of double
 | `int size()` | Return the number of elements in the stack. |
 | `bool empty()` | Return true if the stack is empty, false otherwise. |
 | `~Dstack()` | A correct destructor that deletes all the Nodes objects (you don't have to complete the destructor for lab 7, but P4 requires it). |
+| `Dstack()` | A constructor that initializes an empty stack. |
 
 ## Exercise 1: Stack of Doubles
 
 * Your lab assignment for this week is to implement the `Dstack` class and use your class to reverse some numbers.
 * Put your `Dstack` in the files dstack.h and dstack.cpp
-* Put your `main()` (which reads the values and uses the stack to print them in reverse) in reverse.cpp. You can use my reverse.cpp, a modified version of my reverse.cpp, or you can write your own reverse.cpp (it would be a good exercise to write your own version w/o looking at my version). My version of reverse.cpp along with a `Makefile` are in your 211-starter-pack/211/lab07_dstack directory.<br>
+* Put your `main()` (which reads the values and uses the stack to print them in reverse) in the reverse.cpp file. You can use my reverse.cpp, a modified version of my reverse.cpp, or you can write your own reverse.cpp (it would be a good exercise to write your own version w/o looking at my version). My version of reverse.cpp along with a `Makefile` are in your 211-starter-pack/211/lab07_dstack directory.<br>
 
 The program should work like this:
 ```
@@ -41,18 +42,22 @@ There are 0 numbers in the stack.
 $
 ```
 
+The main() function (in reverse.cpp), should include code that works like this:
 ```
 As long as there are numbers to read  (using cin >> my_double)
 
-    read the value
-    push the value on to the stack
+    Read the value
+    Push the value on to the stack
 
-After all the values have been read (when cin >> my_double returns false)
+// After all the values have been read (when cin >> my_double returns false)
+Print out the number of elements currently in the stack
 
-    As long as the stack is not empty
+As long as the stack is not empty
 
-        remove a value from the stack
-        print the value (on its own line)
+    Remove a value from the stack
+    Print the value (on its own line)
+
+Print out the number of elements currently in the stack
 ```
 
 ## Testing
