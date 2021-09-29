@@ -226,7 +226,7 @@ $ gdb p4
 
 ***
 
-After completing the exercises and the survey, you may work on programming assignment 4.
+After completing the exercises and the survey, you can start working on programming assignment 4. Read the assignment writeup to get an idea of what you need to do. You may want to start on Lab 07 (implement a stack of doubles), as the stack of doubles will be used in P4.
 
 ## Lab 06 Submissions
 
