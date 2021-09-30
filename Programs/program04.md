@@ -34,31 +34,35 @@ If at the end of the input, there is one and only one operand on the stack, then
 
 This assignment is to implement an RPN calculator that can evaluate any legal expression and catch **all** illegal input (except numbers with so many digits that they won't fit into a double). As soon as illegal input is encountered, print the error message (see below) and call `exit(1)`.
 
+> Note: `exit(1);` is similar to `return 1;`. One difference is that calling `exit` from anywhere in your code will terminate program execution immediately. This is useful if you want to create a function for the standard error message and exit the program from this function.
+
 > Note: Start early and make incremental progress. If you think you can finish a programming assignment in one day, finish it the first day it is assigned. Students who put off these assignments tend to have a bad time.
 
 ## Program Requirements
 
 ### Implementation
 
-Implement your stack from scratch using dynamic allocation. In other words, your stack must look like a linked-list. You may not use a stack from a library. Create a class Node to hold the elements of the stack. The Node class must be nested inside the stack class.
+Implement your stack from scratch using dynamic allocation. In other words, your Dstack must look like a linked list. You may not use a stack from a library. Create a class Node to hold the elements of the Dstack. The Node class will be nested inside the Dstack class, similar to the Vlist in P3.
 
 Implement your program using the following class:
 ```
 class Dstack
-    Stack of doubles that provides at least the following functions:
+    Stack of doubles that provides the following functions (see Lab 07):
+        Dstack      // a constructor that initializes an empty stack
+        ~Dstack     // a correct destructor
         push        // push a new element on top of the stack
         pop         // remove and return the top element from the stack
                     // (using a reference parameter)
+        size        // return the number of elements in the stack
         empty       // return true if stack is empty, false otherwise
-        ~Dstack     // a correct destructor
 ```
-You may use whatever return types and arguments you see fit. You may add additional functions if you need them.<br>
+You may use whatever return types and arguments you see fit. You may update the the Dstack class for P4, as long as it works as expected for the post-fix calculator.<br>
 
 Put `main()` in the file calc.cpp<br>
 
 **The Dstack class may not contain any parts of the calculator program. It is a stack not a calculator.** Put the parts of the program that have to do with the calculator (including the error message) in calc.cpp.<br>
 
-> Note: I recommend writing `Dstack` from scratch. If you copy code from any provided examples, you won't learn as much as if you write it from scratch. By the end of 211, you should be able to write linked-list based classes quickly and easily.
+> Note: I recommend writing `Dstack` from scratch. If you copy code from any provided examples, you won't learn as much as if you write it from scratch. By the end of 211, you should be able to write linked list based classes quickly and easily.
 
 ### Input
 
@@ -99,7 +103,7 @@ Assume that all intermediate results and the final result are small enough to fi
 
 ### Errors and Error Messages
 
-All errors must be detected in calc.cpp. Recall that stack `pop()` must return an error when the stack is empty (see above).<br>
+All errors must be detected in calc.cpp. Recall that stack `pop()` should return false when the stack is empty (see above).<br>
 
 All error messages must be printed in calc.cpp (do not print an error message in any of the stack functions).<br>
 
@@ -107,22 +111,29 @@ If the input is not a valid post-fix expression, your program should print the f
 ```
 Error: Invalid expression.
 ```
-followed by a newline (not a blank line, but a newline) and then terminate the program. Programs can be terminated by using the `exit()` functions, but you may only call `exit()` from calc.cpp.<br>
+followed by a newline (not a blank line, but a newline) and then terminate the program. Programs can be terminated by using the `exit()` functions, but you may only call `exit()` from calc.cpp (not from the Dstack class).<br>
 
 Your program must check for all possible errors (except numbers that are too large). This includes all illegal mathematical operations such as divide by zero. The power function is especially problematic. Consider it closely.<br>
 
 ## Helpful Hints
 
-The algorithm is:
+This is the basic algorithm for the calculator. Remember that numeric input can include digits and decimal points, the input for each operator is a different character, and some character input may be invalid and require you to print the error message. Thus, while you will need more than 2 conditions (as shown here), this algorithm shows the basic idea of what you are trying to do. Also remember to ignore whitespace and print the standard error message for any invalid expressions:
 ```
-while (not the end of the input)
+While(not the end of the input)
 
-    If the next input is a number, read it and push it on the stack
-    If the next input is an operator, read it, pop 2 operands off of the stack, apply the operator, push the result onto the stack
-    When you reach the end of the input:
+    If the next input is a number:
+        Read it
+        Push it on the stack
+    Else if the next input is an operator:
+        Read it
+        Pop 2 operands off of the stack
+        Apply the operator
+        Push the result onto the stack
+    Else ... (make sure you have handled all potential input)
 
-        if there is one number on the stack, print it
-        else error
+// When you reach the end of the input:
+If there is one number on the stack, print it
+Else error
 ```
 
 I suggest you implement and test the stack before you tackle the calculator aspects of the program. You will have to write a few lines of code in `main()` to do this testing, but it will save you time in the long run.<br>
