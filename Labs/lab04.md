@@ -198,6 +198,6 @@ If you finish the exercises early you could:
 
 ## Lab 04 Submissions
 
-All labs are due at 11:59pm the Friday following lab. For this lab you must submit `list.h`, `list.cpp`, and `main.cpp` to Turnin, after you have completed Exercises 1, 2, and 3. If you are not able to complete all the exercises, turn in your partial work for partial credit.
+All labs are due at 11:59pm the Friday following lab. For this lab you must submit `list.h`, `list.cpp`, and `main.cpp` to [Turnin](https://turnin.ecst.csuchico.edu/), after you have completed Exercises 1, 2, and 3. If you are not able to complete all the exercises, turn in your partial work for partial credit.
 
 [Top of the Page](#lab-4)

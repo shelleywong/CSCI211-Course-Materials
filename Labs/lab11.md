@@ -123,6 +123,6 @@ After you have completed the exercises, work on the Kwik-E-Mart Simulation (P5).
 
 ## Lab 11 Submissions
 
-All labs are due at 11:59pm the Friday following lab. For this lab you must submit `main.cpp` (Exercises 1, 2, 3, and 4) to Turnin. If you are not able to complete all the exercises, turn in your partial work for partial credit.
+All labs are due at 11:59pm the Friday following lab. For this lab you must submit `main.cpp` (Exercises 1, 2, 3, and 4) to [Turnin](https://turnin.ecst.csuchico.edu/). If you are not able to complete all the exercises, turn in your partial work for partial credit.
 
 [Top of the Page](#lab-11)

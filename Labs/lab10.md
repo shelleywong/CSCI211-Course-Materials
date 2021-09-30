@@ -80,6 +80,6 @@ If you finish early, you should work on P5 or practice writing solutions to ques
 
 ## Lab 10 Submissions
 
-All labs are due at 11:59pm the Friday following lab. For this lab you must submit `equal.cpp` (Exercise 1), `largest.cpp` (Exercise 2), `sorted.cpp` (Exercise 3), and `isint.cpp` (Exercise 4) to Turnin. If you are not able to complete all the exercises, turn in your partial work for partial credit.
+All labs are due at 11:59pm the Friday following lab. For this lab you must submit `equal.cpp` (Exercise 1), `largest.cpp` (Exercise 2), `sorted.cpp` (Exercise 3), and `isint.cpp` (Exercise 4) to [Turnin](https://turnin.ecst.csuchico.edu/). If you are not able to complete all the exercises, turn in your partial work for partial credit.
 
 [Top of the Page](#lab-10)

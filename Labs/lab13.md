@@ -96,6 +96,6 @@ The Google Maps URL has changed since this exercise was originally assigned, so 
 
 ## Lab 13 Submissions
 
-All labs are due at 11:59pm the Friday following lab. For this lab you must submit `path.cpp` (Exercise 1) and `lookup.cpp` (Exercise 2) to Turnin. If you are not able to complete all the exercises, turn in your partial work for partial credit.
+All labs are due at 11:59pm the Friday following lab. For this lab you must submit `path.cpp` (Exercise 1) and `lookup.cpp` (Exercise 2) to [Turnin](https://turnin.ecst.csuchico.edu/). If you are not able to complete all the exercises, turn in your partial work for partial credit.
 
 [Top of the Page](#lab-13)
