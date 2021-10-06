@@ -103,7 +103,7 @@ Assume that all intermediate results and the final result are small enough to fi
 
 ### Errors and Error Messages
 
-All errors must be detected in calc.cpp. Recall that stack `pop()` should return false when the stack is empty (see above).<br>
+All errors must be detected in calc.cpp. Recall that Dstack `pop()` should return false when the stack is empty (see above). The Dstack `size()` and `empty()` functions can also be used to return information about the stack.<br>
 
 All error messages must be printed in calc.cpp (do not print an error message in any of the stack functions).<br>
 
