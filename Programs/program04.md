@@ -78,6 +78,8 @@ There do not have to be spaces between two operators. For example, `10 10 10++` 
 
 Your stack should be able to handle negative numbers, but you will not receive any negative numbers as input (e.g. `-1 2 +` is an invalid expression because `-` does not have any numbers to operate on, but `1 2 -` is valid and would push -1 onto the stack).
 
+> Note: You may use the [cmath or math.h library](https://www.cplusplus.com/reference/cmath/) to compute common mathematical operations.
+
 ### Files
 
 Each class should have a .h file and a .cpp file for the stack (note that the filenames are all lower case):
