@@ -31,7 +31,7 @@ The first argument (`argc`) is the number of arguments that appear on the comman
 
 `argv` is an array of C-style strings (recall that a C-style string is an array of char that is terminated with a null character (the number 0)). `argv` is actually one larger than `argc` since the last element in the array is a NULL pointer (recall that arrays are really just pointers to the first element).
 
-> Reminder: char **argv is the same as char *argv[]
+> Reminder: `char **argv` is the same as `char *argv[]`
 
 ## File Input and Output (File I/O)
 
