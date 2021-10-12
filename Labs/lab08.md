@@ -138,7 +138,7 @@ The code for opening a file is provided for you. If the input file cannot be ope
 cerr << "Could not open input file <" << filename << ">." << endl;
 ```
 
-> Note: To successfully open an input file, the file needs to exist. If the input file does not exist or you did not provide the correct path to the file, the operation to open a file will fail, and you will receive an error.
+> Note: To successfully open and read an input file, the file needs to exist. If the input file does not exist or you did not provide the correct path to the file, the operation to open a file will fail, and you will receive an error.
 
 Use the following to open a file for writing:
 ```
@@ -191,7 +191,7 @@ $
 
 Use the `isdigit()` function to check each character in each input string (argv[1], argv[2], etc) to make sure that all characters in a given character array are legal integers.<br>
 
-You will need to use a loop that ends when it reaches the last element in a C-style string -- the last element in a C-style string is always the null terminator `'\0'` (or you can use zero -- not the character '0' but an actual zero `0`). It is best to do this check in a function so you can use that function in your P5:
+You will need to use a loop that ends when it reaches the last element in a C-style string. The last element in a C-style string is always the null terminator `'\0'`. If the current character in the C-style string is `'\0'` or zero (not the character '0' but an actual zero `0`), you've reached the end of the string. It is best to do this check in a function so you can use that function in your P5:
 ```
 bool legal_int(char *str)
 {  
