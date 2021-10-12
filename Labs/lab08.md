@@ -103,7 +103,7 @@ int main(int argc, char *argv[])
 
 ## Exercise 1: Print Command Line Arguments
 
-Write a program (called `args`) that prints all the command line arguments to standard output. Use the args.cpp file in your 211-starter-pack/211/lab08_args directory as a starting point. For example:
+Write a program (called `args`) that prints all the command line arguments to standard output (everything after the executable). Use the args.cpp file in your 211-starter-pack/211/lab08_args directory as a starting point. For example:
 ```
 $ ./args one two
 one
@@ -122,7 +122,7 @@ Submit `args.cpp` to Turnin.
 
 Start with the mycat.cpp that is in your 211-starter-pack/211/lab08_mycat directory<br>
 
-You will need to edit mycat.cpp so that the program expects three command line arguments:
+You will need to edit mycat.cpp. The program should be updated to expect three command line arguments:
 * Argument 0: the mycat executable
 * Argument 1: a filename to be used as the input file
 * Argument 2: a filename to be used as the output file<br>
@@ -133,12 +133,19 @@ $ ./mycat data1 data2
 ```
 Your program should read each line in file `data1` and write it to file `data2`.<br>
 
-Use the following when opening a file for writing:
+The code for opening a file is provided for you. If the input file cannot be opened, print the following error message to standard error:
+```
+cerr << "Could not open input file <" << filename << ">." << endl;
+```
+
+> Note: To successfully open an input file, the file needs to exist. If the input file does not exist or you did not provide the correct path to the file, the operation to open a file will fail, and you will receive an error.
+
+Use the following to open a file for writing:
 ```
 ofstream my_ofile(filename, ios::out);  // filename is a string holding the filename
 ```
 
-If the output file cannot be opened, print the following error message to standard error (modify this message for the input file):
+This code creates a file with the name that you have provided. However, there are several cases when you still might receive an error (e.g. if the file does not exist, and you do not have permission to create files in the directory). If the output file cannot be opened, print the following error message to standard error:
 ```
 cerr << "Could not open output file <" << filename << ">." << endl;
 ```
@@ -163,12 +170,12 @@ $ ./add 10 20 12
 42
 $
 ```
-Since each command line argument is a C-style string, you will have to convert the strings (such as "10") to an integer (10). Use the function `atoi()` (ascii-to-integer). At this step, do not worry about error checking (that is, assume that `argv[1]` really is an integer). You need to include a library file before you can use `atoi()`. Try "`$ man atoi`" to see what file you need to include.
+Since each command line argument is a C-style string, you will have to convert each string (such as "10") to an integer (10). Use the function `atoi()` (ascii-to-integer). At this step, do not worry about error checking (that is, assume that `argv[1]` really is an integer). You need to include a library file before you can use `atoi()`. Try "`$ man atoi`" to see what file you need to include.
 ```
 value = atoi(argv[1]);  // this does not do any error checking
 ```
 
-The next step is to check for strings that are not legal integers. Before you move on, make sure your program works w/o error checking.<br>
+The next step is to check for strings that are not legal integers. Before you move on, make sure your program works without error checking.<br>
 
 The `atoi()` function does not do any error checking. That means if you pass it a string like "hello" it will just return some undefined value.<br>
 
@@ -182,7 +189,9 @@ Error: illegal integer.
 $
 ```
 
-Use the `isdigit()` function to check each character in each input string (argv[1], argv[2], etc) to make sure that all characters in a given character array are legal integers. You will need to use a loop. Keep in mind that the last element in a C-style string is a zero (not the character '0' but an actual zero). It is best to do this check in a function so you can use that function in your P5:
+Use the `isdigit()` function to check each character in each input string (argv[1], argv[2], etc) to make sure that all characters in a given character array are legal integers.<br>
+
+You will need to use a loop that ends when it reaches the last element in a C-style string -- the last element in a C-style string is always the null terminator `'\0'` (or you can use zero -- not the character '0' but an actual zero `0`). It is best to do this check in a function so you can use that function in your P5:
 ```
 bool legal_int(char *str)
 {  
@@ -191,7 +200,7 @@ bool legal_int(char *str)
 }
 ```
 
-Update your program so that it calls `atoi()` to convert the string to an integer and adds it to the total (as above). This step should be completed **after** your program verifies that all the characters in a given string are digits.<br>
+Update your program so that it calls `atoi()` to convert the string to an integer and adds it to the total (as above) -- this step should be completed **after** your program verifies that all the characters in a given string are digits (legal integers).<br>
 
 Submit `add.cpp` to Turnin.
 
