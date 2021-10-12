@@ -31,6 +31,8 @@ The first argument (`argc`) is the number of arguments that appear on the comman
 
 `argv` is an array of C-style strings (recall that a C-style string is an array of char that is terminated with a null character (the number 0)). `argv` is actually one larger than `argc` since the last element in the array is a NULL pointer (recall that arrays are really just pointers to the first element).
 
+> Reminder: char **argv is the same as char *argv[]
+
 ## File Input and Output (File I/O)
 
 The C++ input/output library contains a mechanism for reading input from files and writing output to files. The mechanism works similarly to `cin` and `cout`, but instead of reading from standard input (`cin`) and writing to standard output (`cout`), a program can read from an input file and write to an output file. Note: This is a different mechanism than using the shell's < and > to redirect standard input and standard output.<br>
