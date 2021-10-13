@@ -180,12 +180,18 @@ Once all the customers have been read and inserted into the arrival queue, call 
 Checkers can be implemented as an array of `Checker` structs. This struct must contain a pointer to their current `Cust`. If the checker is not serving anyone, its `Cust` pointer should be NULL. Since you don't know how many checkers there are until run time, you cannot create this array until run time:
 ```cpp
 void run_simulation(Pqueue &arrival_queue, int num_checkers, int break_duration, ostream &os)
-{
+{    
     // create an array of Checker structures
     Checker *checkers = new Checker[num_checkers];
 
     // now use a loop to initialized all elements of the Checker structures
     ...
+
+    // now use a loop to implement the body of the simulation as described below
+    ...
+
+    // lastly, print the amount of money in each register and the current time,
+    // then delete the array of Checker structs
 }
 ```
 
