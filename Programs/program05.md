@@ -130,13 +130,13 @@ Use one queue for all the checkers. When taking a customer off of the checker qu
 
 All items in the Kwik-E-Mart cost $3. All checkers start the simulation with $250 in their register. When a customer buys items from a checker, increment the checker's balance. When a checker is robbed, she gives all her money to the robber.<br>
 
-Customers must shop 2 time units for each item they buy/steal. For example, if a customer arrives at time 10, and buys 15 items, the customer should not be allowed to start the checkout/steal process until time = 40 (10 + 15*2).  Shopping time IS dependent on the number of items (even for robbers).<br>
+Customers must shop 2 time units for each item they buy/steal. For example, if a customer arrives at time 10, and buys 15 items, the customer should not be allowed to start the checkout/steal process until time is 40 (because 10 + (15 * 2) = 40).  Shopping time IS dependent on the number of items (even for robbers).<br>
 
-During the checkout process, shoppers must spend 1 time unit for each item they are buying. For example, if a shopper is removed from the checker queue and assigned a checker at time = 28 and he is buying 7 items, he won't be done until time = 35 (28 + (1 * 7)). Checkout time IS dependent on the number of items.<br>
+During the checkout process, shoppers must spend 1 time unit for each item they are buying. For example, if a shopper is removed from the checker queue and assigned a checker at time = 28 and he is buying 7 items, he won't be done until time is 35 (because 28 + (1 * 7) = 35). Checkout time IS dependent on the number of items.<br>
 
-Robbers spend 7 time units for the checkout process. For example, if a robber is removed from the checker queue and assigned a checker at time = 40 and he is buying 17 items, he won't be done until time = 47 (40 + 7). Robbing time is NOT dependent on the number of items.<br>
+Robbers spend 7 time units for the checkout process. For example, if a robber is removed from the checker queue and assigned a checker at time = 40 and he is buying 17 items, he won't be done until time is 47 (because 40 + 7 = 47). Robbing time is NOT dependent on the number of items.<br>
 
-If two (or more) customers arrive at the same time, put them in the arrival queue in the same order they appear in the input file. For example, if Homer arrives at time=10 and Lisa arrives at time=10, if Homer is before Lisa in the input file, Homer should be in front of Lisa in the arrival queue.<br>
+If two (or more) customers arrive at the same time, put them in the arrival queue in the same order they appear in the input file. For example, given that priority is based on arrival time, if Homer arrives at time=10, Lisa arrives at time=10, and Homer is before Lisa in the input file, then Homer should be in front of Lisa in the arrival queue.<br>
 
 Getting robbed is very stressful. Thus the checkers at the Kwick-E-Mart take a break after each time they are robbed. The length of the break (break duration) is a command line argument.<br>
 
@@ -169,7 +169,7 @@ new Cust(name, (role_string == "robber" ? 1 : 0), arrival_time, num_items);
 
 The file sim.cpp will contain the functions `main()` and `run_simulation()`.  You may add helper function (such as `legal_int()` from [Lab 8, Exercise 3](https://github.com/shelleywong/CSCI211-Course-Materials/blob/main/Labs/lab08.md#exercise-3)).<br>
 
-Perform all the input in `main()`. Read the customers one at a time, create a Cust object for the new customer, and then insert the Cust onto a priority queue ordered by their arrival time (if you use arrival time as the priority, they will be ordered correctly). `arrival_q` would be a good name for this queue. Do not use `getline()` or `eof()` or `EOF`.<br>
+Perform all the input in `main()` or another function in sim.cpp. Read the customers one at a time, create a Cust object for the new customer, and then insert the Cust onto a priority queue ordered by their arrival time (use the arrival time as the priority so that they will be ordered correctly). `arrival_q` would be a good name for this queue. Do not use `getline()` or `eof()` or `EOF`.<br>
 
 Once all the customers have been read and inserted into the arrival queue, call `run_simulation()`. You will need to pass to `run_simulation()`:
 * a reference to the arrival queue
@@ -251,7 +251,7 @@ Work step by step, and test that your program is working as expected along the w
 6. One of the command line inputs is an input file that contains information about the customer. Read in all of the customer information, one customer at a time: for each customer, create a new Cust object with the provided information and add the customer to the arrival queue before moving on.
 7. After you've gotten all input and added all customers to the arrival queue, you can call the run_simulation() function.
 8. At the beginning of the run_simulation() function, create an array of pointers to Checker structs (also create the Checker struct if you haven't already).
-9. Then implement the body of the simulation (described below).
+9. Then implement the body of the simulation (described above).
 10. Print the final messages.
 11. Read the requirements carefully to make sure your program is complete.
 
