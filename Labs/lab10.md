@@ -4,7 +4,7 @@ Practice Midterm Recursion Problems
 
 Lab 10 Exercises
 * [Exercise 1: Recursive Equal Strings](#exercise-1-recursive-equal-strings) (lab10_equal)
-* [Exercise 2: Recursive Find Largest](#exercise-2-recursive-find-largest) (lab09_largest)
+* [Exercise 2: Recursive Find Largest](#exercise-2-recursive-find-largest) (lab10_largest)
 * [Exercise 3: Recursive Check If Sorted](#exercise-3-recursive-check-if-sorted) (lab10_sorted)
 * [Exercise 4: Recursive Is String An Integer](#exercise-4-recursive-is-string-an-integer) (lab10_isint)
 
