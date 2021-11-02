@@ -57,7 +57,7 @@ $
 
 First, let's restrict the input to our desired range 1 to 10. If the value is out of range, print an error message and prompt again.<br>
 
-Not all problems require throwing and catching exceptions. This one is best handled by an if statement within a loop.<br>
+Not all problems require throwing and catching exceptions. This one is best handled by an if-statement within a loop.<br>
 
 Since we are basing the iteration on user input and we need the user to always enter at least once, which type of loop should you use? Please **do** consider this **while** designing your program.
 
@@ -88,6 +88,12 @@ Run your `main` again and test using a string. Now what happens?<br>
 Your `cin` line now throws an exception if something goes wrong. We need to handle it. Surround your `cin` line (and lines that depend on that statement) within a `try` block. Add this `catch` block:
 
 ```cpp
+try
+{
+  cin >> input;
+  // Conditional statements to check numeric input
+  ...
+}
 catch(iostream::failure& iof)
 {
     cout<<"This is not an integer. Please enter a number."<<endl;
@@ -104,8 +110,12 @@ What happens if you enter a double value instead of an integer? Try it out.<br>
 
 We need to identify this situation, throw an error, and catch it.<br>
 
-Within your `try` block and after you read your number, add another `try` block with a check to "peek" ahead at the next character. If it is anything but `'\n'` (newline), then it is a bad number. In that case, throw an error. Consider the provided catch block. What should you throw?<br>
+Inside your `try` block, after you read in numeric input, add another nested `try-catch` block. Inside of the nested `try` block, include a condition that "peeks" ahead at the next character. If it is anything but `'\n'` (newline), then it is a bad number. In that case, throw an error. Consider the provided catch block. What should you throw?<br>
 ```cpp
+try
+{
+  // condition to peek at next character -- if anything but a newline, throw \<expression\>
+}
 catch(int pnum)
 {
     cout<<"Non-integer value. You entered something after "<<pnum<<"."<<endl;
@@ -119,10 +129,10 @@ Once you are finished, submit your `main.cpp` to Turnin.
 
 ***
 
-After you have completed the exercises, work on the Kwik-E-Mart Simulation (P5).
+If you have completed Lab 11, you may work on P5 or P6.
 
 ## Lab 11 Submissions
 
-All labs are due at 11:59pm the Friday following lab. For this lab you must submit `main.cpp` (Exercises 1, 2, 3, and 4) to [Turnin](https://turnin.ecst.csuchico.edu/). If you are not able to complete all the exercises, turn in your partial work for partial credit.
+Most labs are due at 11:59pm the Friday following lab; however, since Midterm 2 is this week and there are no exercises for Lab 12, the lab for this week (Lab 11) is due at the end of week 12. For this lab you must submit `main.cpp` (Exercises 1, 2, 3, and 4) to [Turnin](https://turnin.ecst.csuchico.edu/). If you are not able to complete all the exercises, turn in your partial work for partial credit.
 
 [Top of the Page](#lab-11)
