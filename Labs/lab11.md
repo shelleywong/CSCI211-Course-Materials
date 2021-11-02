@@ -114,7 +114,7 @@ Inside your `try` block, after you read in numeric input, add another nested `tr
 ```cpp
 try
 {
-  // condition to peek at next character -- if anything but a newline, throw \<expression\>
+  // condition to peek at next character -- if anything but a newline, throw <expression>
 }
 catch(int pnum)
 {
