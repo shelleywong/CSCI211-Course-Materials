@@ -10,11 +10,15 @@ Lab 11 Exercises
 
 ## An "Exceptional" Programming
 
-In this lab you will practice a common situation involving user input and error checking. You will write a simple program that asks the user to enter a number from 1 to 10. You must catch situations in which the user enters a number out of bounds, a non-integer number (e.g., double), or a non-numeric value (e.g., string). Your program is expected to recover and continue, until the user inputs a number that meets the specified criteria, or until the end of input is detected.<br>
+In this lab you will practice a common situation involving user input and error checking. You will write a simple program that asks the user to enter a number from 1 to 10. You must catch situations in which the user enters a number out of bounds (greater than 10 or less than 1), a non-integer number (e.g. a double), or a non-numeric value (e.g., string). Your program is expected to recover and continue, until the user inputs a number that meets the specified criteria, or until the end of input is detected.<br>
+
+This program uses [exceptions](https://www.cplusplus.com/doc/tutorial/exceptions/), which force the calling code to recognize an error condition and handle it. Exceptions are useful for catching runtime errors, which are errors that happen while the program is running, after the program has been successfully compiled.<br>
+
+In a program, a block of code is executed from within a *try-block*. If a problem shows up, the *throw* keyword is used to throw an exception, and the program can then *catch* the exception to handle the problem. Before terminating or continuing the program, we want to provide a useful error message that identifies the error so we know what issue caused the problem. Exceptions are similar to the [assert](https://www.cplusplus.com/reference/cassert/assert/) macro, as they both provide a way to test and identify if certain assumptions are being met by a program.<br>
 
 Read the sections below to guide your solution.<br>
 
-**Usage Example**
+**Usage example (after completing all 4 exercises)**
 ```
 $ ./main
 Pick a number between 1 and 10.
@@ -44,7 +48,7 @@ You will prompt the user to enter a number (see usage example). You will then pr
 $ g++ -Wall -pedantic -g -std=c++11 -o main main.cpp
 ```
 
-Then test your program with this simple use case.
+Then test your program with this simple use case (no error checking yet).
 ```
 $ ./main
 Pick a number between 1 and 10.
@@ -55,11 +59,11 @@ $
 
 ## Exercise 2: Loop
 
-First, let's restrict the input to our desired range 1 to 10. If the value is out of range, print an error message and prompt again.<br>
+Now, let's restrict the input to our desired range 1 to 10. If the value is out of range, print an error message and prompt again.<br>
 
 Not all problems require throwing and catching exceptions. This one is best handled by an if-statement within a loop.<br>
 
-Since we are basing the iteration on user input and we need the user to always enter at least once, which type of loop should you use? Please **do** consider this **while** designing your program.
+Since we are basing the iteration on user input and we need the user to always enter at least once, which type of loop should you use? Please **do** consider this **while** designing your program. When the user enters a number between 1 and 10, print "You picked XX." (replacing XX with the user's numeric input). For this program, print all output to the standard output stream (cout).
 
 ```
 $ ./main
@@ -85,7 +89,7 @@ cin.exceptions(iostream::failbit);
 
 Run your `main` again and test using a string. Now what happens?<br>
 
-Your `cin` line now throws an exception if something goes wrong. We need to handle it. Surround your `cin` line (and lines that depend on that statement) within a `try` block. Add this `catch` block:
+Your `cin` line now throws an exception if something goes wrong. We need to handle it. Surround your `cin` line (and lines that depend on that statement) within a `try` block. Add this `catch` block to catch the iostream failure, print an appropriate error message, reset the cin error flags, and clear the input sequence buffer:
 
 ```cpp
 try
@@ -124,6 +128,8 @@ catch(int pnum)
     pnum = 0;  // reset num to its initial value
 }
 ```
+
+We use the catch-block to catch the problem number `pnum`, print an appropriate error message, reset the error flags, clear the buffer, and reset pnum. Notice that we are expecting integer input from `cin`, so the input that is thrown is an integer, not the entire invalid problem input.<br>
 
 Once you are finished, submit your `main.cpp` to Turnin.
 
