@@ -103,6 +103,8 @@ This test code instantiates a Grid object, draws a couple characters onto the gr
 * It will have a single constructor that takes x and y as arguments.
 * In addition to the constructor, it will have a single member function `draw()` that must have a single argument, a reference to a `Grid` object (`void draw(Grid &grid)`). This function must be a `pure virtual` function (learn this term, it may be on the next exam).<br>
 
+> Note: In most cases, all class member variables are declared with private member access, because we don't want them to be directly accessible by any object or function outside the class. In this case, we can make base class members `protected` and allow derived classes to have access to these member variables. In this case, we would not need to define the same member variables again in the derived class. The derived class could have private, protected, or public base class access.
+
 You can make a virtual function into a pure virtual function by assigning it to zero in the base class declarations:
 ```cpp
 class Shape
