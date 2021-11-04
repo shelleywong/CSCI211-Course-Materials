@@ -82,14 +82,14 @@ $
 ## Exercise 3: String Posers
 What happens if the user enters a string (e.g., "four") instead of an integer?  Try it out on your program.<br>
 
-By default, C++ does not throw an exception when there is a problem with the I/O. We can change that by activating exception-throwing for this situation. Add this line at the beginning of your `main`.
+By default, C++ does not throw an exception when there is a problem with the I/O. We can change that by activating exception-throwing for this situation. Add this line at the beginning of your `main`, before the program loop.
 ```cpp
 cin.exceptions(iostream::failbit);
 ```
 
 Run your `main` again and test using a string. Now what happens?<br>
 
-Your `cin` line now throws an exception if something goes wrong. We need to handle it. Surround your `cin` line (and lines that depend on that statement) within a `try` block. Add this `catch` block to catch the iostream failure, print an appropriate error message, reset the cin error flags, and clear the input sequence buffer:
+Your `cin` line now throws an exception if something is wrong with the input. In this case, `cin` received string input when it was expecting integer input, and the program aborted due to the error. We want to update the program to handle the error instead of immediately terminating. Surround your `cin` line (and lines that depend on that statement) within a `try` block. Add this `catch` block to catch the iostream failure, print an appropriate error message, reset the cin error flags, and clear the input sequence buffer:
 
 ```cpp
 try
@@ -100,9 +100,9 @@ try
 }
 catch(iostream::failure& iof)
 {
-    cout<<"This is not an integer. Please enter a number."<<endl;
-    cin.clear(); // reset error flags
-    cin.ignore(numeric_limits<streamsize>::max(), '\n'); // clear buffer
+  cout<<"This is not an integer. Please enter a number."<<endl;
+  cin.clear(); // reset error flags
+  cin.ignore(numeric_limits<streamsize>::max(), '\n'); // clear buffer
 }
 ```
 
@@ -114,18 +114,21 @@ What happens if you enter a double value instead of an integer? Try it out.<br>
 
 We need to identify this situation, throw an error, and catch it.<br>
 
-Inside your `try` block, after you read in numeric input, add another nested `try-catch` block. Inside of the nested `try` block, include a condition that "peeks" ahead at the next character. If it is anything but `'\n'` (newline), then it is a bad number. In that case, throw an error. Consider the provided catch block. What should you throw?<br>
+Inside your `try` block, after you read in numeric input, add another nested `try-catch` block. Inside of the nested `try` block, include a condition that "peeks" ahead at the next character. If it is anything but `'\n'` (newline), then it is a bad number (not an integer). In that case, throw an error. Consider the provided catch block. What should you throw?<br>
 ```cpp
+// after program gets input from the standard input stream
 try
 {
-  // condition to peek at next character -- if anything but a newline, throw <expression>
+  // condition to peek at next character
+    // if next char is a newline, the input is an integer, and we can check if the input is in the range 1-10
+    // otherwise (the next char is anything but a newline) throw <expression> to the corresponding catch block
 }
 catch(int pnum)
 {
-    cout<<"Non-integer value. You entered something after "<<pnum<<"."<<endl;
-    cin.clear();  // reset error flags
-    cin.ignore(numeric_limits<streamsize>::max(), '\n');  // clear buffer
-    pnum = 0;  // reset num to its initial value
+  cout<<"Non-integer value. You entered something after "<<pnum<<"."<<endl;
+  cin.clear();  // reset error flags
+  cin.ignore(numeric_limits<streamsize>::max(), '\n');  // clear buffer
+  pnum = 0;  // reset num to its initial value
 }
 ```
 
