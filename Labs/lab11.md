@@ -119,9 +119,9 @@ Inside your `try` block, after you read in numeric input, add another nested `tr
 // after program gets input from the standard input stream
 try
 {
-  // condition to peek at next character
-    // if next char is a newline, the input is an integer, and we can check if the input is in the range 1-10
-    // otherwise (the next char is anything but a newline) throw <expression> to the corresponding catch block
+  // condition to peek at next character:
+  // if next char is a newline, the input is an integer, and we can check if the input is in the range 1-10;
+  // otherwise, the next char is anything but a newline -- throw <expression> to the corresponding catch block
 }
 catch(int pnum)
 {
