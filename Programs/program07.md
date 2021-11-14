@@ -139,8 +139,8 @@ This is how I suggest you declare the class BST member functions to meet the req
 | insert | string | Return true if the string is inserted successfully. Return false if string is already in the tree. | :heavy_check_mark: recursive private helper |
 | size | none | Return the number of elements (number of nodes) in the tree. | :heavy_check_mark: recursive private helper |
 | find | string | Return true if the target string is in the tree. Return false if the target string is not in the tree. | :heavy_check_mark: recursive private helper |
-| print | vector<string>& | Use an in-order depth-first traversal (DFT) to fill a vector with all tree node values in ascending/alphabetical order | :heavy_check_mark: recursive private helper<br> Use a function in main.cpp to print a formatted vector of strings |
-| breadth | vector<string>& | Use a breadth-first traversal (BFT) to fill a vector with all tree node values in BFT order (top level to bottom, left to right). | Use a function in main.cpp to print a formatted vector of strings |
+| print | vector\<string\>& | Use an in-order depth-first traversal (DFT) to fill a vector with all tree node values in ascending/alphabetical order | :heavy_check_mark: recursive private helper<br> Use a function in main.cpp to print a formatted vector of strings |
+| breadth | vector\<string\>& | Use a breadth-first traversal (BFT) to fill a vector with all tree node values in BFT order (top level to bottom, left to right). | Use a function in main.cpp to print a formatted vector of strings |
 | distance | none | Return a double representing the average distance. Calculate by finding the distance for ALL nodes and then determining the average distance. | :heavy_check_mark: recursive private helper |
 | balanced | none | If the tree is balanced, return an integer representing the height of the tree. If the tree is not balanced, return -1. | :heavy_check_mark: recursive private helper |
 | rebalance | none | none | private insert_from_vector() helper function <br> The rebalance function will not print values; instead, the rebalance command will be followed by the print or breadth command |
