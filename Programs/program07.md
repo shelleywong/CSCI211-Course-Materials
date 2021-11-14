@@ -137,7 +137,7 @@ This is how I suggest you declare the class BST member functions to meet the req
 | Constructor | none | none | Initialize the root |
 | Destructor | none | none | Delete all Node objects |
 | insert | string | Return true if the string is inserted successfully. Return false if string is already in the tree. | :heavy_check_mark: recursive private helper |
-| size | none | Return the number of elements (number of nodes) in the tree. | - [x] recursive private helper |
+| size | none | Return the number of elements (number of nodes) in the tree. | :heavy_check_mark: recursive private helper |
 | find | string | Return true if the target string is in the tree. Return false if the target string is not in the tree. | :heavy_check_mark: recursive private helper |
 | print | vector<string>& | Use an in-order depth-first traversal (DFT) to fill a vector with all tree node values in ascending/alphabetical order | :heavy_check_mark: recursive private helper<br> Use a function in main.cpp to print a formatted vector of strings |
 | breadth | vector<string>& | Use a breadth-first traversal (BFT) to fill a vector with all tree node values in BFT order (top level to bottom, left to right). | Use a function in main.cpp to print a formatted vector of strings |
