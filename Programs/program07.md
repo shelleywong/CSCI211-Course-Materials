@@ -132,7 +132,7 @@ Implement and test the commands one at a time in the order they are listed in th
 
 This is how I suggest you declare the class BST member functions to meet the requirements for this assignment:
 
-| BST Public Member Function | Parameter(s) | Return Value Type | Additional Info |
+| BST Public Member Function | Parameters | Return Value Type | Additional Info |
 | --- | --- | --- | --- |
 | Constructor | none | none | :heavy_check_mark: Initialize the root |
 | Destructor | none | none | :heavy_check_mark: Delete all Node objects |
@@ -143,7 +143,7 @@ This is how I suggest you declare the class BST member functions to meet the req
 | breadth | vector\<string\>& | Use a breadth-first traversal (BFT) to fill a vector with all tree node values in BFT order (top level to bottom, left to right). | :heavy_check_mark: Use a function in main.cpp to print a formatted vector of strings |
 | distance | none | Return a double representing the average distance. Calculate by finding the distance for ALL nodes and then determining the average distance. | :heavy_check_mark: recursive private helper |
 | balanced | none | If the tree is balanced, return an integer representing the height of the tree. If the tree is not balanced, return -1. | :heavy_check_mark: recursive private helper |
-| rebalance | none | none | :heavy_check_mark: private insert_from_vector() helper function <br> :heavy_check_mark: Will call other BST members<br> :heavy_check_mark: The rebalance function only rebalances; it does not print values (the rebalance command will be followed by the print or breadth command) |
+| rebalance | none | none | :heavy_check_mark: private insert_from_vector() helper <br> :heavy_check_mark: Will call other BST members<br> :heavy_check_mark: The rebalance function only rebalances; it does not print values (the rebalance command will be followed by the print or breadth command) |
 
 Several of the commands are best implemented using one public and one private functions. Consider the `insert` function:
 ```cpp
