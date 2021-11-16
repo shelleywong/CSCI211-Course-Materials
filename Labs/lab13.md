@@ -43,7 +43,6 @@ int main()
     my_foos.push_back(new Foo());
 
     ...
-
 }
 ```
 
@@ -53,9 +52,9 @@ Turn in `path.cpp`.
 
 ## Exercise 2: Read and Print Titles and Locations Using a Map
 
-Working in your 211-starter-pack/211/lab13_lookup directory, write a program (called `lookup`) that reads a collection of GPS locations and titles (title is a string without any spaces). Continue reading locations until the user enters 0 (using 0 to end the input limits the program, but it makes writing it much easier).<br>
+Working in your 211-starter-pack/211/lab13_lookup directory, write a program (called `lookup`) that reads a collection of GPS locations and titles. Each title is a string without any spaces. You should use the provided `Location` class to hold the GPS locations (this class is the same as the Location class in Exercise 1). Continue reading locations and titles from standard input until the user enters 0 (while using 0 to signal the end of input is limiting, it makes writing the program much easier). You should **not** use EOF here, because your program will need to handle input after it receives all pairs of GPS locations and titles.<br>
 
-After 0 is entered, read titles until end of input. After each title is read, look it up in the map and print the location associated with the title.  If the title is not in the map, print the message shown below.<br>
+After 0 is entered, read titles from standard input until the end of input. As each title is read, look up the title in the map. If the location is found, print the location associated with the title (see below for how the output should be formatted). If the title is not in the map, print the message (shown below) indicating that the title is not in the database.<br>
 
 The following input:
 ```
@@ -69,7 +68,7 @@ The_Bear
 Celestinos_Pizza
 ```
 
-Should produce this output (print the error message to standard output):
+Should produce this output (all messages, including the error message, should be printed to standard output):
 ```
 The_Bear is at 39.729089,-121.842585
 311_Lecture not in database
@@ -78,9 +77,9 @@ Celestinos_Pizza is at 39.729807,-121.842767
 
 * You must use a C++ STL map to store the title/location pairs.
 * You can read the [STL map documentation](https://www.cplusplus.com/reference/map/map/) for more information. Explore the map member functions to find examples of how to use the STL map.
-* You do not have to call delete on the Location objects.<br>
+* You do not have to call delete on the Location objects for this exercise.<br>
 
-HINT: The map's `find` function returns an iterator.<br>
+> HINT: The map's `find` function returns an iterator. You may find it helpful to review the slides from Lecture 10: Templates, STL.<br>
 
 Turn in `lookup.cpp`
 
