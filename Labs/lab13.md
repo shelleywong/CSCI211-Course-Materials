@@ -8,7 +8,7 @@ Lab 13 Exercises
 
 ## Exercise 1: Read and Print GPS Locations Using a Vector
 
-Working in your 211-starter-pack/211/lab13_path directory, write a program (called `path`) that reads a collection of GPS locations (latitude & longitude) until end of input is reached. AFTER all the input has been read, print the GPS locations to standard output. Put each location on its own line with a comma between the latitude and longitude:<br>
+Working in your 211-starter-pack/211/lab13_path directory, write a program (called `path`) that reads a collection of GPS locations until end of input is reached. Each GPS location is expressed as two numeric coordinates: the first number is always latitude and the second number is always longitude. As each set of coordinates is read from standard input, create a new `Location` object and add the `Location` to a vector. AFTER all the input has been read, traverse the vector and print the GPS locations to standard output (`cout`). You can use the Location class `print` function to put each location on its own line with a comma between the latitude and longitude:<br>
 
 The first four lines are the input. The second four lines are the output.
 ```
@@ -25,26 +25,29 @@ $
 ```
 
 * Use the provided class `Location` to store each of the locations.
+* Look at the provided location.h file to see how class `Location` works, but do not change anything in class `Location`.
 * You must use a single STL vector to store all the `Location` object pointers.
-* You do not have to call delete on the `Location` objects.<br>
+* At the end of the program, you can traverse the vector and delete all location objects (similar to how you would traverse an array of pointers to objects to delete all objects); however, you are not required to call delete on the `Location` objects for this lab exercise.<br>
 
-How to use a vector:
+How to declare a vector of pointers to Foo objects and add one Foo object to the vector:
 ```cpp
 #include <vector>
 using namespace std;
 
 int main()
 {
-    vector<Foo *> my_foos;  // declares a vector of pointers to class Foo
+    // declares a vector of pointers to class Foo
+    vector<Foo *> my_foos;
 
-    my_foos.push_back(new Foo()); // create a new Foo object and insert it at end of the vector
+    // create a new Foo object and insert it at end of the vector
+    my_foos.push_back(new Foo());
 
     ...
 
 }
 ```
 
-Read about the [vector's operator[]](https://www.cplusplus.com/reference/vector/vector/operator[]/) to learn how to access elements in the vector.<br>
+Read about the [vector's operator[]](https://www.cplusplus.com/reference/vector/vector/operator[]/) to learn how to access elements in the vector similar to how you access elements in an array. You may use any of the [STL vector member functions](https://www.cplusplus.com/reference/vector/vector/).<br>
 
 Turn in `path.cpp`.
 
