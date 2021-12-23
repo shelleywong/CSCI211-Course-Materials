@@ -133,7 +133,7 @@ $ mkdir ~/211  // make a new directory in your home directory called "211"
   * if you change the protection of your home directory as follows, you (the owner) will have full read and write access to all of your files, and others will only be able to read your files:
 ```
 $ cd  // change to your home directory
-$ chmod 644 .  // don't forget the dot (.) t the end of this command
+$ chmod 644 .  // the dot makes the changes apply to every file in this directory
 ```
   * 6 in binary is 110 (read & write privileges on, execute privileges off)
     * Generally, you don't want everything to be executable -- only the executable files.
@@ -141,7 +141,7 @@ $ chmod 644 .  // don't forget the dot (.) t the end of this command
 ```
 $ chmod +x filename
 ```
-  * You can see the permissions that are currently set in any directory, along with other information (owner, size of the file, date modified) -- this example shows how a file would look with read, write and execute privileges for the owner and read access only for groups and others:
+  * You can see the permissions that are currently set in any directory, along with other information (owner, size of the file, date modified) -- this example shows how a file would look with read and write privileges for the owner and read access only for groups and others (chmod 644):
 ```
 $ ls -al  // list all files in the directory with a long listing format
 ...
