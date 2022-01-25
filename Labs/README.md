@@ -172,3 +172,12 @@ $ vimdiff tests/t03.err results/t03.myerr  // equivalent command
 Using these tools can help you quickly determine if your program is passing or failing all tests, identify which sections of your code might contain bugs, and help make sure the Turnin server stays up and running.<br>
 
 I have described one simple and safe way to use these tools, but you are not required to follow this method. Do what works for you. The main thing I want to emphasize is that these tools are available, and you should use them! The tests won't always catch every edge case, but they can be a great help to you throughout the semester.
+
+### Checking for memory management
+
+Many of the programming assignments ask you to manage memory. One command line option for detecting if your program contains memory leaks is [Valgrind](https://valgrind.org/docs/manual/quick-start.html). Here is an example of valgrind usage (after you've compiled a program called myprog):
+```
+$ ./myprog arg1                             // run your program like normal
+$ valgrind --leak-check=yes ./myprog arg1   // test your program with valgrind
+$ valgrind --leak-check=yes ./myprog < tests/t01.in  // example argument: you might want to include input from a file when you test your program with valgrind
+```
