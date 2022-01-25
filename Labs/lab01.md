@@ -221,6 +221,8 @@ Becoming very familiar with the editor of your choice will be beneficial to you 
 
 Taking some time to set up and organize your working directory for CSCI 211 will help prevent turning in the wrong assignment and make it easier to keep track of your files.<br/>
 
+Reminder to Mac and Windows users -- Options for using Linux and the GNU g++ compiler are listed in the Get Set Up for Success content area on Blackboard. For Mac users, I recommend setting up an Ubuntu Virtual Machine or the ecc-linux server (which you can access with ssh). For Windows users, I recommend using an Ubuntu Virtual Machine, WSL2, or the ecc-linux server.<br>
+
 You may want to use a Git repository manager, such as GitHub, that provides version control and other features to build and manage software. It can be a great tool for organizing your source code; HOWEVER, remember that whenever you are creating a directory for a class where everyone is turning in the same assignments (like in this CSCI 211 course), make sure to **make the visibility of this repository private!** If your repo is public, it means other students can see it and easily steal the code from it -- this constitutes cheating and is a violation of academic integrity. There is **no reason** to make a CSCI 211 repo publicly visible this semester OR after you have completed the class.
 
 * Refer to the [Cheating Policy](http://www.ecst.csuchico.edu/~trhenry/classes/general/cheating.html) or talk to me directly if you are unclear about any of this.
