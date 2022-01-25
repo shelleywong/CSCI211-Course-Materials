@@ -202,12 +202,14 @@ When writing programs without an IDE you use a stand alone editor to create your
   * It is hard to learn how to use but provides powerful tools once you learn how to use it.  
   * Works on most Linux and Microsoft platforms.<br>
 
-You can start these editors from the command line:
+You can start an editor from the command line:
 ```
 $ vim hello.cpp
 $ atom hello.cpp
 $ code hello.cpp
 ```
+
+> The Atom and VSCode options listed above require some extra steps for setup steps -- search for how to launch the editor of your choice from the command line.
 
 All of these are available on Linux. Vim and Emacs are hard to learn, so if you don't already know one, I'd suggest starting with Atom. If you are interested in working with Vim, you may want to review [Lab 4](https://github.com/shelleywong/CSCI211-Course-Materials/blob/main/Labs/lab04.md).<br>
 
