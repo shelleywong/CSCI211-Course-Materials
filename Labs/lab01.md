@@ -8,7 +8,9 @@ Introduction to Linux and the g++ Compiler
 * Introduce several basic Linux commands
 * Provide an example of creating, compiling, and running a c++ program
 * Set up all the directories for the course assignments
-* Provide practice creating, compiling, and running c++ programs<br>
+* Provide practice creating, compiling, and running c++ programs
+* Work on Programming Assignment 01
+<br>
 
 Lab 01 Exercises:
 * [Exercise 1: Setting up your CSCI 211 environment](#exercise-1-setting-up-your-csci-211-environment)
@@ -360,7 +362,9 @@ $
 
 The main point of these assignments is to introduce you to the [testing mechanism](https://github.com/shelleywong/CSCI211-Course-Materials/blob/main/Labs/README.md#testing-assignments) (instructions in the Lab directory README).<br/>
 
-Students who don't understand how < and > are used to test assignments struggle throughout the semester.
+Students who don't understand how < and > are used to test assignments struggle throughout the semester.<br>
+
+If you have time left over, I recommend that you start working on p1. After you've made some progress on the assignment, try using the testing mechanism to test your code before you submit it to Turnin.
 
 ## Lab 01 Submissions
 
