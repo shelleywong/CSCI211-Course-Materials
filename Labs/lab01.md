@@ -257,13 +257,14 @@ $ mkdir print
 
 ## Exercise 2: Creating, compiling, and running a CPP program
 
-1. Enter the lab01/hello subdirectory, and create the file `hello.cpp`. Using any editor (e.g. vim or atom), start the editor with `hello.cpp` as the filename:
+1. Enter the lab01/hello subdirectory, and create the file `hello.cpp`. The following command starts the vim editor and creates a file with the name `hello.cpp` (you could use a similar command with other editors):
 ```
 $ vim hello.cpp
 ```
--or-
+This is another way you could accomplish the same thing -- use `touch` to create the file and then start the editor (this time using the atom editor), opening up your present working directory:
 ```
-$ atom hello.cpp
+$ touch hello.cpp
+$ atom .
 ```
 2. Now edit the file so it contains the following text. Save the file and exit the editor:
 ```cpp
