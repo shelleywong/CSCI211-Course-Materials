@@ -132,14 +132,20 @@ $ mkdir ~/211  // make a new directory in your home directory called "211"
     * `w`: write permission (numerical value of 2 or 010)
     * `x`: execute permission (numerical value of 1 or 001)
 
-  * if you change the protection of your home directory as follows, you (the owner) will have full read and write access to all of your files, and others will only be able to read your files:
+  * The following example changes the file permissions for a file named `myprog.cpp` such that you (the owner) will have full read and write access to the file, and all others with have no access to the file (`myprog.cpp` is in the current working directory):
 ```
-$ cd  // change to your home directory
-$ chmod 644 .  // the dot makes the changes apply to every file in this directory
+$ chmod 600 myprog.cpp  
 ```
+  * The following example changes the directory permissions for a directory named `mydir` such that you (the owner) will have full read, write, and execute access to the directory, and others will only be able to read and execute within the directory (`mydir` is in the current working directory):
+```
+$ chmod 755 mydir  
+```
+  * 7 in binary is 111 (read, write, & execute privileges on)
   * 6 in binary is 110 (read & write privileges on, execute privileges off)
-    * Generally, you don't want everything to be executable -- only the executable files.
-  * If you try to execute your program and get a message that the file is not executable, you can make it executable:
+  * 5 in binary is 101 (read & execute privileges on, write privileges off)
+  * 4 in binary is 100 (read privileges on, write & execute privileges off)
+  * Generally, directories should be executable, but files should only have execute privileges turned on if they are executable (e.g. shell scripts, compiled output).
+  * Any file can be executable. If you try to execute your program and get a message that the file is not executable, you can make it executable:
 ```
 $ chmod +x filename
 ```
@@ -164,10 +170,6 @@ $ man -k copy
   * usually this produces too many matches and they scroll by too fast to read
 ```
 $ man -k copy | less
-```
-* Note: the apopos command does the same thing as "man -k"
-```
-$ apopos copy | less
 ```
 * `which` => tells you which executable is executed when you type a command
 ```
@@ -204,7 +206,7 @@ When writing programs without an IDE you use a stand alone editor to create your
   * It is hard to learn how to use but provides powerful tools once you learn how to use it.  
   * Works on most Linux and Microsoft platforms.<br>
 
-You can start an editor from the command line:
+You can start an editor and create a file called `hello.cpp` from the command line (you could also use the command `touch hello.cpp` to create the file and then open the editor):
 ```
 $ vim hello.cpp
 $ atom hello.cpp
@@ -233,6 +235,8 @@ You may want to use a Git repository manager, such as GitHub, that provides vers
 
 The following instructions will work on your local Linux/OSX laptop/desktop (with or without a remote repository):<br/>
 
+> Note: the 211-starter-pack contains a 211/ directory and separate subdirectories for each exercise (i.e. instead of a 211/lab01/hello directory structure, you'll see 211/lab01_hello -- you can set up your 211 directory in whatever way makes the most sense to you)
+
 1. Go to your home directory, or a subdirectory such as "Courses" or "Repos". Create a folder for CSCI 211 using mkdir (make directory):
 ```
 $ mkdir csci211
@@ -252,8 +256,6 @@ $ mkdir hello
 $ mkdir add
 $ mkdir print
 ```
-
-> Note: the 211 starter pack has a 211/ directory and separate subdirectories for each exercise (i.e. instead of a 211/lab01/hello directory structure, you'll see 211/lab01_hello -- you can set up your 211 directory in whatever way makes the most sense to you)
 
 ## Exercise 2: Creating, compiling, and running a CPP program
 
