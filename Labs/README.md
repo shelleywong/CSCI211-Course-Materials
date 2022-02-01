@@ -128,6 +128,18 @@ $ cp bin/vd 211/lab02_even/
 $ cp bin/vde 211/lab02_even/
 ```
 
+Alternatively, you could copy all of the files from the bin folder into the lab02_even directory at once:
+```
+$ cp -r bin/. 211/lab02_even/
+```
+
+If you would like to have `run_tests`, `vd`, and `vde` available in every lab and programming assignment directory, you can use the following to copy all of the `bin/` scripts into every `211/` subdirectory. From the 211-starter-pack/211 directory, run the following command:
+```
+$ ls | xargs -n1 cp ../bin/*
+```
+
+> Note: learn more about the xargs command by typing `man xargs` in the command line terminal.
+
 Change to the lab02_even directory. You should see all of the bash scripts listed there, along with the other files that were already in the directory. Exercise 2 includes directions for writing a program that reads integers and checks if they are even or not.<br>
 
 After you have successfully compiled even.cpp, you will have an executable called `even` and can use `run_tests` to check to see if your program passes all of the provided tests. (For other programs, substitute the appropriate executable in place of `even`):
