@@ -111,7 +111,7 @@ It is important that you understand the manual testing options listed above, but
 `run_tests`, `vd`, and `vde` are bash scripts (programs that the bash shell can execute) that should be included in your ~211-starter-pack/bin directory that you downloaded (211-starter-pack.tar):
 ```
 $ cd bin
-$ ls run_tests vd vde
+$ ls
 run_test vd vde
 ```
 

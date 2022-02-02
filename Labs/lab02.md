@@ -54,7 +54,7 @@ Make a directory called `lab02_echoints` (In this example, it is a subdirectory 
 ```
 $ mkdir lab02_echoints
 $ cd lab02_echoints
-$ vim echoints.cpp
+$ vim echo_ints.cpp
 ```
 Copy the echo_ints code (included above) into echo_ints.cpp<br>
 
@@ -131,7 +131,7 @@ int main()
     cout << "written to standard output" << endl;
 
     // write to standard error
-   cerr << "written to standard error" << endl;
+    cerr << "written to standard error" << endl;
 
     // return 0 from main() if there are no errors
     return 0;
