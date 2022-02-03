@@ -263,15 +263,17 @@ CSCI 211 at 1000
 ENGL 130 at 1400
 PHYS 204 at 800
 ```
-You can compile this program using this command (lab 4 explains a tool for compiling programs with multiple files):
+You can compile and complete the necessary linking for this program using the following command:
 ```
 $ g++ -Wall -o schedule schedule.cpp course.cpp
 ```
-Or you could use the Makefile provided in your ~/211/lab03_course directory:
+One problem with the above command is that, if you make changes in any of the files, this command makes the compiler do extra unnecessary work -- the compiler will recompile everything, even if some files do not need to be recompiled. An alternative is to use a Makefile, such as the Makefile provided in your ~/211/lab03_course directory. Then, you simply have to type the following command:
 ```
 $ make
 ```
-REMEMBER: only `#include *.h` files (schedule.cpp must include course.h and course.cpp must include course.h). **NEVER #INCLUDE .cpp FILES**.<br>
+The `make` command will only compile what needs to be compiled (not to mention how `make` is a very short and easy to remember command).<br>
+
+REMEMBER: If you `#include` a file in your source code, you should only `#include *.h` files (schedule.cpp must include course.h and course.cpp must include course.h). **NEVER #INCLUDE .cpp FILES**.<br>
 
 To get credit, you must pass the posted tests (in ~/211-starter-pack/211/lab03_course).<br>
 
