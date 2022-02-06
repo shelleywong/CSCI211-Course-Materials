@@ -87,8 +87,8 @@ The most efficient way to compile such program is to compile each component into
 ### simple makefile
 ```makefile
 # This rule tells make how to "make" the executable sentence
-main: main.o sentence.o
-	g++ -Wall -pedantic -std=c++11 -g -o main main.o sentence.o
+sentence: main.o sentence.o
+	g++ -Wall -pedantic -std=c++11 -g -o sentence main.o sentence.o
 
 # This rule tells make how to "make" the object file main.o
 main.o: main.cpp sentence.h
