@@ -108,7 +108,7 @@ clean:
 ### Compiler Options
 
 The above Makefile uses the following command-line options for the g++ compiler:
-| Option &nbsp; |    |
+| Option &nbsp; &nbsp; |    |
 | --- | --- |
 | `-c` | Compile only: create a .o file, don't create an executable (such as a.out) |
 | `-o filename` | Name the output `filename` instead of the default a.out |
