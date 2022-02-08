@@ -102,7 +102,7 @@ sentence.o: sentence.cpp sentence.h
 # This rule tells make what to delete when the user type "make clean"
 # The files are deleted -- BE VERY CAREFUL to only put generated files here
 clean:
-	rm -f main.o sentence.o main
+	rm -f main.o sentence.o sentence
 ```
 
 ### Compiler Options
