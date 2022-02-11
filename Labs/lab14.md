@@ -69,6 +69,8 @@ You are not required to use a Git repository hosting service for CSCI 211, but i
 
 * For instructions on setting up you Git username and password (necessary if cloning GitHub repos with HTTPS) and managing remote repositories, check out *Getting Started with Git* in the [GitHub Docs](https://docs.github.com/en/github/getting-started-with-github/getting-started-with-git)
 
+* It is recommended that you use the SSH protocol for connecting to and authenticating remote servers and services. With SSH keys, you can connect to GitHub without supplying your username and personal access token at each visit. GitHub has some good guidelines for [Generating a new SSH key](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent) and [Adding a new SSH key to your GitHub account](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account), including instructions for Mac, Windows, and Linux.
+
 * Bryan Dixon's [Git Basics Video](https://www.youtube.com/watch?v=0JgyAJMvZlY&feature=youtu.be) walks through basic Git usage, creating a new repository on GitHub, and creating a secure [RSA key pair](https://www.ssh.com/academy/ssh/keygen) so you can use SSH.
 
 * [Learn Git Branching](https://learngitbranching.js.org/) is a great interactive web tutorial that covers both basic and more advanced Git commands and techniques. The tutorial goes beyond what is necessary for this class, but it provides good practice and preparation for future classes and industry work.
