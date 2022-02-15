@@ -51,11 +51,10 @@ $ gvim filename
 For new users, the most difficult thing to get use to is vim's modal interface.<br>
 
 Unlike "normal" editors where everything you type is inserted into the document, gvim has two modes:
-* **Insert mode**: the keys you type are inserted into the file. Type an h and an h will be inserted into your file. (This the mode most other editors are always in.)
-* **Command mode**: the keys you type are commands. Type and h and the cursor will move to the left (the h key is the move to left command).
-
-There are several ways to enter insert mode (see below)
-* \<esc\> key stops the current insert
+* **Insert mode**: the keys you type are inserted into the file. Type an h and an h will be inserted into your file. (This is the mode most other editors are always in.)
+  * \<esc\> key stops the current insert and moves back to command mode
+* **Command mode**: the keys you type are commands. Type an h and the cursor will move to the left (the h key is the move to left command).
+  * When you open up a file with vim, you start in command mode. There are several ways to enter insert mode (see below)
 
 ### Moving around (while in command mode)
 
@@ -94,7 +93,7 @@ There are several ways to enter insert mode (see below)
 | dd | delete (cut) a line |
 | x | delete (cut) a character |
 
-> Note: to exit insert mode or visual mode, use the \<esc\> key
+> Reminder: to exit insert mode or visual mode, use the \<esc\> key
 
 ### The command line editor
 
@@ -121,7 +120,8 @@ You read this command as follows:
 | --- | --- |
 | `:q` | quit (exit the file) |
 | `:w` | write (save any changes) |
-| `:wq` | for write and then quit |
+| `:wq` | write (save) and then quit |
+| `:q!` | quit without save (if you've made changes but don't want them saved) |
 | `:e filename` | to start editing another file |
 
 The above is just a brief introduction. The more you learn about vim the faster you will be able to edit files.
