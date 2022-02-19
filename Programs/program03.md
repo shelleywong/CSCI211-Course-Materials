@@ -146,8 +146,8 @@ bool Vlist::remove(string title)
 ```
 In `main()`, the value returned by `remove` can be used to determine if an error message should be printed. Print all error messages from `main()`.<br>
 9. You may find it helpful to use `assert` to document what you think should be true or false while debugging. See the [assert documentation](https://www.cplusplus.com/reference/cassert/assert/) for more information.<br>
-10. When you make a mistake with a pointer, your program usually terminates with a `Segmentation Fault`. It can take a lot of time to track down these problems. Even if you did P2 at the last minute, it is a good idea to start P3 early.
-11. Make sure that you are correctly managing dynamic memory.
+10. When you make a mistake with a pointer, your program usually terminates with a `Segmentation Fault`. It can take a lot of time to track down these problems. Even if you did P2 at the last minute, it is a good idea to start P3 early.<br>
+11. Make sure that you are correctly managing dynamic memory.<br>
 12. Start today.
 
 ## Plan of Attack
