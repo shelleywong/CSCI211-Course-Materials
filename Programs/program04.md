@@ -66,7 +66,7 @@ Put `main()` in the file calc.cpp<br>
 
 ### Input
 
-Your program must read a single equation from standard input. The operators are `+ - * / ^` (^ is power, `2 4 ^` is 2 raised to the power of 4). Numbers can be any valid double number, for example 4, 4.2, .2, 0.2, 0000.233. You can assume that the number is small enough to fit into a double variable (I won't give you a number with 200 digits).<br>
+Your program must read a single equation from standard input. The operators are `+ - * / ^` (^ is power, `2 4 ^` is 2 raised to the power of 4). Numbers can be any valid double number, for example 4, 4.2, .2, 0.2, or 0000.233. You can assume that the number is small enough to fit into a double variable (I won't give you a number with 200 digits).<br>
 
 Your program should ignore all white space (spaces, tabs, newlines).<br>
 
@@ -115,7 +115,7 @@ Error: Invalid expression.
 ```
 followed by a newline (not a blank line, but a newline) and then terminate the program. Programs can be terminated by using the `exit()` functions, but you may only call `exit()` from calc.cpp (not from the Dstack class).<br>
 
-Your program must check for all possible errors (except numbers that are too large). This includes all illegal mathematical operations such as divide by zero. The power function is especially problematic. Consider it closely.<br>
+Your program must check for all possible errors (except numbers that are too large). This includes all illegal mathematical operations such as divide by zero. The power function is especially problematic. Consider it closely (hint: look at the [C++ pow documentation](https://www.cplusplus.com/reference/cmath/pow/)).<br>
 
 ## Helpful Hints
 
