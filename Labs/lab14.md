@@ -95,28 +95,29 @@ $ git config --list
 ```
 5. If you have never used Git before, you'll likely need to go through [First Time Git Setup](https://git-scm.com/book/en/v2/Getting-Started-First-Time-Git-Setup)
 
-  * If you are planning on cloning with HTTPS, you will need your GitHub username and password for every commit. GitHub suggests using a [personal access token](https://docs.github.com/en/github/authenticating-to-github/keeping-your-account-and-data-secure/creating-a-personal-access-token) in place of a password.
-
 6. If you are planning on cloning with SSH, you will need to generate an SSH key pair on your computer. You will add the public key to your GitHub account. Make sure your private key stays private (the first line of defense is to not let other people have access to your computer). The [Git Basics video](https://www.youtube.com/watch?v=0JgyAJMvZlY&feature=youtu.be) walks through the steps to generate a key pair and associate an SSH key with your GitHub account. You can also look into GitHub Doc's information on [Connecting to GitHub with SSH](https://docs.github.com/en/github/authenticating-to-github/connecting-to-github-with-ssh).
+
+  * It is recommended that you clone with SSH; however, there is also an alternative option to clone with HTTPS. In this case, you will need your GitHub username and password for every commit. GitHub suggests using a [personal access token](https://docs.github.com/en/github/authenticating-to-github/keeping-your-account-and-data-secure/creating-a-personal-access-token) in place of a password.
 
 ## Exercise 1: Complete the Git Google Survey
 
 The [Google survey](https://docs.google.com/forms/d/e/1FAIpQLSezh266Wzhha6HZtSdUQEX1QyvzDuzgWihREqvRgK6AFdLDjg/viewform?usp=sf_link) for this lab discusses Git when used with GitHub, but you would use similar commands when working with any Git repository hosting service. When you provide your answers, make sure that your answers are complete (i.e. include a branch name/file name/message/URL/etc if the command requires it to run successfully).<br>
 
-There are 17 questions in the [Google survey](https://docs.google.com/forms/d/e/1FAIpQLSezh266Wzhha6HZtSdUQEX1QyvzDuzgWihREqvRgK6AFdLDjg/viewform?usp=sf_link). Many of them can be answered with one Linux Git command. Let the instructor know if anything is unclear.<br>
+There are 20 questions in the [Google survey](https://docs.google.com/forms/d/e/1FAIpQLSezh266Wzhha6HZtSdUQEX1QyvzDuzgWihREqvRgK6AFdLDjg/viewform?usp=sf_link). Many of them can be answered with one Linux Git command. Let the instructor know if anything is unclear.<br>
 
-* Part 1 (questions 1-5):
+* Part 1 (questions 1-6):
   * Create a new GitHub repository (a remote repo)
   * Connect a remote repo with a local repo
   * Initialize a local repo as a Git repository
-* Part 2 (questions 6-11):
+* Part 2 (questions 7-13):
   * Check the status of your repo
   * Add and stage a commit
   * Push a commit from a local repo to a remote repo
-* Part 3 (questions 12-17):
+* Part 3 (questions 14-20):
   * Create a branch
   * Move between branches
   * Merge branches
+  * View your code on GitHub
 
 The Git commands covered in this survey are very useful for individual projects as well as larger collaborative projects. The focus is on commands that may benefit you on small individual projects, such as making frequent commits and utilizing separate branches to help you organize your work and learn from your commit history.<br>
 
