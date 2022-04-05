@@ -65,7 +65,7 @@ bool is_array_sorted(int values[], int size)
 Submit `sorted.cpp` to Turnin.
 
 ## Exercise 4: Recursive Is String An Integer
-(12 points) Write the recursive function `isint(char str[])` that takes a C-style string and returns true if the string in an integer (only digits) and false if the string is not an integer (contains characters other than digits). If the string is empty, return false (an empty string is not an integer).
+Write the recursive function `isint(char str[])` that takes a C-style string and returns true if the string in an integer (only digits) and false if the string is not an integer (contains characters other than digits). If the string is empty, return false (an empty string is not an integer).
 ```cpp
 bool isint(char str[])
 {
