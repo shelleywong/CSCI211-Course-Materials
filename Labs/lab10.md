@@ -52,7 +52,7 @@ int largest_in_array(int values[], int size)
 
 Submit `largest.cpp` to Turnin.
 
-# Exercise 3: Recursive Check If Sorted
+## Exercise 3: Recursive Check If Sorted
 Write a recursive function that takes an array of integers and returns true if the array is sorted from smallest value to largest value and false if the array is not sorted. Don't forget any special cases.
 ```cpp
 bool is_array_sorted(int values[], int size)
