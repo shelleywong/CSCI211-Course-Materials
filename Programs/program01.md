@@ -77,7 +77,7 @@ Your program must work exactly like this. It must not print any other characters
 
 ## Helpful Hints
 
-### Use Constants
+### Use Constants and Avoid Magic Numbers
 
 Since you will not be given more than 100 integers, create an array of 100 integers. It is good programming practice to place the "100" in a single place so that it is easy to change:
 ```cpp
@@ -90,7 +90,7 @@ for (int i = 0; i < MAX; i++)
 }
 ```
 
-The above is better than:
+[Magic numbers](https://en.wikipedia.org/wiki/Magic_number_(programming)) are unique values with unexplained meaning or multiple occurrences which could (preferably) be replaced with named constants (as shown above). The above is better than:
 ```cpp
 int values[100];
 ...
@@ -99,6 +99,8 @@ for (int i = 0; i < 100; i++)
     ...
 }
 ```
+
+The use of unnamed magic numbers in code obscures the developers' intent in choosing that number, increases opportunities for subtle errors, and makes it more difficult for the program to be adapted and extended in the future. Replacing magic numbers with named constants (also called explanatory variables) makes programs easier to read, understand and maintain.
 
 ### Finding the Largest Number
 
