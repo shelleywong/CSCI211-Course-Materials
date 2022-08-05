@@ -16,6 +16,22 @@ You do not need to learn or use vim/gvim for this class; however, using an advan
 
 Vim is very readily available -- installed by default on Linux and Mac, and easily installed on Windows. Companies may use an IDE or editor that you are unfamiliar with, but in almost any situation, you will be able to use Vim.
 
+### Configure vim
+
+You can [configure vim with a vimrc file](https://linuxhint.com/configure_vim_vimrc/).<br>
+
+I usually stick with creating a .vimrc file for your login user (reminder: the dot at the beginning indicates that this is a hidden file -- use `ls -a` to see hidden files in the current directory):
+```
+$ touch ~/.vimrc
+```
+
+The following is an example of a .vimrc file with configurations for setting tab size to 4 spaces, enabling auto indentation, and replacing tabs with whitespace:
+```
+set tabstop=4
+set autoindent
+expandtab
+```
+
 ### vim/gvim References
 
 Online version of Steve Oualline's [vim book](http://www.truth.sk/vim/vimbook-OPL.pdf).<br>
