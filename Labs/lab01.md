@@ -6,9 +6,9 @@ Introduction to Linux and the g++ Compiler
 
 * Overview: Linux organization
 * Introduce several basic Linux commands
-* Provide an example of creating, compiling, and running a c++ program
 * Set up all the directories for the course assignments
-* Provide practice creating, compiling, and running c++ programs
+* Provide practice creating, compiling, and running C++ programs
+* Get experience testing your assignments (before submitting to Turnin)
 * Work on Programming Assignment 01
 <br>
 
@@ -21,7 +21,9 @@ Lab 01 Exercises:
 
 ## Lecture Notes
 
-[Linux Tutorial -- recommended for everyone](https://ryanstutorials.net/linuxtutorial/)<br>
+These are two beginners guides to the Linux command line. Recommended for everyone!
+* [Linux Tutorial](https://ryanstutorials.net/linuxtutorial/) -- (Ryan's Tutorials)
+* [The Linux command line for beginners](https://ubuntu.com/tutorials/command-line-for-beginners#1-overview) -- (Ubuntu)
 
 ### Linux Overview
 
@@ -35,9 +37,9 @@ Lab 01 Exercises:
   * Common Linux shells: bash, zsh, fish, ksh, tcsh, ...
   * See what shell you are using: `echo $0`
 * GUI:
-  * Linux is flexible and customizable: works through the terminal, or you can install a graphical user interface
-  * Windowing System: software that manages different parts of a display screen (X-windows is the most common)
-  * Windows Manager: controls the placement of windows within a windowing system (Xfce, KDE, Gnome, etc)
+  * Linux is flexible and customizable: works through the terminal, or you can install a Graphical User Interface
+    * A Window Manager facilitates interactions between windows, applications, and the windowing system.
+    * A Windowing System handles hardware devices such as pointing devices, graphics hardware, and positioning of the pointer.
 
 > Note: For CSCI 211, I recommend you work with a Linux CLI. Proficiency with shell-based interaction will benefit you in future classes. Still, you should look into the available options and determine what works best for you.
 
@@ -132,7 +134,7 @@ $ mkdir ~/211  // make a new directory in your home directory called "211"
     * `w`: write permission (numerical value of 2 or 010)
     * `x`: execute permission (numerical value of 1 or 001)
 
-  * The following example changes the file permissions for a file named `myprog.cpp` such that you (the owner) will have full read and write access to the file, and all others with have no access to the file (`myprog.cpp` is in the current working directory):
+  * The following example changes the file permissions for a file named `myprog.cpp` such that you (the owner) will have full read and write access to the file, and all others will **not** have access to the file (`myprog.cpp` is in the current working directory):
 ```
 $ chmod 600 myprog.cpp  
 ```
@@ -217,7 +219,7 @@ $ code hello.cpp
 
 All of these are available on Linux. Vim and Emacs are hard to learn, so if you don't already know one, I'd suggest starting with Atom. If you are interested in working with Vim, you may want to review [Lab 4](https://github.com/shelleywong/CSCI211-Course-Materials/blob/main/Labs/lab04.md).<br>
 
-If you plan to use Putty and ssh into ecc-linux to do your assignments, then vim or nano is a better choice.<br>
+If you plan to use Putty or another SSH client to connect to ecc-linux to do your assignments, then vim or nano is a better choice.<br>
 
 Becoming very familiar with the editor of your choice will be beneficial to you in the long run. Learning how to work with a variety of editors can also be helpful to prepare you for future jobs.
 
@@ -365,7 +367,11 @@ $
 
 The main point of these assignments is to introduce you to the [testing mechanism](https://github.com/shelleywong/CSCI211-Course-Materials/blob/main/Labs/README.md#testing-assignments) (instructions in the Lab directory README).<br/>
 
-Students who don't understand how < and > are used to test assignments struggle throughout the semester.<br>
+Make sure you understand how to:
+* use file redirection to test assignments (using < and > to redirect input into a program and redirect output to a file).
+* compare your output to the correct output (using `cat`, `diff`, `vimdiff`)<br>
+
+Students who do not understand how to test their assignments tend to struggle throughout the semester.<br>
 
 If you have time left over, I recommend that you start working on p1. After you've made some progress on the assignment, try using the testing mechanism to test your code before you submit it to Turnin.
 
