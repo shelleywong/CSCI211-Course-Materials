@@ -356,7 +356,7 @@ $ ./a.out
 4 hello
 $
 ```
-* All the characters shown above were printed by the program, except the 5<enter> which was typed by the user. So, at the beginning of each line where you print "hello", there should be a number and a space. The number should start at 0 and count up, representing the number of times "hello" is displayed).
+* All the characters shown above were printed by the program, except the 5<enter> which was typed by the user. So, at the beginning of each line where you print "hello", there should be a number and a space. The number should start at 0 and count up, representing the number of times "hello" is displayed.
 * Change directory to the `lab01/print` directory.  Create a new file called `print.cpp`.
 * Use a for-loop to implement this program.
 * When your program is working, test it with the posted tests (see the testing and turn in instructions for exercise 3; the only difference is that the tests are in the directory `211-starter-pack/211/lab01_print/tests`).
