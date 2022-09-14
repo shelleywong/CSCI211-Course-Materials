@@ -305,7 +305,7 @@ You will get 30 points extra credit if your program passes all the extra credit 
 
 Instead of having a single checkout queue, give each checker its own queue.<br>
 
-When a customer is done shopping, put the customer on the checker with the fewest number of customers. `The number of customers is: the number of customers in the checker's queue + the customer being served (if there is one)`. Do not consider how many items each customer has or the time the checker will finish with the current customer. Ignore if a checker is on break when you are picking the shortest queue.<br>
+When a customer is done shopping, put the customer on the checker with the fewest number of customers. `The number of customers is: the number of customers in the checker's queue + the customer being served (if there is one)`. Do not consider how many items each customer has or the time the checker will finish with the current customer.<br>
 
 If two or more checker queues have the same number of customers, use the checker with the lowest number (same as in the regular P5).<br>
 
