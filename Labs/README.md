@@ -121,7 +121,19 @@ Many of the directories in 211-starter-pack/211 include a subdirectory called `t
 
 This is how you could use `run_tests`, `vd`, and `vde` to test lab02_even (a directory that contains a `tests` subdirectory):<br>
 
-Copy each bash script from 211-starter-pack/bin into the lab02_even directory (this examples is completed from the 211-starter-pack directory as downloaded, but your paths may differ based on how you've set up your environment):
+If you are working from within the 211-starter-pack, you can use the run_tests script from the `bin` directory (in this case, using an executable named `myprog`) with the following command (if your directory is set up differently, you may need to update the path to the script):
+
+```
+$ ../../bin/run_tests myprog
+```
+
+If you get the "Permission denied" message, move to the bin directory and run the command to make the run_tests file executable:
+
+```
+$ chmod +x run_tests
+```
+
+Alternatively, you could copy each bash script from 211-starter-pack/bin into the lab02_even directory (this examples is completed from the 211-starter-pack directory as downloaded, but your paths may differ based on how you've set up your environment):
 ```
 $ cp bin/run_tests 211/lab02_even/
 $ cp bin/vd 211/lab02_even/
