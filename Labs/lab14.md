@@ -34,7 +34,7 @@ $ git --version     // see what version of git you have
 
 ### How do I get Git if I don’t have it installed?
 
-Download Git for your platform:
+[Download Git for your platform](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git):
 * [http://git-scm.com](http://git-scm.com) (all platforms)
 * [https://mac.github.com](https://mac.github.com) (Mac)
 * [https://windows.github.com](https://windows.github.com) (Windows)
