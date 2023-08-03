@@ -1,6 +1,6 @@
 # Lab 6
 
-Introduction to the GNU gdb and ddd debuggers
+Introduction to the GNU gdb debugger
 
 Lab 06 Exercises:
 * [Exercise 1: Debugging Practice Part 1](#exercise-1-debugging-practice-part-1) (lab06_gdb/p1)
@@ -8,7 +8,7 @@ Lab 06 Exercises:
 * [Exercise 3: Debugging Practice Part 3](#exercise-3-debugging-practice-part-3) (lab06_gdb/p3)
 * [Exercise 4: Debugging Practice Part 4](#exercise-4-debugging-practice-part-4) (lab06_gdb/p4)
 
-> Note: To get full credit for this lab, you must complete a Google Survey. You do not need to submit any files to Turnin for the lab 6 GDB exercises.
+> Note: To get full credit for this lab, you must complete a Google Survey. You do not need to submit any files to Turnin for the Lab 6 GDB exercises.
 
 Lab 06 Extra Credit: Exceptions (try/catch, throw)
 * [Extra Credit: An Exceptional Programming](#extra-credit-an-exceptional-program) (lab11_exceptions)
@@ -19,36 +19,49 @@ Lab 06 Extra Credit: Exceptions (try/catch, throw)
 
 ## Goals
 
-Learn the basics of the [GNU Project Debugger](https://www.gnu.org/software/gdb/) (gdb or ddd) so you can use them to find bugs in your class projects.
+Learn the basics of the [GNU Project Debugger](https://www.gnu.org/software/gdb/) (gdb) so you can use it to find bugs in your C++ programs (also works for many other programming languages).
 
 ## Required Survey
 
 You do not have to turn in any files for this lab, but you do have to complete [this Google survey](https://docs.google.com/forms/d/e/1FAIpQLSdNNjIHgqtmHd_zsGy12nYTealx90JQA_FDU_SFu9Dkrp3awg/viewform?usp=sf_link) to get credit for Lab 06.
 
-## gdb/ddd Lecture Notes
+## gdb Lecture Notes
 
 `gdb` is a program debugger. It allows you to examine a program while the program is executing. The interface to gdb is textual (just like the interface to the bash shell is textual). You control gdb by typing textual commands at its prompt (the gdb command prompt is `(gdb)`).<br>
 
-`ddd` provides a graphical user interface for gdb. The user can control gdb by pressing buttons and making menu selections. It also contains the ability to illustrate data structures (such as a linked list) using diagrams.<br>
+`gdb` is available on Linux, OSX (must install using homebrew, see Exercise Setup instructions below), and Cygwin (sometimes it doesn't work well on Cygwin).<br>
 
-Both `gdb` and `ddd` are available on Linux, OSX (must install using homebrew, see note below), and Cygwin (sometimes they don't work well on Cygwin).<br>
-
-You can learn about gdb and ddd using the man command
+You can learn about gdb using the man command
 ```
 $ man gdb
-$ man ddd
 ```
 * Complete gdb documentation can be found in the [gdb manual](https://www.gnu.org/software/gdb/documentation/).
+
+### Other options for debugging
+
+`ddd` provides a graphical user interface for gdb. The user can control gdb by pressing buttons and making menu selections. It also contains the ability to illustrate data structures (such as a linked list) using diagrams.<br>
+
+> Note: You may not be able to use `ddd` on ecc-linux.<br>
+
+You can learn about ddd using the man command
+```
+$ man ddd
+```
+
 * Complete ddd documentation is available on [ddd's homepage](https://www.gnu.org/software/ddd/).<br>
 
-`ddd` is easier to use in that it provides a nice menu and shows the codes being executed. However, it has a lot of features that may seem overwhelming at first. I suggest you try gdb first using the few simple commands listed below.  Once you have a good idea how gdb works, you can try ddd. Once you understand the concepts of debugging, you may prefer using ddd to debug your programs.
+`ddd` provides a nice menu and shows the codes being executed. However, it has a lot of features that may seem overwhelming at first. I suggest you try gdb first using the few simple commands listed below. Once you have a good idea how gdb works, you can try ddd. Once you understand the concepts of debugging, you may prefer using ddd to debug your programs.
 
-### Starting gdb (and ddd)
+> Note: If you have VSCode installed, you can get the C/C++ extension, which includes debugging features.
+
+### Starting gdb
 
 1. Compile your programs with the `-g` option. All .o files and the final linking must have the -g option. The -g option tells the compiler to put extra information (such as variable names) into the executable so a debugger can access them.
-2. At the command prompt type `gdb` (or `ddd`) followed by your executable name:
 ```
 $ g++ -g -o p1 p1.cpp
+```
+2. At the command prompt type `gdb` (or `ddd`) followed by the name of your executable:
+```
 $ gdb p1
 GNU gdb (Ubuntu 9.1-0ubuntu1) 9.1
 Copyright (C) 2020 Free Software Foundation, Inc.
@@ -96,7 +109,7 @@ Complete the following exercises with gdb. Then, if you have time and are intere
 
 **Note for SSH users**: ddd has a graphical window interface and therefore will not load via SSH (a text-based protocol).<br>
 
-**Note for Mac users**: You cannot do this lab on a Mac unless you have GNU's g++ and gdb installed. These are no longer part of xcode, you have to download and install them using [homebrew](https://brew.sh/). It takes over an hour to install g++ using homebrew. **I recommend you use ecc-linux or a comparable Unix-like system**.<br>
+**Note for Mac users**: You cannot do this lab on a Mac unless you have GNU's g++ and gdb installed. These are no longer part of xcode, you have to download and install them using [homebrew](https://brew.sh/). It takes over an hour to install g++ using homebrew. **I recommend you use ecc-linux or a comparable Unix-like system** to complete Lab 06.<br>
 
 I have created several sample programs for you to use with the debugger. You can find them in your 211-starter-pack/211/lab06_gdb directory.<br>
 
@@ -239,7 +252,9 @@ After completing the exercises and the survey, you can start working on programm
 
 All labs are due at 11:59pm the Friday following lab. For this lab you must complete the Google Survey (Exercises 1, 2, 3, and 4). You will not submit anything to Turnin for the Lab 06 GDB exercises. If you are not able to complete all the exercises, turn in your partial work for partial credit.
 
-## Extra Credit: An "Exceptional" Programming
+***
+
+## Extra Credit: An Exceptional Programming
 
 In this lab you will practice a common situation involving user input and error checking. You will write a simple program that asks the user to enter a number from 1 to 10. You must catch situations in which the user enters a number out of bounds (greater than 10 or less than 1), a non-integer number (e.g. a double), or a non-numeric value (e.g. a string). Your program is expected to recover and continue, until the user inputs a number that meets the specified criteria.<br>
 
