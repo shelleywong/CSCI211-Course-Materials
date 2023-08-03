@@ -3,8 +3,8 @@
 Practice using the C++ Standard Template Library (STL)
 
 Lab 11 Exercises
-* [Exercise 1: Read and Print GPS Locations Using a Vector](#exercise-1-read-and-print-gps-locations-using-a-vector) (lab13_path)
-* [Exercise 2: Read and Print Titles and Locations Using a Map](#exercise-2-read-and-print-titles-and-locations-using-a-map) (lab13_lookup)
+* [Exercise 1: Read and Print GPS Locations Using a Vector](#exercise-1-read-and-print-gps-locations-using-a-vector) (lab11_path)
+* [Exercise 2: Read and Print Titles and Locations Using a Map](#exercise-2-read-and-print-titles-and-locations-using-a-map) (lab11_lookup)
 
 ## Exercise 1: Read and Print GPS Locations Using a Vector
 
