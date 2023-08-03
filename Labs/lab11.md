@@ -1,147 +1,103 @@
 # Lab 11
 
-Exceptions (try/catch, throw)
+Practice using the C++ Standard Template Library (STL)
 
 Lab 11 Exercises
-* [Exercise 1: Getting Started](#exercise-1-getting-started) (lab11_exceptions)
-* [Exercise 2: Loop](#exercise-2-loop) (lab11_exceptions)
-* [Exercise 3: String Posers](#exercise-3-string-posers) (lab11_exceptions)
-* [Exercise 4: Bad Numbres](#exercise-4-bad-numbres) (lab11_exceptions)
+* [Exercise 1: Read and Print GPS Locations Using a Vector](#exercise-1-read-and-print-gps-locations-using-a-vector) (lab13_path)
+* [Exercise 2: Read and Print Titles and Locations Using a Map](#exercise-2-read-and-print-titles-and-locations-using-a-map) (lab13_lookup)
 
-## An "Exceptional" Programming
+## Exercise 1: Read and Print GPS Locations Using a Vector
 
-In this lab you will practice a common situation involving user input and error checking. You will write a simple program that asks the user to enter a number from 1 to 10. You must catch situations in which the user enters a number out of bounds (greater than 10 or less than 1), a non-integer number (e.g. a double), or a non-numeric value (e.g., string). Your program is expected to recover and continue, until the user inputs a number that meets the specified criteria, or until the end of input is detected.<br>
+Working in your 211-starter-pack/211/lab11_path directory, write a program (called `path`) that reads a collection of GPS locations until end of input is reached. Each GPS location is expressed as two numeric coordinates: the first number is always latitude and the second number is always longitude. As each set of coordinates is read from standard input, create a new `Location` object and add the `Location` to a vector. AFTER all the input has been read, traverse the vector and print the GPS locations to standard output (`cout`). You can use the Location class `print` function to put each location on its own line with a comma between the latitude and longitude:<br>
 
-This program uses [exceptions](https://www.cplusplus.com/doc/tutorial/exceptions/), which force the calling code to recognize an error condition and handle it. Exceptions are useful for catching runtime errors, which are errors that happen while the program is running, after the program has been successfully compiled.<br>
-
-In a program, a block of code is executed from within a *try-block*. If a problem shows up, the *throw* keyword is used to throw an exception, and the program can then *catch* the exception to handle the problem. Before terminating or continuing the program, we want to provide a useful error message that identifies the error so we know what issue caused the problem. Exceptions are similar to the [assert](https://www.cplusplus.com/reference/cassert/assert/) macro, as they both provide a way to test and identify if certain assumptions are being met by a program.<br>
-
-Read the sections below to guide your solution.<br>
-
-**Usage example (after completing all 4 exercises)**
+The first four lines are the input. The second four lines are the output.
 ```
-$ ./main
-Pick a number between 1 and 10.
--1
-You entered an illegal value of -1. Please try again.
-Pick a number between 1 and 10.
-11
-You entered an illegal value of 11. Please try again.
-Pick a number between 1 and 10.
-four
-This is not an integer. Please enter a number.
-Pick a number between 1 and 10.
-3.14
-Non-integer value. You entered something after 3.
-Pick a number between 1 and 10.
-7
-You picked 7.
+$ ./path
+39.727565 -121.847693
+39.729188 -121.846447
+39.729807 -121.842767
+39.729089 -121.842585
+39.727565,-121.847693
+39.729188,-121.846447
+39.729807,-121.842767
+39.729089,-121.842585
 $
 ```
 
-> Note: All of the exercises build on one another and work within the same main.cpp file.
+* Use the provided class `Location` to store each of the locations.
+* Look at the provided location.h file to see how class `Location` works, but do not change anything in class `Location`.
+* You must use a single STL vector to store all the `Location` object pointers.
+* At the end of the program, you can traverse the vector and delete all location objects (similar to how you would traverse an array of pointers to objects to delete all objects); however, you are not required to call delete on the `Location` objects for this lab exercise.<br>
 
-## Exercise 1: Getting Started
-
-You will prompt the user to enter a number (see usage example). You will then print out the number. Write this code in a main.cpp file. Compile using `make` or the following command:
-```
-$ g++ -Wall -pedantic -g -std=c++11 -o main main.cpp
-```
-
-Then test your program with this simple use case (no error checking yet).
-```
-$ ./main
-Pick a number between 1 and 10.
-3
-You picked 3.
-$
-```
-
-## Exercise 2: Loop
-
-Now, let's restrict the input to our desired range 1 to 10. If the value is out of range, print an error message and prompt again.<br>
-
-Not all problems require throwing and catching exceptions. This one is best handled by an if-statement within a loop.<br>
-
-Since we are basing the iteration on user input and we need the user to always enter at least once, which type of loop should you use? Please **do** consider this **while** designing your program. When the user enters a number between 1 and 10, print "You picked XX." (replacing XX with the user's numeric input). For this program, print all output to the standard output stream (cout).
-
-```
-$ ./main
-Pick a number between 1 and 10.
--1
-You entered an illegal value of -1. Please try again.
-Pick a number between 1 and 10.
-11
-You entered an illegal value of 11. Please try again.
-Pick a number between 1 and 10.
-9
-You picked 9.
-$
-```
-
-## Exercise 3: String Posers
-What happens if the user enters a string (e.g., "four") instead of an integer?  Try it out on your program.<br>
-
-By default, C++ does not throw an exception when there is a problem with the I/O. We can change that by activating exception-throwing for this situation. Add this line at the beginning of your `main`, before the program loop.
+How to declare a vector of pointers to Foo objects and add one Foo object to the vector:
 ```cpp
-cin.exceptions(iostream::failbit);
-```
+#include <vector>
+using namespace std;
 
-Run your `main` again and test using a string. Now what happens?<br>
-
-Your `cin` line now throws an exception if something is wrong with the input. In this case, `cin` received string input when it was expecting integer input, and the program aborted due to the error. We want to update the program to handle the error instead of immediately terminating. Surround your `cin` line (and lines that depend on that statement) within a `try` block. Add this `catch` block to catch the iostream failure, print an appropriate error message, reset the cin error flags, and clear the input sequence buffer:
-
-```cpp
-try
+int main()
 {
-  cin >> input;
-  // Conditional statements to check numeric input
-  ...
-}
-catch(iostream::failure& iof)
-{
-  cout<<"This is not an integer. Please enter a number."<<endl;
-  cin.clear(); // reset error flags
-  cin.ignore(numeric_limits<streamsize>::max(), '\n'); // clear buffer
+    // declares a vector of pointers to class Foo
+    vector<Foo *> my_foos;
+
+    // create a new Foo object and insert it at end of the vector
+    my_foos.push_back(new Foo());
+
+    ...
 }
 ```
 
-You will need to include a library to support `numeric_limits`. Search the Internet to determine which one. You can see some additional examples of try/catch in the [C++ documentation on Exceptions](https://www.cplusplus.com/doc/tutorial/exceptions/).
+Read about the [vector's operator[]](https://www.cplusplus.com/reference/vector/vector/operator[]/) to learn how to access elements in the vector similar to how you access elements in an array. You may use any of the [STL vector member functions](https://www.cplusplus.com/reference/vector/vector/).<br>
 
-## Exercise 4: Bad Numbres
+Turn in `path.cpp`.
 
-What happens if you enter a double value instead of an integer? Try it out.<br>
+## Exercise 2: Read and Print Titles and Locations Using a Map
 
-We need to identify this situation, throw an error, and catch it.<br>
+Working in your 211-starter-pack/211/lab11_lookup directory, write a program (called `lookup`) that reads a collection of GPS locations and titles. Each title is a string without any spaces. You should use the provided `Location` class to hold the GPS locations (this class is the same as the Location class in Exercise 1). Continue reading locations and titles from standard input until the user enters 0 (while using 0 to signal the end of input is limiting, it makes writing the program much easier). You should **not** use EOF here, because your program will need to handle input after it receives all pairs of GPS locations and titles.<br>
 
-Inside your `try` block, after you read in numeric input, add another nested `try-catch` block. Inside of the nested `try` block, include a condition that "peeks" ahead at the next character. If it is anything but `'\n'` (newline), then it is a bad number (not an integer). In that case, throw an error. Consider the provided catch block. What should you throw?<br>
-```cpp
-// after program gets input from the standard input stream
-try
-{
-  // condition to peek at next character:
-  // if next char is a newline, the input is an integer, and we can check if the input is in the range 1-10;
-  // otherwise, the next char is anything but a newline -- throw <expression> to the corresponding catch block
-}
-catch(int pnum)
-{
-  cout<<"Non-integer value. You entered something after "<<pnum<<"."<<endl;
-  cin.clear();  // reset error flags
-  cin.ignore(numeric_limits<streamsize>::max(), '\n');  // clear buffer
-  pnum = 0;  // reset num to its initial value
-}
+After 0 is entered, read titles from standard input until the end of input. As each title is read, look up the title in the map. If the location is found, print the location associated with the title (see below for how the output should be formatted). If the title is not in the map, print the message (shown below) indicating that the title is not in the database.<br>
+
+The following input:
+```
+39.727565   -121.847693   211_Lab
+39.729188   -121.846447   211_Lecture
+39.729807   -121.842767   Celestinos_Pizza
+39.729089   -121.842585   The_Bear
+0
+The_Bear
+311_Lecture
+Celestinos_Pizza
 ```
 
-We use the catch-block to catch the problem number `pnum`, print an appropriate error message, reset the error flags, clear the buffer, and reset pnum. Notice that we are expecting integer input from `cin`, so the input that is thrown is an integer, not the entire invalid problem input.<br>
+Should produce this output (all messages, including the error message, should be printed to standard output):
+```
+The_Bear is at 39.729089,-121.842585
+311_Lecture not in database
+Celestinos_Pizza is at 39.729807,-121.842767
+```
 
-Once you are finished, submit your `main.cpp` to Turnin.
+* You must use a C++ STL map to store the title/location pairs.
+* You can read the [STL map documentation](https://www.cplusplus.com/reference/map/map/) for more information. Explore the map member functions to find examples of how to use the STL map.
+* You do not have to call delete on the Location objects for this exercise.<br>
 
-***
+> HINT: The map's `find` function returns an iterator. You may find it helpful to review the slides from Lecture 10: Templates, STL.<br>
 
-If you have completed Lab 11, you may work on P5 or P6.
+Turn in `lookup.cpp`
+
+## Exercise 3 (no points, just for fun)
+
+Working in your 211-starter-pack/211/lab11_google directory, modify the program in Exercise 2 so that instead of printing the lat/long when you find a location in the map, print a complete Google Maps URL:
+
+```
+The_Bear is at __________
+```
+where the `__________` is replace with the URL.<br>
+
+You can test your URL by pasting it into a browser. If the target is shown, then your URL is correct. Everything else about this program should be the same as the lookup program in Exercise 2.<br>
+
+The Google Maps URL has changed since this exercise was originally assigned, so actually getting an accurate location marker requires more information than just the coordinates mentioned above. However, your URL should return a map that centers on Chico, CA.
 
 ## Lab 11 Submissions
 
-Most labs are due at 11:59pm the Friday following lab; however, since Midterm 2 is this week and there are no exercises for Lab 12, the lab for this week (Lab 11) is due at the end of week 12. For this lab you must submit `main.cpp` (Exercises 1, 2, 3, and 4) to [Turnin](https://turnin.ecst.csuchico.edu/). If you are not able to complete all the exercises, turn in your partial work for partial credit.
+All labs are due at 11:59pm the Friday following lab. For this lab you must submit `path.cpp` (Exercise 1) and `lookup.cpp` (Exercise 2) to [Turnin](https://turnin.ecst.csuchico.edu/). If you are not able to complete all the exercises, turn in your partial work for partial credit.
 
 [Top of the Page](#lab-11)
