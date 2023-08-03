@@ -11,7 +11,7 @@ Lab 06 Exercises:
 > Note: To get full credit for this lab, you must complete a Google Survey. You do not need to submit any files to Turnin for the Lab 6 GDB exercises.
 
 Lab 06 Extra Credit: Exceptions (try/catch, throw)
-* [Extra Credit: An Exceptional Programming](#extra-credit-an-exceptional-program) (lab11_exceptions)
+* [Extra Credit: An Exceptional Program](#extra-credit-an-exceptional-program) (lab11_exceptions)
   * [Part 1: Getting Started](#part-1-getting-started)
   * [Part 2: Loop](#part-2-loop)
   * [Part 3: String Posers](#part-3-string-posers)
@@ -254,7 +254,7 @@ All labs are due at 11:59pm the Friday following lab. For this lab you must comp
 
 ***
 
-## Extra Credit: An Exceptional Programming
+## Extra Credit: An Exceptional Program
 
 In this lab you will practice a common situation involving user input and error checking. You will write a simple program that asks the user to enter a number from 1 to 10. You must catch situations in which the user enters a number out of bounds (greater than 10 or less than 1), a non-integer number (e.g. a double), or a non-numeric value (e.g. a string). Your program is expected to recover and continue, until the user inputs a number that meets the specified criteria.<br>
 
