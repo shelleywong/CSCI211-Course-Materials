@@ -98,7 +98,7 @@ $ ./hello_world > hello_world.myout
 By default, programs read from the keyboard. For example, say your program has the following line of code: `cin >> value;`. If you create an `add` executable and run the following command, the number typed at the keyboard will be placed into the variable `value`.<br>
 
 ```
-$ ./add
+ $ ./add
 ```
 
 Alternatively, you can tell the shell to redirect standard input (i.e. cin) to your `add` program from a specified file:
