@@ -98,7 +98,7 @@ $ ./hello_world > hello_world.myout
 By default, programs read from the keyboard. For example, say your program has the following line of code: `cin >> value;`. If you create an `add` executable and run the following command, the number typed at the keyboard will be placed into the variable `value`.<br>
 
 ```
-$ .add/
+$ ./add
 ```
 
 Alternatively, you can tell the shell to redirect standard input (i.e. cin) to your `add` program from a specified file:
@@ -292,7 +292,7 @@ int main()
 ```
 $ g++ hello.cpp
 ```
-If you get an error, use the editor to fix any errors in your code.<br>
+* If you get an error, use the editor to fix any errors in your code.<br>
 4. The `g++` command should have created a file called `a.out` -- use `$ ls -l` to find out if `a.out` is in your directory. Note that `a.out` automatically has execute protection ("x").  When a file has execute permission you can execute it.
 ```
 $ ls -l
