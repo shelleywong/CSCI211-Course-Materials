@@ -224,23 +224,11 @@ When writing programs without an IDE, you use a stand alone editor to create you
   * It is hard to learn how to use but provides powerful tools once you learn how to use it.  
   * Works on most Linux and Microsoft platforms.<br>
 
-You can start an editor and create a file called `hello.cpp` from the command line:
-```
-$ vim hello.cpp
-```
-
-Alternatively, you can create a file called `hello.cpp` from the command line without opening the editor:
-```
-$ touch hello.cpp
-```
-
-> The Atom and VSCode options listed above require some extra steps for setup steps -- search for how to launch the editor of your choice from the command line.
-
 All of these are available on Linux. Vim and Emacs are hard to learn, so if you don't already know one, I'd suggest starting with Atom or VSCode. If you are interested in working with Vim, you may want to review [Lab 4](https://github.com/shelleywong/CSCI211-Course-Materials/blob/main/Labs/lab04.md).<br>
 
 If you plan to use Putty or another SSH client to connect to ecc-linux to do your assignments, then vim or nano is a better choice.<br>
 
-Becoming very familiar with the editor of your choice will be beneficial to you in the long run. Learning how to work with a variety of editors can also be helpful to prepare you for future jobs.
+Become familiar with at least 1 editor of your choice -- it will be beneficial to you in the long run. Learning how to work with a variety of editors can also be helpful to prepare you for future jobs.
 
 ## Exercise 1: Setting up your CSCI 211 environment
 
@@ -280,11 +268,11 @@ $ mkdir print
 
 ## Exercise 2: Creating, compiling, and running a CPP program
 
-1. Enter the lab01/hello subdirectory, and create the file `hello.cpp`. The following command starts the vim editor and creates a file with the name `hello.cpp` (you could use a similar command with other editors):
+1. Enter the lab01_hello subdirectory, and create the file `hello.cpp`. The following command starts the vim editor and creates a file with the name `hello.cpp` (you could use a similar command with other editors):
 ```
 $ vim hello.cpp
 ```
-This is another way you could accomplish the same thing -- use `touch` to create the file and then start the editor (this time using the atom editor), opening up your present working directory:
+This is another way you could accomplish the same thing -- use `touch` to create the file and then start the editor (this time using Atom) and open up your present working directory:
 ```
 $ touch hello.cpp
 $ atom .
@@ -300,14 +288,14 @@ int main()
   return 0;
 }
 ```
-3. Compile this file using this command:
+3. Compile this file using the following command:
 ```
 $ g++ hello.cpp
 ```
-If you get an error, use the editor to fix the error.
-4. This should have created the file `a.out` -- use `$ ls -l` to find out if `a.out` is in your directory. Note that `a.out` automatically has execute protection ("x").  When a file has execute permission you can execute it.
+If you get an error, use the editor to fix any errors in your code.<br>
+4. The `g++` command should have created a file called `a.out` -- use `$ ls -l` to find out if `a.out` is in your directory. Note that `a.out` automatically has execute protection ("x").  When a file has execute permission you can execute it.
 ```
-$ ls -l a.out
+$ ls -l
 ```
 5. You can now run the executable `a.out`:
 ```
@@ -319,18 +307,17 @@ Submit `hello.cpp` to Turnin.
 
 ## Exercise 3: Addition
 
-Write a program that reads two numbers, adds them together, and prints the result.
+Write a program that reads in two numbers, adds the numbers together, and prints the result.
 
-* Move to your lab01/add directory:
+* Move to your lab01_add directory:
 ```
-$ cd ../add
+$ cd ../lab01_add
 ```
-The two dots mean to go "up" a directory and find the `add` directory. If that did not work, try using the "full directory path" or "full path":
-```
-$ cd ~/csci211/lab01/add
-```
+The two dots mean to go "up" a directory and find the `add` directory. If that did not work, try using cd with the "full directory path" or "full path" (use the `pwd` command to determine the full path to your current directory)
 
-* When your program is run, it should work like this (the "./a.out" "40" and "2" are typed by the user; the "40 + 2 = 42" is printed by the program):
+* Create a new file for your program called `add.cpp`.
+
+* When your program is run, it should work like this (the "./a.out" "40" and "2" are typed by the user, the "40 + 2 = 42" is printed by the program, and the "$" sign represents the command prompt):
 ```
 $ ./a.out
 40
@@ -338,12 +325,13 @@ $ ./a.out
 40 + 2 = 42
 $
 ```
-* For this exercise you will need to read in an integer.  You can read an integer in C++ like this:
+
+* For this exercise you will need to read in an integer.  You can read an integer in C++ using `cin`:
 ```cpp
+int value1;
 cin >> value1;
 ```
-Where "value1" has been declared as an integer before this line (C++ integers are declared just like in Java).
-* Create a new file called `add.cpp` using an editor.  Write the add program so it reads and adds the two numbers.
+
 * Compile and run your program to make sure it works correctly.  Your output must EXACTLY match my output: `<number><space><+><space><number><space><=><space><number><newline>`
 * Some sample input and output are available in `211-starter-pack/211/lab01_add/tests` directory. In this directory you will find *.in and *.out files. For example, `t01.in` is the input for test 1 and `t01.out` is the expected output for test 1. All of the tests in the directory will be used to grade your program on Turnin. If you pass these tests, you will get full credit.
 * An easy way to see the content of a small file is to use the Linux cat command:
@@ -354,7 +342,7 @@ $ cat tests/t01.out
 40 + 2 = 42
 $
 ```
-* See the [Labs directory README](https://github.com/shelleywong/CSCI211-Course-Materials/tree/main/Labs) for a full description of how to test your assignments. If you understand the described mechanism now, it will make your semester much easier, and will improve your grade. One of the most important aspects of this lab is for you to understand the testing mechanism.
+* See the [Labs directory README](https://github.com/shelleywong/CSCI211-Course-Materials/tree/main/Labs) for a full description of how to test your assignments. If you understand the described testing mechanism now, it will make your semester much easier. One of the most important aspects of this lab is for you to understand how to test your code!
 
 Once your program is working, turn in `add.cpp` on [Turnin](https://turnin.ecst.csuchico.edu/). For more information, see [instructions for turning in files](http://www.ecst.csuchico.edu/~trhenry/classes/general/how_to_turn_in_assignments.html).
 
@@ -364,7 +352,7 @@ Lab exercises are due by 11:59pm the Friday night following lab.
 
 ## Exercise 4: Say Hello
 
-Write a program that reads a number and prints "hello" that number of times:
+Write a program that reads in a number and prints "hello" that number of times:
 ```
 $ ./a.out
 5
@@ -376,9 +364,11 @@ $ ./a.out
 $
 ```
 * All the characters shown above were printed by the program, except the 5<enter> which was typed by the user. So, at the beginning of each line where you print "hello", there should be a number and a space. The number should start at 0 and count up, representing the number of times "hello" is displayed.
-* Change directory to the `lab01/print` directory.  Create a new file called `print.cpp`.
+
+* Move to your `lab01_print` directory.
+* Create a new file for your program called `print.cpp`.
 * Use a for-loop to implement this program.
-* When your program is working, test it with the posted tests (see the testing and turn in instructions for exercise 3; the only difference is that the tests are in the directory `211-starter-pack/211/lab01_print/tests`).
+* When your program is working, test it with the provided tests (see the testing and turn in instructions for Exercise 3; the only difference is that the tests are in the directory `211-starter-pack/211/lab01_print/tests`).
 * Make sure your program passes all the tests.
 * Turn in `print.cpp` to [Turnin](https://turnin.ecst.csuchico.edu/).
 
