@@ -21,6 +21,18 @@ Lab 01 Exercises:
 
 ## Lecture Notes
 
+Use these lecture notes as a quick reference for working with Linux:
+* [Linux Beginners Guides](#linux-beginners-guides)
+* [Linux Overview](#linux-overview)
+* [Linux Command Structure](#linux-command-structure)
+* [Linux Keyboard Control Characters](#linux-keyboard-control-characters)
+* [File Redirection](#file-redirection)
+* [Linux Pipes](#linux-pipes)
+* [Common Linux Commands](#common-linux-commands)
+* [Linux Editors](#linux-editors)
+
+### Linux Beginners Guides
+
 These are two beginners guides to the Linux command line. Recommended for everyone!
 * [Linux Tutorial](https://ryanstutorials.net/linuxtutorial/) -- (Ryan's Tutorials)
 * [The Linux command line for beginners](https://ubuntu.com/tutorials/command-line-for-beginners#1-overview) -- (Ubuntu)
@@ -37,13 +49,12 @@ These are two beginners guides to the Linux command line. Recommended for everyo
   * Common Linux shells: bash, zsh, fish, ksh, tcsh, ...
   * See what shell you are using: `echo $0`
 * GUI:
-  * Linux is flexible and customizable: works through the terminal, or you can install a Graphical User Interface
-    * A Window Manager facilitates interactions between windows, applications, and the windowing system.
-    * A Windowing System handles hardware devices such as pointing devices, graphics hardware, and positioning of the pointer.
+  * Linux is flexible and customizable: many users work with the operating system through the command-line terminal, but installing and using a Graphical User Interface is another option
+* More information on [Linux User Interface](https://en.wikipedia.org/wiki/Linux#User_interface) options
 
-> Note: For CSCI 211, I recommend you work with a Linux CLI. Proficiency with shell-based interaction will benefit you in future classes. Still, you should look into the available options and determine what works best for you.
+> Note: For CSCI 211, I recommend you work with a Linux CLI. Proficiency with shell-based interaction will benefit you in future classes, but feel free to look into the available options and determine what works best for you.
 
-### Linux Command structure
+### Linux Command Structure
 
 Commands in the Linux environment all have textual names. Instead of opening a window that shows the content of a directory you type a command at a prompt in a window. For example, the command `ls` show the contents of the current directory. A program called the shell will print a prompt (usually a "$" but can be anything you want) to indicate that it is ready for you to type a command.<br>
 
@@ -56,56 +67,61 @@ Why is text better than clicking buttons? Consider the problem of editing a grou
 ```
 $ for file in *.html; do sed s/112/211/g < $file > tmp; mv tmp $file; done
 ```
-While it may take some time before you can write such complicated commands, once you learn how to use a text based command shell it is much faster than using a point-and-click interface.
+While it may take some time before you can write such complicated commands, once you learn how to use a text based command shell it is much faster than using a point-and-click interface.<br>
 
-### Know What You are Doing
+**A word of caution:** Linux assumes that you really want to carry out the commands you execute, e.g. if you use the remove command to delete a file, the file will be deleted. It won't be put into the trash, it will be deleted. Sometimes you can recover the file from a system backup; however, it's crucial to handle files and directories with caution and have a backup strategy in place to protect against data loss.
 
-Linux assumes that you really want to do what you say you want to do. In other words, if you use the remove command to delete a file, the file will be deleted. It won't be put into the trash, it will be deleted. Once a file is deleted, it is deleted forever (system backups are done every night, so if the file existed the previous night you can get a copy from the backups).
+### Linux Keyboard Control Characters
 
-### Special Keys
+These three control characters are used to interact with processes running in the terminal (e.g. when you are done entering input):
 
 | What you type | What happens |
 | --- | --- |
-| ^C | kill the current process |
-| ^D | End of input (end of file) character (When you want to tell a program you are done entering input, type ^D) |
-| ^Z | Stop the current process (the process will still exist, but it won't be running). Don't do this until you understand how to restart processes (commands: jobs, fg, bg). |
+| ^C (CTRL + C) | Send an interrupt signal to terminate a running process |
+| ^D (CTRL + D) | Send an EOF (end of file) signal to indicate you've reached the end of input and the process should exit |
+| ^Z (CTRL + Z) | Suspend the current process (the process will still exist, but it will be moved to the background). Don't do this until you understand how to restart processes (e.g. use the `fg` to resume the process and bring it back to the foreground) |
 
 ### File Redirection
 
-Programs usually write to the current window. For example, if your program has the following line: `cout << "hello\n"`, then "hello" will be written to the current window.<br>
-
-You can tell the bash shell to redirect standard output (i.e. cout) to a file:
+By default, programs write to the current window. For example, say your program has this line of code: `cout << "hello\n"`. If you create a `hello_world` executable and run the following command, "hello" will be written to the current terminal window:
 ```
-$ ./hello_world > hello_world.myout
+$ ./hello_world
 ```
 * The `.` is used to mean the current directory
 
-Now when the program `hello_world` is run, text written to standard output will be place in the file hello_world.myout<br>
+Alternatively, you can run the `hello_world` program and tell the shell to redirect standard output (i.e. cout) to a specified file:
+```
+$ ./hello_world > hello_world.myout
+```
+* In this case, "hello" will be written to a file called hello_world.myout<br>
 
-Programs usually read from the keyboard. For example, if your program has the following line: `cin >> value;`, the number typed at the keyboard will be placed into the variable `value`.<br>
+By default, programs read from the keyboard. For example, say your program has the following line of code: `cin >> value;`. If you create an `add` executable and run the following command, the number typed at the keyboard will be placed into the variable `value`.<br>
 
-You can tell the shell to redirect standard input (i.e. cin) from a file:
+```
+$ .add/
+```
+
+Alternatively, you can tell the shell to redirect standard input (i.e. cin) to your `add` program from a specified file:
 ```
 $ ./add < test01.in
 ```
-Now when the program `add` is run, text read from standard input (cin) will be read from the file: test01.in
+* In this case, text read from standard input (cin) will be read from the file called test01.in
 
 ### Linux Pipes
 
 One of the most powerful features of the bash shell is the ability to connect the output of one command to the input of another command. Consider these two commands:
 ```
-$ ls    // this will list all the files in the current directory
-$ wc    // this will count all the characters, words, and lines in the input
+$ ls    // list all the files in the current directory
+$ wc    // count all the characters, words, and lines in the input
 ```
 If we take the output of `ls` and connected it to the input of `wc` (we say "pipe the output of ls to the input of wc") we can find out how many files are in the current directory:
 ```
 $ ls | wc
 ```
-The | is usually on the key above the Enter key.<br>
+* The `|` is usually on the key above the Enter/Return key.<br>
+* Any number of commands can be piped together!
 
-Any number of commands can be piped together.
-
-### Common Linux commands
+### Common Linux Commands
 
 * `cd` => change directory
   * `~` is used to mean your home directory
@@ -117,7 +133,7 @@ $ cd ..  // change to the parent of the current directory (the directory above t
 $ cd 211  // if "211" is a sub-directory of the current directory, change to it
 ```
 * `ls` => list the files in the current directory
-* `pwd` => show the current directory (called the path)
+* `pwd` => print the current working directory (called the path)
 * `mkdir` => make a new directory
 
 ```
@@ -178,16 +194,16 @@ $ man -k copy | less
 $ which cp
 ```
 
-### Linux editors
+### Linux Editors
 
 For 211 we will not be using an integrated development environment (IDE). The reason we are not using an IDE is because I want you to develop a good understanding of the tasks performed by an IDE. Once you have a good understanding of these tasks, you can switch to an IDE.<br>
 
-When writing programs without an IDE you use a stand alone editor to create your program (versus using the editor built in to Visual C++). This means you can pick from hundreds of available editors. Here are some common choices (most are available on the computers in the lab):
+When writing programs without an IDE, you use a stand alone editor to create your program. Feel free to pick from hundreds of available editors! Here are some common choices (some are available on the computers in the lab):
 1. [Vim](https://www.vim.org/)
   * Powerful and very popular version of Vi (de-facto Unix editor).
   * Works on most Linux and Microsoft platforms.
-  * It is hard to learn how to use but very fast once you learn how to use. (I will talk about it later in the semester.)
-  * The gvim editor is a graphical version of vim (runs inside a GUI window) -- a little harder to learn, more common to use vim
+  * It is hard to learn how to use but very fast once you learn how to use. (Will discuss more later in the semester.)
+  * The gvim editor is a graphical version of vim (runs inside a GUI window; a little harder to learn)
 2. [Atom](https://atom.io/)
   * Menu based editor that is easy to use (from GitHub).
   * Can download on your home machine.
@@ -195,7 +211,7 @@ When writing programs without an IDE you use a stand alone editor to create your
 3. [VSCode](https://code.visualstudio.com/)
   * Another easy to use editor (from Microsoft).
   * Includes support for things like debugging and syntax highlighting.
-  * Note: Visual Studio Code is different than Visual Studio IDE
+  * Note: VSCode (Visual Studio Code) is different than Visual Studio IDE
 4. [Sublime Text](https://www.sublimetext.com/)
   * Similar to Atom, but better performance and more lightweight
   * Free trials, but there is no free version
@@ -208,16 +224,19 @@ When writing programs without an IDE you use a stand alone editor to create your
   * It is hard to learn how to use but provides powerful tools once you learn how to use it.  
   * Works on most Linux and Microsoft platforms.<br>
 
-You can start an editor and create a file called `hello.cpp` from the command line (you could also use the command `touch hello.cpp` to create the file and then open the editor):
+You can start an editor and create a file called `hello.cpp` from the command line:
 ```
 $ vim hello.cpp
-$ atom hello.cpp
-$ code hello.cpp
+```
+
+Alternatively, you can create a file called `hello.cpp` from the command line without opening the editor:
+```
+$ touch hello.cpp
 ```
 
 > The Atom and VSCode options listed above require some extra steps for setup steps -- search for how to launch the editor of your choice from the command line.
 
-All of these are available on Linux. Vim and Emacs are hard to learn, so if you don't already know one, I'd suggest starting with Atom. If you are interested in working with Vim, you may want to review [Lab 4](https://github.com/shelleywong/CSCI211-Course-Materials/blob/main/Labs/lab04.md).<br>
+All of these are available on Linux. Vim and Emacs are hard to learn, so if you don't already know one, I'd suggest starting with Atom or VSCode. If you are interested in working with Vim, you may want to review [Lab 4](https://github.com/shelleywong/CSCI211-Course-Materials/blob/main/Labs/lab04.md).<br>
 
 If you plan to use Putty or another SSH client to connect to ecc-linux to do your assignments, then vim or nano is a better choice.<br>
 
