@@ -124,9 +124,9 @@ There are many default rules built into various versions of make. Thus in a larg
 When learning how to use make it is best to avoid the default rules and put in explicit rules for each file.
 
 ## Exercise 1: Simple Makefile
-\* You must complete this [Google Survey](https://docs.google.com/forms/d/e/1FAIpQLSft0f3fr4rMs0LIK2KWWbEs2EMYqQSBPFYjAcQzJWgQM3eq_A/viewform?usp=sf_link) to get credit for Exercises 1 & 2 \*
+\* You must complete this [Google Survey](https://docs.google.com/forms/d/e/1FAIpQLSft0f3fr4rMs0LIK2KWWbEs2EMYqQSBPFYjAcQzJWgQM3eq_A/viewform?usp=sf_link) to get credit for Exercises 1 & 2 \*<br>
 
-You will need to be logged in to your \@mail.csuchico email in order to take the Google Survey.<br>
+Note: You will need to be logged in to your \@mail.csuchico email in order to take the Google Survey. If you get a message that you are unable to access the survey, try using your Chico portal username and password to login to Google. If you are not sure how to proceed, feel free to ask for help!<br>
 
 You will need the 211 Starter Pack for this assignment, so if you haven't already, download 211-starter-pack.tar and extract (unpack) the archive file.<br>
 
