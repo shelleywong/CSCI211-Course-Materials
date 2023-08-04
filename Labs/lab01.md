@@ -1,14 +1,14 @@
 # Lab 1
 
-Introduction to Linux and the g++ Compiler
+Set up, Intro to Linux, g++ compiler, Git
 
 ## Goals
 
-* Overview: Linux organization
+* Get an overview of Linux organization
 * Introduce several basic Linux commands
-* Set up all the directories for the course assignments
-* Provide practice creating, compiling, and running C++ programs
-* Get experience testing your assignments (before submitting to Turnin)
+* Set up your environment (GitHub, all the directories for the course assignments)
+* Practice creating, compiling, and running C++ programs
+* Get experience testing your assignments (before submitting to Inginious)
 * Work on Programming Assignment 01
 <br>
 
@@ -17,7 +17,10 @@ Lab 01 Exercises:
 * [Exercise 2: Creating, compiling, and running a CPP program](#exercise-2-creating-compiling-and-running-a-cpp-program) (lab01_hello)
 * [Exercise 3: Addition](#exercise-3-addition) (lab01_add)
 * [Exercise 4: Say Hello](#exercise-4-say-hello) (lab01_print)
-* [Exercise 5: Make sure you understand the testing mechanism](#exercise-5-make-sure-you-understand-the-testing-mechanism)
+* [Exercise 5: Linux Commands and Testing Quiz](#exercise-5-linux-commands-and-testing-quiz)
+
+> Note: To get full credit for this lab, you must set up a CSUChico-CSCI211 GitHub account (exercise 1), submit 3 files to Inginious (exercises 2, 3, 4), and complete a Google Survey (exercise 5).
+
 
 ## Lecture Notes
 
@@ -45,7 +48,7 @@ These are two beginners guides to the Linux command line. Recommended for everyo
   * The computer program at the core of a computer's operating system
   * Main jobs: scheduling processes, communication between the hardware and user processes, management of memory, I/O, and other resources
 * Shell:
-  * Command line interface (CLI) that gives users the ability to interact with the computer through a terminal.
+  * Command line interface (CLI) that gives users the ability to interact with the computer's operating system through a terminal.
   * Common Linux shells: bash, zsh, fish, ksh, tcsh, ...
   * See what shell you are using: `echo $0`
 * GUI:
@@ -227,15 +230,15 @@ All of these are available on Linux. Vim and Emacs are hard to learn, so if you 
 
 If you plan to use Putty or another SSH client to connect to ecc-linux to do your assignments, then vim or nano is a better choice.<br>
 
-Become familiar with at least 1 editor of your choice -- it will be beneficial to you in the long run. Learning how to work with a variety of editors can also be helpful to prepare you for future jobs.
+Become familiar with at least one editor of your choice -- it will be beneficial to you in the long run. Learning how to work with a variety of editors can also be helpful to prepare you for future jobs.
 
 ## Exercise 1: Setting up your CSCI 211 environment
 
-Taking some time to set up and organize your working directory for CSCI 211 will help prevent turning in the wrong assignment and make it easier to keep track of your files.<br/>
+Taking some time to set up and organize your working directory for CSCI 211 will help prevent submitting the wrong assignment and make it easier to keep track of your files.<br/>
 
 Reminder to Mac and Windows users -- Options for using Linux and the GNU g++ compiler are listed in the Get Set Up for Success content area on Blackboard. For Mac users, I recommend setting up an Ubuntu Virtual Machine or the ecc-linux server (which you can access with ssh). For Windows users, I recommend using an Ubuntu Virtual Machine, WSL2, or the ecc-linux server.<br>
 
-You may want to use a Git repository manager, such as GitHub, that provides version control and other features to build and manage software. It can be a great tool for organizing your source code; HOWEVER, remember that whenever you are creating a directory for a class where everyone is turning in the same assignments (like in this CSCI 211 course), make sure to **make the visibility of this repository private!** If your repo is public, it means other students can see it and easily steal the code from it -- this constitutes cheating and is a violation of academic integrity. There is **no reason** to make a CSCI 211 repo publicly visible this semester OR after you have completed the class.
+You may want to use a Git repository manager, such as GitHub, that provides version control and other features to build and manage software. It can be a great tool for organizing your source code; HOWEVER, remember that whenever you are creating a directory for a class where everyone is submitting the same assignments (like in this CSCI 211 course), make sure to **make the visibility of this repository private!** If your repo is public, it means other students can see it and easily steal the code from it -- this constitutes cheating and is a violation of academic integrity. There is **no reason** to make a CSCI 211 repo publicly visible this semester OR after you have completed the class.
 
 * Refer to the [Cheating Policy](http://www.ecst.csuchico.edu/~trhenry/classes/general/cheating.html) or talk to me directly if you are unclear about any of this.
 * Refer to the [GitHub docs](https://docs.github.com/en/free-pro-team@latest/github) for additional guidance on working with GitHub.
@@ -301,7 +304,7 @@ $ ./a.out
 ```
 It is possible to [add `./` to the search path](https://stackoverflow.com/questions/27188856/adding-any-current-directory-to-the-search-path-in-linux) in Linux so that you do not have to type `./` before the executable every time, but it is not necessary. In my instructions, I will include `./` before all executables.<br/>
 
-Submit `hello.cpp` to Turnin.
+Submit `hello.cpp` to Inginious.
 
 ## Exercise 3: Addition
 
@@ -331,7 +334,7 @@ cin >> value1;
 ```
 
 * Compile and run your program to make sure it works correctly.  Your output must EXACTLY match my output: `<number><space><+><space><number><space><=><space><number><newline>`
-* Some sample input and output are available in `211-starter-pack/211/lab01_add/tests` directory. In this directory you will find *.in and *.out files. For example, `t01.in` is the input for test 1 and `t01.out` is the expected output for test 1. All of the tests in the directory will be used to grade your program on Turnin. If you pass these tests, you will get full credit.
+* Some sample input and output are available in `211-starter-pack/211/lab01_add/tests` directory. In this directory you will find *.in and *.out files. For example, `t01.in` is the input for test 1 and `t01.out` is the expected output for test 1. All of the tests in the directory will be used to grade your program on Inginious. If you pass these tests, you will get full credit.
 * An easy way to see the content of a small file is to use the Linux cat command:
 ```
 $ cat tests/t01.in
@@ -340,13 +343,9 @@ $ cat tests/t01.out
 40 + 2 = 42
 $
 ```
-* See the [Labs directory README](https://github.com/shelleywong/CSCI211-Course-Materials/tree/main/Labs) for a full description of how to test your assignments. If you understand the described testing mechanism now, it will make your semester much easier. One of the most important aspects of this lab is for you to understand how to test your code!
+* See the [Labs directory README](https://github.com/shelleywong/CSCI211-Course-Materials/tree/main/Labs) for a full description of how to test your assignments. If you understand the described testing mechanism now, it will make your semester much easier. One of the most important aspects of this lab is for you to understand how to test your code!<br>
 
-Once your program is working, turn in `add.cpp` on [Turnin](https://turnin.ecst.csuchico.edu/). For more information, see [instructions for turning in files](http://www.ecst.csuchico.edu/~trhenry/classes/general/how_to_turn_in_assignments.html).
-
-You must pass all the posted tests to get credit for a lab assignment.
-
-Lab exercises are due by 11:59pm the Friday night following lab.
+Once your program is working, submit `add.cpp` to [Inginious]().
 
 ## Exercise 4: Say Hello
 
@@ -367,23 +366,30 @@ $
 * Create a new file for your program called `print.cpp`.
 * Use a for-loop to implement this program.
 * When your program is working, test it with the provided tests (see the testing and turn in instructions for Exercise 3; the only difference is that the tests are in the directory `211-starter-pack/211/lab01_print/tests`).
-* Make sure your program passes all the tests.
-* Turn in `print.cpp` to [Turnin](https://turnin.ecst.csuchico.edu/).
+* Make sure your program passes all the tests.<br>
 
-## Exercise 5: Make sure you understand the testing mechanism
+Submit `print.cpp` to [Inginious]().
 
-The main point of these assignments is to introduce you to the [testing mechanism](https://github.com/shelleywong/CSCI211-Course-Materials/blob/main/Labs/README.md#testing-assignments) (instructions in the Lab directory README).<br/>
+## Exercise 5: Linux Commands and Testing Quiz
+
+One of the main point of these assignments is to familiarize you with the Linux command line interface and introduce you to the [testing mechanism](https://github.com/shelleywong/CSCI211-Course-Materials/blob/main/Labs/README.md#testing-assignments) (instructions in the Labs directory README).<br/>
 
 Make sure you understand how to:
+* navigate the Linux file system
+* interact with processes running in the terminal
+* add and remove files and directories
+* create and run an executable
 * use file redirection to test assignments (using < and > to redirect input into a program and redirect output to a file).
 * compare your output to the correct output (using `cat`, `diff`, `vimdiff`)<br>
 
-Students who do not understand how to test their assignments tend to struggle throughout the semester.<br>
+To check your understanding of these concepts and receive credit for Lab 01 Exercise 5, complete this [211 Linux Commands and Testing Google Survey](https://docs.google.com/forms/d/e/1FAIpQLScYYUFPLcTAE7BNwHmT3G98Ityvpeu7e_MNSLF2qC5pS_MXrw/viewform?usp=sf_link). <br>
 
-If you have time left over, I recommend that you start working on p1. After you've made some progress on the assignment, try using the testing mechanism to test your code before you submit it to Turnin.
+If you have time left over, I recommend that you start working on p1. After you've made some progress on the assignment, practice using the different options for testing your code before you submit the code to Inginious.
 
 ## Lab 01 Submissions
 
-All labs are due at 11:59pm the Friday following lab. For this lab you must turn in `hello.cpp`, `add.cpp`, and `print.cpp`. There is a separate submission link for each exercise on Turnin. If you are not able to complete all the exercises, turn in your partial work for partial credit.
+All labs are due at 11:59pm the Friday following lab. For this lab you must set up your CSUChico-CSCI211 GitHub account, submit `hello.cpp`, `add.cpp`, and `print.cpp` to Inginious (there is a separate submission link for each exercise), and complete the 211 Linux Commands and Testing Google Survey. If you are not able to complete all the exercises, turn in your partial work for partial credit (or submit later for late credit!)<br>
+
+For more information, see [instructions for submitting files]().
 
 [Top of the Page](#lab-1)
