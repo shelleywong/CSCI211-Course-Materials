@@ -96,7 +96,9 @@ $ ./hello_world > hello_world.myout
 * In this case, "hello" will be written to a file called hello_world.myout<br>
 
 By default, programs read from the keyboard. For example, say your program has the following line of code: `cin >> value;`. If you create an `add` executable and run the following command, the number typed at the keyboard will be placed into the variable `value`.<br>
-
+```
+$ ./add
+```
 
 Alternatively, you can tell the shell to redirect standard input (i.e. cin) to your `add` program from a specified file:
 ```
@@ -137,7 +139,7 @@ $ cd 211  // if "211" is a sub-directory of the current directory, change to it
 $ mkdir 211  // make a new directory in the current directory called "211"
 $ mkdir ~/211  // make a new directory in your home directory called "211"
 ```
-* `chmod` => change the protection (access) of a file or directory
+* `chmod` => change the access permissions of a file or directory
   * 3 distinct classes
     * `u`: user (person who owns the files & directories)
     * `g`: group (users who are members of a specified group)
