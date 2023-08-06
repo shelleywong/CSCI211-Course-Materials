@@ -236,13 +236,13 @@ Become familiar with at least one editor of your choice -- it will be beneficial
 
 ## Exercise 1: Setting up your CSCI 211 environment
 
-The goal of this exercise is for you to set up your working directory for CSCI 211. You will start with an existing repository that contains starter code, Makefiles, and test files that are organized based on the lab and programming assignments for this course. You will work in this directory, adding your own files and code to complete the assignments.<br/>
+The goal of this exercise is for you to set up your working directory for CSCI 211. You will start with an existing repository that contains starter code, Makefiles, and test files that are organized based on the lab and programming assignments for this course. Throughout the semester, you will work in this directory, adding your own files and code to complete the assignments.<br/>
 
 > Note: Before completing this exercise, it would be helpful to first make sure you have an environment setup that allows you to use Linux and compile your code with the GNU g++ compiler (see the 211 Getting Started Instructions on Canvas). Mac and Windows users: make sure you can access at least one of the following: ecc-linux (access with ssh), the lab computers, an Ubuntu virtual machine, WSL2 (for Windows), or GitHub codespaces.<br>
 
 The starter repo for this class is available on GitHub in the CSUChico-CSCI211 organization. GitHub is a Git repository manager that provides version control and other features to build and manage software.<br>
 
-After you create a GitHub account, you will use a repo generation tool to generate a **private** version of the starter repo for yourself. Private visibility means that only select individuals (e.g. you and the instructor) will have access to the repo. A public repo would be visible to anyone on the internet, meaning other students could easily see it and steal your code -- this constitutes cheating and is a violation of academic integrity. There is **no reason** to make your CSCI 211 code public this semester OR after you have completed the class. Refer to the Honesty and Academic Integrity policy in the syllabus if you have questions about this.
+After you create a GitHub account, you will use a repo generation tool to generate a **private** version of the starter repo for yourself. Private visibility means that only select individuals (e.g. you and the instructor) will have access to the repo. A public repo would be visible to anyone on the internet, meaning other students could easily see your repo and steal your code -- this constitutes cheating and is a violation of academic integrity. There is **no reason** to make your CSCI 211 code public this semester OR after you have completed the class. Refer to the Honesty and Academic Integrity policy in the syllabus if you have questions about this.
 
 ### Git and GitHub Overview
 
@@ -266,7 +266,7 @@ GitHub, GitLab, and BitBucket provide tools that help manage and host Git reposi
   * [GitLab Cheat Sheet](https://about.gitlab.com/images/press/git-cheat-sheet.pdf)
   * [Atlassian (BitBucket) Cheat Sheet](https://www.atlassian.com/git/tutorials/atlassian-git-cheatsheet)
 * Refer to the [GitHub docs](https://docs.github.com/en/free-pro-team@latest/github) for additional guidance on working with GitHub.
-* Check out *Getting Started with Git* in the [GitHub Docs](https://docs.github.com/en/github/getting-started-with-github/getting-started-with-git) for instructions on setting up you Git username and password (necessary if cloning GitHub repos with HTTPS) and managing remote repositories.
+* Check out [Getting Started with Git](https://docs.github.com/en/github/getting-started-with-github/getting-started-with-git) in the GitHub Docs for instructions on setting up you Git username and password (necessary if cloning GitHub repos with HTTPS) and managing remote repositories.
 * [Learn Git Branching](https://learngitbranching.js.org/) is a great interactive web tutorial that covers both basic and more advanced Git commands and techniques. The tutorial goes beyond what is necessary for this class, but it provides good practice and preparation for future classes and industry work.
 
 ### Steps for setting up your CSUChico-CSCI211 GitHub repo
@@ -282,10 +282,10 @@ GitHub, GitLab, and BitBucket provide tools that help manage and host Git reposi
   - The URL for your repo should be similar to the following: `github.com/CSUChico-CSCI211/CSCI211-F23-FirstName-LastName`
   - The repo should contain several files and directories. You will primarily be working in the `211` directory -- confirm that this directory contains subdirectories for lab exercises 1 - 11 and programming assignments 1 - 7.
 5. GitHub is a hosting service that can store your files and directories remotely. Now you need a way to interact with GitHub.
-  - Determine a location on your local machine and/or your Linux environment to house the local instance of your 211 repository (make sure you know the path to these files so you can access them at any time).
+  - Determine a location on your local machine and/or your Linux environment to house the local instance of your 211 repository (make sure you know the path to these files so you can easily access this repository).
 6. Set up SSH keys (so you can clone with SSH) OR a personal access token (so you can clone with HTTPS).
-  - If cloning with SSH: First, [check to see if you already have an existing SSH key](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/checking-for-existing-ssh-keys) – if you do, you may be able to use the same key for GitHub. If you do not have a key, [generate a new SSH key](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent). Then, [add your SSH key to your GitHub account](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account). Now you should be able to clone your repo and complete the rest of the lab exercises!
-  - If cloning with HTTPS: You will be asked for your GitHub username and password when completing several git commands. When Git prompts you for your password, you should use your [personal access token](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens). GitHub recommends that you use Fine-grained personal access tokens; however, you will need to use Personal access tokens (classic) to work with the CSUChico-CSCI211 GitHub repo. Follow GitHub's instructions for [creating a personal access token (classic)](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens#creating-a-personal-access-token-classic). Give your token an expiration date after the end of the semester. Now you should be able to clone your repo and complete the rest of the lab exercises!
+  - If cloning with SSH: First, [check to see if you already have an existing SSH key](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/checking-for-existing-ssh-keys) – if you do, you may be able to use the same key for GitHub. If you do not have a key, [generate a new SSH key](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent). Then, [add your SSH key to your GitHub account](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account). Now you should be able to clone your repo and continue on to the next step.
+  - If cloning with HTTPS: You will be asked for your GitHub username and password when completing several git commands. When Git prompts you for your password, you should use your [personal access token](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens). GitHub recommends that you use Fine-grained personal access tokens; however, you will need to use Personal access tokens (classic) to work with the CSUChico-CSCI211 GitHub repo. Follow GitHub's instructions for [creating a personal access token (classic)](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens#creating-a-personal-access-token-classic). Give your token an expiration date after the end of the semester. Now you should be able to clone your repo and continue on to the next step.
 
 > Note: if you are having trouble with one of the options above, ask the instructor about using GitHub Codespaces!
 
@@ -298,7 +298,7 @@ $ git --version
   * For Mac: [https://mac.github.com](https://mac.github.com)
   * For Linux: use the command, `sudo apt install git`
   * For all platforms: [http://git-scm.com](http://git-scm.com)
-8. Check your Git settings and confirm that you have set your name and email. First view your settings. If you see your name and email (e.g `user.name=Your Name` and `user.email=youremail@mail.com`), type `q` to exit and continue to the next step.
+8. Check your Git settings and confirm that you have set your name and email. Start by viewing your settings. If you see your name and email (e.g `user.name=Your Name` and `user.email=youremail@mail.com`), type `q` to exit and continue to the next step.
 ```
 $ git config --list
 ```
@@ -310,7 +310,7 @@ $ git config --global user.email johndoe@example.com
 9. [Clone your repository](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository)
   - Navigate to the main page of your CSUChico-CSCI211 repository
   - Above the list of files, click the green `< > Code` button.
-  - Copy the URL for the repository using either HTTPS or SSH (see step 6)
+  - Copy the URL for the repository using either HTTPS or SSH (depending on what you set up in step 6.)
   - Open a terminal
   - Change the current working directory to the location where you want the cloned directory
   - Type `git clone` and then paste the URL you copied earlier:
@@ -323,7 +323,7 @@ Now you should have a local instance of your CSCI211 repository! Complete the ne
 
 ### Steps for working with a local GitHub repo
 
-1. When you clone the repository, you will not be automatically moved into the directory. Move into the directory (the name should be similar to the following):
+1. When you clone the repository, you will not automatically move into the directory. Use the `cd` command to move into the directory (the name should be similar to the following):
 ```
 $ cd CSCI211-F23-FirstName-LastName
 ```
@@ -344,15 +344,17 @@ $ vim README.md
 * GitHub username: my-github-username
 * Chico State username: my-chico-username
 ```
+  -  Make sure to include the spacing as shown, so that your README.md file will include a second-level heading (for your name), some styling (italics around the semester), and an unordered list (for your GitHub and Chico State usernames).<br>
+
 > This code uses [GitHub Flavored Markdown](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax#lists). Markdown is plain-text formatting syntax that is commonly used in README files.<br>
 
-  -  Make sure to include the spacing as shown, so that your README.md file will include a second-level heading (for your name), some styling (italics around the semester), and an unordered list (for your GitHub and Chico State usernames).<br>
+
 5. When you are done editing, save your changes and exit the file.<br>
 6. Currently, our changes only exist locally, but we want our changes to appear in the remote CSCI211 GitHub repository. First, show the modified files in the working directory and confirm that there are only changes to the `README.md` file:
 ```
 $ git status
 ```
-7. See what has been changed (but not yet staged) in the `README.md` file (you can use vim commands to move around, then type `q` to exit):
+7. See what has been changed (but not yet staged) in the `README.md` file (this will open up the README.md file -- you can use vim commands to move around and view the changes, then type `q` to exit):
 ```
 $ git diff README.md
 ```
@@ -375,13 +377,13 @@ $ git push origin main
 
 9. Visit your CSCI211 GitHub repo and confirm that your changes have been added to your remote repo (reload the page if necessary). You should be able to see your changes in the README. You can also click on the "commits" button (below the green "< > Code" button) to see the history of all the commits to this repository, organized by date.<br>
 
-10. At this point, you are done with Lab 01, Exercise 1, you can complete the rest of Lab 01.<br>
+10. At this point, you are done with Lab 01, Exercise 1, and you can complete the rest of Lab 01.<br>
 
 I recommend that you commit and push all of your code for CSCI211 lab exercises and programming assignments to your GitHub repo IN ADDITION to submitting your code to Inginious for grading. Submitting to Inginious is necessary for grading, but committing and pushing to a remote repo is good practice:
 
 * **Git is very widely used in the software development industry** (many of your future employers and professors will want you to know how to use git!)
 * If your code has bugs and is not working, you can commit your code to the CSCI211 repo -- **I can easily view your code and help you debug**. (This is one of the easiest ways for me to help, because I can see all of your code in one location). In the future, you can refer back to your commit history and see how you resolved different bugs.
-* Give you **more experience with version control** (easily revert to previous versions, compare changes, and collaborate more effectively with others in the future).
+* Working with Git now will give you **more experience with version control** (easily revert to previous versions, compare changes, and collaborate more effectively with others in the future).
 * For **code backup and recovery** -- sometimes, your local machine fails or you accidentally delete code. If you make regular commits, you can more easily recover code that would otherwise be lost.
 * A **history of commits that shows your progress** is a good indicator to me that you have spent time working on your code and are not cheating (it is not the only indicator, but it is one thing I can refer to if your code is flagged).
 * If you are **unable to submit to Inginious for any reason** (e.g. if the VPN is not working), you can commit and push your code to GitHub. Let me know what happened; I can see the time/date that you submitted and refer to your code on GitHub when I am grading.
@@ -506,7 +508,7 @@ To check your understanding of these concepts and receive credit for Lab 01 Exer
 
 Note: You will need to be logged in to your \@mail.csuchico email in order to take the Google Survey. If you get a message that you are unable to access the survey, try using your Chico portal username and password to login to Google. If you are not sure how to proceed, feel free to ask for help!<br>
 
-If you have time left over, I recommend that you start working on p1. After you've made some progress on the assignment, practice using the different options for testing your code before you submit the code to Inginious.
+For this exercise, make sure to submit the [211 Linux Commands and Testing Google Survey](https://docs.google.com/forms/d/e/1FAIpQLScYYUFPLcTAE7BNwHmT3G98Ityvpeu7e_MNSLF2qC5pS_MXrw/viewform?usp=sf_link).
 
 ## Lab 01 Submissions
 
@@ -519,6 +521,9 @@ $ git commit -m "completes lab01 exercises"
 $ git push origin main
 ```
 
-For more information, see [instructions for submitting files]().
+For more information, see [instructions for submitting files]().<br>
+
+If you have time left over, I recommend that you start working on p1. After you've made some progress on the assignment, practice using the different options for testing your code before you submit the code to Inginious.
+
 
 [Top of the Page](#lab-1)
