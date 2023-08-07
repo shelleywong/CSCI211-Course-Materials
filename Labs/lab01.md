@@ -19,7 +19,7 @@ Lab 01 Exercises:
 * [Exercise 4: Say Hello](#exercise-4-say-hello) (lab01_print)
 * [Exercise 5: Linux Commands and Testing Quiz](#exercise-5-linux-commands-and-testing-quiz)
 
-> Note: To get full credit for this lab, you must set up a CSUChico-CSCI211 GitHub account (exercise 1), submit 3 files to Inginious (exercises 2, 3, 4), and complete a Google Survey (exercise 5).
+> Note: To get full credit for this lab, you must set up a CSUChico-CSCI211 GitHub account (exercise 1), submit 3 files to Inginious (exercises 2, 3, 4), and complete the Google Survey on Linux Commands and Testing (exercise 5).
 
 Lab 01 Extra Credit: Git Basics Survey
 * [Extra Credit: Complete the Git Google Survey](#extra-credit-complete-the-git-google-survey)
@@ -494,7 +494,7 @@ Submit `print.cpp` to [Inginious]().
 
 ## Exercise 5: Linux Commands and Testing Quiz
 
-One of the main point of these assignments is to familiarize you with the Linux command line interface and introduce you to the [testing mechanism](https://github.com/shelleywong/CSCI211-Course-Materials/blob/main/Labs/README.md#testing-assignments) (instructions in the Labs directory README).<br/>
+One of the main point of these assignments is to familiarize you with the Linux command line interface (refer to the [Lab 01 Lecture Notes on Linux](#lecture-notes)) and introduce you to the [testing mechanism](https://github.com/shelleywong/CSCI211-Course-Materials/blob/main/Labs/README.md#testing-assignments) (instructions in the Labs directory README).<br/>
 
 Make sure you understand how to:
 * navigate the Linux file system
