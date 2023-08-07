@@ -219,19 +219,19 @@ Remember that the first lines of all your files (.h and .cpp) must contain the f
 ```
 // filename
 // your name (first and last)
-// your Chico Portal/Turnin username
+// your Chico Portal/INGInious username
 // Short summary of the file contents
 ```
 
 ## Testing Your Program
 
 * Some sample tests and a Makefile are included in 211-starter-pack/211/p6.
-* Test your code before submitting it to Turnin -- you can review the instructions for Testing Assignments using the provided sample tests in the [Labs directory README](https://github.com/shelleywong/CSCI211-Course-Materials/tree/main/Labs).
+* Test your code before submitting it to INGInious -- you can review the instructions for Testing Assignments using the provided sample tests in the [Labs directory README](https://github.com/shelleywong/CSCI211-Course-Materials/tree/main/Labs).
 * In this case, I will NOT test your program with any additional tests.<br>
 
 ## Submitting Your Program
 
-Turn in the following files using [Turnin](https://turnin.ecst.csuchico.edu):
+Turn in the following files using [INGInious](https://inginious.csuchico.edu/):
 | .h files | .cpp files |
 | --- | --- |
 | grid.h | grid.cpp |

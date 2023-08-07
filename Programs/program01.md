@@ -136,7 +136,7 @@ Remember that the first lines of all your files (.h and .cpp) must contain the f
 ```
 // filename
 // your name (first and last)
-// your Chico Portal/Turnin username
+// your Chico Portal/INGInious username
 // Short summary of the file contents
 ```
 
@@ -148,11 +148,11 @@ Remember that the first lines of all your files (.h and .cpp) must contain the f
 
 ## Submitting Your Program
 
-I will deduct points if your program does not compile using the command `g++ -o chart chart.cpp` on a Linux machine (such as ecc-linux.csuchico.edu). If you submit your program on [Turnin](https://turnin.ecst.csuchico.edu/) and you get the message "Make did not report any errors", your program compiled without any errors.<br>
+I will deduct points if your program does not compile using the command `g++ -o chart chart.cpp` on a Linux machine (such as ecc-linux.csuchico.edu). If you submit your program on [INGInious](https://inginious.csuchico.edu/) and you get the message "Make did not report any errors", your program compiled without any errors.<br>
 
 I will grade your program using another program, so if your program does not work exactly as specified above you will lose points. For example, if you put a space at the end of the line, or a blank line at the end of the output, you will lose points. Test your program using the provided sample tests and `diff`, `vimdiff`, or the `run_tests` script to make sure your output matches exactly.
 
-Turn in the following file using [Turnin](https://turnin.ecst.csuchico.edu).
+Turn in the following file using [INGInious](https://inginious.csuchico.edu/).
 ```
 chart.cpp
 ```
@@ -164,7 +164,7 @@ If you are unable to complete everything on time, you should still turn in whate
 
 ## Extra Credit
 
-If you do the extra credit you have to turn in a second `chart.cpp` ("P1_extra" on [Turnin](https://turnin.ecst.csuchico.edu/)). Make sure you do not change or delete your original `chart.cpp`. For P1, extra credit is worth 10 points.<br>
+If you do the extra credit you have to turn in a second `chart.cpp` ("P1_extra" on [INGInious](https://inginious.csuchico.edu/)). Make sure you do not change or delete your original `chart.cpp`. For P1, extra credit is worth 10 points.<br>
 
 No extra credit will be give to late assignments (both the regular assignment and the extra credit must be turned in on time).<br>
 

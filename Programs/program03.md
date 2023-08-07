@@ -43,7 +43,7 @@ Use the `Video` class you created for P2 to store videos. If you did not finish 
 Create a linked list class called `Vlist` -- it will be a linked list of `Video *` (pointers to Video objects). Put this class in the files vlist.h and vlist.cpp. The nodes in this list must not be the `Video` objects.  Each `Node` will contain a pointer to a `Video` object and a pointer to the next `Node`.<br>
 
 Put the `main()` function in the file main.cpp
-> Note:  You MUST use the file names and variable names dictated by the instructions. This allows any programmer to use your interface. I cannot debug your program if your interface differs from the specifications. Also, your program will not pass the Turnin tests.
+> Note:  You MUST use the file names and variable names dictated by the instructions. This allows any programmer to use your interface. I cannot debug your program if your interface differs from the specifications. Also, your program will not pass the INGInious tests.
 
 The linked list should always be ordered alphabetically by title. The `insert` function should insert videos so that, after each call to insert(), all videos in the list are ordered alphabetically.<br>
 
@@ -182,21 +182,21 @@ Remember that the first lines of all your files (.h and .cpp) must contain the f
 ```
 // filename
 // your name (first and last)
-// your Chico Portal/Turnin username
+// your Chico Portal/INGInious username
 // Short summary of the file contents
 ```
 
 ## Testing Your Program
 
 * Some sample tests and a Makefile are included in 211-starter-pack/211/p3.
-* Test your code before submitting it to Turnin -- you can review the instructions for Testing Assignments using the provided sample tests in the [Labs directory README](https://github.com/shelleywong/CSCI211-Course-Materials/tree/main/Labs).
+* Test your code before submitting it to INGInious -- you can review the instructions for Testing Assignments using the provided sample tests in the [Labs directory README](https://github.com/shelleywong/CSCI211-Course-Materials/tree/main/Labs).
 * I will test your program with additional tests not posted in the test directory. It is a very good idea to design and implement your own set of tests.
 
 ## Submitting Your Program
 
 You should aim to turn in your assignment several times (at least three) during development. Only the last submission has to compile and run and only the last submission will be graded. The submissions should show your progress (e.g. the first submission has a little bit of the program working, the second a little more, etc). When I suspect cheating I will look at these early submissions for a clear development trend; I want to prevent students from copying finished programs from another student and then turning them in.<br>
 
-Turn in the following files using [Turnin](https://turnin.ecst.csuchico.edu):
+Turn in the following files using [INGInious](https://inginious.csuchico.edu/):
 ```
 video.h
 video.cpp
