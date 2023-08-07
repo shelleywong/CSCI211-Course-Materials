@@ -148,7 +148,7 @@ Remember that the first lines of all your files (.h and .cpp) must contain the f
 
 ## Submitting Your Program
 
-I will deduct points if your program does not compile using the command `g++ -o chart chart.cpp` on a Linux machine (such as ecc-linux.csuchico.edu). If you submit your program on [INGInious](https://inginious.csuchico.edu/) and you get the message "Make did not report any errors", your program compiled without any errors.<br>
+I will deduct points if your program does not compile using the command `g++ -o chart chart.cpp` on a Linux machine (such as ecc-linux.csuchico.edu). If you submit your program on [INGInious](https://inginious.csuchico.edu/) and you get a message that there are not any errors, your program compiled without any errors.<br>
 
 I will grade your program using another program, so if your program does not work exactly as specified above you will lose points. For example, if you put a space at the end of the line, or a blank line at the end of the output, you will lose points. Test your program using the provided sample tests and `diff`, `vimdiff`, or the `run_tests` script to make sure your output matches exactly.
 
@@ -158,9 +158,7 @@ chart.cpp
 ```
 All programming assignments are **individual** assignments -- you are expected to complete and submit your own program.<br>
 
-Assignments can be turned in up to 48 hours late with a 15% penalty.<br>
-
-If you are unable to complete everything on time, you should still turn in whatever work you have. If you turn in nothing, you get a zero. If you turn in something, you receive partial credit.
+If you are not able to complete this programming assignment, turn in your partial work for partial credit, or submit later for late credit. If you turn in nothing, you get a zero. If you turn in something, you receive a grade that is higher than zero.
 
 ## Extra Credit
 

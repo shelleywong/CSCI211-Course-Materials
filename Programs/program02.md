@@ -211,9 +211,7 @@ main.cpp
 
 All programming assignments are **individual** assignments -- you are expected to complete and submit your own program.<br>
 
-Assignments can be turned in up to 48 hours late with a 15% penalty.<br>
-
-If you are unable to complete everything on time, you should still turn in whatever work you have. If you turn in nothing, you get a zero. If you turn in something, you receive partial credit.
+If you are not able to complete this programming assignment, turn in your partial work for partial credit, or submit later for late credit. If you turn in nothing, you get a zero. If you turn in something, you receive a grade that is higher than zero.
 
 ## For an extra challenge (no points, just for fun)
 
