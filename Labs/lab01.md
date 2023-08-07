@@ -22,7 +22,7 @@ Lab 01 Exercises:
 > Note: To get full credit for this lab, you must set up a CSUChico-CSCI211 GitHub account (exercise 1), submit 3 files to Inginious (exercises 2, 3, 4), and complete a Google Survey (exercise 5).
 
 Lab 01 Extra Credit: Git Basics Survey
-
+* [Extra Credit: Complete the Git Google Survey](#extra-credit-complete-the-git-google-survey)
 
 ## Lecture Notes
 
@@ -354,7 +354,7 @@ $ vim README.md
 ```
 $ git status
 ```
-7. See what has been changed (but not yet staged) in the `README.md` file (this will open up the README.md file -- you can use vim commands to move around and view the changes, then type `q` to exit):
+7. See what has been changed (but not yet staged) in the `README.md` file (this command opens up the README.md file, and you can use vim commands to move around and view the changes (new lines will be highlighted in green and have a '+' sign next to them, while anything removed will be highlighted in red and have a '-' sign) -- type `q` to exit):
 ```
 $ git diff README.md
 ```
@@ -525,5 +525,28 @@ For more information, see [instructions for submitting files]().<br>
 
 If you have time left over, I recommend that you start working on p1. After you've made some progress on the assignment, practice using the different options for testing your code before you submit the code to Inginious.
 
+***
+
+## Extra Credit: Complete the Git Google Survey
+
+Complete the [Git Basics Google Survey](https://docs.google.com/forms/d/e/1FAIpQLSezh266Wzhha6HZtSdUQEX1QyvzDuzgWihREqvRgK6AFdLDjg/viewform?usp=sf_link) for extra credit -- this survey discusses Git when used with GitHub (you would use similar commands when working with any Git repository hosting service). When you provide your answers, make sure that your answers are complete (i.e. include a branch name/file name/message/URL/etc if the command requires it to run successfully).<br>
+
+There are 20 questions in this survey. Many of them can be answered with one Linux Git command, some of which are covered in Exercise 1. Other questions (such as the ones on branching and creating a new repo) are not discussed in Exercise 1 (hint: refer to the Git Cheat Sheets and try to see if you can use the commands and implement each step in a test repo). Let the instructor know if anything is unclear.<br>
+
+* Part 1 (questions 1-6):
+  * Create a new GitHub repository (a remote repo)
+  * Connect a remote repo with a local repo
+  * Initialize a local repo as a Git repository
+* Part 2 (questions 7-13):
+  * Check the status of your repo
+  * Add and stage a commit
+  * Push a commit from a local repo to a remote repo
+* Part 3 (questions 14-20):
+  * Create a branch
+  * Move between branches
+  * Merge branches
+  * View your code on GitHub
+
+The Git commands covered in this survey are very useful for individual projects as well as larger collaborative projects. The focus is on commands that may benefit you on small individual projects, such as making frequent commits and utilizing separate branches to help you organize your work and learn from your commit history.<br>
 
 [Top of the Page](#lab-1)
