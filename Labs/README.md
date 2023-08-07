@@ -6,7 +6,7 @@ Labs are short programming exercises that will be assigned for each lab session.
 * [Lab 03: Intro to the Linux make Utility, Practice Creating C++ Objects](https://github.com/shelleywong/CSCI211-Course-Materials/blob/main/Labs/lab03.md)
 * [Lab 04: Basics of the Vim Editor, Practice Programming Linked Lists](https://github.com/shelleywong/CSCI211-Course-Materials/blob/main/Labs/lab04.md)
 * [Lab 05: Practice Midterm Questions (Linked List Exercises)](https://github.com/shelleywong/CSCI211-Course-Materials/blob/main/Labs/lab05.md)
-* [Lab 06: Intro to GNU Debuggers](https://github.com/shelleywong/CSCI211-Course-Materials/blob/main/Labs/lab06.md)
+* [Lab 06: Intro to GNU Debuggers, Exceptions](https://github.com/shelleywong/CSCI211-Course-Materials/blob/main/Labs/lab06.md)
 * [Lab 07: Stack of Doubles](https://github.com/shelleywong/CSCI211-Course-Materials/blob/main/Labs/lab07.md)
 * [Lab 08: Command Line Arguments, File Input/Output](https://github.com/shelleywong/CSCI211-Course-Materials/blob/main/Labs/lab08.md)
 * [Lab 09: Priority Queue and Cust Class](https://github.com/shelleywong/CSCI211-Course-Materials/blob/main/Labs/lab09.md)
@@ -21,7 +21,7 @@ Labs are short programming exercises that will be assigned for each lab session.
 
 Instructions for testing CSCI 211 Labs and Programming Assignments.
 
-> Note: Exams may have questions on this material
+> Note: Tests may have questions on this material
 
 ### Background
 
@@ -92,7 +92,7 @@ $ vimdiff results/t01.myout tests/t01.out
 $ diff results/t01.myerr tests/t01.err
 ```
 
-### 211-starter-pack tests directory
+### CSCI 211 starter-repo tests directories
 
 Almost every lab and programming assignment directory will contain a `tests` folder containing sets of files for each test (e.g. `t01`). You may see files for input (\*.in), output (\*.out), error output (\*.err), command line input (\*.cmd) and exit status (\*.exit).<br>
 
@@ -108,7 +108,7 @@ It is important that you understand the manual testing options listed above, but
 * vde
 * [Turnin](https://turnin.ecst.csuchico.edu/)
 
-`run_tests`, `vd`, and `vde` are bash scripts (programs that the bash shell can execute) that should be included in your ~211-starter-pack/bin directory that you downloaded (211-starter-pack.tar):
+`run_tests`, `vd`, and `vde` are bash scripts (programs that the bash shell can execute) that are included in your CSCI211 starter-repo `bin/` directory):
 ```
 $ cd bin
 $ ls
@@ -117,11 +117,9 @@ run_test vd vde
 
 Among other things, bash scripts are useful for running tests, as they allow you to automate command line tasks that you would otherwise have to type out manually (for each test and for each time the tests need to be rerun).<br>
 
-Many of the directories in 211-starter-pack/211 include a subdirectory called `tests` that contains a set of sample tests. You can use the `run_tests` file to automatically test your program against all of the tests included in the `tests` subdirectory. `run_tests` will produce a `results` directory that will contain the output from your program for each test (standard output in a \*.myout file, standard error output in a \*.myerr file, etc)<br>
+Many of the directories in CSCI211 starter-repo `211/` include a subdirectory called `tests` that contains a set of sample tests. You can use the `run_tests` file to automatically test your program against all of the tests included in the `tests` subdirectory. `run_tests` will produce a `results` directory that will contain the output from your program for each test (standard output in a \*.myout file, standard error output in a \*.myerr file, etc)<br>
 
-This is how you could use `run_tests`, `vd`, and `vde` to test lab02_even (a directory that contains a `tests` subdirectory):<br>
-
-If you are working from within the 211-starter-pack, you can use the run_tests script from the `bin` directory (in this case, using an executable named `myprog`) with the following command (if your directory is set up differently, you may need to update the path to the script):
+If you are working from within your CSCI 211 repo, you can use the run_tests script from the `bin` directory (in this case, using an executable named `myprog`) with the following command (if your directory is set up differently, you may need to update the path to the script):
 
 ```
 $ ../../bin/run_tests myprog
@@ -133,7 +131,9 @@ If you get the "Permission denied" message, move to the bin directory and run th
 $ chmod +x run_tests
 ```
 
-Alternatively, you could copy each bash script from 211-starter-pack/bin into the lab02_even directory (this examples is completed from the 211-starter-pack directory as downloaded, but your paths may differ based on how you've set up your environment):
+Alternatively, you could copy each bash script from `bin/` into the directory where you want to use the scripts (this examples is completed from the CSCI211 starter-repo as provided, but your paths may differ based on how you've set up your environment.<br>
+
+This is how you could use `run_tests`, `vd`, and `vde` to test lab02_even (a directory that contains a `tests` subdirectory):<br>
 ```
 $ cp bin/run_tests 211/lab02_even/
 $ cp bin/vd 211/lab02_even/
@@ -145,7 +145,7 @@ Alternatively, you could copy all of the files from the bin folder into the lab0
 $ cp -r bin/. 211/lab02_even/
 ```
 
-If you would like to have `run_tests`, `vd`, and `vde` available in every lab and programming assignment directory, you can use the following to copy all of the `bin/` scripts into every `211/` subdirectory. From the 211-starter-pack/211 directory, run the following command:
+If you would like to have `run_tests`, `vd`, and `vde` available in every lab and programming assignment directory, you can use the following to copy all of the `bin/` scripts into every `211/` subdirectory. From the starter-repo/211 directory, run the following command:
 ```
 $ ls | xargs -n1 cp ../bin/*
 ```
