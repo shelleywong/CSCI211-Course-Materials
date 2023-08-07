@@ -311,7 +311,7 @@ $ git config --global user.email johndoe@example.com
 9. [Clone your repository](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository)
   - Navigate to the main page of your CSUChico-CSCI211 repository
   - Above the list of files, click the green `< > Code` button.
-  - Copy the URL for the repository using either HTTPS or SSH (depending on what you set up in step 6.)
+  - Make sure you are on the `Local` tab (it has options to Clone with HTTPS and SSH), and copy the URL for the repository using either HTTPS or SSH (depending on what you set up in step 6).
   - Open a terminal
   - Change the current working directory to the location where you want the cloned directory
   - Type `git clone` and then paste the URL you copied earlier:
