@@ -1,6 +1,6 @@
 # Programming Assignments
 
-Over the course of the semester, there will be 7 programming assignments. All programs must be completed individually. Each assignment contains program-specific requirements. All assignments should follow the General Requirements listed below. You may be asked to explain your code to the instructor or a lab assistant during lab time or office hours, and if you are unable to adequately do so, a percentage may be taken off your grade for that assignment. Programming assignments must be turned in to [Turnin](https://turnin.ecst.csuchico.edu/) by the due date (check Turnin or Blackboard to confirm).
+Over the course of the semester, there will be 7 programming assignments. All programs must be completed individually. Each assignment contains program-specific requirements. All assignments should follow the General Requirements listed below. You may be asked to explain your code to the instructor or a lab assistant during lab time or office hours, and if you are unable to adequately do so, a percentage may be taken off your grade for that assignment. Programming assignments must be turned in to [Turnin](https://turnin.ecst.csuchico.edu/) by the due date (check Turnin or Canvas to confirm).
 
 * [Program 1: Chart](https://github.com/shelleywong/CSCI211-Course-Materials/blob/main/Programs/program01.md)
 * [Program 2: Video Rating System](https://github.com/shelleywong/CSCI211-Course-Materials/blob/main/Programs/program02.md)
@@ -41,7 +41,7 @@ Ask the instructor if you have questions about any programming assignment expect
 
 ### Style Guide Overview
 
-Your program should be neatly organized, consistently indented, and have informative comments throughout. Avoid surprising or dangerous constructs that an average C++ programmer would find tricky or difficult to maintain. Refer to the CSCI 211 Style Guide (on Blackboard) for more details on each of these categories. Things to focus on include:
+Your program should be neatly organized, consistently indented, and have informative comments throughout. Avoid surprising or dangerous constructs that an average C++ programmer would find tricky or difficult to maintain. Refer to the CSCI 211 Style Guide (on Canvas) for more details on each of these categories. Things to focus on include:
 * [Variables](#variables)
 * [Classes](#classes)
 * [Functions](#functions)
