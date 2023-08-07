@@ -8,7 +8,7 @@ Set up, Intro to Linux, g++ compiler, Git
 * Introduce several basic Linux commands
 * Set up your environment (GitHub, all the directories for the course assignments)
 * Practice creating, compiling, and running C++ programs
-* Get experience testing your assignments (before submitting to Inginious)
+* Get experience testing your assignments (before submitting to INGInious)
 * Work on Programming Assignment 01
 <br>
 
@@ -19,7 +19,7 @@ Lab 01 Exercises:
 * [Exercise 4: Say Hello](#exercise-4-say-hello) (lab01_print)
 * [Exercise 5: Linux Commands and Testing Quiz](#exercise-5-linux-commands-and-testing-quiz)
 
-> Note: To get full credit for this lab, you must set up a CSUChico-CSCI211 GitHub account (exercise 1), submit 3 files to Inginious (exercises 2, 3, 4), and complete the Google Survey on Linux Commands and Testing (exercise 5).
+> Note: To get full credit for this lab, you must set up a CSUChico-CSCI211 GitHub account (exercise 1), submit 3 files to INGInious (exercises 2, 3, 4), and complete the Google Survey on Linux Commands and Testing (exercise 5).
 
 Lab 01 Extra Credit: Git Basics Survey
 * [Extra Credit: Complete the Git Google Survey](#extra-credit-complete-the-git-google-survey)
@@ -380,14 +380,14 @@ $ git push origin main
 
 10. At this point, you are done with Lab 01, Exercise 1, and you can complete the rest of Lab 01.<br>
 
-I recommend that you commit and push all of your code for CSCI211 lab exercises and programming assignments to your GitHub repo IN ADDITION to submitting your code to Inginious for grading. Submitting to Inginious is necessary for grading, but committing and pushing to a remote repo is good practice:
+I recommend that you commit and push all of your code for CSCI211 lab exercises and programming assignments to your GitHub repo IN ADDITION to submitting your code to INGInious for grading. Submitting to INGInious is necessary for grading, but committing and pushing to a remote repo is good practice:
 
 * **Git is very widely used in the software development industry** (many of your future employers and professors will want you to know how to use git!)
 * If your code has bugs and is not working, you can commit your code to the CSCI211 repo -- **I can easily view your code and help you debug**. (This is one of the easiest ways for me to help, because I can see all of your code in one location). In the future, you can refer back to your commit history and see how you resolved different bugs.
 * Working with Git now will give you **more experience with version control** (easily revert to previous versions, compare changes, and collaborate more effectively with others in the future).
 * For **code backup and recovery** -- sometimes, your local machine fails or you accidentally delete code. If you make regular commits, you can more easily recover code that would otherwise be lost.
 * A **history of commits that shows your progress** is a good indicator to me that you have spent time working on your code and are not cheating (it is not the only indicator, but it is one thing I can refer to if your code is flagged).
-* If you are **unable to submit to Inginious for any reason** (e.g. if the VPN is not working), you can commit and push your code to GitHub. Let me know what happened; I can see the time/date that you submitted and refer to your code on GitHub when I am grading.
+* If you are **unable to submit to INGInious for any reason** (e.g. if the VPN is not working), you can commit and push your code to GitHub. Let me know what happened; I can see the time/date that you submitted and refer to your code on GitHub when I am grading.
 * The list goes on :grinning:
 
 
@@ -427,7 +427,7 @@ $ ./a.out
 ```
 It is possible to [add `./` to the search path](https://stackoverflow.com/questions/27188856/adding-any-current-directory-to-the-search-path-in-linux) in Linux so that you do not have to type `./` before the executable every time, but it is not necessary. In my instructions, I will include `./` before all executables.<br/>
 
-Submit `hello.cpp` to Inginious.
+Submit `hello.cpp` to [INGInious](https://inginious.csuchico.edu/).
 
 ## Exercise 3: Addition
 
@@ -457,7 +457,7 @@ cin >> value1;
 ```
 
 * Compile and run your program to make sure it works correctly.  Your output must EXACTLY match my output: `<number><space><+><space><number><space><=><space><number><newline>`
-* Some sample input and output are available in `starter-repo/211/lab01_add/tests` directory. In this directory you will find *.in and *.out files. For example, `t01.in` is the input for test 1 and `t01.out` is the expected output for test 1. All of the tests in the directory will be used to grade your program on Inginious. If you pass these tests, you will get full credit.
+* Some sample input and output are available in `starter-repo/211/lab01_add/tests` directory. In this directory you will find *.in and *.out files. For example, `t01.in` is the input for test 1 and `t01.out` is the expected output for test 1. All of the tests in the directory will be used to grade your program on INGInious. If you pass these tests, you will get full credit.
 * An easy way to see the content of a small file is to use the Linux cat command:
 ```
 $ cat tests/t01.in
@@ -468,7 +468,7 @@ $
 ```
 * See the [Labs directory README](https://github.com/shelleywong/CSCI211-Course-Materials/tree/main/Labs) for a full description of how to test your assignments. If you understand the described testing mechanism now, it will make your semester much easier. One of the most important aspects of this lab is for you to understand how to test your code!<br>
 
-Once your program is working, submit `add.cpp` to [Inginious]().
+Once your program is working, submit `add.cpp` to [INGInious](https://inginious.csuchico.edu/).
 
 ## Exercise 4: Say Hello
 
@@ -491,7 +491,7 @@ $
 * When your program is working, test it with the provided tests (see the testing and turn in instructions for Exercise 3; the only difference is that the tests are in the directory `starter-repo/211/lab01_print/tests`).
 * Make sure your program passes all the tests.<br>
 
-Submit `print.cpp` to [Inginious]().
+Submit `print.cpp` to [INGInious](https://inginious.csuchico.edu/).
 
 ## Exercise 5: Linux Commands and Testing Quiz
 
@@ -513,7 +513,7 @@ For this exercise, make sure to submit the [211 Linux Commands and Testing Googl
 
 ## Lab 01 Submissions
 
-All labs are due at 11:59pm the Friday following lab. For this lab you must set up your CSUChico-CSCI211 GitHub account, submit `hello.cpp`, `add.cpp`, and `print.cpp` to Inginious (there is a separate submission link for each exercise), and complete the 211 Linux Commands and Testing Google Survey. If you are not able to complete all the exercises, turn in your partial work for partial credit (or submit later for late credit!)<br>
+All labs are due at 11:59pm the Friday following lab. For this lab you must set up your CSUChico-CSCI211 GitHub account, submit `hello.cpp`, `add.cpp`, and `print.cpp` to [INGInious](https://inginious.csuchico.edu/) (there is a separate submission link for each exercise), and complete the 211 Linux Commands and Testing Google Survey. If you are not able to complete all the exercises, turn in your partial work for partial credit (or submit later for late credit!)<br>
 
 Optional but recommended step: add, commit, and push your code to GitHub (the `add` command below adds all changes in the repo):
 ```
@@ -524,7 +524,7 @@ $ git push origin main
 
 For more information, see [instructions for submitting files]().<br>
 
-If you have time left over, I recommend that you start working on p1. After you've made some progress on the assignment, practice using the different options for testing your code before you submit the code to Inginious.
+If you have time left over, I recommend that you start working on p1. After you've made some progress on the assignment, practice using the different options for testing your code before you submit the code to INGInious.
 
 ***
 
