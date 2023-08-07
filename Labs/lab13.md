@@ -2,5 +2,6 @@
 
 * Discussion, Q&A, help on the Shapes assignment (P6) and Binary Search Tree assignment (P7)
 * Project Work Time
+  - Lab 13 Project Goal: Get all input, add the input to your data structure, and print out all entries in a readable format (make at least one commit to your project repo)
 
-Reminder: Even though there are not any new lab exercises this week, you will get credit for attending lab and working on your CSCI 211 assignments!
+Reminder: Even though there are not any new lab exercises this week, you will get credit for attending lab, working on your programming assignments, and making progress on your final project!
