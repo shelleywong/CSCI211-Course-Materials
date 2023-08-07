@@ -252,7 +252,7 @@ After completing the exercises and the survey, you can start working on programm
 
 ## Lab 06 Submissions
 
-All labs are due at 11:59pm the Friday following lab. For this lab you must complete the Google Survey (Exercises 1, 2, 3, and 4). You will not submit anything to INGInious for the Lab 06 GDB exercises (there is an INGInious submisssion for the Lab 06 Extra Credit). If you are not able to complete all the exercises, turn in your partial work for partial credit.
+All labs are due at 11:59pm the Friday following lab. For this lab you must complete the Google Survey (Exercises 1, 2, 3, and 4). You will not submit anything to INGInious for the Lab 06 GDB exercises (there is an INGInious submisssion for the Lab 06 Extra Credit). If you are not able to complete all the exercises, turn in your partial work for partial credit, or submit later for late credit.
 
 ***
 
@@ -386,6 +386,6 @@ Once you are finished, submit your `main.cpp` to INGInious.
 
 ## Lab 06 Extra Credit Submission
 
-All labs are due at 11:59pm the Friday following lab. For this lab you must submit `main.cpp` (Parts 1, 2, 3, and 4) to [INGInious](https://inginious.csuchico.edu/). If you are not able to complete all the exercises, turn in your partial work for partial credit.
+All labs are due at 11:59pm the Friday following lab. For this lab extra credit, you must submit `main.cpp` (Parts 1, 2, 3, and 4) to [INGInious](https://inginious.csuchico.edu/). There is no late credit for extra credit.
 
 [Top of the Page](#lab-6)

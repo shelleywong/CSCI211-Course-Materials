@@ -513,7 +513,7 @@ For this exercise, make sure to submit the [211 Linux Commands and Testing Googl
 
 ## Lab 01 Submissions
 
-All labs are due at 11:59pm the Friday following lab. For this lab you must set up your CSUChico-CSCI211 GitHub account, submit `hello.cpp`, `add.cpp`, and `print.cpp` to [INGInious](https://inginious.csuchico.edu/) (there is a separate submission link for each exercise), and complete the 211 Linux Commands and Testing Google Survey. If you are not able to complete all the exercises, turn in your partial work for partial credit (or submit later for late credit!)<br>
+All labs are due at 11:59pm the Friday following lab. For this lab you must set up your CSUChico-CSCI211 GitHub account, submit `hello.cpp`, `add.cpp`, and `print.cpp` to [INGInious](https://inginious.csuchico.edu/) (there is a separate submission link for each exercise), and complete the 211 Linux Commands and Testing Google Survey. If you are not able to complete all the exercises, turn in your partial work for partial credit, or submit later for late credit.<br>
 
 Optional but recommended step: add, commit, and push your code to GitHub (the `add` command below adds all changes in the repo):
 ```
@@ -549,5 +549,7 @@ There are 20 questions in this survey. Many of them can be answered with one Lin
   * View your code on GitHub
 
 The Git commands covered in this survey are very useful for individual projects as well as larger collaborative projects. The focus is on commands that may benefit you on small individual projects, such as making frequent commits and utilizing separate branches to help you organize your work and learn from your commit history.<br>
+
+Note: Extra credit submissions must be submitted on time (no late credit).
 
 [Top of the Page](#lab-1)

@@ -222,6 +222,6 @@ If you have time left over, I recommend that you complete exercises 4 and 5 from
 
 ## Lab 02 Submissions
 
-All labs are due at 11:59pm the Friday following lab. For this lab you must turn in `to_text.cpp` and `even.cpp`. There is a separate submission link for each exercise on [INGInious](https://inginious.csuchico.edu/). If you are not able to complete all the exercises, turn in your partial work for partial credit.
+All labs are due at 11:59pm the Friday following lab. For this lab you must turn in `to_text.cpp` and `even.cpp`. There is a separate submission link for each exercise on [INGInious](https://inginious.csuchico.edu/). If you are not able to complete all the exercises, turn in your partial work for partial credit, or submit later for late credit.
 
 [Top of the Page](#lab-2)
