@@ -8,7 +8,7 @@ Lab 06 Exercises:
 * [Exercise 3: Debugging Practice Part 3](#exercise-3-debugging-practice-part-3) (lab06_gdb/p3)
 * [Exercise 4: Debugging Practice Part 4](#exercise-4-debugging-practice-part-4) (lab06_gdb/p4)
 
-> Note: To get full credit for this lab, you must complete a Google Survey. You do not need to submit any files to Turnin for the Lab 6 GDB exercises.
+> Note: To get full credit for this lab, you must complete a Google Survey. You do not need to submit any files to INGInious for the Lab 6 GDB exercises.
 
 Lab 06 Extra Credit: Exceptions (try/catch, throw)
 * [Extra Credit: An Exceptional Program](#extra-credit-an-exceptional-program) (lab11_exceptions)
@@ -122,7 +122,7 @@ $ make
 ```
 `make` should not issue any errors -- let me know if you get errors.<br>
 
-Nothing will be submitted to Turnin for this lab, but you must complete [this Google survey](https://docs.google.com/forms/d/e/1FAIpQLSdNNjIHgqtmHd_zsGy12nYTealx90JQA_FDU_SFu9Dkrp3awg/viewform?usp=sf_link).
+Nothing will be submitted to INGInious for this lab, but you must complete [this Google survey](https://docs.google.com/forms/d/e/1FAIpQLSdNNjIHgqtmHd_zsGy12nYTealx90JQA_FDU_SFu9Dkrp3awg/viewform?usp=sf_link).
 
 > Note: The programs in this lab were created to produce errors, so that you can get some practice working with gdb. Don't spend too much time trying to figure out what the program is "supposed" to do -- in some cases, the code is an example of something you should NOT do in your own programs.
 
@@ -252,7 +252,7 @@ After completing the exercises and the survey, you can start working on programm
 
 ## Lab 06 Submissions
 
-All labs are due at 11:59pm the Friday following lab. For this lab you must complete the Google Survey (Exercises 1, 2, 3, and 4). You will not submit anything to Turnin for the Lab 06 GDB exercises. If you are not able to complete all the exercises, turn in your partial work for partial credit.
+All labs are due at 11:59pm the Friday following lab. For this lab you must complete the Google Survey (Exercises 1, 2, 3, and 4). You will not submit anything to INGInious for the Lab 06 GDB exercises (there is an INGInious submisssion for the Lab 06 Extra Credit). If you are not able to complete all the exercises, turn in your partial work for partial credit.
 
 ***
 
@@ -382,10 +382,10 @@ catch(int pnum)
 
 We use the catch-block to catch the problem number `pnum`, print an appropriate error message, reset the error flags, clear the buffer, and reset pnum. Notice that we are expecting integer input from `cin`, so the input that is thrown is an integer, not the entire invalid problem input.<br>
 
-Once you are finished, submit your `main.cpp` to Turnin.
+Once you are finished, submit your `main.cpp` to INGInious.
 
 ## Lab 06 Extra Credit Submission
 
-All labs are due at 11:59pm the Friday following lab. For this lab you must submit `main.cpp` (Parts 1, 2, 3, and 4) to [Turnin](https://turnin.ecst.csuchico.edu/). If you are not able to complete all the exercises, turn in your partial work for partial credit.
+All labs are due at 11:59pm the Friday following lab. For this lab you must submit `main.cpp` (Parts 1, 2, 3, and 4) to [INGInious](https://inginious.csuchico.edu/). If you are not able to complete all the exercises, turn in your partial work for partial credit.
 
 [Top of the Page](#lab-6)

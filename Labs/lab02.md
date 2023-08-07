@@ -114,7 +114,7 @@ NOTE: when you type ^D (Control + D) you will NOT see it (it is not printed to t
 
 To get credit, you must pass the posted tests, and you must use a switch statement.
 
-Submit the file `to_text.cpp` to [Turnin](https://turnin.ecst.csuchico.edu/)
+Submit the file `to_text.cpp` to [INGInious](https://inginious.csuchico.edu/)
 
 ## Exercise 2: Error Output
 
@@ -182,7 +182,7 @@ Note that after the program has been successfully compiled, an executable called
 
 Read how to test a program that has error output on the [Introduction to Testing](http://www.ecst.csuchico.edu/~trhenry/classes/general/how_to_test.html#error) page.<br/>
 
-If a program is required to have error output, Turnin will check the value returned by main() (the exit status). It should be 0 if there were no errors, 1 if there were errors. You can see the exit status of the program that just finished executed using the echo command:
+If a program is required to have error output, INGInious will check the value returned by main() (the exit status). It should be 0 if there were no errors, 1 if there were errors. You can see the exit status of the program that just finished executed using the echo command:
 
 ```
 $ ./even < t01.in > t01.myout 2> t01.myerr
@@ -214,7 +214,7 @@ Make sure you are supporting all numbers, not just single digits.<br>
 
 To get credit, you must pass the posted tests (in the directory `~211-starter-pack/211/lab02_even/tests`)
 
-Turn in the file `even.cpp` to [Turnin](turnin.ecst.csuchico.edu)
+Turn in the file `even.cpp` to [INGInious](https://inginious.csuchico.edu/)
 
 ***
 
@@ -222,6 +222,6 @@ If you have time left over, I recommend that you complete exercises 4 and 5 from
 
 ## Lab 02 Submissions
 
-All labs are due at 11:59pm the Friday following lab. For this lab you must turn in `to_text.cpp` and `even.cpp`. There is a separate submission link for each exercise on [Turnin](https://turnin.ecst.csuchico.edu/). If you are not able to complete all the exercises, turn in your partial work for partial credit.
+All labs are due at 11:59pm the Friday following lab. For this lab you must turn in `to_text.cpp` and `even.cpp`. There is a separate submission link for each exercise on [INGInious](https://inginious.csuchico.edu/). If you are not able to complete all the exercises, turn in your partial work for partial credit.
 
 [Top of the Page](#lab-2)

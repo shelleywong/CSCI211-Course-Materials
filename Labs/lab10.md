@@ -16,7 +16,7 @@ If you finish early, work on P5.<br>
 
 ## Sample Recursion Problems:
 
-You may want to start by trying to solve these problems on paper, as this is what you will need to do on Midterm 2; however, make sure to complete a version of each function that can be submitted to Turnin so that you can get credit for this lab. Driver programs that call these functions are available in the 211-starter-pack/211/lab10* directories:
+You may want to start by trying to solve these problems on paper, as this is what you will need to do on Midterm 2; however, make sure to complete a version of each function that can be submitted to INGInious so that you can get credit for this lab. Driver programs that call these functions are available in the 211-starter-pack/211/lab10* directories:
 * lab10_equal
 * lab10_largest
 * lab10_sorted
@@ -38,7 +38,7 @@ bool equal_strings(const char str1[], const char str2[])
 }
 ```
 
-Submit `equal.cpp` to Turnin.
+Submit `equal.cpp` to INGInious.
 
 ## Exercise 2: Recursive Find Largest
 Write a recursive function that finds the largest number in an array of integers. Assume the array contains at least 1 number. You may write a helper function (it will simplify the code).
@@ -50,7 +50,7 @@ int largest_in_array(int values[], int size)
 }
 ```
 
-Submit `largest.cpp` to Turnin.
+Submit `largest.cpp` to INGInious.
 
 ## Exercise 3: Recursive Check If Sorted
 Write a recursive function that takes an array of integers and returns true if the array is sorted from smallest value to largest value and false if the array is not sorted. Don't forget any special cases.
@@ -62,7 +62,7 @@ bool is_array_sorted(int values[], int size)
 }
 ```
 
-Submit `sorted.cpp` to Turnin.
+Submit `sorted.cpp` to INGInious.
 
 ## Exercise 4: Recursive Is String An Integer
 Write the recursive function `isint(char str[])` that takes a C-style string and returns true if the string in an integer (only digits) and false if the string is not an integer (contains characters other than digits). If the string is empty, return false (an empty string is not an integer).
@@ -74,12 +74,12 @@ bool isint(char str[])
 }
 ```
 
-Submit `isint.cpp` to Turnin.<br>
+Submit `isint.cpp` to INGInious.<br>
 
 If you finish early, you should work on P5 or practice writing solutions to questions from Midterm 2 [previous exams](https://www.ecst.csuchico.edu/~trhenry/classes/211.s17/exams.html).
 
 ## Lab 10 Submissions
 
-All labs are due at 11:59pm the Friday following lab. For this lab you must submit `equal.cpp` (Exercise 1), `largest.cpp` (Exercise 2), `sorted.cpp` (Exercise 3), and `isint.cpp` (Exercise 4) to [Turnin](https://turnin.ecst.csuchico.edu/). If you are not able to complete all the exercises, turn in your partial work for partial credit.
+All labs are due at 11:59pm the Friday following lab. For this lab you must submit `equal.cpp` (Exercise 1), `largest.cpp` (Exercise 2), `sorted.cpp` (Exercise 3), and `isint.cpp` (Exercise 4) to [INGInious](https://inginious.csuchico.edu/). If you are not able to complete all the exercises, turn in your partial work for partial credit.
 
 [Top of the Page](#lab-10)

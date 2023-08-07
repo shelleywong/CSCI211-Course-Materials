@@ -17,9 +17,9 @@ Lab 05 Exercises:
   * Exercise 3:  211/lab05_convert
   * Exercise 4:  211/lab05_removedup<br>
 
-You will submit a separate list.cpp to Turnin for each exercise.
+You will submit a separate list.cpp to INGInious for each exercise.
 
-> Note: You will ONLY submit the list.cpp file -- your solution needs to work with the provided files, or else your code may not pass the tests on Turnin.
+> Note: You will ONLY submit the list.cpp file -- your solution needs to work with the provided files, or else your code may not pass the tests on INGInious.
 
 ## Exercise 1: Compare Value to List Elements
 
@@ -56,6 +56,6 @@ If you finish early, you should practice writing linked list solutions for quest
 
 ## Lab 05 Submissions
 
-All labs are due at 11:59pm the Friday following lab. For this lab you must submit separate `list.cpp` files to [Turnin](https://turnin.ecst.csuchico.edu/) for each of the Lab 05 Exercises (4 exercises total). If you are not able to complete all the exercises, turn in your partial work for partial credit.
+All labs are due at 11:59pm the Friday following lab. For this lab you must submit separate `list.cpp` files to [INGInious](https://inginious.csuchico.edu/) for each of the Lab 05 Exercises (4 exercises total). If you are not able to complete all the exercises, turn in your partial work for partial credit.
 
 [Top of the Page](#lab-5)

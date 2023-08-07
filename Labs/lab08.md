@@ -118,7 +118,7 @@ six
 $
 ```
 
-Submit `args.cpp` to Turnin.
+Submit `args.cpp` to INGInious.
 
 ## Exercise 2: Handling Input and Output File Command Line Arguments
 
@@ -162,7 +162,7 @@ If the user provides too many command line arguments, print the following error 
 cerr << "Too many command line arguments specified." << endl;
 ```
 
-Submit `mycat.cpp` to Turnin.
+Submit `mycat.cpp` to INGInious.
 
 ## Exercise 3: Handling Integer Command Line Arguments
 
@@ -204,10 +204,10 @@ bool legal_int(char *str)
 
 Update your program so that it calls `atoi()` to convert the string to an integer and adds it to the total (as above) -- this step should be completed **after** your program verifies that all the characters in a given string are digits (legal integers).<br>
 
-Submit `add.cpp` to Turnin.
+Submit `add.cpp` to INGInious.
 
 ## Lab 08 Submissions
 
-All labs are due at 11:59pm the Friday following lab. For this lab you must submit `args.cpp` (Exercise 1), `mycat.cpp` (Exercise 2), and `add.cpp` (Exercise 3) to [Turnin](https://turnin.ecst.csuchico.edu/). If you are not able to complete all the exercises, turn in your partial work for partial credit.
+All labs are due at 11:59pm the Friday following lab. For this lab you must submit `args.cpp` (Exercise 1), `mycat.cpp` (Exercise 2), and `add.cpp` (Exercise 3) to [INGInious](https://inginious.csuchico.edu/). If you are not able to complete all the exercises, turn in your partial work for partial credit.
 
 [Top of the Page](#lab-8)

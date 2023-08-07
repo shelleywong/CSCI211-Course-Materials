@@ -68,6 +68,6 @@ Check your results against the three test cases that are available in your 211-s
 
 ## Lab 07 Submissions
 
-All labs are due at 11:59pm the Friday following lab. For this lab you must submit `dstack.h`, `dstack.cpp`, and `reverse.cpp` to [Turnin](https://turnin.ecst.csuchico.edu/) (turn in reverse.cpp even if you use my version -- this allows you to change it if you want to). If you are not able to complete all the exercises, turn in your partial work for partial credit.
+All labs are due at 11:59pm the Friday following lab. For this lab you must submit `dstack.h`, `dstack.cpp`, and `reverse.cpp` to [INGInious](https://inginious.csuchico.edu/) (turn in reverse.cpp even if you use my version -- this allows you to change it if you want to). If you are not able to complete all the exercises, turn in your partial work for partial credit.
 
 [Top of the Page](#lab-7)

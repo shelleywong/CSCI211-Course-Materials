@@ -10,7 +10,7 @@ Lab 03 Exercises:
 * [Exercise 4: Create a Course Class](#exercise-4-create-a-course-class) (lab03_object, lab03_course)
 * [Exercise 5: Create Class Video for P2](#exercise-5-create-class-video-for-P2) (lab03_video)
 
-> Note: To get full credit for this lab, you must complete a Google Survey (for exercises 1 and 2) and submit several files to Turnin (exercises 3, 4, and 5).
+> Note: To get full credit for this lab, you must complete a Google Survey (for exercises 1 and 2) and submit several files to INGInious (exercises 3, 4, and 5).
 
 ## Overview of make
 The job of `make` is to create files
@@ -115,7 +115,7 @@ The above Makefile uses the following command-line options for the g++ compiler:
 | `-g` | Put some extra information in the output files (.o and executables) so the GDB debugger will give more friendly output (debuggers are discussed in a future lab) |
 | `-Wall` | Show all warnings (warnings help illuminate problems in your program, you should fix your code so there are no warnings) |
 | `-pedantic` | Issue all the warnings demanded by strict ISO C and ISO C++ (i.e. issue warnings if your program does not follow the standard exactly) |
-| `-std=c++11` | Compile with C++ ISO standard version C++11. Newer standards exist, but this is how all of your code will be compiled and tested on Turnin. |
+| `-std=c++11` | Compile with C++ ISO standard version C++11. Newer standards exist, but this is how all of your code will be compiled and tested on INGInious. |
 
 ### Default Rules
 
@@ -232,7 +232,7 @@ Bar(3,4)
 $
 ```
 
-Turn in your `Makefile`. [Turnin](https://turnin.ecst.csuchico.edu) will not test your Makefile; I will grade them by reading them. Since a Makefile can do anything (such as deleting all the files on a computer) turnin.ecst never runs Makefiles that have been turned in.<br>
+Turn in your `Makefile`. [INGInious](https://inginious.csuchico.edu/) will not test your Makefile; I will grade them by reading them. Since a Makefile can do anything (such as deleting all the files on a computer) INGInious never runs Makefiles that have been turned in.<br>
 
 Hint: think carefully about the dependencies (the files listed after the target). For example, foo.cpp includes foo.h and thus foo.o depends on foo.cpp AND foo.h
 
@@ -303,7 +303,7 @@ If you have not started P2, look at the Plan of Attack section and implement Ste
 
 You will need to implement the class `Video` constructor (`Video::Video(...)`) and the `print` member function (`void Video::print()`).<br>
 
-The output of your program (using the `main()` above) should exactly match the following (t01.out for ~/211-starter-pack/211/lab03_video). This is the test used by turnin.ecst.csuchico.edu:
+The output of your program (using the `main()` above) should exactly match the following (t01.out for ~/211-starter-pack/211/lab03_video). This is the test used by INGInious:
 ```
 Title One, www.youtube.com/one, Comment ONE, 1.1, *
 Title Two, www.youtube.com/two, Comment TWO, 2.2, **
@@ -320,6 +320,6 @@ If you finish the lab exercises, you can work on your Video (P2) assignment.  If
 
 ## Lab 03 Submissions
 
-All labs are due at 11:59pm the Friday following lab. For this lab you must complete the Google Survey (Exercises 1 and 2) and submit your solutions for Exercise 3, 4, and 5 to [Turnin](https://turnin.ecst.csuchico.edu/). If you are not able to complete all the exercises, turn in your partial work for partial credit.
+All labs are due at 11:59pm the Friday following lab. For this lab you must complete the Google Survey (Exercises 1 and 2) and submit your solutions for Exercise 3, 4, and 5 to [INGInious](https://inginious.csuchico.edu/). If you are not able to complete all the exercises, turn in your partial work for partial credit.
 
 [Top of the Page](#lab-3)
