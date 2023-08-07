@@ -284,19 +284,20 @@ GitHub, GitLab, and BitBucket provide tools that help manage and host Git reposi
 5. GitHub is a hosting service that can store your files and directories remotely. Now you need a way to interact with GitHub.
   - Determine a location on your local machine and/or your Linux environment to house the local instance of your 211 repository (make sure you know the path to these files so you can easily access this repository).
 6. Set up SSH keys (so you can clone with SSH) OR a personal access token (so you can clone with HTTPS).
-  - If cloning with SSH: First, [check to see if you already have an existing SSH key](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/checking-for-existing-ssh-keys) – if you do, you may be able to use the same key for GitHub. If you do not have a key, [generate a new SSH key](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent). Then, [add your SSH key to your GitHub account](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account). Now you should be able to clone your repo and continue on to the next step.
+  - If cloning with SSH: First, [check to see if you already have an existing SSH key](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/checking-for-existing-ssh-keys) – if you do, you may be able to use the same key for GitHub. If you do not have a key, [generate a new SSH key](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent). Then, [add your SSH key to your GitHub account](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account). You will add the public key to your GitHub account. Make sure your private key stays private (the first line of defense is to not let other people have access to your computer). Now you should be able to clone your repo and continue on to the next step.
   - If cloning with HTTPS: You will be asked for your GitHub username and password when completing several git commands. When Git prompts you for your password, you should use your [personal access token](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens). GitHub recommends that you use Fine-grained personal access tokens; however, you will need to use Personal access tokens (classic) to work with the CSUChico-CSCI211 GitHub repo. Follow GitHub's instructions for [creating a personal access token (classic)](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens#creating-a-personal-access-token-classic). Give your token an expiration date after the end of the semester. Now you should be able to clone your repo and continue on to the next step.
 
 > Note: if you are having trouble with one of the options above, ask the instructor about using GitHub Codespaces!
 
-7. Confirm that you have git installed (if installed, `git version` will display version information)
+7. Confirm that you have git installed (if installed, `which git` will identify the location of git installed on your machine, while `git version` will display version information)
 ```
+$ which git
 $ git --version
 ```
   - If you do not have Git installed, download and install Git for your operating system:
   * For Windows: [https://windows.github.com](https://windows.github.com)
   * For Mac: [https://mac.github.com](https://mac.github.com)
-  * For Linux: use the command, `sudo apt install git`
+  * For Linux: use the command, `sudo apt install git` (this command or something similar should be printed to the terminal if you use the `git version` command and git is not installed)
   * For all platforms: [http://git-scm.com](http://git-scm.com)
 8. Check your Git settings and confirm that you have set your name and email. Start by viewing your settings. If you see your name and email (e.g `user.name=Your Name` and `user.email=youremail@mail.com`), type `q` to exit and continue to the next step.
 ```
