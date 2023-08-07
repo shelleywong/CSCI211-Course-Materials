@@ -1,5 +1,5 @@
 # Lab Exercises
-Labs are short programming exercises that will be assigned for each lab session. The goal of each exercise is to reinforce a new concept introduced in lecture. All lab exercises need to be turned in to [Turnin](https://turnin.ecst.csuchico.edu/) by 11:59pm, the Friday following the lab in which they are assigned. If you are not able to complete all exercises, you can still receive partial credit for any work that is completed and turned in.
+Labs are short programming exercises that will be assigned for each lab session. The goal of each exercise is to reinforce a new concept introduced in lecture. All lab exercises need to be turned in to [INGInious](https://inginious.csuchico.edu/) by 11:59pm, the Friday following the lab in which they are assigned. If you are not able to complete all exercises, you can still receive partial credit for any work that is completed and turned in.
 
 * [Lab 01: Set up, Intro to Linux, g++ compiler, Git](https://github.com/shelleywong/CSCI211-Course-Materials/blob/main/Labs/lab01.md)
 * [Lab 02: Detecting End of Input, Using Standard Error, Returning from main()](https://github.com/shelleywong/CSCI211-Course-Materials/blob/main/Labs/lab02.md)
@@ -106,7 +106,7 @@ It is important that you understand the manual testing options listed above, but
 * run_tests
 * vd
 * vde
-* [Turnin](https://turnin.ecst.csuchico.edu/)
+* [INGInious](https://inginious.csuchico.edu/)
 
 `run_tests`, `vd`, and `vde` are bash scripts (programs that the bash shell can execute) that are included in your CSCI211 starter-repo `bin/` directory):
 ```
@@ -193,7 +193,7 @@ $ ./vde 03  // shorthand, using the provided script
 $ vimdiff tests/t03.err results/t03.myerr  // equivalent command
 ```
 
-Using these tools can help you quickly determine if your program is passing or failing all tests, identify which sections of your code might contain bugs, and help make sure the Turnin server stays up and running.<br>
+Using these tools can help you quickly determine if your program is passing or failing all tests, identify which sections of your code might contain bugs, and help make sure the INGInious server stays up and running.<br>
 
 I have described one simple and safe way to use these tools, but you are not required to follow this method. Do what works for you. The main thing I want to emphasize is that these tools are available, and you should use them! The tests won't always catch every edge case, but they can be a great help to you throughout the semester.
 

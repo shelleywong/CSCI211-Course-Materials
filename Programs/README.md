@@ -1,6 +1,6 @@
 # Programming Assignments
 
-Over the course of the semester, there will be 7 programming assignments. All programs must be completed individually. Each assignment contains program-specific requirements. All assignments should follow the General Requirements listed below. You may be asked to explain your code to the instructor or a lab assistant during lab time or office hours, and if you are unable to adequately do so, a percentage may be taken off your grade for that assignment. Programming assignments must be turned in to [Turnin](https://turnin.ecst.csuchico.edu/) by the due date (check Turnin or Canvas to confirm).
+Over the course of the semester, there will be 7 programming assignments. All programs must be completed individually. Each assignment contains program-specific requirements. All assignments should follow the General Requirements listed below. You may be asked to explain your code to the instructor or a lab assistant during lab time or office hours, and if you are unable to adequately do so, a percentage may be taken off your grade for that assignment. Programming assignments must be turned in to [INGInious](https://inginious.csuchico.edu/) by the due date (check INGInious or Canvas to confirm).
 
 * [Program 1: Chart](https://github.com/shelleywong/CSCI211-Course-Materials/blob/main/Programs/program01.md)
 * [Program 2: Video Rating System](https://github.com/shelleywong/CSCI211-Course-Materials/blob/main/Programs/program02.md)
@@ -91,7 +91,7 @@ Define your function prototypes near the top of your program and write the funct
   * functions
 * Optimize for readability: avoid ambiguity and minimize the use of abbreviations
   * It is fine to use certain universally-known abbreviations, such as `i` for a loop iterator
-* For files, make sure your file names match those listed in the writeup (in some cases, your code will not compile on Turnin if the file names do not match)
+* For files, make sure your file names match those listed in the writeup (in some cases, your code will not compile on INGInious if the file names do not match)
 * Be consistent. For example, you could use:
   * snake_case for variables (words separated by underscores): `a_local_variable`
   * PascalCase for types (each new word begins with a capital letter): `MyExcitingClass`
@@ -112,7 +112,7 @@ The first lines of all your files (.h and .cpp) must contain the following comme
 ```
 // filename
 // your name (first and last)
-// your Chico Portal/Turnin username
+// your Chico Portal/INGInious username
 // Short summary of the contents of the file
 ```
 
