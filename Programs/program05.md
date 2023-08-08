@@ -269,7 +269,7 @@ Remember that the first lines of all your files (.h and .cpp) must contain the f
 
 ## Testing Your Program
 
-* Some sample tests and a Makefile are included in 211-starter-pack/211/p5.
+* Some sample tests and a Makefile are included in the CSCI211 starter-repo `211/p5/` directory.
 * Test your code before submitting it to INGInious -- you can review the instructions for Testing Assignments using the provided sample tests in the [Labs directory README](https://github.com/shelleywong/CSCI211-Course-Materials/tree/main/Labs).
 * I will test your program with additional tests not posted in the test directory. It is a very good idea to design and implement your own set of tests.<br>
 
@@ -299,7 +299,7 @@ No extra credit points will be given to late assignments (both your regular assi
 
 You must turn in the regular assignment code separately from the extra credit assignment code (I will create a separate assignment on [INGInious](https://inginious.csuchico.edu/)).<br>
 
-You will get 30 points extra credit if your program passes all the extra credit tests (a fraction of 30 points if you pass some of the extra credit tests). You have one extra credit test available to you in 211-starter-pack/211/p5_extra/tests/. I will use additional tests when grading the extra credit.<br>
+You will get 30 points extra credit if your program passes all the extra credit tests (a fraction of 30 points if you pass some of the extra credit tests). You have one extra credit test available to you in the CSCI211 starter-repo `211/p5_extra/tests/` directory. I will use additional tests when grading the extra credit.<br>
 
 Instead of having a single checkout queue, give each checker its own queue.<br>
 

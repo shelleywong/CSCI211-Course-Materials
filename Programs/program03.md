@@ -155,8 +155,8 @@ In `main()`, the value returned by `remove` can be used to determine if an error
 Work step by step:
 1. Copy P2's main.cpp, video.h, and video.cpp to your P3 directory (do not use the same directory for both assignments).
 2. Create the `Vlist` class without any functions (vlist.h, vlist.cpp).
-3. Update `main()` so it includes vlist.h -- about the only code you need from P2's `main()` is the reading of the `Video` fields (title, url, ...) and the declaration of the variable (string title, string url, ...). Delete the rest of the code.
-4. Download the provided `Makefile` (in 211-starter-pack/211/p3) and compile the assignment using the `make` utility (`$ make`).
+3. Update `main.cpp` so it includes "vlist.h". About the only code you need from P2's `main()` is the reading of the `Video` fields (title, url, ...) and the declaration of the variables (string title, string url, ...). Delete the rest of the code. (If you prefer, you can start main.cpp from scratch).
+4. Make sure your `p3/` directory contains a `Makefile` (if not, create one using the provided examples) and compile the assignment using the `make` utility (`$ make`).
 5. Once the "empty" files compile, write the code in `main()` to read the input. Test your code so you are sure it is working. Make sure you handle end of input (^D), illegal commands, and skipping whitespace correctly. What you read will depend on the command. For example, length takes no arguments but insert takes 5 arguments.
 6. Once you are certain that your input is working correctly, implement an `insert` function in `Vlist` that inserts the videos at the front of the list.  Eventually you will need to insert so they are sorted, but getting this simple function working first is very helpful.
 7. Write the `Vlist::print()` function. This function traverses the list and calls `Video::print()` on all the Video objects in the list.
@@ -188,7 +188,7 @@ Remember that the first lines of all your files (.h and .cpp) must contain the f
 
 ## Testing Your Program
 
-* Some sample tests and a Makefile are included in 211-starter-pack/211/p3.
+* Some sample tests and a Makefile are included in the CSCI211 starter-repo `211/p3/` directory.
 * Test your code before submitting it to INGInious -- you can review the instructions for Testing Assignments using the provided sample tests in the [Labs directory README](https://github.com/shelleywong/CSCI211-Course-Materials/tree/main/Labs).
 * I will test your program with additional tests not posted in the test directory. It is a very good idea to design and implement your own set of tests.
 

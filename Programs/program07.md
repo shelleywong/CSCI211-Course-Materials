@@ -21,7 +21,7 @@ Points: 300
 
 ## Overview
 
-> Note: Sample tests and a `Makefile` have been provided for you in 211-starter-pack/211/p7.
+> Note: Sample tests and a `Makefile` have been provided for you in the CSCI211 starter-repo `211/p7/` directory.
 
 Write a binary search tree class (called `BST`) that is a tree of C++ strings. A binary search tree (BST), is a binary tree (two children) where for **every** node in the tree, all the values in the node's left subtree are less than the node's value and all the values in the node's right subtree are greater than the node's value.<br>
 
@@ -255,7 +255,7 @@ Remember that the first lines of all your files (.h and .cpp) must contain the f
 
 ## Testing Your Program
 
-* Some sample tests and a Makefile are included in 211-starter-pack/211/p7.
+* Some sample tests and a Makefile are included in the CSCI211 starter-repo `211/p7/` directory.
 * Test your code before submitting it to INGInious -- you can review the instructions for Testing Assignments using the provided sample tests in the [Labs directory README](https://github.com/shelleywong/CSCI211-Course-Materials/tree/main/Labs).
 * I will test your program with additional tests not posted in the test directory. It is a very good idea to design and implement your own set of tests.<br>
 

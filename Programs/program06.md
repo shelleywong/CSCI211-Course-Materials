@@ -32,7 +32,7 @@ You will create several classes:
   * Circle
 * A Grid class (each Shape class will draw itself onto a Grid object)<br>
 
-> Note: `Makefile` and `main()` files have been provided for you in 211-starter-pack/211/p6, so you don't have to worry about the compilation step or parsing the program input.
+> Note: A `Makefile` and `main.cpp` file have been provided for you in the CSCI211 starter-repo `211/p6/` directory, so you don't have to worry about the compilation step or parsing the program input.
 
 The `main` program will read shape descriptions (for square, point, triangle, and circle), create corresponding shape objects, and then draw each shape onto a `Grid` object. For example, the following input:
 ```
@@ -225,7 +225,7 @@ Remember that the first lines of all your files (.h and .cpp) must contain the f
 
 ## Testing Your Program
 
-* Some sample tests and a Makefile are included in 211-starter-pack/211/p6.
+* Some sample tests and a Makefile are included in the CSCI211 starter-repo `211/p6/`.
 * Test your code before submitting it to INGInious -- you can review the instructions for Testing Assignments using the provided sample tests in the [Labs directory README](https://github.com/shelleywong/CSCI211-Course-Materials/tree/main/Labs).
 * In this case, I will NOT test your program with any additional tests.<br>
 

@@ -142,7 +142,7 @@ Remember that the first lines of all your files (.h and .cpp) must contain the f
 
 ## Testing Your Program
 
-* Some sample tests and a Makefile are included in 211-starter-pack/211/p1.
+* Some sample tests and a Makefile are included in the CSCI211 starter-repo `211/p1/` directory.
 * Review the instructions for Testing Assignments using the provided sample tests in the [Labs directory README](https://github.com/shelleywong/CSCI211-Course-Materials/tree/main/Labs)
 * I will test your program with additional tests not posted in the test directory. It is a very good idea to design and implement your own set of tests.
 

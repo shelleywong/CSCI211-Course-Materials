@@ -156,10 +156,10 @@ $ valgrind --leak-check=yes ./myprog < tests/t01.in  // example argument: you mi
 ## Plan of Attack
 
 Work Step by Step:
-1. Create video.h with an empty class definition, using the `#ifndef`/`#endif` construct. [Lab 3](https://github.com/shelleywong/CSCI211-Course-Materials/blob/main/Labs/lab03.md#exercise-4-create-a-course-class) and the 211-starter-pack/211/lab03_object directory include a good starter example.
+1. Create video.h with an empty class definition, using the `#ifndef`/`#endif` construct. [Lab 3](https://github.com/shelleywong/CSCI211-Course-Materials/blob/main/Labs/lab03.md#exercise-4-create-a-course-class) and the CSCI211 starter-repo `211/lab03_object/` directory include a good starter example.
 2. Create an empty video.cpp that includes video.h
 3. Create main.cpp and write an empty `main()` (a main function that does not do anything). main.cpp should also `#include "video.h"`.
-4. Create a `Makefile` (you may use the `Makefile` provided in 211-starter-pack/211/p2). Ensure the `Makefile` is in your current directory, and compile the assignment using the `make` utility. If you named the files as specified above, double check that you only include `.h` files (never include a `.cpp` file). You can compile your program simply by typing "make" at the command prompt:
+4. Make sure your `p2/` directory contains a `Makefile` (if not, create one using the provided examples), and compile the assignment using the `make` utility. If you named the files as specified above, double check that you only include `.h` files (never include a `.cpp` file). You can compile your program simply by typing "make" at the command prompt:
 ```
 $ make
 ```
@@ -177,7 +177,7 @@ temp_video_pointer->print();
 ```
 8. Use the array of 100 pointers to `Video` objects to hold the videos (instead of the temp_video_pointer above). Instead of printing immediately after each video is read, print all the Videos in the array after you are done reading all the input. The output of your program should be complete except for the order of the videos. Make sure everything is working before you move on.
 9. Implement the sorting of the videos. Do not start this step until you have tested your program and are sure all the other components are working.
-10. Before exiting main(), use the delete operator to free all dynamically alloated memory.
+10. Before exiting main(), use the delete operator to free all dynamically allocated memory.
 11. Read the requirements carefully to make sure your program is complete.
 
 ## General Requirements
@@ -194,7 +194,7 @@ Remember that the first lines of all your files (.h and .cpp) must contain the f
 
 ## Testing Your Program
 
-* Some sample tests and a Makefile are included in 211-starter-pack/211/p2.
+* Some sample tests and a Makefile are included in the CSCI211 starter-repo `211/p2` directory.
 * Test your code before submitting it to INGInious -- you can review the instructions for Testing Assignments using the provided sample tests in the [Labs directory README](https://github.com/shelleywong/CSCI211-Course-Materials/tree/main/Labs).
 * I will test your program with additional tests not posted in the test directory. It is a very good idea to design and implement your own set of tests.
 
