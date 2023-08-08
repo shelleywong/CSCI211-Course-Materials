@@ -30,7 +30,7 @@ The Entrepreneurial Mindset is as much about understanding what attitudes and be
 
 [Learn about the Entrepreneurial Mindset](https://www.nfte.com/entrepreneurial-mindset/)<br>
 
-![The eight domains of the entrepreneurial mindset](https://github.com/shelleywong/CSCI211-Course-Materials/blob/main/images/em.001.jpeg)<br>
+![The eight domains of the entrepreneurial mindset](https://github.com/shelleywong/CSCI211-Course-Materials/blob/main/assets/em.001.jpeg)<br>
 
 In your small group, explore one of the domains of the entrepreneurial mindset, identify some of the key characteristics, and discuss why this particular domain is important for students in an academic or research setting:
 
