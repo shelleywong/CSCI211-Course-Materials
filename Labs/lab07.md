@@ -27,7 +27,7 @@ The post-fix calculator assignment requires that you implement a stack of double
 
 * Your lab assignment for this week is to implement the `Dstack` class and use your class to reverse some numbers.
 * Put your `Dstack` in the files dstack.h and dstack.cpp
-* Put your `main()` (which reads the values and uses the stack to print them in reverse) in the reverse.cpp file. You can use my reverse.cpp, a modified version of my reverse.cpp, or you can write your own reverse.cpp (it would be a good exercise to write your own version w/o looking at my version). My version of reverse.cpp along with a `Makefile` are in your 211-starter-pack/211/lab07_dstack directory.<br>
+* Put your `main()` (which reads the values and uses the stack to print them in reverse) in the reverse.cpp file. You can use my reverse.cpp, a modified version of my reverse.cpp, or you can write your own reverse.cpp (it would be a good exercise to write your own version w/o looking at my version). My version of reverse.cpp along with a `Makefile` are in your CSCI211 starter-repo `211/lab07_dstack/` directory.<br>
 
 The program should work like this:
 ```
@@ -64,7 +64,7 @@ Print out the number of elements currently in the stack
 
 ## Testing
 
-Check your results against the three test cases that are available in your 211-starter-pack/211/lab07_dstack/tests directory.
+Check your results against the three test cases that are available in your CSCI211 starter-repo `211/lab07_dstack/tests` directory.
 
 ## Lab 07 Submissions
 

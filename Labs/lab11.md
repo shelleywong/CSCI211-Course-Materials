@@ -8,7 +8,7 @@ Lab 11 Exercises
 
 ## Exercise 1: Read and Print GPS Locations Using a Vector
 
-Working in your 211-starter-pack/211/lab11_path directory, write a program (called `path`) that reads a collection of GPS locations until end of input is reached. Each GPS location is expressed as two numeric coordinates: the first number is always latitude and the second number is always longitude. As each set of coordinates is read from standard input, create a new `Location` object and add the `Location` to a vector. AFTER all the input has been read, traverse the vector and print the GPS locations to standard output (`cout`). You can use the Location class `print` function to put each location on its own line with a comma between the latitude and longitude:<br>
+Working in your CSCI211 starter-repo `211/lab11_path/` directory, write a program (called `path`) that reads a collection of GPS locations until end of input is reached. Each GPS location is expressed as two numeric coordinates: the first number is always latitude and the second number is always longitude. As each set of coordinates is read from standard input, create a new `Location` object and add the `Location` to a vector. AFTER all the input has been read, traverse the vector and print the GPS locations to standard output (`cout`). You can use the Location class `print` function to put each location on its own line with a comma between the latitude and longitude:<br>
 
 The first four lines are the input. The second four lines are the output.
 ```
@@ -52,7 +52,7 @@ Turn in `path.cpp`.
 
 ## Exercise 2: Read and Print Titles and Locations Using a Map
 
-Working in your 211-starter-pack/211/lab11_lookup directory, write a program (called `lookup`) that reads a collection of GPS locations and titles. Each title is a string without any spaces. You should use the provided `Location` class to hold the GPS locations (this class is the same as the Location class in Exercise 1). Continue reading locations and titles from standard input until the user enters 0 (while using 0 to signal the end of input is limiting, it makes writing the program much easier). You should **not** use EOF here, because your program will need to handle input after it receives all pairs of GPS locations and titles.<br>
+Working in your CSCI211 starter-repo `211/lab11_lookup/` directory, write a program (called `lookup`) that reads a collection of GPS locations and titles. Each title is a string without any spaces. You should use the provided `Location` class to hold the GPS locations (this class is the same as the Location class in Exercise 1). Continue reading locations and titles from standard input until the user enters 0 (while using 0 to signal the end of input is limiting, it makes writing the program much easier). You should **not** use EOF here, because your program will need to handle input after it receives all pairs of GPS locations and titles.<br>
 
 After 0 is entered, read titles from standard input until the end of input. As each title is read, look up the title in the map. If the location is found, print the location associated with the title (see below for how the output should be formatted). If the title is not in the map, print the message (shown below) indicating that the title is not in the database.<br>
 
@@ -85,7 +85,7 @@ Turn in `lookup.cpp`
 
 ## Exercise 3 (no points, just for fun)
 
-Working in your 211-starter-pack/211/lab11_google directory, modify the program in Exercise 2 so that instead of printing the lat/long when you find a location in the map, print a complete Google Maps URL:
+Working in your CSCI211 starter-repo `211/lab11_google/` directory, modify the program in Exercise 2 so that instead of printing the lat/long when you find a location in the map, print a complete Google Maps URL:
 
 ```
 The_Bear is at __________

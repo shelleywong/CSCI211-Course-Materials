@@ -144,7 +144,7 @@ The above is just a brief introduction. The more you learn about vim the faster 
 
 ## Practice programming linked lists
 
-For the following exercises, use the files in your 211-starter-pack/211/lab04_list directory. This is a multi-part exercise with a single submission to INGInious.<br>
+For the following exercises, use the files in your CSCI211 starter-repo `211/lab04_list/` directory. This is a multi-part exercise with a single submission to INGInious.<br>
 
 ## Exercise 1: Read Input and Put Numbers into a List Object
 

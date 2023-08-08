@@ -50,7 +50,7 @@ When the user enters an integer, the `cin >> value` expression returns true (rec
 
 When the user enters `^D` (I use ^D to mean control-D), the `cin >> value` expression returns 0 and the loop is terminated (while loops terminate as soon as the expression is false).<br>
 
-Make a directory called `lab02_echoints` (In this example, it is a subdirectory of 211-starter-pack/211/), then move into the `lab02_echoints` directory and create a file called echo_ints.cpp. Here, I am using vim, but you can use a different editor if you'd prefer.
+Make a directory called `lab02_echoints` (In this example, it is a subdirectory of the 211/ directory in the starter-repo), then move into the `lab02_echoints` directory and create a file called echo_ints.cpp. Here, I am using vim, but you can use a different editor if you'd prefer.
 ```
 $ mkdir lab02_echoints
 $ cd lab02_echoints
@@ -118,7 +118,7 @@ Submit the file `to_text.cpp` to [INGInious](https://inginious.csuchico.edu/)
 
 ## Exercise 2: Error Output
 
-Starting with the second programming assignment (p2), you will be required to detect and report errors. All errors must be written to standard error. Consider the `error.cpp` example in `~/211-starter-pack/211/lab02_even`:
+Starting with the second programming assignment (p2), you will be required to detect and report errors. All errors must be written to standard error. Consider the `error.cpp` example in `211/lab02_even/`:
 
 ```cpp
 // @file error.cpp
@@ -172,7 +172,7 @@ When there is an error (one or more numbers are not even) return 1 from main().<
 
 Do not return from main() until after you have printed the appropriate message.<br/>
 
-3. The tests for this exercise (in the directory `~/211-starter-pack/211/lab02_even`) have a `.err` file for each test.  The error files contain the error output (if any) and a `.exit` file that indicates the correct exit status (value returned by main()).<br/>
+3. The tests for this exercise (in the `211/lab02_even/tests/` directory) have a `.err` file for each test.  The error files contain the error output (if any) and a `.exit` file that indicates the correct exit status (value returned by main()).<br/>
 
 You can compile even.cpp using the provided `Makefile`.
 ```
@@ -212,7 +212,7 @@ while there are numbers to read
 
 Make sure you are supporting all numbers, not just single digits.<br>
 
-To get credit, you must pass the posted tests (in the directory `~211-starter-pack/211/lab02_even/tests`)
+To get credit, you must pass the tests provided in the `211/lab02_even/` directory.<br>
 
 Turn in the file `even.cpp` to [INGInious](https://inginious.csuchico.edu/)
 

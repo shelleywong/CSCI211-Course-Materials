@@ -128,11 +128,9 @@ When learning how to use make it is best to avoid the default rules and put in e
 
 Note: You will need to be logged in to your \@mail.csuchico email in order to take the Google Survey. If you get a message that you are unable to access the survey, try using your Chico portal username and password to login to Google. If you are not sure how to proceed, feel free to ask for help!<br>
 
-You will need the 211 Starter Pack for this assignment, so if you haven't already, download 211-starter-pack.tar and extract (unpack) the archive file.<br>
-
-Once you have the starter code, change to the lab03_hello directory (your path may vary):
+Go to your CSCI211 repo and open the `211/lab03_hello/` directory (your path may vary):
 ```
-$ cd ~/211/lab03_hello
+$ cd 211/lab03_hello
 ```
 
 1. Type the command:
@@ -145,7 +143,7 @@ What happened? (Answer on the google survey)
 ```
 $ make    
 ```
-What happened? Why? (Answer on the google survey)
+What happened this time? Why? (Answer on the google survey)
 
 3. Look at the dates on the files `hello` and hello.cpp:
 ```
@@ -163,9 +161,7 @@ Now look at the dates again:
 ```
 $ ls -l
 ```
-What do you think will happen when you type make ?<br>
-
-Type:
+Type `make` again. What do you think will happen this time?<br>
 ```
 $ make
 ```
@@ -215,7 +211,7 @@ This is an important aspect of make, ask if you don't understand why!<br>
 \* Remember to submit the Google Form with your responses to Exercise 1 & 2 \*
 
 ## Exercise 3: Create Your Own Makefile
-The directory `lab03_makefile` (in the 211-starter-pack) contains a program that uses two different objects: class Foo (in foo.h and foo.cpp) and class Bar (in bar.h and bar.cpp).  Create a makefile that compiles this program.<br>
+The directory `lab03_makefile` (in the CSCI211 starter-repo) contains a program that uses two different objects: class Foo (in foo.h and foo.cpp) and class Bar (in bar.h and bar.cpp).  Create a makefile that compiles this program.<br>
 
 You may start by using the Makefile from Exercise 2.<br>
 
@@ -238,7 +234,7 @@ Hint: think carefully about the dependencies (the files listed after the target)
 
 ## Exercise 4: Create a Course Class
 
-Create a new class called `Course` (that is, create course.h and course.cpp) in the `lab03_course` directory.  You may start with the example code available in `lab03_object` (both available in the 211-starter-pack) <br>
+Create a new class called `Course` (that is, create course.h and course.cpp) in the `lab03_course` directory.  You may start with the example code available in `lab03_object` (both available in the CSCI211 starter-repo) <br>
 
 The `Course` class should have a single constructor and a print function:
 ```cpp
@@ -275,13 +271,13 @@ The `make` command will only compile what needs to be compiled (not to mention h
 
 REMEMBER: If you `#include` a file in your source code, you should only `#include *.h` files (schedule.cpp must include course.h and course.cpp must include course.h). **NEVER #INCLUDE .cpp FILES**.<br>
 
-To get credit, you must pass the posted tests (in ~/211-starter-pack/211/lab03_course).<br>
+To get credit, you must pass the tests provided in the CSCI211 starter-repo `211/lab03_course/tests` directory).<br>
 
 Turn in the files `schedule.cpp`, `course.h`, and `course.cpp`
 
 ## Exercise 5: Create Class Video for P2
 
-Create the `Video` class you need for P2 and either create a simple `main()` or use my simple `main()` to test it (my example is available in the 211-starter-pack `lab03_video` directory).<br>
+Create the `Video` class you need for P2 and either create a simple `main()` or use my simple `main()` to test it (my example is available in the CSCI211 starter-repo `lab03_video` directory).<br>
 
 If you have finished P2, all you have to do is compile your video.h and video.cpp with my main.cpp to make sure it works (or create your own main.cpp). Then turn in your video.h and video.cpp for this lab (be careful not to delete your 'real' P2 main.cpp).<br>
 
@@ -303,14 +299,14 @@ If you have not started P2, look at the Plan of Attack section and implement Ste
 
 You will need to implement the class `Video` constructor (`Video::Video(...)`) and the `print` member function (`void Video::print()`).<br>
 
-The output of your program (using the `main()` above) should exactly match the following (t01.out for ~/211-starter-pack/211/lab03_video). This is the test used by INGInious:
+The output of your program (using the `main()` above) should exactly match the following (CSCI211 starter-repo `211/lab03_video/tests/t01.out`). This is the test used by INGInious:
 ```
 Title One, www.youtube.com/one, Comment ONE, 1.1, *
 Title Two, www.youtube.com/two, Comment TWO, 2.2, **
 ```
 The single test will expect this output.<br>
 
-To get credit, you must pass the posted tests (in ~/211-starter-pack/211/lab03_video/tests).<br>
+To get credit, you must pass the tests provided in the CSCI211 starter-repo `211/lab03_video/tests` directory).<br>
 
 Turn in `main.cpp`, `video.h`, and `video.cpp`. Turn in all three files even if you have completed P2.
 

@@ -113,7 +113,7 @@ Complete the following exercises with gdb. Then, if you have time and are intere
 
 **Note for Mac users**: You cannot do this lab on a Mac unless you have GNU's g++ and gdb installed. These are no longer part of xcode, you have to download and install them using [homebrew](https://brew.sh/). It takes over an hour to install g++ using homebrew. **I recommend you use ecc-linux or a comparable Unix-like system** to complete Lab 06.<br>
 
-I have created several sample programs for you to use with the debugger. You can find them in your 211-starter-pack/211/lab06_gdb directory.<br>
+I have created several sample programs for you to use with the debugger. You can find them in your CSCI211 starter-repo `211/lab06_gdb/` directory.<br>
 
 You can compile all the programs with one call to `make`:
 ```

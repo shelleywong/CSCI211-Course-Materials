@@ -37,14 +37,14 @@ The first argument (`argc`) is the number of arguments that appear on the comman
 
 The C++ input/output library contains a mechanism for reading input from files and writing output to files. The mechanism works similarly to `cin` and `cout`, but instead of reading from standard input (`cin`) and writing to standard output (`cout`), a program can read from an input file and write to an output file. Note: This is a different mechanism than using the shell's < and > to redirect standard input and standard output.<br>
 
-The following program (mycat.cpp, provided in 211-starter-pack/211/lab08_mycat) expects the executable to be followed by one command line argument that holds the name of a file containing input. After the program has been compiled, it can be executed like this:
+The following program (mycat.cpp, provided in the CSCI211 starter-repo `211/lab08_mycat/` directory) expects the executable to be followed by one command line argument that holds the name of a file containing input. After the program has been compiled, it can be executed like this:
 ```
 $ ./mycat myfile.in
 ```
 This program reads every line from the myfile.in file and writes it to standard output. In this case, argc is 2, argv[0] is `./mycat`, and argv[1] is `myfile.in`.
 
 ## mycat.cpp
-(the version in 211-starter-pack has more comments)
+(the version in CSCI211 starter-repo has more comments)
 ```cpp
 #include <iostream>
 #include <fstream>
@@ -105,7 +105,7 @@ int main(int argc, char *argv[])
 
 ## Exercise 1: Print Command Line Arguments
 
-Write a program (called `args`) that prints all the command line arguments to standard output (everything after the executable). Use the args.cpp file in your 211-starter-pack/211/lab08_args directory as a starting point. For example:
+Write a program (called `args`) that prints all the command line arguments to standard output (everything after the executable). Use the args.cpp file in your CSCI211 starter-repo `211/lab08_args/` directory as a starting point. For example:
 ```
 $ ./args one two
 one
@@ -122,7 +122,7 @@ Submit `args.cpp` to INGInious.
 
 ## Exercise 2: Handling Input and Output File Command Line Arguments
 
-Start with the mycat.cpp that is in your 211-starter-pack/211/lab08_mycat directory<br>
+Start with the mycat.cpp that is in your CSCI211 starter-repo `211/lab08_mycat/` directory<br>
 
 You will need to edit mycat.cpp. The program should be updated to expect three command line arguments:
 * Argument 0: the mycat executable
@@ -166,7 +166,7 @@ Submit `mycat.cpp` to INGInious.
 
 ## Exercise 3: Handling Integer Command Line Arguments
 
-Working in your 211-starter-pack/211/lab08_add directory, write a program (add.cpp) that reads any number of command line arguments, checks that all the arguments (besides the executable) are integers, and prints the sum of all the numbers:
+Working in your CSCI211 starter-repo `211/lab08_add/` directory, write a program (add.cpp) that reads any number of command line arguments, checks that all the arguments (besides the executable) are integers, and prints the sum of all the numbers:
 ```
 $ ./add 10 20 12
 42

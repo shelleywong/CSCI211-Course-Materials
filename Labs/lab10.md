@@ -16,7 +16,7 @@ If you finish early, work on P5.<br>
 
 ## Sample Recursion Problems:
 
-You may want to start by trying to solve these problems on paper, as this is what you will need to do on Midterm 2; however, make sure to complete a version of each function that can be submitted to INGInious so that you can get credit for this lab. Driver programs that call these functions are available in the 211-starter-pack/211/lab10* directories:
+You may want to start by trying to solve these problems on paper, as this is what you will need to do on Midterm 2; however, make sure to complete a version of each function that can be submitted to INGInious so that you can get credit for this lab. Driver programs that call these functions are available in the CSCI211 starter-repo `211/lab10_*` directories:
 * lab10_equal
 * lab10_largest
 * lab10_sorted

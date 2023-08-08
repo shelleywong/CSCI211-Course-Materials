@@ -36,7 +36,7 @@ We can use output stream `os` just like we use `cout`.
 
 ## Exercise 1: Create a Cust Class
 
-Working in your 211-starter-pack/211/lab09_cust directory, create class `Cust` that includes a constructor (as shown above) and a print function that prints in this format:
+Working in your CSCI211 starter-repo `211/lab09_cust/` directory, create class `Cust` that includes a constructor (as shown above) and a print function that prints in this format:
 ```
 Homer shopper 42 12
 Bart robber 86 2
@@ -97,7 +97,7 @@ int Pqueue::first_priority()
 
 ## Exercise 2: Create a Priority Queue that works with Class Cust
 
-Working in your 211-starter-pack/211/lab09_pqueue directory, create class `Pqueue`. Each Node in the Pqueue class will contain a pointer to the Cust class you created in exercise 1.<br>
+Working in your CSCI211 starter-repo `211/lab09_pqueue/` directory, create class `Pqueue`. Each Node in the Pqueue class will contain a pointer to the Cust class you created in exercise 1.<br>
 
 Pqueue must include `dequeue()`, `enqueue()`, `empty()`, `length()`, and `first_priority()` functions (as shown above). You do not need to implement a Pqueue destructor for lab 09, but in P5, you should make sure to include a destructor that deletes all remaining Node and Cust objects. You should also remember to initialize any member variables that need to be initialized. Often this step is completed in the constructor, but if your constructor does not take in any parameters, you may initialize members when you declare them.<br>
 
