@@ -19,7 +19,9 @@ Lab 06 Extra Credit: Exceptions (try/catch, throw)
 
 ## Goals
 
-Learn the basics of the [GNU Project Debugger](https://www.gnu.org/software/gdb/) (gdb) so you can use it to find bugs in your C++ programs (also works for many other programming languages).
+Learn the basics of the [GNU Project Debugger](https://www.gnu.org/software/gdb/) (gdb) so you can use it to help identify and resolve errors, bugs, and issues within your C++ programs (also works for many other programming languages). Debugging tools like are essential in the software development process!<br>
+
+For extra credit, learn about C++ exceptions, which provide a way to react to exceptional circumstances (like runtime errors) that arise during program execution, and allow you to gracefully handle unforeseen conditions without crashing the program.
 
 ## Required Survey
 
