@@ -228,7 +228,7 @@ Bar(3,4)
 $
 ```
 
-Turn in your `Makefile`. [INGInious](https://inginious.csuchico.edu/) will not test your Makefile; I will grade them by reading them. Since a Makefile can do anything (such as deleting all the files on a computer) INGInious never runs Makefiles that have been turned in.<br>
+For this exercise, you will not be submitting a file. Instead, copy your `Makefile` code into the code form field on [INGInious](https://inginious.csuchico.edu/) for lab03_makefile. INGInious will not test your Makefile; I will grade it by reading it. Since a Makefile can do anything (such as deleting all the files on a computer) INGInious never runs Makefiles that have been turned in.<br>
 
 Hint: think carefully about the dependencies (the files listed after the target). For example, foo.cpp includes foo.h and thus foo.o depends on foo.cpp AND foo.h
 
