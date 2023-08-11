@@ -1,6 +1,7 @@
 # Lab 9
 
-Priority Queue
+* [Class Cust](#class-cust)
+* [Priority Queue Implementation](#priority-queue-implementation)
 
 Lab 09 Exercises
 * [Exercise 1: Create a Cust Class](#exercise-1-create-a-cust-class) (lab09_cust)
