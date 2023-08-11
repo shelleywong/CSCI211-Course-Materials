@@ -41,7 +41,7 @@ Ask the instructor if you have questions about any programming assignment expect
 
 ### Style Guide Overview
 
-Your program should be neatly organized, consistently indented, and have informative comments throughout. Avoid surprising or dangerous constructs that an average C++ programmer would find tricky or difficult to maintain. Refer to the CSCI 211 Style Guide (on Canvas) for more details on each of these categories. Things to focus on include:
+Your program should be neatly organized, consistently indented, and have informative comments throughout. Avoid surprising or dangerous constructs that an average C++ programmer would find tricky or difficult to maintain. Refer to the [CSCI 211 Style Guide](https://docs.google.com/document/d/1ZPHlwQv9SmTB-gbYWcXqM_1tL3d5jyS02PZnAXpJgYI/edit?usp=sharing) for more details on each of these categories. Things to focus on include:
 * [Variables](#variables)
 * [Classes](#classes)
 * [Functions](#functions)
@@ -60,6 +60,7 @@ Following these guidelines will make your code more readable, more understandabl
 * Use `const` whenever it makes sense and is meaningful and accurate
   * This helps signify how the variable is used so that contributors can more easily understand how to work with the variable correctly.
   * Placing a constant value in a single location makes it easier to change if necessary.
+* Avoid using "magic numbers" (unique values with unexplained meaning). Instead, use named constants (also called explanatory variables) to clarify what values represent and make your programs easier to read, understand and maintain.
 
 ### Classes
 
