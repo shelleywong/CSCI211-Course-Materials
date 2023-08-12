@@ -284,7 +284,7 @@ $ git commit -m "<descriptive commit message>"
 $ git push origin main
 ```
 
-Your best INGInious submission will be evaluated for grading, so it is fine if some submissions do not pass all the tests. If multiple submissions pass the same number of tests, your last submission will be used for grading.<br>
+Your best INGInious submission will be evaluated for grading, so it is fine if some submissions do not pass all the tests. If multiple submissions pass the same number of tests, your last best submission will be used for grading.<br>
 
 Turn in the following files using [INGInious](https://inginious.csuchico.edu/):
 
