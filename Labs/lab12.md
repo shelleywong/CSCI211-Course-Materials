@@ -1,7 +1,7 @@
 # Lab 12
 
 * Discussion, Q&A, help on the Shapes assignment (P6)
-* Project Work Time
+* [CURE-E Project](https://github.com/shelleywong/CSCI211-Course-Materials/blob/main/CURE-E/finalProject.md) Work Time
   - Lab 12 Project Goal: Create a data structure to hold your data (make at least one commit to your project repo)<br>
 
 Add, commit, and push your code to GitHub, so I can see your project progress. Remember to include a brief but descriptive commit message:

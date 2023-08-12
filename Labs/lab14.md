@@ -1,7 +1,7 @@
 # Lab 14
 
 * Discussion, Q&A, help on the Binary Search Tree assignment (P7)
-* Project Work Time
+* [CURE-E Project](https://github.com/shelleywong/CSCI211-Course-Materials/blob/main/CURE-E/finalProject.md) Work Time
   - Lab 14 Project Goal: Complete your unique algorithm (make at least one commit to your project repo)<br>
 
 Add, commit, and push your code to GitHub, so I can see your project progress. Remember to include a brief but descriptive commit message:
