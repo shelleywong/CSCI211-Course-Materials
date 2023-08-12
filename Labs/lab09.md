@@ -70,15 +70,15 @@ The reason we need both is because there is no integer value that we can return 
 Now consider a queue of pointers to `Cust`. Since NULL is not a "valid" pointer we can use it to indicate the queue was empty (i.e. we don't need both a return value and a reference parameter in this case):
 ```cpp
 // example dequeue function for a queue of pointers to Cust objects
-Cust *Pqueue::dequeue()
+Cust* Pqueue::dequeue()
 ```
 This function returns a non-null pointer if the queue was not empty (a pointer to the `Cust` that was removed) and the dequeue succeeded. It returns NULL if the queue was empty. A priority queue dequeue function should remove the highest priority node and return a pointer to the customer that was in the highest priority location in the queue. In this case, the dequeue() should delete the Node object, but it should not delete the Cust object. Instead, we return a pointer to a Cust and the Cust object will be deleted at a later point in the program.<br>
 
-The `enqueue` function should take:
+The `enqueue` function adds an element to a queue. In a priority queue, the location that the element is added depends on the value of the priority. In this case, it should take in:
 1. A pointer to a Cust object
 2. An integer priority
 ```cpp
-void Pqueue::enqueue(Cust *cust, int priority);
+void Pqueue::enqueue(Cust* cust, int priority);
 ```
 
 Class Pqueue must also have an `empty` function that returns true if the queue is empty, false if it is not empty
@@ -100,7 +100,15 @@ int Pqueue::first_priority()
 
 Working in your CSCI211 starter-repo `211/lab09_pqueue/` directory, create class `Pqueue`. Each Node in the Pqueue class will contain a pointer to the Cust class you created in exercise 1.<br>
 
-Pqueue must include `dequeue()`, `enqueue()`, `empty()`, `length()`, and `first_priority()` functions (as shown above). You do not need to implement a Pqueue destructor for lab 09, but in P5, you should make sure to include a destructor that deletes all remaining Node and Cust objects. You should also remember to initialize any member variables that need to be initialized. Often this step is completed in the constructor, but if your constructor does not take in any parameters, you may initialize members when you declare them.<br>
+Pqueue should include the following functions (see above for more detail):
+* `Pqueue()`: constructor
+* `Cust* dequeue()`: remove a customer and return a pointer to the Cust object
+* `void enqueue(Cust* cust, int priority)`: add a pointer to a Cust object (location where the customer is added depends on the priority)
+* `bool empty()`: check if the queue is empty
+* `int length()`: return the number of elements in the queue
+* `int first_priority()`: returns the priority of the first element (does not remove the element)<br>
+
+You do not need to implement a Pqueue destructor for lab 09, but in P5, you should make sure to include a destructor that deletes all remaining Node and Cust objects. You should also remember to initialize any member variables that need to be initialized. Often this step is completed in the constructor, but if your constructor does not take in any parameters, you may initialize members when you declare them (implementing a constructor is not necessary in this case).<br>
 
 Your class must work with the given `test_queue.cpp`.<br>
 
