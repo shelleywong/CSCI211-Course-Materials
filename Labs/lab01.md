@@ -427,7 +427,7 @@ $ ./a.out
 ```
 It is possible to [add `./` to the search path](https://stackoverflow.com/questions/27188856/adding-any-current-directory-to-the-search-path-in-linux) in Linux so that you do not have to type `./` before the executable every time, but it is not necessary. In my instructions, I will include `./` before all executables.<br/>
 
-Submit `hello.cpp` to [INGInious](https://inginious.csuchico.edu/).
+Submit `hello.cpp` to [INGInious](https://inginious.csuchico.edu/). One of the main goals with this exercise is to make sure you can successfully submit your code to INGInious.
 
 ## Exercise 3: Addition
 
@@ -515,14 +515,12 @@ For this exercise, make sure to submit the [211 Linux Commands and Testing Googl
 
 All labs are due at 11:59pm the Friday following lab. For this lab you must set up your CSUChico-CSCI211 GitHub account, submit `hello.cpp`, `add.cpp`, and `print.cpp` to [INGInious](https://inginious.csuchico.edu/) (there is a separate submission link for each exercise), and complete the 211 Linux Commands and Testing Google Survey. If you are not able to complete all the exercises, turn in your partial work for partial credit, or submit later for late credit.<br>
 
-Optional but recommended step: add, commit, and push your code to GitHub (the `add` command below adds all changes in the repo):
+Optional but recommended submission step: add, commit, and push your code to GitHub (the `add` command with the `-A` option updates all files in the working tree):
 ```
 $ git add -A
 $ git commit -m "completes lab01 exercises"
 $ git push origin main
 ```
-
-For more information, see [instructions for submitting files]().<br>
 
 If you have time left over, I recommend that you start working on p1. After you've made some progress on the assignment, practice using the different options for testing your code before you submit the code to INGInious.
 

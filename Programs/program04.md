@@ -170,7 +170,14 @@ Remember that the first lines of all your files (.h and .cpp) must contain the f
 
 ## Submitting Your Program
 
-You should aim to turn in your assignment several times (at least three) during development. Only the last submission has to compile and run and only the last submission will be graded. The submissions should show your progress (e.g. the first submission has a little bit of the program working, the second a little more, etc). When I suspect cheating I will look at these early submissions for a clear development trend; I want to prevent students from copying finished programs from another student and then turning them in.<br>
+You should aim to turn in your assignment several times (at least three) during development. The submissions should show your progress (e.g. the first submission has a little bit of the program working, the second a little more, etc). When I suspect cheating I will look at these early submissions for a clear development trend; I want to prevent students from copying finished programs from another student and then turning them in. Alternatively, you can show your progress by making several commits to your GitHub repo for each program:
+```
+$ git add -A
+$ git commit -m "<descriptive commit message>"
+$ git push origin main
+```
+
+Your best INGInious submission will be evaluated for grading, so it is fine if some submissions do not pass all the tests. If multiple submissions pass the same number of tests, your last submission will be used for grading.<br>
 
 Turn in the following files using [INGInious](https://inginious.csuchico.edu/):
 ```

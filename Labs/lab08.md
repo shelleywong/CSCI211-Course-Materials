@@ -208,6 +208,13 @@ Submit `add.cpp` to INGInious.
 
 ## Lab 08 Submissions
 
-All labs are due at 11:59pm the Friday following lab. For this lab you must submit `args.cpp` (Exercise 1), `mycat.cpp` (Exercise 2), and `add.cpp` (Exercise 3) to [INGInious](https://inginious.csuchico.edu/). If you are not able to complete all the exercises, turn in your partial work for partial credit, or submit later for late credit.
+All labs are due at 11:59pm the Friday following lab. For this lab you must submit `args.cpp` (Exercise 1), `mycat.cpp` (Exercise 2), and `add.cpp` (Exercise 3) to [INGInious](https://inginious.csuchico.edu/). If you are not able to complete all the exercises, turn in your partial work for partial credit, or submit later for late credit.<br>
+
+Optional but recommended submission step: add, commit, and push your code to GitHub (the `add` command with the `-A` option updates all files in the working tree):
+```
+$ git add -A
+$ git commit -m "completes lab08 exercises"
+$ git push origin main
+```
 
 [Top of the Page](#lab-8)

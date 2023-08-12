@@ -150,13 +150,20 @@ Remember that the first lines of all your files (.h and .cpp) must contain the f
 
 I will deduct points if your program does not compile using the command `g++ -o chart chart.cpp` on a Linux machine (such as ecc-linux.csuchico.edu). If you submit your program on [INGInious](https://inginious.csuchico.edu/) and you get a message that there are not any errors, your program compiled without any errors.<br>
 
-I will grade your program using another program, so if your program does not work exactly as specified above you will lose points. For example, if you put a space at the end of the line, or a blank line at the end of the output, you will lose points. Test your program using the provided sample tests and `diff`, `vimdiff`, or the `run_tests` script to make sure your output matches exactly.
+I will grade your program using another program, so if your program does not work exactly as specified above you will lose points. If your output does not exactly match the expected output, you will lose points (for example, if you have an extra space at the end of the line or an extra blank line at the end of the output). Test your program using the provided sample tests and `diff`, `vimdiff`, or the `run_tests` script to make sure your output matches exactly.<br>
 
 Turn in the following file using [INGInious](https://inginious.csuchico.edu/).
 ```
 chart.cpp
 ```
 All programming assignments are **individual** assignments -- you are expected to complete and submit your own program.<br>
+
+Optional but recommended submission step: add, commit, and push your P1 code to GitHub (the `add` command with the `-A` option updates all files in the working tree):
+```
+$ git add -A
+$ git commit -m "<descriptive commit message>"
+$ git push origin main
+```
 
 If you are not able to complete this programming assignment, turn in your partial work for partial credit, or submit later for late credit. If you turn in nothing, you get a zero. If you turn in something, you receive a grade that is higher than zero.
 

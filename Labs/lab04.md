@@ -214,6 +214,13 @@ If you finish the exercises early you could:
 
 ## Lab 04 Submissions
 
-All labs are due at 11:59pm the Friday following lab. For this lab you must submit `list.h`, `list.cpp`, and `main.cpp` to [INGInious](https://inginious.csuchico.edu/), after you have completed Exercises 1, 2, and 3. If you are not able to complete all the exercises, turn in your partial work for partial credit, or submit later for late credit.
+All labs are due at 11:59pm the Friday following lab. For this lab you must submit `list.h`, `list.cpp`, and `main.cpp` to [INGInious](https://inginious.csuchico.edu/), after you have completed Exercises 1, 2, and 3. If you are not able to complete all the exercises, turn in your partial work for partial credit, or submit later for late credit.<br>
+
+Optional but recommended submission step: add, commit, and push your code to GitHub (the `add` command with the `-A` option updates all files in the working tree):
+```
+$ git add -A
+$ git commit -m "completes lab04 exercises"
+$ git push origin main
+```
 
 [Top of the Page](#lab-4)
