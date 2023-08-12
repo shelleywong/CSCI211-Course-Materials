@@ -13,7 +13,9 @@ Lab 03 Exercises:
 > Note: To get full credit for this lab, you must complete a Google Survey (for exercises 1 and 2) and submit several files to INGInious (exercises 3, 4, and 5).
 
 ## Overview of make
-The job of `make` is to create files
+The job of the `make` utility is to create executables and other non-source files of a program from the program's source files. When you run `make`, it looks for a makefile in the directory (usually called `makefile` or `Makefile`). The `Makefile` contains rules that tell the `make` utility how to execute a series of commands in order to build a target file from source files.<br>
+
+A benefit of using `make` is that it automatically figures out which files it needs to update, based on which source files have changed. The `make` utility also automatically determines the proper order for updating files, in case one non-source file depends on another non-source file.
 
 ### Example
 Suppose you have a file called hello.cpp and you want to create the executable called `hello`. You would type the command:
@@ -40,8 +42,9 @@ $ make
 
 ### Advantages of make
 
-1. You only have to type the compilation command(s) once (that is, put them in the makefile)
-2. Make will only compile the files that have changed since the last time you compiled (this is really important in large projects where complete compilation may take several hours).<br>
+1. You only have to type the compilation command(s) once. After you have put them in the makefile, you only have to type `make` to run all the compilation commands.
+2. Make will only compile the files that have changed since the last time you compiled (this is really important in large projects where complete compilation may take several hours).
+3. Make automatically determines the proper order for updating files, which is useful when a non-source file depends on another non-source file.<br>
 
 These are surprisingly big advantages.
 
@@ -107,13 +110,13 @@ clean:
 
 ### Compiler Options
 
-The above Makefile uses the following command-line options for the g++ compiler:
+The above Makefile uses the following gcc command-line options for the g++ compiler:
 | Option &nbsp; |    |
 | --- | --- |
-| `-c` | Compile only: create an object file (a .o file); do not create an executable (such as a.out) |
+| `-c` | Compile or assemble the source files, but do not link: create an object (-o) file, do not create an executable (such as a.out) |
 | `-o filename` | Give a name to the output file (such as `filename`) instead of using the default a.out |
 | `-g` | Put some extra information in the output files (.o and executables) so the GDB debugger will give more friendly output (debuggers are discussed in a future lab) |
-| `-Wall` | Show all warnings (warnings help illuminate problems in your program, you should fix your code so there are no warnings) |
+| `-Wall` | Show all warnings about constructions that some users consider questionable, and that are easy to avoid (these illuminate problems in your program -- you should be able to easily fix your code so there are no warnings) |
 | `-pedantic` | Issue all the warnings demanded by strict ISO C and ISO C++ (i.e. issue warnings if your program does not follow the standard exactly) |
 | `-std=c++11` | Compile with C++ ISO standard version C++11. Newer standards exist, but this is how all of your code will be compiled and tested on INGInious. |
 
@@ -124,7 +127,7 @@ There are many default rules built into various versions of make. Thus in a larg
 When learning how to use make it is best to avoid the default rules and put in explicit rules for each file.
 
 ## Exercise 1: Simple Makefile
-\* You must complete this [Google Survey](https://docs.google.com/forms/d/e/1FAIpQLSft0f3fr4rMs0LIK2KWWbEs2EMYqQSBPFYjAcQzJWgQM3eq_A/viewform?usp=sf_link) to get credit for Exercises 1 & 2 \*<br>
+\* You must complete this [Google Survey](https://docs.google.com/forms/d/e/1FAIpQLSft0f3fr4rMs0LIK2KWWbEs2EMYqQSBPFYjAcQzJWgQM3eq_A/viewform?usp=sf_link) to get credit for Exercises 1 & 2 (there are also a couple general questions about Makefiles and the make utility) \*<br>
 
 Note: You will need to be logged in to your \@mail.csuchico email in order to take the Google Survey. If you get a message that you are unable to access the survey, try using your Chico portal username and password to login to Google. If you are not sure how to proceed, feel free to ask for help!<br>
 
