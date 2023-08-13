@@ -23,9 +23,9 @@ Points: 100
 
 ## Overview
 
-This program reads a set of integers from standard input and draws a bar chart to standard output using asterisks and spaces ('*' and ' ').<br>
+This program reads a set of positive integers from standard input and draws a bar chart to standard output using asterisks and spaces ('*' and ' ').<br>
 
-The user specifies a set of up to 100 integers. The integers may be any value greater than 0. When the user enters a 0, the program will stop reading standard input and print the chart.<br>
+The user can enter up to 100 integers. The integers may be any value greater than 0. When the user enters a 0, the program will stop reading standard input and print the chart.<br>
 
 For example, if the user entered, `1 2 3 4 3 2 1 10 0`, your program must print:
 ```
@@ -44,11 +44,11 @@ For example, if the user entered, `1 2 3 4 3 2 1 10 0`, your program must print:
 
 ## Program Requirements
 
-The input numbers might be on separate lines. If you read them using `cin >>` you don't have to think about lines, spaces, tabs.<br>
+The input numbers may be on the same line or separate lines. If you read them using `cin >>` you don't have to think about lines, spaces, and tabs.<br>
 
-Your program must be able to read up to 100 positive integers (greater than 0) from standard input. You must store these integers in a single array. For this program, do **not** use a standard template library container, such as a vector.
+Your program must be able to read up to 100 positive integers (greater than 0) from standard input. You must store these integers in a single array. For this program, use a standard C-style array (as described in this [C++ Arrays tutorial](https://cplusplus.com/doc/tutorial/arrays/)). C-style arrays are a powerful tool and it is beneficial for you to understand how to work with them. Do **not** use a standard template library (STL) container, such as a vector. STL containers are useful in some cases, but they can require additional memory and overhead that are unnecessary for this assignment.
 
-> Note: There are various ways to handle invalid input. For this program, here are two ways you could handle negative numbers, after you extract the input: (1) discard/ignore the input, or (2) print a message to stderr (the standard output stream for errors), e.g. `cerr << input << " is not valid input. Enter a positive integer.\n";`. In both cases, continue accepting input after receiving the invalid input, until the user enters a 0.
+> Note: The input files for this program will all contain valid input, but future programs may contain invalid input. If you would like to write your P1 implementation so that it handles invalid input, you could include a condition after you extract each input -- if the input is invalid (e.g. negative values), discard/ignore the input or (2) print a message to stderr (using `cerr`, the standard output stream for errors). In both cases, continue accepting input after receiving the invalid input, until the user enters a 0.
 
 After all these numbers are read and you've reached the end of input (i.e. a `0` has been entered), draw the corresponding bar chart. For example consider the following input/output (I use "$" to represent the Linux command prompt):
 ```
@@ -73,7 +73,7 @@ Note: text between a `<` and a `>` is text that the user types. Sometimes it is 
 
 Your program must work exactly like this. It must not print any other characters.<br>
 
-> Note: If you think your test looks correct but is not passing some tests, whitespace may not match -- check your spaces and endlines (endl or '\n')
+> Note: If you think your test looks correct but is not passing some tests, whitespace may not match -- use `diff` or `vimdiff` and check your spaces and endlines (endl or '\n')
 
 ## Helpful Hints
 
@@ -124,10 +124,6 @@ int largest = find_largest(values, size);  // Notice that there are no []
 
 In C/C++ you can pass an array without specifying the size of the array. In a couple of weeks I will cover in lecture why this works.
 
-### Some credit is better than no credit
-
-If you don't finish in time, turn in what you have. If you turn nothing in I will give you a zero. If you turn in something I will give you partial credit.  Partial credit is always better than 0.<br>
-
 ## General Requirements
 
 Programs should be well formatted and consistent so they are easy to read. The [General Requirements](https://github.com/shelleywong/CSCI211-Course-Materials/blob/main/Programs/README.md#general-requirements) listed in the Programs directory README apply to all programming assignments.<br>
@@ -164,6 +160,8 @@ $ git add -A
 $ git commit -m "<descriptive commit message>"
 $ git push origin main
 ```
+
+### Some credit is always better than no credit!
 
 If you are not able to complete this programming assignment, turn in your partial work for partial credit, or submit later for late credit. If you turn in nothing, you get a zero. If you turn in something, you receive a grade that is higher than zero.
 
