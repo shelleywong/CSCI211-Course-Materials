@@ -38,7 +38,7 @@ Allow the user to specify up to 100 videos. If more than 100 videos are specifie
 
 > Note: 100 is the maximum size of the array. Since you know the maximum size, you can statically allocate the array.
 
-> Note: use a C-style array. Do not use a standard template library container. You will get opportunities to use other types of containers in future programs, but C-style arrays are a powerful tool and it is beneficial for you to understand how to work with them.
+> Note: use a C-style array. C-style arrays are a powerful tool and it is beneficial for you to understand how to work with them. Do **not** use a standard template library (STL) container, such as a vector. STL containers are useful in some cases, but they can require additional memory and overhead that are unnecessary for this assignment. You will get opportunities to use other types of containers in future programs.
 
 > Note: `cerr` is the standard output stream for errors. You can use it in the same way that you would use `cout`.
 
