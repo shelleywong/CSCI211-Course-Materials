@@ -17,7 +17,7 @@ Points: 150
 * Practice working with classes, objects, and arrays
 * Review reading input from standard input
 * Practice comparison of strings
-* Practice dynamic memory allocation
+* Practice using pointers and dynamic memory allocation
 * Practice writing to standard output
 * Practice exit codes
 * Introduce sorting algorithms
