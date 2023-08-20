@@ -19,6 +19,7 @@ Points: 250
 * Practice information hiding
 * Design a Linked List
 * Review dynamic memory allocation and deallocation
+* Practice handling errors
 * Learn to love pointers
 
 ## Overview
