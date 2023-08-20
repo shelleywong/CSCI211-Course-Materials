@@ -27,7 +27,7 @@ Implement a linked-list of pointers to Video objects
 > Note: P3 will use the Video class that you used in P2. See [the  writeup](https://github.com/shelleywong/CSCI211-Course-Materials/blob/main/Programs/program02.md) for a description of class Video.
 
 Implement a `main()` that reads and executes commands. Your program must handle the following commands:
-1. Insert a new video into the linked list
+1. Insert a new video into the linked list (after each new video is inserted, the list should be ordered alphabetically by title)
 2. Print all the videos in the list
 3. Lookup a video by title and print it
 4. Print the number of videos in the list
@@ -38,7 +38,7 @@ Implement a `main()` that reads and executes commands. Your program must handle 
 
 ### Implementation
 
-Use the `Video` class you created for P2 to store videos. If you did not finish P2, create a `Video` class as specified in P2. You may need to add member functions to the `Video` class.<br>
+Use the `Video` class you created for P2 to store videos. If you did not finish P2, create a `Video` class as specified in P2. You will likely want to add some member functions to the `Video` class (i.e. getters and setters).<br>
 
 Create a linked list class called `Vlist` -- it will be a linked list of `Video *` (pointers to Video objects). Put this class in the files vlist.h and vlist.cpp. The nodes in this list must not be the `Video` objects.  Each `Node` will contain a pointer to a `Video` object and a pointer to the next `Node`.<br>
 
@@ -73,7 +73,7 @@ Your program must handle the following commands. The arguments for the command a
 **The commands from input that you will need to handle in main.cpp:**<br>
 | Command | Action | Input Arguments** | Error |
 | --- | --- | --- | --- |
-| insert | Insert a new video into the linked list. | title, url, comment, length, rating | Title is already in the list. See error messages below. |
+| insert | Insert a new video into the linked list (videos should be ordered alphabetically by title). | title, url, comment, length, rating | Title is already in the list. See error messages below. |
 | print | Print all the videos in the list using the format from P2. | none | none (print nothing if list is empty) |
 | length | Print the number of videos in the list as a single integer (don't print anything other than the integer). | none | none (print 0 if the list is empty) |
 | lookup | If the given title is in the list, print the video using the format from P2. | title (may contain spaces) | Title is not in list. |
