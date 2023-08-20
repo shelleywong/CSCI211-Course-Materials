@@ -76,7 +76,7 @@ bool isint(char str[])
 
 Submit `isint.cpp` to INGInious.<br>
 
-If you finish early, you should work on P5 or practice writing solutions to questions from Midterm 2 [previous exams](https://www.ecst.csuchico.edu/~trhenry/classes/211.s17/exams.html).
+If you finish early and would like more practice implementing recursive methods, you can review the recursion-focused questions from [previous semester exams](http://www.ecst.csuchico.edu/~trhenry/classes/211.s17/exams.html), and try writing solutions to these problems.
 
 ## Lab 10 Submissions
 

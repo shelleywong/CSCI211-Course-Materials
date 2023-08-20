@@ -52,7 +52,7 @@ Write a function that removes all duplicate entries in the list. Assume that the
 
 ***
 
-If you finish early, you should practice writing linked list solutions for questions from the [previous semester exams](http://www.ecst.csuchico.edu/~trhenry/classes/211.s17/exams.html)
+If you finish early and would like more practice implementing linked list methods, you can review the linked list questions from [previous semester exams](http://www.ecst.csuchico.edu/~trhenry/classes/211.s17/exams.html), and try writing solutions to these problems.
 
 ## Lab 05 Submissions
 
