@@ -47,6 +47,8 @@ Explore more about each of the eight domains of the entrepreneurial mindset thro
 
 ## Process
 
+Consider the following questions and write your responses in this [CURE-E STEM Entrepreneurial Mindset Google Survey](https://docs.google.com/forms/d/e/1FAIpQLSe7BBp9B9kyhKBwK6XmhJkmJgv4HsINbdwtmP4O9koM-K9U2g/viewform?usp=sf_link). You will need to use your Chico State username and password (it may help to open up a private browser so you're not already logged in to your personal account).<br>
+
 Think of a time when you used one of the Entrepreneurial Mindsets:
 
 * What Entrepreneurial Mindset did you apply? What situation did you apply the Entrepreneurial Mindset to?
