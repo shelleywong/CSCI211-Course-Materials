@@ -62,10 +62,10 @@ You must create a git repository for your program and have at least 4 commits ma
 * Creation of a C++ class for your ADT
 * Program successfully gets input from a file
 * Program successfully adds entries to your ADT
-* Program successfully prints all entries in a readable format (requires the creation of a method in your ADT class)
+* Program successfully prints all entries in an organized and readable format (requires the creation of a method in your ADT class) - how the entries are organized is up to you, but you should be able to why the entries are organized in the way you have chosen.
 * Program successfully prints out insight on Your Question (requires the creation of at least one method that implements your algorithm in your ADT class)<br>
 
-Your computer program will be submitted through your GitHub repo. Remember to make at least 4 commits for the program, and at least 1 more commit for the documentation.
+Your computer program will be submitted through your GitHub repo. Remember to make at least 4 commits for the program, and at least 1 more commit for the documentation. Also remember that the same style and readability guidelines that we have used throughout the semester apply to this project!
 
 ### Your Documentation
 
