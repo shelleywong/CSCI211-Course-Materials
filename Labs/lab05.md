@@ -1,6 +1,6 @@
 # Lab 5
 
-Practice Midterm Exam questions<br>
+Practice writing linked list functions<br>
 
 Lab 05 Exercises:
 * [Exercise 1: Compare Value to List Elements](#exercise-1-compare-value-to-list-elements) (lab05_compare)
@@ -10,7 +10,7 @@ Lab 05 Exercises:
 
 ## Goal
 
-* Practice writing linked list functions similar to those you have to write on the midterm.
+* Practice writing linked list functions similar to those you have to write on tests.
 * Each exercise has a directory in your CSCI211 starter-repo `211/` folder (lab05_*). This folder contains everything except the missing function. All you have to do is write the function, compile, and test your solution.
   * Exercise 1:  211/lab05_compare
   * Exercise 2:  211/lab05_largest
