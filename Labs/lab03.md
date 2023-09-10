@@ -129,7 +129,7 @@ When learning how to use make it is best to avoid the default rules and put in e
 ## Exercise 1: Simple Makefile
 \* You must complete this [Google Survey](https://docs.google.com/forms/d/e/1FAIpQLSft0f3fr4rMs0LIK2KWWbEs2EMYqQSBPFYjAcQzJWgQM3eq_A/viewform?usp=sf_link) to get credit for Exercises 1 & 2 (there are also a couple general questions about Makefiles and the make utility) \*<br>
 
-Note: You will need to be logged in to your \@mail.csuchico email in order to take the Google Survey. If you get a message that you are unable to access the survey, try using your Chico portal username and password to login to Google. If you are not sure how to proceed, feel free to ask for help!<br>
+Note: You will need to be logged in to your \@mail.csuchico.edu Google account in order to take the Google Survey. If you get a message that you are unable to access the survey, try using your Chico portal username and password to login to Google. If you are not sure how to proceed, feel free to ask for help!<br>
 
 Go to your CSCI211 repo and open the `211/lab03_hello/` directory (your path may vary):
 ```
