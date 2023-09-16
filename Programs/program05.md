@@ -19,8 +19,8 @@ Points: 300
 * Practice using a struct
 * Practice working with command line arguments
 * Practice using file streams
-* Practice using assert(·)
 * Deploy multiple instances of your priority queue
+* Practice using assert(·)
 
 > Note: The priority queue used in this assignment was created in [Lab 9](https://github.com/shelleywong/CSCI211-Course-Materials/blob/main/Labs/lab09.md). Follow those instructions to create and test your Pqueue.
 
@@ -116,13 +116,15 @@ time = 75
 
 The `entered/done_shopping/started/done_checkout` messages must be printed in member functions of class `Cust`. This is easy to implement. Create a `print` function for each type of message and pass the `ostream` and clock (and sometimes other information). For example, the following function prints the "entered store" message.
 ```cpp
-void Cust::print_entered(ostream & os, int clock)
+void Cust::print_entered(ostream& os, int clock)
 {
     assert(clock == m_arrival_time);
     os << clock << ": " << m_name << " entered store" << endl;
 }
 ```
 The above `assert` is a great example of using asserts. The only situation that could result in a customer entering the store at a time different than his arrival time is if there is a logic flaw in the program. This assert will point out a logic flaw which otherwise might be very difficult to discover.<br>
+
+> Note: you do NOT need an assert in every Cust class print function. Consider carefully if the function would benefit from an assert.
 
 After the main loop is over (at the end of the simulation), print the amount of money in each register (see above example for format, the register is part of the `Checker struct`) and print the current time -- the value of the clock (see above example for the format). This time should be one greater than the time the last customer left the store. If the input file is empty, and there are no errors, the clock should be 1.<br>
 
