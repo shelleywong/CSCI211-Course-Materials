@@ -44,7 +44,7 @@ Customers will enter the store at a specified arrival time, spend time shopping 
 
 ### Implementation
 
-Your program must take four command line arguments:  
+Your program must take in four command line arguments (in addition to the executable):  
 * number of checkers
 * length of checker's break after a robbery
 * name of input file
@@ -179,7 +179,7 @@ Once all the customers have been read and inserted into the arrival queue, call 
 * the checker's break
 * a reference to an ofstream (an output file stream to be used for output; all non-error output is written to the file given on the command line).<br>
 
-Checkers can be implemented as an array of `Checker` structs. This struct must contain a pointer to their current `Cust`. If the checker is not serving anyone, its `Cust` pointer should be NULL. Since you don't know how many checkers there are until run time, you cannot create this array until run time. You can create the array of Checker structs and initialize all Checkers at the beginning of the simulation function, before you run the main simulation:
+Checkers can be implemented as an array of `Checker` structs. This struct must contain a pointer to their current `Cust`. If the checker is not serving anyone, its `Cust` pointer should be NULL. Since you don't know how many checkers there are until run time, you cannot create this array until run time. You can create the array of Checker structs and initialize all Checkers at the beginning of the simulation function using a dynamically allocated array, before you run the main simulation:
 ```cpp
 void run_simulation(Pqueue &arrival_queue, int num_checkers, int break_duration, ostream &os)
 {    
@@ -252,9 +252,10 @@ Work step by step, and test that your program is working as expected along the w
 5. In sim.cpp, get the command line input and make sure all input is valid. If not, print the appropriate error message.
 6. One of the command line inputs is an input file that contains information about the customer. Read in all of the customer information, one customer at a time: for each customer, create a new Cust object with the provided information and add the customer to the arrival queue before moving on.
 7. After you've gotten all input and added all customers to the arrival queue, you can call the run_simulation() function.
-8. At the beginning of the run_simulation() function, create an array of pointers to Checker structs (also create the Checker struct if you haven't already).
+8. Create the Checker struct (if you haven't already). Then create the array of Checker structs (this should be at the beginning of the run_simulation() function).
 9. Then implement the body of the simulation (described above).
-10. Print the final messages.
+10. Print the final messages (the amount in each register and the final time).
+11. Make sure that you are correctly managing all dynamically allocated memory (look for any code where you used `new` to allocate memory).
 11. Read the requirements carefully to make sure your program is complete.
 
 ## General Requirements
