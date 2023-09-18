@@ -65,7 +65,14 @@ You must create a git repository for your program and have at least 4 commits ma
 * Program successfully prints all entries in an organized and readable format (requires the creation of a method in your ADT class) - how the entries are organized is up to you, but you should be able to why the entries are organized in the way you have chosen.
 * Program successfully prints out insight on Your Question (requires the creation of at least one method that implements your algorithm in your ADT class)<br>
 
-Your computer program will be submitted through your GitHub repo. Remember to make at least 4 commits for the program, and at least 1 more commit for the documentation. Also remember that the same style and readability guidelines that we have used throughout the semester apply to this project!
+Your computer program will be submitted through your CSUChico-CSCI211 GitHub repo on your default branch (usually called the `main` branch). Remember to make at least 4 commits for the program, and at least 1 more commit for the documentation. Also remember that the same style and readability guidelines that we have used throughout the semester apply to this project!
+
+Each time you commit your code to GitHub, you should be completing the following steps (the `add` command with the `-A` option updates all files in the working tree):
+```
+$ git add -A
+$ git commit -m "<descriptive commit message>"
+$ git push origin main
+```
 
 ### Your Documentation
 
@@ -90,7 +97,12 @@ In the git repository for your program, you should have a README.md file in the 
   - You should include details about how a user can run your program once they have access to your repo (How do I execute your program? Do you have a makefile? Do you have a script? Is there a specific command I should run?)
   - You should either (1) create an input file that I can run to see how your code works or (2) provide detailed instructions for the commands I can run to see how your code works.<br>
 
-Remember to commit your changes so I can see your documentation in the repo.
+Remember to commit your changes so I can see your documentation in the repo (this process is just like how you commit the rest of your code):
+```
+$ git add -A
+$ git commit -m "<descriptive commit message>"
+$ git push origin main
+```
 
 ### Your Visual Representation
 
