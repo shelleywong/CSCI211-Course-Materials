@@ -9,7 +9,7 @@ Using resources from [Right Question Institute](https://rightquestion.org/educat
 
 The skill of question asking is far too rarely deliberately taught in school. The Question Formulation Technique (QFT) provides a simple yet powerful way to teach students how to formulate, work with, and use their own questions.<br>
 
-You will need to develop a question that your CURE-E Final Project will set out to answer. This semester, we are focusing on [publicly available historical weather data](https://www.ncdc.noaa.gov/cdo-web/datasets) for Chico, CA or surrounding communities. Data is provided by the National Oceanic and Atmospheric Administration (NOAA). We can search for and request data using their [Climate Data Online Search](https://www.ncei.noaa.gov/cdo-web/search?datasetid=GHCND) tool.<br>
+You will need to develop a question that your CURE-E Final Project will set out to answer. This semester, we are focusing on [publicly available historical weather data](https://www.ncdc.noaa.gov/cdo-web/datasets) for Chico, CA or surrounding communities. Data is provided by the National Oceanic and Atmospheric Administration (NOAA). We can search for and request data using their [Climate Data Online Search](https://www.ncei.noaa.gov/cdo-web/search) tool.<br>
 
 ## Attitude
 
@@ -17,9 +17,20 @@ Entrepreneurial Mindset: Flexible and Adaptable, Creative and Innovative, Initia
 
 ## Preparation
 
-Nowadays, we have access to vast amounts of data, but it can sometimes be difficult to extract useful information from that data. Take a look at the example dataset: `assets/chico-weather-2018-2022.csv`. Each row displays the readings from a given day. Columns include station ID, station name, date, and data related to precipitation and air temperature. The [Global Historical Climatology Network Daily Documentation](https://www.ncei.noaa.gov/pub/data/cdo/documentation/GHCND_documentation.pdf) can be used as a reference. While the data is organized, it is still challenging to find specific pieces of information.<br>
+Nowadays, we have access to vast amounts of data, but it can sometimes be difficult to extract useful information from that data. Take a look at the example dataset: `assets/chico-weather-2018-2022.csv`. Each row displays the readings from a given day. Columns include station ID, station name, date, and data related to precipitation and air temperature. The [Global Historical Climatology Network Daily Documentation](https://www.ncei.noaa.gov/pub/data/cdo/documentation/GHCND_documentation.pdf) can be used as a reference. While the data is organized, it can still be challenging to find specific pieces of information, or discover answers to questions that previously had no known solution.<br>
 
-Take a few minutes to individually look at the data and think about different types of insight that could be gained from the data.<br>
+Take a few minutes to individually look at the data and think about different types of insight that could be gained from the data. Consider different stakeholders who could benefit from analysis of climate information -- individuals in agriculture, emergency management, renewable energy, tourism, outdoor recreation, and government agencies -- people like city planners, student club leaders, farmers, gardeners, delivery drivers, event planners, etc.<br>
+
+Consider these examples of areas where you could provide new knowledge for stakeholders:
+* Exploring average temperatures throughout the growing season, including the last frost date in spring and the first frost date in fall, which could be helpful for farmers and home gardeners.
+* Identifying historical precipitation patterns that can help city planners assess flood risks and develop appropriate drainage systems and flood control measures.
+* Examining historical weather data to help campus student organizations and event planners schedule outdoor campus events, ensuring better attendance and participant comfort, or helping students plan for commutes and travel during breaks.
+* Determining if there is a trend in the frequency or intensity of heatwaves, which could help public health departments develop action plans and provide guidance for vulnerable populations, such as the elderly, children, or people with pre-existing health conditions.<br>
+
+We will use a shared Google Doc to complete this assignment(link on Canvas).
+- Divide yourselves into groups of 3-5 students
+- Decide how you will complete this exercise (e.g. Who will type the questions? How are you making sure that everyone gets a chance to provide input?)
+- List the names of each team member (first and last)<br>
 
 ## Process
 
@@ -27,7 +38,7 @@ Now it is time to start formulating some questions!<br>
 
 1. Question Focus
   - :heavy_check_mark: Focus on the example dataset, while being aware that your group can choose a different dataset for your CURE-E project (e.g. for a specific station, for a longer date range, etc).
-  - :heavy_check_mark: You can start with simple questions (e.g. What is the highest temperature?), but then consider questions that are more complex, including a range of dates (months, years, seasons), several locations, multiple categories (e.g. precipitation and minimum temperature), different statistical calculations (e.g. mean average, range, variance, percentile).
+  - :heavy_check_mark: You can start with simple questions that have an easy-to-find answer (e.g. What is the highest temperature?), but then consider questions that are more complex, including a range of dates (months, years, seasons), several locations, multiple categories (e.g. precipitation and minimum temperature), different statistical calculations (e.g. mean average, range, variance, percentile), etc.
   - :heavy_check_mark: As you formulate questions, think about some potential stakeholders (community members or groups who would benefit from this information).
 2. Produce Your Questions
   - :heavy_check_mark: Follow the rules:
@@ -38,8 +49,8 @@ Now it is time to start formulating some questions!<br>
   - :heavy_check_mark: Number your questions
 3. Improve Your Questions
   - :heavy_check_mark: Categorize questions as Closed or Open-ended
-    - a) Closed-Ended: Answered with “yes,” “no” or one word
-    - b) Open-Ended: Require longer explanation
+    - a) Closed-Ended: Narrowly focused questions that can be answered with a simple “yes” or “no”, one word, or a single piece of data. Closed-ended questions are focused on gathering precise answers and targeted facts.
+    - b) Open-Ended: Questions that encourage discussion and exploration, often requiring a longer explanation with a more detailed and nuanced response. There may not be a single correct solution; however, research into the question can provide more in-depth understanding, insights, and analysis.
   - :heavy_check_mark: Change questions from one type to another
 4. Strategize
   - :heavy_check_mark: Prioritize your questions
@@ -49,6 +60,17 @@ Now it is time to start formulating some questions!<br>
   - :heavy_check_mark: Individual written reflection or small group reflection
   - :heavy_check_mark: Volunteers share out to full group
 
+Reminder: when you start this exercise, you should try to come up with as many questions as you can. By the end of the exercise, your list of questions should identify which questions are closed-ended and which are open-ended, and it should be clear which questions have the highest priority.<br>
+
 ## Conclusion
 
-The goal today is to generate ideas for potential questions you can answer through your CURE-E Final Project. In the upcoming weeks, work with your group to determine a stakeholder and decide on at least one question for each group member to focus on. Check in with the instructor to confirm if your questions are sufficiently complex for the Final Project.
+The goal today is to generate ideas for potential questions you can answer through your CURE-E Final Project. In the upcoming weeks, work with your group to determine a stakeholder and decide on at least one question for each group member to focus on. Your question for the Final Project must be sufficiently complex -- try to think of a question that requires factual data but cannot be answered with a simple search (e.g. what day had the hottest temperature?). Check in with the instructor to confirm if your question matches this requirements.<br>
+
+To successfully complete this assignment, each participant should submit an individual project proposal to Canvas that includes the following components:<br>
+
+1. Clearly state the research question you intend to address
+2. Identify the stakeholder(s) who stand to gain from the insights derived from your project
+3. Provide some details about the dataset you intend to use, such as the Date Range, Weather Observation Type (e.g. Daily Summaries, Global Summary of the Month, Local Climatological Data, Normals Hourly, etc), Station/Zip Code/City or other geographic/location identifier, and observations/values (e.g. precipitation (PRCP), snowfall (SNOW), max temperature (TMAX), min temperature(TMIN), etc)
+4. You may use the same dataset as other students, but you should be writing your own program and individually addressing a unique question. If you are using the same dataset as other students, list the names of the other students.<br>
+
+Reminder: this assignment has 2 components -- the QFT discussion (submitted through the shared Google Doc) and the Project Proposal (a PDF or text submission to Canvas).
