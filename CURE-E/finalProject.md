@@ -40,10 +40,13 @@ Entrepreneurial Mindset: Flexible and Adaptable, Creative and Innovative, Initia
 * [Your Computer Program](#your-computer-program)
 * [Your Documentation](#your-documentation)
 * [Your Visual Representation](#your-visual-representation)
-* [Your Presentation](#your-presentation)
+* [Presentation Part 1: Your Elevator Pitch Presentation](#presentation-part-1-your-elevator-pitch-presentation)
+* [Presentation Part 2: Your Demonstration Recording](#presentation-part-2-your-demonstration-recording)
 * [Your Self-Assessment](#your-self-assessment)
 
 ## Process
+
+Note: All files and folders related to your project (the code for your program, your documentation, the dataset files, Makefiles, scripts to run your code, etc) should be in a single directory located directly inside your CSUChico-CSCI211 repo -- you should give the directory a name that clearly indicates that it contains your CURE-E Final Project, e.g. `CSCI211-F23-FirstName-LastName/final-project/` or `CSCI211-F23-FirstName-LastName/cure-e/`).
 
 ### Your Computer Program
 
@@ -121,29 +124,36 @@ Some other things that make for a good poster (or any academic presentation visu
 
 Probably the easiest option for creating your visual representation (e.g. poster or infographic), is to use one presentation slide (e.g. PowerPoint or Google Slides). The visual can be shared online, or you can bring a physical copy of it to the presentation.<br>
 
-### Your Presentation
+### Presentation Part 1: Your Elevator Pitch Presentation
 
-On the day of the final, everyone will give short presentations about their project to the class. You will use your visual representation to help enhance understanding, clarify concepts, and engage the audience. Presentations (including Q&A time) should be no more than 5 minutes.<br>
+During the time of the scheduled final for this class, we will have elevator pitch presentations for your projects. You will use your visual representation during your elevator pitch to help enhance understanding, clarify concepts, and engage the audience. Elevator pitch presentations should be about 1-3 minutes.<br>
 
-Your presentation will start in the style of an [elevator pitch](https://drive.google.com/file/d/16yYhMlI2md_-bMGilXNKFnMZabcY-tuc/view): a short speech or introduction that describes who you are and what you do and leaves the listener wanting to know more or take action.<br>
-
-After your elevator pitch (about 30-90 seconds of your presentation), there will be a couple more minutes for you to discuss your contribution and respond to any questions.<br>
+An [elevator pitch](https://drive.google.com/file/d/16yYhMlI2md_-bMGilXNKFnMZabcY-tuc/view) is a short speech or introduction that describes who you are and what you do and leaves the listener wanting to know more or take action. In addition to the traditional elevator pitch details, you will need to provide a brief description of your findings.<br>
 
 **Prepare**: Think about your project. Write notes on what value it adds to people or the customer. What impact does it or will it have? Who is most interested in what you are offering?<br>
 
-Your elevator pitch should include:
-1. One sentence about who you are<br>
-2. One or two sentences describing your research question or project design challenge.<br>
-3. One or two sentences describing the problem you are trying to help solve or provide insight about. Describe who will benefit from the solution and what value you are offering.<br>
-4. One or two sentences that describes your approach and how it is different or sets you apart from other approaches.<br>
-5. A question that engages your audience and brings them into your conversation, so they share your passion or pain.<br>
+Your elevator pitch project presentation should include:
+1. One sentence about who you are.<br>
+2. One or two sentences providing some context about your project's research/design challenge and the problem you are trying to help solve or provide insight about.<br>
+3. One or two sentences describing who will benefit from the solution and what value you are offering.<br>
+4. One or two sentences that explains your approach. If there is anything different or unique about your approach that sets you apart, make sure to mention it.<br>
+5. Now ask your research question -- engage your audience and bring them into your conversation, so they share your passion or pain.<br>
+6. Give a sneak peak of your findings (whether or not your findings match your expectations, they can still provide useful information!) Don't worry about explaining your findings, just let everyone know your results and how they can find out more about your project.<br>
 
-Normally, an elevator pitch ends with a call to action (one or two sentences about how they can learn more or get involved). In your case, you will finish with the following information:
-* A brief description of your findings (whether or not your findings match your expectations, they can still provide useful information!)
+You do not need to explain every detail. Including a couple technical details may be useful, but your presentation should be understandable for a non-technical audience. Keep it short, memorable, and impactful. For the most part, I will not be grading you on how good you are at giving presentations, but I recommend practicing a bit so that your transitions flow well and your presentation is conversational and engaging.<br>
+
+Note: if you will not be able to attend in-person during the time of our scheduled final, you may (a) attend the final virtually and synchronously, giving your elevator pitch presentation through Zoom, or (b) record your elevator pitch presentation and submit it to Canvas (in this case, you will be submitting two recordings to Canvas).
+
+### Presentation Part 2: Your Demonstration Recording
+
+The presentation has been split into two parts to make sure everyone has time to briefly present about their project. This portion of the presentation should be recorded, and the recording should be submitted to Canvas. The goal of this part of the presentation is for you to demonstrate how to use your program, show that your program is working and getting results, provide some context about your work, and discuss any personal insights. I am expecting this recording to be about 1-5 minutes.
+
+Your demonstration recording should include:
+* A demonstration of yourself compiling and executing your program. If needed, provide some explanation about how I should interpret your output.
 * Some context about your work, e.g. a brief discussion of any challenges you faced and how those challenges were resolved.
 * Any personal insight, e.g. What did you find most interesting or rewarding about working on this project? Do you see any next steps or future direction for your project?<br>
 
-Don’t be tempted to explain every detail. Including a couple technical details may be useful, but your presentation should be understandable for a non-technical audience. Keep it short, memorable, and impactful. For the most part, I will not be grading you on how good you are at giving presentations, but I recommend practicing a bit so that your transitions flow well and your presentation is conversational and engaging.<br>
+Just like with the elevator pitch, you do not need to explain every detail. Including a couple technical details may be useful, but your presentation should be understandable for a non-technical audience. Keep it short, memorable, and impactful. Your recording does not have to look professional, but you should speak clearly and any visuals (code, text output, images, etc) should actually be visible.<br>
 
 ### Your Self-Assessment
 
