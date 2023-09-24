@@ -48,7 +48,7 @@ int main()
 
 Read about the [vector's operator[]](https://www.cplusplus.com/reference/vector/vector/operator[]/) to learn how to access elements in the vector similar to how you access elements in an array. You may use any of the [STL vector member functions](https://www.cplusplus.com/reference/vector/vector/).<br>
 
-Turn in `path.cpp`.
+Submit `path.cpp` to INGInious.
 
 ## Exercise 2: Read and Print Titles and Locations Using a Map
 
@@ -77,11 +77,12 @@ Celestinos_Pizza is at 39.729807,-121.842767
 
 * You must use a C++ STL map to store the title/location pairs.
 * You can read the [STL map documentation](https://www.cplusplus.com/reference/map/map/) for more information. Explore the map member functions to find examples of how to use the STL map.
+  * Hint: you can insert elements into a map using the [operator[]](https://cplusplus.com/reference/map/map/operator[]/) or using the [insert function](https://cplusplus.com/reference/map/map/insert/).
 * You do not have to call delete on the Location objects for this exercise.<br>
 
 > HINT: The map's `find` function returns an iterator. You may find it helpful to review the slides from Lecture 10: Templates, STL.<br>
 
-Turn in `lookup.cpp`
+Submit `lookup.cpp` to INGInious.
 
 ## Exercise 3 (no points, just for fun)
 
