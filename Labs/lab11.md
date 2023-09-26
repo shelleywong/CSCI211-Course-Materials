@@ -77,7 +77,7 @@ Celestinos_Pizza is at 39.729807,-121.842767
 
 * You must use a C++ STL map to store the title/location pairs.
 * You can read the [STL map documentation](https://www.cplusplus.com/reference/map/map/) for more information. Explore the map member functions to find examples of how to use the STL map.
-  * Hint: you can insert elements into a map using the [operator[]](https://cplusplus.com/reference/map/map/operator[]/) or using the [insert function](https://cplusplus.com/reference/map/map/insert/).
+  * Hint: you can use the [operator[]](https://cplusplus.com/reference/map/map/operator[]/) to insert or access elements in a way that is similar to how you access and use array elements. You can alternatively use map methods like the [insert function](https://cplusplus.com/reference/map/map/insert/) and the [find function](https://cplusplus.com/reference/map/map/find/).
 * You do not have to call delete on the Location objects for this exercise.<br>
 
 > HINT: The map's `find` function returns an iterator. You may find it helpful to review the slides from Lecture 10: Templates, STL.<br>
