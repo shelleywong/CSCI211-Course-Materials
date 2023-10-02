@@ -19,11 +19,13 @@ Assignments will include one final project, several collaborative work and discu
 
 ## Introduction
 
-The lab exercises and programming assignments in this class allow you to develop your understanding of fundamental data structures and algorithms, improve your programming ability, and practice your problem-solving skills, but they all are relatively small examples that have well-defined boundaries. You are given detailed guidelines and nicely organized input, and everyone is expected to get the exact same output. The goal of the CURE-E Project is to give you an opportunity to apply what you have learned to a real-world dataset and address some problems with unknown solutions. This project takes ideas from [authentic learning](https://www.edglossary.org/authentic-learning/) experiences, which focus on connecting what students are taught in school to real-world issues, problems, and applications.<br>
+The lab exercises and programming assignments in this class allow you to develop your understanding of fundamental data structures and algorithms, improve your programming ability, and practice your problem-solving skills, but they are all relatively small problems that have well-defined boundaries. You are given detailed guidelines and nicely organized input, and everyone is expected to get the exact same output.<br>
 
-CURE-E projects are opportunities for learning! Failure and repetition are normal and expected components of research and other projects with unknown outcomes. Similarly, software development is a continuous process of refining, enhancing, and adapting to meet evolving requirements. Regular iterations and improvements are important for providing the best possible user experience.<br>
+The goal of the CURE-E Project is to give you an opportunity to apply what you have learned to a real-world dataset and address some problems with unknown solutions. This project takes ideas from [authentic learning](https://www.edglossary.org/authentic-learning/) experiences, which focus on connecting what students are taught in school to real-world issues, problems, and applications.<br>
 
-Your grade for this project will not be based on your results matching an expected or predetermined outcome. Rather, your grade will be based on your final deliverables (a working program, documentation, presentation, visual representation, and self-assessment) and completion of each steps of the process. I will consider your ability to generate innovative ideas, adapt to challenges, and write a program to solve a problem that you have not encountered before.
+CURE-E projects are opportunities for learning! You may not end up with your expected outcome, or you may need to try various approaches before finding one that works. When it comes to research and projects with unknown outcomes, this is normal -- you will be faced with failure and the need for iteration all the time in the real world (if you aren't already familiar...). In academic research, all results can contribute new knowledge and insight, even if they are not the results you wanted or expected. In software development, a project is rarely ever "finished" -- it is a continuous process of refining, enhancing, and adapting to meet evolving requirements, and regular improvements are key to providing the best possible user experience.<br>
+
+With that in mind, your grade for this project will not be based on your results matching an expected or predetermined outcome. Rather, your grade will be based on a variety of final deliverables (a working program, documentation, presentation (part 1 and 2), visual representation, and self-assessment), as well as your iterative work in the process of completing the project (entrepreneurial mindset discussion response, in-class QFT activity, your proposal, and regular commits to your CSCI211 git repo). I will consider your ability to generate innovative ideas, adapt to challenges, and write a program to solve a problem that you have not encountered before.
 
 ## Attitude
 
@@ -50,7 +52,7 @@ Note: All files and folders related to your project (the code for your program, 
 
 ### Your Computer Program
 
-You will write a computer program that provides insight on Your Question (developed during the QFT activity). Your program must utilize an abstract data type (ADT) discussed in CSCI 211 (linked list, stack, queue, priority queue, or binary tree), and you must implement a C++ class for your ADT. Your program should get input from a file, add all entries to your ADT, print all entries in a readable format, and include at least one unique algorithm that provides insight on Your Question and prints out that information.<br>
+You will write a program that provides insight on Your Question (developed during the QFT activity). Your program must utilize an abstract data type (ADT) discussed in CSCI 211 (linked list, stack, queue, priority queue, or binary tree), and you must implement a C++ class for your ADT. Your program should get input from a file, add all entries to your ADT, print all entries in a readable format, and include at least one unique algorithm that provides insight on Your Question and prints out that information.<br>
 
 Move into your CSCI211 repo and create a new directory for your project (you can give the project any name that you choose):
 ```
@@ -59,16 +61,16 @@ $ mkdir cure-e-project
 
 Move into this directory and add any project-related files to this directory. At the end of the semester, I will expect to see (at minimum) the class files for your ADT implementation (.h and .cpp files), a main.cpp file for running your program, an input file, and a README.md file. You may have a separate file for the original dataset (e.g. a CSV file) as well as an input file for the data (e.g. in the format used in CSCI 211). You may have another input file with commands that I can use to run your program. You may have a Makefile and/or a script to run your program, or you may just include instructions/commands for running your program in the README.md file. Other files may be necessary depending on your project; feel free to ask if you have questions about how to set up your project directory. Since everyone's output will be different, there will be no test output files, but if you create output files in your program, you can leave them in the directory as a reference.<br>
 
-I will have an example program that converts data from a CSV file to the format used in the CSCI 211 programming assignments. You can get the data directly from the dataset (.csv file or other format), or you can use something similar to my program to create an input file that is similar to the input you have used throughout the semester.<br>
+I will have an example program that converts data from a CSV file to the format used in the CSCI 211 programming assignments. You can get the data directly from the dataset (.csv file or other format), or you can use something similar to my program to create an input file that looks like the input you have used throughout the semester.<br>
 
-You must create a git repository for your program and have at least 4 commits made to the repository for the following steps:
+You must create a git repository for your program and have at least 4-5 commits made to the repository for the following steps:
 * Creation of a C++ class for your ADT
 * Program successfully gets input from a file
 * Program successfully adds entries to your ADT
 * Program successfully prints all entries in an organized and readable format (requires the creation of a method in your ADT class) - how the entries are organized is up to you, but you should be able to why the entries are organized in the way you have chosen.
 * Program successfully prints out insight on Your Question (requires the creation of at least one method that implements your algorithm in your ADT class)<br>
 
-Your computer program will be submitted through your CSUChico-CSCI211 GitHub repo on your default branch (usually called the `main` branch). Remember to make at least 4 commits for the program, and at least 1 more commit for the documentation. Also remember that the same style and readability guidelines that we have used throughout the semester apply to this project!
+Your computer program will be submitted through your CSUChico-CSCI211 GitHub repo on your default branch (usually called the `main` branch). Remember to make at least 4-5 commits for the program, and at least 1 more commit for the documentation. Also remember that the same style and readability guidelines that we have used throughout the semester apply to this project!
 
 Each time you commit your code to GitHub, you should be completing the following steps (the `add` command with the `-A` option updates all files in the working tree):
 ```
@@ -95,7 +97,7 @@ In the git repository for your program, you should have a README.md file in the 
   - Which ADT did you choose, and why did you choose it?
 * Describe the process
   - Did you run into any challenges? Did you need to do any debugging or troubleshooting? Did you need to create several iterations of your algorithm before landing on one that worked?
-  - Discuss any issues you ran into and how you resolved them (any tools, techniques, or strategies you employed).
+  - Briefly explain any issues you ran into and how you resolved them (any tools, techniques, or strategies you employed).
 * Explain how a user can use your program
   - You should include details about how a user can run your program once they have access to your repo (How do I execute your program? Do you have a makefile? Do you have a script? Is there a specific command I should run?)
   - You should either (1) create an input file that I can run to see how your code works or (2) provide detailed instructions for the commands I can run to see how your code works.<br>
@@ -112,7 +114,7 @@ $ git push origin main
 Create a visual that can help represent your work and aid you during your presentation. Your visual can be similar to a [research poster](https://guides.nyu.edu/posters), but simpler and smaller (fewer words and sections). When you are thinking about what to include on your visual, you should consider the following questions:<br>
 
 * What is the most important/interesting/astounding finding from my project?
-* How can I visually share my research with the audience? Should I use charts, graphs, photos, images?
+* How can I visually share my research with the audience? Should I use charts, graphs, photos, images, key pieces of data, or something else?
 * What kind of information can I convey during my presentation that will complement my poster?<br>
 
 Some other things that make for a good poster (or any academic presentation visual):
