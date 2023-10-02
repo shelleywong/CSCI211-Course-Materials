@@ -52,14 +52,14 @@ Note: All files and folders related to your project (the code for your program, 
 
 ### Your Computer Program
 
-You will write a program that provides insight on Your Question (developed during the QFT activity). Your program must utilize an abstract data type (ADT) discussed in CSCI 211 (linked list, stack, queue, priority queue, or binary tree), and you must implement a C++ class for your ADT. Your program should get input from a file, add all entries to your ADT, print all entries in a readable format, and include at least one unique algorithm that provides insight on Your Question and prints out that information.<br>
+You will write a program that provides insight on Your Question (developed during the QFT activity). Your program must utilize an abstract data type (ADT) discussed in CSCI 211 (linked list, stack, queue, priority queue, or binary tree), and you must implement a C++ class for your ADT. You will also likely want to put your input data into a class or struct (e.g. to represent a single day of data). Your program should get input from a file, add all entries to your ADT, print all entries in a readable format, and include at least one unique algorithm that provides insight on Your Question and prints out that information.<br>
 
 Move into your CSCI211 repo and create a new directory for your project (you can give the project any name that you choose):
 ```
 $ mkdir cure-e-project
 ```
 
-Move into this directory and add any project-related files to this directory. At the end of the semester, I will expect to see (at minimum) the class files for your ADT implementation (.h and .cpp files), a main.cpp file for running your program, an input file, and a README.md file. You may have a separate file for the original dataset (e.g. a CSV file) as well as an input file for the data (e.g. in the format used in CSCI 211). You may have another input file with commands that I can use to run your program. You may have a Makefile and/or a script to run your program, or you may just include instructions/commands for running your program in the README.md file. Other files may be necessary depending on your project; feel free to ask if you have questions about how to set up your project directory. Since everyone's output will be different, there will be no test output files, but if you create output files in your program, you can leave them in the directory as a reference.<br>
+Move into this directory and add any project-related files to this directory. At the end of the semester, I will expect to see (at minimum) the class files for your ADT implementation (.h and .cpp files), a main.cpp file for running your program, an input file, and a README.md file. You will likely also have class files for your data entries (e.g. each instance represents the data from one day). You may have a separate file for the original dataset (e.g. a CSV file) as well as an input file for the data (e.g. in the format used in CSCI 211). You may have another input file with commands that I can use to run your program. You may have a Makefile and/or a script to run your program, or you may just include instructions/commands for running your program in the README.md file. Other files may be necessary depending on your project; feel free to ask if you have questions about how to set up your project directory. Since everyone's output will be different, there will be no test output files, but if you create output files in your program, you can leave them in the directory as a reference.<br>
 
 I will have an example program that converts data from a CSV file to the format used in the CSCI 211 programming assignments. You can get the data directly from the dataset (.csv file or other format), or you can use something similar to my program to create an input file that looks like the input you have used throughout the semester.<br>
 
@@ -76,7 +76,7 @@ You must create a git repository for your program and have at least 5 commits ma
 * **Final commit** (once your project is complete and ready for submission, make a final commit and ensure that your code is well-organized, commented, and adheres to good coding practices)
 <br>
 
-Your program must be submitted through your CSUChico-CSCI211 GitHub repo on your default branch (usually called the `main` branch). Remember to make at least 4-5 commits for the program, and at least 1 more commit for the documentation. Also remember that the same style and readability guidelines that we have used throughout the semester apply to this project!
+Your program must be submitted through your CSUChico-CSCI211 GitHub repo on your default branch (usually called the `main` branch). Remember to make at least 5 commits for the source code of your program, and at least 1 more commit for the documentation. Also remember that the same style and readability guidelines that we have used throughout the semester apply to this project!
 
 Each time you commit your code to GitHub, you should be completing the following steps (the `add` command with the `-A` option updates all files in the working tree):
 ```
