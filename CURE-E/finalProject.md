@@ -63,14 +63,20 @@ Move into this directory and add any project-related files to this directory. At
 
 I will have an example program that converts data from a CSV file to the format used in the CSCI 211 programming assignments. You can get the data directly from the dataset (.csv file or other format), or you can use something similar to my program to create an input file that looks like the input you have used throughout the semester.<br>
 
-You must create a git repository for your program and have at least 4-5 commits made to the repository for the following steps:
-* Creation of a C++ class for your ADT
-* Program successfully gets input from a file
-* Program successfully adds entries to your ADT
-* Program successfully prints all entries in an organized and readable format (requires the creation of a method in your ADT class) - how the entries are organized is up to you, but you should be able to why the entries are organized in the way you have chosen.
-* Program successfully prints out insight on Your Question (requires the creation of at least one method that implements your algorithm in your ADT class)<br>
+You must create a git repository for your program and have at least 5 commits made to the repository for your program's source code. You are not required to have commits for each of the following, but these are all points at which it would be a good idea to make a commit:
+* **Initial commit** that includes the project's initial setup (e.g. a new directory, setting up the project structure, adding any necessary project files).
+* **Creation of a C++ class or struct for your data entries** (e.g. every Node in your ADT may contain pointers to instances of this class)
+* **Creation of a C++ class for your ADT** (define the class and its methods; doesn't need to be complete, but can include some basic implementation)
+* **Input file parsing** (successfully read input data from a file -- either add data to your ADT or simply print it out to confirm that you are parsing the data as desired for your program)
+* **ADT populating** (if you haven't already, make sure to insert entries made up of the parsed data into your ADT)
+* **Basic output** to print the contents of your ADT in a readable format (make sure you can successfully interact with your data structure). This requires the creation of a method in your ADT class - how the entries are organized is up to you, but you should be able to explain why the entries are organized in the way you have chosen.
+* **Algorithm implementation** (complete your unique algorithm that provides insight on Your Question (requires the creation of at least one method that implements your algorithm in your ADT class)
+* **Insightful output** (display the results of your algorithm in a way that is clear and informative)
+* **Testing and debugging** (remember to make commits to resolve bugs and other issues throughout your development process)
+* **Final commit** (once your project is complete and ready for submission, make a final commit and ensure that your code is well-organized, commented, and adheres to good coding practices)
+<br>
 
-Your computer program will be submitted through your CSUChico-CSCI211 GitHub repo on your default branch (usually called the `main` branch). Remember to make at least 4-5 commits for the program, and at least 1 more commit for the documentation. Also remember that the same style and readability guidelines that we have used throughout the semester apply to this project!
+Your program must be submitted through your CSUChico-CSCI211 GitHub repo on your default branch (usually called the `main` branch). Remember to make at least 4-5 commits for the program, and at least 1 more commit for the documentation. Also remember that the same style and readability guidelines that we have used throughout the semester apply to this project!
 
 Each time you commit your code to GitHub, you should be completing the following steps (the `add` command with the `-A` option updates all files in the working tree):
 ```
@@ -81,24 +87,24 @@ $ git push origin main
 
 ### Your Documentation
 
-In the git repository for your program, you should have a README.md file in the root of your directory that contains information about your project. Use GitHub's [Basic writing and formatting syntax](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax). You should have at least one commit for your documentation. At minimum, your README.md file should include:
+In the git repository for your program, you should have a README.md file in the root of your directory that contains information about your project. Use GitHub's [Basic writing and formatting syntax](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax). You should have at least one commit for your documentation (in addition to the commits made for your program's source code). At minimum, your README.md file should include:
 
-* Your full name
-* Your Chico State/INGInious username
-* Course and section information (e.g. CSCI 211 Programming and Algorithms II, Fall 2023)
-* A list of the files/directories in the repo and a brief description of what the files/directories contain
-* An overview of your project
+* **Your full name**
+* **Your Chico State/INGInious username**
+* **Course and section information** (e.g. CSCI 211 Programming and Algorithms II, Fall 2023)
+* **A list of the files/directories in the repo** and a brief description of what each file/directory contains
+* **An overview of your project**
   - Any descriptive background details
   - Your research question(s)
   - Stakeholders (who could benefit from this information and insight?)
-* An explanation of your problem-solving approach
+* **A brief explanation of your problem-solving approach**
   - Briefly describe how you approached the problem
   - What were some key variables/inputs that were relevant to the problem?
   - Which ADT did you choose, and why did you choose it?
-* Describe the process
+* **An overview of your experience developing this project**
   - Did you run into any challenges? Did you need to do any debugging or troubleshooting? Did you need to create several iterations of your algorithm before landing on one that worked?
   - Briefly explain any issues you ran into and how you resolved them (any tools, techniques, or strategies you employed).
-* Explain how a user can use your program
+* **Explain how a user can use your program**
   - You should include details about how a user can run your program once they have access to your repo (How do I execute your program? Do you have a makefile? Do you have a script? Is there a specific command I should run?)
   - You should either (1) create an input file that I can run to see how your code works or (2) provide detailed instructions for the commands I can run to see how your code works.<br>
 
