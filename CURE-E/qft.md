@@ -71,6 +71,6 @@ To successfully complete this assignment, each participant should submit an indi
 1. Clearly state the research question you intend to address
 2. Identify the stakeholder(s) who stand to gain from the insights derived from your project
 3. Provide some details about the dataset you intend to use, such as the Date Range, Weather Observation Type (e.g. Daily Summaries, Global Summary of the Month, Local Climatological Data, Normals Hourly, etc), Station/Zip Code/City or other geographic/location identifier, and observations/values (e.g. precipitation (PRCP), snowfall (SNOW), max temperature (TMAX), min temperature(TMIN), etc)
-4. You may use the same dataset as other students, but you should be writing your own program and individually addressing a unique question. If you are using the same dataset as other students, list the names of the other students.<br>
+4. You may use the same dataset and have the same stakeholder as other students, but you should be writing your own program and individually addressing a unique question. If you are using the same dataset and/or identifying the same stakeholder as other students, list the names of the other students.<br>
 
 Reminder: this assignment has 2 components -- the QFT discussion (submitted through the shared Google Doc) and the Project Proposal (a PDF or text submission to Canvas).
