@@ -130,7 +130,7 @@ Some other things that make for a good poster (or any academic presentation visu
 * Effective use of graphics, color and fonts
 * Consistent and clean layout<br>
 
-Probably the easiest option for creating your visual representation (e.g. poster or infographic), is to use one presentation slide (e.g. PowerPoint or Google Slides). The visual can be shared online, or you can bring a physical copy of it to the presentation.<br>
+Probably the easiest option for creating your visual representation (e.g. poster, image, or infographic), is to use one presentation slide (e.g. PowerPoint or Google Slides). The visual can be shared online, or you can bring a physical copy of it to the presentation.<br>
 
 ### Presentation Part 1: Your Elevator Pitch Presentation
 
@@ -154,12 +154,12 @@ Note: if you will not be able to attend in-person during the time of our schedul
 
 ### Presentation Part 2: Your Demonstration Recording
 
-The presentation has been split into two parts to make sure everyone has time to briefly present about their project. This portion of the presentation should be recorded, and the recording should be submitted to Canvas. The goal of this part of the presentation is for you to demonstrate how to use your program, show that your program is working and getting results, provide some context about your work, and discuss any personal insights. I am expecting this recording to be about 1-5 minutes.
+The presentation has been split into two parts to make sure everyone has time to present their project. This portion of the presentation should be recorded, and the recording should be submitted to Canvas. The goal of this part of the presentation is for you to demonstrate how to use your program, show that your program is working and getting results, provide some context about your work, and discuss any personal insights. I am expecting this recording to be about 1-5 minutes.
 
 Your demonstration recording should include:
 * A demonstration of yourself compiling and executing your program. If needed, provide some explanation about how I should interpret your output.
-* Some context about your work, e.g. a brief discussion of any challenges you faced and how those challenges were resolved.
-* Any personal insight, e.g. What did you find most interesting or rewarding about working on this project? Do you see any next steps or future direction for your project?<br>
+* Some context about your work and your experience developing this project, e.g. a brief discussion of any challenges you faced and how those challenges were resolved.
+* Any personal insight, e.g. What did you find most interesting or rewarding about working on this project? Have you identified any additional questions, next steps, or avenues for future research or projects?<br>
 
 Just like with the elevator pitch, you do not need to explain every detail. Including a couple technical details may be useful, but your presentation should be understandable for a non-technical audience. Keep it short, memorable, and impactful. Your recording does not have to look professional, but you should speak clearly and any visuals (code, text output, images, etc) should actually be visible.<br>
 
