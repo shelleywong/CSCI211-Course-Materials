@@ -162,6 +162,8 @@ If the user provides too many command line arguments, print the following error 
 cerr << "Too many command line arguments specified." << endl;
 ```
 
+Make sure to update the starter code so that it writes each line from the input file to the output file instead of writing to the standard output stream.<br>
+
 Submit `mycat.cpp` to INGInious.
 
 ## Exercise 3: Handling Integer Command Line Arguments
