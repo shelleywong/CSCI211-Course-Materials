@@ -1,5 +1,5 @@
 /*
- elec.cpp
+ alt.cpp
  Shelley Wong (swong26)
  Last updated: Oct 10, 2023
 
