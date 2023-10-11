@@ -124,30 +124,30 @@ Submit `args.cpp` to INGInious.
 
 Start with the mycat.cpp that is in your CSCI211 starter-repo `211/lab08_mycat/` directory<br>
 
-You will need to edit mycat.cpp. The program should be updated to expect three command line arguments:
+Read through the provided code and comments, and make sure you understand what the starter code in mycat.cpp is doing. You will need to modify the existing code. The program should be updated to expect three command line arguments:
 * Argument 0: the mycat executable
 * Argument 1: a filename to be used as the input file
 * Argument 2: a filename to be used as the output file<br>
 
-The program should read from the specified input file, and write each line to the output file. For example, given the following input:
+The program should read from the specified input file, and write each line to the output file. The existing code handles an input file, so you will need to update it to also handle an output file. For example, given the following input:
 ```
 $ ./mycat data1 data2
 ```
 Your program should read each line in file `data1` and write it to file `data2`.<br>
 
-The code for opening a file is provided for you. If the input file cannot be opened, print the following error message to standard error:
+The code for opening a file is provided for you. If the input file cannot be opened, make sure you are printing the following error message to standard error:
 ```
 cerr << "Could not open input file <" << filename << ">." << endl;
 ```
 
 > Note: To successfully open and read an input file, the file needs to exist. If the input file does not exist or you did not provide the correct path to the file, the operation to open a file will fail, and you will receive an error.
 
-Use the following to open a file for writing:
+You can use the following to open a file for writing output:
 ```
 ofstream my_ofile(filename, ios::out);  // filename is a string holding the filename
 ```
 
-This code creates a file with the name that you have provided. However, there are several cases when you still might receive an error (e.g. if the file does not exist, and you do not have permission to create files in the directory). If the output file cannot be opened, print the following error message to standard error:
+This code creates a file with the name that you have provided. However, there are several cases when you still might receive an error (e.g. if the file is in a folder that does not exist, or if you do not have permission to create files in the directory). If the output file cannot be opened, print the following error message to standard error:
 ```
 cerr << "Could not open output file <" << filename << ">." << endl;
 ```
@@ -162,7 +162,7 @@ If the user provides too many command line arguments, print the following error 
 cerr << "Too many command line arguments specified." << endl;
 ```
 
-Make sure to update the starter code so that it writes each line from the input file to the output file instead of writing to the standard output stream.<br>
+After you have handled all potential command line argument errors, make sure to modify the starter code so that it writes each line from the input file to the output file instead of writing to the standard output stream.<br>
 
 Submit `mycat.cpp` to INGInious.
 
