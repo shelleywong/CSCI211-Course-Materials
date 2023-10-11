@@ -21,7 +21,7 @@
  includes the other alternative fuel station options
 
  You can compile and run this program with the following commands:
- $ g++ -std=c++11 -o alt alt.cpp
+ $ g++ -std=c++11 -Wall -pedantic -o alt alt.cpp
  $ ./alt alt_fuel_stations_oct_10_23.csv converted.in
 */
 #include <iostream>  // cin, cout, cerr, getline, endl
