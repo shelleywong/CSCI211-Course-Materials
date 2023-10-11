@@ -20,6 +20,11 @@ Entrepreneurial Mindset: Flexible and Adaptable, Creative and Innovative, Initia
 
 ## Preparation
 
+We will use a shared Google Doc to complete this assignment(link on Canvas).
+- Divide yourselves into groups of 3-4 students
+- Decide how you will complete this exercise (e.g. Which dataset will you focus on? Who will type the questions? How are you making sure that everyone gets a chance to provide input?)
+- List the names of each team member (first and last)<br>
+
 Nowadays, we have access to vast amounts of data, but it can sometimes be difficult to extract useful information from that data. Take a look at the example datasets:
 
 * **Historical weather data**: `assets/chico-weather-2018-2022.csv`
@@ -47,11 +52,6 @@ Consider these examples of areas where you could provide new knowledge for stake
   * Assessing accessibility (e.g. public/private, hours open, how many charge ports are at each location, what types of charge ports are available), so alternative vehicle owners can have a better idea of what options are available for their next road trip.
   * Measuring growth (how many stations open each year?) and availability (what proportion of stations are temporarily unavailable?), to help the general public understand both the current challenges and the future potential charging/fueling options.
   * Examining different types of facilities where alternative fuel stations are located (parking structures, hotels, shopping malls, etc), to help companies determine where to build new facilities.
-
-We will use a shared Google Doc to complete this assignment(link on Canvas).
-- Divide yourselves into groups of 3-5 students
-- Decide how you will complete this exercise (e.g. Which dataset will you focus on? Who will type the questions? How are you making sure that everyone gets a chance to provide input?)
-- List the names of each team member (first and last)<br>
 
 ## Process
 
