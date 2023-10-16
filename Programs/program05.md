@@ -186,7 +186,7 @@ void run_simulation(Pqueue &arrival_queue, int num_checkers, int break_duration,
     // create an array of Checker structures
     Checker *checkers = new Checker[num_checkers];
 
-    // now use a loop to initialized all elements of the Checker structures
+    // initialize all attributes of each Checker instance in the array
     ...
 
     // now use a loop to implement the body of the simulation as described below
