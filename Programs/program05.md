@@ -66,6 +66,8 @@ Error: invalid checker break duration specified.
 
 >Note: Replace `<t01>` and `<t01.out>` with the appropriate file names based on the given arguments.
 
+> Note: It is necessary that you check for errors in this order, so that the correct error message is printed, and so the files can be handled properly by the grading script.
+
 Time will be represented by a single integer starting at 1. In the loop below, the variable `clock` is used to store the current time.<br>
 
 The input file will be arbitrarily ordered and will have the format:
