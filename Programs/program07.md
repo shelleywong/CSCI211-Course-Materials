@@ -14,10 +14,10 @@ Points: 300
 
 ## Objectives
 
-* Implement a Binary Tree
+* Implement a Binary Search Tree
 * Practice writing recursive functions
 * More practice parsing commands
-* Use the STL vector and queue
+* Practice using the STL vector and queue
 
 ## Overview
 
