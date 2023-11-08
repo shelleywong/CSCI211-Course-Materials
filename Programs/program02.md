@@ -133,7 +133,7 @@ if (str1 > str2)
     // this code is executed if str1 is alphanumerically greater than str2
 }
 ```
-* Use the [bubble sort algorithm](https://en.wikipedia.org/wiki/Bubble_sort) to sort the videos. This [Lego Bubble Sort video](https://www.youtube.com/watch?v=MtcrEhrt_K0) may help you understand how this algorithm works. The following code uses the `Video::longer()` function above and sorts the array by video length:
+* Use the [bubble sort algorithm](https://en.wikipedia.org/wiki/Bubble_sort) to sort the videos. This [Lego Bubble Sort video](https://www.youtube.com/watch?v=XN0saL9ujLE) may help you understand how this algorithm works. The following code uses the `Video::longer()` function above and sorts the array by video length:
 ```cpp
 for (int last = num_videos - 1; last > 0; last--) {
     for (int cur = 0; cur < last; cur++) {
