@@ -276,7 +276,7 @@ GitHub, GitLab, and BitBucket provide tools that help manage and host Git reposi
 1. [Sign up for GitHub](https://github.com/)
 2. Go to this [GitHub repo generation](https://www.bryancdixon.com/fall/2023/csci/211/repo/) page to generate a CSUChico-CSCI211 GitHub repo
   - Create a GitHub username BEFORE submitting this form. Make sure that the username matches your actual GitHub username.
-  - Use the Course Token provided in the 211 Getting Started Instructions
+  - Use the Course Token provided in the 211 Getting Started Instructions (link in Canvas) to generate your repo. (In the 211 Getting Started Instructions, look for **GitHub account** > **Sign up and generate a CSCI211 repo**)
 3. After submitting the repo generation form, go to the [CSUChico-CSCI211 GitHub organization](https://github.com/CSUChico-CSCI211) (github.com/CSUChico-CSCI211) and accept the invite -- do this soon after submitting the form, as the invitation will expire after 1 week.
 4. Confirm that your repo has been generated
   - The URL for your repo should be similar to the following: `github.com/CSUChico-CSCI211/CSCI211-F23-FirstName-LastName`
@@ -284,8 +284,20 @@ GitHub, GitLab, and BitBucket provide tools that help manage and host Git reposi
 5. GitHub is a hosting service that can store your files and directories remotely. Now you need a way to interact with GitHub.
   - Determine a location on your local machine and/or your Linux environment to house the local instance of your 211 repository (make sure you know the path to these files so you can easily access this repository).
 6. Set up SSH keys (so you can clone with SSH) OR a personal access token (so you can clone with HTTPS).
-  - If cloning with SSH: First, [check to see if you already have an existing SSH key](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/checking-for-existing-ssh-keys) – if you do, you may be able to use the same key for GitHub. If you do not have a key, [generate a new SSH key](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent). Then, [add your SSH key to your GitHub account](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account). You will add the public key to your GitHub account. Make sure your private key stays private (the first line of defense is to not let other people have access to your computer). Now you should be able to clone your repo and continue on to the next step.
-  - If cloning with HTTPS: You will be asked for your GitHub username and password when completing several git commands. When Git prompts you for your password, you should use your [personal access token](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens). GitHub recommends that you use Fine-grained personal access tokens; however, you will need to use Personal access tokens (classic) to work with the CSUChico-CSCI211 GitHub repo. Follow GitHub's instructions for [creating a personal access token (classic)](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens#creating-a-personal-access-token-classic). Give your token an expiration date after the end of the semester. Now you should be able to clone your repo and continue on to the next step.
+  - If cloning with SSH:
+    - First, [check to see if you already have an existing SSH key](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/checking-for-existing-ssh-keys) – if you do, you may be able to use the same key for GitHub. Windows users: make sure to generate the key in a Linux terminal (e.g. WSL2, ecc-linux) -- this should be the terminal where you plan to do all (or at least the majority) of your development for CSCI211.
+    - If you do not have a key, generate a new SSH key (note: GitHub recommends using the ed25519 algorithm; however, some systems do not support it, so I usually have students create an RSA key, which is more widely supported and still more secure than some other options, especially if using a large enough key):
+      - Go to a Terminal (Linux or Mac)
+      - Paste this text into the terminal (this creates a new SSH key): `ssh-keygen -t rsa -b 8192`
+      - When you get the prompt to "Enter a file in which to save the key", press Enter to accept the default file location. Please note that if you previously created an SSH key of the same type, ssh-keygen may ask you to rewrite the key or create a custom-named SSH key.
+      - When you get the prompt to "Enter passphrase (empty for no passphrase)", you may simply press Enter (and press Enter again when you get the prompt to "Enter same passphrase again"). You can enter a passphrase to make your account a little more secure; however, make sure you remember the passphrase, as you will not be able to interact with GitHub without it.
+      - The key may take a little while to generate, but once it does, you should be able to see the public/private key pair in the .ssh directory (look for id_rsa (private) and id_rsa.pub(public)):
+        - `cd ~/.ssh`
+        - `ls`
+      - Then, [add your SSH key to your GitHub account](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account). These instructions walk you through how to add your public key to your GitHub account. Make sure your private key stays private (the first line of defense is to not let other people have access to your computer). Now you should be able to clone your repo and continue on to the next step.
+  - If cloning with HTTPS:
+    - You will be asked for your GitHub username and password in order to complete several git commands. When Git prompts you for your password, you should use your [personal access token](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens). GitHub recommends that you use Fine-grained personal access tokens; however, you will need to use Personal access tokens (classic) to work with your GitHub repo in the CSUChico-CSCI211 organization.
+    - Follow GitHub's instructions for [creating a personal access token (classic)](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens#creating-a-personal-access-token-classic). Give your token an expiration date after the end of the semester. Now you should be able to clone your repo and continue on to the next step.
 
 > Note: if you are having trouble with one of the options above, ask the instructor about using GitHub Codespaces!
 
@@ -308,19 +320,19 @@ $ git config --list
 $ git config --global user.name "John Doe"
 $ git config --global user.email johndoe@example.com
 ```
+  - You can confirm that your name and email have been set by running the `git config --list` command again.
 9. [Clone your repository](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository)
   - Navigate to the main page of your CSUChico-CSCI211 repository
   - Above the list of files, click the green `< > Code` button.
   - Make sure you are on the `Local` tab (it has options to Clone with HTTPS and SSH), and copy the URL for the repository using either HTTPS or SSH (depending on what you set up in step 6).
-  - Open a terminal
-  - Change the current working directory to the location where you want the cloned directory
-  - Type `git clone` and then paste the URL you copied earlier:
+  - Open a terminal.
+  - Change the current working directory to the location where you want the cloned directory to exist on your local machine.
+  - Type `git clone`, paste the URL you copied earlier, and press Enter:
 ```
 $ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
 ```
-  - Press Enter to create your local clone<br>
 
-Now you should have a local instance of your CSCI211 repository! Complete the next steps to finish Lab 01, Exercise 1.
+Now you should have a local instance of your CSCI211 repository! You can use the `ls` command to see the CSCI211 repo in your current directory. Complete the next steps to finish Lab 01, Exercise 1.
 
 ### Steps for working with a local GitHub repo
 
@@ -359,7 +371,7 @@ $ git status
 ```
 $ git diff README.md
 ```
-8. If all the changes look good, you can now commit your changes and push them to the remote GitHub repo.
+8. If all the changes look good, you can now add, commit, and push your changes to the remote GitHub repo.
   - Add the `README.md` file as it looks now to the staging area:
 ```
 $ git add README.md
@@ -376,7 +388,7 @@ $ git push origin main
 
 > Note: "main" is the default branch name. You may see older versions of git using "master" as the default branch name. For CSCI211, it is fine if you do all of your work on the main branch. For more on branching, refer to the Learn Git Branching tutorial, or complete the Lab 01 Extra Credit.<br>
 
-9. Visit your CSCI211 GitHub repo and confirm that your changes have been added to your remote repo (reload the page if necessary). You should be able to see your changes in the README. You can also click on the "commits" button (below the green "< > Code" button) to see the history of all the commits to this repository, organized by date.<br>
+9. Visit your CSCI211 GitHub repo in a web browser and confirm that your changes have been added to your remote repo (reload the page if necessary). You should be able to see your changes in the README.md file. You can also click on the "commits" button (below the green "< > Code" button) to see the history of all the commits to this repository, organized by date.<br>
 
 10. At this point, you are done with Lab 01, Exercise 1, and you can complete the rest of Lab 01.<br>
 
