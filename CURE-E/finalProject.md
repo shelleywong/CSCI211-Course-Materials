@@ -54,6 +54,8 @@ Note: All files and folders related to your project (the code for your program, 
 
 You will write a program that provides insight on Your Question (developed during the QFT activity). Your program must utilize an abstract data type (ADT) discussed in CSCI 211 (linked list, stack, queue, priority queue, or binary tree), and you must implement a C++ class for your ADT. You should **not** just rely on a Standard Template Library container for your ADT. You will also likely want to put your input data into a class or struct (e.g. to represent a single day of data). Your program should get input from a file, add all entries to your ADT, print all entries in a readable format, and include at least one unique algorithm that provides insight on Your Question and prints out that information.<br>
 
+I will be testing your code in an environment where you can compile code with the GNU g++ compiler (similar to what we have used all semester on INGInious, ecc-linux, WSL2, or an Ubuntu (Linux) virtual machine). If your code does not compile, you will lose points.<br>
+
 Move into your CSCI211 repo and create a new directory for your project (you can give the project any name that you choose):
 ```
 $ mkdir cure-e-project
