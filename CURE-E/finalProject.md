@@ -116,20 +116,22 @@ $ git push origin main
 
 ### Your Visual Representation
 
-Create a visual that can help represent your work and aid you during your presentation. Your visual can be similar to a [research poster](https://guides.nyu.edu/posters), but simpler and smaller (fewer words and sections). When you are thinking about what to include on your visual, you should consider the following questions:<br>
+Create a visual that can help represent your work and aid you during your presentation. Your visual can be similar to a [research poster](https://guides.nyu.edu/posters), but simpler (fewer words and sections) and smaller (just a normal slide -- I should NOT need to zoom in to read your text, it should be visible clearly when the slide is shared from a computer screen). When you are thinking about what to include on your visual, you should consider the following questions:<br>
 
 * What is the most important/interesting/astounding finding from my project?
-* How can I visually share my research with the audience? Should I use charts, graphs, photos, images, key pieces of data, or something else?
-* What kind of information can I convey during my presentation that will complement my poster?<br>
+* How can I visually share my research with the audience? Would charts, graphs, photos, images, key pieces of data, or something else be the best way to share my results?
+<br>
+
+Focus on creating a visual that helps you share your findings and any insight gained from working on the research question. You might include a small amount of text (e.g. your research question, some text to help interpret the visual or highlight a statistic or other finding), but all information should be readable from the audience.<br>
 
 Some other things that make for a good poster (or any academic presentation visual):
-* Important information is readable from the audience
+* Any graphs/charts included are well-labeled and accurate -- they should play a clear role in helping visualize your results
 * Text is clear and to the point
 * Use of bullets, numbering, and headlines (make it easy to read)
-* Effective use of graphics, color and fonts
+* Effective use of graphics, color, and fonts
 * Consistent and clean layout<br>
 
-Probably the easiest option for creating your visual representation (e.g. poster, image, or infographic), is to use one presentation slide (e.g. PowerPoint or Google Slides). The visual can be shared online, or you can bring a physical copy of it to the presentation.<br>
+Probably the easiest option for creating your visual representation (e.g. poster, image, or infographic), is to use a single presentation slide (e.g. PowerPoint or Google Slides). The visual can be shared online, or you can bring a physical copy of it to the presentation.<br>
 
 ### Presentation Part 1: Your Elevator Pitch Presentation
 
