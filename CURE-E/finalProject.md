@@ -15,7 +15,7 @@ Funded by The National Science Foundation’s Improving Undergraduate STEM Educa
 
 The goal of the CURE-E Research Project is to give you an opportunity to apply concepts covered in class toward solving a problem with a real-world dataset. Students will create a data management program that uses data structures and algorithms to organize, analyze, and provide insight on publicly available weather data for Chico, CA. Data can be sourced from the National Oceanic and Atmospheric Administration (NOAA), which provides a large database of historical data related to weather, precipitation, and climate. Students will develop research questions that can be explored and answered with the data and identify relevant community members or groups who would benefit from this information.<br>
 
-Assignments will include one final project, several collaborative work and discussion sessions, and a presentation. The final project will require documentation that explains how the program works and how others can use the program. The work and discussion sessions will be completed during class in small groups. Students will present their work to the class on the day of the final. Presentations will include a visual representation to help others understand the project results (e.g. a poster or infographic).<br>
+Assignments will include one final project, several collaborative work and discussion sessions, and a presentation. The final project will require a README guide that explains how the program works and how others can use the program. The work and discussion sessions will be completed during class in small groups. Students will present their work to the class on the day of the final. Presentations will include a visual representation to help others understand the project results (e.g. a poster or infographic).<br>
 
 ## Introduction
 
@@ -25,7 +25,7 @@ The goal of the CURE-E Project is to give you an opportunity to apply what you h
 
 CURE-E projects are opportunities for learning! You may not end up with your expected outcome, or you may need to try various approaches before finding one that works. When it comes to research and projects with unknown outcomes, this is normal -- you will be faced with failure and the need for iteration all the time in the real world (if you aren't already familiar...). In academic research, all results can contribute new knowledge and insight, even if they are not the results you wanted or expected. In software development, a project is rarely ever "finished" -- it is a continuous process of refining, enhancing, and adapting to meet evolving requirements, and regular improvements are key to providing the best possible user experience.<br>
 
-With that in mind, your grade for this project will not be based on your results matching an expected or predetermined outcome. Rather, your grade will be based on a variety of final deliverables (a working program, documentation, presentation (part 1 and 2), visual representation, and self-assessment), as well as your iterative work in the process of completing the project (entrepreneurial mindset discussion response, in-class QFT activity, your proposal, and regular commits to your CSCI211 git repo). I will consider your ability to generate innovative ideas, adapt to challenges, and write a program to solve a problem that you have not encountered before.
+With that in mind, your grade for this project will not be based on your results matching an expected or predetermined outcome. Rather, your grade will be based on a variety of final deliverables (a working program, a README guide, presentation (part 1 and 2), visual representation, and self-assessment), as well as your iterative work in the process of completing the project (entrepreneurial mindset discussion response, in-class QFT activity, your proposal, and regular commits to your CSCI211 git repo). I will consider your ability to generate innovative ideas, adapt to challenges, and write a program to solve a problem that you have not encountered before.
 
 ## Attitude
 
@@ -40,7 +40,7 @@ Entrepreneurial Mindset: Flexible and Adaptable, Creative and Innovative, Initia
 ## Project Requirements
 
 * [Your Computer Program](#your-computer-program)
-* [Your Documentation](#your-documentation)
+* [Your README Guide](#your-readme-guide)
 * [Your Visual Representation](#your-visual-representation)
 * [Presentation Part 1: Your Elevator Pitch Presentation](#presentation-part-1-your-elevator-pitch-presentation)
 * [Presentation Part 2: Your Demonstration Recording](#presentation-part-2-your-demonstration-recording)
@@ -48,15 +48,15 @@ Entrepreneurial Mindset: Flexible and Adaptable, Creative and Innovative, Initia
 
 ## Process
 
-Note: All files and folders related to your project (the code for your program, your documentation, the dataset files, Makefiles, scripts to run your code, etc) should be in a single directory located directly inside your CSUChico-CSCI211 repo -- you should give the directory a name that clearly indicates that it contains your CURE-E Final Project, e.g. `CSCI211-F23-FirstName-LastName/final-project/` or `CSCI211-F23-FirstName-LastName/cure-e/`).
+Note: All files and folders related to your project (the code for your program, your README guide, the dataset files, Makefiles, scripts to run your code, etc) should be in a single directory located directly inside your CSUChico-CSCI211 repo -- you should give the directory a name that clearly indicates that it contains your CURE-E Final Project, e.g. `CSCI211-F23-FirstName-LastName/final-project/` or `CSCI211-F23-FirstName-LastName/cure-e/`).
 
 ### Your Computer Program
 
-You will write a program that provides insight on Your Question (developed during the QFT activity). Your program must utilize an abstract data type (ADT) discussed in CSCI 211 (linked list, stack, queue, priority queue, or binary tree), and you must implement a C++ class for your ADT. You should **not** just rely on a Standard Template Library container for your ADT. You will also likely want to put your input data into a class or struct (e.g. to represent a single day of data). Your program should get input from a file, add all entries to your ADT, print all entries in a readable format, and include at least one unique algorithm that provides insight on Your Question and prints out that information.<br>
+You will write a program that provides insight on Your Question (developed during the QFT activity). Your program must include an object-oriented C++ implementation of an abstract data type (ADT) discussed in CSCI 211 (linked list-based stack, queue, priority queue (or otherwise ordered list), or binary tree). You should **not** just rely on a Standard Template Library container for your ADT. You will also likely want to put your input data into a class or struct (e.g. to represent a single day of data). Your program should get input from a file, add all entries to your ADT, print all entries in a readable format, and include at least one unique algorithm that provides insight on Your Question and prints out that information.<br>
 
 I will be testing your code in an environment where you can compile code with the GNU g++ compiler (similar to what we have used all semester on INGInious, ecc-linux, WSL2, or an Ubuntu (Linux) virtual machine). If your code does not compile, you will lose points.<br>
 
-Move into your CSCI211 repo and create a new directory for your project (you can give the project any name that you choose):
+Move into your CSCI211 repo and create a new directory for your project (you can give the project any name that you choose, as long as it is clear that the directory contains your CURE-E final project):
 ```
 $ mkdir cure-e-project
 ```
@@ -78,7 +78,7 @@ You must create a git repository for your program and have at least 5 commits ma
 * **Final commit** (once your project is complete and ready for submission, make a final commit and ensure that your code is well-organized, commented, and adheres to good coding practices)
 <br>
 
-Your program must be submitted through your CSUChico-CSCI211 GitHub repo on your default branch (usually called the `main` branch). Remember to make at least 5 commits for the source code of your program, and at least 1 more commit for the documentation. Also remember that the same style and readability guidelines that we have used throughout the semester apply to this project!
+Your program must be submitted through your CSUChico-CSCI211 GitHub repo on your default branch (usually called the `main` branch). Remember to make at least 5 commits for the source code of your program, and at least 1 more commit for the README guide. Also remember that the same style and readability guidelines that we have used throughout the semester apply to this project!
 
 Each time you commit your code to GitHub, you should be completing the following steps (the `add` command with the `-A` option updates all files in the working tree):
 ```
@@ -87,16 +87,16 @@ $ git commit -m "<descriptive commit message>"
 $ git push origin main
 ```
 
-### Your Documentation
+### Your README Guide
 
-In the git repository for your program, you should have a README.md file in the root of your directory that contains information about your project. Use GitHub's [Basic writing and formatting syntax](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax). You should have at least one commit for your documentation (in addition to the commits made for your program's source code). At minimum, your README.md file should include:
+In the git repository for your program, you should have a README.md file in the root of your directory that contains information about your project. Use GitHub's [Basic writing and formatting syntax](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax). You should have at least one commit for your README guide (in addition to the commits made for your program's source code). At minimum, your README.md file should include:
 
 * **Your full name**
 * **Your Chico State/INGInious username**
 * **Course and section information** (e.g. CSCI 211 Programming and Algorithms II, Fall 2023)
 * **A list of the files/directories in the repo** and a brief description of what each file/directory contains
 * **An overview of your project**
-  - Any descriptive background details
+  - A brief description of your project (Include any descriptive background details that can help explain the thinking behind your research question and project)
   - Your research question(s)
   - Stakeholders (who could benefit from this information and insight?)
 * **A brief explanation of your problem-solving approach**
@@ -104,10 +104,11 @@ In the git repository for your program, you should have a README.md file in the 
   - What were some key variables/inputs that were relevant to the problem?
   - Which ADT did you choose, and why did you choose it?
 * **Explain how a user can use your program**
-  - You should include details about how a user can run your program once they have access to your repo (How do I execute your program? Do you have a makefile? Do you have a script? Is there a specific command I should run?)
-  - You should either (1) create an input file that I can run to see how your code works or (2) provide detailed instructions for the commands I can run to see how your code works.<br>
+  - You should include details about how a user can run your program once they have access to your repo:
+    - What specific command(s) should a user use to compile your program and create an executable? If you have a makefile or script, you should say so and make sure that it is clear how to use it.
+    - What specific command(s) should a user use to run/execute your program? You might have an input file that users can run to see how your code works, or you might provide a list of commands (or other detailed instructions) that users can run to see how your code works.<br>
 
-Remember to commit your changes so I can see your documentation in the repo (this process is just like how you commit the rest of your code):
+Remember to commit your changes so I can see your README guide in the repo (this process is just like how you commit the rest of your code):
 ```
 $ git add -A
 $ git commit -m "<descriptive commit message>"
