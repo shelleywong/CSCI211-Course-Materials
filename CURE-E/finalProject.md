@@ -52,7 +52,30 @@ Note: All files and folders related to your project (the code for your program, 
 
 ### Your Computer Program
 
-You will write a program that provides insight on Your Question (developed during the QFT activity). Your program must include an object-oriented C++ implementation of an abstract data type (ADT) discussed in CSCI 211 (linked list-based stack, queue, priority queue (or otherwise ordered list), or binary tree). You should **not** just rely on a Standard Template Library container for your ADT. You will also likely want to put your input data into a class or struct (e.g. to represent a single day of data). Your program should get input from a file, add all entries to your ADT, print all entries in a readable format, and include at least one unique algorithm that provides insight on Your Question and prints out that information.<br>
+You will write a program that provides insight on Your Question (developed during the QFT activity). Your program must:
+* Include an object-oriented C++ implementation of an abstract data type (ADT) discussed in CSCI 211 (linked list or array-based stack, queue, priority queue (or ordered list), or binary tree).
+  * You may use Standard Template Library containers in conjunction with your ADT implementation (e.g. a std::vector of linked lists); however, you should **not** just rely on a Standard Template Library container for your ADT. Using a STL vector, queue, stack, list, map, etc is not the same as implementing an ADT with a linked list or array-based data structure.
+* Include a class or struct for your input data (e.g. to represent a single day of data, at a single station).
+* Get input from the dataset or converted input file, add all entries to your ADT, and have the ability to print all entries in a readable format
+  * Code that reads and parses data from the chosen dataset should be correct, able to handle different data types and formats, and able to handle any empty entries appropriately, depending on the data type.
+  * If you have default output, you do not need to print all entries in the default output; however, you should provide a way for users to easily print all entries
+  * The printed output should make it clear what different values represent (e.g. if you are printing a numeric value like temperature, don't just print the number -- include some information that indicates that it is (for example) the max temperature measured in degrees Fahrenheit or Celsius)
+* Include at least one unique algorithm that provides insight on Your Question and prints out that information
+  * Prints results to the terminal or output file in a clear and effective manner
+  * Algorithm is correct and effective at providing insight and addressing the research question (Recall that an algorithm is just a sequence of instructions to perform a task -- I am looking for your program to perform a task that helps provide accurate insight on Your Question)
+  * Creativity and originality (there should be some functionality that goes beyond basic searching, sorting, traversal-type algorithms)
+* Use well-organized classes and/or structs:
+  * The class or struct has a clear and concise purpose, and its responsibilities align with a single, well-defined concept
+  * Appropriate use of member access specifiers (e.g. private member variables, private member functions (if not used outside the class), public member functions to allow for external interaction)
+  * Class declaration and function prototypes in .h file, and class implementation in a separate .cpp file (makes it easier for external code to understand the class structure without exposing implementation details)
+  * Only use a data structure if you are simply representing a group of data elements grouped together under one name (in general, if you have functions/behavior, you should use a class)
+* Use dynamically allocated memory and properly manage that memory
+  * You should either use `new` and `delete` or smart pointers and ensure that there are no memory leaks
+* Follow the [CSCI 211 Style Guide](https://github.com/shelleywong/CSCI211-Course-Materials/blob/main/Programs/README.md#style-guide-overview)
+  * This includes: good variable and function names, appropriate use of different types of variables, use of functions, appropriate scope for variables and functions, consistent indentation, etc
+* Include comments/documentation
+  * File headers (filename, your name (first and last), your Chico Portal/INGInious username, and a short summary of the contents of the file)
+  * Descriptive and helpful comments in the body of the code<br>
 
 I will be testing your code in an environment where you can compile code with the GNU g++ compiler (similar to what we have used all semester on INGInious, ecc-linux, WSL2, or an Ubuntu (Linux) virtual machine). If your code does not compile, you will lose points.<br>
 
