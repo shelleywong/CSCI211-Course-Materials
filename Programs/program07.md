@@ -281,9 +281,9 @@ All programming assignments are **individual** assignments -- you are expected t
 
 If you are not able to complete this programming assignment, turn in your partial work for partial credit, or submit later for late credit. If you turn in nothing, you get a zero. If you turn in something, you receive a grade that is higher than zero.
 
-## For an extra challenge (no points, just for fun)
+## Extra Challenge (no points, just for fun)
 
-No extra credit will be give to late assignments (both the regular assignment and the extra credit must be turned in on time).<br>
+> Note: In general, there is no need to include Extra Challenge code in your programming assignment submission; however, you may include it if it does not impact the output (your code submission should still pass the provided and hidden tests). Make sure you save a copy of your completely working program before you start the extra challenge. The idea behind the extra challenges is to give you the opportunity to figure out how to solve problems on your own. I may discuss extra challenges, but I won't tell you how to solve them.
 
 Implement a `remove` function:
 ```

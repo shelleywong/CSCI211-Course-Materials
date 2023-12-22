@@ -11,7 +11,6 @@ Points: 300
 * [General Requirements](#general-requirements)
 * [Testing Your Program](#testing-your-program)
 * [Submitting Your Program](#submitting-your-program)
-* [Extra Credit](#extra-credit)
 
 ## Objectives
 
@@ -305,13 +304,11 @@ All programming assignments are **individual** assignments -- you are expected t
 
 If you are not able to complete this programming assignment, turn in your partial work for partial credit, or submit later for late credit. If you turn in nothing, you get a zero. If you turn in something, you receive a grade that is higher than zero.
 
-## Extra Credit
+## Extra Challenge (no points, just for fun)
 
-No extra credit points will be given to late assignments (both your regular assignment ("P5_kwik_e_mart") and the extra credit ("P5_extra") must be turned in on time).<br>
+> Note: In general, there is no need to include Extra Challenge code in your programming assignment submission; however, you may include it if it does not impact the output (your code submission should still pass the provided and hidden tests). Make sure you save a copy of your completely working program before you start the extra challenge. The idea behind the extra challenges is to give you the opportunity to figure out how to solve problems on your own. I may discuss extra challenges, but I won't tell you how to solve them.
 
-You must turn in the regular assignment code separately from the extra credit assignment code (I will create a separate assignment on [INGInious](https://inginious.csuchico.edu/)).<br>
-
-You will get 30 points extra credit if your program passes all the extra credit tests (a fraction of 30 points if you pass some of the extra credit tests). You have one extra credit test available to you in the CSCI211 starter-repo `211/p5_extra/tests/` directory. I will use additional tests when grading the extra credit.<br>
+You can test your Extra Challenge code against the test files available to you in the CSCI211 starter-repo `211/p5_extra/tests/` directory.<br>
 
 Instead of having a single checkout queue, give each checker its own queue.<br>
 

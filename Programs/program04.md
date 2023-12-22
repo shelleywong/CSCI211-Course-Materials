@@ -10,7 +10,6 @@ Points: 200
 * [General Requirements](#general-requirements)
 * [Testing Your Program](#testing-your-program)
 * [Submitting Your Program](#submitting-your-program)
-* [Extra Credit](#extra-credit)
 
 ## Objectives
 
@@ -190,13 +189,13 @@ All programming assignments are **individual** assignments -- you are expected t
 
 If you are not able to complete this programming assignment, turn in your partial work for partial credit, or submit later for late credit. If you turn in nothing, you get a zero. If you turn in something, you receive a grade that is higher than zero.
 
-## Extra Credit
+## Extra Challenge (no points, just for fun)
 
-No extra credit points will be given to late assignments. You must turn in a non-extra credit version ("P4_calc") in addition to the extra credit version ("P4_extra").<br>
+> Note: In general, there is no need to include Extra Challenge code in your programming assignment submission; however, you may include it if it does not impact the output (your code submission should still pass the provided and hidden tests). Make sure you save a copy of your completely working program before you start the extra challenge. The idea behind the extra challenges is to give you the opportunity to figure out how to solve problems on your own. I may discuss extra challenges, but I won't tell you how to solve them.
 
-The extra credit version must also pass all of the non-extra credit tests.<br>
+You can test your Extra Challenge code against the test files available to you in the CSCI211 starter-repo `211/p4_extra/tests/` directory.<br>
 
-You will get 20 points extra credit if your program passes all the extra credit tests, and a fraction of 20 points if it passes some of the extra credit tests. Since these are multi-character operators, you will have to modify how you read the input.<br>
+Implement additional operators in your calculator program. Since these are multi-character operators, you will have to modify how you read the input.<br>
 
 Implement the following operators:
 | Operator | Definition | Example |

@@ -10,7 +10,6 @@ Points: 100
 * [General Requirements](#general-requirements)
 * [Testing Your Program](#testing-your-program)
 * [Submitting Your Program](#submitting-your-program)
-* [Extra Credit](#extra-credit)
 
 ## Objectives
 
@@ -165,11 +164,11 @@ $ git push origin main
 
 If you are not able to complete this programming assignment, turn in your partial work for partial credit, or submit later for late credit. If you turn in nothing, you get a zero. If you turn in something, you receive a grade that is higher than zero.
 
-## Extra Credit
+## Extra Challenge (no points, just for fun)
 
-If you do the extra credit you have to turn in a second `chart.cpp` ("P1_extra" on [INGInious](https://inginious.csuchico.edu/)). Make sure you do not change or delete your original `chart.cpp`. For P1, extra credit is worth 10 points.<br>
+> Note: In general, there is no need to include Extra Challenge code in your programming assignment submission; however, you may include it if it does not impact the output (your code submission should still pass the provided and hidden tests). Make sure you save a copy of your completely working program before you start the extra challenge. The idea behind the extra challenges is to give you the opportunity to figure out how to solve problems on your own. I may discuss extra challenges, but I won't tell you how to solve them.
 
-No extra credit will be give to late assignments (both the regular assignment and the extra credit must be turned in on time).<br>
+You can test your Extra Challenge code against the test files available to you in the CSCI211 starter-repo `211/p1_extra/tests/` directory.<br>
 
 In addition to printing the chart pointing "up", also print it pointing down, right, and left. Include a blank line between each chart.<br>
 

@@ -11,7 +11,6 @@ Points: 250
 * [General Requirements](#general-requirements)
 * [Testing Your Program](#testing-your-program)
 * [Submitting Your Program](#submitting-your-program)
-* [Extra Credit](#extra-credit)
 
 ## Objectives
 
@@ -217,20 +216,18 @@ All programming assignments are **individual** assignments -- you are expected t
 
 If you are not able to complete this programming assignment, turn in your partial work for partial credit, or submit later for late credit. If you turn in nothing, you get a zero. If you turn in something, you receive a grade that is higher than zero.
 
-## Extra Credit
+## Extra Challenge (no points, just for fun)
 
-No extra credit will be given to late assignments (both the regular assignment and the extra credit must be turned in on time).<br>
+> Note: In general, there is no need to include Extra Challenge code in your programming assignment submission; however, you may include it if it does not impact the output (your code submission should still pass the provided and hidden tests). Make sure you save a copy of your completely working program before you start the extra challenge. The idea behind the extra challenges is to give you the opportunity to figure out how to solve problems on your own. I may discuss extra challenges, but I won't tell you how to solve them.
 
-Make sure you save a copy of your completely working program before you start the extra credit. The goal of extra credit is for you to figure out how to solve problems on your own. I may discuss extra credit, but I won't tell you how to solve it.<br>
+You can test your Extra Challenge code against the test files available to you in the CSCI211 starter-repo `211/p3_extra/tests/` directory.<br>
 
-* 8 points: implement the `print_by_length` command that prints all the videos in the list ordered by length (shortest to longest). If two or more videos have the same length, they should be sorted alphabetically (i.e. if video "a" has the same length as videos "c" and "d", "a" should be first, "c" second, and "d" last).
-* 8 points: implement the `print_by_rating` command that prints all the videos in the list ordered by rating (highest to lowest). If two or more videos have the same rating, they should be sorted alphabetically.
-* 8 points: implement the `lookup_expression` command that takes a regular expression and prints all the videos that have titles matching the given regular expression. Use the system functions `regcomp` and `regex` to implement regular expressions. If the regular expression does not match any titles in the list OR if the regular expression is not a correct regular expression, print the following to standard error (replace XXX with the regular expression):
+* Implement the `print_by_length` command that prints all the videos in the list ordered by length (shortest to longest). If two or more videos have the same length, they should be sorted alphabetically (i.e. if video "a" has the same length as videos "c" and "d", "a" should be first, "c" second, and "d" last).
+* Implement the `print_by_rating` command that prints all the videos in the list ordered by rating (highest to lowest). If two or more videos have the same rating, they should be sorted alphabetically.
+* Implement the `lookup_expression` command that takes a regular expression and prints all the videos that have titles matching the given regular expression. Use the system functions `regcomp` and `regex` to implement regular expressions. If the regular expression does not match any titles in the list OR if the regular expression is not a correct regular expression, print the following to standard error (replace XXX with the regular expression):
 ```
 Regular expression <XXX> does not match any titles in list.
 ```
 If two or more videos match the regular expression, they should be sorted alphabetically.<br>
-
-If you do the extra credit, add it to your base assignment and turn it in as BOTH "P3_vlist" and "P3_extra" (you can use the same files for both submissions).
 
 [Top of the Page](#program-3-linked-list-of-video-objects)
