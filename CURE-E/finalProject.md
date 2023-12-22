@@ -77,7 +77,7 @@ You will write a program that provides insight on Your Question (developed durin
   * File headers (filename, your name (first and last), your Chico Portal/INGInious username, and a short summary of the contents of the file)
   * Descriptive and helpful comments in the body of the code<br>
 
-I will be testing your code in an environment where you can compile code with the GNU g++ compiler (similar to what we have used all semester on INGInious, ecc-linux, WSL2, or an Ubuntu (Linux) virtual machine). If your code does not compile, you will lose points.<br>
+I will be testing your code in an environment where you can compile code with the GNU g++ compiler (similar to what we have used all semester on INGInious, ecc-linux, WSL2, or an Ubuntu (Linux) virtual machine). You will lose points if your code does not compile, or if your code compiles but terminates unexpectedly when executed (e.g. segmentation fault, aborted (core dumped) error).<br>
 
 Move into your CSCI211 repo and create a new directory for your project (you can give the project any name that you choose, as long as it is clear that the directory contains your CURE-E final project):
 ```
