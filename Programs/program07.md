@@ -45,12 +45,12 @@ Commands to handle from main.cpp:
 | --- | --- | --- | --- |
 | echo | string | Write the string to standard output. Do not insert into tree. Used for commenting tests. Has nothing to do with the tree. | none |
 | insert | string | Insert the given string into the binary search tree. The tree must maintain the BST property after insert. | Print error if string already in tree. |
-| size | none | Print the number of elements (also number of nodes) in the tree. | none (0 if tree is empty) |
+| size | none | Print the number of elements (also number of nodes) in the tree. | none (size of 0 if tree is empty) |
 | find | string | Print if the given string is or is not in the tree (both messages to stdout) | none |
 | print | none | Use a depth-first traversal (DFT) to print all elements in the tree. When you use an inorder DFT, the values will be printed in ascending order (for strings, the values will be in alphabetical order) | none (empty brackets if tree is empty) |
 | breadth | none | Use a breadth-first traversal (BFT) to print all elements in the tree. This prints one level of the tree at a time (left to right within a given level) | none (empty brackets if tree is empty) |
-| distance | none | Print the average distance nodes are from the root. The root's distance is 0. The root's children are distance == 1, the root's grandchildren are distance == 2, and so on. Calculate the distance for ALL nodes and then take the average. | none (0 if zero or one nodes) |
-| balanced | none | Print if the tree is balanced or not balanced (this type of balanced is called "height-balanced". | none (balanced if empty) |
+| distance | none | Print the average distance nodes are from the root. The root's distance is 0. The root's children are distance == 1, the root's grandchildren are distance == 2, and so on. Calculate the distance for ALL nodes and then take the average. | none (0 distance if tree contains zero or one nodes) |
+| balanced | none | Print if the tree is balanced or not balanced (this type of balanced is called "height-balanced". | none (considered balanced if tree is empty) |
 | rebalance | none | Modify the tree so it is balanced. | none |
 
 
@@ -137,7 +137,7 @@ This is how I suggest you declare the class BST member functions to meet the req
 | Constructor | none | none | :heavy_check_mark: Initialize the root |
 | Destructor | none | none | :heavy_check_mark: Delete all Node objects |
 | insert | string | Return true if the string is inserted successfully. Return false if string is already in the tree. | :heavy_check_mark: recursive private helper |
-| size | none | Return the number of elements (number of nodes) in the tree. | :heavy_check_mark: recursive private helper (OR use a size member variable, and remember to increment and decrement as necessary)|
+| size | none | Return the number of elements (number of nodes) in the tree. | :heavy_check_mark: recursive private helper (OR use a size member variable, and remember to increment and decrement as necessary -- no private helper necessary in this case)|
 | find | string | Return true if the target string is in the tree. Return false if the target string is not in the tree. | :heavy_check_mark: recursive private helper |
 | print | vector\<string\>& | No return value. Use an in-order depth-first traversal (DFT) to fill a vector with all tree node values in ascending (alphabetical) order. | :heavy_check_mark: recursive private helper<br> :heavy_check_mark: Use a function in main.cpp to print a formatted vector of strings |
 | breadth | vector\<string\>& | No return value. Use a breadth-first traversal (BFT) to fill a vector with all tree node values in BFT order (top level to bottom, left to right). | :heavy_check_mark: Use a function in main.cpp to print a formatted vector of strings |
@@ -159,8 +159,9 @@ class BST
         ....
 };
 ```
+> Note: for private helper functions other than insert, you can simply pass a Node pointer `(Node *cur_root)`, instead of a reference to a pointer.
 
-If the `cur_root` is passed to the private `insert` function as a reference to a pointer (see above), the implementation will be less complicated. For example, consider the first time that the private `insert()` is called. `m_root` is NULL but since a reference to `m_root` is passed to `insert()` when it sets `cur_root` to the new node, it is really updating `m_root`:
+If the `cur_root` is passed to the private `insert` function as a reference to a pointer (see above), the `insert` implementation will be less complicated. For example, consider the first time that the private `insert()` is called. `m_root` is NULL but since a reference to `m_root` is passed to `insert()` when it sets `cur_root` to the new node, it is really updating `m_root`:
 ```cpp
 bool BST::insert(string str, Node *&cur_root)
 {   
