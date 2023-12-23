@@ -299,7 +299,7 @@ Submit `print.cpp` to [INGInious](https://inginious.csuchico.edu/).
 ## Exercise 5: Linux Commands and Testing Quiz
 
 One of the main point of these assignments is to familiarize you with the Linux command line interface and introduce you to the testing mechanisms. Read or refer to the following guides to complete the Linux Commands and Testing Quiz:
-* [Linux Lecture Notes](https://github.com/shelleywong/CSCI211-Course-Materials/blob/main/guides/testing.md)
+* [Linux Lecture Notes](https://github.com/shelleywong/CSCI211-Course-Materials/blob/main/guides/linux.md)
 * [Testing Assignments](https://github.com/shelleywong/CSCI211-Course-Materials/blob/main/guides/testing.md) Guide<br>
 
 Make sure you understand how to:
