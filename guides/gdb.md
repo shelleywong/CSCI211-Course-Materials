@@ -1,5 +1,7 @@
 # GDB Guide
 
+These notes are particularly useful for completing [Lab 06](https://github.com/shelleywong/CSCI211-Course-Materials/blob/main/Labs/lab06.md), Exercises 1, 2, 3, and 4.
+
 ## gdb Lecture Notes
 
 `gdb` is a program debugger. It allows you to examine a program while the program is executing. The interface to gdb is textual (just like the interface to the bash shell is textual). You control gdb by typing textual commands at its prompt (the gdb command prompt is `(gdb)`).<br>

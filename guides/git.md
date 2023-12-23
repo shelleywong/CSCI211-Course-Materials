@@ -1,5 +1,8 @@
 # Git Overview
 
+These notes are particularly useful for completing [Lab 01](https://github.com/shelleywong/CSCI211-Course-Materials/blob/main/Labs/lab01.md):
+  * [Exercise 6: Git Basics Survey](https://github.com/shelleywong/CSCI211-Course-Materials/blob/main/Labs/lab01.md#exercise-6-git-basics-survey)
+
 ## What is Git?
 
 [Git](https://git-scm.com/) is a version control system. It helps you keep track of your source code history, allowing you to see any changes and revert back to a previous version if necessary. Git makes it easier to manage both small individual projects and large collaborative projects. It is free and open source software released under the [GNU General Public License version 2.0](https://opensource.org/licenses/GPL-2.0). To use Git, you must have it installed on your local machine.<br>
@@ -29,4 +32,6 @@ GitHub, GitLab, and BitBucket provide tools that help manage and host Git reposi
 
 Refer to [Lab 01, Exercise 1: Setting up your CSCI 211 environment](https://github.com/shelleywong/CSCI211-Course-Materials/blob/main/Labs/lab01.md#exercise-1-setting-up-your-csci-211-environment) for help walking through the:
 * [Steps for setting up your CSUChico-CSCI211 GitHub repo](https://github.com/shelleywong/CSCI211-Course-Materials/blob/main/Labs/lab01.md#steps-for-setting-up-your-csuchico-csci211-github-repo)
-* [Steps for working with a local GitHub repo](https://github.com/shelleywong/CSCI211-Course-Materials/blob/main/Labs/lab01.md#steps-for-working-with-a-local-github-repo)
+* [Steps for working with a local GitHub repo](https://github.com/shelleywong/CSCI211-Course-Materials/blob/main/Labs/lab01.md#steps-for-working-with-a-local-github-repo)<br>
+
+[Top of the Page](#git-overview)
