@@ -14,7 +14,7 @@ Over the course of the semester, there will be 7 programming assignments. All pr
 
 Your first goal is to make sure your code is correct and passes all tests; however, it is also important to think about writing code that is readable and easy to maintain. The projects in this course are relatively small individual assignments. In the real world, you will most likely be contributing to a large codebase with many contributors. Thus, it is good practice to follow style guidelines, be consistent, and write code that other engineers can easily understand.<br>
 
-[CSCI 211 Style Guide](https://github.com/shelleywong/CSCI211-Course-Materials/blob/main/guides/style.md)<br>
+* [CSCI 211 Style Guide](https://github.com/shelleywong/CSCI211-Course-Materials/blob/main/guides/style.md)<br>
 
 ### C++ Version
 

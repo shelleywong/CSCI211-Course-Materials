@@ -7,7 +7,7 @@ Plan on following the CSCI 211 Style Guide for all [Programming Assignments](htt
 
 You are not required to follow the CSCI 211 Style Guide for [Lab Exercises](https://github.com/shelleywong/CSCI211-Course-Materials/tree/main/Labs); however, it is generally good practice to follow a style guide, as doing so can make your code easier to reference, modify, and update in the future.<br>
 
-### Style Guide Overview
+## Style Guide Overview
 
 Your program should be neatly organized, consistently indented, and have informative comments throughout. Avoid surprising or dangerous constructs that an average C++ programmer would find tricky or difficult to maintain. Refer to the [Google Docs version of the CSCI 211 Style Guide](https://docs.google.com/document/d/1ZPHlwQv9SmTB-gbYWcXqM_1tL3d5jyS02PZnAXpJgYI/edit?usp=sharing) for more details on each of these categories. Things to focus on include:
 * [Variables](#variables)
