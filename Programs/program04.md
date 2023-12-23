@@ -151,7 +151,7 @@ You can't just use `getline()` or `cin >> string_variable` for this program beca
 
 ## General Requirements
 
-Programs should be well formatted and consistent so they are easy to read. The [General Requirements](https://github.com/shelleywong/CSCI211-Course-Materials/blob/main/Programs/README.md#general-requirements) listed in the Programs directory README apply to all programming assignments.<br>
+Programs should be well formatted and consistent so they are easy to read. The [General Requirements](https://github.com/shelleywong/CSCI211-Course-Materials/blob/main/Programs/README.md#general-requirements) listed in the Programs directory README and the [CSCI 211 Style Guide](https://github.com/shelleywong/CSCI211-Course-Materials/blob/main/guides/style.md) apply to all programming assignments.<br>
 
 Remember that the first lines of all your files (.h and .cpp) must contain the following comments:
 ```
