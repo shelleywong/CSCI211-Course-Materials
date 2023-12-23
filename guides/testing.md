@@ -5,7 +5,7 @@ Instructions for testing CSCI 211 Labs and Programming Assignments.<br>
 This Guide on Testing Assignments is useful for:
 * [Lab Exercises](https://github.com/shelleywong/CSCI211-Course-Materials/tree/main/Labs)
 * [Programming Assignments](https://github.com/shelleywong/CSCI211-Course-Materials/tree/main/Programs)
-* [CURE-E Final Project](https://github.com/shelleywong/CSCI211-Course-Materials/blob/main/CURE-E/finalProject.md).<br>
+* [CURE-E Final Project](https://github.com/shelleywong/CSCI211-Course-Materials/blob/main/CURE-E/finalProject.md)<br>
 
 > Note: Tests may have questions on how to test your code, but even more important, learning to efficiently test your code will make it much easier to complete the Lab Exercises and Programming Assignments in this course. Taking some time to understand the available testing mechanisms can save a lot of time in the long run!<br>
 
@@ -192,3 +192,7 @@ $ valgrind --leak-check=yes ./myprog    // test your program with valgrind
 $ valgrind --leak-check=yes ./myprog arg1 arg2    // example to test your program with command line arguments on valgrind
 $ valgrind --leak-check=yes ./myprog < tests/t01.in  // example to test your program with file input (file redirection) on valgrind
 ```
+
+> Learn more about Valgrind and the platforms it works on by visiting [valgrind.org](https://valgrind.org/)
+
+[Top of the Page](#testing-assignments)
