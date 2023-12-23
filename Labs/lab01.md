@@ -504,6 +504,8 @@ $
 
 Submit `print.cpp` to [INGInious](https://inginious.csuchico.edu/).
 
+***
+
 ## Exercise 5: Linux Commands and Testing Quiz
 
 One of the main point of these assignments is to familiarize you with the Linux command line interface (refer to the [Lab 01 Lecture Notes on Linux](#lecture-notes)) and introduce you to the [testing mechanism](https://github.com/shelleywong/CSCI211-Course-Materials/blob/main/Labs/README.md#testing-assignments) (instructions in the Labs directory README).<br/>
@@ -521,19 +523,6 @@ To check your understanding of these concepts and receive credit for Lab 01 Exer
 Note: You will need to be logged in to your \@mail.csuchico.edu Google account in order to take the Google Survey. If you get a message that you are unable to access the survey, try using your Chico portal username and password to login to Google. If you are not sure how to proceed, feel free to ask for help!<br>
 
 For this exercise, make sure to submit the [211 Linux Commands and Testing Google Survey](https://docs.google.com/forms/d/e/1FAIpQLScYYUFPLcTAE7BNwHmT3G98Ityvpeu7e_MNSLF2qC5pS_MXrw/viewform?usp=sf_link).
-
-## Lab 01 Submissions
-
-All labs are due at 11:59pm the Friday following lab. For this lab you must set up your CSUChico-CSCI211 GitHub account, submit `hello.cpp`, `add.cpp`, and `print.cpp` to [INGInious](https://inginious.csuchico.edu/) (there is a separate submission link for each exercise), and complete the 211 Linux Commands and Testing Google Survey. If you are not able to complete all the exercises, turn in your partial work for partial credit, or submit later for late credit.<br>
-
-Optional but recommended submission step: add, commit, and push your code to GitHub (the `add` command with the `-A` option updates all files in the working tree):
-```
-$ git add -A
-$ git commit -m "completes lab01 exercises"
-$ git push origin main
-```
-
-If you have time left over, I recommend that you start working on p1. After you've made some progress on the assignment, practice using the different options for testing your code before you submit the code to INGInious.
 
 ***
 
@@ -558,5 +547,21 @@ There are 20 questions in this survey. Many of them can be answered with one Lin
   * View your code on GitHub
 
 The Git commands covered in this survey are very useful for individual projects as well as larger collaborative projects. The focus is on commands that may benefit you on small individual projects, such as making frequent commits and utilizing separate branches to help you organize your work and learn from your commit history.<br>
+
+***
+
+## Lab 01 Submissions
+
+All labs are due at 11:59pm the Friday following lab. For this lab you must set up your CSUChico-CSCI211 GitHub account, submit `hello.cpp`, `add.cpp`, and `print.cpp` to [INGInious](https://inginious.csuchico.edu/) (there is a separate submission link for each exercise), and complete two surveys: the 211 Linux Commands and Testing Survey and the Git Basics Survey. If you are not able to complete all the exercises, turn in your partial work for partial credit, or submit later for late credit.<br>
+
+Optional but recommended submission step: add, commit, and push your code to GitHub (the `add` command with the `-A` option updates all files in the working tree):
+```
+$ git add -A
+$ git commit -m "completes lab01 exercises"
+$ git push origin main
+```
+
+If you have time left over, I recommend that you start working on p1. After you've made some progress on the assignment, practice using the different options for testing your code before you submit the code to INGInious.
+
 
 [Top of the Page](#lab-1)
