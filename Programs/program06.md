@@ -226,7 +226,7 @@ Remember that the first lines of all your files (.h and .cpp) must contain the f
 ## Testing Your Program
 
 * Some sample tests and a Makefile are included in the CSCI211 starter-repo `211/p6/`.
-* Test your code before submitting it to INGInious -- you can review the instructions for Testing Assignments using the provided sample tests in the [Labs directory README](https://github.com/shelleywong/CSCI211-Course-Materials/tree/main/Labs).
+* Test your code before submitting it to INGInious -- review the [Testing Assignments](https://github.com/shelleywong/CSCI211-Course-Materials/blob/main/guides/testing.md) Guide for how to test your code using the provided sample tests.
 * In this case, I will NOT test your program with any additional tests.<br>
 
 ## Submitting Your Program
