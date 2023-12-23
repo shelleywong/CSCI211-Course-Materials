@@ -1,33 +1,28 @@
 # Lab 6
 
-Introduction to the GNU gdb debugger
+* Introduction to the GNU gdb debugger<br>
+* Exceptions practice<br>
 
 Lab 06 Exercises:
 * [Exercise 1: Debugging Practice Part 1](#exercise-1-debugging-practice-part-1) (lab06_gdb/p1)
 * [Exercise 2: Debugging Practice Part 2](#exercise-2-debugging-practice-part-2) (lab06_gdb/p2)
 * [Exercise 3: Debugging Practice Part 3](#exercise-3-debugging-practice-part-3) (lab06_gdb/p3)
 * [Exercise 4: Debugging Practice Part 4](#exercise-4-debugging-practice-part-4) (lab06_gdb/p4)
-
-> Note: To get full credit for this lab, you must complete a Google Survey. You do not need to submit any files to INGInious for the Lab 6 GDB exercises.
-
-Lab 06 Extra Credit: Exceptions (try/catch, throw)
-* [Extra Credit: An Exceptional Program](#extra-credit-an-exceptional-program) (lab11_exceptions)
+* [Exercise 5: An Exceptional Program](#exercise-5-an-exceptional-program) (lab06_exceptions)
   * [Part 1: Getting Started](#part-1-getting-started)
   * [Part 2: Loop](#part-2-loop)
   * [Part 3: String Posers](#part-3-string-posers)
   * [Part 4: Bad Numbres](#part-4-bad-numbres)
 
+> Note: To get full credit for this lab, you must complete the GDB Survey (exercises 1-4) and submit one file to INGInious (exercise 5).
+
 ## Goals
 
 Learn the basics of the [GNU Project Debugger](https://www.gnu.org/software/gdb/) (gdb) so you can use it to help identify and resolve errors, bugs, and issues within your C++ programs (also works for many other programming languages). Debugging tools like are essential in the software development process!<br>
 
-For extra credit, learn about C++ exceptions, which provide a way to react to exceptional circumstances (like runtime errors) that arise during program execution, and allow you to gracefully handle unforeseen conditions without crashing the program.
+Learn about C++ exceptions, which provide a way to react to exceptional circumstances (like runtime errors) that arise during program execution, and allow you to gracefully handle unforeseen conditions without crashing the program.
 
-## Required Survey
-
-You do not have to turn in any files for this lab, but you do have to complete [this Google survey](https://docs.google.com/forms/d/e/1FAIpQLSdNNjIHgqtmHd_zsGy12nYTealx90JQA_FDU_SFu9Dkrp3awg/viewform?usp=sf_link) to get credit for Lab 06.<br>
-
-Note: You will need to be logged in to your \@mail.csuchico.edu Google account in order to take the Google Survey. If you get a message that you are unable to access the survey, try using your Chico portal username and password to login to Google. If you are not sure how to proceed, feel free to ask for help!<br>
+> Note: You will need to be logged in to your \@mail.csuchico.edu Google account in order to take the Google Survey. If you get a message that you are unable to access the survey, try using your Chico portal username and password to login to Google. If you are not sure how to proceed, feel free to ask for help!<br>
 
 ## gdb Lecture Notes
 
@@ -117,14 +112,14 @@ Complete the following exercises with gdb. Then, if you have time and are intere
 
 I have created several sample programs for you to use with the debugger. You can find them in your CSCI211 starter-repo `211/lab06_gdb/` directory.<br>
 
-You can compile all the programs with one call to `make`:
+You can compile all the programs within the lab06_gdb directory with one call to `make`:
 ```
 $ cd ~/211/lab06_gdb
 $ make
 ```
 `make` should not issue any errors -- let me know if you get errors.<br>
 
-Nothing will be submitted to INGInious for this lab, but you must complete [this Google survey](https://docs.google.com/forms/d/e/1FAIpQLSdNNjIHgqtmHd_zsGy12nYTealx90JQA_FDU_SFu9Dkrp3awg/viewform?usp=sf_link).
+Nothing will be submitted to INGInious for Lab 06, Exercises 1-4, but you must complete [this GDB survey](https://docs.google.com/forms/d/e/1FAIpQLSdNNjIHgqtmHd_zsGy12nYTealx90JQA_FDU_SFu9Dkrp3awg/viewform?usp=sf_link).
 
 > Note: The programs in this lab were created to produce errors, so that you can get some practice working with gdb. Don't spend too much time trying to figure out what the program is "supposed" to do -- in some cases, the code is an example of something you should NOT do in your own programs.
 
@@ -250,17 +245,9 @@ $ gdb p4
 
 ***
 
-After completing the exercises and the survey, you can start working on programming assignment 4. Read the assignment writeup to get an idea of what you need to do. You may want to start on Lab 07 (implement a stack of doubles), as the stack of doubles will be used in P4.
+## Exercise 5: An Exceptional Program
 
-## Lab 06 Submissions
-
-All labs are due at 11:59pm the Friday following lab. For this lab you must complete the Google Survey (Exercises 1, 2, 3, and 4). You will not submit anything to INGInious for the Lab 06 GDB exercises (there is an INGInious submisssion for the Lab 06 Extra Credit). If you are not able to complete all the exercises, turn in your partial work for partial credit, or submit later for late credit.
-
-***
-
-## Extra Credit: An Exceptional Program
-
-In this lab you will practice a common situation involving user input and error checking. You will write a simple program that asks the user to enter a number from 1 to 10. You must catch situations in which the user enters a number out of bounds (greater than 10 or less than 1), a non-integer number (e.g. a double), or a non-numeric value (e.g. a string). Your program is expected to recover and continue, until the user inputs a number that meets the specified criteria.<br>
+In this lab exercise, you will practice a common situation involving user input and error checking. You will write a simple program that asks the user to enter a number from 1 to 10. You must catch situations in which the user enters a number out of bounds (greater than 10 or less than 1), a non-integer number (e.g. a double), or a non-numeric value (e.g. a string). Your program is expected to recover and continue, until the user inputs a number that meets the specified criteria.<br>
 
 This program uses [exceptions](https://www.cplusplus.com/doc/tutorial/exceptions/), which force the calling code to recognize an error condition and handle it. Exceptions are useful for catching runtime errors (errors that happen while the program is running, after the program has been successfully compiled).<br>
 
@@ -386,15 +373,19 @@ We use the catch-block to catch the problem number `pnum`, print an appropriate 
 
 Once you are finished, submit your `main.cpp` to INGInious.
 
-## Lab 06 Extra Credit Submission
+## Lab 06 Submissions
 
-All labs are due at 11:59pm the Friday following lab. For this lab extra credit, you must submit `main.cpp` (Parts 1, 2, 3, and 4) to [INGInious](https://inginious.csuchico.edu/). There is no late credit for extra credit.<br>
+All labs are due at 11:59pm the Friday following lab. For Lab 06, Exercises 1, 2, 3, and 4 you must complete the GDB Survey. For Lab 06, Exercise 5, you must submit `main.cpp` (Parts 1, 2, 3, and 4) to [INGInious](https://inginious.csuchico.edu/).<br>
 
 Optional but recommended submission step: add, commit, and push your code to GitHub (the `add` command with the `-A` option updates all files in the working tree):
 ```
 $ git add -A
-$ git commit -m "completes lab06 extra credit"
+$ git commit -m "completes lab06 exercises"
 $ git push origin main
 ```
+
+***
+
+After completing the exercises and the survey, you can start working on programming assignment 4. Read the assignment writeup to get an idea of what you need to do. You may want to start on Lab 07 (implement a stack of doubles), as the stack of doubles will be used in P4.
 
 [Top of the Page](#lab-6)

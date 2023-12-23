@@ -4,11 +4,12 @@ Set up, Intro to Linux, g++ compiler, Git
 
 ## Goals
 
+* Set up your environment (CSCI211 GitHub repo, all the directories for the course assignments)
 * Get an overview of Linux organization
 * Introduce several basic Linux commands
-* Set up your environment (GitHub, all the directories for the course assignments)
 * Practice creating, compiling, and running C++ programs
 * Get experience testing your assignments (before submitting to INGInious)
+* Get an overview of basic Git commands
 * Work on Programming Assignment 01
 <br>
 
@@ -18,11 +19,9 @@ Lab 01 Exercises:
 * [Exercise 3: Addition](#exercise-3-addition) (lab01_add)
 * [Exercise 4: Say Hello](#exercise-4-say-hello) (lab01_print)
 * [Exercise 5: Linux Commands and Testing Quiz](#exercise-5-linux-commands-and-testing-quiz)
+* [Exercise 6: Git Basics Survey](#exercise-6-git-basics-survey)
 
-> Note: To get full credit for this lab, you must set up a CSUChico-CSCI211 GitHub account (exercise 1), submit 3 files to INGInious (exercises 2, 3, 4), and complete the Google Survey on Linux Commands and Testing (exercise 5).
-
-Lab 01 Extra Credit: Git Basics Survey
-* [Extra Credit: Complete the Git Google Survey](#extra-credit-complete-the-git-google-survey)
+> Note: To get full credit for this lab, you must set up a CSUChico-CSCI211 GitHub account and update the README.md file (exercise 1), submit 3 files to INGInious (exercises 2, 3, 4), complete the Linux Commands and Testing Quiz (exercise 5), and complete the Git Basics Survey (exercise 6).
 
 ## Lecture Notes
 
@@ -538,9 +537,9 @@ If you have time left over, I recommend that you start working on p1. After you'
 
 ***
 
-## Extra Credit: Complete the Git Google Survey
+## Exercise 6: Git Basics Survey
 
-Complete the [Git Basics Google Survey](https://docs.google.com/forms/d/e/1FAIpQLSezh266Wzhha6HZtSdUQEX1QyvzDuzgWihREqvRgK6AFdLDjg/viewform?usp=sf_link) for extra credit -- this survey discusses Git when used with GitHub (you would use similar commands when working with any Git repository hosting service). When you provide your answers, make sure that your answers are complete (i.e. include a branch name/file name/message/URL/etc if the command requires it to run successfully).<br>
+Complete the [Git Basics Survey](https://docs.google.com/forms/d/e/1FAIpQLSezh266Wzhha6HZtSdUQEX1QyvzDuzgWihREqvRgK6AFdLDjg/viewform?usp=sf_link) which covers some basic Git commands used with GitHub (the process is similar when working with any Git repository hosting service). When you provide your answers, make sure that your answers are complete (i.e. include a branch name/file name/message/URL/etc if the command requires it to run successfully).<br>
 
 There are 20 questions in this survey. Many of them can be answered with one Linux Git command, some of which are covered in Exercise 1. Other questions (such as the ones on branching and creating a new repo) are not discussed in Exercise 1 (hint: refer to the Git Cheat Sheets and try to see if you can use the commands and implement each step in a test repo). Let the instructor know if anything is unclear.<br>
 
@@ -559,7 +558,5 @@ There are 20 questions in this survey. Many of them can be answered with one Lin
   * View your code on GitHub
 
 The Git commands covered in this survey are very useful for individual projects as well as larger collaborative projects. The focus is on commands that may benefit you on small individual projects, such as making frequent commits and utilizing separate branches to help you organize your work and learn from your commit history.<br>
-
-Note: Extra credit submissions must be submitted on time (no late credit).
 
 [Top of the Page](#lab-1)
