@@ -1,5 +1,7 @@
 # Overview of make
 
+These notes are particularly useful for completing [Lab 03](https://github.com/shelleywong/CSCI211-Course-Materials/blob/main/Labs/lab03.md), Exercises 1, 2, and 3.<br>
+
 The job of the `make` utility is to create executables and other non-source files of a program from the program's source files. When you run `make`, it looks for a makefile in the directory called `makefile` or `Makefile`. The `Makefile` contains rules that tell the `make` utility how to execute a series of commands in order to build a target file from source files.<br>
 
 A benefit of using `make` is that it automatically figures out which files it needs to update, based on which source files have changed. The `make` utility also automatically determines the proper order for updating files, in case one non-source file depends on another non-source file.
