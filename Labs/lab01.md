@@ -31,32 +31,9 @@ The goal of this exercise is for you to set up your working directory for CSCI 2
 
 The starter repo for this class is available on GitHub in the CSUChico-CSCI211 organization. GitHub is a Git repository manager that provides version control and other features to build and manage software.<br>
 
-After you create a GitHub account, you will use a repo generation tool to generate a **private** version of the starter repo for yourself. Private visibility means that only select individuals (e.g. you and the instructor) will have access to the repo. A public repo would be visible to anyone on the internet, meaning other students could easily see your repo and steal your code -- this constitutes cheating and is a violation of academic integrity. There is **no reason** to make your CSCI 211 code public this semester OR after you have completed the class. Refer to the Honesty and Academic Integrity policy in the syllabus if you have questions about this.
+After you create a GitHub account, you will use a repo generation tool to generate a **private** version of the starter repo for yourself. Private visibility means that only select individuals (e.g. you and the instructor) will have access to the repo. A public repo would be visible to anyone on the internet, meaning other students could easily see your repo and steal your code -- this constitutes cheating and is a violation of academic integrity. There is **no reason** to make your CSCI 211 code public this semester OR after you have completed the class. Refer to the Honesty and Academic Integrity policy in the syllabus if you have questions about this.<br>
 
-### Git and GitHub Overview
-
-**What is Git?**<br>
-
-[Git](https://git-scm.com/) is a version control system. It helps you keep track of your source code history, allowing you to see any changes and revert back to a previous version if necessary. Git makes it easier to manage both small individual projects and large collaborative projects. It is free and open source software released under the [GNU General Public License version 2.0](https://opensource.org/licenses/GPL-2.0). To use Git, you must have it installed on your local machine.<br>
-
-**What are GitHub, GitLab, and BitBucket?**<br>
-
-GitHub, GitLab, and BitBucket provide tools that help manage and host Git repositories. GitHub, GitLab, and BitBucket utilize a graphical user interface and are accessible on the web.<br>
-* [GitHub](https://github.com/)
-  * Version control, collaboration on open-source projects (Education accounts are free)
-* [GitLab](https://about.gitlab.com/)
-  * Version control with baked in CI/CD (Unlimited private/public repos for all)
-* [BitBucket](https://bitbucket.org/)
-  * Version control host for GIT or MERCURIAL (Education accounts are free)
-
-**Git and GitHub References:**
-* Git Cheat Sheets:
-  * [GitHub Education Cheat Sheet](https://education.github.com/git-cheat-sheet-education.pdf)
-  * [GitLab Cheat Sheet](https://about.gitlab.com/images/press/git-cheat-sheet.pdf)
-  * [Atlassian (BitBucket) Cheat Sheet](https://www.atlassian.com/git/tutorials/atlassian-git-cheatsheet)
-* Refer to the [GitHub docs](https://docs.github.com/en/free-pro-team@latest/github) for additional guidance on working with GitHub.
-* Check out [Getting Started with Git](https://docs.github.com/en/github/getting-started-with-github/getting-started-with-git) in the GitHub Docs for instructions on setting up you Git username and password (necessary if cloning GitHub repos with HTTPS) and managing remote repositories.
-* [Learn Git Branching](https://learngitbranching.js.org/) is a great interactive web tutorial that covers both basic and more advanced Git commands and techniques. The tutorial goes beyond what is necessary for this class, but it provides good practice and preparation for future classes and industry work.
+For more Git information and resources, check out the [Git Overview](https://github.com/shelleywong/CSCI211-Course-Materials/blob/main/guides/git.md).<br>
 
 ### Steps for setting up your CSUChico-CSCI211 GitHub repo
 
@@ -322,7 +299,9 @@ For this exercise, make sure to submit the [211 Linux Commands and Testing Googl
 
 Complete the [Git Basics Survey](https://docs.google.com/forms/d/e/1FAIpQLSezh266Wzhha6HZtSdUQEX1QyvzDuzgWihREqvRgK6AFdLDjg/viewform?usp=sf_link) which covers some basic Git commands used with GitHub (the process is similar when working with any Git repository hosting service). When you provide your answers, make sure that your answers are complete (i.e. include a branch name/file name/message/URL/etc if the command requires it to run successfully).<br>
 
-There are 20 questions in this survey. Many of them can be answered with one Linux Git command, some of which are covered in Exercise 1. Other questions (such as the ones on branching and creating a new repo) are not discussed in Exercise 1 (hint: refer to the Git Cheat Sheets and try to see if you can use the commands and implement each step in a test repo). Let the instructor know if anything is unclear.<br>
+You may find it helpful to refer to the [Git Overview](https://github.com/shelleywong/CSCI211-Course-Materials/blob/main/guides/git.md). Feel free to use one of the Git Cheat Sheets to complete the Git survey.<br>
+
+There are 20 questions in this survey. Many of them can be answered with one Linux Git command, some of which are covered in other Lab 01 exercises. Other questions (such as the ones on branching and creating a new repo) have not previously been discussed (hint: refer to the Git Cheat Sheets and try to see if you can use the commands and implement each step in a test repo). Let the instructor know if anything is unclear.<br>
 
 * Part 1 (questions 1-6):
   * Create a new GitHub repository (a remote repo)
