@@ -37,7 +37,7 @@ For more Git information and resources, check out the [Git Overview](https://git
 
 ### Steps for setting up your CSUChico-CSCI211 GitHub repo
 
->Note: for more details on steps 1 - 3, see the 211 Getting Started Instructions on Canvas.
+> Note: for more details on steps 1 - 3, see the 211 Getting Started Instructions on Canvas.
 
 1. [Sign up for GitHub](https://github.com/)
 2. Go to this [GitHub repo generation](https://www.bryancdixon.com/fall/2023/csci/211/repo/) page to generate a CSUChico-CSCI211 GitHub repo
@@ -296,6 +296,10 @@ For this exercise, make sure to submit the [211 Linux Commands and Testing Googl
 ***
 
 ## Exercise 6: Git Basics Survey
+
+> Note: You should complete Exercise 1 BEFORE completing the Git Basics Survey
+
+> Note: It is possible to complete the Git survey without running any commands and just looking at the cheat sheets; however, it can be helpful to walk through the steps yourself. If you do choose to run the commands, I recommend running them in a practice repo (not in your CSCI211 repo that contains the starter code files) -- some git commands can cause problems and impact your repo in unwanted ways if you are not careful.
 
 Complete the [Git Basics Survey](https://docs.google.com/forms/d/e/1FAIpQLSezh266Wzhha6HZtSdUQEX1QyvzDuzgWihREqvRgK6AFdLDjg/viewform?usp=sf_link) which covers some basic Git commands used with GitHub (the process is similar when working with any Git repository hosting service). When you provide your answers, make sure that your answers are complete (i.e. include a branch name/file name/message/URL/etc if the command requires it to run successfully).<br>
 
