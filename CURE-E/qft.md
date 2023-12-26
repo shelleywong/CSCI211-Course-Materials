@@ -41,21 +41,54 @@ Take a few minutes to individually look at the data and think about different ty
 * For the historical weather data, consider different stakeholders who could benefit from analysis of climate information -- individuals in agriculture, emergency management, renewable energy, tourism, outdoor recreation, and government agencies -- people like city planners, student club leaders, farmers, gardeners, delivery drivers, event planners, etc.
 * For the alternative fuel station data, consider different stakeholders who could benefit from analysis of alternative fuel stations -- people who own alternative fuel vehicles, people who are thinking of purchasing an alternative fuel vehicle in the future, government policymakers, environmental/conservation groups, energy companies, auto manufacturers, transportation companies, academic and educational institutions, etc.<br>
 
-Consider these examples of areas where you could provide new knowledge for stakeholders:
-* Historical weather data:
-  * Exploring average temperatures throughout the growing season, including the last frost date in spring and the first frost date in fall, which could be helpful for farmers and home gardeners.
-  * Identifying historical precipitation patterns that can help city planners assess flood risks and develop appropriate drainage systems and flood control measures.
-  * Examining historical weather data to help campus student organizations and event planners schedule outdoor campus events, ensuring better attendance and participant comfort, or helping students plan for commutes and travel during breaks.
-  * Determining if there is a trend in the frequency or intensity of heatwaves, which could help public health departments develop action plans and provide guidance for vulnerable populations, such as the elderly, children, or people with pre-existing health conditions.
-* Alternative fuel station data:
-  * Exploring geographic coverage and identifying locations that would benefit from additional stations, to help government policymakers make decisions regarding incentives and infrastructure investments.
-  * Assessing accessibility (e.g. public/private, hours open, how many charge ports are at each location, what types of charge ports are available), so alternative vehicle owners can have a better idea of what options are available for their next road trip.
-  * Measuring growth (how many stations open each year?) and availability (what proportion of stations are temporarily unavailable?), to help the general public understand both the current challenges and the future potential charging/fueling options.
-  * Examining different types of facilities where alternative fuel stations are located (parking structures, hotels, shopping malls, etc), to help companies determine where to build new facilities.
+### Developing a Research Question
+
+Below are some examples of good starting questions that could provide interesting insight for specific stakeholders. These questions are meant to give you some inspiration -- you can use a question as is, choose a unique way to approach solving the question, and/or modify the question based on your interests:
+#### Example questions: historical weather data
+* (Note for all historical weather data: Your approach could look specifically at one station with many years of data available, or you could look at several stations in the area and find the averages.)
+* **What is the average date for the last Spring frost in the Chico area?**
+  * This can help farmers and home gardeners have a better idea of when they can start planting in the Spring without damage to new plants.
+  * To answer this question, you might look at the minimum temperatures in specific months (e.g. January - June) and calculate the percentage possibility that temperatures get below 32 degrees F (light freeze) during some range of days.
+  * You could modify the question to focus on finding the first Fall frost (e.g. September - December), to give farmers and home gardeners a better idea for when they should harvest their last crops for the growing season.
+* **How often can farmers and home gardeners expect temperatures to be above the optimal range for growing tomatoes during the harvest season?**
+  * There are ways to protect plants from extreme temperatures; however, it requires planning, and it helps to have an idea of when you can expect extreme temperatures.
+  * To answer this question, you might look at the maximum temperatures during the harvest season (roughly June - November) and calculate the average number of days that temperatures get above 85 degrees F (or 90-95F -- max optimal temperature may vary based on factors like humidity).
+  * You could modify the question to focus on a different plant (e.g. rice, almonds, grapes, lettuce, peppers, etc) and its specific needs.
+* **What is the probability that it will rain during Spring Commencement ceremonies?**
+  * Looking at historical weather data can help campus student organizations and event planners schedule outdoor events or make backup plans to ensure better attendance and participant comfort.
+  * To answer this question, you might start by looking at the number of days during the month of May (or June) that have precipitation. Then, you can determine the probability of rain occurring on a given day based on the average number of days with precipitation during May over the years 1920-2020.
+  * You could modify this question to focus on a different type of extreme weather (e.g. temperatures above 90 degrees Fahrenheit) that could also impact attendance, comfort, and health.
+* **Is there a trend in the frequency or intensity of heatwaves in Chico, CA?**
+  * Understanding how often heatwaves occur and/or determining if the temperature during those heatwaves is increasing can help public health departments develop action plans and provide guidance for vulnerable populations, such as the elderly, children, or people with pre-existing health conditions.
+  * To answer any question focusing on trends, make sure you analyze many years of data (at least 20-30, but ideally more years). It will most likely be impossible to identify a trend for a short period of time (e.g. 5 years).
+  * You could modify this question by focusing on either max temperatures above a certain threshold (e.g. 90-100F), or min temperatures above a certain threshold (e.g. 70-75F), as both can cause additional stress on humans (and infrastructure).
+* **How do current drought conditions compare to historical seasonal precipitation patterns in Butte County?**
+  * Identifying historical precipitation (or drought) patterns can provide city planners with valuable information for water resource management, agriculture, and other sectors.
+  * This is another question that requires looking at trends, so make sure you analyze many years of data (at least 20-30, but ideally more years).
+  * You could modify this question by using a specific drought index (e.g. the Standardized Precipitation Index), analyzing average number of occurrences of precipitation during specific months, or focusing on average max or min amounts of precipitation seen during specific months.
+#### Example questions: Alternative fuel station data
+* **What is the current geographic coverage of alternative fuel stations in the U.S. for different types of chargers (Level 1, Level 2, and DC Fast)?**
+  * This information can help government policymakers identify locations that would benefit from additional stations and make decisions regarding incentives and infrastructure investments.
+  * To answer this question, you could look at the number of stations in each state and the particular types of chargers available at each location. Level 1 Chargers are the slowest (better for overnight stays), Level 2 Chargers are faster (nice for workplaces, malls, grocery stores, hotels, etc), and DC Fast Chargers are the fastest (for commercial/industrial locations, often near major highways).
+  * You could modify this question by looking at more specific geographic locations (cities, zip codes, latitude/longitude), comparing the availability of different types of chargers in those locations, and identifying states that have the best (or worst) availability for each type of charger.
+* **How accessible are alternative fuel stations in the U.S.?**
+  * This information can help alternative fuel vehicle owners have a better idea of what options are available for their next road trip, or give potential alternative fuel vehicle owners an idea of what options will be available for their regular driving activities.
+  * To answer this question, you could look at specific attributes (e.g. public/private, hours open, how many charge ports are at each location, what types of charge ports are available, what the cost is at each location), and identify a count of locations or a percentage of locations that are most accessible (e.g. public, open 24 hours daily, have more than 2 charge ports available, if charging is free, etc).
+  * You could modify this question by looking at specific geographic locations (e.g. states), or facility types (e.g. parking garage, shopping center, hotel, etc).
+* **What is the annual percentage growth rate of alternative fuel stations in the U.S.?**
+  * This information can help the general public understand both the current charging/fueling options and the potential options that will be available in the future based on growth trends.
+  * To answer this question, you could [calculate the growth rate](https://pages.uoregon.edu/rgp/PPPM613/class8a.htm) between two years and identify states which have the highest (or lowest) growth rate.
+  * You could modify this question by looking at different periods of time in specific locations or focusing on the growth of specific types of charging (e.g. Level 2 vs DC Fast).<br>
+
+
+You are not required to use my example questions -- ultimately, I want you to choose something that interests you! However, be aware that some questions may be difficult or impossible to answer with the available datasets. Keep these ideas in mind for things to avoid in choosing your research question:
+* In most cases, you CANNOT identify the impact of \<fill in the blank\> -- a question like, "What is the impact of extreme precipitation?" is unanswerable given the information we have available (i.e. historical weather datasets). Instead, you can focus on things like identifying the occurrences/frequency and intensity of weather events, with the goal of helping different entities make decisions based on that data.
+* Your question should be somewhat specific -- a question that is too broad will be impossible to answer in a project that you are expected to complete in the amount of time available to you. If you have a bunch of questions floating around in your head, talk to the instructor or your peers to help you refine your question and focus on providing some specific type of insight.
+* At the same time, your question should not be too simple. A question like, "What was the maximum temperature in 2023?" (which can be solved with a basic search) has very limited usefulness. Your project should require some calculations and analysis on your part. Your program should be able to print out all entries in a readable format, but it should also go beyond that -- the program should provide some insight, without requiring the user to read through the dataset and make their own analysis.
 
 ## Process
 
-Now it is time to start formulating some questions!<br>
+Now it is time to start formulating your own questions!<br>
 
 1. Question Focus
   - :heavy_check_mark: Focus on the example dataset, while being aware that your group can choose a different dataset for your CURE-E project (e.g. for a specific station, for a longer date range, etc).
@@ -91,7 +124,7 @@ To successfully complete this assignment, each participant should submit an indi
 
 1. Clearly state the research question you intend to address
 2. Identify the stakeholder(s) who stand to gain from the insights derived from your project
-3. Provide some details about the dataset you intend to use and the data fields on which you will focus. For historical weather data, you may be considering the Date Range, Weather Observation Type (e.g. Daily Summaries, Global Summary of the Month, Local Climatological Data, Normals Hourly, etc), Station/Zip Code/City or other geographic/location identifier, and observations/values (e.g. precipitation (PRCP), snowfall (SNOW), max temperature (TMAX), min temperature(TMIN), etc). For alternative fuel station data, you may be considering the fuel type, different geographic locations, specific charging networks, etc.
+3. Provide some details about the dataset you intend to use and the data fields on which you will focus. For historical weather data, you may be considering the Date Range, Weather Observation Type (e.g. Daily Summaries), Station/Zip Code/City or other geographic/location identifier, and observations/values (e.g. precipitation (PRCP), snowfall (SNOW), max temperature (TMAX), min temperature(TMIN), etc). For alternative fuel station data, you may be considering the fuel type, different geographic locations, specific charging networks, etc.
 4. You may use the same dataset and have the same stakeholder as other students, but you should be writing your own program and individually addressing a unique question. If you are using the same dataset and/or identifying the same stakeholder as other students, list the names of the other students.<br>
 
 Reminder: this assignment has 2 components -- the QFT discussion (submitted through the shared Google Doc) and the Project Proposal (a PDF or text submission to Canvas).
