@@ -4,6 +4,7 @@ Instructions for testing CSCI 211 Labs and Programming Assignments.<br>
 
 This Guide on Testing Assignments is useful for:
 * [Lab Exercises](https://github.com/shelleywong/CSCI211-Course-Materials/tree/main/Labs)
+  * Completing the [Lab 01, Exercise 5 Linux Commands and Testing Quiz](https://github.com/shelleywong/CSCI211-Course-Materials/blob/main/Labs/lab01.md#exercise-5-linux-commands-and-testing-quiz)
 * [Programming Assignments](https://github.com/shelleywong/CSCI211-Course-Materials/tree/main/Programs)
 * [CURE-E Final Project](https://github.com/shelleywong/CSCI211-Course-Materials/blob/main/CURE-E/finalProject.md)<br>
 
