@@ -92,8 +92,8 @@ Now it is time to start formulating your own questions!<br>
 
 1. Question Focus
   - :heavy_check_mark: Focus on the example dataset, while being aware that your group can choose a different dataset for your CURE-E project (e.g. for a specific station, for a longer date range, etc).
-  - :heavy_check_mark: You can start with simple questions that have an easy-to-find answer (e.g. What is the highest temperature?), but then consider questions that are more complex, including a range of dates (months, years, seasons), several locations, multiple categories (e.g. precipitation and minimum temperature), different statistical calculations (e.g. mean average, range, variance, percentile), etc.
-  - :heavy_check_mark: As you formulate questions, think about some potential stakeholders (community members or groups who would benefit from this information).
+  - :heavy_check_mark: Start with the example questions listed above, and think about other questions you can ask that are related to these questions. Consider simple questions that have an easy-to-find answer and can help you build a response to the original question. Then consider questions that can expand beyond the example questions -- they may, for instance, be similar questions with a different focus for a different stakeholder. Consider questions that take into account a range of dates (months, years, seasons), several locations, multiple categories (e.g. precipitation and min/max temperature), different statistical calculations (e.g. mean average, range, variance, percentile), etc.
+  - :heavy_check_mark: As you formulate questions, think about some potential stakeholders (community members or groups who would benefit from this information). In many cases, your research can be more impactful if it has a specific stakeholder in mind.
 2. Produce Your Questions
   - :heavy_check_mark: Follow the rules:
     - a) Ask as many questions as you can
