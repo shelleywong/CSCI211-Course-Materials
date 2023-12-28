@@ -16,7 +16,7 @@ Lab 03 Exercises:
 
 * Read the [Overview of make](https://github.com/shelleywong/CSCI211-Course-Materials/blob/main/guides/make.md) guide before completing Lab 03, Exercises 1, 2, and 3.<br>
 
-\* You must complete this [Google Survey](https://docs.google.com/forms/d/e/1FAIpQLSft0f3fr4rMs0LIK2KWWbEs2EMYqQSBPFYjAcQzJWgQM3eq_A/viewform?usp=sf_link) to get credit for Exercises 1 & 2 (there are also a couple general questions about Makefiles and the make utility) \*<br>
+\* You must complete this [Google Survey](https://docs.google.com/forms/d/e/1FAIpQLSft0f3fr4rMs0LIK2KWWbEs2EMYqQSBPFYjAcQzJWgQM3eq_A/viewform?usp=sf_link) to get credit for Exercises 1 & 2. Section 1 of the survey includes some general questions about Makefiles and the make utility. Section 2 includes questions corresponding to Lab 03, Exercise 1. Section 3 includes questions corresponding to Lab 03, Exercise 2. \*<br>
 
 Note: You will need to be logged in to your \@mail.csuchico.edu Google account in order to take the Google Survey. If you get a message that you are unable to access the survey, try using your Chico portal username and password to login to Google. If you are not sure how to proceed, feel free to ask for help!<br>
 
@@ -29,15 +29,17 @@ $ cd 211/lab03_hello
 ```
 $ make
 ```
-What happened? (Answer on the google survey)
+What happened the first time you typed `make`? (Answer on the google survey)
 
 2. Type the command again:
 ```
 $ make    
 ```
-What happened this time? Why? (Answer on the google survey)
+What happened the second time you typed `make`? Why? (Answer on the google survey)
 
-3. Look at the dates on the files `hello` and hello.cpp:
+3. The next instruction uses the Linux `touch` command. What does the `touch` command do? Hint: you can type the command `man touch` in the terminal to look at the manual page for `touch`. (Answer on the google survey)
+
+4. Look at the dates on the files `hello` and hello.cpp:
 ```
 $ ls -l
 ```
@@ -53,13 +55,13 @@ Now look at the dates again:
 ```
 $ ls -l
 ```
-Type `make` again. What do you think will happen this time?<br>
+Type `make` again. Think about what you expect to happen this time<br>
 ```
 $ make
 ```
-What happened? Why? (Answer on the google survey)
+What happened after you executed `touch hello.cpp` and typed `make`? Why? (Answer on the google survey)
 
-4. Now edit the file hello.cpp (using any editor such as atom) and make some change (for example: change the text that is printed)<br>
+5. Now edit the file hello.cpp (using any editor such as vim, atom, or vscode) and make some change (for example: change the text that is printed to say, "Hola, mundo!"<br>
 
 Make sure you save the file<br>
 
@@ -67,12 +69,12 @@ Now type:
 ```
 $ make
 ```
-What happened? Why? (Answer on the google survey)
+What happened after you edited hello.cpp and then typed `make` again? Why? (Answer on the google survey)
 
 ## Exercise 2: Makefile With Object Files
 \* You must complete the rest of the Google Survey to get credit \*
 
-1. Go to the lab03_sentence directory. If you're still in the lab03_hello folder, type:
+Go to the lab03_sentence directory. If you're still in the lab03_hello folder, type:
 
 ```
 $ cd ../lab03_sentence
@@ -80,25 +82,44 @@ $ cd ../lab03_sentence
 
 The ".." means the parent directory (the parent of the current directory).  Alternatively you could have used the full path (e.g. ~/211/lab03_sentence)
 
-1. Why does main.o depend on sentence.h? (Answer on the google survey)
+1. Look at the files in the lab03_sentence directory, including the Makefile and the source code files (main.cpp, sentence.cpp, and sentence.h). You can use the `cat` command to display file contents in the terminal (e.g. `cat main.cpp`) or open up each file using the editor of your choice.<br>
+
+Why does main.o depend on sentence.h? (Answer on the google survey)
 
 2. Type:
 ```
 $ make
 ```
-Type:
+
+What files were created after you typed `make` for the first time? (Answer on the google survey)<br>
+
+3. Now type:
 ```
 $ touch sentence.h
 ```
-Type:
+Then type:
 ```
 $ make
 ```
-Which files were recompiled? (Answer on the google survey)
+What files were recompiled after typing `touch sentence.h` followed by `make`?
+ (Answer on the google survey)
 
-3. Why were these files recompiled when sentence.h was changed? Look carefully at the Makefile. (Answer on the google survey)<br>
+4. Why were these files recompiled when sentence.h was touched/changed? Look carefully at the Makefile. (Answer on the google survey)<br>
 
 This is an important aspect of make, ask if you don't understand why!<br>
+
+5. Now type:
+```
+$ touch main.cpp
+```
+Then type:
+```
+$ make
+```
+What files were recompiled after typing `touch main.cpp` followed by `make`?
+ (Answer on the google survey)
+
+6. Which command did NOT need to be run again when you used the `make` utility after typing `touch main.cpp`? (Answer on the google survey)<br>
 
 \* Remember to submit the Google Form with your responses to Exercise 1 & 2 \*
 
