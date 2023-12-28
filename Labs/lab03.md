@@ -29,15 +29,15 @@ $ cd 211/lab03_hello
 ```
 $ make
 ```
-What happened the first time you typed `make`? (Answer on the google survey)
+ON SURVEY: What happened the first time you typed `make`?
 
 2. Type the command again:
 ```
 $ make    
 ```
-What happened the second time you typed `make`? Why? (Answer on the google survey)
+ON SURVEY: What happened the second time you typed `make`? Why?
 
-3. The next instruction uses the Linux `touch` command. What does the `touch` command do? Hint: you can type the command `man touch` in the terminal to look at the manual page for `touch`. (Answer on the google survey)
+3. ON SURVEY: The next instruction uses the Linux `touch` command. What does the `touch` command do? Hint: you can type the command `man touch` in the terminal to look at the manual page for `touch`.
 
 4. Look at the dates on the files `hello` and hello.cpp:
 ```
@@ -59,7 +59,7 @@ Type `make` again. Think about what you expect to happen this time<br>
 ```
 $ make
 ```
-What happened after you executed `touch hello.cpp` and typed `make`? Why? (Answer on the google survey)
+ON SURVEY: What happened after you executed `touch hello.cpp` and typed `make`? Why?
 
 5. Now edit the file hello.cpp (using any editor such as vim, atom, or vscode) and make some change (for example: change the text that is printed to say, "Hola, mundo!"<br>
 
@@ -69,7 +69,7 @@ Now type:
 ```
 $ make
 ```
-What happened after you edited hello.cpp and then typed `make` again? Why? (Answer on the google survey)
+ON SURVEY: What happened after you edited hello.cpp and then typed `make` again? Why?
 
 ## Exercise 2: Makefile With Object Files
 \* You must complete the rest of the Google Survey to get credit \*
@@ -84,14 +84,14 @@ The ".." means the parent directory (the parent of the current directory).  Alte
 
 1. Look at the files in the lab03_sentence directory, including the Makefile and the source code files (main.cpp, sentence.cpp, and sentence.h). You can use the `cat` command to display file contents in the terminal (e.g. `cat main.cpp`) or open up each file using the editor of your choice.<br>s
 
-Why does main.o depend on sentence.h? (Answer on the google survey)
+ON SURVEY: Why does main.o depend on sentence.h?
 
 2. Type:
 ```
 $ make
 ```
 
-What files were created after you typed `make` for the first time? (Answer on the google survey)<br>
+ON SURVEY: What files were created after you typed `make` for the first time? <br>
 
 3. Now type:
 ```
@@ -101,12 +101,11 @@ Then type:
 ```
 $ make
 ```
-What commands were run when you typed `make` after typing `touch sentence.h`?
- (Answer on the google survey)
+ON SURVEY: What commands were run when you typed `make` after typing `touch sentence.h`?
 
-4. What files were recreated when you typed `make` after typing `touch sentence.h`? (Answer on the google survey)
+4. ON SURVEY: What files were recreated when you typed `make` after typing `touch sentence.h`?
 
-5. Why were these specific commands run (again) and files created (again) when sentence.h was touched/changed? Look carefully at the Makefile. (Answer on the google survey)<br>
+5. ON SURVEY: Why were these specific commands run (again) and files created (again) when sentence.h was touched/changed? Look carefully at the Makefile.<br>
 
 This is an important aspect of make, ask if you don't understand why!<br>
 
@@ -118,12 +117,11 @@ Then type:
 ```
 $ make
 ```
-What files were recreated when you typed `make` after typing `touch main.cpp`?
- (Answer on the google survey)
+ON SURVEY: What files were recreated when you typed `make` after typing `touch main.cpp`?
 
-7. Which command did NOT need to be run again when you used the `make` utility after typing `touch main.cpp`? (Answer on the google survey)
+7. ON SURVEY: Which command did NOT need to be run again when you used the `make` utility after typing `touch main.cpp`?
 
-8. Why did a command NOT need to be run again when main.cpp was touched/changed?<br>
+8. ON SURVEY: Why did a command NOT need to be run again when main.cpp was touched/changed?<br>
 
 \* Remember to submit the Google Form with your responses to Exercise 1 & 2 \*
 

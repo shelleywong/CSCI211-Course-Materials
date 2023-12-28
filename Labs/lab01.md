@@ -305,17 +305,18 @@ Complete the [Git Basics Survey](https://docs.google.com/forms/d/e/1FAIpQLSezh26
 
 You may find it helpful to refer to the [Git Overview](https://github.com/shelleywong/CSCI211-Course-Materials/blob/main/guides/git.md). Feel free to use one of the Git Cheat Sheets to complete the Git survey.<br>
 
-There are 20 questions in this survey. Many of them can be answered with one Linux Git command, some of which are covered in other Lab 01 exercises. Other questions (such as the ones on branching and creating a new repo) have not previously been discussed (hint: refer to the Git Cheat Sheets and try to see if you can use the commands and implement each step in a test repo). Let the instructor know if anything is unclear.<br>
+There are 24 questions in this survey. Some questions cover Git commands that are used in other Lab 01 exercises, while other questions (such as the ones on branching and creating a new repo) have not previously been discussed (hint: refer to the Git Cheat Sheets and try to see if you can use the commands and implement each step in a test repo). Let the instructor know if anything is unclear.<br>
 
-* Part 1 (questions 1-6):
+* Part 1 (questions 1-8):
+  * Things to know before using Git and GitHub
   * Create a new GitHub repository (a remote repo)
   * Connect a remote repo with a local repo
   * Initialize a local repo as a Git repository
-* Part 2 (questions 7-13):
+* Part 2 (questions 9-15):
   * Check the status of your repo
   * Add and stage a commit
   * Push a commit from a local repo to a remote repo
-* Part 3 (questions 14-20):
+* Part 3 (questions 16-24):
   * Create a branch
   * Move between branches
   * Merge branches
