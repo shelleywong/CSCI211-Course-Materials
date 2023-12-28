@@ -41,7 +41,7 @@ You can compile all the programs within the lab06_gdb directory with one call to
 $ cd ~/211/lab06_gdb
 $ make
 ```
-`make` should not issue any errors -- let me know if you get errors.<br>
+`make` should not issue any errors -- let me know if you get errors. After running `make`, you should be able to list the contents of the folder and see that four executables have been generated (named `p1`, `p2`, `p3`, and `p4`).<br>
 
 Nothing will be submitted to INGInious for Lab 06, Exercises 1-4, but you must complete [this GDB survey](https://docs.google.com/forms/d/e/1FAIpQLSdNNjIHgqtmHd_zsGy12nYTealx90JQA_FDU_SFu9Dkrp3awg/viewform?usp=sf_link).
 
@@ -64,6 +64,10 @@ $ gdb p1
 
 * Type `quit` or `q` at the (gdb) to quit the debugger
 
+4. ON SURVEY: What would you need to do to avoid this error?
+
+* Note: the general solution to avoiding this error applies to any program where you need to dereference pointers, not just to a simple and mostly pointless program like p1.cpp.
+
 ## Exercise 2: Debugging Practice Part 2
 
 * Start gdb with executable p2:
@@ -72,9 +76,9 @@ $ gdb p2
 ```
 * Type `run` at the (gdb) to run this program
 
-* Type `where` at the (gdb) to see the list of functions that were called
-
 1. ON SURVEY: What error caused this program to terminate?
+
+* Type `where` at the (gdb) to see the list of functions that were called
 
 2. ON SURVEY: What functions were called before the program crashed?
 
@@ -85,26 +89,31 @@ $ gdb p2
 (gdb) p b
 $1 = 52
 ```
-3. ON SURVEY: What **command** would you type to print the address of the variable b? (Hint: Think about how you would print the address of a variable in normal C++ code).
+3. ON SURVEY: What **GDB command** would you type to print the address of the variable b? (Hint: Think about how you would print the address of a variable in normal C++ code, and combine that with a GDB command for printing variables).
 
-4. ON SURVEY: What is the **address** of the variable b? (Note: The memory address where a variable is located can change each time a program is run, so everyone won't have the same answer -- the OS is choosing the best location based on the current applications being managed).
+4. ON SURVEY: What is the **address** of the variable b? (Note: The memory address where a variable is located can change each time a program is run, so your address may not be exactly the same as mine -- the OS is choosing the best location based on the current applications being managed).
 
-5. ON SURVEY: Remember that a pointer is a variable whose value is the address of another variable. What is the **value** of the variable ptr?
+5. ON SURVEY: Remember that a pointer is a variable whose value is the address of another variable. What GDB command would you type to print the **value** of the variable ptr?
 
-6. ON SURVEY: What is the **address** of variable ptr?<br>
+6. ON SURVEY: What is the **value** of the variable ptr?
+
+7. ON SURVEY: What GDB command would you type to print the **address** of the variable ptr?
 
 * Now try to dereference ptr (get the value of the variable that is located at the memory address pointed to by ptr) and print this value:
 ```
 (gdb) p *ptr
 ```
 
-7. ON SURVEY: What information is provided when you print *ptr? How does this relate to the error that caused the program to terminate?
+8. ON SURVEY: What information is provided when you try to print *ptr? How does this relate to the error that caused the program to terminate?
 
-8. ON SURVEY: Now try to print the value of the variable a. What gets printed? Note that it the value of a will not be printed at this point, because gdb is currently pointing to the code in function f(). If you use the `up` command, it will be pointing at the code in the function that called f().
+9. ON SURVEY: Now type `print a` to try to print the value of the variable `a`. What gets printed?
 
-* Use the `up` command to go to the function that called f().
+* Note that it the value of a will not be printed at this point, because gdb is currently pointing to the code in function f(). If you use the `up` command, it will be pointing at the code in the function that called f().<br>
 
-9. ON SURVEY: What is the address of the variable a?
+Type `up` at the (gdb), then type `print a`<br>
+
+10. ON SURVEY: What gets printed when you type `print a` after using the `up` command to move up to the function that called f()?
+
 
 ## Exercise 3: Debugging Practice Part 3
 
@@ -147,13 +156,17 @@ $ gdb p3
 
 * Make sure you understand what information gdb is giving you. You may need to run gdb several times with different breakpoints and different commands. If you are still not sure what's happening, feel free to ask for help.
 
-3. ON SURVEY: Explain why this program has a segmentation fault.
+3. ON SURVEY: What gets printed when you try to print the value of the variable `i`?
 
-4. ON SURVEY: How can you update the program to get rid of the segmentation fault? (Hint: you only need to change one thing, and it is NOT on the line where the error occurred).
+4. ON SURVEY: Now type `print m_values[0]` to try to print the value at the 0 index of the m_values array. What gets printed?
+
+5. ON SURVEY: Now type `print *m_values[0]` to try to print the value at the 0 index of the m_values array. What gets printed?
+
+6. ON SURVEY: Now that you have printed several different variables, can you explain why this program has a segmentation fault?
+
+7. ON SURVEY: How can you update the program to get rid of the segmentation fault? (Hint: you only need to change one thing, and it is NOT on the line where the error occurred).
 
 ## Exercise 4: Debugging Practice Part 4
-
-Program p4 is the same program as p1 but is compiled w/o the -g option
 
 * Start gdb with the executable p4
 ```
@@ -165,7 +178,18 @@ $ gdb p4
 
 1. ON SURVEY: What is different between running p4 with gdb and running p1 with gdb?
 
-2. ON SURVEY: Is the p1 executable smaller or larger than the p4 executable? (Hint: in the command line, you can use `ls -l` to list files with the long listing format. The size (in bytes) will be listed after the owner and group names and before the last modification date. You can use `ls -lh` to print more human readable file sizes).
+* If you have not already done so, quit gdb (type `q` at the (gdb), followed by `y`).
+
+* List the contents of the lab06_gdb directory, using the `-h` and `-l` options to use a long listing, human-readable format:
+```
+$ ls -hl
+```
+
+* You should see a detailed listing of files and directories. Look for the sizes of the `p1` and `p4` executables. The size will be listed after the owner and group names and before the last modification date. If you just use `ls -l`, you will see the size in bytes; using `-hl` prints the size in a more human readable format (e.g. `1K`, `234M`, `2G`, etc).
+
+2. ON SURVEY: Is the p1 executable smaller or larger than the p4 executable?
+
+3. ON SURVEY: Look at the `Makefile` in the `lab06_gdb` directory. How is the recipe for generating the `p4` executable different from the recipe for generating the `p1` executable?
 
 ***
 
