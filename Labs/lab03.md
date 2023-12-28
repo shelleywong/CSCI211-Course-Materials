@@ -82,7 +82,7 @@ $ cd ../lab03_sentence
 
 The ".." means the parent directory (the parent of the current directory).  Alternatively you could have used the full path (e.g. ~/211/lab03_sentence)
 
-1. Look at the files in the lab03_sentence directory, including the Makefile and the source code files (main.cpp, sentence.cpp, and sentence.h). You can use the `cat` command to display file contents in the terminal (e.g. `cat main.cpp`) or open up each file using the editor of your choice.<br>
+1. Look at the files in the lab03_sentence directory, including the Makefile and the source code files (main.cpp, sentence.cpp, and sentence.h). You can use the `cat` command to display file contents in the terminal (e.g. `cat main.cpp`) or open up each file using the editor of your choice.<br>s
 
 Why does main.o depend on sentence.h? (Answer on the google survey)
 
@@ -101,14 +101,16 @@ Then type:
 ```
 $ make
 ```
-What files were recompiled after typing `touch sentence.h` followed by `make`?
+What commands were run when you typed `make` after typing `touch sentence.h`?
  (Answer on the google survey)
 
-4. Why were these files recompiled when sentence.h was touched/changed? Look carefully at the Makefile. (Answer on the google survey)<br>
+4. What files were recreated when you typed `make` after typing `touch sentence.h`? (Answer on the google survey)
+
+5. Why were these specific commands run (again) and files created (again) when sentence.h was touched/changed? Look carefully at the Makefile. (Answer on the google survey)<br>
 
 This is an important aspect of make, ask if you don't understand why!<br>
 
-5. Now type:
+6. Now type:
 ```
 $ touch main.cpp
 ```
@@ -116,10 +118,12 @@ Then type:
 ```
 $ make
 ```
-What files were recompiled after typing `touch main.cpp` followed by `make`?
+What files were recreated when you typed `make` after typing `touch main.cpp`?
  (Answer on the google survey)
 
-6. Which command did NOT need to be run again when you used the `make` utility after typing `touch main.cpp`? (Answer on the google survey)<br>
+7. Which command did NOT need to be run again when you used the `make` utility after typing `touch main.cpp`? (Answer on the google survey)
+
+8. Why did a command NOT need to be run again when main.cpp was touched/changed?<br>
 
 \* Remember to submit the Google Form with your responses to Exercise 1 & 2 \*
 
