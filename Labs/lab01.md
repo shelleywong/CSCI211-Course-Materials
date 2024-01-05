@@ -72,11 +72,7 @@ For more Git information and resources, check out the [Git Overview](https://git
 $ which git
 $ git --version
 ```
-  - If you do not have Git installed, download and install Git for your operating system:
-  * For Windows: [https://windows.github.com](https://windows.github.com)
-  * For Mac: [https://mac.github.com](https://mac.github.com)
-  * For Linux: use the command, `sudo apt install git` (this command or something similar should be printed to the terminal if you use the `git version` command and git is not installed)
-  * For all platforms: [http://git-scm.com](http://git-scm.com)
+  - * If you do not have Git installed, [download and install Git for your operating system](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
 8. Check your Git settings and confirm that you have set your name and email. Start by viewing your settings. If you see your name and email (e.g `user.name=Your Name` and `user.email=youremail@mail.com`), type `q` to exit and continue to the next step.
 ```
 $ git config --list
