@@ -130,7 +130,7 @@ The directory `lab03_makefile` (in the CSCI211 starter-repo) contains a program 
 
 You may start by using the Makefile from Exercise 2.<br>
 
-Test your Makefile by compiling and running the program (the make order is not important as long as you can run the program):
+Test your Makefile by compiling and running the program (the order of the commands may vary, but `make` should carry out four commands and generate a compilation target named `foobar`):
 ```
 $ make
 g++ -Wall -pedantic -g -std=c++11 -c main.cpp
@@ -143,9 +143,14 @@ Bar(3,4)
 $
 ```
 
-For this exercise, you will not be submitting a file. Instead, copy your `Makefile` code into the code form field on [INGInious](https://inginious.csuchico.edu/) for lab03_makefile. INGInious will not test your Makefile; I will grade it by reading it. Since a Makefile can do anything (such as deleting all the files on a computer) INGInious never runs Makefiles that have been turned in.<br>
+For this exercise, you will not be submitting a file. Instead, copy your `Makefile` code into the code form field on [INGInious](https://inginious.csuchico.edu/) for lab03_makefile.<br>
 
-Hint: think carefully about the dependencies (the files listed after the target). For example, foo.cpp includes foo.h and thus foo.o depends on foo.cpp AND foo.h
+Hint: think carefully about the dependencies (the files listed after the target). For example, foo.cpp includes foo.h and thus foo.o depends on foo.cpp AND foo.h<br>
+
+If your submission returns the message, "An internal error occurred", the issue may be something I can address on the backend, or it may be something that you need to fix in your code -- send me an email describing the issue, and I can let you know if you need to do anything in your situation.<br>
+
+If you receive a compiler error that includes the following message, "*** missing separator.  Stop.", then you are likely using spaces instead of tabs to indent the makefile recipe lines. Remove any spaces used for indentation and replace them with tabs, then try submitting your code again.
+
 
 ## Exercise 4: Create a Course Class
 
