@@ -40,7 +40,7 @@ For more Git information and resources, check out the [Git Overview](https://git
 > Note: for more details on steps 1 - 3, see the 211 Getting Started Instructions on Canvas.
 
 1. [Sign up for GitHub](https://github.com/)
-2. Go to this [GitHub repo generation](https://www.bryancdixon.com/fall/2023/csci/211/repo/) page to generate a CSUChico-CSCI211 GitHub repo
+2. Go to this [GitHub repo generation](https://repo.bryandixon.phd/) page to generate a CSUChico-CSCI211 GitHub repo
   - Create a GitHub username BEFORE submitting this form. Make sure that the username matches your actual GitHub username.
   - Use the Course Token provided in the 211 Getting Started Instructions (link in Canvas) to generate your repo. (In the 211 Getting Started Instructions, look for **GitHub account** > **Sign up and generate a CSCI211 repo**)
 3. After submitting the repo generation form, go to the [CSUChico-CSCI211 GitHub organization](https://github.com/CSUChico-CSCI211) (github.com/CSUChico-CSCI211) and accept the invite -- do this soon after submitting the form, as the invitation will expire after 1 week.
