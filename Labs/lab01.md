@@ -52,10 +52,12 @@ For more Git information and resources, check out the [Git Overview](https://git
 6. Set up SSH keys (so you can clone with SSH) OR a personal access token (so you can clone with HTTPS).
   - If cloning with SSH:
     - First, [check to see if you already have an existing SSH key](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/checking-for-existing-ssh-keys) – if you do, you may be able to use the same key for GitHub. Windows users: make sure to generate the key in a Linux terminal (e.g. WSL2, ecc-linux) -- this should be the terminal where you plan to do all (or at least the majority) of your development for CSCI211.
-    - If you do not have a key, generate a new SSH key (note: GitHub recommends using the ed25519 algorithm; however, some systems do not support it, so I usually have students create an RSA key, which is more widely supported and still more secure than some other options, especially if using a large enough key):
+    - If you do not have a key, generate a new SSH key (note: Ed25519 signatures are elliptical curve signatures, which are fast and very secure; however, some legacy systems do not support the Ed25519 algorithm, so if the ed25519 key is not working for you, create and use an RSA key):
       - Go to a Terminal (Linux or Mac)
-      - Paste this text into the terminal (this creates a new SSH key): `ssh-keygen -t rsa -b 8192`
-      - When you get the prompt to "Enter a file in which to save the key", press Enter to accept the default file location. Please note that if you previously created an SSH key of the same type, ssh-keygen may ask you to rewrite the key or create a custom-named SSH key.
+      - Paste one of the options below into the terminal, replacing the email used in the example with your GitHub email address:
+        - `ssh-keygen -t ed25519 -C "your_email@example.com"`
+        - `ssh-keygen -t rsa -b 8192`
+      - When you get the prompt to "Enter a file in which to save the key", press Enter to accept the default file location. Please note that if you previously created an SSH key of the same type, ssh-keygen may ask you to rewrite the key or create a custom-named SSH key. It is easy to run into problems when doing this, so I suggest avoiding custom-named SSH keys. It is safe to reuse an existing SSH key, just make sure that no one is able to steal your private key.
       - When you get the prompt to "Enter passphrase (empty for no passphrase)", you may simply press Enter (and press Enter again when you get the prompt to "Enter same passphrase again"). You can enter a passphrase to make your account a little more secure; however, make sure you remember the passphrase, as you will not be able to interact with GitHub without it.
       - The key may take a little while to generate, but once it does, you should be able to see the public/private key pair in the .ssh directory (look for id_rsa (private) and id_rsa.pub(public)):
         - `cd ~/.ssh`
