@@ -141,7 +141,7 @@ int main()
 Compile and run this program:
 
 ```
-$ cd ~/211/lab02_error
+$ cd ~/211/lab02_even
 $ g++ -o error error.cpp
 $ ./error
 written to standard output
