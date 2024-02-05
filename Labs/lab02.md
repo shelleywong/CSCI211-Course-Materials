@@ -185,7 +185,7 @@ Read how to test a program that has error output on the [Introduction to Testing
 If a program is required to have error output, INGInious will check the value returned by main() (the exit status). It should be 0 if there were no errors, 1 if there were errors. You can see the exit status of the program that just finished executed using the echo command:
 
 ```
-$ ./even < t01.in > t01.myout 2> t01.myerr
+$ ./even < tests/t01.in > t01.myout 2> t01.myerr
 $ echo $?
 0
 $
