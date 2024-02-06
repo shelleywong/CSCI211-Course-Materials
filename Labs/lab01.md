@@ -39,6 +39,8 @@ For more Git information and resources, check out the [Git Overview](https://git
 
 > Note: for more details on steps 1 - 3, see the 211 Getting Started Instructions on Canvas.
 
+> Note: Two-Factor Authentication (2FA) is now [officially required](https://github.blog/2023-03-09-raising-the-bar-for-software-security-github-2fa-begins-march-13/) for all developers who contribute code on GitHub.com.
+
 1. [Sign up for GitHub](https://github.com/)
 2. Go to this [GitHub repo generation](https://repo.bryandixon.phd/) page to generate a CSUChico-CSCI211 GitHub repo
   - Create a GitHub username BEFORE submitting this form. Make sure that the username matches your actual GitHub username.
@@ -96,7 +98,14 @@ $ git config --global user.email johndoe@example.com
 $ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
 ```
 
-Now you should have a local instance of your CSCI211 repository! You can use the `ls` command to see the CSCI211 repo in your current directory. Complete the next steps to finish Lab 01, Exercise 1.
+Now you should have a local instance of your CSCI211 repository! You can use the `ls` command to see the CSCI211 repo in your current directory. Complete the next steps to finish Lab 01, Exercise 1.<br>
+
+**New Requirement**: In addition to the steps described above, you will need to set up **two-factor authentication**:
+
+* Enable Two-Factor Authentication
+    * GitHub now officially requires developers to increase their account security by enabling two-factor authentication (2FA). Go to your account settings and select the `Password and authentication` option from the left sidebar. Configure at least one **Two-factor method** for authentication.
+      * For two-factor authentication, you can use an **authenticator app** (such as Duo Mobile, Authy, Google Authenticator, etc) or set up **Security keys** (e.g. a hardware device such as a YubiKey).
+      * You should already have Duo Mobile for campus authentication -- if you set up Duo for GitHub, note that you may not get a push notification (like you do when signing in to campus apps). You can look for a 6 digit passcode (hidden by default) in the app (note that the passcode will get refreshed frequently).
 
 ### Steps for working with a local GitHub repo
 
