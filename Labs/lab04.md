@@ -55,7 +55,7 @@ $
 
 ## Exercise 3: Member Function to Insert at End of List
 
-Add a new member function (`List::insert_at_end(int value)`) to the List class and implement the function so it inserts at the end of the linked list. Update your `main()` so it calls `insert_at_end()` instead of `insert()`. On the midterm, you will be asked to implement functions for a linked list class, so it would be best if you try to write this function without looking at notes from class.<br>
+Add a new member function (`List::insert_at_end(int value)`) to the List class and implement the function so it inserts at the end of the linked list. Update your `main()` so it calls `insert_at_end()` instead of `insert()`. On one or more of the weekly tests, you will be asked to implement functions for a linked list class, so it would be best if you try to write this function without looking at notes from class.<br>
 
 When you run your program it should work like this:
 ```
