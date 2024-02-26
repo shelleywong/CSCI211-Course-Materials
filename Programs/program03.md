@@ -94,7 +94,7 @@ Your program must handle the following commands. The arguments for the command a
 
 ### Errors and Error Messages
 
-The input will not contain any errors other than those listed in this section.  For example, the `insert` command will always be followed by a title, url, comment, length, and rating (each on a separate line). **The program should NOT terminate for the following three errors**.<br>
+All error output should be printed to standard error (using cerr). The input will not contain any errors other than those listed in this section. For example, the `insert` command will always be followed by a title, url, comment, length, and rating (each on a separate line). **The program should NOT terminate for the following three errors**.<br>
 
 | Command | Error | Error Message (replace XXX with the title entered by user, print the < and >) |
 | --- | --- | --- |
@@ -102,7 +102,7 @@ The input will not contain any errors other than those listed in this section.  
 | lookup | Title not in list. | Title \<XXX\> not in list. |
 | remove | Title not in list. | Title \<XXX\> not in list, could not delete. |
 
-If the user enters a command other than (insert, print, length, lookup, remove), print the following error message and **terminate the program** with an exit status of 1. Replace the XXX with the command entered (make sure you print `<` and `>` in your error message).
+If the user enters a command other than (insert, print, length, lookup, remove), print the following error message to standard error and **terminate the program** with an exit status of 1. Replace the XXX with the command entered (make sure you print `<` and `>` in your error message).
 ```
 <XXX> is not a legal command, giving up.
 ```
