@@ -5,6 +5,14 @@ Funded by The National Science Foundation’s Improving Undergraduate STEM Educa
 
 Using resources from [Right Question Institute](https://rightquestion.org/education/resources/)
 
+## QFT Overview
+
+Part 1 of this activity (Question Formulation Technique) will be a group activity to help everyone ask and develop lots of questions that could be answered through the available datasets.
+
+## CURE-E Project Proposal Overview
+
+Part 2 (Project Proposal), along with the Final Project, will be an individual activity. You will confirm which question you are focusing on, determine stakeholders, and find a dataset to work with. If you would like to, you can approach this project with a group mindset -- with everyone aiming to provide insights for a specific stakeholder, but each individual answering a different question for that stakeholder.
+
 ## Introduction
 
 The skill of question asking is far too rarely deliberately taught in school. The Question Formulation Technique (QFT) provides a simple yet powerful way to teach students how to formulate, work with, and use their own questions.<br>
@@ -27,10 +35,18 @@ We will use a shared Google Doc to complete this assignment(link on Canvas).
 
 Nowadays, we have access to vast amounts of data, but it can sometimes be difficult to extract useful information from that data. Take a look at the example datasets:
 
-* **Historical weather data**: `assets/chico-weather-2018-2022.csv`
+* **Historical weather data**:
+  Example datasets:
+    * `assets/ChicoUnivFarm-1906-2023.csv` (one station)
+    * `assets/chico-weather-2018-2022.csv` (several stations in the region)
+    * `assets/butte-weather-2014-2024.csv` (several stations in the region)
+    * `assets/sac-airport-1998-2024.csv` (one station)
   * Each row displays the readings from a given day. Columns include station ID, station name, date, and data related to precipitation and air temperature.
   * The [Global Historical Climatology Network Daily Documentation](https://www.ncei.noaa.gov/pub/data/cdo/documentation/GHCND_documentation.pdf) can be used as a reference.
-* **Alternative fuels data**: `assets/alt_fuel_stations_oct_10_23.csv`
+* **Alternative fuels data**:
+  * Example datasets:
+    * `assets/alt_fuel_stations_oct_10_23.csv` (one day snapshot, all stations, only electric)
+    * `assets/ca_alt_fuel_stations_mar_10_2024.csv` (one day snapshot, California stations, all fuel types)
   * Each row displays data for one alternative fuel station location. Columns include over 70 data fields, including general station information (e.g. name, address, status, access info) and options for different types of alternative vehicles. This particular dataset was filtered to only include electric fueling options, but the entire dataset includes other alternative fuel options (e.g. biodiesel, compressed natural gas, ethanol, hydrogen).
   * [Data Included in the Alternative Fuel Stations Download](https://afdc.energy.gov/data_download/alt_fuel_stations_format) can be used as a reference.
 
@@ -62,10 +78,10 @@ Below are some examples of good starting questions that could provide interestin
   * Understanding how often heatwaves occur and/or determining if the temperature during those heatwaves is increasing can help public health departments develop action plans and provide guidance for vulnerable populations, such as the elderly, children, or people with pre-existing health conditions.
   * To answer any question focusing on trends, make sure you analyze many years of data (at least 20-30, but ideally more years). It will most likely be impossible to identify a trend for a short period of time (e.g. 5 years).
   * You could modify this question by focusing on either max temperatures above a certain threshold (e.g. 90-100F), or min temperatures above a certain threshold (e.g. 70-75F), as both can cause additional stress on humans (and infrastructure).
-* **How do current drought conditions compare to historical seasonal precipitation patterns in Butte County?**
-  * Identifying historical precipitation (or drought) patterns can provide city planners with valuable information for water resource management, agriculture, and other sectors.
-  * This is another question that requires looking at trends, so make sure you analyze many years of data (at least 20-30, but ideally more years).
-  * You could modify this question by using a specific drought index (e.g. the Standardized Precipitation Index), analyzing average number of occurrences of precipitation during specific months, or focusing on average max or min amounts of precipitation seen during specific months.
+* **How does the precipitation this winter compare to historical seasonal precipitation patterns in Butte County?**
+  * Identifying how current conditions compare to historical precipitation (or drought) patterns can provide city planners with valuable insight for water resource management, agriculture, and other sectors.
+  * For this question, you would want to calculate and summarize data for the current season, but then you would also to compare these results with totals or averages from past seasons. This is another question that requires looking at patterns, so make sure you analyze many years of data (at least 20-30, but ideally more years).
+  * You could modify this question by using a specific drought index (e.g. the Standardized Precipitation Index), analyzing average number of occurrences of precipitation during specific months, or focusing on total, average, max/min amounts of precipitation seen during specific months.
 #### Example questions: Alternative fuel station data
 * **What is the current geographic coverage of alternative fuel stations in the U.S. for different types of chargers (Level 1, Level 2, and DC Fast)?**
   * This information can help government policymakers identify locations that would benefit from additional stations and make decisions regarding incentives and infrastructure investments.
@@ -75,7 +91,7 @@ Below are some examples of good starting questions that could provide interestin
   * This information can help alternative fuel vehicle owners have a better idea of what options are available for their next road trip, or give potential alternative fuel vehicle owners an idea of what options will be available for their regular driving activities.
   * To answer this question, you could look at specific attributes (e.g. public/private, hours open, how many charge ports are at each location, what types of charge ports are available, what the cost is at each location), and identify a count of locations or a percentage of locations that are most accessible (e.g. public, open 24 hours daily, have more than 2 charge ports available, if charging is free, etc).
   * You could modify this question by looking at specific geographic locations (e.g. states), or facility types (e.g. parking garage, shopping center, hotel, etc).
-* **What is the annual percentage growth rate of alternative fuel stations in the U.S.?**
+* **What is the annual percentage growth rate of alternative fuel stations in the U.S., and how does the growth rate in different states compare?**
   * This information can help the general public understand both the current charging/fueling options and the potential options that will be available in the future based on growth trends.
   * To answer this question, you could [calculate the growth rate](https://pages.uoregon.edu/rgp/PPPM613/class8a.htm) between two years and identify states which have the highest (or lowest) growth rate.
   * You could modify this question by looking at different periods of time in specific locations or focusing on the growth of specific types of charging (e.g. Level 2 vs DC Fast).<br>
@@ -92,7 +108,9 @@ Now it is time to start formulating your own questions!<br>
 
 1. Question Focus
   - :heavy_check_mark: Focus on the example dataset, while being aware that your group can choose a different dataset for your CURE-E project (e.g. for a specific station, for a longer date range, etc).
-  - :heavy_check_mark: Start with the example questions listed above, and think about other questions you can ask that are related to these questions. Consider simple questions that have an easy-to-find answer and can help you build a response to the original question. Then consider questions that can expand beyond the example questions -- they may, for instance, be similar questions with a different focus for a different stakeholder. Consider questions that take into account a range of dates (months, years, seasons), several locations, multiple categories (e.g. precipitation and min/max temperature), different statistical calculations (e.g. mean average, range, variance, percentile), etc.
+  - :heavy_check_mark: Start with the example questions listed above, and think about other questions you can ask that are related to these questions.
+    - **What are some questions that can help you answer the provided questions?** Consider simple questions that have an easy-to-find answer and can help you build a response to the original question.
+    - Then consider: **What are some questions that can expand beyond the example questions?** These questions may, for instance, be similar questions with a different focus for a different stakeholder. Consider questions that take into account a range of dates (months, years, seasons), several locations, multiple categories (e.g. precipitation and min/max temperature), different statistical calculations (e.g. mean average, range, variance, percentile), etc.
   - :heavy_check_mark: As you formulate questions, think about some potential stakeholders (community members or groups who would benefit from this information). In many cases, your research can be more impactful if it has a specific stakeholder in mind.
 2. Produce Your Questions
   - :heavy_check_mark: Follow the rules:
@@ -124,7 +142,10 @@ To successfully complete this assignment, each participant should submit an indi
 
 1. Clearly state the research question you intend to address
 2. Identify the stakeholder(s) who stand to gain from the insights derived from your project
-3. Provide some details about the dataset you intend to use and the data fields on which you will focus. For historical weather data, you may be considering the Date Range, Weather Observation Type (e.g. Daily Summaries), Station/Zip Code/City or other geographic/location identifier, and observations/values (e.g. precipitation (PRCP), snowfall (SNOW), max temperature (TMAX), min temperature(TMIN), etc). For alternative fuel station data, you may be considering the fuel type, different geographic locations, specific charging networks, etc.
-4. You may use the same dataset and have the same stakeholder as other students, but you should be writing your own program and individually addressing a unique question. If you are using the same dataset and/or identifying the same stakeholder as other students, list the names of the other students.<br>
+3. Provide some details about the dataset you intend to use and the data fields on which you will focus.
+  * For historical weather data, you should focus on Daily Summaries. Some variables you should provide here are (1) the Date Range, (2) Station/Zip Code/City or other geographic/location identifier, and (3) observations/values (e.g. precipitation (PRCP), snowfall (SNOW), max temperature (TMAX), min temperature(TMIN), etc).
+  * For alternative fuel station data, you should be considering (1) the fuel type (Electric, Hydrogen, Biodiesel, etc), (2) different geographic locations (specific states, all states and Canada, etc), and (3) any other variables you are focusing on, such as station status (open or planned), specific charging networks, etc.
+4. You may use the same dataset and have the same stakeholder as other students, but you should be writing your own program and individually addressing a unique question. If you are working with other students to provide insights for a specific stakeholder, with each individual answering a different question for that stakeholder, list the names of the other students.<br>
+
 
 Reminder: this assignment has 2 components -- the QFT discussion (submitted through the shared Google Doc) and the Project Proposal (a PDF or text submission to Canvas).
