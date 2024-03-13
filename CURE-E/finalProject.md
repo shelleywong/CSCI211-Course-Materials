@@ -8,8 +8,7 @@ Funded by The National Science Foundation’s Improving Undergraduate STEM Educa
 * Use [scientific practices](https://undsci.berkeley.edu/lessons/pdfs/complex_flow_handout.pdf) and work on a problem that does not have a known solution
 * Apply knowledge and experience gained from classroom assignments to real-world data
 * Potentially make a discovery that is relevant to stakeholders beyond the classroom
-* Collaborate with peers and practice communication skills
-* Cultivate flexibility, adaptability, creativity, and innovation skills
+* Cultivate [entrepreneurial mindset](https://nfte.com/entrepreneurial-mindset/) skills and develop the ability to recognize opportunity, take initiative, and innovate in the face of challenges
 
 ## Project Overview
 
@@ -34,8 +33,8 @@ Entrepreneurial Mindset: Flexible and Adaptable, Creative and Innovative, Initia
 ## Preparation
 
 * Come to this project with an Entrepreneurial Mindset
-* Form a group of 3-4 students: you will work from the same dataset and focus on the same stakeholder, but you will each have your own question to focus on.
-* Obtain a dataset, determine a stakeholder, and develop questions for each group member (the QFT activity was meant to help you complete this step)
+* (Optional) Form a group of 3-4 students: have everyone in the group aim to provide insights for a specific stakeholder, with each individual answering a different question for that stakeholder.
+* Obtain a dataset, determine a stakeholder, and develop questions for each individual (the QFT activity was meant to help you complete this step)
 
 ## Project Requirements
 
@@ -56,9 +55,9 @@ You will write a program that provides insight on Your Question (developed durin
 * Include an object-oriented C++ implementation of an abstract data type (ADT) discussed in CSCI 211 (linked list or array-based stack, queue, priority queue (or ordered list), or binary tree).
   * You may use Standard Template Library containers in conjunction with your ADT implementation (e.g. a std::vector of linked lists); however, you should **not** just rely on a Standard Template Library container for your ADT. Using a STL vector, queue, stack, list, map, etc is not the same as implementing an ADT with a linked list or array-based data structure.
 * Include a class or struct for your input data (e.g. to represent a single day of data, at a single station).
-* Get input from the dataset or converted input file, add all entries to your ADT, and have the ability to print all entries in a readable format
+* Get input from the dataset or converted input file, add all entries to your ADT, and have the ability to print all entries in a readable format.
   * Code that reads and parses data from the chosen dataset should be correct, able to handle different data types and formats, and able to handle any empty entries appropriately, depending on the data type.
-  * If you have default output, you do not need to print all entries in the default output; however, you should provide a way for users to easily print all entries
+  * If you have default output, you do not need to print all entries in the default output; however, you should provide a way for users to easily print all entries (i.e. provide a `print()` function in the ADT class)
   * The printed output should make it clear what different values represent (e.g. if you are printing a numeric value like temperature, don't just print the number -- include some information that indicates that it is (for example) the max temperature measured in degrees Fahrenheit or Celsius)
 * Include at least one unique algorithm that provides insight on Your Question and prints out that information
   * Prints results to the terminal or output file in a clear and effective manner
