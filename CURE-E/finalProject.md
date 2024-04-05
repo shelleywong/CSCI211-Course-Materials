@@ -111,11 +111,6 @@ $ git commit -m "<descriptive commit message>"
 $ git push origin main
 ```
 
-After you have made this commit (or multiple commits for this task), submit to Canvas one of the following:
-
-* a text entry that contains the date of the commit(s) and the commit message(s)
-* a website URL -- a link to the commit in your git repo (let me know if you are not sure what I mean by this)
-
 ### Your README Guide
 
 In the git repository for your program, you should have a README.md file in the root of your project directory that contains information about your project. Use GitHub's [Basic writing and formatting syntax](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax). You should have at least one commit for your README guide (in addition to the commits made for your program's source code). At minimum, your README.md file should include:
@@ -143,11 +138,6 @@ $ git add -A
 $ git commit -m "<descriptive commit message>"
 $ git push origin main
 ```
-
-After you have made this commit (or multiple commits for this task), submit to Canvas one of the following:
-
-* a text entry that contains the date of the commit(s) and the commit message(s)
-* a website URL -- a link to the commit in your git repo (let me know if you are not sure what I mean by this)
 
 ### Your Visual Representation
 

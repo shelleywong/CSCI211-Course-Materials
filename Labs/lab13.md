@@ -15,6 +15,14 @@ $ git commit -m "<descriptive commit message>"
 $ git push origin main
 ```
 
+For Lab 13, submit a text entry to Canvas that contains the following:
+
+* the date of the commit(s) you made for the Lab 13 Project Goals
+* the commit message(s) (if needed, include some additional context here so it is clear which tasks you were working on)
+* a URL link to the commit(s) in your git repo (let me know if you are not sure what I mean by this)
+
+If you have any questions about completing this, please let me know!
+
 > Note: your grade for project progress (adding, committing, and pushing code to GitHub) will be part of the CURE-E Final Project grade (it is one of the criteria for your Computer Program and Documentation)
 
 Reminder: Even though there are not any new lab exercises this week, you will get credit for attending lab, working on your programming assignments, and making progress on your final project!
