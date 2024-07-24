@@ -99,7 +99,19 @@ United Break Guitars, http://www.youtube.com/watch?v=5YGc4zOqozo, Great example 
 Pet Interviews - Guinea Pig, https://www.youtube.com/watch?v=jW3XtKBlTz0, Best guinea pig interview, 1.75, *
 ```
 
-If two or more Videos have the same values for the current sorting methods (e.g. you are sorting by length and two or more videos have the same length), these videos should be sorted in the same order as the input. For example, if a video called "Dog Playing Piano" was input after "Pet Interviews - Guinea Pig" and "Dog Playing Piano" also had a 1-star rating, "Pet Interviews - Guinea Pig" would be listed first because it is first in the input.
+If two or more Videos have the same values for the current sorting methods (e.g. you are sorting by rating and two or more videos have the same rating), these videos should be sorted in the same order as the input. For example, starting with the input given above, say the following video is input after "Pet Interviews - Guinea Pig":
+
+```
+Why Do Cats Purr?
+https://www.youtube.com/watch?v=7KowU4tPi7Q
+Taking on the adorable mystery of small felines purring
+3.21
+4
+```
+
+Since these videos are being sorted by rating and "Why Do Cats Purr?" has a 4-star rating (just like the "Spaces Versus Tabs" video), then the output should have the "Why Do Cats Purr?" video details printed immediately **after** the "Spaces Versus Tabs" video details.
+
+> Note: If you sort using the bubble sort algorithm, the relative order of records with equal keys is maintained. This is not true of all sorting algorithms, and thus not all sorting algorithms will work for this program -- be aware of this if you decide to try another algorithm in addition to bubble sort.
 
 ## Helpful Hints
 
