@@ -14,6 +14,7 @@ Funded by The National Science Foundation’s Improving Undergraduate STEM Educa
 
 * [Your Computer Program](#your-computer-program)
 * [Your README Guide](#your-readme-guide)
+* [Project Progress](#project-progress)
 * [Your Visual Representation](#your-visual-representation)
 * [Presentation Part 1: Your Elevator Pitch Presentation](#presentation-part-1-your-elevator-pitch-presentation)
 * [Presentation Part 2: Your Demonstration Recording](#presentation-part-2-your-demonstration-recording)
@@ -33,7 +34,7 @@ The goal of the CURE-E Project is to give you an opportunity to apply what you h
 
 CURE-E projects are opportunities for learning! You may not end up with your expected outcome, or you may need to try various approaches before finding one that works. When it comes to research and projects with unknown outcomes, this is normal -- you will be faced with failure and the need for iteration all the time in the real world (if you aren't already familiar...). In academic research, all results can contribute new knowledge and insight, even if they are not the results you wanted or expected. In software development, a project is rarely ever "finished" -- it is a continuous process of refining, enhancing, and adapting to meet evolving requirements, and regular improvements are key to providing the best possible user experience.<br>
 
-With that in mind, your grade for this project will not be based on your results matching an expected or predetermined outcome. Rather, your grade will be based on a variety of final deliverables (a working program, a README guide, presentation (part 1 and 2), visual representation, and self-assessment), as well as your iterative work in the process of completing the project (entrepreneurial mindset discussion response, in-class QFT activity, your proposal, and regular git commits to your CSCI211 git repo). I will consider your ability to generate innovative ideas, adapt to challenges, and write a program to solve a problem that you have not encountered before.
+With that in mind, your grade for this project will not be based on your results matching an expected or predetermined outcome. Rather, your grade will be based on a variety of final deliverables (working program, README guide, presentation (part 1 and 2), visual representation, and self-assessment), as well as your iterative work in the process of completing the project (entrepreneurial mindset discussion response, in-class QFT activity, your proposal, regular git commits to your CSCI211 git repo, and peer discussions). I will consider your ability to generate innovative ideas, adapt to challenges, and write a program to solve a problem that you have not encountered before.
 
 ## Attitude
 
@@ -55,7 +56,7 @@ Note: All files and folders related to your project (the code for your program, 
 
 You will write a program that provides insight on Your Question (developed during the QFT activity). Your program must:
 * Include an object-oriented C++ implementation of an abstract data type (ADT) discussed in CSCI 211 (linked list or array-based stack, queue, priority queue (or ordered list), or binary tree).
-  * You may use Standard Template Library containers in conjunction with your ADT implementation (e.g. a std::vector of linked lists); however, you should **not** just rely on a Standard Template Library container for your ADT. Using a STL vector, queue, stack, list, map, etc is not the same as you implementing an ADT with a linked list or array-based data structure.
+  * You may use Standard Template Library containers in conjunction with your ADT implementation (e.g. a std::vector of linked lists); however, you should **not** just rely on a Standard Template Library container for implementing your ADT. Using a STL vector, queue, stack, list, map, etc is not the same as you implementing an ADT with a linked list or array-based data structure.
 * Include a class or struct for your input data (e.g. to represent a single day of data, at a single station).
 * Get input from the dataset or converted input file, add all entries to your ADT, and have the ability to print all entries in a readable format.
   * Code that reads and parses data from the chosen dataset should be correct, able to handle different data types and formats, and able to handle any empty entries appropriately, depending on the data type.
@@ -87,22 +88,22 @@ $ mkdir cure-e-project
 
 Move into this directory and add any project-related files to this directory. At the end of the semester, I will expect to see (at minimum) the class files for your ADT implementation (.h and .cpp files), a main.cpp file for running your program, an input file, and a README.md file. You will likely also have class files for your data entries (e.g. each instance represents the data from one day). You may have a separate file for the original dataset (e.g. a CSV file) as well as an input file for the data (e.g. in the format used in CSCI 211). You may have another input file with commands that I can use to run your program. You may have a Makefile and/or a script to run your program, or you may just include instructions/commands for running your program in the README.md file. Other files may be necessary depending on your project; feel free to ask if you have questions about how to set up your project directory. Since everyone's output will be different, there will be no test output files, but if you create output files in your program, you can leave them in the directory as a reference.<br>
 
-I will have an example program that converts data from a CSV file to the format used in the CSCI 211 programming assignments. You can get the data directly from the dataset (.csv file or other format), or you can use something similar to my program to create an input file that looks like the input you have used throughout the semester.<br>
+I have provided an example program that converts data from a CSV file to the format used in the CSCI 211 programming assignments (look in the `CSCI211-Course-Materials/assets/` directory). You can get the data directly from the dataset (.csv file or other format), or you can use something similar to my program to create an input file that looks like the input you have used throughout the semester.<br>
 
-You must use your CSCI211 git repository for your CURE-E Final Project computer program and have at least 5 commits made to the repository for your program's source code. You are not required to have commits for each of the following, but these are all points at which it would be a good idea to make a commit:
+You must use your CSCI211 git repository for your CURE-E Final Project computer program and have at least 6 commits made to the repository for your program's source code and README.md guide (feel free to make more commits as needed). You are not required to have commits for each of the following, but it is common to make git commits whenever you have completed a feature, fixed a bug, or made some progress that you are happy with (even if you plan on working more on the particular feature). Do NOT wait until the end of the semester and make one giant commit for your entire final project! These are all points at which it would be a good idea to make a commit:
 * **Initial commit** that includes the project's initial setup (e.g. a new directory, setting up the project structure, adding any necessary project files).
 * **Creation of a C++ class or struct for your data entries** (e.g. every Node in your ADT may contain pointers to instances of this class)
 * **Creation of a C++ class for your ADT** (define the class and its methods; doesn't need to be complete, but can include some basic implementation)
 * **Input file parsing** (successfully read input data from a file -- either add data to your ADT or simply print it out to confirm that you are parsing the data as desired for your program)
 * **ADT populating** (if you haven't already, make sure to insert entries made up of the parsed data into your ADT. The input data may have empty entries -- make sure you handle these entries appropriately, depending on the data type).
 * **Basic output** to print the contents of your ADT in a readable format (make sure you can successfully interact with your data structure). This requires the creation of a method in your ADT class - how the entries are organized is up to you, but you should be able to explain why the entries are organized in the way you have chosen.
-* **Algorithm implementation** (complete your unique algorithm that provides insight on Your Question (requires the creation of at least one method that implements your algorithm in your ADT class)
+* **Algorithm implementation** (complete your unique algorithm that provides insight on Your Question (requires the creation of at least one method that implements your algorithm in your ADT class) -- if you are completing this in parts, you may want to make multiple commits for this feature.
 * **Insightful output** (display the results of your algorithm in a way that is clear and informative)
 * **Testing and debugging** (remember to make commits to resolve bugs and other issues throughout your development process)
 * **Final commit** (once your project is complete and ready for submission, make a final commit and ensure that your code is well-organized, commented, and adheres to good coding practices)
 <br>
 
-Your program must be submitted through your CSUChico-CSCI211 GitHub repo on your default branch (usually called the `main` branch). Remember to make at least 5 commits for the source code of your program, and at least 1 more commit for the README guide. Also remember that the same style and readability guidelines that we have used throughout the semester apply to this project!
+Your program must be submitted through your CSUChico-CSCI211 GitHub repo on your default branch (usually called the `main` branch). Remember to make at least 6 commits for the source code of your program and the README guide. Also remember that the same style and readability guidelines that we have used throughout the semester apply to this project!
 
 Each time you commit your code to GitHub, you should be completing the following steps (the `add` command with the `-A` option updates all files in the working tree):
 ```
@@ -117,7 +118,7 @@ In the git repository for your program, you should have a README.md file in the 
 
 * **Your full name**
 * **Your Chico State/INGInious username**
-* **Course and section information** (e.g. CSCI 211 Programming and Algorithms II, Spring 2024)
+* **Course and section information** (e.g. CSCI 211 Programming and Algorithms II, Fall 2024)
 * **A list of the files/directories in the repo** and a brief description of what each file/directory contains
 * **An overview of your project**
   - A brief description of your project (Include any descriptive background details that can help explain the thinking behind your research question and project)
@@ -139,10 +140,25 @@ $ git commit -m "<descriptive commit message>"
 $ git push origin main
 ```
 
+### Project Progress
+
+In any large project, breaking your work into smaller, more manageable tasks is crucial. Making incremental progress helps ensure that you stay on track with your goals, identify and address issues early, stay motivated, and make gradual improvements that allow for better overall quality.
+
+A portion of the CURE-E Final Project grade will be based on your demonstration of incremental progress through:
+
+* **Git commits** (at least 6 that show progress on the final project, to be completely incrementally over the last several weeks of class)
+* **Peer discussion and brief write-ups** (1 each week for the last 4 weeks of class, to be completed during lab)
+
+Git commits are discussed in the sections above for [Your Computer Program](#your-computer-program) and [Your README Guide](#your-readme-guide).
+
+You can find more details about how you can receive credit for Project Progress in the Lab 12, Lab 13, Lab 14, and Lab 15 instructions.
+
+
 ### Your Visual Representation
 
-Create a visual that can help represent your work and aid you during your presentation. Your visual can be similar to a [research poster](https://guides.nyu.edu/posters), but simpler (fewer words and sections) and smaller (just a normal slide -- I should NOT need to zoom in to read your text, it should be visible clearly when the slide is shared from a computer screen). When you are thinking about what to include on your visual, you should consider the following questions:<br>
+Create a visual that can help represent your work and aid you during your presentation. Your visual can be similar to a [research poster](https://guides.nyu.edu/posters), but simpler (fewer words and sections) and smaller (just a normal slide -- I should NOT need to zoom in to read your text; it should be visible clearly when the slide is shared from a computer screen). When you are thinking about what to include in your visual, you should consider the following questions:<br>
 
+* What is my research question? What is the focus of my project?
 * What is the most important/interesting/astounding finding from my project?
 * How can I visually share my research with the audience? Would charts, graphs, photos, images, key pieces of data, or something else be the best way to share my results?
 <br>
@@ -180,7 +196,7 @@ Note: if you will not be able to attend in-person during the time of our schedul
 
 ### Presentation Part 2: Your Demonstration Recording
 
-The presentation has been split into two parts to make sure everyone has time to present their project. This portion of the presentation should be recorded, and the recording should be submitted to Canvas. The goal of this part of the presentation is for you to demonstrate how to use your program, show that your program is working and getting results, provide some context about your work, and discuss any personal insights. I am expecting this recording to be about 1-5 minutes.
+The presentation has been split into two parts to make sure everyone has time to present their project. This portion of the presentation should be recorded, and the recording should be submitted to Canvas. The goal of this part of the presentation is for you to demonstrate how to use your program, show that your program is working and getting results, provide some context about your work, and discuss any personal insights. I am expecting this recording to be about 1-5 minutes (don't stress if it's a little longer).
 
 Your demonstration recording should include:
 * A demonstration of yourself compiling and executing your program. If needed, provide some explanation about how I should interpret your output.
