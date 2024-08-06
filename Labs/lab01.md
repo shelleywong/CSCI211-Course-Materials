@@ -296,7 +296,7 @@ Make sure you understand how to:
 
 To check your understanding of these concepts and receive credit for Lab 01 Exercise 5, complete this [211 Linux Commands and Testing Google Survey](https://docs.google.com/forms/d/e/1FAIpQLScYYUFPLcTAE7BNwHmT3G98Ityvpeu7e_MNSLF2qC5pS_MXrw/viewform?usp=sf_link). <br>
 
-Note: You will need to be logged in to your \@mail.csuchico.edu Google account in order to take the Google Survey. If you get a message that you are unable to access the survey, try using your Chico portal username and password to login to Google. If you are not sure how to proceed, feel free to ask for help!<br>
+Note: You will need to be logged in to your \@mail.csuchico.edu or \@csuchico.edu Google account in order to take the Google Survey. If you get a message that you are unable to access the survey, try using your Chico portal username and password to login to Google. If you are not sure how to proceed, feel free to ask for help!<br>
 
 For this exercise, make sure to submit the [211 Linux Commands and Testing Google Survey](https://docs.google.com/forms/d/e/1FAIpQLScYYUFPLcTAE7BNwHmT3G98Ityvpeu7e_MNSLF2qC5pS_MXrw/viewform?usp=sf_link).
 
@@ -307,6 +307,8 @@ For this exercise, make sure to submit the [211 Linux Commands and Testing Googl
 > Note: You should complete Exercise 1 BEFORE completing the Git Basics Survey
 
 > Note: It is possible to complete the Git survey without running any commands and just looking at the cheat sheets; however, it can be helpful to walk through the steps yourself. If you do choose to run the commands, I recommend running them in a practice repo (not in your CSCI211 repo that contains the starter code files) -- some git commands can cause problems and impact your repo in unwanted ways if you are not careful.
+
+> Note: You will need to be logged in to your \@mail.csuchico.edu or \@csuchico.edu Google account in order to take this Google Survey.
 
 Complete the [Git Basics Survey](https://docs.google.com/forms/d/e/1FAIpQLSezh266Wzhha6HZtSdUQEX1QyvzDuzgWihREqvRgK6AFdLDjg/viewform?usp=sf_link) which covers some basic Git commands used with GitHub (the process is similar when working with any Git repository hosting service). When you provide your answers, make sure that your answers are complete (i.e. include a branch name/file name/message/URL/etc if the command requires it to run successfully).<br>
 

@@ -45,6 +45,8 @@ $ make
 
 Nothing will be submitted to INGInious for Lab 06, Exercises 1-4, but you must complete [this GDB survey](https://docs.google.com/forms/d/e/1FAIpQLSdNNjIHgqtmHd_zsGy12nYTealx90JQA_FDU_SFu9Dkrp3awg/viewform?usp=sf_link).
 
+> Note: You will need to be logged in to your \@mail.csuchico.edu or \@csuchico.edu Google account in order to take this Google Survey.
+
 > Note: The programs in this lab were created to produce errors, so that you can get some practice working with gdb. Don't spend too much time trying to figure out what the program is "supposed" to do -- in some cases, the code is an example of something you should NOT do in your own programs.
 
 ## Exercise 1: Debugging Practice Part 1
