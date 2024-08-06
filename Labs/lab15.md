@@ -15,13 +15,14 @@ Work on Lab 15 Project Goals and commit your progress to your CSUChico-CSCI211 p
 > Note: Lab 15 Project Goals are recommendations to help you keep on track. If you do not complete everything, or you complete different tasks than the ones described here, do not worry about it -- the goal if for you to make incremental progress, whatever that means in your situation.
 
 ### Lab 15 Project Goals
-- Add a README Guide to your project directory
+* Finish working on your project, test that everything functions as expected
+* Add a README Guide to your project directory
   - For more details, refer to the instructions in the Final Project for [Your README Guide](https://github.com/shelleywong/CSCI211-Course-Materials/blob/main/CURE-E/finalProject.md#your-readme-guide)
-- Finish preparing your visual
-- Practice your presentation/elevator pitch
-- Complete the reflection/self-assessment survey<br>
+* Finish preparing your visual
+* Practice your presentation/elevator pitch
+* Complete the reflection/self-assessment survey<br>
 
-- Add, commit, and push your code to GitHub, so I can see your current project progress. Remember to include a brief but descriptive commit message:
+* Add, commit, and push your code to GitHub, so I can see your current project progress. Remember to include a brief but descriptive commit message:
 ```
 $ git add -A
 $ git commit -m "<descriptive commit message>"

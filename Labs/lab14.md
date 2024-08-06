@@ -15,12 +15,12 @@ Work on Lab 14 Project Goals and commit your progress to your CSUChico-CSCI211 p
 > Note: Lab 14 Project Goals are recommendations to help you keep on track. If you do not complete everything, or you complete different tasks than the ones described here, do not worry about it -- the goal if for you to make incremental progress, whatever that means in your situation.
 
 ### Lab 14 Project Goals
-- Complete your unique algorithm
+* Complete your unique algorithm
   - This should be implemented with one or more functions that you have implemented yourself
   - You will likely need to incorporate various methods you have learned for working with data structures (things like traversal, find, sort, calculate, compare, etc.)
-- Display the results of your algorithm in a way that is clear and informative (provides insight on Your Question)
+* Display the results of your algorithm in a way that is clear and informative (provides insight on Your Question)
 
-- Add, commit, and push your code to GitHub, so I can see your current project progress. Remember to include a brief but descriptive commit message:
+* Add, commit, and push your code to GitHub, so I can see your current project progress. Remember to include a brief but descriptive commit message:
 ```
 $ git add -A
 $ git commit -m "<descriptive commit message>"

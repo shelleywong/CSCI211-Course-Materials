@@ -14,13 +14,13 @@ Work on Lab 12 Project Goals and commit your progress to your CSUChico-CSCI211 p
 > Note: Lab 12 Project Goals are recommendations to help you keep on track. If you do not complete everything, or you complete different tasks than the ones described here, do not worry about it -- the goal if for you to make incremental progress, whatever that means in your situation.
 
 ### Lab 12 Project Goals
-- Create an initial commit that includes the project's initial setup (e.g. a new directory, setting up the project structure, adding any necessary project files)
-- Create a class or struct to hold your data entries
-- Implement the foundational components of a data structure to manage your data.
+* Create an initial commit that includes the project's initial setup (e.g. a new directory, setting up the project structure, adding any necessary project files)
+* Create a class or struct to hold your data entries
+* Implement the foundational components of a data structure to manage your data.
   - Choose one of the abstract data types we discussed in class (e.g. linked list based stack, queue, or priority queue, or a binary tree)
   - Begin by creating basic functions such as the constructor, destructor, insert, and print methods
 
-- Add, commit, and push your code to GitHub, so I can see your current project progress. Remember to include a brief but descriptive commit message:
+* Add, commit, and push your code to GitHub, so I can see your current project progress. Remember to include a brief but descriptive commit message:
 ```
 $ git add -A
 $ git commit -m "<descriptive commit message>"

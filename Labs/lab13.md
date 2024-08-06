@@ -15,15 +15,15 @@ Work on Lab 13 Project Goals and commit your progress to your CSUChico-CSCI211 p
 > Note: Lab 13 Project Goals are recommendations to help you keep on track. If you do not complete everything, or you complete different tasks than the ones described here, do not worry about it -- the goal if for you to make incremental progress, whatever that means in your situation.
 
 ### Lab 13 Project Goals
-- Get all input from the dataset
+* Get all input from the dataset
   - Access the dataset (csv file) and retrieve the data needed for your project
   - Remember, you can refer to my example in the `assets/` folder, which provides one way to extract data from a csv file and put it into a format that is more similar to the input files we have used for CSCI211 programming assignments
-- Add the input to your data structure
+* Add the input to your data structure
   - Test that your insert function works as expected (make changes to the implementation as needed)
-- Print out all entries in a readable format
+* Print out all entries in a readable format
   - Test that your print function works as expected (data may or may not be organized at this point, but you should be able to confirm that you are populating your data structure as expected)
 
-- Add, commit, and push your code to GitHub, so I can see your current project progress. Remember to include a brief but descriptive commit message:
+* Add, commit, and push your code to GitHub, so I can see your current project progress. Remember to include a brief but descriptive commit message:
 ```
 $ git add -A
 $ git commit -m "<descriptive commit message>"
