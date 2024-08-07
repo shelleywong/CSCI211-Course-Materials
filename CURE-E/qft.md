@@ -17,10 +17,9 @@ Part 2 (Project Proposal), along with the Final Project, will be an individual a
 
 The skill of question asking is far too rarely deliberately taught in school. The Question Formulation Technique (QFT) provides a simple yet powerful way to teach students how to formulate, work with, and use their own questions.<br>
 
-You will need to develop a question that your CURE-E Final Project will set out to answer. This semester, you may focus on either of the following:
+You will need to develop a question that your CURE-E Final Project will set out to answer. This semester, you will focus on:
 
 * **Historical weather data**: [publicly available historical weather data](https://www.ncdc.noaa.gov/cdo-web/datasets) for Chico, CA or surrounding communities. This data is provided by the National Oceanic and Atmospheric Administration (NOAA). We can search for and request data using their [Climate Data Online Search](https://www.ncei.noaa.gov/cdo-web/search) tool.
-* **Alternative fuels data**: [publicly available data related to alternative fuels and advanced vehicles](https://afdc.energy.gov/data_download/). This data is provided by the U.S. Department of Energy. For more information on each of the data fields, you can refer to this guide on [Data Included in the Alternative Fuel Stations Download](https://afdc.energy.gov/data_download/alt_fuel_stations_format).
 
 ## Attitude
 
@@ -43,25 +42,18 @@ Nowadays, we have access to vast amounts of data, but it can sometimes be diffic
     * `assets/sac-airport-1998-2024.csv` (one station)
   * Each row displays the readings from a given day. Columns include station ID, station name, date, and data related to precipitation and air temperature.
   * The [Global Historical Climatology Network Daily Documentation](https://www.ncei.noaa.gov/pub/data/cdo/documentation/GHCND_documentation.pdf) can be used as a reference.
-* **Alternative fuels data**:
-  * Example datasets:
-    * `assets/alt_fuel_stations_oct_10_23.csv` (one day snapshot, all stations, only electric)
-    * `assets/ca_alt_fuel_stations_mar_10_2024.csv` (one day snapshot, California stations, all fuel types)
-  * Each row displays data for one alternative fuel station location. Columns include over 70 data fields, including general station information (e.g. name, address, status, access info) and options for different types of alternative vehicles. This particular dataset was filtered to only include electric fueling options, but the entire dataset includes other alternative fuel options (e.g. biodiesel, compressed natural gas, ethanol, hydrogen).
-  * [Data Included in the Alternative Fuel Stations Download](https://afdc.energy.gov/data_download/alt_fuel_stations_format) can be used as a reference.
 
-The data in both of these datasets is organized, but it can still be challenging to find specific pieces of information, or discover answers to questions that previously had no known solution.<br>
+These datasets are organized, but they may not be organized how you want them to be. Even given sorted data, it can still be challenging to find specific pieces of information, or discover answers to questions that previously had no known solution.<br>
 
 Take a few minutes to individually look at the data and think about different types of insight that could be gained from the data.
 
-* For the historical weather data, consider different stakeholders who could benefit from analysis of climate information -- individuals in agriculture, emergency management, renewable energy, tourism, outdoor recreation, and government agencies -- people like city planners, student club leaders, farmers, gardeners, delivery drivers, event planners, etc.
-* For the alternative fuel station data, consider different stakeholders who could benefit from analysis of alternative fuel stations -- people who own alternative fuel vehicles, people who are thinking of purchasing an alternative fuel vehicle in the future, government policymakers, environmental/conservation groups, energy companies, auto manufacturers, transportation companies, academic and educational institutions, etc.<br>
+* For the historical weather data, consider different stakeholders who could benefit from analysis of climate information -- individuals in agriculture, emergency management, renewable energy, tourism, outdoor recreation, and government agencies -- people like city planners, student club leaders, farmers, gardeners, delivery drivers, event planners, etc.<br>
 
 ### Developing a Research Question
 
 Below are some examples of good starting questions that could provide interesting insight for specific stakeholders. These questions are meant to give you some inspiration -- you can use a question as is, choose a unique way to approach solving the question, and/or modify the question based on your interests:
 #### Example questions: historical weather data
-* (Note for all historical weather data: Your approach could look specifically at one station with many years of data available, or you could look at several stations in the area and find the averages.)
+* (Note for all historical weather data: Your approach could look specifically at one station with many years of data available, or you could look at several stations in the area for comparison or to find the averages.)
 * **What is the average date for the last Spring frost in the Chico area?**
   * This can help farmers and home gardeners have a better idea of when they can start planting in the Spring without damage to new plants.
   * To answer this question, you might look at the minimum temperatures in specific months (e.g. January - June) and calculate the percentage possibility that temperatures get below 32 degrees F (light freeze) during some range of days.
@@ -82,19 +74,6 @@ Below are some examples of good starting questions that could provide interestin
   * Identifying how current conditions compare to historical precipitation (or drought) patterns can provide city planners with valuable insight for water resource management, agriculture, and other sectors.
   * For this question, you would want to calculate and summarize data for the current season, but then you would also to compare these results with totals or averages from past seasons. This is another question that requires looking at patterns, so make sure you analyze many years of data (at least 20-30, but ideally more years).
   * You could modify this question by using a specific drought index (e.g. the Standardized Precipitation Index), analyzing average number of occurrences of precipitation during specific months, or focusing on total, average, max/min amounts of precipitation seen during specific months.
-#### Example questions: Alternative fuel station data
-* **What is the current geographic coverage of alternative fuel stations in the U.S. for different types of chargers (Level 1, Level 2, and DC Fast)?**
-  * This information can help government policymakers identify locations that would benefit from additional stations and make decisions regarding incentives and infrastructure investments.
-  * To answer this question, you could look at the number of stations in each state and the particular types of chargers available at each location. Level 1 Chargers are the slowest (better for overnight stays), Level 2 Chargers are faster (nice for workplaces, malls, grocery stores, hotels, etc), and DC Fast Chargers are the fastest (for commercial/industrial locations, often near major highways).
-  * You could modify this question by looking at more specific geographic locations (cities, zip codes, latitude/longitude), comparing the availability of different types of chargers in those locations, and identifying states that have the best (or worst) availability for each type of charger.
-* **How accessible are alternative fuel stations in the U.S.?**
-  * This information can help alternative fuel vehicle owners have a better idea of what options are available for their next road trip, or give potential alternative fuel vehicle owners an idea of what options will be available for their regular driving activities.
-  * To answer this question, you could look at specific attributes (e.g. public/private, hours open, how many charge ports are at each location, what types of charge ports are available, what the cost is at each location), and identify a count of locations or a percentage of locations that are most accessible (e.g. public, open 24 hours daily, have more than 2 charge ports available, if charging is free, etc).
-  * You could modify this question by looking at specific geographic locations (e.g. states), or facility types (e.g. parking garage, shopping center, hotel, etc).
-* **What is the annual percentage growth rate of alternative fuel stations in the U.S., and how does the growth rate in different states compare?**
-  * This information can help the general public understand both the current charging/fueling options and the potential options that will be available in the future based on growth trends.
-  * To answer this question, you could [calculate the growth rate](https://pages.uoregon.edu/rgp/PPPM613/class8a.htm) between two years and identify states which have the highest (or lowest) growth rate.
-  * You could modify this question by looking at different periods of time in specific locations or focusing on the growth of specific types of charging (e.g. Level 2 vs DC Fast).<br>
 
 
 You are not required to use my example questions -- ultimately, I want you to choose something that interests you! However, be aware that some questions may be difficult or impossible to answer with the available datasets. Keep these ideas in mind for things to avoid in choosing your research question:
@@ -144,7 +123,6 @@ To successfully complete this assignment, each participant should submit an indi
 2. Identify the stakeholder(s) who stand to gain from the insights derived from your project
 3. Provide some details about the dataset you intend to use and the data fields on which you will focus.
   * For historical weather data, you should focus on Daily Summaries. Some variables you should provide here are (1) the Date Range, (2) Station/Zip Code/City or other geographic/location identifier, and (3) observations/values (e.g. precipitation (PRCP), snowfall (SNOW), max temperature (TMAX), min temperature(TMIN), etc).
-  * For alternative fuel station data, you should be considering (1) the fuel type (Electric, Hydrogen, Biodiesel, etc), (2) different geographic locations (specific states, all states and Canada, etc), and (3) any other variables you are focusing on, such as station status (open or planned), specific charging networks, etc.
 4. You may use the same dataset and have the same stakeholder as other students, but you should be writing your own program and individually addressing a unique question. If you are working with other students to provide insights for a specific stakeholder, with each individual answering a different question for that stakeholder, list the names of the other students.<br>
 
 
