@@ -25,6 +25,22 @@ Lab 01 Exercises:
 
 ## Exercise 1: Setting up your CSCI 211 environment
 
+* [Before you begin Exercise 1](#before-you-begin-exercise-1)
+* [Steps for setting up your CSCI211 GitHub repo](#steps-for-setting-up-your-csci211-github-repo)
+  - Sign up for GitHub and Set up Two-Factor Authentication
+  - Generate a repo in the CSUChico-CSCI211 GitHub organization
+  - Set up SSH keys (OR a personal access token) so you can clone your repo
+  - Install and configure git
+  - Clone your CSCI211 starter repo
+* [Steps for working with a local git repo and editing the README file](#steps-for-working-with-a-local-git-repo-and-editing-the-readme-file)
+  - Practice using basic Linux commands (cd, ls)
+  - Edit the README.md file (add your info and the current semester, as specified)
+  - Practice using basic Git commands (git status, git diff, git add, git commit, git push)
+
+Make sure you update the README.md file in your CSUChico-CSCI211 GitHub repo to complete Lab 01, Exercise 1.
+
+### Before you begin Exercise 1
+
 The goal of this exercise is for you to set up your working directory for CSCI 211. You will start with an existing repository that contains starter code, Makefiles, and test files that are organized based on the lab and programming assignments for this course. Throughout the semester, you will work in this directory, adding your own files and code to complete the assignments.<br/>
 
 > Note: Before completing this exercise, it would be helpful to first make sure you have an environment setup that allows you to use Linux and compile your code with the GNU g++ compiler (see the 211 Getting Started Instructions on Canvas). Mac and Windows users: make sure you can access at least one of the following: ecc-linux (access with ssh), the lab computers, an Ubuntu virtual machine, WSL2 (for Windows), or GitHub codespaces.<br>
@@ -35,13 +51,16 @@ After you create a GitHub account, you will use a repo generation tool to genera
 
 For more Git information and resources, check out the [Git Overview](https://github.com/shelleywong/CSCI211-Course-Materials/blob/main/guides/git.md).<br>
 
-### Steps for setting up your CSUChico-CSCI211 GitHub repo
+### Steps for setting up your CSCI211 GitHub repo
 
 > Note: for more details on steps 1 - 3, see the 211 Getting Started Instructions on Canvas.
 
 > Note: Two-Factor Authentication (2FA) is now [officially required](https://github.blog/2023-03-09-raising-the-bar-for-software-security-github-2fa-begins-march-13/) for all developers who contribute code on GitHub.com.
 
-1. [Sign up for GitHub](https://github.com/)
+1. [Sign up for GitHub](https://github.com/) and Enable Two-Factor Authentication
+  - GitHub now officially requires developers to increase their account security by enabling two-factor authentication (2FA). Go to your account settings and select the `Password and authentication` option from the left sidebar. Configure at least one **Two-factor method** for authentication.
+  - For two-factor authentication, you can use an **authenticator app** (such as Duo Mobile, Authy, Google Authenticator, etc) or set up **Security keys** (e.g. a hardware device such as a YubiKey).
+  - You should already have Duo Mobile for campus authentication -- if you set up Duo for GitHub, note that you may not get a push notification (like you do when signing in to campus apps). You can look for a 6 digit passcode (hidden by default) in the app (note that the passcode will get refreshed frequently).
 2. Go to this [GitHub repo generation](https://repo.bryandixon.phd/) page to generate a CSUChico-CSCI211 GitHub repo
   - Create a GitHub username BEFORE submitting this form. Make sure that the username matches your actual GitHub username.
   - Use the Course Token provided in the 211 Getting Started Instructions (link in Canvas) to generate your repo. (In the 211 Getting Started Instructions, look for **GitHub account** > **Sign up and generate a CSCI211 repo**)
@@ -100,14 +119,8 @@ $ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
 
 Now you should have a local instance of your CSCI211 repository! You can use the `ls` command to see the CSCI211 repo in your current directory. Complete the next steps to finish Lab 01, Exercise 1.<br>
 
-**New Requirement**: In addition to the steps described above, you will need to set up **two-factor authentication**:
 
-* Enable Two-Factor Authentication
-    * GitHub now officially requires developers to increase their account security by enabling two-factor authentication (2FA). Go to your account settings and select the `Password and authentication` option from the left sidebar. Configure at least one **Two-factor method** for authentication.
-      * For two-factor authentication, you can use an **authenticator app** (such as Duo Mobile, Authy, Google Authenticator, etc) or set up **Security keys** (e.g. a hardware device such as a YubiKey).
-      * You should already have Duo Mobile for campus authentication -- if you set up Duo for GitHub, note that you may not get a push notification (like you do when signing in to campus apps). You can look for a 6 digit passcode (hidden by default) in the app (note that the passcode will get refreshed frequently).
-
-### Steps for working with a local GitHub repo
+### Steps for working with a local git repo and editing the README file
 
 1. When you clone the repository, you will not automatically move into the directory. Use the `cd` command to move into the directory (the name should be similar to the following):
 ```
@@ -130,7 +143,7 @@ $ vim README.md
 * GitHub username: my-github-username
 * Chico State username: my-chico-username
 ```
-  -  Make sure to include the spacing as shown, so that your README.md file will include a second-level heading (for your name), some styling (italics around the semester), and an unordered list (for your GitHub and Chico State usernames).<br>
+  -  Make sure to include the spacing and symbols as shown (pay special attention to the '#' and '*' characters), so that your README.md file will include a second-level heading (for your name), some styling (italics around the semester), and an unordered list (for your GitHub and Chico State usernames).<br>
 
 > This code uses [GitHub Flavored Markdown](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax#lists). Markdown is plain-text formatting syntax that is commonly used in README files.<br>
 
@@ -163,7 +176,7 @@ $ git push origin main
 
 9. Visit your CSCI211 GitHub repo in a web browser and confirm that your changes have been added to your remote repo (reload the page if necessary). You should be able to see your changes in the README.md file. You can also click on the "commits" button (below the green "< > Code" button) to see the history of all the commits to this repository, organized by date.<br>
 
-10. At this point, you are done with Lab 01, Exercise 1, and you can complete the rest of Lab 01.<br>
+10. After you have updated the README.md file in your repo, you are done with Lab 01, Exercise 1, and you can complete the rest of Lab 01.<br>
 
 I recommend that you commit and push all of your code for CSCI211 lab exercises and programming assignments to your GitHub repo IN ADDITION to submitting your code to INGInious for grading. Submitting to INGInious is necessary for grading, but committing and pushing to a remote repo is good practice:
 
