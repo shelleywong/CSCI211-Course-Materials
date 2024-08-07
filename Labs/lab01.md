@@ -34,7 +34,7 @@ Lab 01 Exercises:
   - Clone your CSCI211 starter repo
 * [Steps for working with a local git repo and editing the README file](#steps-for-working-with-a-local-git-repo-and-editing-the-readme-file)
   - Practice using basic Linux commands (cd, ls)
-  - Edit the README.md file (add your info and the current semester, as specified)
+  - Edit the README.md file (add your full name, current semester, GitHub username, and Chico State username, using GitHub Flavored Markdown as specified)
   - Practice using basic Git commands (git status, git diff, git add, git commit, git push)
 
 Make sure you update the README.md file in your CSUChico-CSCI211 GitHub repo to complete Lab 01, Exercise 1.
