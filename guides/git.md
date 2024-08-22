@@ -22,6 +22,7 @@ GitHub, GitLab, and BitBucket provide tools that help manage and host Git reposi
   * [GitHub Education Cheat Sheet](https://education.github.com/git-cheat-sheet-education.pdf)
   * [GitLab Cheat Sheet](https://about.gitlab.com/images/press/git-cheat-sheet.pdf)
   * [Atlassian (BitBucket) Cheat Sheet](https://www.atlassian.com/git/tutorials/atlassian-git-cheatsheet)
+  * [freeCodeCamp Git Cheat Sheet](https://www.freecodecamp.org/news/git-cheat-sheet-helpful-git-commands-with-examples/#heading-reverting-changes-in-git) - An extensive guide to Git commands, with explanations and examples (the other cheat sheets listed here highlight some of the most common commands and are great for a quick reference; this one goes more in-depth).
 * [Learn Git Branching](https://learngitbranching.js.org/) is a great interactive web tutorial that covers both basic and more advanced Git commands and techniques. The tutorial goes beyond what is necessary for this class, but it provides good practice and preparation for future classes and industry work.
 * Refer to the [GitHub docs](https://docs.github.com/en/free-pro-team@latest/github) for additional guidance on working with GitHub.
 * Check out [Getting Started with Git](https://docs.github.com/en/github/getting-started-with-github/getting-started-with-git) in the GitHub Docs for instructions on setting up you Git username and password (necessary if cloning GitHub repos with HTTPS) and managing remote repositories.
