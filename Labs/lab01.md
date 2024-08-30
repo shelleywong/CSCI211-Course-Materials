@@ -173,7 +173,7 @@ $ git push origin main
 ```
 > Note: "origin" is the default name for a remote repository. You can see the remote repo attached to the current repository with this command: `git remote -v`<br>
 
-> Note: "main" is the default branch name. You may see older versions of git using "master" as the default branch name. For CSCI211, it is fine if you do all of your work on the main branch. For more on branching, refer to the Learn Git Branching tutorial, or complete the Lab 01 Extra Credit.<br>
+> Note: "main" is the default branch name. You may see older versions of git using "master" as the default branch name. For CSCI211, it is fine if you do all of your work on the main branch.<br>
 
 9. Visit your CSCI211 GitHub repo in a web browser and confirm that your changes have been added to your remote repo (reload the page if necessary). You should be able to see your changes in the README.md file. You can also click on the "commits" button (below the green "< > Code" button) to see the history of all the commits to this repository, organized by date.<br>
 
