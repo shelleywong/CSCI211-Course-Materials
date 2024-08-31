@@ -324,11 +324,13 @@ For this exercise, make sure to submit the [211 Linux Commands and Testing Googl
 
 > Note: You will need to be logged in to your \@mail.csuchico.edu or \@csuchico.edu Google account in order to take this Google Survey.
 
-Complete the [Git Basics Survey](https://docs.google.com/forms/d/e/1FAIpQLSezh266Wzhha6HZtSdUQEX1QyvzDuzgWihREqvRgK6AFdLDjg/viewform?usp=sf_link) which covers some basic Git commands used with GitHub (the process is similar when working with any Git repository hosting service). When you provide your answers, make sure that your answers are complete (i.e. include a branch name/file name/message/URL/etc if the command requires it to run successfully).<br>
+Complete the [Git Basics Survey](https://docs.google.com/forms/d/e/1FAIpQLSezh266Wzhha6HZtSdUQEX1QyvzDuzgWihREqvRgK6AFdLDjg/viewform?usp=sf_link) which covers some basic Git commands and how you can use git with a git repository hosting service (GitHub in this case).<br>
 
-You may find it helpful to refer to the [Git Overview](https://github.com/shelleywong/CSCI211-Course-Materials/blob/main/guides/git.md). Feel free to use one of the Git Cheat Sheets to complete the Git survey.<br>
+If you are unfamiliar with git, you can watch my [Git Basics video](https://csuchico-my.sharepoint.com/:v:/r/personal/swong26_csuchico_edu/Documents/CS-Instructor/CSCI211/git-basics.mp4?csf=1&web=1&e=1HnzRL&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D) that provides an overview of Git and git source code hosting services, walks through basic Git commands, and provides a little more context about git and how it can be used. The video does not go through the survey question by question; however, it does aim to cover all of the topics in the survey.<br>
 
-There are 24 questions in this survey. Some questions cover Git commands that are used in other Lab 01 exercises, while other questions (such as the ones on branching and creating a new repo) have not previously been discussed (hint: refer to the Git Cheat Sheets and try to see if you can use the commands and implement each step in a test repo). Let the instructor know if anything is unclear.<br>
+You may also find it helpful to refer to the [Git Overview](https://github.com/shelleywong/CSCI211-Course-Materials/blob/main/guides/git.md) guide. Feel free to use one of the Git Cheat Sheets to complete the Git survey.<br>
+
+There are 24 questions in this survey. Some questions cover Git commands that are used in other Lab 01 exercises, while other questions (such as the ones on branching and creating a new repo) have not previously been discussed. As you complete the survey, I recommend that you open up a terminal and try running the commands in a test repo, and open up a browser to explore github.com and potentially search for any commands that are unfamiliar to you. Let the instructor know if anything is unclear -- the goal of this survey is for you to learn and get some experience with Git, so questions are expected!<br>
 
 * Part 1 (questions 1-8):
   * Things to know before using Git and GitHub
