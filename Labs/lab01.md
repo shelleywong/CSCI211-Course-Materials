@@ -326,7 +326,7 @@ For this exercise, make sure to submit the [211 Linux Commands and Testing Googl
 
 Complete the [Git Basics Survey](https://docs.google.com/forms/d/e/1FAIpQLSezh266Wzhha6HZtSdUQEX1QyvzDuzgWihREqvRgK6AFdLDjg/viewform?usp=sf_link) which covers some basic Git commands and how you can use git with a git repository hosting service (GitHub in this case).<br>
 
-If you are unfamiliar with git, you can watch my [Git Basics video](https://csuchico-my.sharepoint.com/:v:/r/personal/swong26_csuchico_edu/Documents/CS-Instructor/CSCI211/git-basics.mp4?csf=1&web=1&e=1HnzRL&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D) that provides an overview of Git and git source code hosting services, walks through basic Git commands, and provides a little more context about git and how it can be used. The video does not go through the survey question by question; however, it does aim to cover all of the topics in the survey.<br>
+If you are unfamiliar with git, you can watch my [Git Basics video](https://csuchico-my.sharepoint.com/:v:/g/personal/swong26_csuchico_edu/EYw6N7y3X0VDo6yKbOnHzfsBTDhmEr5w02mHp0ASko7Jiw) that provides an overview of Git and git source code hosting services, walks through basic Git commands, and provides a little more context about git and how it can be used. The video does not go through the survey question by question; however, it does aim to cover all of the topics in the survey.<br>
 
 You may also find it helpful to refer to the [Git Overview](https://github.com/shelleywong/CSCI211-Course-Materials/blob/main/guides/git.md) guide. Feel free to use one of the Git Cheat Sheets to complete the Git survey.<br>
 
