@@ -17,7 +17,7 @@ This Guide on Testing Assignments is useful for:
 * file redirection
   * `<` standard input (stdin)
   * `>` standard output (stdout)
-  * `2>` standard error (stderr) (see Exercise 2 below)
+  * `2>` standard error (stderr)
 * exit status
   * return 0;
   * return 1;
