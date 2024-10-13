@@ -21,6 +21,9 @@ You will need to develop a question that your CURE-E Final Project will set out 
 
 * **Historical weather data**: [publicly available historical weather data](https://www.ncdc.noaa.gov/cdo-web/datasets) for Chico, CA or surrounding communities. This data is provided by the National Oceanic and Atmospheric Administration (NOAA). We can search for and request data using their [Climate Data Online Search](https://www.ncei.noaa.gov/cdo-web/search) tool.
 
+* **Fall 2024 Change**: [Many NCEI systems are unavailable until further notice due to Hurricane Helene's impacts to our NC data center.](https://www.ngdc.noaa.gov/)
+  * **Federal Reserve Economic Data**: [Federal Reserve Economic Data (FRED)](https://fred.stlouisfed.org/) (which includes US and international time series data that can be downloaded, graphed, and tracked) is provided by the Federal Reserve Bank of St. Louis. They offer data for the consumer price index, gross domestic product, inflation, the unemployment rate, and much more. If you are not sure what to focus on, I encourage you to look into data related to [unemployment](https://fred.stlouisfed.org/searchresults/?st=unemployment&isTst=1), which can provide valuable insights into labor market trends and economic health.
+
 ## Attitude
 
 Entrepreneurial Mindset: Flexible and Adaptable, Creative and Innovative, Initiative and Self Reliance, Communicate and Collaborate, Critical Thinking and Problem Solving, Opportunity Recognition
@@ -34,8 +37,8 @@ We will use a shared Google Doc to complete this assignment(link on Canvas).
 
 Nowadays, we have access to vast amounts of data, but it can sometimes be difficult to extract useful information from that data. Take a look at the example datasets:
 
-* **Historical weather data**:
-  Example datasets:
+* **Historical weather data**
+  * Example datasets:
     * `assets/ChicoUnivFarm-1906-2023.csv` (one station)
     * `assets/chico-weather-2018-2022.csv` (several stations in the region)
     * `assets/butte-weather-2014-2024.csv` (several stations in the region)
@@ -43,11 +46,20 @@ Nowadays, we have access to vast amounts of data, but it can sometimes be diffic
   * Each row displays the readings from a given day. Columns include station ID, station name, date, and data related to precipitation and air temperature.
   * The [Global Historical Climatology Network Daily Documentation](https://www.ncei.noaa.gov/pub/data/cdo/documentation/GHCND_documentation.pdf) can be used as a reference.
 
+* **Historical economic data**
+  * Example datasets:
+    * `assets/UNRATE-SeasonallyAdjusted-Sep2024.csv` (Unemployment Rate, seasonally adjusted, percent, monthly)
+    * `assets/UNRATE-BachelorDeg-Sep24.csv` (Unemployment Rate for people with a Bachelor's Degree and Higher (25 Yrs. & over), seasonally adjusted, percent, monthly)
+    * `assets/AvgWeeksUnemployed-Sep24.csv` (Average Weeks Unemployed, seasonally adjusted, number of weeks, monthly)
+    * `assets/StickyPriceCPI-Sep24.csv` (Sticky Price Consumer Price Index less Food and Energy, seasonally adjusted, percent change from a year ago, monthly)
+
 These datasets are organized, but they may not be organized how you want them to be. Even given sorted data, it can still be challenging to find specific pieces of information, or discover answers to questions that previously had no known solution.<br>
 
 Take a few minutes to individually look at the data and think about different types of insight that could be gained from the data.
 
 * For the historical weather data, consider different stakeholders who could benefit from analysis of climate information -- individuals in agriculture, emergency management, renewable energy, tourism, outdoor recreation, and government agencies -- people like city planners, student club leaders, farmers, gardeners, delivery drivers, event planners, etc.<br>
+
+* For the historical economic data, consider different stakeholders who could benefit from analysis of economic information -- job seekers, consumers, investors, human resource departments, economists, policymakers, and individuals in economic development and other government agencies.<br>
 
 ### Developing a Research Question
 
@@ -75,6 +87,24 @@ Below are some examples of good starting questions that could provide interestin
   * For this question, you would want to calculate and summarize data for the current season, but then you would also to compare these results with totals or averages from past seasons. This is another question that requires looking at patterns, so make sure you analyze many years of data (at least 20-30, but ideally more years).
   * You could modify this question by using a specific drought index (e.g. the Standardized Precipitation Index), analyzing average number of occurrences of precipitation during specific months, or focusing on total, average, max/min amounts of precipitation seen during specific months.
 
+#### Example questions: historical economic data
+* (Note for all historical economic data: Your project needs to work with at least 2 datasets and at least 1000 entries (about 84 years for monthly data). Your goal is not to create a graph that looks like one already provided by FRED -- rather, you want to see if you can gain any statistical insight into labor market trends and economic health that might not be immediately obvious by looking at a graph).
+  * **How does the unemployment rate for individuals who have a bachelor's degree compare with the overall unemployment rate?**
+    * You could modify this question to compare the situation for different states/regions, age groups, sex (male/female), race, or other sectors of the population, and examine if the disparities are smaller or greater depending on the time of year.
+  * **Are there any seasonal trends or cyclical patterns in unemployment rates over time?**
+    * You could modify this question by focusing on unemployment rates that are above a certain threshold, or the length of time that job seekers are unemployed. You may want to identify what a "normal" amount of unemployment is, and identify if there are specific times of year when you can expect unemployment to typically be lower or higher than average.
+  * **In which historical periods did the unemployment rate experience the most rapid increases, and how do these periods compare to the overall average monthly change in unemployment?**
+    * You could modify this question by focusing on different regional variations or demographic factors (different events may have had a different impact on people in different areas of the country, people in different age groups, or people with different levels of education).
+  * **Is there any relationship between unemployment and the Consumer Price Index (an indicator of inflation)?**
+    * You could modify this question by focusing on other economic indicators, e.g. does an increase in unemployment associated with a decrease in Gross Domestic Product (GDP)? Even if you are not using formal statistical analysis, you can try to see if there are any patterns in the data.
+
+  * These questions can help policymakers and government officials identify disparities between different sectors of the population, better understand the economic situation of their constituents, forecast labor market needs, and plan for seasonal unemployment benefits. Job seekers, employers, and academic institutions can use these types of information to better understand the market and make more informed decisions.
+  * There are several things you should take into consideration for planning your final project (including, but not limited to, the following):
+    * Are you going to identify the most current data and compare this data with numbers or averages from past years?
+    * Are you going to categorize the data by month or season (and what dates are you considering for each season)?
+    * If you are trying to accurately identify patterns, are you making sure you look at many years worth of data?
+    * If comparing different types of data, make sure they are on a comparable scale (e.g. change from month to month).
+    * Most of the FRED data is very consistent; however, make sure you consider how your program will handle missing data -- will it ignore rows with missing values, or will it attempt to use some default value in place of missing values?
 
 You are not required to use my example questions -- ultimately, I want you to choose something that interests you! However, be aware that some questions may be difficult or impossible to answer with the available datasets. Keep these ideas in mind for things to avoid in choosing your research question:
 * In most cases, you CANNOT identify the impact of \<fill in the blank\> -- a question like, "What is the impact of extreme precipitation?" is unanswerable given the information we have available (i.e. historical weather datasets). Instead, you can focus on things like identifying the occurrences/frequency and intensity of weather events, with the goal of helping different entities make decisions based on that data.
@@ -88,8 +118,9 @@ Now it is time to start formulating your own questions!<br>
 1. Question Focus
   - :heavy_check_mark: Focus on the example dataset, while being aware that your group can choose a different dataset for your CURE-E project (e.g. for a specific station, for a longer date range, etc).
   - :heavy_check_mark: Start with the example questions listed above, and think about other questions you can ask that are related to these questions.
-    - **What are some questions that can help you answer the provided questions?** Consider simple questions that have an easy-to-find answer and can help you build a response to the original question.
-    - Then consider: **What are some questions that can expand beyond the example questions?** These questions may, for instance, be similar questions with a different focus for a different stakeholder. Consider questions that take into account a range of dates (months, years, seasons), several locations, multiple categories (e.g. precipitation and min/max temperature), different statistical calculations (e.g. mean average, range, variance, percentile), etc.
+    - **What types of data are you most interested in?** Are there any causes or issues you care about that could be explored with these types of datasets?
+      - Then consider: **What are some questions that can help you answer the provided questions?** Consider simple questions that have an easy-to-find answer and can help you build a response to the original question.
+      - Or: **What are some questions that can expand beyond the example questions?** These questions may, for instance, be similar questions with a different focus for a different stakeholder. Consider questions that take into account a range of dates (months, years, seasons), several locations, multiple categories (e.g. precipitation and min/max temperature), different statistical calculations (e.g. mean average, range, variance, percentile), etc.
   - :heavy_check_mark: As you formulate questions, think about some potential stakeholders (community members or groups who would benefit from this information). In many cases, your research can be more impactful if it has a specific stakeholder in mind.
 2. Produce Your Questions
   - :heavy_check_mark: Follow the rules:
@@ -123,6 +154,8 @@ To successfully complete this assignment, each participant should submit an indi
 2. Identify the stakeholder(s) who stand to gain from the insights derived from your project
 3. Provide some details about the dataset you intend to use and the data fields on which you will focus.
   * For historical weather data, you should focus on Daily Summaries. Some variables you should provide here are (1) the Date Range, (2) Station/Zip Code/City or other geographic/location identifier, and (3) observations/values (e.g. precipitation (PRCP), snowfall (SNOW), max temperature (TMAX), min temperature(TMIN), etc).
+  * For historical economic data, you may find monthly, daily, or seasonal summaries. You will need to utilize two or more datasets, and your datasets must contain at least 1000 entries combined (for monthly data, this requires at least 84 years, so you could look at two datasets that each have at least 42 years of data, or 3 datasets that have at least 28 years of data).
+    * You should provide here: (1) The datasets you plan to use (list the date range (e.g. "Jan 1948 to Sep 2024") and frequency (e.g. "monthly") for each)
 4. You may use the same dataset and have the same stakeholder as other students, but you should be writing your own program and individually addressing a unique question. If you are working with other students to provide insights for a specific stakeholder, with each individual answering a different question for that stakeholder, list the names of the other students.<br>
 
 
