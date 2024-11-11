@@ -48,7 +48,7 @@ Entrepreneurial Mindset: Flexible and Adaptable, Creative and Innovative, Initia
 
 ## Process
 
-Note: All files and folders related to your project (the code for your program, your README guide, the dataset files, Makefiles, scripts to run your code, etc) should be in a single directory located directly inside your CSUChico-CSCI211 repo -- you should give the directory a name that clearly indicates that it contains your CURE-E Final Project, e.g. `CSCI211-S24-FirstName-LastName/final-project/` or `CSCI211-S24-FirstName-LastName/cure-e/`).
+Note: All files and folders related to your project (the code for your program, your README guide, the dataset files, Makefiles, scripts to run your code, etc) should be in a single directory located directly inside your CSUChico-CSCI211 repo -- you should give the directory a name that clearly indicates that it contains your CURE-E Final Project, e.g. `CSCI211-F24-FirstName-LastName/final-project/` or `CSCI211-F24-FirstName-LastName/cure-e/`).
 
 ## Final Project Components
 
@@ -57,6 +57,7 @@ Note: All files and folders related to your project (the code for your program, 
 You will write a program that provides insight on Your Question (developed during the QFT activity). Your program must:
 * Include an object-oriented C++ implementation of an abstract data type (ADT) discussed in CSCI 211 (linked list or array-based stack, queue, priority queue (or ordered list), or binary tree).
   * You may use Standard Template Library containers in conjunction with your ADT implementation (e.g. a std::vector of linked lists); however, you should **not** just rely on a Standard Template Library container for implementing your ADT. Using a STL vector, queue, stack, list, map, etc is not the same as you implementing an ADT with a linked list or array-based data structure.
+  * You must utilize dynamically allocated memory in the implementation of your abstract data type (e.g. using `new` and `delete` to allocate/deallocate memory for nodes)
 * Include a class or struct for your input data (e.g. to represent a single day of data, at a single station).
 * Get input from the dataset or converted input file, add all entries to your ADT, and have the ability to print all entries in a readable format.
   * Code that reads and parses data from the chosen dataset should be correct, able to handle different data types and formats, and able to handle any empty entries appropriately, depending on the data type.
@@ -93,7 +94,7 @@ I have provided an example program that converts data from a CSV file to the for
 You must use your CSCI211 git repository for your CURE-E Final Project computer program and have at least 6 commits made to the repository for your program's source code and README.md guide (feel free to make more commits as needed). You are not required to have commits for each of the following, but it is common to make git commits whenever you have completed a feature, fixed a bug, or made some progress that you are happy with (even if you plan on working more on the particular feature). Do NOT wait until the end of the semester and make one giant commit for your entire final project! These are all points at which it would be a good idea to make a commit:
 * **Initial commit** that includes the project's initial setup (e.g. a new directory, setting up the project structure, adding any necessary project files).
 * **Creation of a C++ class or struct for your data entries** (e.g. every Node in your ADT may contain pointers to instances of this class)
-* **Creation of a C++ class for your ADT** (define the class and its methods; doesn't need to be complete, but can include some basic implementation)
+* **Creation of a C++ class for your ADT** (define the class and its methods; start with a basic implementation; may make a commit and then add to this class in future commits)
 * **Input file parsing** (successfully read input data from a file -- either add data to your ADT or simply print it out to confirm that you are parsing the data as desired for your program)
 * **ADT populating** (if you haven't already, make sure to insert entries made up of the parsed data into your ADT. The input data may have empty entries -- make sure you handle these entries appropriately, depending on the data type).
 * **Basic output** to print the contents of your ADT in a readable format (make sure you can successfully interact with your data structure). This requires the creation of a method in your ADT class - how the entries are organized is up to you, but you should be able to explain why the entries are organized in the way you have chosen.
