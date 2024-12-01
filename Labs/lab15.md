@@ -55,6 +55,7 @@ Make time for everyone in the group to provide and receive brief feedback or sug
 * Summarize your partner's work
   - Identify a couple key points discussed by your partner (or one of your partners). What was one thing they accomplished or worked on? What was one challenge they encountered or question they had?
 * Reflect on your own progress
+  - Give an update on your progress (what you accomplished or worked on, any challenges, etc).
   - Describe any feedback or new insights gained from your discussion about your project, then briefly explain how you plan to incorporate the feedback or insights into your project.
 * Next Steps
   - After your discussion, what will be your immediate next steps on the CURE-E Project?
