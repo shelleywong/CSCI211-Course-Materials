@@ -125,6 +125,7 @@ If `insert` is called on a string that is already in the tree, print to **standa
 The program should continue after both types of errors.<br>
 
 > Note: Always return zero from `main()`, even if there was an error.<br>
+> Hint: You can use the [istream::ignore](https://cplusplus.com/reference/istream/istream/ignore/) function to extract and ignore all characters up to a delimiting character.<br>
 
 ## Helpful Hints
 
