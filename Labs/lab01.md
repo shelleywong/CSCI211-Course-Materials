@@ -357,6 +357,8 @@ There are 24 questions in this survey. Some questions cover Git commands that ar
 
 The Git commands covered in this survey are very useful for individual projects as well as larger collaborative projects. The focus is on commands that may benefit you on small individual projects, such as making frequent commits and utilizing separate branches to help you organize your work and learn from your commit history.<br>
 
+Reminder: the Git Basics Quiz can be found in Canvas.
+
 ***
 
 ## Lab 01 Submissions
