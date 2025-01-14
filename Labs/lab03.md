@@ -23,17 +23,17 @@ Make Utility Resources:
 * Read the [Overview of make](https://github.com/shelleywong/CSCI211-Course-Materials/blob/main/guides/make.md) guide before completing the Make Utility Quiz. This quiz will ask you to test out commands yourself. You should run the commands in a Unix shell (e.g. ecc-linux or a Linux VM).<br>
 
 * Section 1 (questions 1 - 4):
-  * This section includes general overview questions about the make utility and Makefiles. The Overview of make should be helpful for this section.
+  * This section includes general overview questions about the `make` utility and Makefiles. The [Overview of make](https://github.com/shelleywong/CSCI211-Course-Materials/blob/main/guides/make.md) should be helpful for this section.
 * Section 2 (questions 5 - 9):
-  * Complete these questions in the lab03_hello directory (type in the commands and follow the prompts in the questions)
+  * Complete these questions in the `lab03_hello` directory (type in the commands and follow the prompts in the questions)
   * These questions correspond with Lab 03, Exercise 1 (Simple Makefile)
   * These questions should be completed in order. Ask the instructor if you are getting any output that does not make sense to you.
 * Section 3 (questions 10 -17):
-  * Complete these questions in the lab03_sentence directory (type in the commands and follow the prompts in the questions)
+  * Complete these questions in the `lab03_sentence` directory (type in the commands and follow the prompts in the questions)
   * These questions correspond with Lab 03, Exercise 2 (Makefile with Object Files)
   * These questions should be completed in order. Ask the instructor if you are getting any output that does not make sense to you.
 
-After you have completed the Make Utility Quiz, you have successfully completed Lab 03, Exercises 1 and 2 (Exercises 1: Simple Makefiles, using the lab03_hello directory and Exercise 2: Makefile With Object Files, using the lab03_sentence directory).
+After you have completed the Make Utility Quiz, you have successfully completed Lab 03, Exercises 1 and 2 (Exercises 1: Simple Makefiles, using the `lab03_hello` directory and Exercise 2: Makefile With Object Files, using the `lab03_sentence` directory).
 
 Reminder: the Make Utility Quiz can be found in Canvas.
 
