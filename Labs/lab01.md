@@ -21,11 +21,11 @@ Lab 01 Exercises:
 
 > Note: To get full credit for this lab, you must set up a CSUChico-CSCI211 GitHub account and update the README.md file (exercise 1), submit 3 files to INGInious (exercises 2, 3, 4).
 
-Lab 01 Quizzes:
-* [Linux Commands and Testing Quiz](#linux-commands-and-testing-quiz)
-* [Git Basics Quiz](#git-basics-quiz)
+Lab 01 Quiz Exercises:
+* [Exercise 5: Linux Commands and Testing Quiz](#exercise-5-linux-commands-and-testing-quiz)
+* [Exercise 6: Git Basics Quiz](#exercise-6-git-basics-quiz)
 
-> Note: All quizzes can be found on Canvas. Lab quizzes may be completed any time before the end of the semester for full credit. Multiple attempts are allowed; I will keep your highest score. It is recommended that you complete the Linux Commands and Testing Quiz and the Git Basics Quiz soon after you have completed the Lab 01 Exercises; however, if you are feeling overwhelmed, it is alright if you wait to complete these quizzes at a later time.
+> Note: All quizzes can be found on Canvas. Lab quiz exercises may be completed any time before the end of the semester for full credit. Multiple attempts are allowed; I will keep your highest score. It is recommended that you complete the Linux Commands and Testing Quiz and the Git Basics Quiz soon after you have completed the Lab 01 Exercises; however, if you are feeling overwhelmed, it is alright if you wait to complete these quizzes at a later time.
 
 ## Exercise 1: Setting up your CSCI 211 environment
 
@@ -298,7 +298,7 @@ Submit `print.cpp` to [INGInious](https://inginious.csuchico.edu/).
 
 ***
 
-## Linux Commands and Testing Quiz
+## Exercise 5: Linux Commands and Testing Quiz
 
 The Linux Commands and Testing Quiz, along with the lab exercises for the first few weeks, are meant to familiarize you with the Linux command line interface and introduce you to the testing mechanisms used in this class.
 
@@ -324,7 +324,7 @@ Reminder: the Linux Commands and Testing Quiz can be found in Canvas.
 
 ***
 
-## Git Basics Quiz
+## Exercise 6: Git Basics Quiz
 
 This Git Basics Quiz covers some basic Git commands and how you can use git with a git repository hosting service (GitHub in this case).
 
