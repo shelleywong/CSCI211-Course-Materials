@@ -18,10 +18,14 @@ Lab 01 Exercises:
 * [Exercise 2: Creating, compiling, and running a CPP program](#exercise-2-creating-compiling-and-running-a-cpp-program) (lab01_hello)
 * [Exercise 3: Addition](#exercise-3-addition) (lab01_add)
 * [Exercise 4: Say Hello](#exercise-4-say-hello) (lab01_print)
-* [Exercise 5: Linux Commands and Testing Quiz](#exercise-5-linux-commands-and-testing-quiz)
-* [Exercise 6: Git Basics Survey](#exercise-6-git-basics-survey)
 
-> Note: To get full credit for this lab, you must set up a CSUChico-CSCI211 GitHub account and update the README.md file (exercise 1), submit 3 files to INGInious (exercises 2, 3, 4), complete the Linux Commands and Testing Quiz (exercise 5), and complete the Git Basics Survey (exercise 6).
+> Note: To get full credit for this lab, you must set up a CSUChico-CSCI211 GitHub account and update the README.md file (exercise 1), submit 3 files to INGInious (exercises 2, 3, 4).
+
+Lab 01 Quizzes:
+* [Linux Commands and Testing Quiz](#linux-commands-and-testing-quiz)
+* [Git Basics Quiz](#git-basics-quiz)
+
+> Note: Canvas quizzes may be completed any time before the end of the semester for full credit. Multiple attempts are allowed; I will keep your highest score. It is recommended that you complete the Linux Commands and Testing Quiz and the Git Basics Quiz soon after you have completed the Lab 01 Exercises; however, if you are feeling overwhelmed, it is alright if you wait to complete these quizzes at a later time.
 
 ## Exercise 1: Setting up your CSCI 211 environment
 
@@ -294,37 +298,41 @@ Submit `print.cpp` to [INGInious](https://inginious.csuchico.edu/).
 
 ***
 
-## Exercise 5: Linux Commands and Testing Quiz
+## Linux Commands and Testing Quiz
 
-One of the main point of these assignments is to familiarize you with the Linux command line interface and introduce you to the testing mechanisms. Read or refer to the following guides to complete the Linux Commands and Testing Quiz:
+The Linux Commands and Testing Quiz, along with the lab exercises for the first few weeks, are meant to familiarize you with the Linux command line interface and introduce you to the testing mechanisms used in this class.
+
+It is recommended that you complete the Linux Commands and Testing Quiz (in Canvas) soon after you have completed the Lab 01 exercises.
+
+Read or refer to the following guides to complete the Linux Commands and Testing Quiz:
+
 * [Linux Lecture Notes](https://github.com/shelleywong/CSCI211-Course-Materials/blob/main/guides/linux.md)
 * [Testing Assignments](https://github.com/shelleywong/CSCI211-Course-Materials/blob/main/guides/testing.md) Guide<br>
 
-Make sure you understand how to:
+In addition to reading these guides, it is recommended that you try running the commands in your class repo or a test repo.<br>
+
+This quiz covers various aspects of using a Linux command line interface, focusing on commands that will help you in this class. In particular, note the commands used for testing (running an executable and comparing files), as these provide some insight into how your code is tested in INGInious. Make sure you understand how to:<br>
 * navigate the Linux file system
 * interact with processes running in the terminal
 * add and remove files and directories
 * create and run an executable
 * use file redirection to test assignments (using < and > to redirect input into a program and redirect output to a file).
-* compare your output to the correct output (using `cat`, `diff`, `vimdiff`)<br>
+* compare your output to the correct output (using `cat`, `diff`, `vimdiff`)
+* use the provided `run_tests` script to test your code (which utilizes file redirection and Linux commands to compare your output against expected output)<br>
 
-To check your understanding of these concepts and receive credit for Lab 01 Exercise 5, complete this [211 Linux Commands and Testing Google Survey](https://docs.google.com/forms/d/e/1FAIpQLScYYUFPLcTAE7BNwHmT3G98Ityvpeu7e_MNSLF2qC5pS_MXrw/viewform?usp=sf_link). <br>
-
-Note: You will need to be logged in to your \@mail.csuchico.edu or \@csuchico.edu Google account in order to take the Google Survey. If you get a message that you are unable to access the survey, try using your Chico portal username and password to login to Google. If you are not sure how to proceed, feel free to ask for help!<br>
-
-For this exercise, make sure to submit the [211 Linux Commands and Testing Google Survey](https://docs.google.com/forms/d/e/1FAIpQLScYYUFPLcTAE7BNwHmT3G98Ityvpeu7e_MNSLF2qC5pS_MXrw/viewform?usp=sf_link).
+Reminder: the Linux Commands and Testing Quiz can be found in Canvas.
 
 ***
 
-## Exercise 6: Git Basics Survey
+## Git Basics Quiz
 
-> Note: You should complete Exercise 1 BEFORE completing the Git Basics Survey
+This Git Basics Quiz covers some basic Git commands and how you can use git with a git repository hosting service (GitHub in this case).
+
+It is recommended that you complete the Git Basics Quiz soon after you have completed the Lab 01 exercises. Alternatively, if you are feeling overwhelmed at the beginning of the semester, it would also be useful to complete the Git Basics Quiz on or before Week 12 (sometime before you start working on the CURE-E Final Project).
 
 > Note: It is possible to complete the Git survey without running any commands and just looking at the cheat sheets; however, it can be helpful to walk through the steps yourself. If you do choose to run the commands, I recommend running them in a practice repo (not in your CSCI211 repo that contains the starter code files) -- some git commands can cause problems and impact your repo in unwanted ways if you are not careful.
 
-> Note: You will need to be logged in to your \@mail.csuchico.edu or \@csuchico.edu Google account in order to take this Google Survey.
-
-Complete the [Git Basics Survey](https://docs.google.com/forms/d/e/1FAIpQLSezh266Wzhha6HZtSdUQEX1QyvzDuzgWihREqvRgK6AFdLDjg/viewform?usp=sf_link) which covers some basic Git commands and how you can use git with a git repository hosting service (GitHub in this case).<br>
+Git Resources:
 
 If you are unfamiliar with git, you can watch my [Git Basics video](https://csuchico-my.sharepoint.com/:v:/g/personal/swong26_csuchico_edu/EYw6N7y3X0VDo6yKbOnHzfsBTDhmEr5w02mHp0ASko7Jiw) that provides an overview of Git and git source code hosting services, walks through basic Git commands, and provides a little more context about git and how it can be used. The video does not go through the survey question by question; however, it does aim to cover all of the topics in the survey.<br>
 
@@ -353,7 +361,7 @@ The Git commands covered in this survey are very useful for individual projects 
 
 ## Lab 01 Submissions
 
-All labs are due at 11:59pm the Friday following lab. For this lab you must set up your CSUChico-CSCI211 GitHub account, submit `hello.cpp`, `add.cpp`, and `print.cpp` to [INGInious](https://inginious.csuchico.edu/) (there is a separate submission link for each exercise), and complete two surveys: the 211 Linux Commands and Testing Survey and the Git Basics Survey. If you are not able to complete all the exercises, turn in your partial work for partial credit, or submit later for late credit.<br>
+All labs are due at 11:59pm the Friday following lab. For this lab you must set up your CSUChico-CSCI211 GitHub account, and submit `hello.cpp`, `add.cpp`, and `print.cpp` to [INGInious](https://inginious.csuchico.edu/) (there is a separate submission link for each exercise). You should also aim to complete two quizzes at least once: the 211 Linux Commands and Testing Quiz and the Git Basics Quiz. If you are not able to complete all the exercises, turn in your partial work for partial credit, or submit later for late credit.<br>
 
 Optional but recommended submission step: add, commit, and push your code to GitHub (the `add` command with the `-A` option updates all files in the working tree):
 ```
