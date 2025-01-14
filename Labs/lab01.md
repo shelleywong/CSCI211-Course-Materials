@@ -19,7 +19,7 @@ Lab 01 Exercises:
 * [Exercise 3: Addition](#exercise-3-addition) (lab01_add)
 * [Exercise 4: Say Hello](#exercise-4-say-hello) (lab01_print)
 
-> Note: To get full credit for this lab, you must set up a CSUChico-CSCI211 GitHub account and update the README.md file (exercise 1), submit 3 files to INGInious (exercises 2, 3, 4).
+> Note: To get full credit for this lab, you must set up a CSUChico-CSCI211 GitHub account and update the README.md file (exercise 1), submit 3 files to INGInious (exercises 2, 3, 4), and complete the following two quizzes.
 
 Lab 01 Quiz Exercises:
 * [Exercise 5: Linux Commands and Testing Quiz](#exercise-5-linux-commands-and-testing-quiz)
