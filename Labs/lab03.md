@@ -3,127 +3,40 @@
 * Introducing the Linux make utility<br>
 * Practice Creating C++ Objects<br>
 
+Lab 03 Quiz Exercises:
+* [Exercises 1 and 2: Make Utility Quiz](#exercises-1-and-2-make-utility-quiz) (lab03_hello, lab03_sentence)
+
+> Note: All quizzes can be found on Canvas. Lab quiz exercises may be completed any time before the end of the semester for full credit. Multiple attempts are allowed; I will keep your highest score. Lab 03, Exercises 1 and 2 are combined into one quiz (the Make Utility Quiz). It is recommended that you complete the Make Utility Quiz at least once BEFORE completing Lab 03, Exercises 3-5. If you do not do as well as you'd like on the quiz, feel free to complete the quiz again at a later time.
+
 Lab 03 Exercises:
-* [Exercise 1: Simple Makefile](#exercise-1-simple-makefile) (lab03_hello)
-* [Exercise 2: Makefile With Object Files](#exercise-2-makefile-with-object-files) (lab03_sentence)
 * [Exercise 3: Create Your Own Makefile](#exercise-3-create-your-own-makefile) (lab03_makefile)
 * [Exercise 4: Create a Course Class](#exercise-4-create-a-course-class) (lab03_object, lab03_course)
 * [Exercise 5: Create Class Video for P2](#exercise-5-create-class-video-for-P2) (lab03_video)
 
-> Note: To get full credit for this lab, you must complete a Google Survey (for exercises 1 and 2) and submit several files to INGInious (exercises 3, 4, and 5).
+> Note: To get full credit for this lab, you must complete a Canvas quiz (for exercises 1 and 2) and submit several files to INGInious (exercises 3, 4, and 5).
 
-## Exercise 1: Simple Makefile
+## Exercises 1 and 2: Make Utility Quiz
 
-* Read the [Overview of make](https://github.com/shelleywong/CSCI211-Course-Materials/blob/main/guides/make.md) guide before completing Lab 03, Exercises 1, 2, and 3.<br>
+The Make Utility Quiz (Lab 03, Exercises 1 and 2) is meant to give you some practice and familiarize you with the make utility and Makefiles. It is recommended that you complete the Make Utility Quiz at least once BEFORE completing Lab 03, Exercises 3-5. If you do not do as well as you'd like on the quiz, feel free to complete the quiz again at a later time. If you want to walk through the lab quiz again, run the command `make clean` in both the lab03_hello directory and the lab03_sentence directory before progressing through the steps of the lab quiz.
 
-\* You must complete this [Google Survey](https://docs.google.com/forms/d/e/1FAIpQLSft0f3fr4rMs0LIK2KWWbEs2EMYqQSBPFYjAcQzJWgQM3eq_A/viewform?usp=sf_link) to get credit for Exercises 1 & 2. Section 1 of the survey includes some general questions about Makefiles and the make utility. Section 2 includes questions corresponding to Lab 03, Exercise 1. Section 3 includes questions corresponding to Lab 03, Exercise 2. \*<br>
+Make Utility Resources:
+* Read the [Overview of make](https://github.com/shelleywong/CSCI211-Course-Materials/blob/main/guides/make.md) guide before completing the Make Utility Quiz. This quiz will ask you to test out commands yourself. You should run the commands in a Unix shell (e.g. ecc-linux or a Linux VM).<br>
 
-Note: You will need to be logged in to your \@mail.csuchico.edu or \@csuchico.edu Google account in order to take the Google Survey. If you get a message that you are unable to access the survey, try using your Chico portal username and password to login to Google. If you are not sure how to proceed, feel free to ask for help!<br>
+* Section 1 (questions 1 - 4):
+  * This section includes general overview questions about the make utility and Makefiles. The Overview of make should be helpful for this section.
+* Section 2 (questions 5 - 9):
+  * Complete these questions in the lab03_hello directory (type in the commands and follow the prompts in the questions)
+  * These questions correspond with Lab 03, Exercise 1 (Simple Makefile)
+  * These questions should be completed in order. Ask the instructor if you are getting any output that does not make sense to you.
+* Section 3 (questions 10 -17):
+  * Complete these questions in the lab03_sentence directory (type in the commands and follow the prompts in the questions)
+  * These questions correspond with Lab 03, Exercise 2 (Makefile with Object Files)
+  * These questions should be completed in order. Ask the instructor if you are getting any output that does not make sense to you.
 
-Go to your CSCI211 repo and open the `211/lab03_hello/` directory (your path may vary):
-```
-$ cd 211/lab03_hello
-```
+After you have completed the Make Utility Quiz, you have successfully completed Lab 03, Exercises 1 and 2 (Exercises 1: Simple Makefiles, using the lab03_hello directory and Exercise 2: Makefile With Object Files, using the lab03_sentence directory).
 
-1. Type the command:
-```
-$ make
-```
-ON SURVEY: What happened the first time you typed `make`?
+Reminder: the Make Utility Quiz can be found in Canvas.
 
-2. Type the command again:
-```
-$ make    
-```
-ON SURVEY: What happened the second time you typed `make`? Why?
-
-3. ON SURVEY: The next instruction uses the Linux `touch` command. What does the `touch` command do? Hint: you can type the command `man touch` in the terminal to look at the manual page for `touch`.
-
-4. Look at the dates on the files `hello` and hello.cpp:
-```
-$ ls -l
-```
-When `hello` is newer than hello.cpp, make does not try to recreate it<br>
-
-Change the date on hello.cpp using the touch command:
-```
-$ touch hello.cpp
-```
-Touch just updates the last date changed to the current time<br>
-
-Now look at the dates again:
-```
-$ ls -l
-```
-Type `make` again. Think about what you expect to happen this time<br>
-```
-$ make
-```
-ON SURVEY: What happened after you executed `touch hello.cpp` and typed `make`? Why?
-
-5. Now edit the file hello.cpp (using any editor such as vim, atom, or vscode) and make some change (for example: change the text that is printed to say, "Hola, mundo!"<br>
-
-Make sure you save the file<br>
-
-Now type:
-```
-$ make
-```
-ON SURVEY: What happened after you edited hello.cpp and then typed `make` again? Why?
-
-## Exercise 2: Makefile With Object Files
-\* You must complete the rest of the Google Survey to get credit \*
-
-Go to the lab03_sentence directory. If you're still in the lab03_hello folder, type:
-
-```
-$ cd ../lab03_sentence
-```
-
-The ".." means the parent directory (the parent of the current directory).  Alternatively you could have used the full path (e.g. ~/211/lab03_sentence)
-
-1. Look at the files in the lab03_sentence directory, including the Makefile and the source code files (main.cpp, sentence.cpp, and sentence.h). You can use the `cat` command to display file contents in the terminal (e.g. `cat main.cpp`) or open up each file using the editor of your choice.<br>s
-
-ON SURVEY: Why does main.o depend on sentence.h?
-
-2. Type:
-```
-$ make
-```
-
-ON SURVEY: What files were created after you typed `make` for the first time? <br>
-
-3. Now type:
-```
-$ touch sentence.h
-```
-Then type:
-```
-$ make
-```
-ON SURVEY: What commands were run when you typed `make` after typing `touch sentence.h`?
-
-4. ON SURVEY: What files were recreated when you typed `make` after typing `touch sentence.h`?
-
-5. ON SURVEY: Why were these specific commands run (again) and files created (again) when sentence.h was touched/changed? Look carefully at the Makefile.<br>
-
-This is an important aspect of make, ask if you don't understand why!<br>
-
-6. Now type:
-```
-$ touch main.cpp
-```
-Then type:
-```
-$ make
-```
-ON SURVEY: What files were recreated when you typed `make` after typing `touch main.cpp`?
-
-7. ON SURVEY: Which command did NOT need to be run again when you used the `make` utility after typing `touch main.cpp`?
-
-8. ON SURVEY: Why did a command NOT need to be run again when main.cpp was touched/changed?<br>
-
-\* Remember to submit the Google Form with your responses to Exercise 1 & 2 \*
 
 ## Exercise 3: Create Your Own Makefile
 The directory `lab03_makefile` (in the CSCI211 starter-repo) contains a program that uses two different objects: class Foo (in foo.h and foo.cpp) and class Bar (in bar.h and bar.cpp).  Create a makefile that compiles this program.<br>
@@ -236,7 +149,7 @@ If you finish the lab exercises, you can work on your Video (P2) assignment.  If
 
 ## Lab 03 Submissions
 
-All labs are due at 11:59pm the Friday following lab. For this lab you must complete the Google Survey (Exercises 1 and 2) and submit your solutions for Exercise 3, 4, and 5 to [INGInious](https://inginious.csuchico.edu/). If you are not able to complete all the exercises, turn in your partial work for partial credit, or submit later for late credit.<br>
+All labs are due at 11:59pm the Friday following lab. For this lab you must complete the Make Utility Quiz (Exercises 1 and 2) on Canvas and submit your solutions for Exercise 3, 4, and 5 to [INGInious](https://inginious.csuchico.edu/). If you are not able to complete all the exercises, turn in your partial work for partial credit, or submit later for late credit. There is no late penalty for quizzes, but the quiz should still be completed.<br>
 
 Optional but recommended submission step: add, commit, and push your code to GitHub (the `add` command with the `-A` option updates all files in the working tree):
 ```
