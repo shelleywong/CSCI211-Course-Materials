@@ -25,7 +25,7 @@ Lab 01 Quizzes:
 * [Linux Commands and Testing Quiz](#linux-commands-and-testing-quiz)
 * [Git Basics Quiz](#git-basics-quiz)
 
-> Note: Canvas quizzes may be completed any time before the end of the semester for full credit. Multiple attempts are allowed; I will keep your highest score. It is recommended that you complete the Linux Commands and Testing Quiz and the Git Basics Quiz soon after you have completed the Lab 01 Exercises; however, if you are feeling overwhelmed, it is alright if you wait to complete these quizzes at a later time.
+> Note: All quizzes can be found on Canvas. Lab quizzes may be completed any time before the end of the semester for full credit. Multiple attempts are allowed; I will keep your highest score. It is recommended that you complete the Linux Commands and Testing Quiz and the Git Basics Quiz soon after you have completed the Lab 01 Exercises; however, if you are feeling overwhelmed, it is alright if you wait to complete these quizzes at a later time.
 
 ## Exercise 1: Setting up your CSCI 211 environment
 
