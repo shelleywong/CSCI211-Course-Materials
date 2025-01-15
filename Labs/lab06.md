@@ -3,18 +3,19 @@
 * Introduction to the GNU gdb debugger<br>
 * Exceptions practice<br>
 
+Lab 06 Quiz Exercises:
+* [Exercises 1, 2, 3, and 4: GDB Quiz](#exercises-1-2-3-and-4-gdb-quiz) (lab06_gdb)
+
+> Note: All quizzes can be found on Canvas. Lab quiz exercises may be completed any time before the end of the semester for full credit. Multiple attempts are allowed; I will keep your highest score. Lab 04, Exercises 1, 2, 3, and 4 are combined into one quiz (the GDB (GNU Debuggers) Quiz). It is recommended that you complete the GDB Quiz at least once BEFORE completing Lab 06, Exercise 5. If you do not do as well as you'd like on the quiz, feel free to complete the quiz again at a later time.
+
 Lab 06 Exercises:
-* [Exercise 1: Debugging Practice Part 1](#exercise-1-debugging-practice-part-1) (lab06_gdb/p1)
-* [Exercise 2: Debugging Practice Part 2](#exercise-2-debugging-practice-part-2) (lab06_gdb/p2)
-* [Exercise 3: Debugging Practice Part 3](#exercise-3-debugging-practice-part-3) (lab06_gdb/p3)
-* [Exercise 4: Debugging Practice Part 4](#exercise-4-debugging-practice-part-4) (lab06_gdb/p4)
 * [Exercise 5: An Exceptional Program](#exercise-5-an-exceptional-program) (lab06_exceptions)
   * [Part 1: Getting Started](#part-1-getting-started)
   * [Part 2: Loop](#part-2-loop)
   * [Part 3: String Posers](#part-3-string-posers)
   * [Part 4: Bad Numbres](#part-4-bad-numbres)
 
-> Note: To get full credit for this lab, you must complete the GDB Survey (exercises 1-4) and submit one file to INGInious (exercise 5).
+> Note: To get full credit for this lab, you must complete the GDB Quiz (exercises 1-4) and submit one file to INGInious (exercise 5).
 
 ## Goals
 
@@ -22,176 +23,43 @@ Learn the basics of the [GNU Project Debugger](https://www.gnu.org/software/gdb/
 
 Learn about C++ exceptions, which provide a way to react to exceptional circumstances (like runtime errors) that arise during program execution, and allow you to gracefully handle unforeseen conditions without crashing the program.
 
-> Note: You will need to be logged in to your \@mail.csuchico.edu Google account in order to take the Google Survey. If you get a message that you are unable to access the survey, try using your Chico portal username and password to login to Google. If you are not sure how to proceed, feel free to ask for help!<br>
+## Exercises 1, 2, 3, and 4: GDB Quiz
 
-## Exercise Setup
+The GDB Quiz is meant to give you some practice and familiarize you with GDB, the GNU project debugger that runs on Unix-like systems. GDB allows you to see what is going on 'inside' a program while it executes, or see what the program is doing at the moment it crashes. GDB can be used to help identify and resolve errors, bugs, and issues within your C++ programs (it also works for many other programming languages). Debugging tools like GDB are essential in the software development process!<br>
 
-* Read the [GDB Guide](https://github.com/shelleywong/CSCI211-Course-Materials/blob/main/guides/gdb.md) before completing Lab 06, Exercises 1, 2, 3, and 4.<br>
+It is recommended that you complete the GDB Quiz during the week you are working on Lab 06. If you do not do as well as you'd like on the quiz, feel free to complete the quiz again at a later time. If you want to walk through the lab quiz again, run the command make clean in the `lab06_gdb` directory before progressing through the steps of the lab quiz.<br>
 
-Complete the following exercises with gdb. Then, if you have time and are interested, you can try completing the same exercises with ddd. This lab writeup includes some additional information and hints that are not shown in the Google survey, so make sure to keep a tab open for this lab while you are taking the survey.<br>
+**Note:** You cannot do this lab on macOS or Windows unless you have GNU's g++ and gdb installed. These are no longer part of xcode, so macOS users would need to download and install them using [homebrew](https://brew.sh/). It may take over an hour to install g++ using homebrew. For Windows users, [MinGW](https://rpg.hamsterrepublic.com/ohrrpgce/GDB_on_Windows) is a potential option; however, I have heard reports that it is prone to crashing when certain commands are used. **I recommend you use ecc-linux or a comparable Unix-like system to complete the Lab 06 GDB Quiz**.
 
-**Note for SSH users**: ddd has a graphical window interface and therefore will not load via SSH (a text-based protocol).<br>
+### GDB Resources
 
-**Note for Mac users**: You cannot do this lab on a Mac unless you have GNU's g++ and gdb installed. These are no longer part of xcode, you have to download and install them using [homebrew](https://brew.sh/). It takes over an hour to install g++ using homebrew. **I recommend you use ecc-linux or a comparable Unix-like system** to complete Lab 06.<br>
+* [GNU Project Debugger](https://www.sourceware.org/gdb/) - the official homepage for GDB.
+* [GDB Guide](https://github.com/shelleywong/CSCI211-Course-Materials/blob/main/guides/gdb.md) - My guide for CSCI 211 students learning how to use gdb. There is a lot that you can do with GDB, so this guide focuses on basic gdb usage that you will use in the GDB Quiz. It is a good starting point if you are working on a program and run into common errors (like segfaults).
+  * The GDB Guide mentions ddd, which provides a graphical user interface option for running gdb. After you have completed the GDB Quiz with gdb, you may try ddd if you would like; however, ddd has a graphical window interface and therefore will not load via SSH (a text-based protocol). This means you will likely not be able to use ddd on ecc-linux.<br>
 
-I have created several sample programs for you to use with the debugger. You can find them in your CSCI211 starter-repo `211/lab06_gdb/` directory.<br>
+### GDB Quiz Overview
 
-You can compile all the programs within the lab06_gdb directory with one call to `make`:
+The GDB Quiz can be found on Canvas. This quiz contains 4 parts. All parts of this quiz should be completed in the `lab06_gdb` directory. It is recommended that you read the [GDB Guide](https://github.com/shelleywong/CSCI211-Course-Materials/blob/main/guides/gdb.md) before completing Lab 06, Exercises 1, 2, 3, and 4 (you may reference the GDB Resources while you are completing the quiz as well). Note that the exercises use sample programs, specifically created for you to practice with the debugger (this means there are some errors built into the examples, and you should NOT necessarily follow these examples in your own code). All of these programs can be found in your CSCI211 repo, in the `211/lab06_gdb/` directory.
+
+* Before beginning the GDB Quiz:
+  * Move into the `211/lab06_gdb/` directory.
+  * Compile all the programs within the `lab06_gdb` directory with one call to `make`:
 ```
 $ cd ~/211/lab06_gdb
 $ make
 ```
-`make` should not issue any errors -- let me know if you get errors. After running `make`, you should be able to list the contents of the folder and see that four executables have been generated (named `p1`, `p2`, `p3`, and `p4`).<br>
+  * `make` should not issue any errors -- let me know if you get errors. After running `make`, you should be able to list the contents of the folder and see that four executables have been generated (named `p1`, `p2`, `p3`, and `p4`).<br>
 
-Nothing will be submitted to INGInious for Lab 06, Exercises 1-4, but you must complete [this GDB survey](https://docs.google.com/forms/d/e/1FAIpQLSdNNjIHgqtmHd_zsGy12nYTealx90JQA_FDU_SFu9Dkrp3awg/viewform?usp=sf_link).
+* Part 1 (questions 1-4):
+  * These questions correspond with Lab 06, Exercise 1 and utilize the `p1` program that is inside the `lab06_gdb` directory
+* Part 2 (questions 5-14):
+  * These questions correspond with Lab 06, Exercise 2 and utilize the `p2` program that is inside the `lab06_gdb` directory
+* Part 3 (questions 15-21):
+  * These questions correspond with Lab 06, Exercise 3 and utilize the `p3` program that is inside the `lab06_gdb` directory
+* Part 4 (questions 22-24):
+  * These questions correspond with Lab 06, Exercise 4 and utilize the `p4` program that is inside the `lab06_gdb` directory
 
-> Note: You will need to be logged in to your \@mail.csuchico.edu or \@csuchico.edu Google account in order to take this Google Survey.
-
-> Note: The programs in this lab were created to produce errors, so that you can get some practice working with gdb. Don't spend too much time trying to figure out what the program is "supposed" to do -- in some cases, the code is an example of something you should NOT do in your own programs.
-
-## Exercise 1: Debugging Practice Part 1
-
-* Start gdb with the executable p1:
-```
-$ gdb p1
-```
-* Type `run` or `r` at the (gdb) to run this program
-
-1. ON SURVEY: What error causes this program to terminate?
-2. ON SURVEY: On what line does this program crash?
-
-* Type `list` or `l` at the (gdb) to list the source code
-
-3. ON SURVEY: Explain the defect in the program that causes this problem.
-
-* Type `quit` or `q` at the (gdb) to quit the debugger
-
-4. ON SURVEY: What would you need to do to avoid this error?
-
-* Note: the general solution to avoiding this error applies to any program where you need to dereference pointers, not just to a simple and mostly pointless program like p1.cpp.
-
-## Exercise 2: Debugging Practice Part 2
-
-* Start gdb with executable p2:
-```
-$ gdb p2
-```
-* Type `run` at the (gdb) to run this program
-
-1. ON SURVEY: What error caused this program to terminate?
-
-* Type `where` at the (gdb) to see the list of functions that were called
-
-2. ON SURVEY: What functions were called before the program crashed?
-
-* Notice that the `where` command told you the arguments to the functions f() and g()
-
-* You can use the `print` or `p` command to print the value of a variable:
-```
-(gdb) p b
-$1 = 52
-```
-3. ON SURVEY: What **GDB command** would you type to print the address of the variable b? (Hint: Think about how you would print the address of a variable in normal C++ code, and combine that with a GDB command for printing variables).
-
-4. ON SURVEY: What is the **address** of the variable b? (Note: The memory address where a variable is located can change each time a program is run, so your address may not be exactly the same as mine -- the OS is choosing the best location based on the current applications being managed).
-
-5. ON SURVEY: Remember that a pointer is a variable whose value is the address of another variable. What GDB command would you type to print the **value** of the variable ptr?
-
-6. ON SURVEY: What is the **value** of the variable ptr?
-
-7. ON SURVEY: What GDB command would you type to print the **address** of the variable ptr?
-
-* Now try to dereference ptr (get the value of the variable that is located at the memory address pointed to by ptr) and print this value:
-```
-(gdb) p *ptr
-```
-
-8. ON SURVEY: What information is provided when you try to print *ptr? How does this relate to the error that caused the program to terminate?
-
-9. ON SURVEY: Now type `print a` to try to print the value of the variable `a`. What gets printed?
-
-* Note that it the value of a will not be printed at this point, because gdb is currently pointing to the code in function f(). If you use the `up` command, it will be pointing at the code in the function that called f().<br>
-
-Type `up` at the (gdb), then type `print a`<br>
-
-10. ON SURVEY: What gets printed when you type `print a` after using the `up` command to move up to the function that called f()?
-
-
-## Exercise 3: Debugging Practice Part 3
-
-* Start gdb with the executable p3
-```
-$ gdb p3
-```
-
-* Type `run` at the (gdb) to run this program
-
-1. ON SURVEY: This program has a segmentation fault. In what function does the error occur?
-
-* Quit gdb and then restart gdb with the executable p3. Before you type `run`, set a breakpoint at the entry to the function where the error occurred. This will allow you to walk through the function step-by-step. If you want to, you can set multiple breakpoints. For example, the following command sets a breakpoint at the beginning of `main()`:
-```
-(gdb) break main
-```
-
-2. ON SURVEY: What do you type at the (gdb) prompt to set a breakpoint at the function where the error occurred?
-
-* Now type `run`
-```
-(gdb) run
-```
-* The program will run until the first breakpoint it encounters. Then you can use either `next` (`n`) or `step` (`s`) to walk through the program after the breakpoint, one instruction at a time. `step` will dive into any function encountered along the way, while `next` will call functions but not dive into them (unless you've set a breakpoint at the function).
-```
-(gdb) n
-(gdb) s
-```
-
-* gdb will stop when it reaches the segmentation fault.
-
-* Try printing the different variables. You can print any variable that is accessible from your current location.
-```
-(gdb) p i
-(gdb) p m_size
-(gdb) p m_values
-(gdb) p *m_values
-(gdb) p m_values[0]
-```
-
-* Make sure you understand what information gdb is giving you. You may need to run gdb several times with different breakpoints and different commands. If you are still not sure what's happening, feel free to ask for help.
-
-3. ON SURVEY: What gets printed when you try to print the value of the variable `i`?
-
-4. ON SURVEY: Now type `print m_values[0]` to try to print the value at the 0 index of the m_values array. What gets printed?
-
-5. ON SURVEY: Now type `print *m_values[0]` to try to print the value at the 0 index of the m_values array. What gets printed?
-
-6. ON SURVEY: Now that you have printed several different variables, can you explain why this program has a segmentation fault?
-
-7. ON SURVEY: How can you update the program to get rid of the segmentation fault? (Hint: you only need to change one thing, and it is NOT on the line where the error occurred).
-
-## Exercise 4: Debugging Practice Part 4
-
-* Start gdb with the executable p4
-```
-$ gdb p4
-```
-* Type `run` at the (gdb) to run this program
-
-* Type `where` at the (gdb)
-
-1. ON SURVEY: What is different between running p4 with gdb and running p1 with gdb?
-
-* If you have not already done so, quit gdb (type `q` at the (gdb), followed by `y`).
-
-* List the contents of the lab06_gdb directory, using the `-h` and `-l` options to use a long listing, human-readable format:
-```
-$ ls -hl
-```
-
-* You should see a detailed listing of files and directories. Look for the sizes of the `p1` and `p4` executables. The size will be listed after the owner and group names and before the last modification date. If you just use `ls -l`, you will see the size in bytes; using `-hl` prints the size in a more human readable format (e.g. `1K`, `234M`, `2G`, etc).
-
-2. ON SURVEY: Is the p1 executable smaller or larger than the p4 executable?
-
-3. ON SURVEY: Look at the `Makefile` in the `lab06_gdb` directory. How is the recipe for generating the `p4` executable different from the recipe for generating the `p1` executable?
+After you have completed the GDB Quiz, you have successfully completed Lab 06, Exercises 1, 2, 3, and 4 (Debugging Practice Parts 1-4, using the lab06_gdb directory). Nothing will be submitted to INGInious for Lab 06, Exercises 1-4.
 
 ***
 
