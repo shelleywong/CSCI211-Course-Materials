@@ -119,7 +119,7 @@ $ git config --global user.email johndoe@example.com
   - Change the current working directory to the location where you want the cloned directory to exist on your local machine.
   - Type `git clone`, paste the URL you copied earlier, and press Enter:
 ```
-$ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
+$ git clone git@github.com:CSUChico-CSCI211/CSCI211-Semester-FirstName-LastName.git
 ```
 
 Now you should have a local instance of your CSCI211 repository! You can use the `ls` command to see the CSCI211 repo in your current directory. Complete the next steps to finish Lab 01, Exercise 1.<br>
