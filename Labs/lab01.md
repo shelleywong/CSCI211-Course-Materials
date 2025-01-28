@@ -179,7 +179,7 @@ $ git push origin main
 
 > Note: "main" is the default branch name. You may see older versions of git using "master" as the default branch name. For CSCI211, it is fine if you do all of your work on the main branch.<br>
 
-9. Visit your CSCI211 GitHub repo in a web browser and confirm that your changes have been added to your remote repo (reload the page if necessary). You should be able to see your changes in the README.md file. You can also click on the "commits" button (below the green "< > Code" button) to see the history of all the commits to this repository, organized by date. The README.md file should look something like this:
+9. Visit your CSCI211 GitHub repo in a web browser and confirm that your changes have been added to your remote repo (reload the page if necessary). You should be able to see your changes in the README.md file. You can also click on the "commits" button (below the green "< > Code" button) to see the history of all the commits to this repository, organized by date. The README.md file should look something like this (if the README contains other information as well, that is fine):
 
 ![README example](/assets/CSCI211-README-Example.png)
 
@@ -367,8 +367,9 @@ Reminder: the Git Basics Quiz can be found in Canvas.
 
 All labs are due at 11:59pm the Friday following lab. For this lab you must set up your CSUChico-CSCI211 GitHub account, and submit `hello.cpp`, `add.cpp`, and `print.cpp` to [INGInious](https://inginious.csuchico.edu/) (there is a separate submission link for each exercise). If you are not able to complete all the exercises, turn in your partial work for partial credit, or submit later for late credit. You should also aim to complete the two Lab 01 quiz exercises at least once: the 211 Linux Commands and Testing Quiz and the Git Basics Quiz, both on Canvas. There is no late penalty for quizzes, but the quizzes should still be completed.<br>
 
-Optional but recommended submission step: add, commit, and push your code to GitHub (the `add` command with the `-A` option updates all files in the working tree):
+Optional but recommended submission step: confirm the changes that have been made to the repo and add, commit, and push your code to GitHub (the `add` command with the `-A` option updates all files in the working tree):
 ```
+$ git status
 $ git add -A
 $ git commit -m "completes lab01 exercises"
 $ git push origin main
