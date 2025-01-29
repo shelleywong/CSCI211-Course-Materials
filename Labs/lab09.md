@@ -118,8 +118,9 @@ Turn in `pqueue.h`, `pqueue.cpp`, `cust.h` and `cust.cpp`.
 
 All labs are due at 11:59pm the Friday following lab. For this lab you must submit `cust.h` and `cust.cpp` fo Exercise 1, and `pqueue.h`, `pqueue.cpp`, `cust.h` and `cust.cpp` for Exercise 2 to [INGInious](https://inginious.csuchico.edu/). If you are not able to complete all the exercises, turn in your partial work for partial credit, or submit later for late credit.<br>
 
-Optional but recommended submission step: add, commit, and push your code to GitHub (the `add` command with the `-A` option updates all files in the working tree):
+Optional but recommended submission step: confirm the changes that have been made to the repo using `git status` and then add, commit, and push your code to GitHub (the `add` command with the `-A` option updates all files in the working tree):
 ```
+$ git status
 $ git add -A
 $ git commit -m "completes lab09 exercises"
 $ git push origin main

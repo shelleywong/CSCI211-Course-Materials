@@ -70,8 +70,9 @@ Check your results against the three test cases that are available in your CSCI2
 
 All labs are due at 11:59pm the Friday following lab. For this lab you must submit `dstack.h`, `dstack.cpp`, and `reverse.cpp` to [INGInious](https://inginious.csuchico.edu/) (turn in reverse.cpp even if you use my version -- this allows you to change it if you want to). If you are not able to complete all the exercises, turn in your partial work for partial credit, or submit later for late credit.<br>
 
-Optional but recommended submission step: add, commit, and push your code to GitHub (the `add` command with the `-A` option updates all files in the working tree):
+Optional but recommended submission step: confirm the changes that have been made to the repo using `git status` and then add, commit, and push your code to GitHub (the `add` command with the `-A` option updates all files in the working tree):
 ```
+$ git status
 $ git add -A
 $ git commit -m "completes lab07 exercises"
 $ git push origin main

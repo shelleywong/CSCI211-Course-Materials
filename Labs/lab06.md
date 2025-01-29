@@ -195,8 +195,9 @@ Once you are finished, submit your `main.cpp` to INGInious.
 
 All labs are due at 11:59pm the Friday following lab. For Lab 06, Exercises 1, 2, 3, and 4 you must complete the GDB Survey. For Lab 06, Exercise 5, you must submit `main.cpp` (Parts 1, 2, 3, and 4) to [INGInious](https://inginious.csuchico.edu/).<br>
 
-Optional but recommended submission step: add, commit, and push your code to GitHub (the `add` command with the `-A` option updates all files in the working tree):
+Optional but recommended submission step: confirm the changes that have been made to the repo using `git status` and then add, commit, and push your code to GitHub (the `add` command with the `-A` option updates all files in the working tree):
 ```
+$ git status
 $ git add -A
 $ git commit -m "completes lab06 exercises"
 $ git push origin main

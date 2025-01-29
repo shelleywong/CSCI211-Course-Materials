@@ -82,8 +82,9 @@ If you finish early and would like more practice implementing recursive methods,
 
 All labs are due at 11:59pm the Friday following lab. For this lab you must submit `equal.cpp` (Exercise 1), `largest.cpp` (Exercise 2), `sorted.cpp` (Exercise 3), and `isint.cpp` (Exercise 4) to [INGInious](https://inginious.csuchico.edu/). If you are not able to complete all the exercises, turn in your partial work for partial credit, or submit later for late credit.<br>
 
-Optional but recommended submission step: add, commit, and push your code to GitHub (the `add` command with the `-A` option updates all files in the working tree):
+Optional but recommended submission step: confirm the changes that have been made to the repo using `git status` and then add, commit, and push your code to GitHub (the `add` command with the `-A` option updates all files in the working tree):
 ```
+$ git status
 $ git add -A
 $ git commit -m "completes lab10 exercises"
 $ git push origin main

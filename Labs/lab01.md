@@ -369,7 +369,7 @@ Reminder: the Git Basics Quiz can be found in Canvas.
 
 All labs are due at 11:59pm the Friday following lab. For this lab you must set up your CSUChico-CSCI211 GitHub account, and submit `hello.cpp`, `add.cpp`, and `print.cpp` to [INGInious](https://inginious.csuchico.edu/) (there is a separate submission link for each exercise). If you are not able to complete all the exercises, turn in your partial work for partial credit, or submit later for late credit. You should also aim to complete the two Lab 01 quiz exercises at least once: the 211 Linux Commands and Testing Quiz and the Git Basics Quiz, both on Canvas. There is no late penalty for quizzes, but the quizzes should still be completed.<br>
 
-Optional but recommended submission step: confirm the changes that have been made to the repo and add, commit, and push your code to GitHub (the `add` command with the `-A` option updates all files in the working tree):
+Optional but recommended submission step: confirm the changes that have been made to the repo using `git status` and then add, commit, and push your code to GitHub (the `add` command with the `-A` option updates all files in the working tree):
 ```
 $ git status
 $ git add -A

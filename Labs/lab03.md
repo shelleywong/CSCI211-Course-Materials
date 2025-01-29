@@ -151,8 +151,9 @@ If you finish the lab exercises, you can work on your Video (P2) assignment.  If
 
 All labs are due at 11:59pm the Friday following lab. For this lab you must complete the Make Utility Quiz (Exercises 1 and 2) on Canvas and submit your solutions for Exercise 3, 4, and 5 to [INGInious](https://inginious.csuchico.edu/). If you are not able to complete all the exercises, turn in your partial work for partial credit, or submit later for late credit. There is no late penalty for quizzes, but the quiz should still be completed.<br>
 
-Optional but recommended submission step: add, commit, and push your code to GitHub (the `add` command with the `-A` option updates all files in the working tree):
+Optional but recommended submission step: confirm the changes that have been made to the repo using `git status` and then add, commit, and push your code to GitHub (the `add` command with the `-A` option updates all files in the working tree):
 ```
+$ git status
 $ git add -A
 $ git commit -m "completes lab03 exercises"
 $ git push origin main

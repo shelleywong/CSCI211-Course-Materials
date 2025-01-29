@@ -153,8 +153,9 @@ chart.cpp
 ```
 All programming assignments are **individual** assignments -- you are expected to complete and submit your own program.<br>
 
-Optional but recommended submission step: add, commit, and push your P1 code to GitHub (the `add` command with the `-A` option updates all files in the working tree):
+Optional but recommended submission step: confirm the changes that have been made to the repo using `git status` and then add, commit, and push your code to GitHub (the `add` command with the `-A` option updates all files in the working tree):
 ```
+$ git status
 $ git add -A
 $ git commit -m "<descriptive commit message>"
 $ git push origin main

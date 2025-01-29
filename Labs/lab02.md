@@ -224,8 +224,9 @@ If you have time left over, I recommend that you complete exercises 4 and 5 from
 
 All labs are due at 11:59pm the Friday following lab. For this lab you must turn in `to_text.cpp` and `even.cpp`. There is a separate submission link for each exercise on [INGInious](https://inginious.csuchico.edu/). If you are not able to complete all the exercises, turn in your partial work for partial credit, or submit later for late credit.<br>
 
-Optional but recommended submission step: add, commit, and push your code to GitHub (the `add` command with the `-A` option updates all files in the working tree):
+Optional but recommended submission step: confirm the changes that have been made to the repo using `git status` and then add, commit, and push your code to GitHub (the `add` command with the `-A` option updates all files in the working tree):
 ```
+$ git status
 $ git add -A
 $ git commit -m "completes lab02 exercises"
 $ git push origin main
