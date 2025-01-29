@@ -121,6 +121,8 @@ $ git config --global user.email johndoe@example.com
 ```
 $ git clone git@github.com:CSUChico-CSCI211/CSCI211-Semester-FirstName-LastName.git
 ```
+    - Note: If this is your first time connecting to GitHub (or another server), you will get a message that looks something like this: "The authenticity of host '...' can't be established." This is normal. You should be asked if you are you sure you want to continue connecting, and you should type in 'yes'. This will add GitHub to your list of known hosts.
+      - For more insight, you may be interested in reading this forum post: [SSH: The authenticity of host <host> can't be established](https://superuser.com/questions/421074/ssh-the-authenticity-of-host-host-cant-be-established)
 
 Now you should have a local instance of your CSCI211 repository! You can use the `ls` command to see the CSCI211 repo in your current directory. Complete the next steps to finish Lab 01, Exercise 1.<br>
 
