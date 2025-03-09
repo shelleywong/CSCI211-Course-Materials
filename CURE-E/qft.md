@@ -9,6 +9,8 @@ Using resources from [Right Question Institute](https://rightquestion.org/educat
 
 Part 1 of this activity (Question Formulation Technique) will be a group activity to help everyone ask and develop lots of questions that could be answered through the available datasets.
 
+How much experience do you have using [scientific practices](https://undsci.berkeley.edu/lessons/pdfs/complex_flow_handout.pdf)?
+
 ## CURE-E Project Proposal Overview
 
 Part 2 (Project Proposal), along with the Final Project, will be an individual activity. You will confirm which question you are focusing on, determine stakeholders, and find a dataset to work with. If you would like to, you can approach this project with a group mindset -- with everyone aiming to provide insights for a specific stakeholder, but each individual answering a different question for that stakeholder.
