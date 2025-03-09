@@ -40,7 +40,7 @@ Nowadays, we have access to vast amounts of data, but it can sometimes be diffic
 * **Historical weather data**
   * Example datasets:
     * `assets/ChicoUnivFarm-1906-2023.csv` (one station)
-    * `assets/chico-weather-2018-2022.csv` (several stations in the region)
+    * `assets/chico-weather-2005-2024.csv` (several stations in the region)
     * `assets/butte-weather-2014-2024.csv` (several stations in the region)
     * `assets/sac-airport-1998-2024.csv` (one station)
   * Each row displays the readings from a given day. Columns include station ID, station name, date, and data related to precipitation and air temperature.
