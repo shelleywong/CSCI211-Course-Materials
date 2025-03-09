@@ -52,6 +52,13 @@ Nowadays, we have access to vast amounts of data, but it can sometimes be diffic
     * `assets/UNRATE-BachelorDeg-Sep24.csv` (Unemployment Rate for people with a Bachelor's Degree and Higher (25 Yrs. & over), seasonally adjusted, percent, monthly)
     * `assets/AvgWeeksUnemployed-Sep24.csv` (Average Weeks Unemployed, seasonally adjusted, number of weeks, monthly)
     * `assets/StickyPriceCPI-Sep24.csv` (Sticky Price Consumer Price Index less Food and Energy, seasonally adjusted, percent change from a year ago, monthly)
+  * Other examples of economic datasets worth exploring:
+    * [Initial Claims (ICSA)](https://fred.stlouisfed.org/series/ICSA) - number of initial unemployment claims filed by unemployed individuals
+    * [Consumer Price Index for All Urban Consumers: All Items in U.S. City Average (CPIAUCSL)](https://fred.stlouisfed.org/series/CPIAUCSL) - a price index of a basket of goods and services paid by urban consumers (percent changes in the price index measure the inflation rate between any two time periods)
+    * [Personal Consumption Expenditures (PCE)](https://fred.stlouisfed.org/series/PCE) - a measure of consumer spending (this data shows the total amount in billions of dollars; it would also be useful to consider how much expenditures are increasing or decreasing between any two time periods)
+    * [Gross Domestic Product (GDP)](https://fred.stlouisfed.org/series/GDP) and [Real Gross Domestic Product (GDPC1)](https://fred.stlouisfed.org/series/GDPC1) - GDP is the total value of all goods and services produced in a given time period (a good gauge of consumer purchasing power), while real GDP is adjusted for inflation (a more accurate gauge of the change in production levels from one period to another).
+    * [Federal Funds Effective Rate (FEDFUNDS)](https://fred.stlouisfed.org/series/FEDFUNDS) - the interest rate at which depository institutions trade federal funds (balances held at Federal Reserve Banks) with each other overnight (it influences a wide range of market interest rates).
+    * [New Privately-Owned Housing Units Started: Total Units (HOUST)](https://fred.stlouisfed.org/series/HOUST) - tracks the number of new housing units being built (good indicator of the health of the housing market and the overall economy).
 
 These datasets are organized, but they may not be organized how you want them to be. Even given sorted data, it can still be challenging to find specific pieces of information, or discover answers to questions that previously had no known solution.<br>
 
