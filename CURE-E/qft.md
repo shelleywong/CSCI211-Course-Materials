@@ -1,4 +1,4 @@
-# Question Formulation Technique (QFT)
+# Question Formulation Technique (QFT) and CURE-E Project Proposal
 
 Based on **Cultivating a Culture of Entrepreneurship Mindset and Undergraduate Research – CEMUR**<br>
 Funded by The National Science Foundation’s Improving Undergraduate STEM Education: Hispanic-Serving Institutions (HSI Program) Award # 1953751<br>
@@ -21,10 +21,8 @@ The skill of question asking is far too rarely deliberately taught in school. Th
 
 You will need to develop a question that your CURE-E Final Project will set out to answer. This semester, you will focus on:
 
-* **Historical weather data**: [publicly available historical weather data](https://www.ncdc.noaa.gov/cdo-web/datasets) for Chico, CA or surrounding communities. This data is provided by the National Oceanic and Atmospheric Administration (NOAA). We can search for and request data using their [Climate Data Online Search](https://www.ncei.noaa.gov/cdo-web/search) tool.
-
-* **Fall 2024 Change**: [Many NCEI systems are unavailable until further notice due to Hurricane Helene's impacts to our NC data center.](https://www.ngdc.noaa.gov/)
-  * **Federal Reserve Economic Data**: [Federal Reserve Economic Data (FRED)](https://fred.stlouisfed.org/) (which includes US and international time series data that can be downloaded, graphed, and tracked) is provided by the Federal Reserve Bank of St. Louis. They offer data for the consumer price index, gross domestic product, inflation, the unemployment rate, and much more. If you are not sure what to focus on, I encourage you to look into data related to [unemployment](https://fred.stlouisfed.org/searchresults/?st=unemployment&isTst=1), which can provide valuable insights into labor market trends and economic health.
+* **Flight Delay Data**: [publicly available data on flight arrivals and delays at U.S. airports](https://www.kaggle.com/datasets/sriharshaeedala/airline-delay). This data is accessible through [Kaggle](https://www.kaggle.com/), with the data originally obtained from the Bureau of Transportation Statistics Airline Service Quality Performance 234 and licensed through [U.S. Government Works](https://www.usa.gov/government-copyright). The Bureau of Transportation Statistics provides more information for [Understanding the Reporting of Causes of Flight Delays and Cancellations](https://www.bts.gov/topics/airlines-and-airports/understanding-reporting-causes-flight-delays-and-cancellations).
+  * [Descriptions of the flight delay column headings](https://www.openintro.org/data/index.php?data=airline_delay)
 
 ## Attitude
 
@@ -34,105 +32,103 @@ Entrepreneurial Mindset: Flexible and Adaptable, Creative and Innovative, Initia
 
 We will use a shared Google Doc to complete this assignment(link on Canvas).
 - Divide yourselves into groups of 3-4 students
-- Decide how you will complete this exercise (e.g. Which dataset will you focus on? Who will type the questions? How are you making sure that everyone gets a chance to provide input?)
+- Decide how you will complete this exercise (e.g. Who will type the questions? How are you making sure that everyone gets a chance to provide input?)
 - List the names of each team member (first and last)<br>
 
-Nowadays, we have access to vast amounts of data, but it can sometimes be difficult to extract useful information from that data. Take a look at the example datasets:
+Nowadays, we have access to vast amounts of data, but it can sometimes be difficult to extract useful information from that data. Take a look at the provided dataset:
 
-* **Historical weather data**
-  * Example datasets:
-    * `assets/ChicoUnivFarm-1906-2023.csv` (one station)
-    * `assets/chico-weather-2005-2024.csv` (several stations in the region)
-    * `assets/butte-weather-2014-2024.csv` (several stations in the region)
-    * `assets/sac-airport-1998-2024.csv` (one station)
-  * Each row displays the readings from a given day. Columns include station ID, station name, date, and data related to precipitation and air temperature.
-  * The [Global Historical Climatology Network Daily Documentation](https://www.ncei.noaa.gov/pub/data/cdo/documentation/GHCND_documentation.pdf) can be used as a reference.
+* `assets/Airline_Delay_Cause.csv`
+  * Each row displays airline arrival and delay data for U.S. airports, categorized by carrier, in a specific year and month (August 2013 - August 2023).
+  * Columns include information for the date, carrier, airport, number of arriving flights, number of total delays, number of delays for specific causes (due to air carrier, weather, National Aviation System, security breach), and total time (in minutes) for delays due to each cause.
+  * The [structure of the dataset](https://www.kaggle.com/datasets/sriharshaeedala/airline-delay/data) is described in the **About Dataset** section; these [descriptions of the flight delay column headings](https://www.openintro.org/data/index.php?data=airline_delay) can also be used as a reference.
 
-* **Historical economic data**
-  * Example datasets:
-    * `assets/UNRATE-SeasonallyAdjusted-Sep2024.csv` (Unemployment Rate, seasonally adjusted, percent, monthly)
-    * `assets/UNRATE-BachelorDeg-Sep24.csv` (Unemployment Rate for people with a Bachelor's Degree and Higher (25 Yrs. & over), seasonally adjusted, percent, monthly)
-    * `assets/AvgWeeksUnemployed-Sep24.csv` (Average Weeks Unemployed, seasonally adjusted, number of weeks, monthly)
-    * `assets/StickyPriceCPI-Sep24.csv` (Sticky Price Consumer Price Index less Food and Energy, seasonally adjusted, percent change from a year ago, monthly)
-  * Other examples of economic datasets worth exploring:
-    * [Initial Claims (ICSA)](https://fred.stlouisfed.org/series/ICSA) - number of initial unemployment claims filed by unemployed individuals
-    * [Consumer Price Index for All Urban Consumers: All Items in U.S. City Average (CPIAUCSL)](https://fred.stlouisfed.org/series/CPIAUCSL) - a price index of a basket of goods and services paid by urban consumers (percent changes in the price index measure the inflation rate between any two time periods)
-    * [Personal Consumption Expenditures (PCE)](https://fred.stlouisfed.org/series/PCE) - a measure of consumer spending (this data shows the total amount in billions of dollars; it would also be useful to consider how much expenditures are increasing or decreasing between any two time periods)
-    * [Gross Domestic Product (GDP)](https://fred.stlouisfed.org/series/GDP) and [Real Gross Domestic Product (GDPC1)](https://fred.stlouisfed.org/series/GDPC1) - GDP is the total value of all goods and services produced in a given time period (a good gauge of consumer purchasing power), while real GDP is adjusted for inflation (a more accurate gauge of the change in production levels from one period to another).
-    * [Federal Funds Effective Rate (FEDFUNDS)](https://fred.stlouisfed.org/series/FEDFUNDS) - the interest rate at which depository institutions trade federal funds (balances held at Federal Reserve Banks) with each other overnight (it influences a wide range of market interest rates).
-    * [New Privately-Owned Housing Units Started: Total Units (HOUST)](https://fred.stlouisfed.org/series/HOUST) - tracks the number of new housing units being built (good indicator of the health of the housing market and the overall economy).
+The dataset is organized, but it may not be organized how you want it to be. Even given sorted data, it can still be challenging to find specific pieces of information, or discover answers to questions that previously had no known solution.<br>
 
-These datasets are organized, but they may not be organized how you want them to be. Even given sorted data, it can still be challenging to find specific pieces of information, or discover answers to questions that previously had no known solution.<br>
+Take a few minutes to individually look at the data and think about different types of insight that could be gained from the data. As mentioned in the **About Dataset** section, the data can be used for variety of purposes to inform decision-making processes, improve operational strategies, and contribute to a more efficient and reliable air travel experience. Potential options for exploration include but are not limited to:
 
-Take a few minutes to individually look at the data and think about different types of insight that could be gained from the data.
+* Performance Analysis: Assess the on-time performance of different carriers
+  at specific airports and identify potential areas for improvement.
 
-* For the historical weather data, consider different stakeholders who could benefit from analysis of climate information -- individuals in agriculture, emergency management, renewable energy, tourism, outdoor recreation, and government agencies -- people like city planners, student club leaders, farmers, gardeners, delivery drivers, event planners, etc.<br>
+* Trend Identification: Analyze temporal trends in delays, cancellations, and
+  diversions to understand whether certain months or periods exhibit higher operational challenges.
 
-* For the historical economic data, consider different stakeholders who could benefit from analysis of economic information -- job seekers, consumers, investors, human resource departments, economists, policymakers, and individuals in economic development and other government agencies.<br>
+* Root Cause Analysis: Investigate the primary contributors to delays, such as
+  carrier-related issues, weather conditions, NAS inefficiencies, security
+  concerns, or late aircraft arrivals.
+
+* Benchmarking: Compare the performance of various carriers across different
+  airports to identify industry leaders and areas requiring attention.
+
+* Predictive Modeling: Use historical data to develop predictive models for
+  flight delays, aiding in the development of strategies to mitigate
+  disruptions.
+
+* Industry Insights: Contribute to a broader understanding of the factors
+  influencing operational efficiency within the U.S. aviation sector.
+
 
 ### Developing a Research Question
 
 Below are some examples of good starting questions that could provide interesting insight for specific stakeholders. These questions are meant to give you some inspiration -- you can use a question as is, choose a unique way to approach solving the question, and/or modify the question based on your interests:
-#### Example questions: historical weather data
-* (Note for all historical weather data: Your approach could look specifically at one station with many years of data available, or you could look at several stations in the area for comparison or to find the averages.)
-* **What is the average date for the last Spring frost in the Chico area?**
-  * This can help farmers and home gardeners have a better idea of when they can start planting in the Spring without damage to new plants.
-  * To answer this question, you might look at the minimum temperatures in specific months (e.g. January - June) and calculate the percentage possibility that temperatures get below 32 degrees F (light freeze) during some range of days.
-  * You could modify the question to focus on finding the first Fall frost (e.g. September - December), to give farmers and home gardeners a better idea for when they should harvest their last crops for the growing season.
-* **How often can farmers and home gardeners expect temperatures to be above the optimal range for growing tomatoes during the harvest season?**
-  * There are ways to protect plants from extreme temperatures; however, it requires planning, and it helps to have an idea of when you can expect extreme temperatures.
-  * To answer this question, you might look at the maximum temperatures during the harvest season (roughly June - November) and calculate the average number of days that temperatures get above 85 degrees F (or 90-95F -- max optimal temperature may vary based on factors like humidity).
-  * You could modify the question to focus on a different plant (e.g. rice, almonds, grapes, lettuce, peppers, etc) and its specific needs.
-* **What is the probability that it will rain during Spring Commencement ceremonies?**
-  * Looking at historical weather data can help campus student organizations and event planners schedule outdoor events or make backup plans to ensure better attendance and participant comfort.
-  * To answer this question, you might start by looking at the number of days during the month of May (or June) that have precipitation. Then, you can determine the probability of rain occurring on a given day based on the average number of days with precipitation during May over the years 1920-2020.
-  * You could modify this question to focus on a different type of extreme weather (e.g. temperatures above 90 degrees Fahrenheit) that could also impact attendance, comfort, and health.
-* **Is there a trend in the frequency or intensity of heatwaves in Chico, CA?**
-  * Understanding how often heatwaves occur and/or determining if the temperature during those heatwaves is increasing can help public health departments develop action plans and provide guidance for vulnerable populations, such as the elderly, children, or people with pre-existing health conditions.
-  * To answer any question focusing on trends, make sure you analyze many years of data (at least 20-30, but ideally more years). It will most likely be impossible to identify a trend for a short period of time (e.g. 5 years).
-  * You could modify this question by focusing on either max temperatures above a certain threshold (e.g. 90-100F), or min temperatures above a certain threshold (e.g. 70-75F), as both can cause additional stress on humans (and infrastructure).
-* **How does the precipitation this winter compare to historical seasonal precipitation patterns in Butte County?**
-  * Identifying how current conditions compare to historical precipitation (or drought) patterns can provide city planners with valuable insight for water resource management, agriculture, and other sectors.
-  * For this question, you would want to calculate and summarize data for the current season, but then you would also to compare these results with totals or averages from past seasons. This is another question that requires looking at patterns, so make sure you analyze many years of data (at least 20-30, but ideally more years).
-  * You could modify this question by using a specific drought index (e.g. the Standardized Precipitation Index), analyzing average number of occurrences of precipitation during specific months, or focusing on total, average, max/min amounts of precipitation seen during specific months.
 
-#### Example questions: historical economic data
-* (Note for all historical economic data: Your project needs to work with at least 2 datasets and at least 1000 entries (about 84 years for monthly data). Your goal is not to create a graph that looks like one already provided by FRED -- rather, you want to see if you can gain any statistical insight into labor market trends and economic health that might not be immediately obvious by looking at a graph).
-  * **How does the unemployment rate for individuals who have a bachelor's degree compare with the overall unemployment rate?**
-    * You could modify this question to compare the situation for different states/regions, age groups, sex (male/female), race, or other sectors of the population, and examine if the disparities are smaller or greater depending on the time of year.
-  * **Are there any seasonal trends or cyclical patterns in unemployment rates over time?**
-    * You could modify this question by focusing on unemployment rates that are above a certain threshold, or the length of time that job seekers are unemployed. You may want to identify what a "normal" amount of unemployment is, and identify if there are specific times of year when you can expect unemployment to typically be lower or higher than average.
-  * **In which historical periods did the unemployment rate experience the most rapid increases, and how do these periods compare to the overall average monthly change in unemployment?**
-    * You could modify this question by focusing on different regional variations or demographic factors (different events may have had a different impact on people in different areas of the country, people in different age groups, or people with different levels of education).
-  * **Is there any relationship between unemployment and the Consumer Price Index (an indicator of inflation)?**
-    * You could modify this question by focusing on other economic indicators, e.g. does an increase in unemployment associated with a decrease in Gross Domestic Product (GDP)? Even if you are not using formal statistical analysis, you can try to see if there are any patterns in the data.
+#### Example questions: Flight Delay Data
 
-  * These questions can help policymakers and government officials identify disparities between different sectors of the population, better understand the economic situation of their constituents, forecast labor market needs, and plan for seasonal unemployment benefits. Job seekers, employers, and academic institutions can use these types of information to better understand the market and make more informed decisions.
-  * There are several things you should take into consideration for planning your final project (including, but not limited to, the following):
-    * Are you going to identify the most current data and compare this data with numbers or averages from past years?
-    * Are you going to categorize the data by month or season (and what dates are you considering for each season)?
-    * If you are trying to accurately identify patterns, are you making sure you look at many years worth of data?
-    * If comparing different types of data, make sure they are on a comparable scale (e.g. change from month to month).
-    * Most of the FRED data is very consistent; however, make sure you consider how your program will handle missing data -- will it ignore rows with missing values, or will it attempt to use some default value in place of missing values?
+Note: the entire dataset is very large -- I would recommend focusing on a few specific variables (you do not need to work with all of the columns). You can also focus on specific rows (e.g. one or more specific carriers or airlines)
+
+* Example of a question that analyzes performance:
+  * **Among flights at <specific airports>, which carrier has the lowest percentage of arrivals delayed by 15 minutes or more?**
+  * This can help airport operations managers in deciding which carriers to allocate gates to, as well as passengers who may be choosing airlines based on their reliability at a specific airport.
+  * Examples of ways you could modify this question include focusing on large airports only (e.g. those with >= N number of flights arriving at the airport) or adjusting the metric (e.g. percentage of delayed flights, average delayed minutes per flight)
+* Example of a question that identifies a trend:
+  * **Across all years, which month has the highest average delay minutes per flight due to <specific cause> in <specific region>?**
+  * This can help airlines make seasonal adjustments to their schedules and air traffic control plan staffing levels.
+  * Examples of ways you could modify this question include comparing two specific causes side by side, comparing one airport vs all other airports, or comparing the most recent year with the previous year(s).
+* Example of a question that identifies a root cause:
+  * **For <specific carrier>, which delay category occurs most frequently across all flights?**
+  * This can help airline operations leadership decide where to invest improvements and maintenance teams address carrier-related delays.
+  * Examples of ways you could modify this question include doing a per-airport or per-month breakdown for your chosen carrier, or adjusting the metric to track delay categories by the number of minutes delayed by each.
+* Example of a question that does some benchmarking:
+  * **At how many shared airports does <carrier A> have lower average delay minutes due to <specific cause> than <carrier B>?**
+  * This can help airports choose preferred airline partnerships and travel management companies advise clients.
+  * Examples of ways you could modify this question include counting airports where <carrier A> performs better than <carrier B>, identifying airports with the largest performance gap, or comparing across multiple causes.
+* Example of a predictive modeling question:
+  * **How has the total number of flight cancellations changed from year to year between 2013 and 2023?**
+  * This can help passengers understand reliability trends and investors identify long-term risks.
+  * Examples of ways you could modify this question include identifying the largest single-year change or filtering for specific carriers or airports.
+* Example of an industry insights question:
+  * **Which delay category accounts for the largest proportion of total delay minutes across all flights in the dataset?**
+  * This can help the airline industry collectively identify systemic bottlenecks and plan improvement initiatives.
+  * Examples of ways you could modify this question include adjusting the scope (specific carrier, airport, year, or month), or comparing small airports vs large airports (determined by number of arrivals).<br>
+
+In general, you will want to store some identifying information (carrier, airport, date) as well as key variables based on your question (e.g. if you are focusing on total number of arrivals and total number of delays of 15 minutes or more, you do not need the categories for each type of delay, or the categories for total minutes of delay). Conversely, if you are focusing on which delay categories occur most frequently across all flights, you should include all of the delay categories (but may not need the total count or minute-delay variables).<br>
+
+In each case, you will need to:
+* handle the input, making sure you get the input you need and organizing it appropriately
+* add the data to your data structure (potentially ordering it in a way that is conducive to your task)
+* use techniques like traversal, filtering by a key, searching, matching, finding min or max values, computing (sum, average, percentages), etc.
+
+Remember that your real-world question should be something that is answerable with the data you have available.
+
+#### Restrictions
 
 You are not required to use my example questions -- ultimately, I want you to choose something that interests you! However, be aware that some questions may be difficult or impossible to answer with the available datasets. Keep these ideas in mind for things to avoid in choosing your research question:
-* In most cases, you CANNOT identify the impact of \<fill in the blank\> -- a question like, "What is the impact of extreme precipitation?" is unanswerable given the information we have available (i.e. historical weather datasets). Instead, you can focus on things like identifying the occurrences/frequency and intensity of weather events, with the goal of helping different entities make decisions based on that data.
+* In most cases, you CANNOT identify the impact of \<fill in the blank\> -- a question like, "What is the impact of flight delays due to security issues?" is unanswerable given the information we have available. Instead, you can focus on things like identifying occurrences, frequency, patterns, etc with the goal of helping different entities make decisions based on that data.
 * Your question should be somewhat specific -- a question that is too broad will be impossible to answer in a project that you are expected to complete in the amount of time available to you. If you have a bunch of questions floating around in your head, talk to the instructor or your peers to help you refine your question and focus on providing some specific type of insight.
-* At the same time, your question should not be too simple. A question like, "What was the maximum temperature in 2023?" (which can be solved with a basic search) has very limited usefulness. Your project should require some calculations and analysis on your part. Your program should be able to print out all entries in a readable format, but it should also go beyond that -- the program should provide some insight, without requiring the user to read through the dataset and make their own analysis.
+* At the same time, your question should not be too simple. A question that can be solved with a very basic search (e.g. the single largest total number of flights delayed due to weather) has limited usefulness as it may be identifying an outlier. Your project should require some calculations and analysis on your part. Your program should be able to print out all entries in a readable format, but it should also go beyond that -- the program should provide some insight, without requiring the user to read through the dataset and make their own analysis.
 
 ## Process
 
 Now it is time to start formulating your own questions!<br>
 
 1. Question Focus
-  - :heavy_check_mark: Focus on the example dataset, while being aware that your group can choose a different dataset for your CURE-E project (e.g. for a specific station, for a longer date range, etc).
+  - :heavy_check_mark: Focus on the example dataset
+  - :heavy_check_mark: Questions must be answerable using only the dataset
+  - :heavy_check_mark: You must be able to use algorithms, data structures, and explicit metrics to answer the question
   - :heavy_check_mark: Start with the example questions listed above, and think about other questions you can ask that are related to these questions.
-    - **What types of data are you most interested in?** Are there any causes or issues you care about that could be explored with these types of datasets?
-      - A list of topics related to economics that at least one member of your group finds intriguing or relevant, that could be addressed with available data. In your list, you can include sectors that interest you (education level, regions/states, or other demographic distinctions), and various perspectives and interests that could benefit from your research. (Who are the potential beneficiaries of your findings?)
-    - **What are some questions that could be explored with the economic datasets available?**
-      - Consider: **What are some questions that can help you answer the provided example questions?** Consider simple questions that have an easy-to-find answer and can help you build a response to the original question.
-      - Or: **What are some questions that can expand beyond the example questions?** These questions may, for instance, be similar questions with a different focus for a different stakeholder. Consider questions that take into account a range of dates (months, years, seasons), several locations, multiple categories (e.g. precipitation and min/max temperature), different statistical calculations (e.g. mean average, range, variance, percentile), etc.
-  - :heavy_check_mark: As you formulate questions, think about some potential stakeholders (community members or groups who would benefit from this information). In many cases, your research can be more impactful if it has a specific stakeholder in mind.
+  - Within the given constraints, write down:
+    - What data interests you? Consider specific carriers, airports, regions, types of delays, etc
+    - What type of question interests you? Performance measuring, comparisons, identifying trends, etc
+    - What stakeholders or groups of people do you care about who might be impacted by flight delays? In many cases, your research can be more impactful if it has a specific stakeholder in mind.
 2. Produce Your Questions
   - :heavy_check_mark: Follow the rules:
     - a) Ask as many questions as you can
@@ -140,33 +136,57 @@ Now it is time to start formulating your own questions!<br>
     - c) Record exactly as stated
     - d) Change statements into questions
   - :heavy_check_mark: Number your questions
-3. Improve Your Questions
+  - Some things to think about as you're generating questions:
+    - Feel free to start with the questions listed above, but add some variation or specifics to make it your own.
+    - You may have a hypothesis about a question but want to confirm if your expectations are correct, you may want to uncover inefficiencies, or you may just be curious and wanting to find something unexpected.
+    - Consider who might care about the data, and what information they would want from it.
+    - No question is too vague or too specific right now - the goal is just to get you thinking. We can refine the questions later.
+3. Categorize Your Questions
   - :heavy_check_mark: Categorize questions as Closed or Open-ended
-    - a) Closed-Ended: Narrowly focused questions that can be answered with a simple “yes” or “no”, one word, or a single piece of data. Closed-ended questions are focused on gathering precise answers and targeted facts.
-    - b) Open-Ended: Questions that encourage discussion and exploration, often requiring a longer explanation with a more detailed and nuanced response. There may not be a single correct solution; however, research into the question can provide more in-depth understanding, insights, and analysis.
-  - :heavy_check_mark: Change questions from one type to another
-4. Strategize
+    - a) Closed: Narrowly focused questions that can be answered with a simple “yes” or “no”, one word, or a single piece of data. Closed-ended questions are focused on gathering precise answers and targeted facts.
+      - Closed Example: "Which carrier has the most delays?"
+    - b) Open: Questions that require interpretation or reframing, often requiring a longer explanation with a more detailed and nuanced response.
+      - Open Example: Why is weather such a big problem?
+  - :heavy_check_mark: See if you can change questions from one type to another
+4. Improve Your Questions
+  - Translate your questions into computable forms.
+  - Example:
+    - Say your original question was, "Which carrier is the worst?"
+    - You can improve your question and make it more operational by changing it to something like this, "Which carrier has the highest average arrival delay per flight across all airports?"
+  - If you cannot translate all of your questions into a computable form, that is OK; just try to update as many of them as you can.
+  - In your questions, make sure to include specifics like a unit of measurement, a time window, and aggregation methods (sum, average (mean), count, minimum/maximum, etc).
+5. Strategize
   - :heavy_check_mark: Prioritize your questions
+    - Prioritize based on this criteria:
+      - Can it be answered using only this dataset?
+      - Can the result be computed in a reasonable time?
+      - Does it require grouping, searching, or aggregation?
+      - Can you explain the result to a stakeholder?
+      - Is it something that would matter to a stakeholder?
   - :heavy_check_mark: Action plan or discuss next steps
   - :heavy_check_mark: Share
-5. Reflect
+6. Reflect
   - :heavy_check_mark: Individual written reflection or small group reflection
+    - Select at least 1 primary question and at least 1 backup question.
+    - You are not tied to the questions brainstormed in class - you may use a question you think up later.
   - :heavy_check_mark: Volunteers share out to full group
 
 Reminder: when you start this exercise, you should try to come up with as many questions as you can. By the end of the exercise, your list of questions should identify which questions are closed-ended and which are open-ended, and it should be clear which questions have the highest priority.<br>
 
 ## Conclusion
 
-The goal today is to generate ideas for potential questions you can answer through your CURE-E Final Project. In the upcoming weeks, work with your group to determine a stakeholder and decide on at least one question for each group member to focus on. Your question for the Final Project must be sufficiently complex -- try to think of a question that requires factual data but cannot be answered with a simple search (e.g. what day had the hottest temperature?). Check in with the instructor to confirm if your question matches this requirements.<br>
+The goal today is to generate ideas for potential questions you can answer through your CURE-E Final Project. In the upcoming weeks, work with your group or individually to determine a stakeholder and decide on at least one question for each individual to focus on. Your question for the Final Project must be sufficiently complex -- try to think of a question that requires factual data but cannot be answered with a simple search. Check in with the instructor to confirm if your question matches this requirements.<br>
 
 To successfully complete this assignment, each participant should submit an individual project proposal to Canvas that includes the following components:<br>
 
 1. Clearly state the research question you intend to address
 2. Identify the stakeholder(s) who stand to gain from the insights derived from your project
-3. Provide some details about the dataset you intend to use and the data fields on which you will focus.
-  * For historical weather data, you should focus on Daily Summaries. Some variables you should provide here are (1) the Date Range, (2) Station/Zip Code/City or other geographic/location identifier, and (3) observations/values (e.g. precipitation (PRCP), snowfall (SNOW), max temperature (TMAX), min temperature(TMIN), etc).
-  * For historical economic data, you may find monthly, daily, or seasonal summaries. You will need to utilize two or more datasets, and your datasets must contain at least 1000 entries combined (for monthly data, this requires at least 84 years, so you could look at two datasets that each have at least 42 years of data, or 3 datasets that have at least 28 years of data).
-    * You should provide here: (1) The datasets you plan to use (list the date range (e.g. "Jan 1948 to Sep 2024") and frequency (e.g. "monthly") for each)
+3. Provide some details about your plan, the dataset you intend to use, and the data fields on which you will focus.
+  * What data structure(s) will you use? Remember that you must implement your own primary data structure; you may not rely solely on standard library containers (e.g. std::map, std::vector)
+  * What variables (column headers) will you focus on? Make sure to include some identifiers (e.g. carrier, airport, year, month) as well as the data field(s) you will be working with.
+  * What keys are you planning on grouping or searching by?
+  * What metrics must be computed?
+  * Are there any assumptions or limitations that exist? If so, briefly describe them here.
 4. You may use the same dataset and have the same stakeholder as other students, but you should be writing your own program and individually addressing a unique question. If you are working with other students to provide insights for a specific stakeholder, with each individual answering a different question for that stakeholder, list the names of the other students.<br>
 
 

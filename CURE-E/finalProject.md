@@ -22,7 +22,7 @@ Funded by The National Science Foundation’s Improving Undergraduate STEM Educa
 
 ## Project Overview
 
-The goal of the CURE-E Research Project is to give you an opportunity to apply concepts covered in class toward solving a problem with a real-world dataset. Students will create a data management program that uses data structures and algorithms to organize, analyze, and provide insight on publicly available weather data for Chico, CA. Data can be sourced from the National Oceanic and Atmospheric Administration (NOAA), which provides a large database of historical data related to weather, precipitation, and climate. Students will develop research questions that can be explored and answered with the data and identify relevant community members or groups who would benefit from this information.<br>
+The goal of the CURE-E Research Project is to give you an opportunity to apply concepts covered in class toward solving a problem with a real-world dataset. Students will create a data management program that uses data structures and algorithms to organize, analyze, and provide insight on publicly available flight delay data for U.S. airports. Data is sourced from the Bureau of Transportation Statistics. Students will develop research questions that can be explored and answered with the data and identify relevant community members or groups who would benefit from this information.<br>
 
 Assignments will include one final project, several collaborative work and discussion sessions (stem entrepreneurial mindset, question formulation, lab time), a presentation, and a reflection survey. The final project will require a README guide that explains how the program works and how others can use the program. The work and discussion sessions will be completed during class in small groups. Students will present their work to the class on the day of the final. Presentations will include a visual representation to help others understand the project results (e.g. a poster or infographic).<br>
 
@@ -48,7 +48,7 @@ Entrepreneurial Mindset: Flexible and Adaptable, Creative and Innovative, Initia
 
 ## Process
 
-Note: All files and folders related to your project (the code for your program, your README guide, the dataset files, Makefiles, scripts to run your code, etc) should be in a single directory located directly inside your CSUChico-CSCI211 repo -- you should give the directory a name that clearly indicates that it contains your CURE-E Final Project, e.g. `CSCI211-F24-FirstName-LastName/final-project/` or `CSCI211-F24-FirstName-LastName/cure-e/`).
+Note: All files and folders related to your project (the code for your program, your README guide, the dataset files, Makefiles, scripts to run your code, etc) should be in a single directory located directly inside your CSUChico-CSCI211 repo -- you should give the directory a name that clearly indicates that it contains your CURE-E Final Project, e.g. `CSCI211-S26-FirstName-LastName/final-project/` or `CSCI211-S26-FirstName-LastName/cure-e/`).
 
 ## Final Project Components
 
@@ -58,11 +58,11 @@ You will write a program that provides insight on Your Question (developed durin
 * Include an object-oriented C++ implementation of an abstract data type (ADT) discussed in CSCI 211 (linked list or array-based stack, queue, priority queue (or ordered list), or binary tree).
   * You may use Standard Template Library containers in conjunction with your ADT implementation (e.g. a std::vector of linked lists); however, you should **not** just rely on a Standard Template Library container for implementing your ADT. Using a STL vector, queue, stack, list, map, etc is not the same as you implementing an ADT with a linked list or array-based data structure.
   * You must utilize dynamically allocated memory in the implementation of your abstract data type (e.g. using `new` and `delete` to allocate/deallocate memory for nodes)
-* Include a class or struct for your input data (e.g. to represent a single day of data, at a single station).
+* Include a class or struct for your input data (e.g. to represent a single row of data).
 * Get input from the dataset or converted input file, add all entries to your ADT, and have the ability to print all entries in a readable format.
   * Code that reads and parses data from the chosen dataset should be correct, able to handle different data types and formats, and able to handle any empty entries appropriately, depending on the data type.
   * If you have default output, you do not need to print all entries in the default output; however, you should provide a way for users to easily print all entries (i.e. provide a `print()` function in the ADT class)
-  * The printed output should make it clear what different values represent (e.g. if you are printing a numeric value like temperature, don't just print the number -- include some information that indicates that it is (for example) the max temperature measured in degrees Fahrenheit or Celsius)
+  * The printed output should make it clear what different values represent (e.g. if you are printing a numeric value, don't just print the number -- include some information that indicates that it is (for example) a total count or a number of minutes for some specific category)
 * Include at least one unique algorithm that provides insight on Your Question and prints out that information
   * Prints results to the terminal or output file in a clear and effective manner
   * Algorithm is correct and effective at providing insight and addressing the research question (Recall that an algorithm is just a sequence of instructions to perform a task -- I am looking for your program to perform a task that helps provide accurate insight on Your Question)
@@ -119,7 +119,7 @@ In the git repository for your program, you should have a README.md file in the 
 
 * **Your full name**
 * **Your Chico State/INGInious username**
-* **Course and section information** (e.g. CSCI 211 Programming and Algorithms II, Fall 2024)
+* **Course and section information** (e.g. CSCI 211 Programming and Algorithms II, Spring 2026)
 * **A list of the files/directories in the repo** and a brief description of what each file/directory contains
 * **An overview of your project**
   - A brief description of your project (Include any descriptive background details that can help explain the thinking behind your research question and project)
