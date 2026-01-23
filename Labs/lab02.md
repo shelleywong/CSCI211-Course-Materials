@@ -97,7 +97,7 @@ At this point you should be able to do all the above tasks (compile a program, r
 
 Write a program (`to_text.cpp`) that reads zero or more single digits positive integers (0,1,2,3,...,9), and prints the corresponding text string ("zero", "one", "two", "three", ... , "nine").  When the end of input is reached, exit the program.<br/>
 
-Put this program in your `~/csci211/lab02/totext` directory:
+Put this program in your `211/lab02_totext` directory:
 ```
 $ ./to_text
 1
@@ -159,7 +159,7 @@ Look at the two files created (myout and myerr). What do each of the files conta
 
 1. Write a program (called `even.cpp`) that reads integers until end of input (just like in exercise 1 above). If you copy your code from exercise 1, update the code so that it does not print out the numbers. <br/>
 
-Put this file in your directory (e.g. `~/csci211/lab02/even`)
+Put this file in your directory (e.g. `211/lab02_even`)
 
 2. After reading the integers:
 
