@@ -146,7 +146,7 @@ Now it is time to start formulating your own questions!<br>
     - a) Closed: Narrowly focused questions that can be answered with a simple “yes” or “no”, one word, or a single piece of data. Closed-ended questions are focused on gathering precise answers and targeted facts.
       - Closed Example: "Which carrier has the most delays?"
     - b) Open: Questions that require interpretation or reframing, often requiring a longer explanation with a more detailed and nuanced response.
-      - Open Example: Why is weather such a big problem?
+      - Open Example: "Why is weather such a big problem?"
   - :heavy_check_mark: See if you can change questions from one type to another
 4. Improve Your Questions
   - Translate your questions into computable forms.
@@ -181,13 +181,12 @@ To successfully complete this assignment, each participant should submit an indi
 
 1. Clearly state the research question you intend to address
 2. Identify the stakeholder(s) who stand to gain from the insights derived from your project
-3. Provide some details about your plan, the dataset you intend to use, and the data fields on which you will focus.
+3. Provide some details about your plan and the data fields in the provided dataset that you intend to focus on.
   * What data structure(s) will you use? Remember that you must implement your own primary data structure; you may not rely solely on standard library containers (e.g. std::map, std::vector)
   * What variables (column headers) will you focus on? Make sure to include some identifiers (e.g. carrier, airport, year, month) as well as the data field(s) you will be working with.
-  * What keys are you planning on grouping or searching by?
-  * What metrics must be computed?
-  * Are there any assumptions or limitations that exist? If so, briefly describe them here.
-4. You may use the same dataset and have the same stakeholder as other students, but you should be writing your own program and individually addressing a unique question. If you are working with other students to provide insights for a specific stakeholder, with each individual answering a different question for that stakeholder, list the names of the other students.<br>
-
+  * Other things you may want to consider include:
+    * What keys are you planning on grouping or searching by?
+    * What metrics must be computed?
+    * Are there any assumptions or limitations that exist? If so, briefly describe them here.<br>
 
 Reminder: this assignment has 2 components -- the QFT discussion (submitted through the shared Google Doc) and the Project Proposal (a PDF or text submission to Canvas).
