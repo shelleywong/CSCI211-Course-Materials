@@ -76,21 +76,21 @@ Below are some examples of good starting questions that could provide interestin
 Note: the entire dataset is very large -- I would recommend focusing on a few specific variables (you do not need to work with all of the columns). You can also focus on specific rows (e.g. one or more specific carriers or airlines)
 
 * Example of a question that analyzes performance:
-  * **Among flights at <specific airports>, which carrier has the lowest percentage of arrivals delayed by 15 minutes or more?**
+  * **Among flights at \<specific airports\>, which carrier has the lowest percentage of arrivals delayed by 15 minutes or more?**
   * This can help airport operations managers in deciding which carriers to allocate gates to, as well as passengers who may be choosing airlines based on their reliability at a specific airport.
   * Examples of ways you could modify this question include focusing on large airports only (e.g. those with >= N number of flights arriving at the airport) or adjusting the metric (e.g. percentage of delayed flights, average delayed minutes per flight)
 * Example of a question that identifies a trend:
-  * **Across all years, which month has the highest average delay minutes per flight due to <specific cause> in <specific region>?**
+  * **Across all years, which month has the highest average delay minutes per flight due to \<specific cause\> in \<specific region\>?**
   * This can help airlines make seasonal adjustments to their schedules and air traffic control plan staffing levels.
   * Examples of ways you could modify this question include comparing two specific causes side by side, comparing one airport vs all other airports, or comparing the most recent year with the previous year(s).
 * Example of a question that identifies a root cause:
-  * **For <specific carrier>, which delay category occurs most frequently across all flights?**
+  * **For \<specific carrier\>, which delay category occurs most frequently across all flights?**
   * This can help airline operations leadership decide where to invest improvements and maintenance teams address carrier-related delays.
   * Examples of ways you could modify this question include doing a per-airport or per-month breakdown for your chosen carrier, or adjusting the metric to track delay categories by the number of minutes delayed by each.
 * Example of a question that does some benchmarking:
-  * **At how many shared airports does <carrier A> have lower average delay minutes due to <specific cause> than <carrier B>?**
+  * **At how many shared airports does \<carrier A\> have lower average delay minutes due to \<specific cause\> than \<carrier B\>?**
   * This can help airports choose preferred airline partnerships and travel management companies advise clients.
-  * Examples of ways you could modify this question include counting airports where <carrier A> performs better than <carrier B>, identifying airports with the largest performance gap, or comparing across multiple causes.
+  * Examples of ways you could modify this question include counting airports where \<carrier A\> performs better than \<carrier B\>, identifying airports with the largest performance gap, or comparing across multiple causes.
 * Example of a predictive modeling question:
   * **How has the total number of flight cancellations changed from year to year between 2013 and 2023?**
   * This can help passengers understand reliability trends and investors identify long-term risks.
