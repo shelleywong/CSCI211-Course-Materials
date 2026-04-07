@@ -30,7 +30,7 @@ $ git commit -m "<descriptive commit message>"
 $ git push origin main
 ```
 
-To demonstrate your project progress, submit this [Lab 12-15 Project Progress - Git Commits Google Survey](https://docs.google.com/forms/d/e/1FAIpQLSckOf9F8l39hnXigfJlu9uXFGQ0pMf_9ZEsJRVuDWMzAoClfw/viewform?usp=sf_link). This form can be edited and resubmitted as many times as necessary. In the form, you will need to provide a URL link to the commits in your git repo, as well as the dates and commit messages for your work on the CURE-E Final Project.
+To demonstrate your project progress, submit this [S26 Lab 12-15 Project Progress - Git Commits Google Survey](https://docs.google.com/forms/d/e/1FAIpQLSeUiS4N8PpIcAKy2JhoWTVYGUe7SkFV_dacFJkij5_42Hwc3Q/viewform?usp=dialog). This form can be edited and resubmitted as many times as necessary. In the form, you will need to provide a URL link to the commits in your git repo, as well as the dates and commit messages for your work on the CURE-E Final Project.
 
 Note: You will need to be logged in to your \@mail.csuchico.edu or \@csuchico.edu Google account in order to take the Google Survey. If you get a message that you are unable to access the survey, try using your Chico portal username and password to login to Google. If you are not sure how to proceed, feel free to ask for help!<br>
 
