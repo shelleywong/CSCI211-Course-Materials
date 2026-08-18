@@ -92,13 +92,13 @@ Note: the entire dataset is very large -- I would recommend focusing on a few sp
   * This can help airports choose preferred airline partnerships and travel management companies advise clients.
   * Examples of ways you could modify this question include counting airports where \<carrier A\> performs better than \<carrier B\>, identifying airports with the largest performance gap, or comparing across multiple causes.
 * Example of a predictive modeling question:
-  * **How has the total number of flight cancellations changed from year to year between 2013 and 2023?**
+  * **How has the total number of flight cancellations changed from year to year between 2013 and 2023 for \<carrier A\> compared to \<carrier B\>?**
   * This can help passengers understand reliability trends and investors identify long-term risks.
   * Examples of ways you could modify this question include identifying the largest single-year change or filtering for specific carriers or airports.
 * Example of an industry insights question:
-  * **Which delay category accounts for the largest proportion of total delay minutes across all flights in the dataset?**
+  * **Which delay category accounts for the largest proportion of total delay minutes across all flights during the summer months (or another time of year)?**
   * This can help the airline industry collectively identify systemic bottlenecks and plan improvement initiatives.
-  * Examples of ways you could modify this question include adjusting the scope (specific carrier, airport, year, or month), or comparing small airports vs large airports (determined by number of arrivals).<br>
+  * Examples of ways you could modify this question include adjusting the scope (specific carrier, airport), or comparing small airports vs large airports (determined by number of arrivals).<br>
 
 In general, you will want to store some identifying information (carrier, airport, date) as well as key variables based on your question (e.g. if you are focusing on total number of arrivals and total number of delays of 15 minutes or more, you do not need the categories for each type of delay, or the categories for total minutes of delay). Conversely, if you are focusing on which delay categories occur most frequently across all flights, you should include all of the delay categories (but may not need the total count or minute-delay variables).<br>
 
@@ -111,7 +111,7 @@ Remember that your real-world question should be something that is answerable wi
 
 #### Restrictions
 
-You are not required to use my example questions -- ultimately, I want you to choose something that interests you! However, be aware that some questions may be difficult or impossible to answer with the available datasets. Keep these ideas in mind for things to avoid in choosing your research question:
+I recommend you use a variation of one of my example questions (fill in the blanks so that your question is specific). Ultimately, I want you to choose something that interests you, so if you would like to ask a different question, run the question by me! Just be aware that some questions may be difficult or impossible to answer with the available datasets. Keep these ideas in mind for things to avoid in choosing your research question:
 * In most cases, you CANNOT identify the impact of \<fill in the blank\> -- a question like, "What is the impact of flight delays due to security issues?" is unanswerable given the information we have available. Instead, you can focus on things like identifying occurrences, frequency, patterns, etc with the goal of helping different entities make decisions based on that data.
 * Your question should be somewhat specific -- a question that is too broad will be impossible to answer in a project that you are expected to complete in the amount of time available to you. If you have a bunch of questions floating around in your head, talk to the instructor or your peers to help you refine your question and focus on providing some specific type of insight.
 * At the same time, your question should not be too simple. A question that can be solved with a very basic search (e.g. the single largest total number of flights delayed due to weather) has limited usefulness as it may be identifying an outlier. Your project should require some calculations and analysis on your part. Your program should be able to print out all entries in a readable format, but it should also go beyond that -- the program should provide some insight, without requiring the user to read through the dataset and make their own analysis.
@@ -179,7 +179,7 @@ The goal today is to generate ideas for potential questions you can answer throu
 
 To successfully complete this assignment, each participant should submit an individual project proposal to Canvas that includes the following components:<br>
 
-1. Clearly state the research question you intend to address
+1. Clearly state the research question you intend to address (be specific!)
 2. Identify the stakeholder(s) who stand to gain from the insights derived from your project
 3. Provide some details about your plan and the data fields in the provided dataset that you intend to focus on.
   * What data structure(s) will you use? Remember that you must implement your own primary data structure; you may not rely solely on standard library containers (e.g. std::map, std::vector)
