@@ -32,9 +32,9 @@ $ vimtutor
 ```
 This should take about 30 minutes and provides the basic commands.<br>
 
-An excellent [vi tutorial](https://engineering.purdue.edu/ECN/Support/KB/Docs/ViTextEditorTutorial) from Purdue (vim is a superset of vi, so learning vi is a great way to start learning vim)<br>
+[vim-adventures.com](https://vim-adventures.com/) allows you to learn vim commands while playing a game.  It has been highly recommended.<br>
 
-[vim-adventures.com](https://vim-adventures.com/) allows you to learn vim commands while playing a game.  It has been highly recommended.
+This interactive tutorial from [vimhero](https://www.vim-hero.com/) can help you learn vim motions, operators, and text objects through interactive lessons and real code challenges.<br>
 
 ## vi/vim/gvim
 | Editor |  |
@@ -120,7 +120,7 @@ You read this command as follows:
 * After the second / you put the new string
 * The g stands for global (you want to substitute ALL the foo's on a given line to bar.
 
-## Three other common commands are:
+## Other common commands that are good to know:
 
 | What you type | Resulting action |
 | --- | --- |
