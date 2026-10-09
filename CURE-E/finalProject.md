@@ -201,6 +201,7 @@ The presentation has been split into two parts to make sure everyone has time to
 
 Your demonstration recording should include:
 * A demonstration of yourself compiling and executing your program. If needed, provide some explanation about how I should interpret your output.
+* A description of how your program provides insight on your research question.
 * Some context about your work and your experience developing this project, e.g. a brief discussion of any challenges you faced and how those challenges were resolved.
 * Any personal insight, e.g. What did you find most interesting or rewarding about working on this project? Have you identified any additional questions, next steps, or avenues for future research or projects?<br>
 
