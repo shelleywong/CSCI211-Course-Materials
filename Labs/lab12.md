@@ -20,14 +20,15 @@ Work on Lab 12 Project Goals and commit your progress to your CSUChico-CSCI211 p
   - Choose one of the abstract data types we discussed in class (e.g. linked list based stack, queue, or priority queue, or a binary tree)
   - Begin by creating basic functions such as the constructor, destructor, insert, and print methods
 
-* Add, commit, and push your code to GitHub, so I can see your current project progress. Remember to include a brief but descriptive commit message:
+* Confirm the changes you've made (check the status of your repo - only commit the changes you want to commit), then add, commit, and push your code to GitHub, so I can see your current project progress. Remember to include a brief but descriptive commit message:
 ```
+$ git status
 $ git add -A
 $ git commit -m "<descriptive commit message>"
 $ git push origin main
 ```
 
-To demonstrate your project progress, submit this [S26 Lab 12-15 Project Progress - Git Commits Google Survey](https://docs.google.com/forms/d/e/1FAIpQLSeUiS4N8PpIcAKy2JhoWTVYGUe7SkFV_dacFJkij5_42Hwc3Q/viewform?usp=dialog). This form can be edited and resubmitted as many times as necessary. In the form, you will need to provide a URL link to the commits in your git repo, as well as the dates and commit messages for your work on the CURE-E Final Project.
+To demonstrate your project progress, submit the F26 Lab 12-15 Project Progress - Git Commits Google Survey (link in Canvas). This form can be edited and resubmitted as many times as necessary. In the form, you will need to provide a URL link to the commits in your git repo, as well as the dates and commit messages for your work on the CURE-E Final Project.
 
 Note: You will need to be logged in to your \@mail.csuchico.edu or \@csuchico.edu Google account in order to take the Google Survey. If you get a message that you are unable to access the survey, try using your Chico portal username and password to login to Google. If you are not sure how to proceed, feel free to ask for help!<br>
 
