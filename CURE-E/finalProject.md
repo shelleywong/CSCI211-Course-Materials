@@ -197,15 +197,15 @@ Note: if you will not be able to attend in-person during the time of our schedul
 
 ### Presentation Part 2: Your Demonstration Recording
 
-The presentation has been split into two parts to make sure everyone has time to present their project. This portion of the presentation should be recorded, and the recording should be submitted to Canvas. The goal of this part of the presentation is for you to demonstrate how to use your program, show that your program is working and getting results, provide some context about your work, and discuss any personal insights. I am expecting this recording to be about 1-5 minutes (don't stress if it's a little longer).
+The presentation has been split into two parts to make sure everyone has time to present their project. This portion of the presentation should be recorded, and the recording should be submitted to Canvas. The goal of this part of the presentation is for you to demonstrate how to use your program, show that your program is working and getting results, provide some context about your work, and discuss any personal insights. I am expecting this recording to be about 5-8 minutes (don't stress if it's a little outside that range).
 
 Your demonstration recording should include:
-* A demonstration of yourself compiling and executing your program. If needed, provide some explanation about how I should interpret your output.
-* A description of how your program provides insight on your research question.
-* Some context about your work and your experience developing this project, e.g. a brief discussion of any challenges you faced and how those challenges were resolved.
-* Any personal insight, e.g. What did you find most interesting or rewarding about working on this project? Have you identified any additional questions, next steps, or avenues for future research or projects?<br>
+* **A demonstration of yourself compiling and executing your program**. Provide some explanation and interpretation of the output of your program.
+* **A description of how your program provides insight on your research question**. Provide an explanation for how your algorithm works; show a connection between your code and how it either answers your research question or provides insight on your research focus
+* **Some context about your work and your experience developing this project**. Provide a brief discussion of any challenges you faced and how those challenges were resolved.
+* **Any personal insight**. What did you find most interesting or rewarding about working on this project? Have you identified any additional questions, next steps, or avenues for future research or projects?<br>
 
-Just like with the elevator pitch, you do not need to explain every detail. Including a couple technical details may be useful, but your presentation should be understandable for a non-technical audience. Keep it short, memorable, and impactful. Your recording does not have to look professional, but you should speak clearly and any visuals (code, text output, images, etc) should actually be visible.<br>
+You should include some technical detail, while still aiming to be understandable for a non-technical audience. Your recording does not have to look professional, but you should speak clearly and any visuals (code, text output, images, etc) should actually be visible.<br>
 
 ### Your Self-Assessment
 
